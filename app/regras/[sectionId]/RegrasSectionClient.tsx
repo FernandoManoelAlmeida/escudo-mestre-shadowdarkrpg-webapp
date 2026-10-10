@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { getEscudo, getSection, getTable } from "@/lib/escudo";
 import type { EscudoData, EscudoTable } from "@/lib/escudo";
 import { getTabelaById } from "@/lib/tabelas";
+import { rowAsCells, type RollTableRow } from "@/lib/rollTable";
 import MarkdownContent from "@/components/ui/MarkdownContent";
 import { ResponsiveTable } from "@/components/ui/ResponsiveTable";
 import { Accordion } from "@/components/ui/Accordion";
@@ -84,7 +85,7 @@ type RegrasSectionClientProps = { sectionId: string };
 
 function rollJsonToEscudo(
   headers: string[],
-  rows: string[][],
+  rows: RollTableRow[],
 ): EscudoTable {
   const keys = headers.map((h, i) =>
     h
@@ -97,7 +98,8 @@ function rollJsonToEscudo(
   );
   return {
     headers,
-    rows: rows.map((cells) => {
+    rows: rows.map((tableRow) => {
+      const cells = rowAsCells(tableRow);
       const row: Record<string, string> = {};
       keys.forEach((k, i) => {
         row[k] = cells[i] ?? "";

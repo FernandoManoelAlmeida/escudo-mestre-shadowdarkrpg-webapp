@@ -99,7 +99,7 @@ export function rollTipoAssentamento(tipoTable: RollTableData): TipoAssentamento
   if (!row) {
     return {
       valor: r.valor,
-      faixa: r.faixa,
+      faixa: r.faixa ?? String(r.valor),
       tipo: r.texto,
       diceFormula: "d4",
       diceCount: 1,
@@ -158,7 +158,7 @@ export function rollDistritos(
     out.push({
       index: i,
       valor: r.valor,
-      faixa: r.faixa,
+      faixa: r.faixa ?? String(r.valor),
       nome,
       face,
     });
@@ -172,7 +172,7 @@ export function rollPoiOnTable(poiTable: RollTableData): PoiRolado {
   return {
     texto: r.texto,
     valor: r.valor,
-    faixa: r.faixa,
+    faixa: r.faixa ?? String(r.valor),
     linkHref: href,
     linkLabel: label,
   };

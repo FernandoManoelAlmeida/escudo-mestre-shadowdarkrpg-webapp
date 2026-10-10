@@ -5,7 +5,12 @@ import styled from "styled-components";
 import { GeneratorLayout } from "@/components/geradores/GeneratorLayout";
 import { RollResultCard } from "@/components/geradores/RollResultCard";
 import { getTabelaById } from "@/lib/tabelas";
-import { rollOnTable, type RollTableData } from "@/lib/rollTable";
+import {
+  rollOnTable,
+  rowAsCells,
+  type RollTableData,
+  type RollTableRow,
+} from "@/lib/rollTable";
 
 const Tabs = styled.div`
   display: flex;
@@ -51,8 +56,9 @@ async function loadTable(id: string): Promise<RollTableData | null> {
   return getTabelaById(id);
 }
 
-function cellFromRow(row: string[], col: number): string {
-  return row[col] ?? row[row.length - 1] ?? "";
+function cellFromRow(row: RollTableRow, col: number): string {
+  const cells = rowAsCells(row);
+  return cells[col] ?? cells[cells.length - 1] ?? "";
 }
 
 export default function GeradorPnjsPage() {
@@ -89,17 +95,17 @@ export default function GeradorPnjsPage() {
       const col = ANCESTRY_COLUMN[ancestralidade] ?? 5;
 
       const rNome = rollOnTable(nomes);
-      const nomeRow = nomes.rows[rNome.linha] ?? [];
-      const nome = cellFromRow(nomeRow, col);
+      const nomeRow = nomes.rows[rNome.linha];
+      const nome = nomeRow ? cellFromRow(nomeRow, col) : rNome.texto;
 
       const rIdade = rollOnTable(idade);
       const rRiq = rollOnTable(riqueza);
       const rCar = rollOnTable(carac);
-      const carRow = carac.rows[rCar.linha] ?? [];
+      const carCells = rowAsCells(carac.rows[rCar.linha] ?? []);
 
       const rOcp = rollOnTable(ocup);
-      const ocpRow = ocup.rows[rOcp.linha] ?? [];
-      const ocupacao = cellFromRow(ocpRow, col);
+      const ocpRow = ocup.rows[rOcp.linha];
+      const ocupacao = ocpRow ? cellFromRow(ocpRow, col) : rOcp.texto;
 
       setFicha(
         [
@@ -108,9 +114,9 @@ export default function GeradorPnjsPage() {
           `Idade: ${rIdade.texto}`,
           `Riqueza: ${rRiq.texto}`,
           `Ocupação: ${ocupacao}`,
-          `Aparência: ${carRow[1] ?? ""}`,
-          `Trejeito: ${carRow[2] ?? ""}`,
-          `Segredo: ${carRow[3] ?? ""}`,
+          `Aparência: ${carCells[1] ?? ""}`,
+          `Trejeito: ${carCells[2] ?? ""}`,
+          `Segredo: ${carCells[3] ?? ""}`,
         ].join("\n"),
       );
     } finally {
