@@ -165,14 +165,10 @@ export default function Home() {
       <Description>
         <p>
           Este é um <strong>Escudo do Mestre</strong> feito de fã para fã: uma
-          referência rápida para mestrar sessões de Shadowdark no setting
-          Fantasia.
+          referência rápida para mestrar sessões de Shadowdark RPG.
         </p>
         <p>
-          Regras curadas, bestiário, geradores de mesa e tabelas — pensado para
-          uso no telemóvel durante o jogo. Conteúdo derivado do vault{" "}
-          <strong>shadowdarkrpg-fantasia</strong> (homebrews e compêndio da
-          mesa).
+          Regras curadas, bestiário, geradores de mesa e tabelas.
         </p>
         <p>
           Apoie o RPG oficial: adquira o Livro de Regras Shadowdark e
