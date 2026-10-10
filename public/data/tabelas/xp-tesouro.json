@@ -1,0 +1,39 @@
+{
+  "id": "xp-tesouro",
+  "titulo": "XP por qualidade do tesouro",
+  "categoria": "xp",
+  "subcategoria": "tesouro",
+  "rolagem": "d4",
+  "headers": [
+    "d4",
+    "Qualidade",
+    "XP",
+    "Exemplos"
+  ],
+  "rows": [
+    [
+      "1",
+      "Pobre",
+      "0",
+      "Saco de prata, adaga usada"
+    ],
+    [
+      "2",
+      "Normal",
+      "1",
+      "Saco de ouro, gema, pergaminho"
+    ],
+    [
+      "3",
+      "Fabuloso",
+      "3",
+      "Espada mágica, cota de mitral"
+    ],
+    [
+      "4",
+      "Lendário",
+      "10",
+      "Cajado de Ord, tesouro de dragão"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "teste-encontro",
+  "titulo": "Teste Encontro",
+  "categoria": "encontros",
+  "subcategoria": "encontros",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Encontro"
+    ],
+    [
+      "2–6",
+      "Sem encontro"
+    ]
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "encontro-pantanos",
+  "titulo": "Encontros — PÂNTANOS",
+  "categoria": "encontro",
+  "subcategoria": "pantanos",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "30–31",
+      "Um espantalho sem cabeça segura um lampião aceso em uma pedra"
+    ],
+    [
+      "44–45",
+      "Uma névoa amarela de gás venenoso do pântano paira sobre o brejo"
+    ],
+    [
+      "48–49",
+      "A naga Coagulus Mortus está no topo de uma pilha de ossos podres"
+    ],
+    [
+      "60–61",
+      "Um forte em ruínas abriga um fantasma sussurrante"
+    ],
+    [
+      "62–63",
+      "Blugbort, goblin mago (N), caça lesmas e cogumelos venenosos"
+    ],
+    [
+      "72–73",
+      "Um grick arrasta um cavalo se debatendo para um lago escuro"
+    ],
+    [
+      "74–75",
+      "Um grupo de exploradores rivais cutuca um menir meio submerso"
+    ],
+    [
+      "76–77",
+      "Uma cobra gigante salta de um buraco de lama no chão"
+    ],
+    [
+      "80–81",
+      "O que parece uma poça de água translúcida é um limo cinzento"
+    ],
+    [
+      "82–83",
+      "Velho Barriga Verde, sapo gigante, ajuda na próxima missão dos PJs"
+    ],
+    [
+      "84–85",
+      "Um orc-chefe lidera 3d12 orcs Presa de Cobra em um tumulto"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante cavalga um crocodilo albino"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "O Vagante do Pântano (gorila) oferece um item mágico aleatório"
+    ],
+    [
+      "78–79",
+      "Um inumano de olhos ígneos monta um pesadelo com rastro de fogo"
+    ],
+    [
+      "86–87",
+      "Gorgoth, um sacerdote de Shune (C), sussurra para um obelisco negro"
+    ],
+    [
+      "90–91",
+      "Kobolds Lesma Amarela (2d20) vivem em paz em cabanas de árvores"
+    ]
+  ]
+}

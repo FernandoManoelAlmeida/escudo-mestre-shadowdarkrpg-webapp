@@ -1,0 +1,121 @@
+{
+  "id": "encontro-oceano",
+  "titulo": "Encontros — OCEANO",
+  "categoria": "encontro",
+  "subcategoria": "oceano",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Um enorme redemoinho se forma, ameaçando todos os navios na área"
+    ],
+    [
+      "34–35",
+      "Uma naga óssea serpenteia pela superfície como uma cobra do mar"
+    ],
+    [
+      "46–47",
+      "Uma hidra voraz explode para fora da água"
+    ],
+    [
+      "50–53",
+      "Embaixo de um vulcão no mar, dois elementais (água e fogo) lutam"
+    ],
+    [
+      "58–59",
+      "Uma bruxa do mar fingindo ser uma sereia ferida implora por ajuda"
+    ],
+    [
+      "60–61",
+      "Uma torre branca e flutuante é o lar de um arquimago distraído (N)"
+    ],
+    [
+      "64–65",
+      "Um cardume de 2d20 águas-vivas ataca os PJs"
+    ],
+    [
+      "68–69",
+      "Uma garrafa verde com um pergaminho flutua sobre as ondas"
+    ],
+    [
+      "74–75",
+      "Exploradores rivais inspecionam um mapa a bordo do Merlass"
+    ],
+    [
+      "76–77",
+      "Um navio no horizonte parece flutuar acima da superfície do mar"
+    ],
+    [
+      "78–79",
+      "Uma tempestade faz chover um cardume de piranhas sobre os PJs"
+    ],
+    [
+      "82–83",
+      "Sillenion, o dragão marinho (O), está curioso sobre o “povo da terra”"
+    ],
+    [
+      "84–85",
+      "Uma arraia gigante e incrustada de cracas surge no horizonte"
+    ],
+    [
+      "86–87",
+      "Um golem de pedra de alabastro marcha pelo fundo do mar"
+    ],
+    [
+      "88–89",
+      "Um megalodonte derrotando um gigante da tempestade"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante rema em um bote que oscila sobre as águas"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "54–55",
+      "Um redemoinho de água causa ondulações que rasgam a superfície"
+    ],
+    [
+      "56–57",
+      "Uma onda traiçoeira e colossal ameaça embarcações por 1d4 rodadas"
+    ],
+    [
+      "62–63",
+      "Um gigante da tempestade, puxado por 2 arraias gigantes, quer falar"
+    ],
+    [
+      "90–91",
+      "Uma embarcação comercial, o Leão de Jade, recebe pessoas a bordo"
+    ],
+    [
+      "92–93",
+      "Uma rara floração de algas cintilantes pode acabar com uma maldição"
+    ],
+    [
+      "00",
+      "Uma gaivota voando acima dos PJs derruba um item mágico aleatório"
+    ],
+    [
+      "01",
+      "Um otyugh com 3 mutações (veja a pág. 193) emerge da lama"
+    ],
+    [
+      "02–03",
+      "Thorash, o dragão do pântano (C), espreita nas águas rasas"
+    ],
+    [
+      "36–37",
+      "Densos arbustos de urtigas e espinhos tóxicos crescem aqui"
+    ],
+    [
+      "38–39",
+      "Um grupo de cobras velozes rasteja pelo chão"
+    ]
+  ]
+}

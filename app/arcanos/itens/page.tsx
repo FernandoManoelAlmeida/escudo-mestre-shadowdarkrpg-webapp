@@ -1,0 +1,111 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import styled from "styled-components";
+import { MarkdownBody } from "@/components/catalogo/MarkdownBody";
+import {
+  FilterPanel,
+  FilterSearchInput,
+  FilterResultCount,
+} from "@/components/ui/ListFilters";
+import { SortOrderButtons, SORT_FIELD_NOME } from "@/components/ui/SortOrderButtons";
+import type { SortOrderValue } from "@/lib/sortOrder";
+import { sortCatalogoItens } from "@/lib/itensMagicos";
+
+const Page = styled.div`
+  padding: ${({ theme }) => theme.spacing.lg};
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: calc(
+    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
+  );
+`;
+
+const Title = styled.h1`
+  font-size: ${({ theme }) => theme.typography.fontSize.xl};
+  margin: ${({ theme }) => theme.spacing.sm} 0;
+`;
+
+const Item = styled.article`
+  margin-bottom: ${({ theme }) => theme.spacing.md};
+  padding: ${({ theme }) => theme.spacing.md};
+  background: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  border-radius: 8px;
+`;
+
+type ItemEntry = { nome: string; descricao: string; origem?: string };
+
+type Catalogo = { itens: ItemEntry[] };
+
+export default function ArcanosItensPage() {
+  const [data, setData] = useState<Catalogo | null>(null);
+  const [busca, setBusca] = useState("");
+  const [ordenar, setOrdenar] = useState<SortOrderValue>({
+    por: "nome",
+    sentido: "asc",
+  });
+
+  useEffect(() => {
+    const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    fetch(`${base}/data/catalogo/itens-magicos.json`)
+      .then((r) => r.json())
+      .then(setData);
+  }, []);
+
+  const filtered = useMemo(() => {
+    if (!data?.itens) return [];
+    const q = busca.trim().toLowerCase();
+    const list = q
+      ? data.itens.filter(
+          (it) =>
+            it.nome.toLowerCase().includes(q) ||
+            it.descricao.toLowerCase().includes(q),
+        )
+      : [...data.itens];
+    return sortCatalogoItens(list, ordenar.sentido);
+  }, [data, busca, ordenar.sentido]);
+
+  return (
+    <Page>
+      <p>
+        <Link href="/arcanos">← Arcanos</Link>
+      </p>
+      <Title>Itens mágicos</Title>
+      <p>
+        <Link href="/geradores/itens-magicos-aleatorios">
+          Sortear item mágico aleatório →
+        </Link>
+      </p>
+      <FilterPanel aria-label="Filtros de itens mágicos">
+        <FilterSearchInput
+          type="search"
+          placeholder="Buscar por nome ou texto…"
+          value={busca}
+          onChange={(e) => setBusca(e.target.value)}
+          aria-label="Buscar itens mágicos"
+        />
+        <SortOrderButtons
+          fields={[SORT_FIELD_NOME]}
+          value={ordenar}
+          onChange={setOrdenar}
+        />
+      </FilterPanel>
+      <FilterResultCount>
+        {data?.itens && filtered.length === data.itens.length
+          ? `${filtered.length} itens`
+          : `${filtered.length} de ${data?.itens?.length ?? 0} itens`}
+      </FilterResultCount>
+      {filtered.map((it) => (
+        <Item key={it.nome}>
+          <h2>{it.nome}</h2>
+          {it.origem && it.origem !== "livro" ? (
+            <p style={{ fontSize: "0.85rem", opacity: 0.8 }}>{it.origem}</p>
+          ) : null}
+          <MarkdownBody>{it.descricao}</MarkdownBody>
+        </Item>
+      ))}
+    </Page>
+  );
+}

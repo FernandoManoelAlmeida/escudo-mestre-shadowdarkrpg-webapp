@@ -1,0 +1,89 @@
+{
+  "id": "encontro-florestas",
+  "titulo": "Encontros — FLORESTAS",
+  "categoria": "encontro",
+  "subcategoria": "florestas",
+  "rolagem": "d100",
+  "headers": [
+    "d12",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "12–13",
+      "Uma árvore antiga e podre se quebra e cai na direção dos PJs"
+    ],
+    [
+      "14–15",
+      "Um otyugh faminto se esconde em uma pilha de vegetação podre"
+    ],
+    [
+      "54–55",
+      "Um fio de armadilha aciona e derruba uma rede larga e oculta"
+    ],
+    [
+      "56–57",
+      "Dois ursos pardos flanqueiam os PJs e avançam contra eles"
+    ],
+    [
+      "58–59",
+      "Um enxame de centopeias se contorce para fora do solo enlameado"
+    ],
+    [
+      "60–61",
+      "Uma dríade encara um poço cercado por antigas paredes de pedra"
+    ],
+    [
+      "62–63",
+      "Um leprechaun presunçoso insulta os PJs de um galho alto"
+    ],
+    [
+      "64–65",
+      "Um monte cambaleante colide com a lateral de uma pequena ravina"
+    ],
+    [
+      "66–67",
+      "Uma enorme cabeça de pedra meio enterrada espreita da terra"
+    ],
+    [
+      "74–75",
+      "Hrugin, o troll, arrasta 1d4 exploradores rivais feridos e amarrados"
+    ],
+    [
+      "76–77",
+      "Rosas carmesim brotam ao redor de uma estátua desgastada de Gede"
+    ],
+    [
+      "78–79",
+      "Um ogro tenta arrancar uma pequena árvore para usar como clava"
+    ],
+    [
+      "88–89",
+      "Um dragão da floresta irritável move-se preguiçosamente pela mata"
+    ],
+    [
+      "90–91",
+      "Um acampamento de 2d20 berserks se dispõe a trocar mercadorias"
+    ],
+    [
+      "92–93",
+      "Uma capela de pedra abandonada oferece um abrigo seguro"
+    ],
+    [
+      "94–95",
+      "Um orc-chefe discursa ferozmente para 2d12 orcs aplaudindo"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante surge de um tronco de árvore apodrecido"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "Um unicórnio cintilante surge sob um raio de sol"
+    ]
+  ]
+}

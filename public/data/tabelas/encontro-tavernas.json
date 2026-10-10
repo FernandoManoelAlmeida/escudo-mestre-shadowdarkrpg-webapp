@@ -1,0 +1,177 @@
+{
+  "id": "encontro-tavernas",
+  "titulo": "Encontros — TAVERNAS",
+  "categoria": "encontro",
+  "subcategoria": "tavernas",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Um homem encapuzado (vampiro) na porta pede para ser convidado"
+    ],
+    [
+      "10–11",
+      "Um PJ é erroneamente anunciado como o próximo lutador da arena"
+    ],
+    [
+      "20–21",
+      "Um meio-orc ruge e ergue uma mesa grande sobre a própria cabeça"
+    ],
+    [
+      "24–25",
+      "Um grupo de exploradores rivais diz aos PJs que esta é a taverna deles"
+    ],
+    [
+      "36–37",
+      "Um marinheiro joga um outro na mesa dos PJs, derramando bebidas"
+    ],
+    [
+      "44–45",
+      "Um cliente encapuzado quebra um frasco de óleo em chamas e corre"
+    ],
+    [
+      "48–49",
+      "Atticus Gnarl, um halfling mago, encara um dos PJs sem piscar"
+    ],
+    [
+      "54–55",
+      "Um halfling tenta entrelaçar os cadarços dos PJs furtivamente"
+    ],
+    [
+      "56–57",
+      "Um homem agarra um PJ e grita: \"Você sabe o que fez!\""
+    ],
+    [
+      "62–63",
+      "Exploradores rivais sussurram sobre um livro e apontam passagens"
+    ],
+    [
+      "68–69",
+      "Um meio-orc entorna uma caneca inteira e soca o garçom"
+    ],
+    [
+      "70–71",
+      "Uma mulher vestindo couro azul-escuro toma chá e observa o local"
+    ],
+    [
+      "72–73",
+      "Uma figura de capuz pula o balcão e tenta pegar a caixa de moedas"
+    ],
+    [
+      "74–75",
+      "Exploradores rivais tentam repassar um mapa que ninguém decifra"
+    ],
+    [
+      "76–77",
+      "Todos evitam o alçapão de pedra acorrentado no chão"
+    ],
+    [
+      "78–79",
+      "Quatro plebeus cochichando param e encaram os transeuntes"
+    ],
+    [
+      "82–83",
+      "Um simpático membro da Guarda compartilha um rumor interno"
+    ],
+    [
+      "84–85",
+      "Violet Dorn, uma barda de grande renome, entra na taverna"
+    ],
+    [
+      "86–87",
+      "Um sacerdote, aos prantos, tropeça e desaba sobre um dos PJs"
+    ],
+    [
+      "88–89",
+      "Ao som do apito da Guarda por perto, 1d6 clientes saem depressa"
+    ],
+    [
+      "90–91",
+      "Um cliente endinheirado convida os PJs para uma cabine privada"
+    ],
+    [
+      "92–93",
+      "O nariz do lobo de bronze traz boa sorte (5% para ficha de sorte)"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante possui uma garrafa de Van Dinkle (pág. 139)"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "46–47",
+      "Um anão de tamancos desafia um PJ em uma competição de dança"
+    ],
+    [
+      "50–53",
+      "Exploradores rivais desafiam os PJs em uma competição de bebidas"
+    ],
+    [
+      "58–59",
+      "Lançadores de dardos bêbados mal conseguem dizer qual lado é qual"
+    ],
+    [
+      "60–61",
+      "Uma mulher tira habilmente o saco de moedas do cinto de um cliente"
+    ],
+    [
+      "66–67",
+      "A pintura de uma paisagem muda sutilmente quando ninguém olha"
+    ],
+    [
+      "80–81",
+      "Uma mulher pega uma cadeira e a quebra na cabeça de um homem"
+    ],
+    [
+      "94–95",
+      "Cliente discreto entrega um bilhete: “Você está cercado por espiões.”"
+    ],
+    [
+      "00",
+      "Um dado em um canto empoeirado é o Cubo da Perfeição de Brak"
+    ],
+    [
+      "01",
+      "Um lich distraído se teleporta para a câmara enquanto murmura"
+    ],
+    [
+      "20–21",
+      "Um inumano lidera uma patrulha de 3d12 esqueletos desajeitados"
+    ],
+    [
+      "22–23",
+      "Uma pilha de ossos finos e longos se funde em uma naga óssea"
+    ],
+    [
+      "28–29",
+      "Um cubo gelatinoso contém 2d6 esqueletos tentando escapar"
+    ],
+    [
+      "30–31",
+      "Um fantasma enfurecido precisa estar Perto de seus restos mortais"
+    ],
+    [
+      "36–37",
+      "Um vento uivante de espíritos rouba todas as fichas de sorte"
+    ],
+    [
+      "38–39",
+      "Um oni exige saber onde sua espada roubada está escondida"
+    ],
+    [
+      "42–43",
+      "A alma de Hirael, o elfo, está presa dentro de uma pintura mofada"
+    ],
+    [
+      "44–45",
+      "Uma área de 6 m de escuridão sombria extingue todas as luzes"
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "tesouro-encontro-po",
+  "titulo": "Ouro sugerido por encontro",
+  "categoria": "tesouros",
+  "subcategoria": "guia",
+  "rolagem": "d6",
+  "headers": [
+    "Nível médio",
+    "PO sugeridos"
+  ],
+  "rows": [
+    [
+      "0–3",
+      "~20 PO"
+    ],
+    [
+      "4–6",
+      "~50 PO"
+    ],
+    [
+      "7–9",
+      "~80 PO"
+    ],
+    [
+      "Regra geral",
+      "~10 PO × nível médio"
+    ]
+  ]
+}

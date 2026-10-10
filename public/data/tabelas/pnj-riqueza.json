@@ -1,0 +1,29 @@
+{
+  "id": "pnj-riqueza",
+  "titulo": "Riqueza do PNJ",
+  "categoria": "pnjs",
+  "subcategoria": "riqueza",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Riqueza"
+  ],
+  "rows": [
+    [
+      "1",
+      "Pobre"
+    ],
+    [
+      "2–3",
+      "Padrão"
+    ],
+    [
+      "4–5",
+      "Rico"
+    ],
+    [
+      "6",
+      "Extravagante"
+    ]
+  ]
+}

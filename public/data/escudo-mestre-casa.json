@@ -1,0 +1,1447 @@
+{
+  "meta": {
+    "title": "Ordem Paranormal RPG — Escudo do Mestre da Casa",
+    "description": "Documento de referência unificado das **regras mecânicas** do **Livro base** *Ordem Paranormal RPG* e do **Suplemento** *Sobrevivendo ao Horror*, com **regras da casa** já integradas. O Livro base é a referência principal; o Suplemento complementa onde indicado. As referências a regras oficiais são feitas diretamente pelas páginas indicadas em cada seção (Livro base e Suplemento). **Regras em uso neste documento:** **Regra base (Livro base):** crítico automático **apenas em 20 natural** no d20. **Regras da casa / opcionais:** Pontos de Determinação (PD) no lugar de PE/SAN; progressão — ao iniciar a campanha, o Mestre escolhe **NEX e Experiência** (usa-se **Nível**, 1 a 20; Nível 1 = 5% NEX) OU **Evolução por Patentes** (uma não funciona em paralelo com a outra); Coreografia de Luta; Conjuração complexa (falha = perde o dobro de PD; extrapolar limite); Ferimentos debilitantes; desconsiderar resistências de criaturas paranormais (avaliar caso a caso). **Dano Médio** opcional por demanda (jogadores ou Mestre podem usar de teste a teste quando quiserem). **Interlúdio com necessidades básicas** (Água, Comida, Dormir) apenas quando os agentes estiverem em **locais isolados e sem acesso aos recursos da Ordem**. Para lore e história do universo, consulte os livros oficiais da Jambô Editora. ---",
+    "sources": [
+      "Livro base Ordem Paranormal RPG",
+      "Suplemento Sobrevivendo ao Horror"
+    ]
+  },
+  "index": [
+    {
+      "id": "1",
+      "title": "Mecânica básica e termos",
+      "anchor": "1-mecanica-basica-e-termos"
+    },
+    {
+      "id": "2",
+      "title": "Criação de personagem",
+      "anchor": "2-criacao-de-personagem"
+    },
+    {
+      "id": "3",
+      "title": "Perícias",
+      "anchor": "3-pericias"
+    },
+    {
+      "id": "4",
+      "title": "Equipamento",
+      "anchor": "4-equipamento"
+    },
+    {
+      "id": "5",
+      "title": "Regras de jogo",
+      "anchor": "5-regras-de-jogo"
+    },
+    {
+      "id": "6",
+      "title": "O Outro Lado (regras)",
+      "anchor": "6-o-outro-lado-regras"
+    },
+    {
+      "id": "7",
+      "title": "Mestre e arbitragem",
+      "anchor": "7-mestre-e-arbitragem"
+    },
+    {
+      "id": "8",
+      "title": "Ameaças e combate",
+      "anchor": "8-ameacas-e-combate"
+    },
+    {
+      "id": "9",
+      "title": "Conteúdos do Suplemento (origens, classes, regras novas)",
+      "anchor": "9-conteudos-do-suplemento-origens-classes-regras-novas"
+    },
+    {
+      "id": "10",
+      "title": "Regras opcionais e variantes",
+      "anchor": "10-regras-opcionais-e-variantes"
+    },
+    {
+      "id": "11",
+      "title": "Regras da Casa (homebrew)",
+      "anchor": "11-regras-da-casa-homebrew"
+    },
+    {
+      "id": "12",
+      "title": "Resumo das Regras",
+      "anchor": "12-resumo-das-regras"
+    }
+  ],
+  "sections": [
+    {
+      "id": "1",
+      "title": "Mecânica básica e termos",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "Testes",
+          "content": "- Quando uma ação é **perigosa** ou tem **chance de falha**, o mestre pode pedir um **teste**.\n- **Passos:**\n  1. Mestre anuncia a **perícia** (ou atributo) e a **DT** (dificuldade do teste). Pode manter a DT em segredo.\n  2. Jogador rola **1d20 por ponto no atributo-base** da perícia e escolhe o **maior** resultado. Se for **treinado** na perícia, soma **+5** ao resultado.\n  3. Se o valor declarado for **≥ DT**, sucesso; caso contrário, falha.\n\n**Fórmulas:**\n\n- **Teste de atributo:** role 1d20 por ponto no atributo vs. DT. Atributo 0: role 2d20 e use o **pior**.\n- **Teste de perícia:** 1d20 por ponto no atributo-base da perícia (escolha o maior) **+ bônus da perícia** vs. DT.\n\n*(Suplemento: atributos podem ficar negativos; ver § 9.2.)*"
+        },
+        {
+          "id": "1.2",
+          "title": "Termos importantes",
+          "tableRef": "termos_importantes"
+        },
+        {
+          "id": "1.3",
+          "title": "Atributos",
+          "content": "- **Agilidade (AGI):** coordenação, reflexos, destreza. Base de Acrobacia, Furtividade, Iniciativa, Crime, Pilotagem, Pontaria, Reflexos.\n- **Força (FOR):** potência muscular. Base de Atletismo, Luta; soma em dano corpo a corpo e arremesso.\n- **Intelecto (INT):** raciocínio, memória, educação. Base de várias perícias; define perícias treinadas adicionais e rituais que pode aprender.\n- **Presença (PRE):** sentidos, vontade, sociais. Base de Diplomacia, Enganação, Intimidação, Intuição, Percepção, Religião, Vontade; concede PD por **Nível** (ou por patente, conforme a progressão escolhida para a campanha).\n- **Vigor (VIG):** saúde, resistência. Base de Fortitude; concede PV por **Nível**.\n\n---"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Criação de personagem",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "Passo a passo (Livro base)",
+          "content": "1. **Conceito** — frase que resume quem é o personagem.\n2. **Atributos** — todos começam em 1. **4 pontos** para distribuir (Combatente, Especialista, Ocultista); **Sobrevivente: 3 pontos**. Pode reduzir **um** atributo a 0 para ganhar +1 ponto. **Máximo inicial por atributo: 3.**\n3. **Origem** — duas perícias treinadas + um poder da origem.\n4. **Classe** — Combatente, Especialista, Ocultista ou **Sobrevivente**. Quem nunca teve contato com o paranormal começa como Sobrevivente (**Nível 0**); os demais começam no **Nível 1** em uma das três classes do Livro base (ver § 7.5 e § 9.3).\n5. **Perícias** — definidas por origem, classe e Intelecto (7 + INT de treinadas iniciais; Sobrevivente: 1 + INT).\n6. **Revisar ficha** — PV, PD, equipamento (recebido na primeira missão). Sobrevivente: Nível 0, evolução por estágios; demais classes: Nível 1."
+        },
+        {
+          "id": "2.2",
+          "title": "Testes e atributo 0",
+          "content": "- Em teste: **atributo ≥ 1** → role Xd20, use o **melhor**.\n- **Atributo 0** → role 2d20 e use o **pior**."
+        },
+        {
+          "id": "2.3",
+          "title": "NEX e progressão de personagem",
+          "content": "> **Ao iniciar uma nova campanha, o Mestre escolhe entre Progressão por \"NEX e Experiência\" OU por \"Patentes\". Uma não funciona em paralelo com a outra.**\n\n**Limite de PD por turno** e **recuperação** de PD conforme a progressão escolhida para a campanha (NEX e Experiência, § 10.1, ou Patentes, § 10.3).\n\n**Se a campanha usar NEX e Experiência:** **Nível** sobe por missão concluída (**Nível 1** = 5% NEX para efeitos; **Nível 20** = 99% NEX). Cada novo nível concede PV, PD e limite de PD por turno (= Nível do personagem; § 6.2).\n\n**Se a campanha usar Evolução por Patentes:** Evolução por Pontos de Prestígio e patente; limite de PD e recuperação por patente — ver § 10.3."
+        },
+        {
+          "id": "2.4",
+          "title": "Origens",
+          "content": "Na criação do personagem, a **origem** define o passado e parte das capacidades iniciais. Cada origem concede **duas perícias treinadas** e **um poder**. Lista completa: **Livro base p.16–21**; **novas origens: Suplemento p.7–13**."
+        },
+        {
+          "id": "2.5",
+          "title": "Classes",
+          "content": "Quatro opções: **Combatente, Especialista, Ocultista** (Livro base) e **Sobrevivente** (Suplemento p.30–32). Quem nunca teve contato com o paranormal usa a classe **Sobrevivente** (Nível 0); as demais classes começam no **Nível 1**. Regras completas do Sobrevivente: § 9.3.\n\n---"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Perícias",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "Bônus por grau de treinamento",
+          "tableRef": "bonus_por_grau_de_treinamento"
+        },
+        {
+          "id": "3.2",
+          "title": "Regras gerais",
+          "content": "- **Teste de perícia:** role 1d20 por ponto no **atributo-base** da perícia, escolha o maior, **some o bônus da perícia**; compare com a DT.\n- **Somente treinada:** algumas perícias só podem ser usadas se você for treinado (ex.: Pilotagem, Ocultismo).\n- **Carga:** perícias marcadas com \"carga\" sofrem a penalidade de carga total.\n- **Kit:** se a perícia exige kit e você não tiver, –5 no teste."
+        },
+        {
+          "id": "3.3",
+          "title": "Tabela de perícias",
+          "content": "*(Descrições completas de cada perícia no **Livro base** Cap. 2.)*\n\n---",
+          "tableRef": "tabela_de_pericias"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Equipamento",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "Patente e limite de itens",
+          "content": "A **patente** define o **limite de crédito** e o **número máximo de itens por categoria** (I a IV). *(Sobrevivente não usa patentes; ver § 9.3.)*\n\n**Tabela — Patente e itens por categoria (resumo; tabela completa Livro base Tabela 3.1)**",
+          "tableRef": "patente_e_limite_de_itens"
+        },
+        {
+          "id": "4.2",
+          "title": "Capacidade de carga",
+          "content": "- **Penalidade de carga:** quando a carga total ultrapassa o permitido, aplica-se penalidade em testes que exijam liberdade de movimento.\n- **Capacidade:** número de **espaços** conforme **Força**:\n\n*Itens: 1 espaço cada (salvo exceções; 2 grandes, 5 muito pesados, 10 carregar pessoa).*",
+          "tableRef": "capacidade_de_carga"
+        },
+        {
+          "id": "4.3",
+          "title": "Armas",
+          "content": "- **Corpo a corpo / arremesso:** dano = **dano da arma + Força**. **Armas ágeis:** usar AGI em vez de FOR.\n- **Disparo / fogo:** dano = **dano da arma** (sem Força). O dano é resolvido rolando os dados da arma (e bônus).\n- **Alcance:** curto, médio, longo (ataque além do alcance pode sofrer –5).\n- **Crítico:** margem (18–20) e multiplicador (x2, x3, x4). Apenas **20 natural** no d20 é **acerto automático**, independente da Defesa. Rolagem 18 ou 19 na margem de ameaça aplica o multiplicador de dano, mas o ataque precisa superar a Defesa normalmente. Acerto crítico → multiplica **apenas os dados** de dano pelo multiplicador; bônus numéricos não multiplicam.\n- **Armas automáticas:** rajada = -d20 no teste, +1 dado de dano do mesmo tipo.\n- **Coronhada:** arma de fogo como corpo a corpo (1d4 impacto leve, 1d6 duas mãos).\n\n*Opcionalmente, por demanda: em qualquer teste de dano, jogadores ou Mestre podem optar por usar **dano médio** naquele momento (valor médio do dado + bônus; crítico multiplica só o dado médio) — ver § 11.1.*"
+        },
+        {
+          "id": "4.4",
+          "title": "Proteções",
+          "content": "Reduzem o dano recebido (RD). Podem limitar deslocamento ou impor penalidade em testes (ex.: proteção pesada). Lista completa de proteções (nome, categoria, RD, penalidades): **Livro base p.62**; novos itens: **Suplemento p.37–45**."
+        },
+        {
+          "id": "4.5",
+          "title": "Equipamento geral e munições",
+          "content": "Itens cat. 0 a IV (limite por patente na tabela § 4.1). Espaços: 1 por item (salvo exceções; 2 grandes, 5 muito pesados, 10 carregar pessoa). Saque Rápido (Combatente): recarregar como ação livre 1/rodada.\n\n**Tabela — Munições (por pacote)**\n\n---",
+          "tableRef": "equipamento_geral_e_municoes"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Regras de jogo",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "Tipos de teste",
+          "content": "- **Teste de atributo:** 1d20 por ponto no atributo vs. DT (atributo 0: 2d20, use o pior).\n- **Teste de perícia:** 1d20 por ponto no atributo-base + bônus da perícia vs. DT.\n- **Teste comum:** DT fixa pelo mestre.\n- **Teste oposto:** todos rolam; maior resultado vence. Empate → nova rolagem."
+        },
+        {
+          "id": "5.2",
+          "title": "Tabela de dificuldades (DT)",
+          "tableRef": "tabela_de_dificuldades_dt"
+        },
+        {
+          "id": "5.3",
+          "title": "Regras adicionais de testes",
+          "content": "- **Sucesso automático:** resultado **20** no d20 = sucesso automático.\n- **Circunstâncias:** +d20 ou -d20 (ou +d20O / -d20O se extremo).\n- **Novas tentativas:** em geral não se repete; mestre pode permitir com custo/penalidade.\n- **Ajuda:** líder faz o teste; cada ajudante vs. DT 10; cada sucesso +1 ao líder (+1 por cada 10 acima da DT).\n- **Escolher 10 / Escolher 20:** sem pressão; 10 ou 20 fixo (Escolher 20: tempo 20× maior; não conta como 20 natural).\n- **Testes de resistência:** Fortitude, Reflexos, Vontade. DT = 10 + limite de PD + atributo (conforme efeito)."
+        },
+        {
+          "id": "5.4",
+          "title": "Testes estendidos",
+          "content": "- Objetivo: acumular **X sucessos** antes de **3 falhas**. DT pelo mestre. Ajuda: mesma regra; perícia usada para ajudar não pode ser reutilizada no mesmo teste estendido.",
+          "tableRef": "testes_estendidos"
+        },
+        {
+          "id": "5.5",
+          "title": "Uso de habilidades",
+          "content": "- **Ação:** conforme descrição da habilidade; se não constar, ação livre.\n- **Custo de PD:** gasta mesmo se falhar. Limite de PD por turno conforme a progressão escolhida (NEX e Experiência ou Patentes).\n- **Reduções de custo:** não cumulativas; mínimo 1 PD por uso.\n- **Bônus em teste:** usar **antes** de rolar. Rolar de novo: antes do mestre declarar resultado final.\n- **DT de resistência:** em geral **10 + limite de PD + atributo**."
+        },
+        {
+          "id": "5.6",
+          "title": "Investigação",
+          "content": "- **Cena de investigação:** rodadas abstratas; cada personagem uma ação por rodada.\n- **Ações:** Procurar pistas; Facilitar investigação (DT 15–25, +2 no próximo \"procurar pistas\" de cada aliado); Usar habilidades/itens; Ajuda.\n- **Urgência:** rodadas máximas antes do evento terminar. A cada 3 falhas em \"procurar pistas\", mestre pode reduzir 1 rodada.\n- **Ficha de investigação:** resumo do caso, objetivo, perguntas, pistas. Só o que estiver na ficha vale para Conclusão do Caso.\n\n*(Suplemento: novas ações Busca obstinada, Recapitular, Compartilhar; eventos de investigação; investigação livre — § 9.4–9.5.)*",
+          "tableRef": "investigacao"
+        },
+        {
+          "id": "5.7",
+          "title": "Combate",
+          "content": "**Iniciativa:** teste de Iniciativa; ordem do maior para o menor. Surpreendido = desprevenido e não age na primeira rodada.\n\n**Defesa:** DT do ataque = **10 + Agilidade** (+ modificadores).\n\n**Rodada e turno:** 1 ação padrão + 1 ação de movimento (em qualquer ordem). Trocar padrão por movimento = 2 movimentos. Abrir mão das duas = 1 ação completa. Ações livres e reações não consomem.\n\n**Ações padrão:** Agredir (corpo a corpo ou à distância; manobras); Atropelar (conforme **Livro base**).\n\n**Manobras:** teste de manobra **oposto** ao Luta do alvo. Agarrar, Derrubar, Desarmar, Empurrar (regras no livro).\n\n**Dano:** corpo a corpo/arremesso = arma + Força; disparo = arma. Tipos: balístico, corte, eletricidade, fogo, frio, impacto, mental, paranormal (subtipos), perfuração, químico. Resistências reduzem dano (salvo regra de desconsiderar resistências de criaturas paranormais, § 8.1). Crítico: **acerto automático apenas em 20 natural** no d20; margem 18–19 aplica multiplicador de dano mas exige superar a Defesa. Só dados de dano multiplicados. *Opcionalmente, por demanda: dano médio naquele teste (ver § 11.1).*\n\n**Ataque especial nerfado (homebrew):** Na classe Combatente o bônus para teste de ataque se torna +2, +4 e +6, conforme sobe NEX (Nível), a rolagem de dano permanece na original. Todas as defesas das ameaças diminuem em 3.\n\n**Coreografia de Luta:** no combate (narrativo ou tático), o jogador pode descrever até **três** movimentos/golpes em sequência (mestre pode responder; jogador pode fazer segunda e **terceira (e última)** descrição). **Dois golpes/movimentos** = ação **complexa**: –d20 no teste de ataque; se acertar, **dano dobrado** (dos dados ou do dano médio, se estiver em uso por demanda). **Três golpes/movimentos** = ação **extrema**: –d20d20 no teste; se acertar, **dano triplicado**. Pode trocar dano adicional por **manobra de combate** (agarrar, derrubar, empurrar, desarmar, quebrar) ou movimento equivalente. Pode ser usada quando o personagem **é atacado** (jogador descreve tentativa de evitar; vantagem = reduz chance de ser atingido; risco = sofrer mais dano se inimigo acertar).\n\n**Ferimento debilitante:** quando o personagem **falha** em **Fortitude** ao sofrer **dano massivo** (Livro base), em vez de ir a 0 PV sofre **ferimento debilitante**. **Mestre escolhe** um atributo que condiz com o ferimento **ou** rola **1d6**: 1–5 = atributo afetado (1 AGI, 2 FOR, 3 INT, 4 PRE, 5 VIG); 6 = ferimento superficial (nenhum). Efeito: -d20 em testes do atributo; se **Vigor**, PV máximos –1 por **Nível** (ou por patente). Múltiplos ferimentos cumulativos. **Curar:** treinado em **Medicina**, 1 ação de interlúdio, teste **Medicina (DT 20)**; sucesso = recupera **um** ferimento na próxima ação **dormir**. Ferimentos em geral deixam cicatrizes permanentes.\n\nCombate narrativo e distâncias em zonas: § 10.2."
+        },
+        {
+          "id": "5.8",
+          "title": "Interlúdio",
+          "content": "- Cena de **descanso** entre missões. Cada personagem **uma** atividade principal (ou mais, conforme mestre).\n\n**Quando os agentes estiverem em locais isolados e sem acesso aos recursos da Ordem**, aplicam-se as regras de **necessidades básicas** (Água, Comida, Dormir com tipos de sono) — ver § 11.2. Em situações com acesso à Ordem ou recursos urbanos, usa-se a tabela acima. Vida além da Ordem / folgas: § 9.9 (tabela neste documento).\n\n---",
+          "tableRef": "interludio"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "O Outro Lado (regras)",
+      "subsections": [
+        {
+          "id": "6.1",
+          "title": "Elementos e opressão",
+          "content": "**Elementos:** Sangue, Morte, Conhecimento, Energia, Medo. Mesmo elemento não é eficaz contra si. **Elemento opressor** é especialmente eficaz contra o oprimido.",
+          "tableRef": "elementos_e_opressao"
+        },
+        {
+          "id": "6.2",
+          "title": "Nível e limite de PD",
+          "content": "Nível máximo 20 (equivalente a 99% NEX na regra NEX e Experiência). **Limite de PD por turno** = **Nível** do personagem (quando a campanha usa NEX e Experiência). Se usar **Evolução por Patentes**, ver § 10.3. Sempre é possível usar pelo menos uma habilidade no custo mínimo por turno."
+        },
+        {
+          "id": "6.3",
+          "title": "Pontos de Determinação (PD)",
+          "content": "**PD** representa energia para habilidades e resiliência mental. Dano mental reduz PD; gastos de habilidades reduzem PD.\n\n- **Perturbado:** primeira vez na cena em que fica com menos da metade da PD total → efeito de insanidade/medo (impacto na interpretação; tabela de efeitos de medo nesta seção).\n- **PD 0 — Efeitos de medo:** quando a **PD** é reduzida a **0** por dano mental (ou o personagem sofre dano mental já com PD 0), aplica-se a regra **Efeitos de Medo** (Suplemento): rola-se **2d10** na tabela abaixo. A cada efeito adicional na mesma cena, soma **+1** na rolagem (2ª vez: 2d10+1; 3ª: 2d10+2…). Se rolar um efeito que já possui, recebe o **próximo** efeito na tabela. Efeitos duram até recuperar pelo menos 1 PD (salvo indicação contrária).\n\n**Tabela — Efeitos de medo (2d10)**\n\n*(Efeito já possuído → próximo na tabela.)*\n\n**Ações contra o medo:**  \n- **Acalmar:** treinado em Diplomacia, Profissão (psicólogo) ou Religião; ação padrão; teste para personagem adjacente com PD 0; sucesso = ele recupera 1 PD. DT aumenta +5 por cada vez que já foi acalmado na cena.  \n- **Se entregar ao medo:** personagem com PD 0 pode escolher se entregar; rola **segundo** efeito de medo com **+5** na rolagem (2d10+5, ou +6 na segunda vez que cai a 0 na cena, etc.). Interpretar os dois efeitos de forma exagerada. Na **rodada seguinte** recupera **1d4 PD por Nível** (ou por patente) e remove paralisia/inconsciência. Só pode se entregar ao medo **1 vez por sessão**.\n\nDormir/relaxar em interlúdio recupera PD conforme § 5.8.\n\n**Dano mental de criaturas:** reduzir cada dado em **um passo** e **dividir a quantidade de dados pela metade** (arred. para cima). Ex.: 9d8 → 5d6.\n\n**Medo em jogo:** reduzir cada dado de dano mental das visões em **um passo**. Tabela de situações e DT de Vontade em § 9.6 (abaixo).\n\n**\"O Custo do Paranormal\":** falha no teste de Ocultismo → perda vira perda de PD; em caso de falha, gasta o **dobro** de PD. **Cicatrizes Psicológicas** (Suplemento): +d20 em testes de Vontade contra efeitos de medo.",
+          "tableRef": "pontos_de_determinacao_pd"
+        },
+        {
+          "id": "6.4",
+          "title": "Poderes paranormais e rituais",
+          "content": "Ocultistas aprendem rituais (número por INT e **Nível**). Cada ritual tem círculo, **custo em PD**, execução e efeito. Itens amaldiçoados: Ocultismo DT 20. Lista: **Livro base Cap. 5**; novos rituais: **Suplemento p.48–56**.\n\n**Conjuração complexa** (ritual em 3 rodadas): conjurador fica desprevenido; manter concentração (teste de Vontade ao sofrer dano e ao final de cada rodada em condição ruim/terrível). 1ª rodada — O símbolo (opcional: materiais de elemento → –d20 no teste, bônus do elemento). 2ª rodada — Componentes (consumir = +d20). Acelerar etapa 2 e 3 em conjunto = –d20 no teste. 3ª rodada — Invocar: decisões do ritual em PD; teste de Ocultismo para conjurar; **sucesso** = ritual se manifesta; **falha** = **perde o dobro de PD**. **Extrapolar o limite:** somar **Presença** ao limite de PD para ter acesso a versões aprimoradas dos rituais. **Conjurar ritual não estudado:** em falha, rola **1d8** para desastre paranormal (tabela abaixo). *(Detalhes e opções de aprendizado de rituais em § 10.4.)*\n\n**Tabela — Desastres paranormais (1d8)**\n\n---",
+          "tableRef": "poderes_paranormais_e_rituais"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Mestre e arbitragem",
+      "subsections": [
+        {
+          "id": "7.1",
+          "title": "Resolução de situações",
+          "content": "- Testes simples (perícia vs. DT) ou opostos. Teste estendido para situações longas.\n- Modificadores: +d20 ou -d20; bônus por ideia costuma ser uma vez por situação."
+        },
+        {
+          "id": "7.2",
+          "title": "Coerência e \"Sim, e…\"",
+          "content": "- Aplicar regras de forma parecida em situações parecidas. Aceitar sugestões dos jogadores e somar à narrativa; dizer \"não\" quando prejudicar outro jogador ou limites do grupo."
+        },
+        {
+          "id": "7.3",
+          "title": "Regras opcionais e regras da casa",
+          "content": "Regras opcionais: **Livro base p.171** e Suplemento; **regras da casa** combinadas pelo grupo e anotadas (ver § 10 e § 11).\n\n#### 7.4 NPCs aliados (Livro base p.170–171)\n\n#### 7.5 Sobrevivente (Nível 0) — substitui a mecânica de Mundano\n\nPersonagens que nunca tiveram contato com o paranormal começam como **Sobrevivente**, **Nível 0**, evoluindo por **estágios** (não por Nível). Regras completas, ficha e treinamento especial (passar a Combatente/Especialista/Ocultista após a primeira missão): **§ 9.3**.",
+          "tableRef": "regras_opcionais_e_regras_da_casa"
+        },
+        {
+          "id": "7.6",
+          "title": "Categorias de atitude (NPC)",
+          "content": "---",
+          "tableRef": "categorias_de_atitude_npc"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Ameaças e combate",
+      "subsections": [
+        {
+          "id": "8.1",
+          "title": "Construção de combates",
+          "content": "- **VD:** soma dos VD das ameaças; ajustar ao **Nível** do grupo.\n- Fichas: atributos, Defesa, PV, resistências, imunidades, habilidades, ações. Presença Perturbadora: DT e dano mental; **Nível** mínimo para imunidade.\n- **Resistências de criaturas paranormais:** para combate mais letal, **desconsiderar todas as resistências a dano** das criaturas paranormais. O mestre avalia **caso a caso** quando a criatura parecer fraca demais.\n- Perigos: armadilhas, ambiente; DT e dano/efeito conforme descrição."
+        },
+        {
+          "id": "8.2",
+          "title": "Estrutura de ficha de ameaça",
+          "content": "Nome, VD, elementos, tamanho, tipo; Presença Perturbadora; Perícias (Iniciativa, Defesa, ataques, resistências); DEFESA, PV, resistências/imunidades; Atributos; Deslocamento, ações, habilidades especiais; Enigma de Medo (opcional). Tabelas: **Livro base Cap. 7**.\n\n---"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Conteúdos do Suplemento (origens, classes, regras novas)",
+      "subsections": [
+        {
+          "id": "9.1",
+          "title": "Novas origens e opções de classe",
+          "content": "- **Origens:** 20 novas origens: **Suplemento p.7–13**, cada uma com duas perícias treinadas e um poder.\n- **Combatente, Especialista, Ocultista:** novas trilhas e poderes: **Suplemento p.14–29**. Parapsicólogo (Ocultista) e outras trilhas: Suplemento p.26–29."
+        },
+        {
+          "id": "9.2",
+          "title": "Atributos negativos (Suplemento)",
+          "content": "Mecânicas do Suplemento podem reduzir atributo abaixo de 0. **Teste com atributo negativo:** como atributo 0 (2d20, pior); **por cada ponto negativo** rola **+1d20** adicional e usa o **pior**. Ex.: atributo –2 → 4d20, menor."
+        },
+        {
+          "id": "9.3",
+          "title": "Classe Sobrevivente (Suplemento p.30–32)",
+          "content": "Classe usada para **personagens que nunca tiveram contato com o paranormal** (substitui a mecânica de Mundano do Livro base). Pessoas comuns em cenários de terror; **não é equilibrada** com Combatente, Especialista ou Ocultista.\n\n**Criação:** Conceito; atributos (todos 1, **3 pontos** para distribuir; pode reduzir um a 0 para +1); origem; classe Sobrevivente. **Nível 0**. Evolução por **estágios** (sobe um estágio no fim de cada missão).\n\n**Limite de PD:** sempre **1** por turno. Equipamento: sem patentes; 1 item cat. I + itens cat. 0 pela origem.\n\n**Estágios:** 1 Empenho; 2 Trilha (1º poder); 3 Aumento de atributo; 4 Trilha (2º poder); 5 Cicatrizado. Habilidades: Empenho (1 PD → +2 em teste de perícia); Trilha (Durão, Esperto, Esotérico); Aumento de atributo (est. 3); Cicatrizado (est. 5: escolhe tipo de perigo paranormal, -d20 em resistência contra ele; 1/sessão, reação: sacrificar 1 PV permanente para ignorar dano mental/gasto PD, ou 1 PD permanente para reduzir dano físico à metade).\n\n**Treinamento especial:** por história (ex.: recrutado pela Ordem), pode deixar de subir como sobrevivente e passar ao **Nível 1** de Combatente, Especialista ou Ocultista, recebendo benefícios da classe. A partir daí sobe por Nível nessa classe.",
+          "tableRef": "classe_sobrevivente_suplemento_p3032"
+        },
+        {
+          "id": "9.4",
+          "title": "Novas ações de investigação (Suplemento)",
+          "content": "- **Busca obstinada:** como procurar pistas, com **+d20**. Cada uso na mesma cena: perde 1d4 PD (1ª), 2d4 (2ª), 3d4 (3ª), etc.\n- **Recapitular:** jogador recapitula em voz alta; se coerente, teste **Intelecto (DT 15)**. Sucesso = nova pista. Um sucesso por cena.\n- **Compartilhar:** jogador explica pista a outro; interlocutor pode fazer Intelecto (DT 15) como ação livre; sucesso = mestre destaca informações mais relevantes. Um sucesso por cena."
+        },
+        {
+          "id": "9.5",
+          "title": "Eventos de investigação e investigação livre (Suplemento)",
+          "content": "- **Investigação com regras completas:** rodadas, turnos, urgência (Livro base).\n- **Investigação livre:** mestre narra sem rodadas/turnos; pede testes quando ação tiver resultado incerto. Usar regras completas em momentos de **urgência concreta**.\n- **Eventos:** por rodada ou situação: (1) redução de urgência (a cada 3 falhas em procurar pistas, –1 rodada); (2) obstáculo (teste adicional para acessar área/pista); (3) pista falsa ou complicação; (4) evento narrativo. Duração da rodada definida pelo mestre (ex.: 1 minuto em investigação frenética)."
+        },
+        {
+          "id": "9.6",
+          "title": "Medo em jogo (Suplemento)",
+          "content": "Sempre que o personagem sofre **dano mental** (Presença Perturbadora, criaturas de Medo, etc.), o mestre define dano e **DT de Vontade** para anular ou reduzir à metade. Dano mental de medo causa **pelo menos 1** ponto.\n\n**Tabela — Situações de medo e dano mental (DT Vontade)**\n\n**Quando PD cai a 0:** aplicam-se os **Efeitos de medo** (rolagem 2d10 na tabela, Acalmar, Se entregar ao medo) — regra completa em **§ 6.3**.",
+          "tableRef": "medo_em_jogo_suplemento"
+        },
+        {
+          "id": "9.7",
+          "title": "Perseguições (Suplemento)",
+          "content": "Presas acumulam **sucessos** em **Atletismo** (DT do mestre) antes de **3 falhas**; 3 falhas = alcançadas. Por rodada:  \n- **Sacrifício:** deixa de correr para atrapalhar; falha automática no Atletismo da rodada, concede **+d20** no teste dos outros.  \n- **Atrapalhar (presa):** -d20 no Atletismo; teste **Luta** oposto à Luta ou Reflexos de outra presa; vencer = **-2d20** no Atletismo dela (se perseguidores se contentarem com uma vítima).\n\n**Opções:** testes opostos em vez de DT; perseguição curta (2 sucessos / 2 falhas) ou longa (5 ou 7 sucessos / 3 falhas). **Eventos:** por rodada o mestre pode aplicar obstáculo ou atalho. Falha em obstáculo: -2d20 no Atletismo da rodada. Sucesso em atalho: +2d20 no Atletismo; falha no atalho: -2d20.\n\n**Tabela — Eventos de perseguição (d20)**",
+          "tableRef": "perseguicoes_suplemento"
+        },
+        {
+          "id": "9.8",
+          "title": "Furtividade (Suplemento)",
+          "content": "Cena em que personagens têm **visibilidade** (acumulativa). **Alvo:** visibilidade **20+** = descoberto.\n\n- **Ação comum:** +1 visibilidade.  \n- **Ação discreta:** com cuidado; metade do deslocamento; testes -d20. Visibilidade +0.  \n- **Ação chamativa:** correr, gritar, atacar, conjurar. +2 visibilidade.  \n\n**Ações específicas:** Esconder-se (Furtividade DT 15; sucesso = –1 visibilidade); Distrair (Enganação DT 15; sucesso = –1 sua ou de aliado próximo; falha = +1; DT +5 por uso na cena); Chamar atenção (sua +2; aliado próximo –1).\n\nNo **início de cada rodada** um jogador rola **1d20** para evento de furtividade; o mestre pode sortear o alvo afetado.\n\n**Tabela — Eventos de furtividade**",
+          "tableRef": "furtividade_suplemento"
+        },
+        {
+          "id": "9.9",
+          "title": "Fabricação em campo e Vida além da Ordem (Suplemento)",
+          "content": "**Fabricação em campo:** treinado em **Profissão** adequada (Armeiro, Químico, Engenheiro). Consumíveis = 1 ação de manutenção; armas/proteções/equipamento geral = 2 ações (não consecutivas). DT por categoria (0→15, I→20, II→25, III→30, IV→35). Sem kit: –5. Item improvisado: DT –5; uso **uma cena** só.\n\n**Vida além da Ordem (folgas):** entre missões, cada personagem escolhe **um** interesse (Trabalho, Lazer, Relacionamento, Busca Pessoal). Dois testes de perícia (DT 20); dois sucessos = benefício; 20 natural = benefício maior; zero sucessos = complicação.\n\n**Tabela — Interesses na folga (efeitos)**\n\n**Busca pessoal:** objetivo complexo; avançar com dois testes DT 25; pistas para concluir definidas pelo mestre; recompensa a critério do mestre.\n\n---",
+          "tableRef": "fabricacao_em_campo_e_vida_alem_da_ordem_suplemento"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Regras opcionais e variantes",
+      "subsections": [
+        {
+          "id": "10.1",
+          "title": "NEX e Experiência — uma das opções de progressão",
+          "content": "Nesta regra, **NEX** = só **exposição ao Outro Lado** (sobe por contato com o paranormal). **Nível** = competência geral e **substitui** NEX em: benefícios (PV, PD, perícias), pré-requisitos de habilidades (exceto poderes paranormais), limite de PD por turno, efeitos de origens/habilidades. **Equivalência: Nível 1 = 5% NEX, Nível 2 = 10% NEX, … Nível 20 = 99% NEX.**\n\n- Personagem começa no **Nível 1**; sobe de nível ao concluir missões (cada nível = +5% NEX para efeitos).  \n- **NEX** começa 0% e **não** sobe automaticamente por missão; sobe por **exposição**: Branda (contato indireto) = sem efeito; Moderada (contato concreto) = +1% NEX; Profunda (criatura até VD 300) = +2% NEX; Exposição total (Membrana arruinada ou criaturas acima VD 300) = +5% NEX.  \n- **Transcender:** ao atingir o **Nível** de alteração (equivalente ao NEX de alteração do livro), pode realizar ritual de conexão e receber o poder (documento usa PD).\n\nValores de PD por classe (quando se usa NEX e Experiência): **Combatente** 6 + PRE (por Nível: 3 + PRE); **Especialista** 8 + PRE (4 + PRE); **Ocultista** 10 + PRE (5 + PRE). Limite de PD por turno = **Nível** do personagem (§ 6.2)."
+        },
+        {
+          "id": "10.2",
+          "title": "Jogando sem mapa (combate narrativo — Suplemento)",
+          "content": "Distâncias em **categorias:** **Toque** (adjacente), **Próxima** (≤6 m), **Curta** (7–9 m), **Média** (10–18 m), **Considerável** (19–36 m), **Longa** (37–90 m), **Longínquo** (91–150 m).  \n- Ação de movimento = avança uma zona. Alvo em alcance médio = duas curtas ou uma média.  \n- **Ação completa** + teste da perícia **DT 25** = avança **três** distâncias.  \n- Substituir valores numéricos de alcance/área pela categoria apropriada."
+        },
+        {
+          "id": "10.3",
+          "title": "Evolução por patentes (Suplemento — outra opção de progressão)",
+          "content": "**Ao iniciar a campanha, o Mestre pode escolher esta progressão em vez de NEX e Experiência; não se usam as duas em paralelo.**\n\nVariante com **Pontos de Determinação** e **patente** em vez de nível. Evolução por **Pontos de Prestígio** e patente (Recruta, Operador, Agente especial, Oficial de operações, Agente de elite). Tabela: Recruta 0 PP, limite PD 1, recuperação 1; Operador 20 PP, PD 3, rec. 2; Agente especial 50 PP, PD 6, rec. 3; Oficial 100 PP, PD 10, rec. 4; Elite 200 PP, PD 15, rec. 5.  \nBenefícios por patente para Combatente, Especialista e Ocultista (PV, PD, perícias, proficiências, Ataque Especial/Perito/Escolhido, trilhas): **Suplemento p.109–113**."
+        },
+        {
+          "id": "10.4",
+          "title": "Limites da compreensão e Conjuração complexa (Suplemento com homebrew)",
+          "content": "**Limites da compreensão: Aprendizado de rituais (opcional).** O **Sistema base** (Livro base) é 1 novo ritual a cada **nível**. O Mestre pode optar por usar, em vez disso, uma das opções abaixo até o final da campanha:\n- **Opção A** – 1 novo ritual a cada **nível ímpar**.\n- **Opção B** – rituais encontrados em missões; 1 ação de interlúdio + teste Ocultismo (DT 20/25/30/35 por círculo); estudar selo paranormal (destrói o selo).\n\n**Conjuração complexa:** ritual exige **3 rodadas consecutivas**. Conjurador desprevenido. Manter concentração: teste de Vontade ao sofrer dano e ao final de cada rodada em condição ruim/terrível; se impossibilitado de agir, ritual **interrompido**.  \n- **1ª rodada — O símbolo:** Desenhar símbolo. Opcional: materiais de elemento → –d20 no teste de Ocultismo, mas bônus do elemento (Sangue, Morte, Conhecimento, Energia, Medo): **Suplemento p.114–117**.  O símbolo não some mais ao utilizar o ritual, exceto que se ele tenha sido empregado algum elemento, todas as próximas conjurações usando este símbolo gastarão apenas duas rodadas.\n- **2ª rodada — Componentes:** Posicionar ou consumir componentes (consumir = +d20). É possível usar catalisador ritualístico que é consumido e adiciona algum bônus específico. Ritual de Medo ou com afinidade pode dispensar componentes\n- **3ª rodada — Invocar:** Decisões do ritual (PD, aprimoramentos, alvos). Teste de Ocultismo DT 20 + o custo em PD para conjurar; **sucesso** = ritual se manifesta; **falha** = **perde o dobro de PD**.  \n- **Extrapolar O Limite**: Soma presença no limite de PD e assim pode ter acesso a versões aprimoradas dos rituais.\n- **Conjuração Acelerada**: É possível usar a regra **Coreografia de Luta** para acelerar as etapas da conjuração, mudando para 1 ou 2 rodadas, porém causa alguns efeitos: \n\t- Nenhum dos bônus podem ser usados nas etapas aceleradas;\n\t- Acelerar 1 etapa causa -d20 e acelerar 2 etapas causa -2d20 no teste de Ocultismo;\n\t- Um inimigo adjacente ao conjurador pode usar uma reação para atrapalhar a Conjuração Acelerada, adicionando uma **Condição terrível** a ação, isto é, o conjurador deve fazer um teste de Vontade DT 20 + custo em PE do ritual, se falhar o ritual não é executado.\n- **Conjurar ritual não estudado / desastres paranormais:** em falha na conjuração, rola 1d8 para desastre (tabela em § 6.4).\n\n---"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Regras da Casa (homebrew)",
+      "subsections": [
+        {
+          "id": "11.1",
+          "title": "Dano médio (opcional por demanda)",
+          "content": "**Opcional por demanda:** em qualquer **teste de dano**, jogadores ou Mestre podem optar por usar **dano médio naquele momento**, de teste a teste — sem precisar definir antes da campanha. **Regra:** valor médio do dado + bônus (ex.: 1d6+1 = 4). Deixar anotados os danos médios para agilizar. **Crítico** (quando usar dano médio): dobra **apenas o dano médio** do dado, não o bônus (ex.: 1d6+1 crítico = 7). Foco na narrativa do ataque.\n\n*(Coreografia de Luta e desconsiderar resistências são regras da casa em § 5.7 e § 8.1.)*"
+        },
+        {
+          "id": "11.2",
+          "title": "Interlúdio com necessidades básicas (apenas em locais isolados)",
+          "content": "**Aplicar somente quando os agentes estiverem em locais isolados e sem acesso aos recursos da Ordem** (ex.: zona de exclusão, wilderness). Em situações com acesso à Ordem ou recursos urbanos, usa-se a tabela normal de interlúdio (§ 5.8).\n\n**Água:**  \n- Consumir água: recupera PV no limite de PD por rodada e todo o PV máximo.  \n- Não consumir água: perde PV máximo no limite de PV por rodada.  \n\n**Comida:**  \n- Consumir comida: recupera PD no limite de PD por rodada e todo o PD máximo.  \n- Não consumir comida: perde PD máximo no limite de PD por rodada.  \n\n**Dormir:**  \n- **Luxuosa:** recupera PV e PD = quatro vezes o limite de PD por rodada.  \n- **Confortável:** três vezes o limite de PD por rodada.  \n- **Normal:** dobro do limite de PD por rodada.  \n- **Precária:** limite de PD por rodada.  \n- **Péssima:** infligido 1d3 de dano.  \n- **Não dormir:** condição **Fadigado**; -d20 em testes de AGI, FOR e VIG; –5 em Defesa.\n\n---"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Resumo das Regras",
+      "subsections": [
+        {
+          "id": "12.1",
+          "title": "Compilado",
+          "content": "- **Classe Sobrevivente (pg 31)**:\n\t> Mundano plus.\n- **Medo em jogo (pg 88)**:\n\t> \"Sabores\" e regras sobre perca de PD (Sanidade) de forma narrativa.\n- **Perseguições (pg 91)**:\n\t> Sistema ações, sucessos e falhas com eventos assim como em Quarentena (Nidere).\n- **Furtividade (pg 93)**:\n\t> Sistema de visibilidade e eventos assim como em Quarentena (Nidere). \n- **Progressão de NEX (com homebrew) (pg 100)**:\n\t> Alterações gerais: Mudanças visuais e em mecânicas para aumento de NEX.\n\t> Discernimento (homebrew): Tratar NEX como Discernimento como funciona em Bloodborne. Quanto mais NEX mais do \"invisível\" se vê.\n\t> Itens para subir ou descer de propósito o NEX: \"Conhecimento do Louco\" e \"Sabedoria dos Eminentes\". Adicionar mecânicas para \"gastar NEX\" através de mercadores.\n- **Jogando sem Sanidade (pg 105)**:\n\t> Dano Mental causado por criaturas: reduz dado em um passo (ex: 2d8 = 2d6) e divide dano de dado pela metade (ex: 2d6 = 1d6) sempre arredondando para cima.\n\t> Medo em jogo: reduz dado mental geral em um passo (ex: 1d6 = 1d4).\n- **Ferimentos Debilitantes (pg 106)**:\n\t> Falhar teste de fortitude ou Dano Massivo: Mestre escolhe um atributo que condiz o ferimento ou joga 1d6 e determina da sorte.\n- **Evolução por Patente (pg 109)**:\n\t> Simplificação das regras de evolução de personagem.\n- **Conjuração Complexa (com homebrew) (pg 115)**:\n\t> - Etapa 1: Desenhar o simbolo, usar materiais específicos relacionado a um elemento para criar o simbolo faz ganhar bônus, porém sofre -d20 no teste de Ocultismo. O símbolo não some mais ao utilizar o ritual, exceto que se ele tenha sido empregado algum elemento, todas as próximas conjurações usando este símbolo gastarão apenas duas rodadas.\n\t> - Etapa 2: Consumir os componentes ritualísticos adiciona +d20 no teste para conjurar, possível usar catalisador ritualístico que é consumido e adiciona algum bônus específico.\n\t> - Etapa 3: Executa o ritual, deve passar num teste Ocultismo DT 20 + o custo em PD, caso falhe o conjurador perde o dobro de PD da execução.\n\t> - Extrapolar O Limite: Soma presença no limite de PD e assim pode ter acesso a versões aprimoradas dos rituais.\n\t> - Conjuração Acelerada: É possível se usar a regra Coreografia de Luta para acelerar as etapas da conjuração, mudando para 2 ou 1 rodada, porém causa alguns efeitos sendo eles: Nenhum dos bônus podem ser usados nas etapas aceleradas; acelerar 1 etapa causa -d20 e acelerar 2 etapas causa -2d20 no teste de Ocultismo; um inimigo adjacente ao conjurador pode usar uma reação para atrapalhar a conjuração acelerada, adicionando uma Condição terrível: Vontade DT 20 + custo em PE do ritual, se falhar o ritual não é executado.\n- **Sem rolagem de Dano (pq 121)**:\n\t> Dano médio: Pegar o valor médio do dado e somar o bônus (ex: 1d6+1 = 4), críticos apenas se dobra o dano médio e não o bônus (ex: 1d6+1 = 7). Deixar previamente anotado todos os danos médios para agilizar, focar na narrativa do ataque e não no dado.\n- **Coreografia de Luta (pg 123)**:\n\t> Possibilidade de fazer até três movimentos e ir perdendo dados d20 para aumentar a complexidade do ataque, porém dobrando ou triplicando o dano do dado base (do dano médio).\n- **Ataque especial nerfado (homebrew)**:\n\t>Na classe Combatente o bônus para teste de ataque se torna +2, +4 e +6, conforme sobe NEX (Nível), a rolagem de dano permanece na original. Todas as defesas das ameaças diminuem em 3.\n- **Acerto crítico automático (homebrew)**:\n\t> Qualquer crítico é acerto automático.\n- **Desconsiderar resistências das Criaturas Paranormais (homebrew)**:\n\t> Para combate mais letal, desconsiderar todas as resistências a danos das criaturas. Avaliar se faz sentido caso a caso quando a criatura parecer fraca demais. \n- **Interlúdio com necessidades básicas (homebrew)**:\n> \t- Água Potável: É necessário consumir ao menos 1 unidade de água por dia. Se não fizer isso, os PV máximos são reduzidos no limite de PE (PD) pelo dia seguinte. Recuperar esses PV máximos exige consumir 1 unidade de água além do necessário ao final do dia seguinte.\n> \t- Comida Normal: Como água, mas se não for consumida diminui os PE (PD) máximos no limite de PE (PD).\n> \t- Comida Nutritiva (OPRPG pg 93): Se realizar a ação dormir neste interlúdio, aumenta a recuperação de PV em uma vez (recuperação confortável, ou dobrada, por exemplo, se torna triplicada).\n> \t- Comida Energética (OPRPG pg 93): Para além da Comida Normal, se dormir aumenta a recuperação de PE (PD) em uma vez (recuperação confortável, ou dobrada, por exemplo, se torna triplicada).\n> \t- Dormir:\n> \t\t- Normal: Recupera um número de PV e de PE (PD) igual ao limite de PE (PD) por rodada.\n> \t\t- Precária: Recuperação reduzida pela metade do limite de PE (PD) por rodada.\n> \t\t- Confortável: Recuperação dobrada no limite de PE/PD por rodada.\n> \t\t- Luxuosa: Recuperação triplicada no limite de PE/PD por rodada.\n> \t\t- Péssima: Inflige 1d3 de dano."
+        }
+      ]
+    }
+  ],
+  "tables": {
+    "termos_importantes": {
+      "headers": [
+        "Termo",
+        "Significado"
+      ],
+      "rows": [
+        {
+          "termo": "**Personagem / Agente**",
+          "significado": "Protagonista interpretado por um jogador."
+        },
+        {
+          "termo": "**NPC**",
+          "significado": "Personagem não jogador (interpretado pelo mestre)."
+        },
+        {
+          "termo": "**Pessoa**",
+          "significado": "Ser humano (personagem ou NPC)."
+        },
+        {
+          "termo": "**Animal**",
+          "significado": "Ser vivo não humano."
+        },
+        {
+          "termo": "**Criatura**",
+          "significado": "Ser manifestado pelo Outro Lado (ex.: zumbi de Sangue)."
+        },
+        {
+          "termo": "**Ser**",
+          "significado": "Pessoa, animal ou criatura (usado quando o efeito vale para qualquer um)."
+        },
+        {
+          "termo": "**Atributos**",
+          "significado": "AGI, FOR, INT, PRE, VIG. Escala 0 a 5; 1 = média humana."
+        },
+        {
+          "termo": "**PV**",
+          "significado": "Pontos de Vida — saúde. Chegando a 0, o personagem começa a morrer."
+        },
+        {
+          "termo": "**PD**",
+          "significado": "Pontos de Determinação — energia para habilidades e resiliência mental; dano mental e gastos reduzem PD."
+        },
+        {
+          "termo": "**Perícias**",
+          "significado": "Graus: destreinado (+0), treinado (+5), veterano (+10), expert (+15)."
+        },
+        {
+          "termo": "**Modificador**",
+          "significado": "Bônus ou penalidade em rolagem/característica. +d20 = rolar 1d20 a mais; -d20 = 1d20 a menos."
+        },
+        {
+          "termo": "**Turno**",
+          "significado": "Vez de um personagem agir em uma rodada."
+        },
+        {
+          "termo": "**Rodada**",
+          "significado": "Tempo em que todos agem uma vez (~3s em combate). *(Suplemento: duração pode ser definida pelo mestre.)*"
+        },
+        {
+          "termo": "**Cena**",
+          "significado": "Pedaço distinto da história (início/fim pelo andamento, não pelo tempo)."
+        },
+        {
+          "termo": "**Missão**",
+          "significado": "História completa (várias cenas)."
+        },
+        {
+          "termo": "**Sessão**",
+          "significado": "Partida de RPG."
+        }
+      ]
+    },
+    "bonus_por_grau_de_treinamento": {
+      "headers": [
+        "Grau",
+        "Bônus"
+      ],
+      "rows": [
+        {
+          "grau": "Destreinado",
+          "bonus": "0"
+        },
+        {
+          "grau": "Treinado",
+          "bonus": "+5"
+        },
+        {
+          "grau": "Veterano",
+          "bonus": "+10"
+        },
+        {
+          "grau": "Expert",
+          "bonus": "+15"
+        }
+      ]
+    },
+    "tabela_de_pericias": {
+      "headers": [
+        "Perícia",
+        "Restrições",
+        "Usos principais",
+        "DT / Oposto"
+      ],
+      "rows": [
+        {
+          "pericia": "**Acrobacia**",
+          "restricoes": "Vet. amortecer; trein. levantar",
+          "usos-principais": "Amortecer queda; Equilíbrio; Escapar; Levantar-se rápido; Passar por inimigo.",
+          "dt--oposto": "15; —; oposto; 20; oposto."
+        },
+        {
+          "pericia": "**Adestramento**",
+          "restricoes": "Só treinada",
+          "usos-principais": "Adestrar, montar.",
+          "dt--oposto": "DT conforme uso (livro)."
+        },
+        {
+          "pericia": "**Artes**",
+          "restricoes": "Só treinada",
+          "usos-principais": "Impressionar; performances.",
+          "dt--oposto": "DT conforme; livro."
+        },
+        {
+          "pericia": "**Atletismo**",
+          "restricoes": "—",
+          "usos-principais": "Escalar, nadar, saltar, carregar; perseguições (Suplemento).",
+          "dt--oposto": "DT conforme."
+        },
+        {
+          "pericia": "**Atualidades**",
+          "restricoes": "—",
+          "usos-principais": "Informações gerais.",
+          "dt--oposto": "DT 10/20/30."
+        },
+        {
+          "pericia": "**Ciências**",
+          "restricoes": "Só treinada",
+          "usos-principais": "Análises, identificar substâncias.",
+          "dt--oposto": "DT conforme."
+        },
+        {
+          "pericia": "**Crime**",
+          "restricoes": "Kit (sem: –5)",
+          "usos-principais": "Arrombar; Ocultar; Sabotar (vet.).",
+          "dt--oposto": "20/25/30; oposto Percepção; 20 ou 30."
+        },
+        {
+          "pericia": "**Diplomacia**",
+          "restricoes": "—",
+          "usos-principais": "Acalmar; Mudar atitude; Persuasão.",
+          "dt--oposto": "20; oposto Vontade; 20."
+        },
+        {
+          "pericia": "**Enganação**",
+          "restricoes": "Kit disfarce",
+          "usos-principais": "Disfarce; Falsificação; Fintar; Insinuação/Intriga; Mentir; Distrair (Suplemento, regras de furtividade).",
+          "dt--oposto": "Oposto Percepção; oposto Reflexos; 20/30; oposto Intuição."
+        },
+        {
+          "pericia": "**Fortitude**",
+          "restricoes": "—",
+          "usos-principais": "Resistência; veneno/doença/clima; dano massivo / ferimentos debilitantes (Suplemento).",
+          "dt--oposto": "—"
+        },
+        {
+          "pericia": "**Furtividade**",
+          "restricoes": "Carga",
+          "usos-principais": "Esconder-se; mover furtivo; cena de furtividade (Suplemento).",
+          "dt--oposto": "Oposto Percepção."
+        },
+        {
+          "pericia": "**Iniciativa**",
+          "restricoes": "—",
+          "usos-principais": "Ordem de turno em combate.",
+          "dt--oposto": "—"
+        },
+        {
+          "pericia": "**Intimidação**",
+          "restricoes": "—",
+          "usos-principais": "Coagir; grupo.",
+          "dt--oposto": "Oposto Vontade; DT +5/pessoa."
+        },
+        {
+          "pericia": "**Intuição**",
+          "restricoes": "—",
+          "usos-principais": "Perceber mentira; pressentir.",
+          "dt--oposto": "Oposto Enganação; DT."
+        },
+        {
+          "pericia": "**Investigação**",
+          "restricoes": "—",
+          "usos-principais": "Interrogar; Procurar; Recapitular; Compartilhar (Suplemento).",
+          "dt--oposto": "20/30; 15/20/30."
+        },
+        {
+          "pericia": "**Luta**",
+          "restricoes": "—",
+          "usos-principais": "Ataque corpo a corpo; manobras.",
+          "dt--oposto": "Defesa; oposto Luta."
+        },
+        {
+          "pericia": "**Medicina**",
+          "restricoes": "Kit (–5 sem)",
+          "usos-principais": "Primeiros Socorros; Cuidados prolongados; Necropsia; Tratamento; curar ferimento debilitante (Suplemento).",
+          "dt--oposto": "20; 20; 20; DT efeito."
+        },
+        {
+          "pericia": "**Ocultismo**",
+          "restricoes": "Só treinada",
+          "usos-principais": "Identificar criatura/item/ritual; Informação; conjuração.",
+          "dt--oposto": "PP; 20; 10+5/círculo; 20/30."
+        },
+        {
+          "pericia": "**Percepção**",
+          "restricoes": "—",
+          "usos-principais": "Observar; Ouvir; ler lábios; ocultos.",
+          "dt--oposto": "15–30; 0–20; 20; Furtividade ou 20."
+        },
+        {
+          "pericia": "**Pilotagem**",
+          "restricoes": "Só treinada; vet. aéreos",
+          "usos-principais": "Conduzir veículo.",
+          "dt--oposto": "15/25."
+        },
+        {
+          "pericia": "**Pontaria**",
+          "restricoes": "—",
+          "usos-principais": "Ataque à distância.",
+          "dt--oposto": "Defesa."
+        },
+        {
+          "pericia": "**Profissão**",
+          "restricoes": "Só treinada",
+          "usos-principais": "Testes; item extra por missão; fabricação em campo (Suplemento).",
+          "dt--oposto": "Conforme; cat. I/II/III."
+        },
+        {
+          "pericia": "**Reflexos**",
+          "restricoes": "—",
+          "usos-principais": "Resistência; oposto a Fintar.",
+          "dt--oposto": "—"
+        },
+        {
+          "pericia": "**Religião**",
+          "restricoes": "Só treinada",
+          "usos-principais": "Acalmar; Informação; Rito.",
+          "dt--oposto": "20; 10/20/30; 20."
+        },
+        {
+          "pericia": "**Sobrevivência**",
+          "restricoes": "Trein. em vários",
+          "usos-principais": "Acampamento; Identificar animal; Orientar-se; Rastrear.",
+          "dt--oposto": "15–25; 20; DT/dia; 15–25."
+        },
+        {
+          "pericia": "**Tática**",
+          "restricoes": "Só treinada",
+          "usos-principais": "Analisar terreno; Plano de ação.",
+          "dt--oposto": "20; 20 (+5 Inic. aliado)."
+        },
+        {
+          "pericia": "**Tecnologia**",
+          "restricoes": "Só treinada; kit (–5 sem)",
+          "usos-principais": "Hackear; Localizar arquivo; Operar dispositivo.",
+          "dt--oposto": "15/20/25; 15–25; 15–25."
+        },
+        {
+          "pericia": "**Vontade**",
+          "restricoes": "—",
+          "usos-principais": "Resistência mental; conjurar; medo (Suplemento).",
+          "dt--oposto": "—"
+        }
+      ]
+    },
+    "patente_e_limite_de_itens": {
+      "headers": [
+        "Patente",
+        "Cat. I",
+        "Cat. II",
+        "Cat. III",
+        "Cat. IV"
+      ],
+      "rows": [
+        {
+          "patente": "Recruta",
+          "cat-i": "2",
+          "cat-ii": "0",
+          "cat-iii": "0",
+          "cat-iv": "0"
+        },
+        {
+          "patente": "Operador",
+          "cat-i": "3",
+          "cat-ii": "1",
+          "cat-iii": "0",
+          "cat-iv": "0"
+        },
+        {
+          "patente": "Agente especial",
+          "cat-i": "3",
+          "cat-ii": "2",
+          "cat-iii": "1",
+          "cat-iv": "0"
+        },
+        {
+          "patente": "Oficial de operações",
+          "cat-i": "4",
+          "cat-ii": "2",
+          "cat-iii": "2",
+          "cat-iv": "1"
+        },
+        {
+          "patente": "Agente de elite",
+          "cat-i": "4",
+          "cat-ii": "3",
+          "cat-iii": "2",
+          "cat-iv": "1"
+        }
+      ]
+    },
+    "capacidade_de_carga": {
+      "headers": [
+        "FOR",
+        "Espaços",
+        "Sobrecarga (acima do limite)",
+        "Máximo absoluto"
+      ],
+      "rows": [
+        {
+          "for": "0",
+          "espacos": "2",
+          "sobrecarga-acima-do-limite": "–5 Defesa e em perícias com carga; desloc. –3 m",
+          "maximo-absoluto": "4"
+        },
+        {
+          "for": "1",
+          "espacos": "5",
+          "sobrecarga-acima-do-limite": "idem",
+          "maximo-absoluto": "10"
+        },
+        {
+          "for": "2",
+          "espacos": "10",
+          "sobrecarga-acima-do-limite": "idem",
+          "maximo-absoluto": "20"
+        },
+        {
+          "for": "3",
+          "espacos": "15",
+          "sobrecarga-acima-do-limite": "idem",
+          "maximo-absoluto": "30"
+        },
+        {
+          "for": "4",
+          "espacos": "20",
+          "sobrecarga-acima-do-limite": "idem",
+          "maximo-absoluto": "40"
+        },
+        {
+          "for": "5",
+          "espacos": "25",
+          "sobrecarga-acima-do-limite": "idem",
+          "maximo-absoluto": "50"
+        }
+      ]
+    },
+    "equipamento_geral_e_municoes": {
+      "headers": [
+        "Munição",
+        "Categoria",
+        "Uso típico"
+      ],
+      "rows": [
+        {
+          "municao": "Balas curtas",
+          "categoria": "0",
+          "uso-tipico": "Pistola, revólver, submetralhadora; 2 cenas por pacote."
+        },
+        {
+          "municao": "Balas longas",
+          "categoria": "I",
+          "uso-tipico": "Fuzil, metralhadora; 2 cenas por pacote."
+        },
+        {
+          "municao": "Flechas",
+          "categoria": "0",
+          "uso-tipico": "Arco, besta; 1 missão por pacote."
+        },
+        {
+          "municao": "Cartuchos",
+          "categoria": "I",
+          "uso-tipico": "Espingarda; por pacote."
+        },
+        {
+          "municao": "Foguete",
+          "categoria": "I",
+          "uso-tipico": "Bazuca; 1 disparo."
+        },
+        {
+          "municao": "Combustível",
+          "categoria": "I",
+          "uso-tipico": "Lança-chamas; por pacote."
+        }
+      ]
+    },
+    "tabela_de_dificuldades_dt": {
+      "headers": [
+        "Tarefa",
+        "DT",
+        "Exemplo"
+      ],
+      "rows": [
+        {
+          "tarefa": "Fácil",
+          "dt": 5,
+          "exemplo": "Ouvir conversa atrás da porta"
+        },
+        {
+          "tarefa": "Média",
+          "dt": 10,
+          "exemplo": "Subir barranco"
+        },
+        {
+          "tarefa": "Difícil",
+          "dt": 15,
+          "exemplo": "Acampar no campo"
+        },
+        {
+          "tarefa": "Muito difícil",
+          "dt": 20,
+          "exemplo": "Estancar sangramento fatal"
+        },
+        {
+          "tarefa": "Formidável",
+          "dt": 25,
+          "exemplo": "Hackear servidor seguro"
+        },
+        {
+          "tarefa": "Heroica",
+          "dt": 30,
+          "exemplo": "Decifrar ritual ancestral"
+        },
+        {
+          "tarefa": "Quase impossível",
+          "dt": 35,
+          "exemplo": "Convencer inimigo a protegê-lo"
+        }
+      ]
+    },
+    "testes_estendidos": {
+      "headers": [
+        "Complexidade",
+        "Sucessos necessários"
+      ],
+      "rows": [
+        {
+          "complexidade": "Baixa",
+          "sucessos-necessarios": "3"
+        },
+        {
+          "complexidade": "Média",
+          "sucessos-necessarios": "5"
+        },
+        {
+          "complexidade": "Alta",
+          "sucessos-necessarios": "7"
+        }
+      ]
+    },
+    "investigacao": {
+      "headers": [
+        "Grau de urgência",
+        "Rodadas máximas"
+      ],
+      "rows": [
+        {
+          "grau-de-urgencia": "Muito baixo",
+          "rodadas-maximas": "6"
+        },
+        {
+          "grau-de-urgencia": "Baixo",
+          "rodadas-maximas": "5"
+        },
+        {
+          "grau-de-urgencia": "Médio",
+          "rodadas-maximas": "4"
+        },
+        {
+          "grau-de-urgencia": "Alto",
+          "rodadas-maximas": "3"
+        },
+        {
+          "grau-de-urgencia": "Muito alto",
+          "rodadas-maximas": "2"
+        }
+      ]
+    },
+    "interludio": {
+      "headers": [
+        "Atividade",
+        "Efeito mecânico"
+      ],
+      "rows": [
+        {
+          "atividade": "**Dormir**",
+          "efeito-mecanico": "Recuperar todos os PV; recuperação de PD conforme condições (Livro base/Suplemento)."
+        },
+        {
+          "atividade": "**Exercitar-se**",
+          "efeito-mecanico": "+2 em Atletismo ou Fortitude na próxima missão."
+        },
+        {
+          "atividade": "**Manutenção**",
+          "efeito-mecanico": "Profissão DT 20: reparar/fabricar 1 item por atividade."
+        },
+        {
+          "atividade": "**Relaxar**",
+          "efeito-mecanico": "Recuperar PD (conforme limite/regras do livro; máximo até PD total)."
+        },
+        {
+          "atividade": "**Revisar Caso**",
+          "efeito-mecanico": "+2 (ou +5) em um teste de Investigação na próxima missão (uma vez)."
+        }
+      ]
+    },
+    "elementos_e_opressao": {
+      "headers": [
+        "Elemento",
+        "Opressor de"
+      ],
+      "rows": [
+        {
+          "elemento": "Sangue",
+          "opressor-de": "Conhecimento"
+        },
+        {
+          "elemento": "Morte",
+          "opressor-de": "Sangue"
+        },
+        {
+          "elemento": "Conhecimento",
+          "opressor-de": "Energia"
+        },
+        {
+          "elemento": "Energia",
+          "opressor-de": "Morte"
+        },
+        {
+          "elemento": "Medo",
+          "opressor-de": "—"
+        }
+      ]
+    },
+    "pontos_de_determinacao_pd": {
+      "headers": [
+        "2d10",
+        "Efeito"
+      ],
+      "rows": [
+        {
+          "2d10": "2",
+          "efeito": "Encorajamento (recupera PD por Nível, +d20 em um teste)"
+        },
+        {
+          "2d10": "3",
+          "efeito": "Surto de adrenalina (+5 ataque/dano; Vontade DT 20 para outra ação)"
+        },
+        {
+          "2d10": "4",
+          "efeito": "Hesitação (atordoado 1 rodada)"
+        },
+        {
+          "2d10": "5",
+          "efeito": "Fraqueza (fica fraco)"
+        },
+        {
+          "2d10": "6",
+          "efeito": "Lapso (frustrado)"
+        },
+        {
+          "2d10": "7",
+          "efeito": "Ansiedade (falha automática no próximo teste; ação “inútil” remove)"
+        },
+        {
+          "2d10": "8",
+          "efeito": "Desorientação (desprevenido)"
+        },
+        {
+          "2d10": "9",
+          "efeito": "Desespero (falha automática em Vontade)"
+        },
+        {
+          "2d10": "10",
+          "efeito": "Histeria (1d4 rodadas, -d20 em todos os testes)"
+        },
+        {
+          "2d10": "11",
+          "efeito": "Abalo (abalado)"
+        },
+        {
+          "2d10": "12",
+          "efeito": "Alucinação (dado ímpar no maior = falha automática)"
+        },
+        {
+          "2d10": "13",
+          "efeito": "Susto (apavorado)"
+        },
+        {
+          "2d10": "14",
+          "efeito": "Confusão (confuso)"
+        },
+        {
+          "2d10": "15",
+          "efeito": "Paralisia (1d4 rodadas paralisado, depois abalado)"
+        },
+        {
+          "2d10": "16",
+          "efeito": "Pavor (fugir; concentração 50% falha; se não fugir, sem ações)"
+        },
+        {
+          "2d10": "17",
+          "efeito": "Desmaio (inconsciente)"
+        },
+        {
+          "2d10": "18",
+          "efeito": "Trauma (paralisado + 1d6: 1–5 perde 1 atributo permanente, 6 não)"
+        },
+        {
+          "2d10": "19",
+          "efeito": "Loucura (enlouquecendo)"
+        },
+        {
+          "2d10": "20+",
+          "efeito": "Choque sistêmico (0 PV, morrendo)"
+        }
+      ]
+    },
+    "poderes_paranormais_e_rituais": {
+      "headers": [
+        "1d8",
+        "Desastre",
+        "Efeito mecânico"
+      ],
+      "rows": [
+        {
+          "1d8": "1",
+          "desastre": "Consumido pelo Outro Lado",
+          "efeito-mecanico": "Personagem vira criatura do elemento do ritual (VD = 4× Nível); morre na hora; mestre controla a criatura na próxima rodada."
+        },
+        {
+          "1d8": "2",
+          "desastre": "Surto elemental",
+          "efeito-mecanico": "3d12 dano por círculo do ritual (tipo = elemento) em 9 m; conjurador e outros; Reflexos (DT ritual +5) reduz à metade."
+        },
+        {
+          "1d8": "3",
+          "desastre": "Assalto psíquico",
+          "efeito-mecanico": "2d10 dano mental por círculo do ritual."
+        },
+        {
+          "1d8": "4",
+          "desastre": "Decrepitude motora",
+          "efeito-mecanico": "–1 Agilidade permanente; desprevenido até o fim da cena."
+        },
+        {
+          "1d8": "5",
+          "desastre": "Definhamento muscular",
+          "efeito-mecanico": "–1 Força permanente; debilitado até o fim da cena."
+        },
+        {
+          "1d8": "6",
+          "desastre": "Oblívio mental",
+          "efeito-mecanico": "–1 Intelecto permanente; esmorecido até o fim da cena."
+        },
+        {
+          "1d8": "7",
+          "desastre": "Eu perdido",
+          "efeito-mecanico": "–1 Presença permanente; alquebrado até o fim da cena."
+        },
+        {
+          "1d8": "8",
+          "desastre": "Dor profunda",
+          "efeito-mecanico": "–1 Vigor permanente; enjoado até o fim da cena."
+        }
+      ]
+    },
+    "regras_opcionais_e_regras_da_casa": {
+      "headers": [
+        "Tipo",
+        "Mecânica resumida"
+      ],
+      "rows": [
+        {
+          "tipo": "Acólito",
+          "mecanica-resumida": "Suporte religioso/ritual."
+        },
+        {
+          "tipo": "Faz-tudo",
+          "mecanica-resumida": "Perícias gerais; +2 em uma perícia quando ajudar."
+        },
+        {
+          "tipo": "Guerrilheiro",
+          "mecanica-resumida": "Combate; age como NPC."
+        },
+        {
+          "tipo": "Socorrista",
+          "mecanica-resumida": "Medicina e suporte."
+        }
+      ]
+    },
+    "categorias_de_atitude_npc": {
+      "headers": [
+        "Atitude",
+        "Efeito"
+      ],
+      "rows": [
+        {
+          "atitude": "Prestativo",
+          "efeito": "Faz o que pedem dentro do razoável."
+        },
+        {
+          "atitude": "Amistoso",
+          "efeito": "Ajuda se convencido; testes de persuasão +5."
+        },
+        {
+          "atitude": "Indiferente",
+          "efeito": "DT normal."
+        },
+        {
+          "atitude": "Inamistoso",
+          "efeito": "–5 em persuasão; coopera se resultado bom ou incentivo."
+        },
+        {
+          "atitude": "Hostil",
+          "efeito": "Falha automática em Diplomacia para pedidos de ajuda; pode exigir Intimidação, recompensa ou mudança de atitude."
+        }
+      ]
+    },
+    "classe_sobrevivente_suplemento_p3032": {
+      "headers": [
+        "Estatística",
+        "Inicial",
+        "Por estágio"
+      ],
+      "rows": [
+        {
+          "estatistica": "PV",
+          "inicial": "8 + VIG",
+          "por-estagio": "+2"
+        },
+        {
+          "estatistica": "PD",
+          "inicial": "4 + PRE",
+          "por-estagio": "+2"
+        },
+        {
+          "estatistica": "Perícias treinadas",
+          "inicial": "1 + INT",
+          "por-estagio": "—"
+        },
+        {
+          "estatistica": "Proficiências",
+          "inicial": "Armas simples",
+          "por-estagio": "—"
+        }
+      ]
+    },
+    "medo_em_jogo_suplemento": {
+      "headers": [
+        "Situação",
+        "Dano mental",
+        "Teste Vontade"
+      ],
+      "rows": [
+        {
+          "situacao": "Visão inquietante",
+          "dano-mental": "1d4",
+          "teste-vontade": "DT 15 anula"
+        },
+        {
+          "situacao": "Visão perturbadora",
+          "dano-mental": "1d6",
+          "teste-vontade": "DT 20 reduz à metade"
+        },
+        {
+          "situacao": "Visão assustadora",
+          "dano-mental": "2d6",
+          "teste-vontade": "DT 25 reduz à metade"
+        },
+        {
+          "situacao": "Visão sinistra",
+          "dano-mental": "4d4",
+          "teste-vontade": "DT 30 reduz à metade"
+        },
+        {
+          "situacao": "Visão macabra",
+          "dano-mental": "4d8",
+          "teste-vontade": "DT 35 reduz à metade"
+        },
+        {
+          "situacao": "Visão aterrorizante",
+          "dano-mental": "4d12",
+          "teste-vontade": "DT 40 reduz à metade"
+        },
+        {
+          "situacao": "Ambiente horripilante",
+          "dano-mental": "1 (ou 2, ou 5) por rodada",
+          "teste-vontade": "—"
+        }
+      ]
+    },
+    "perseguicoes_suplemento": {
+      "headers": [
+        "d20",
+        "Tipo",
+        "Exemplo",
+        "Teste"
+      ],
+      "rows": [
+        {
+          "d20": "1–8",
+          "tipo": "—",
+          "exemplo": "—",
+          "teste": "—"
+        },
+        {
+          "d20": "9–10",
+          "tipo": "Obstáculo",
+          "exemplo": "Entulhos",
+          "teste": "Força DT 15"
+        },
+        {
+          "d20": "11–12",
+          "tipo": "Obstáculo",
+          "exemplo": "Piso escorregadio",
+          "teste": "Acrobacia DT 20"
+        },
+        {
+          "d20": "13–14",
+          "tipo": "Obstáculo",
+          "exemplo": "Entulho rola",
+          "teste": "Reflexos DT 20"
+        },
+        {
+          "d20": "15",
+          "tipo": "Obstáculo",
+          "exemplo": "Multidão",
+          "teste": "Intimidação DT 20"
+        },
+        {
+          "d20": "16–17",
+          "tipo": "Atalho",
+          "exemplo": "Caminho bloqueado",
+          "teste": "Força DT 15"
+        },
+        {
+          "d20": "18",
+          "tipo": "Atalho",
+          "exemplo": "Vias labirínticas",
+          "teste": "Percepção DT 20"
+        },
+        {
+          "d20": "19",
+          "tipo": "Atalho",
+          "exemplo": "Porta trancada",
+          "teste": "Crime DT 25"
+        },
+        {
+          "d20": "20",
+          "tipo": "Atalho",
+          "exemplo": "Caminho oculto",
+          "teste": "Sobrevivência DT 20"
+        }
+      ]
+    },
+    "furtividade_suplemento": {
+      "headers": [
+        "d20",
+        "Efeito"
+      ],
+      "rows": [
+        {
+          "d20": "1–2",
+          "efeito": "Algoz muito perto; imóvel/silêncio ou 1d6 mental (ou metade da Presença Perturbadora)"
+        },
+        {
+          "d20": "3–5",
+          "efeito": "Algoz procura implacável; visibilidade de todos +2"
+        },
+        {
+          "d20": "6–8",
+          "efeito": "Algoz salta em direção a um personagem (sorteio); visibilidade dele +2"
+        },
+        {
+          "d20": "9–15",
+          "efeito": "Algoz procura; visibilidade de todos +1"
+        },
+        {
+          "d20": "16–17",
+          "efeito": "Algoz avança em direção a um personagem; visibilidade dele +1"
+        },
+        {
+          "d20": "18–19",
+          "efeito": "Algoz para; nenhum efeito"
+        },
+        {
+          "d20": "20",
+          "efeito": "Algoz se distrai; visibilidade de um personagem –1"
+        }
+      ]
+    },
+    "fabricacao_em_campo_e_vida_alem_da_ordem_suplemento": {
+      "headers": [
+        "Interesse",
+        "Perícias (ex.)",
+        "Dois sucessos",
+        "20 natural",
+        "Zero sucessos"
+      ],
+      "rows": [
+        {
+          "interesse": "**Trabalho**",
+          "pericias-ex": "Profissão (ou Medicina, Artes, Tecnologia)",
+          "dois-sucessos": "Na próxima missão: +1 item cat. I",
+          "20-natural": "Na próxima missão: +1 item cat. II",
+          "zero-sucessos": "Problema complexo; a cada interlúdio na próxima missão rolar 1d4; no primeiro 1, gastar 1 ação resolvendo ou perder o interesse."
+        },
+        {
+          "interesse": "**Lazer**",
+          "pericias-ex": "Uma perícia do hobby (ex.: Atletismo, Tecnologia)",
+          "dois-sucessos": "PD máximos +2 na próxima missão",
+          "20-natural": "PD máximos +5 na próxima missão",
+          "zero-sucessos": "Desanimado: na próxima sessão, PD máximos – (limite de PD)."
+        },
+        {
+          "interesse": "**Relacionamento**",
+          "pericias-ex": "Duas perícias à escolha (ex.: Atualidades e Diplomacia)",
+          "dois-sucessos": "1d6 de bônus em um teste de perícia na próxima missão",
+          "20-natural": "3d6 (usar separadamente)",
+          "zero-sucessos": "Desentendimento; até gastar 1 ação de interlúdio em missão para resolver, não pode usar ação de relaxar."
+        },
+        {
+          "interesse": "**Busca Pessoal**",
+          "pericias-ex": "Duas perícias (jogador escolhe uma; mestre a outra)",
+          "dois-sucessos": "1 pista em direção ao objetivo; 20 natural em um = +d20 em Vontade na próxima missão",
+          "20-natural": "—",
+          "zero-sucessos": "Frustrado; remover frustração = 2 ações de interlúdio. Concluir busca = número de pistas definido pelo mestre (ex.: 3–4); recompensa a critério do mestre."
+        }
+      ]
+    }
+  },
+  "glossary": [
+    {
+      "term": "Personagem / Agente",
+      "fullName": "Personagem / Agente",
+      "description": "Protagonista interpretado por um jogador."
+    },
+    {
+      "term": "NPC",
+      "fullName": "NPC",
+      "description": "Personagem não jogador (interpretado pelo mestre)."
+    },
+    {
+      "term": "Pessoa",
+      "fullName": "Pessoa",
+      "description": "Ser humano (personagem ou NPC)."
+    },
+    {
+      "term": "Animal",
+      "fullName": "Animal",
+      "description": "Ser vivo não humano."
+    },
+    {
+      "term": "Criatura",
+      "fullName": "Criatura",
+      "description": "Ser manifestado pelo Outro Lado (ex.: zumbi de Sangue)."
+    },
+    {
+      "term": "Ser",
+      "fullName": "Ser",
+      "description": "Pessoa, animal ou criatura (usado quando o efeito vale para qualquer um)."
+    },
+    {
+      "term": "Atributos",
+      "fullName": "Atributos",
+      "description": "AGI, FOR, INT, PRE, VIG. Escala 0 a 5; 1 = média humana."
+    },
+    {
+      "term": "PV",
+      "fullName": "PV",
+      "description": "Pontos de Vida — saúde. Chegando a 0, o personagem começa a morrer."
+    },
+    {
+      "term": "PD",
+      "fullName": "PD",
+      "description": "Pontos de Determinação — energia para habilidades e resiliência mental; dano mental e gastos reduzem PD."
+    },
+    {
+      "term": "Perícias",
+      "fullName": "Perícias",
+      "description": "Graus: destreinado (+0), treinado (+5), veterano (+10), expert (+15)."
+    },
+    {
+      "term": "Modificador",
+      "fullName": "Modificador",
+      "description": "Bônus ou penalidade em rolagem/característica. +d20 = rolar 1d20 a mais; -d20 = 1d20 a menos."
+    },
+    {
+      "term": "Turno",
+      "fullName": "Turno",
+      "description": "Vez de um personagem agir em uma rodada."
+    },
+    {
+      "term": "Rodada",
+      "fullName": "Rodada",
+      "description": "Tempo em que todos agem uma vez (~3s em combate). *(Suplemento: duração pode ser definida pelo mestre.)*"
+    },
+    {
+      "term": "Cena",
+      "fullName": "Cena",
+      "description": "Pedaço distinto da história (início/fim pelo andamento, não pelo tempo)."
+    },
+    {
+      "term": "Missão",
+      "fullName": "Missão",
+      "description": "História completa (várias cenas)."
+    },
+    {
+      "term": "Sessão",
+      "fullName": "Sessão",
+      "description": "Partida de RPG."
+    }
+  ]
+}

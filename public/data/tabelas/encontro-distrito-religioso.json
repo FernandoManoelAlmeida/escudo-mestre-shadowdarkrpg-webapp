@@ -1,0 +1,121 @@
+{
+  "id": "encontro-distrito-religioso",
+  "titulo": "Encontros — DISTRITO RELIGIOSO",
+  "categoria": "encontro",
+  "subcategoria": "distrito-religioso",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "04–05",
+      "Um velho despeja um punhado de gemas em uma caixa de esmolas"
+    ],
+    [
+      "16–17",
+      "Tentáculos chicoteantes irrompem das mangas de um cultista do caos"
+    ],
+    [
+      "28–29",
+      "Um homem cai em êxtase e se transforma em um elemental de fogo"
+    ],
+    [
+      "36–37",
+      "Um alçapão no fundo de um beco se abre para o porão de um templo"
+    ],
+    [
+      "50–53",
+      "Um mendigo pustulento vaga imerso em um delírio febril"
+    ],
+    [
+      "54–55",
+      "Místicos queimam um incenso alucinógeno no meio da rua"
+    ],
+    [
+      "58–59",
+      "Um cultista nas sombras lança um dardo envenenado em um PJ"
+    ],
+    [
+      "60–61",
+      "Um orador faz um sermão incitante para uma multidão frenética"
+    ],
+    [
+      "64–65",
+      "Cultistas libertinos de Gede distribuem inúmeras taças de vinho"
+    ],
+    [
+      "66–67",
+      "Um sacerdote com um sorriso forçado dá 5 PO a novos convertidos"
+    ],
+    [
+      "70–71",
+      "O Desfile dos Nove atrai espectadores e batedores de carteira"
+    ],
+    [
+      "72–73",
+      "Um monge ateia fogo em si mesmo e entra em um templo"
+    ],
+    [
+      "74–75",
+      "Exploradores rivais saem de uma igreja, recém-batizados"
+    ],
+    [
+      "76–77",
+      "A Guarda arrasta o agitado Barão Hallin para fora de um templo"
+    ],
+    [
+      "82–83",
+      "Um templário disfarçado de plebeu cuida de um leproso caído"
+    ],
+    [
+      "84–85",
+      "Uma mulher grita: \"Tudo será dissolvido!\" e arremessa ácido"
+    ],
+    [
+      "88–89",
+      "Um anjo domini surge em um lampejo de luz; ele aponta para um PJ"
+    ],
+    [
+      "92–93",
+      "A Fonte de Madeera tem 5% de chance de encerrar uma maldição"
+    ],
+    [
+      "94–95",
+      "O Senhor Supremo entra em um templo cercado por 3d6 cavaleiros"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante vende réplicas de vestes sacerdotais"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "Um alto sacerdote escolhe um PJ para receber uma bênção rara"
+    ],
+    [
+      "46–47",
+      "Quatro criminosos mascarados interrompem um rico cortejo fúnebre"
+    ],
+    [
+      "48–49",
+      "Durante um casamento, um homem se ergue e grita: \"Eu sou contra!\""
+    ],
+    [
+      "62–63",
+      "Os olhos de uma plebeia se tornam brancos e ela profere um augúrio"
+    ],
+    [
+      "78–79",
+      "Místicos erguem najas para serem beijadas; chance de ataque de 10%"
+    ],
+    [
+      "80–81",
+      "Um sacerdote salpica água benta com um pincel; ela queima caóticos"
+    ]
+  ]
+}

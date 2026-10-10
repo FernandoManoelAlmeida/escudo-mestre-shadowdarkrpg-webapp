@@ -1,0 +1,37 @@
+{
+  "id": "rival-segredo",
+  "titulo": "Segredo do grupo rival",
+  "categoria": "pnjs",
+  "subcategoria": "rivais",
+  "rolagem": "2d6",
+  "headers": [
+    "2d6",
+    "Segredo"
+  ],
+  "rows": [
+    [
+      "2",
+      "Traiu um juramento"
+    ],
+    [
+      "3–4",
+      "Roubou/forjou identidades"
+    ],
+    [
+      "5–6",
+      "Deve à Guilda dos Ladrões"
+    ],
+    [
+      "7–8",
+      "Mapa de um grande tesouro"
+    ],
+    [
+      "9–11",
+      "Sofrendo de uma maldição"
+    ],
+    [
+      "12",
+      "Tem um patrono poderoso"
+    ]
+  ]
+}

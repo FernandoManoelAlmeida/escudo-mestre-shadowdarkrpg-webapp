@@ -1,0 +1,294 @@
+{
+  "meta": {
+    "title": "Escudo do Mestre Shadowdark",
+    "description": "Compêndio curado para o PWA Escudo Shadowdark — consulta na mesa. Não substitui o Livro de Regras completo.",
+    "sources": [
+      "Livro de Regras Shadowdark pt-BR",
+      "Referências de Regras Shadowdark",
+      "homebrews da mesa."
+    ]
+  },
+  "index": [
+    {
+      "id": "1",
+      "title": "Núcleo",
+      "anchor": "1-nucleo"
+    },
+    {
+      "id": "2",
+      "title": "Exploração",
+      "anchor": "2-exploracao"
+    },
+    {
+      "id": "3",
+      "title": "Combate",
+      "anchor": "3-combate"
+    },
+    {
+      "id": "4",
+      "title": "Magia (resumo)",
+      "anchor": "4-magia-resumo"
+    },
+    {
+      "id": "5",
+      "title": "Viagem e descanso",
+      "anchor": "5-viagem-e-descanso"
+    },
+    {
+      "id": "6",
+      "title": "MJ e progressão",
+      "anchor": "6-mj-e-progressao"
+    }
+  ],
+  "sections": [
+    {
+      "id": "1",
+      "title": "Núcleo",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "Testes e CDs",
+          "content": "**Teste:** d20 + MOD do atributo ≥ CD. **Vantagem:** role 2×, use o melhor. **Desvantagem:** role 2×, use o pior. Vantagem e Desvantagem juntas se anulam.",
+          "tableRef": "testes_e_cds"
+        },
+        {
+          "id": "1.2",
+          "title": "Distâncias",
+          "tableRef": "distancias"
+        },
+        {
+          "id": "1.3",
+          "title": "Turno",
+          "content": "1. Reduza temporizadores pessoais.\n2. **1 ação** e mova-se **Perto** (ou mova duas vezes Perto sem ação).\n3. O MJ descreve resultados.\n\n**Iniciativa:** d20 + MOD DES; maior age primeiro."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Exploração",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "Luz",
+          "content": "Tocha: **1 h de tempo real** (um temporizador ativo). Fora da luz = escuridão total: Desvantagem em tarefas visuais; **teste de encontro a cada rodada** de exploração.",
+          "tableRef": "teste-encontro"
+        },
+        {
+          "id": "2.2",
+          "title": "Nível de perigo e encontros",
+          "content": "Frequência do teste d6 (1 = encontro): **Inseguro** a cada 3 rodadas ou 3 h; **Arriscado** a cada 2; **Mortal** a cada 1. Barulho alto = teste extra. Depois do encontro: distância, atividade, reação — use os geradores ou tabelas no índice.",
+          "tableRef": "nivel-perigo"
+        },
+        {
+          "id": "2.3",
+          "title": "Furtividade e surpresa",
+          "content": "Esconder-se: teste DES. Surpresa: alvos não agem na 1.ª rodada; atacantes têm Vantagem nos ataques dessa rodada."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Combate",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "Ataques",
+          "content": "Ataque: d20 + MOD (FOR corpo a corpo, DES à distância) ≥ CA do alvo. **Crítico:** natural 20 — dobra os dados de dano (ou efeito equivalente)."
+        },
+        {
+          "id": "3.2",
+          "title": "Moral",
+          "content": "Quando a criatura ou grupo chega à metade dos PV, teste de SAB CD 15. Falha: foge ou se rende conforme a natureza."
+        },
+        {
+          "id": "3.3",
+          "title": "Morte",
+          "content": "A 0 PV o personagem está inconsciente e morrendo; cura acima de 0 PV o desperta. No turno do PJ a 0 PV, role **1d4 + MOD CON** (mín. 1): esse é o número de rodadas até morrer. A cada turno nesse estado, d20: **20 natural** = recupera 1 PV. **Estabilizar:** adjacente, teste INT CD 15 — não morre, permanece inconsciente. Morte definitiva: personagem sai do jogo. O MJ pode usar **nocaute** em criaturas (inconsciente em vez de morrendo)."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Magia (resumo)",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "Conjuração",
+          "content": "Conjurar exige gestos e palavras. Teste: d20 + MOD INT ou SAB ≥ 10 + grau da magia. Falha: magia bloqueada até descanso longo. **1 natural** no d20 de conjuração: falha crítica (tabela de mago ou penitência de sacerdote).",
+          "tableRef": "falha-magica-mago-1-2"
+        },
+        {
+          "id": "4.2",
+          "title": "Concentração",
+          "content": "Uma magia de concentração ativa. Perde o efeito se sofrer dano ou for impedido de se concentrar."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Viagem e descanso",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "Viagem",
+          "content": "Hex típico: 10 km. Jornada: até 8 h por dia. Encontros na viagem usam **horas** em vez de rodadas (mesma tabela de perigo)."
+        },
+        {
+          "id": "5.2",
+          "title": "Descanso",
+          "content": "Descanso: 8 h + ração; recupera PV e magias conforme as regras do livro. Interromper o descanso pode exigir novo teste de encontro."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "MJ e progressão",
+      "subsections": [
+        {
+          "id": "6.1",
+          "title": "Ethos rápido",
+          "content": "Tempo e escuridão são recursos; testes só com pressão; informação no lugar certo é gratuita; combates curtos e letais."
+        },
+        {
+          "id": "6.2",
+          "title": "XP e tesouro",
+          "content": "XP pela **qualidade** do tesouro (cada PJ recebe o valor inteiro; ao subir de nível, XP zera). Bônus: +1 XP por ação engenhosa. Ouro guia: ~10 PO × nível médio do grupo por encontro relevante.",
+          "tableRef": "xp-tesouro"
+        }
+      ]
+    }
+  ],
+  "tables": {
+    "testes_e_cds": {
+      "headers": [
+        "CD",
+        "Dificuldade"
+      ],
+      "rows": [
+        {
+          "cd": "9",
+          "dificuldade": "Fácil"
+        },
+        {
+          "cd": "12",
+          "dificuldade": "Normal"
+        },
+        {
+          "cd": "15",
+          "dificuldade": "Difícil"
+        },
+        {
+          "cd": "18",
+          "dificuldade": "Extrema"
+        }
+      ]
+    },
+    "distancias": {
+      "headers": [
+        "Distância",
+        "Alcance"
+      ],
+      "rows": [
+        {
+          "distancia": "Adjacente",
+          "alcance": "1,5 m"
+        },
+        {
+          "distancia": "Perto",
+          "alcance": "até 9 m"
+        },
+        {
+          "distancia": "Longe",
+          "alcance": "dentro do raio de visão"
+        }
+      ]
+    }
+  },
+  "glossary": [
+    {
+      "term": "CD",
+      "fullName": "Classe de Dificuldade",
+      "description": "Número que o teste d20 + MOD deve igualar ou superar."
+    },
+    {
+      "term": "CA",
+      "fullName": "Classe de Armadura",
+      "description": "Dificuldade para acertar o alvo em combate."
+    },
+    {
+      "term": "PV",
+      "fullName": "Pontos de Vida",
+      "description": "Saúde; a 0 PV o personagem está morrendo (ver § 3.3)."
+    },
+    {
+      "term": "NV",
+      "fullName": "Nível",
+      "description": "Faixa de poder da criatura ou personagem."
+    },
+    {
+      "term": "AL",
+      "fullName": "Alinhamento",
+      "description": "Ordeiro (O), Neutro (N) ou Caótico (C)."
+    },
+    {
+      "term": "F",
+      "fullName": "Força",
+      "description": "Atributo; MOD em ataques corpo a corpo e testes de FOR."
+    },
+    {
+      "term": "D",
+      "fullName": "Destreza",
+      "description": "Atributo; MOD em ataques à distância, iniciativa e furtividade."
+    },
+    {
+      "term": "C",
+      "fullName": "Constituição",
+      "description": "Atributo; MOD no temporizador de morte (1d4 + MOD CON)."
+    },
+    {
+      "term": "I",
+      "fullName": "Inteligência",
+      "description": "Atributo; MOD para estabilizar feridos (CD 15)."
+    },
+    {
+      "term": "S",
+      "fullName": "Sabedoria",
+      "description": "Atributo; MOD em testes de percepção e moral."
+    },
+    {
+      "term": "Car",
+      "fullName": "Carisma",
+      "description": "Atributo; MOD em testes de reação (2d6 + MOD CAR)."
+    },
+    {
+      "term": "MOD",
+      "fullName": "Modificador",
+      "description": "Derivado do valor do atributo (tabela no Livro)."
+    },
+    {
+      "term": "Vantagem",
+      "fullName": "Vantagem",
+      "description": "Role 2d20 no teste e use o melhor resultado."
+    },
+    {
+      "term": "Desvantagem",
+      "fullName": "Desvantagem",
+      "description": "Role 2d20 no teste e use o pior resultado."
+    },
+    {
+      "term": "Adjacente",
+      "fullName": "Distância adjacente",
+      "description": "Alcance de 1,5 m."
+    },
+    {
+      "term": "Perto",
+      "fullName": "Distância perto",
+      "description": "Até 9 m."
+    },
+    {
+      "term": "Longe",
+      "fullName": "Distância longe",
+      "description": "Dentro do raio de visão."
+    }
+  ]
+}

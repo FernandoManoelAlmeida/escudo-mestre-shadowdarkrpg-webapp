@@ -1,0 +1,86 @@
+{
+  "id": "armadilhas",
+  "titulo": "Armadilhas",
+  "categoria": "armadilhas",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Armadilha",
+    "Gatilho",
+    "Dano / efeito"
+  ],
+  "rows": [
+    [
+      "1",
+      "Besta",
+      "Fio de disparo",
+      "1d6"
+    ],
+    [
+      "2",
+      "Chuva de agulhas",
+      "Placa de pressão",
+      "1d6 / sono"
+    ],
+    [
+      "3",
+      "Gás tóxico",
+      "Abrir porta",
+      "1d6 / paralisia"
+    ],
+    [
+      "4",
+      "Rede farpada",
+      "Interruptor",
+      "1d6 / cegueira"
+    ],
+    [
+      "5",
+      "Pedra rolante",
+      "Degrau falso",
+      "2d8"
+    ],
+    [
+      "6",
+      "Lâmina cortante",
+      "Fechar porta",
+      "2d8 / sono"
+    ],
+    [
+      "7",
+      "Fosso com estacas",
+      "Bloquear feixe de luz",
+      "2d8 / paralisia"
+    ],
+    [
+      "8",
+      "Azagaia",
+      "Puxar alavanca",
+      "2d8 / confusão"
+    ],
+    [
+      "9",
+      "Glifo mágico",
+      "Falar palavra",
+      "3d10"
+    ],
+    [
+      "10",
+      "Explosão de fogo",
+      "Gancho em fio",
+      "3d10 / paralisia"
+    ],
+    [
+      "11",
+      "Bloco em queda",
+      "Remover objeto",
+      "3d10 / inconsciência"
+    ],
+    [
+      "12",
+      "Estátua amaldiçoada",
+      "Conjurar magia",
+      "3d10 / petrificação"
+    ]
+  ]
+}

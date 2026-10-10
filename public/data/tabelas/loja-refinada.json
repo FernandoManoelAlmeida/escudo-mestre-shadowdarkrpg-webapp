@@ -1,0 +1,125 @@
+{
+  "id": "loja-refinada",
+  "titulo": "Loja refinada",
+  "categoria": "lojas",
+  "subcategoria": "refinada",
+  "rolagem": "d100",
+  "headers": [
+    "d100",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Alfaiate de alto padrão"
+    ],
+    [
+      "2",
+      "Vidraceiro"
+    ],
+    [
+      "3",
+      "Joalheiro"
+    ],
+    [
+      "4",
+      "Apotecário"
+    ],
+    [
+      "5",
+      "Artista"
+    ],
+    [
+      "6",
+      "Escriba"
+    ],
+    [
+      "7",
+      "Salão de guilda"
+    ],
+    [
+      "8",
+      "Ourives"
+    ],
+    [
+      "9",
+      "Mestre ferreiro"
+    ],
+    [
+      "10",
+      "Antiguidades e curiosidades d20NomeNomeConhecida por..."
+    ],
+    [
+      "1",
+      "Informantee FilhosProprietário antigo e amado"
+    ],
+    [
+      "2",
+      "O SapoImperialCompra itens de valor"
+    ],
+    [
+      "3",
+      "O MarteloRobustoCobra a mais de clientes ocasionais"
+    ],
+    [
+      "4",
+      "Mercadoriasde RosaFachada para a Guilda dos Ladrões"
+    ],
+    [
+      "5",
+      "As Filhasdo ReiO gato residente, Crumpet"
+    ],
+    [
+      "7",
+      "O CasteloNobreCerveja grátis em qualquer compra"
+    ],
+    [
+      "9",
+      "Curiosidadesdo AmanhecerPaga bem por objetos curiosos"
+    ],
+    [
+      "11",
+      "Armazémde GrigorReceptar mercadorias ilícitas"
+    ],
+    [
+      "12",
+      "FortalezaRealToca em um gongo a cada venda"
+    ],
+    [
+      "13",
+      "Moedase CoroaMercadorias de lugares distantes"
+    ],
+    [
+      "14",
+      "A Lareirade RalinaItens ruins e baratos"
+    ],
+    [
+      "15",
+      "A Rodado VilarejoAcusar os clientes de roubo"
+    ],
+    [
+      "16",
+      "MercadoriaDouradoMercadorias de origem duvidosa"
+    ],
+    [
+      "17",
+      "O Mercadoe as BotasPapagaio falante do proprietário"
+    ],
+    [
+      "18",
+      "O Lampiãode MarvoloEstátua de bronze de um diabo"
+    ],
+    [
+      "19",
+      "VendíveisAlegreÉ mal-assombrada"
+    ],
+    [
+      "20",
+      "Os Estoquesde JadeProblema sério com roedores"
+    ],
+    [
+      "3",
+      "Goblin pirataMago de capuzCavaleiro meio-orcBêbado"
+    ]
+  ]
+}

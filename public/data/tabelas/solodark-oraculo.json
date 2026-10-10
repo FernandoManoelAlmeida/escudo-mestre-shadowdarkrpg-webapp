@@ -1,0 +1,24 @@
+{
+  "id": "solodark-oraculo",
+  "titulo": "Oráculo — sim/não",
+  "categoria": "solodark",
+  "rolagem": "d20",
+  "headers": [
+    "d20",
+    "Resposta"
+  ],
+  "rows": [
+    [
+      "1–9",
+      "Não"
+    ],
+    [
+      "10",
+      "Reviravolta"
+    ],
+    [
+      "11–20",
+      "Sim"
+    ]
+  ]
+}

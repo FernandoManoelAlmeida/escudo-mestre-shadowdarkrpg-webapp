@@ -1,0 +1,105 @@
+{
+  "id": "encontro-ruinas",
+  "titulo": "Encontros — RUÍNAS",
+  "categoria": "encontro",
+  "subcategoria": "ruinas",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Um brutamontes das cavernas mutante explode através de uma parede"
+    ],
+    [
+      "36–37",
+      "Um vazamento de gás: todas as fontes de luz explodem e se apagam"
+    ],
+    [
+      "38–39",
+      "Um cubo gelatinoso cheio de itens úteis está preso dentro de um fosso"
+    ],
+    [
+      "48–49",
+      "Um fantasma choroso flutua por perto, distraído em seus lamentos"
+    ],
+    [
+      "68–69",
+      "Um grupo de aranhas irrompe de um saco de ovos translúcidos"
+    ],
+    [
+      "70–71",
+      "Um ogro chamado Lud risca palavras grosseiras na parede"
+    ],
+    [
+      "80–81",
+      "Uma dríade procura sua árvore, que foi cortada por bugbears"
+    ],
+    [
+      "86–87",
+      "Um golem de pedra empilha as mesmas rochas incansavelmente"
+    ],
+    [
+      "88–89",
+      "Dois mantos negros se circundam em um duelo de intimidação"
+    ],
+    [
+      "94–95",
+      "As brasas incandescentes de uma fogueira recente ainda queimam"
+    ],
+    [
+      "96–97",
+      "Um minotauro guia o Mercador Errante por uma trilha"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "O cadáver de um explorador segura um item mágico aleatório"
+    ],
+    [
+      "46–47",
+      "Um estrangulador se esconde acima de uma mochila cheia de pedras"
+    ],
+    [
+      "58–59",
+      "Exploradores rivais guiam um frágil nobre turista em uma “aventura”"
+    ],
+    [
+      "76–77",
+      "Um ettercap tece um casulo de teias em volta de sua presa ainda viva"
+    ],
+    [
+      "82–83",
+      "Um gnomo das profundezas toca sons tenebrosos em fungos ecoantes"
+    ],
+    [
+      "28–29",
+      "Um gorila uivante esmurra e morde um crocodilo que se defende"
+    ],
+    [
+      "32–33",
+      "Um dragão da floresta dorme fora de uma caverna cheia de vinhas"
+    ],
+    [
+      "34–35",
+      "Um troll viscoso se balança entre galhos como um símio"
+    ],
+    [
+      "36–37",
+      "Flores carnívoras rosadas desabrocham e lançam dardos venenosos"
+    ],
+    [
+      "40–41",
+      "Um gigantesco braquiossauro caminha lentamente enquanto pasta"
+    ],
+    [
+      "42–43",
+      "Um braço humano se agita em uma poça escura de areia movediça"
+    ]
+  ]
+}

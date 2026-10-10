@@ -1,0 +1,81 @@
+{
+  "id": "tesouros-10-mais",
+  "titulo": "Tesouros 10+",
+  "categoria": "tesouros",
+  "subcategoria": "10-mais",
+  "rolagem": "d100",
+  "headers": [
+    "d100",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Três pratos de prata manchados (5 PP cada)"
+    ],
+    [
+      "04–05",
+      "Barril meio vazio de hidromel anão (5 PO)"
+    ],
+    [
+      "06–07",
+      "Cota de malha danificada, precisando de reparos (50 PO)"
+    ],
+    [
+      "08–09",
+      "Cinco espadas grandes cerimoniais idênticas (12 PO cada)"
+    ],
+    [
+      "10–11",
+      "Uma lasca de esmeralda que vale metade do seu valor (60 PO)"
+    ],
+    [
+      "12–13",
+      "Anel de ouro com uma grande pérola negra (65 PO)"
+    ],
+    [
+      "14–15",
+      "Uma cota de malha carmesim com escudo combinando (70 PO)"
+    ],
+    [
+      "16–17",
+      "Pérola gigante na boca de um morcego banhado a ouro (100 PO)"
+    ],
+    [
+      "18–19",
+      "Vitral retratando Santa Terragnis lutando contra um dragão (110 PO)"
+    ],
+    [
+      "22–23",
+      "Adaga com uma esmeralda no pomo (120 PO)"
+    ],
+    [
+      "24–25",
+      "Um trio de pérolas com tons azulados e violetas (40 PO cada)"
+    ],
+    [
+      "30–31",
+      "Escultura de jade de um homem-elefante meditando (140 PO)"
+    ],
+    [
+      "32–33",
+      "Alaúde refinado e feito pelo luthier mais famoso do reino (140 PO)"
+    ],
+    [
+      "36–37",
+      "Escaravelho dourado cravejado com pequenas esmeraldas (220 PO)"
+    ],
+    [
+      "38–39",
+      "Baú transbordando com 230 PO"
+    ],
+    [
+      "42–43",
+      "Única pintura existente de um antigo rei (240 PO)"
+    ],
+    [
+      "44–45",
+      "Pingente de ouro com um rubi em formato de gota (240 PO)"
+    ]
+  ]
+}

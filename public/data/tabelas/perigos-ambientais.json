@@ -1,0 +1,86 @@
+{
+  "id": "perigos-ambientais",
+  "titulo": "Perigos Ambientais",
+  "categoria": "armadilhas",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Movimento",
+    "Dano",
+    "Enfraquecimento"
+  ],
+  "rows": [
+    [
+      "1",
+      "Areia movediça",
+      "Poças ácidas",
+      "Fumaça cegante"
+    ],
+    [
+      "2",
+      "Estrepes",
+      "Rochas que explodem",
+      "Campo magnético"
+    ],
+    [
+      "3",
+      "Detritos soltos",
+      "Água congelante",
+      "Runas de exaustão"
+    ],
+    [
+      "4",
+      "Poço de piche",
+      "Lava",
+      "Zona antimagia"
+    ],
+    [
+      "5",
+      "Vinhas que agarram",
+      "Granizo intenso",
+      "Apaga fontes de luz"
+    ],
+    [
+      "6",
+      "Inclinação acentuada",
+      "Saída de vapor",
+      "Som desorientador"
+    ],
+    [
+      "7",
+      "Gelo escorregadio",
+      "Mofo tóxico",
+      "Silêncio mágico"
+    ],
+    [
+      "8",
+      "Correnteza forte",
+      "Queda de detritos",
+      "Frio entorpecente"
+    ],
+    [
+      "9",
+      "Teias pegajosas",
+      "Chuva ácida",
+      "Fedor nauseante"
+    ],
+    [
+      "10",
+      "Vento forte",
+      "Cortina de fogo",
+      "Esporos soníferos"
+    ],
+    [
+      "11",
+      "Chão oleoso",
+      "Campo eletrificado",
+      "Reflexos desorientadores"
+    ],
+    [
+      "12",
+      "Terreno ilusório",
+      "Fluxo gravitacional",
+      "Roubo de memórias"
+    ]
+  ]
+}

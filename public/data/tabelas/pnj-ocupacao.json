@@ -1,0 +1,72 @@
+{
+  "id": "pnj-ocupacao",
+  "titulo": "Ocupação do PNJ",
+  "categoria": "pnjs",
+  "subcategoria": "ocupacao",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Anão",
+    "Elfo",
+    "Goblin",
+    "Halfling",
+    "Humano",
+    "Orc"
+  ],
+  "rows": [
+    [
+      "1",
+      "Coveiro",
+      "Carpinteiro",
+      "Erudito",
+      "Ferreiro",
+      "Mercador",
+      "Bruto"
+    ],
+    [
+      "2",
+      "Coletor",
+      "Fazendeiro",
+      "Garçom",
+      "Pedinte",
+      "Guarda",
+      "Xamã"
+    ],
+    [
+      "3",
+      "Padeiro",
+      "Cozinheiro",
+      "Marinheiro",
+      "Açougueiro",
+      "Escriba",
+      "Caçador"
+    ],
+    [
+      "4",
+      "Chaveiro",
+      "Sapateiro",
+      "Frade",
+      "Mercador",
+      "Ferreiro",
+      "Guerreiro"
+    ],
+    [
+      "5",
+      "Minerador",
+      "Caçador",
+      "Ladrão",
+      "Cozinheiro",
+      "Clérigo",
+      "Sacerdote"
+    ],
+    [
+      "6",
+      "Ferreiro",
+      "Mago",
+      "Alquimista",
+      "Ladrão",
+      "Nobre",
+      "Chefe"
+    ]
+  ]
+}

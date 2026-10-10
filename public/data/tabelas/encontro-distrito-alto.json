@@ -1,0 +1,249 @@
+{
+  "id": "encontro-distrito-alto",
+  "titulo": "Encontros — DISTRITO ALTO",
+  "categoria": "encontro",
+  "subcategoria": "distrito-alto",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "02–03",
+      "O filho do Duque desafia um PJ para um duelo até a morte"
+    ],
+    [
+      "04–05",
+      "Os Assassinos do Senhor Supremo aparecem e exigem explicações"
+    ],
+    [
+      "06–07",
+      "Exploradores confrontam os PJs, junto à Guilda de Mercenários"
+    ],
+    [
+      "10–11",
+      "A esposa do Barão Clard pisca para um PJ; ele nota e fica furioso"
+    ],
+    [
+      "12–13",
+      "Três barris de vinho refinado se soltam e rolam sobre os PJs"
+    ],
+    [
+      "14–15",
+      "A pantera mascote de um nobre se assusta e se solta da coleira"
+    ],
+    [
+      "16–17",
+      "Um escorpião gigante (iguaria rara) escapa de um restaurante fino"
+    ],
+    [
+      "18–19",
+      "Um penico furiosamente arremessado voa em direção aos PJs"
+    ],
+    [
+      "20–21",
+      "Um bardo de tanga e drogado se agita selvagemente para os PJs"
+    ],
+    [
+      "22–23",
+      "Uma vidente subornada declara que os PJs são “futuros criminosos”"
+    ],
+    [
+      "24–25",
+      "Uma patrulha da Guarda da Cidade segue desconfiada os PJs por aí"
+    ],
+    [
+      "30–31",
+      "Seis criminosos fogem do Joalheiro Real levando uma bolsa cheia"
+    ],
+    [
+      "32–33",
+      "Um oficial e quatro guardas abordam os PJs por impostos devidos"
+    ],
+    [
+      "34–35",
+      "Um nobre rude esbarra em um PJ, murmurando “ralé...”"
+    ],
+    [
+      "36–37",
+      "Uma sentinela mágica defeituosa conjura teia sobre os PJs"
+    ],
+    [
+      "38–39",
+      "Um grito de socorro nada convincente vem de trás de uma taverna"
+    ],
+    [
+      "40–41",
+      "Um vendedor de sedas finas acusa um PJ de rasgar um lenço caro"
+    ],
+    [
+      "42–43",
+      "A Duquesa Gorvalt desmaia perto da beirada de uma sacada alta"
+    ],
+    [
+      "01",
+      "O Senhor Supremo impõe 500 PO de “taxa de imoralidade” aos PJs"
+    ],
+    [
+      "08–09",
+      "Um ladrão disfarçado de mordomo conduz os PJs para uma emboscada"
+    ],
+    [
+      "26–27",
+      "Uma criança muito limpa tenta derrubar um PJ quando o grupo passa"
+    ],
+    [
+      "28–29",
+      "Três criminosos bem vestidos extorquem um banqueiro por “proteção”"
+    ],
+    [
+      "44–45",
+      "Foliões mascarados lotam as ruas; uma adaga voa na direção de um PJ"
+    ],
+    [
+      "46–47",
+      "Lorde Larvin se engasga com seu vinho, que foi envenenado"
+    ],
+    [
+      "50–53",
+      "A Guarda da Cidade revista os PJs em busca de itens suspeitos"
+    ],
+    [
+      "54–55",
+      "Um adolescente zombeteiro critica as roupas dos personagens"
+    ],
+    [
+      "60–61",
+      "Uma das alunas de etiqueta da Srta. Fralk escapuliu para um beco"
+    ],
+    [
+      "64–65",
+      "Os PJs encontram um bilhete: “Traga o veneno até o Céu de Safira”"
+    ],
+    [
+      "68–69",
+      "Uma socialite bêbada admite casualmente que matou o marido"
+    ],
+    [
+      "74–75",
+      "Um PJ identifica um impostor fingindo ser Sir Wyndos, o Corajoso"
+    ],
+    [
+      "76–77",
+      "Uma estátua de macaco de latão torna 1 PC em 1 PO, 1% das vezes"
+    ],
+    [
+      "78–79",
+      "Um bardo chora e toca baladas trágicas enquanto segue os PJs"
+    ],
+    [
+      "80–81",
+      "Os PJs cometem uma gafe social contra um príncipe visitante"
+    ],
+    [
+      "82–83",
+      "O velho Sir Faust tira uma pérola da orelha de um PJ como presente"
+    ],
+    [
+      "86–87",
+      "Os PJs notam 1d4 zumbis preservados integrados ao ambiente"
+    ],
+    [
+      "88–89",
+      "Um dissidente político se esconde entre os PJs e faz um discurso"
+    ],
+    [
+      "90–91",
+      "Uma Irmã Reverenda (acólita) oferece uma cura ou bênção a um PJ"
+    ],
+    [
+      "92–93",
+      "Um basilisco empalhado sai correndo de uma loja de curiosidades"
+    ],
+    [
+      "94–95",
+      "Um vampiro de verdade espreita despercebido entre os mascarados"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante está vendendo dados viciados (5 PO)"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "O Senhor Supremo está jantando e convida os PJs para comer"
+    ],
+    [
+      "48–49",
+      "A Guarda da Cidade enxota moradores de rua; um é um PNJ conhecido"
+    ],
+    [
+      "56–57",
+      "Uma mulher encapuzada acena para os PJs irem até o jardim de rosas"
+    ],
+    [
+      "58–59",
+      "Uma criança com poderes mágicos acidentalmente invoca um diabrete"
+    ],
+    [
+      "62–63",
+      "Um nobre pede que um PJ lhe bata, e se aborrece de qualquer maneira"
+    ],
+    [
+      "66–67",
+      "Através de uma janela escura, os PJs avistam 6 carniçais cambaleando"
+    ],
+    [
+      "70–71",
+      "Exploradores rivais exibem seus novos distintivos e mandados de xerife"
+    ],
+    [
+      "84–85",
+      "Uma bruxa da noite disfarçada de padeiro entrega tortas com drogas"
+    ],
+    [
+      "01",
+      "Uma execução está prestes a ocorrer: é um familiar de um PJ"
+    ],
+    [
+      "02–03",
+      "Um ifriti enfurecido se ergue de uma lâmpada de latão manchada"
+    ],
+    [
+      "04–05",
+      "Um assassino cai sobre um PJ, confundindo-o com seu alvo"
+    ],
+    [
+      "06–07",
+      "Um vidraceiro acusa um PJ de quebrar um vaso de valor inestimável"
+    ],
+    [
+      "18–19",
+      "Cavalos sendo ferrados se libertam e debandam pelas ruas"
+    ],
+    [
+      "20–21",
+      "Uma figura encapuzada desonra um santuário de Madeera e foge"
+    ],
+    [
+      "22–23",
+      "Um guerreiro arrogante a cavalo tenta chutar um PJ para o lado"
+    ],
+    [
+      "24–25",
+      "Acrobatas bem paramentados esbarram nos PJs: resulta em um furto"
+    ],
+    [
+      "40–41",
+      "Uma mulher cai, se contorcendo, e se ergue como um homem-rato"
+    ],
+    [
+      "44–45",
+      "O martelo incandescente de um ferreiro voa na direção de um PJ"
+    ]
+  ]
+}

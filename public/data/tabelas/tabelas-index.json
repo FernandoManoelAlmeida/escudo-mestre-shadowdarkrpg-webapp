@@ -1,0 +1,383 @@
+{
+  "tabelas": [
+    {
+      "id": "algo-acontece",
+      "titulo": "Algo acontece",
+      "categoria": "algo-acontece",
+      "subcategoria": "geral",
+      "rolagem": "d100"
+    },
+    {
+      "id": "armadilhas",
+      "titulo": "Armadilhas",
+      "categoria": "armadilhas",
+      "rolagem": "d12"
+    },
+    {
+      "id": "perigos-ambientais",
+      "titulo": "Perigos Ambientais",
+      "categoria": "armadilhas",
+      "rolagem": "d12"
+    },
+    {
+      "id": "assentamento-nome",
+      "titulo": "Nome de assentamento",
+      "categoria": "assentamentos",
+      "subcategoria": "nome",
+      "rolagem": "d20"
+    },
+    {
+      "id": "encontro-masmorra-piloto",
+      "titulo": "Encontro — masmorra (piloto)",
+      "categoria": "encontro",
+      "subcategoria": "masmorra",
+      "rolagem": "d6"
+    },
+    {
+      "id": "encontro-artico",
+      "titulo": "Encontros — ÁRTICO",
+      "categoria": "encontro",
+      "subcategoria": "artico",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-cavernas",
+      "titulo": "Encontros — CAVERNAS",
+      "categoria": "encontro",
+      "subcategoria": "cavernas",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-deserto",
+      "titulo": "Encontros — DESERTO",
+      "categoria": "encontro",
+      "subcategoria": "deserto",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-distrito-alto",
+      "titulo": "Encontros — DISTRITO ALTO",
+      "categoria": "encontro",
+      "subcategoria": "distrito-alto",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-distrito-artesao",
+      "titulo": "Encontros — DISTRITO ARTESÃO",
+      "categoria": "encontro",
+      "subcategoria": "distrito-artesao",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-distrito-baixo",
+      "titulo": "Encontros — DISTRITO BAIXO",
+      "categoria": "encontro",
+      "subcategoria": "distrito-baixo",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-distrito-comercial",
+      "titulo": "Encontros — DISTRITO COMERCIAL",
+      "categoria": "encontro",
+      "subcategoria": "distrito-comercial",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-distrito-do-castelo",
+      "titulo": "Encontros — DISTRITO DO CASTELO",
+      "categoria": "encontro",
+      "subcategoria": "distrito-do-castelo",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-distrito-religioso",
+      "titulo": "Encontros — DISTRITO RELIGIOSO",
+      "categoria": "encontro",
+      "subcategoria": "distrito-religioso",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-distrito-universitario",
+      "titulo": "Encontros — DISTRITO UNIVERSITÁRIO",
+      "categoria": "encontro",
+      "subcategoria": "distrito-universitario",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-florestas",
+      "titulo": "Encontros — FLORESTAS",
+      "categoria": "encontro",
+      "subcategoria": "florestas",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-montanhas",
+      "titulo": "Encontros — MONTANHAS",
+      "categoria": "encontro",
+      "subcategoria": "montanhas",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-oceano",
+      "titulo": "Encontros — OCEANO",
+      "categoria": "encontro",
+      "subcategoria": "oceano",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-pantanos",
+      "titulo": "Encontros — PÂNTANOS",
+      "categoria": "encontro",
+      "subcategoria": "pantanos",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-periferia",
+      "titulo": "Encontros — PERIFERIA",
+      "categoria": "encontro",
+      "subcategoria": "periferia",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-pradarias",
+      "titulo": "Encontros — PRADARIAS",
+      "categoria": "encontro",
+      "subcategoria": "pradarias",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-rios-e-costas",
+      "titulo": "Encontros — RIOS E COSTAS",
+      "categoria": "encontro",
+      "subcategoria": "rios-e-costas",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-ruinas",
+      "titulo": "Encontros — RUÍNAS",
+      "categoria": "encontro",
+      "subcategoria": "ruinas",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-selva",
+      "titulo": "Encontros — SELVA",
+      "categoria": "encontro",
+      "subcategoria": "selva",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-tavernas",
+      "titulo": "Encontros — TAVERNAS",
+      "categoria": "encontro",
+      "subcategoria": "tavernas",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-tumbas",
+      "titulo": "Encontros — TUMBAS",
+      "categoria": "encontro",
+      "subcategoria": "tumbas",
+      "rolagem": "d100"
+    },
+    {
+      "id": "encontro-tuneis-profundos",
+      "titulo": "Encontros — TÚNEIS PROFUNDOS",
+      "categoria": "encontro",
+      "subcategoria": "tuneis-profundos",
+      "rolagem": "d100"
+    },
+    {
+      "id": "atividade-criaturas",
+      "titulo": "Atividade Criaturas",
+      "categoria": "encontros",
+      "subcategoria": "encontros",
+      "rolagem": "2d6"
+    },
+    {
+      "id": "distancia-inicial-encontro",
+      "titulo": "Distancia Inicial Encontro",
+      "categoria": "encontros",
+      "subcategoria": "encontros",
+      "rolagem": "d6"
+    },
+    {
+      "id": "nivel-perigo",
+      "titulo": "Nivel Perigo",
+      "categoria": "encontros",
+      "subcategoria": "encontros",
+      "rolagem": "Escolha do MJ (não é rolagem)"
+    },
+    {
+      "id": "teste-encontro",
+      "titulo": "Teste Encontro",
+      "categoria": "encontros",
+      "subcategoria": "encontros",
+      "rolagem": "d6"
+    },
+    {
+      "id": "falha-magica-mago-1-2",
+      "titulo": "Falha Magica Mago 1 2",
+      "categoria": "falha-magica",
+      "rolagem": "d12"
+    },
+    {
+      "id": "armas-comuns",
+      "titulo": "Armas comuns (sorteio)",
+      "categoria": "itens",
+      "subcategoria": "armas",
+      "rolagem": "d12"
+    },
+    {
+      "id": "itens-magicos-aleatorios",
+      "titulo": "Item mágico aleatório",
+      "categoria": "itens",
+      "subcategoria": "magicos",
+      "rolagem": "d20"
+    },
+    {
+      "id": "loja-padrao",
+      "titulo": "Loja padrão",
+      "categoria": "lojas",
+      "subcategoria": "padrao",
+      "rolagem": "d12"
+    },
+    {
+      "id": "loja-refinada",
+      "titulo": "Loja refinada",
+      "categoria": "lojas",
+      "subcategoria": "refinada",
+      "rolagem": "d100"
+    },
+    {
+      "id": "pnj-ancestralidade",
+      "titulo": "Ancestralidade do PNJ",
+      "categoria": "pnjs",
+      "subcategoria": "ancestralidade",
+      "rolagem": "d12"
+    },
+    {
+      "id": "pnj-caracteristicas",
+      "titulo": "Características do PNJ",
+      "categoria": "pnjs",
+      "subcategoria": "caracteristicas",
+      "rolagem": "d20"
+    },
+    {
+      "id": "pnj-idade",
+      "titulo": "Idade do PNJ",
+      "categoria": "pnjs",
+      "subcategoria": "idade",
+      "rolagem": "d8"
+    },
+    {
+      "id": "rival-nivel",
+      "titulo": "Nível dos exploradores rivais",
+      "categoria": "pnjs",
+      "subcategoria": "rivais",
+      "rolagem": "d6"
+    },
+    {
+      "id": "pnj-nome-ancestralidade",
+      "titulo": "Nome do PNJ por ancestralidade",
+      "categoria": "pnjs",
+      "subcategoria": "nome",
+      "rolagem": "d20"
+    },
+    {
+      "id": "pnj-ocupacao",
+      "titulo": "Ocupação do PNJ",
+      "categoria": "pnjs",
+      "subcategoria": "ocupacao",
+      "rolagem": "d6"
+    },
+    {
+      "id": "rival-renome",
+      "titulo": "Renome do grupo rival",
+      "categoria": "pnjs",
+      "subcategoria": "rivais",
+      "rolagem": "d6"
+    },
+    {
+      "id": "pnj-riqueza",
+      "titulo": "Riqueza do PNJ",
+      "categoria": "pnjs",
+      "subcategoria": "riqueza",
+      "rolagem": "d6"
+    },
+    {
+      "id": "rival-segredo",
+      "titulo": "Segredo do grupo rival",
+      "categoria": "pnjs",
+      "subcategoria": "rivais",
+      "rolagem": "2d6"
+    },
+    {
+      "id": "reacao",
+      "titulo": "Reacao",
+      "categoria": "reacao",
+      "rolagem": "2d6 + MOD CAR"
+    },
+    {
+      "id": "rumores-taverna",
+      "titulo": "Rumores",
+      "categoria": "rumores",
+      "subcategoria": "taverna",
+      "rolagem": "d100"
+    },
+    {
+      "id": "solodark-oraculo-detalhe",
+      "titulo": "Oráculo — detalhe (legado Astraldark)",
+      "categoria": "solodark",
+      "rolagem": "d6"
+    },
+    {
+      "id": "solodark-oraculo",
+      "titulo": "Oráculo — sim/não",
+      "categoria": "solodark",
+      "rolagem": "d20"
+    },
+    {
+      "id": "tesouro-encontro-po",
+      "titulo": "Ouro sugerido por encontro",
+      "categoria": "tesouros",
+      "subcategoria": "guia",
+      "rolagem": "d6"
+    },
+    {
+      "id": "tesouros-0-3",
+      "titulo": "Tesouros 0–3",
+      "categoria": "tesouros",
+      "subcategoria": "0-3",
+      "rolagem": "d100"
+    },
+    {
+      "id": "tesouros-10-mais",
+      "titulo": "Tesouros 10+",
+      "categoria": "tesouros",
+      "subcategoria": "10-mais",
+      "rolagem": "d100"
+    },
+    {
+      "id": "tesouros-4-6",
+      "titulo": "Tesouros 4–6",
+      "categoria": "tesouros",
+      "subcategoria": "4-6",
+      "rolagem": "d100"
+    },
+    {
+      "id": "tesouros-7-9",
+      "titulo": "Tesouros 7–9",
+      "categoria": "tesouros",
+      "subcategoria": "7-9",
+      "rolagem": "d100"
+    },
+    {
+      "id": "xp-tesouro",
+      "titulo": "XP por qualidade do tesouro",
+      "categoria": "xp",
+      "subcategoria": "tesouro",
+      "rolagem": "d4"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "encontro-tumbas",
+  "titulo": "Encontros — TUMBAS",
+  "categoria": "encontro",
+  "subcategoria": "tumbas",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "58–59",
+      "Um rastejador de caverna devora um zumbi recém-destruído"
+    ],
+    [
+      "62–63",
+      "Um vampiro oferece passagem segura por alguns goles de sangue"
+    ],
+    [
+      "66–67",
+      "Um crânio rola por aí, parando para fazer críticas ou comentários"
+    ],
+    [
+      "68–69",
+      "Uma gosma preta goteja de rachaduras finas no teto"
+    ],
+    [
+      "94–95",
+      "O arquimago humano Rantarim (N) procura por um tomo antigo"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante sai, ofegante, de um caixão"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "Um local oculto esconde 1d4 itens da Tabela de Tesouros 7-9"
+    ],
+    [
+      "78–79",
+      "Um carniçal salivante está preso à parede por quatro estacas de ferro"
+    ],
+    [
+      "86–87",
+      "Uma urna com o nome \"Bimbles\" guarda o zumbi azul de uma cocatriz"
+    ],
+    [
+      "88–89",
+      "Um enxame de centopeias assola um rastejador de caverna em aflição"
+    ],
+    [
+      "90–91",
+      "Um inumano radiante (O), animado por energia sagrada, se aproxima"
+    ],
+    [
+      "92–93",
+      "Um sino suave soa; todos que o ouvirem por 2 rodadas curam 2d6 PV"
+    ],
+    [
+      "01",
+      "O Oráculo de Dez Olhos surge flutuando e falando sobre perdição"
+    ],
+    [
+      "04–05",
+      "Uma hidra albina emerge repentinamente, açoitada por 2d4 drow"
+    ],
+    [
+      "06–07",
+      "Um duergar pede ajuda; outros 2d4 preparam uma emboscada"
+    ],
+    [
+      "08–09",
+      "Uma sacerdotisa drow lidera 2d6 drow em busca de novos cativos"
+    ],
+    [
+      "30–31",
+      "O chão estremece: um verme púrpura chega em 1d4 rodadas"
+    ],
+    [
+      "34–35",
+      "Um estrangulador persegue os PJs e os ataca pela retaguarda"
+    ],
+    [
+      "36–37",
+      "Um terremoto faz um túnel desabar"
+    ],
+    [
+      "38–39",
+      "Um ogro zumbi vaga sem rumo em direção ao som"
+    ]
+  ]
+}

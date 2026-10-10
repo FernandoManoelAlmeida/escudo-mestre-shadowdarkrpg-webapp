@@ -1,0 +1,36 @@
+{
+  "id": "solodark-oraculo-detalhe",
+  "titulo": "Oráculo — detalhe (legado Astraldark)",
+  "categoria": "solodark",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Detalhe"
+  ],
+  "rows": [
+    [
+      "1",
+      "Alguém ou alguma nave está no seu encalço"
+    ],
+    [
+      "2",
+      "Mentira ou sabotagem ligada ao elmo / navegador"
+    ],
+    [
+      "3",
+      "O ar do envelope falha ou fica viciado cedo demais"
+    ],
+    [
+      "4",
+      "Uma dívida antiga exige pagamento agora"
+    ],
+    [
+      "5",
+      "O mapa ou a rota está errado"
+    ],
+    [
+      "6",
+      "O Grande Antigo chama a atenção"
+    ]
+  ]
+}

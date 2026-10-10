@@ -1,0 +1,25 @@
+{
+  "id": "distancia-inicial-encontro",
+  "titulo": "Distancia Inicial Encontro",
+  "categoria": "encontros",
+  "subcategoria": "encontros",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Distância"
+  ],
+  "rows": [
+    [
+      "1",
+      "Adjacente"
+    ],
+    [
+      "2–4",
+      "Perto"
+    ],
+    [
+      "5–6",
+      "Longe"
+    ]
+  ]
+}

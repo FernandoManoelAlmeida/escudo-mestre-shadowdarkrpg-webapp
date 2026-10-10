@@ -1,0 +1,32 @@
+{
+  "id": "reacao",
+  "titulo": "Reacao",
+  "categoria": "reacao",
+  "rolagem": "2d6 + MOD CAR",
+  "headers": [
+    "Resultado",
+    "Comportamento"
+  ],
+  "rows": [
+    [
+      "0–6",
+      "Hostil"
+    ],
+    [
+      "7–8",
+      "Desconfiado"
+    ],
+    [
+      "9",
+      "Neutro"
+    ],
+    [
+      "10–11",
+      "Curioso"
+    ],
+    [
+      "12+",
+      "Amigável"
+    ]
+  ]
+}

@@ -1,0 +1,143 @@
+import type { NextConfig } from "next";
+import { includeUrlInPrecacheManifest } from "./lib/pwaPrecacheFilter";
+
+const buildForCapacitor = process.env.BUILD_ANDROID_CAPACITOR === "1";
+const buildForGitHubPages = process.env.GITHUB_PAGES === "1";
+const basePath = buildForGitHubPages
+  ? process.env.NEXT_PUBLIC_BASE_PATH || "/escudo-mestre-shadowdarkrpg-webapp"
+  : "";
+
+/** Precache do Workbox às vezes lista `/_next/...` ou URL absoluta sem o segmento do GitHub Pages. */
+function prefixPrecacheUrl(url: string, bp: string): string {
+  if (!bp) return url;
+  const root = bp.endsWith("/") ? bp.slice(0, -1) : bp;
+  if (url === root || url.startsWith(`${root}/`)) return url;
+
+  try {
+    const u = new URL(url);
+    const p = u.pathname;
+    if (
+      p.startsWith("/_next/") ||
+      p === "/_next" ||
+      (p.startsWith("/static/") && !p.startsWith(`${root}/`))
+    ) {
+      u.pathname = `${root}${p}`;
+      return u.href;
+    }
+    return url;
+  } catch {
+    /* URL relativa ao origin do SW */
+  }
+
+  if (
+    url.startsWith("/_next/") ||
+    url === "/_next" ||
+    url.startsWith("/static/")
+  ) {
+    return `${root}${url}`;
+  }
+  if (url.startsWith("_next/")) {
+    return `${root}/${url}`;
+  }
+  if (url.startsWith("/") && !url.startsWith(`${root}/`)) {
+    return `${root}${url}`;
+  }
+  return url;
+}
+
+const dataCachePattern =
+  basePath !== ""
+    ? new RegExp(`^${basePath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/data/`)
+    : /^\/data\//;
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development" || buildForCapacitor,
+  register: false,
+  /** Não precachear version.json — senão o SW devolve buildId antigo e o banner falha. */
+  publicExcludes: ["!noprecache/**/*", "!version.json"],
+  scope: basePath ? `${basePath}/` : "/",
+  sw: "sw.js",
+  cacheOnFrontEndNav: true,
+  reloadOnOnline: true,
+  extendDefaultRuntimeCaching: true,
+  workboxOptions: {
+    disableDevLogs: true,
+    /**
+     * Mesmos defaults do next-pwa + exclusão de chunks (se omitirmos `exclude`, perdem-se os
+     * defaults do plugin). Isto remove entradas do manifest **antes** dos transforms.
+     */
+    exclude: [
+      /\/_next\/static\/.*(?<!\.p)\.woff2/,
+      /\.map$/,
+      /^manifest.*\.js$/,
+      /^static\/chunks\//,
+      ({ asset }: { asset: { name?: string } }) =>
+        Boolean(
+          asset?.name?.includes("static/chunks") ||
+          asset?.name?.includes("static\\chunks"),
+        ),
+    ],
+    manifestTransforms: [
+      async (manifestEntries: { url: string; revision?: string | null }[]) => {
+        const manifest = manifestEntries
+          .map((m) => {
+            m.url = prefixPrecacheUrl(m.url, basePath);
+            return m;
+          })
+          .filter((m) => includeUrlInPrecacheManifest(m.url));
+        return { manifest, warnings: [] };
+      },
+    ],
+    runtimeCaching: [
+      {
+        urlPattern: dataCachePattern,
+        handler: "CacheFirst",
+        options: {
+          cacheName: "data-cache",
+          expiration: {
+            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 dias
+          },
+        },
+      },
+    ],
+  },
+});
+
+const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      { source: "/itens-magicos", destination: "/arcanos", permanent: true },
+      {
+        source: "/itens-magicos/:path*",
+        destination: "/arcanos/:path*",
+        permanent: true,
+      },
+    ];
+  },
+  compiler: {
+    styledComponents: true,
+  },
+  /**
+   * Em build GitHub Pages, injeta o mesmo basePath do Next no cliente (evita SW em `/sw.js` na raiz).
+   * Fora disso, repassa NEXT_PUBLIC_BASE_PATH do ambiente para não quebrar testes locais com subpath.
+   */
+  env: {
+    NEXT_PUBLIC_BASE_PATH: buildForGitHubPages
+      ? basePath
+      : (process.env.NEXT_PUBLIC_BASE_PATH ?? ""),
+  },
+  ...((buildForCapacitor || buildForGitHubPages) && {
+    output: "export",
+    images: { unoptimized: true },
+    trailingSlash: true,
+  }),
+  ...(basePath && {
+    basePath,
+  }),
+  // Silencia o aviso Turbopack vs webpack no dev (PWA está desativado em desenvolvimento)
+  turbopack: {},
+};
+
+export default withPWA(nextConfig);

@@ -1,0 +1,61 @@
+{
+  "id": "armas-comuns",
+  "titulo": "Armas comuns (sorteio)",
+  "categoria": "itens",
+  "subcategoria": "armas",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Arma"
+  ],
+  "rows": [
+    [
+      "1",
+      "Adaga"
+    ],
+    [
+      "2",
+      "Maça"
+    ],
+    [
+      "3",
+      "Espada curta"
+    ],
+    [
+      "4",
+      "Espada longa"
+    ],
+    [
+      "5",
+      "Lança"
+    ],
+    [
+      "6",
+      "Arco curto"
+    ],
+    [
+      "7",
+      "Arco longo"
+    ],
+    [
+      "8",
+      "Besta"
+    ],
+    [
+      "9",
+      "Cajado"
+    ],
+    [
+      "10",
+      "Clava"
+    ],
+    [
+      "11",
+      "Azagaia"
+    ],
+    [
+      "12",
+      "Martelo de guerra"
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "nivel-perigo",
+  "titulo": "Nivel Perigo",
+  "categoria": "encontros",
+  "subcategoria": "encontros",
+  "rolagem": "Escolha do MJ (não é rolagem)",
+  "headers": [
+    "Perigo",
+    "Exploração",
+    "Viagem / descanso"
+  ],
+  "rows": [
+    [
+      "Inseguro",
+      "a cada 3 rodadas",
+      "a cada 3 h"
+    ],
+    [
+      "Arriscado",
+      "a cada 2 rodadas",
+      "a cada 2 h"
+    ],
+    [
+      "Mortal",
+      "a cada rodada",
+      "a cada 1 h"
+    ]
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "id": "encontro-distrito-do-castelo",
+  "titulo": "Encontros — DISTRITO DO CASTELO",
+  "categoria": "encontro",
+  "subcategoria": "distrito-do-castelo",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "02–03",
+      "Cornetas estridentes soam o alarme dentro do palácio real"
+    ],
+    [
+      "08–09",
+      "Banhistas vestindo mantos fogem da casa de banho aos gritos"
+    ],
+    [
+      "14–15",
+      "A corrente de um prisioneiro condenado se rompe e ele foge"
+    ],
+    [
+      "16–17",
+      "Um gladiador novato se ofende com as vestes de um dos PJs"
+    ],
+    [
+      "18–19",
+      "Uma gárgula de pedra em ruínas desmorona e cai sobre os PJs"
+    ],
+    [
+      "20–21",
+      "Um leão escapa dos treinadores que o conduziam ao coliseu"
+    ],
+    [
+      "26–27",
+      "Um ilustre cavaleiro confunde um PJ com Targ, o Traidor"
+    ],
+    [
+      "28–29",
+      "Duas ordens sagradas rivais de cruzados se enfrentam na rua"
+    ],
+    [
+      "32–33",
+      "Um elefante arrastando correntes irrompe do coliseu"
+    ],
+    [
+      "34–35",
+      "Mercenários empurram o povo para longe de um príncipe visitante"
+    ],
+    [
+      "36–37",
+      "A rua desmorona, revelando uma cisterna seca e cheia de túneis"
+    ],
+    [
+      "38–39",
+      "A água de uma fonte se ergue e assume uma forma humanoide"
+    ],
+    [
+      "40–41",
+      "Um cavaleiro desfila com um prisioneiro adoecido até o quartel"
+    ],
+    [
+      "42–43",
+      "Robal Goodwin passa correndo com sacos de ouro roubado da realeza"
+    ],
+    [
+      "44–45",
+      "Uma catapulta de 9 metros de altura pega fogo em um desfile militar"
+    ],
+    [
+      "04–05",
+      "Prisioneiros acorrentados se rebelam em uníssono contra sua escolta"
+    ],
+    [
+      "06–07",
+      "Um nobre bêbado balança um machado e grita: \"Cortem-lhe a cabeça!\""
+    ],
+    [
+      "10–11",
+      "A guarda de honra de um visitante nobre caça um gato cinza de rua"
+    ],
+    [
+      "12–13",
+      "Um grupo de cavaleiros montados dispara pelas ruas movimentadas"
+    ],
+    [
+      "22–23",
+      "Um dramaturgo com olhos selvagens chama um PJ de “cretino burro”"
+    ],
+    [
+      "24–25",
+      "Cobradores de impostos armados cobram taxa de guerra às pessoas"
+    ],
+    [
+      "30–31",
+      "Um homem de capuz desliza pela grade do esgoto próximo ao teatro"
+    ],
+    [
+      "46–47",
+      "Um PJ vê um novo cartaz de procurado com o seu próprio rosto"
+    ],
+    [
+      "48–49",
+      "Uma ferradura dourada se destaca em meio à sujeira da sarjeta"
+    ],
+    [
+      "50–53",
+      "Dois gladiadores rivais iniciam uma briga em uma taverna animada"
+    ],
+    [
+      "54–55",
+      "Um cavalo assustado se choca contra uma construção frágil"
+    ],
+    [
+      "58–59",
+      "O bêbado Sir Galvin é expulso novamente da taverna Égua Azul"
+    ],
+    [
+      "60–61",
+      "Uma explosão estremece a guarnição mais próxima da Guarda"
+    ],
+    [
+      "62–63",
+      "Um dignitário estrangeiro acha que um PJ é um tratador de cavalos"
+    ],
+    [
+      "64–65",
+      "Anões mineradores com olhos sonolentos cavam um túnel até a rua"
+    ],
+    [
+      "66–67",
+      "Prisioneiros da masmorra agarram tornozelos através dos bueiros"
+    ],
+    [
+      "72–73",
+      "Dois caçadores de recompensas lutam pela captura de um homem"
+    ],
+    [
+      "74–75",
+      "Os PJs veem um grupo de exploradores vestidos como eles"
+    ],
+    [
+      "76–77",
+      "Uma grade de esgoto treme com um barulho alto, que depois cessa"
+    ],
+    [
+      "78–79",
+      "Uma figura com capuz entrega um pergaminho a uma transeunte"
+    ],
+    [
+      "80–81",
+      "Um virote de besta voa dos telhados em direção aos PJs"
+    ],
+    [
+      "82–83",
+      "O famoso cantor Branzolini insiste que conhece um dos PJs"
+    ],
+    [
+      "84–85",
+      "Um vento forte derruba uma chave de um jarro de flores na janela"
+    ],
+    [
+      "86–87",
+      "Um guarda arrogante se ajoelha diante do Duque disfarçado"
+    ],
+    [
+      "90–91",
+      "Há uma fumaça saindo das janelas superiores do teatro"
+    ],
+    [
+      "92–93",
+      "Uma espada mágica surge na mão de uma estátua de gladiador"
+    ],
+    [
+      "94–95",
+      "O Senhor Supremo cavalga com sua guarda de honra bem armada"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "Uma duquesa visitante convida os PJs para um baile real"
+    ],
+    [
+      "56–57",
+      "Uma fera do esgoto irrompe molhada pelas portas da casa de banho"
+    ],
+    [
+      "68–69",
+      "Quatro figuras retiram seus capuzes, revelando máscaras de demônios"
+    ],
+    [
+      "70–71",
+      "O ator principal de uma peça encenada na rua cai morto de repente"
+    ],
+    [
+      "88–89",
+      "Dois homens correm nervosos com um objeto enrolado em um lençol"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante revende a preços abusivos os assentos no coliseu"
+    ]
+  ]
+}

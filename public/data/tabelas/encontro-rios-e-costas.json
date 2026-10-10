@@ -1,0 +1,69 @@
+{
+  "id": "encontro-rios-e-costas",
+  "titulo": "Encontros — RIOS E COSTAS",
+  "categoria": "encontro",
+  "subcategoria": "rios-e-costas",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Um tsunami eleva o nível da água na costa em 3 m por 2d4 rodadas"
+    ],
+    [
+      "36–37",
+      "Uma maré repentina atinge os PJs, ameaçando puxá-los para a água"
+    ],
+    [
+      "44–45",
+      "Juncos ou algas entrelaçadas escondem um fosso de 6 m com lanças"
+    ],
+    [
+      "46–47",
+      "Um elefante nada com apenas a sua tromba acima da superfície"
+    ],
+    [
+      "62–63",
+      "Yggral, o ent, está parado na margem da água, olhando para o céu"
+    ],
+    [
+      "64–65",
+      "Um círculo de 2d4 estátuas retorcidas são, na verdade, gárgulas"
+    ],
+    [
+      "74–75",
+      "Exploradores rivais transportam uma canoa sobrecarregada"
+    ],
+    [
+      "76–77",
+      "Um farol apagado fica em uma ilha estreita e arenosa"
+    ],
+    [
+      "82–83",
+      "Marga, a Sábia coleta cristais curativos e plantas"
+    ],
+    [
+      "84–85",
+      "Uma tropa de 3d6 cavalos selvagens trota furiosamente pela costa"
+    ],
+    [
+      "86–87",
+      "O kobold feiticeiro Mortimus prega de cima de um tronco"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante anda pelas águas rasas em pernas de pau"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "Um baú de tesouro meio enterrado contém um item mágico"
+    ]
+  ]
+}

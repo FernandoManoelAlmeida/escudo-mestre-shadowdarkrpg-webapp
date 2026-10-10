@@ -1,0 +1,281 @@
+{
+  "id": "algo-acontece",
+  "titulo": "Algo acontece",
+  "categoria": "algo-acontece",
+  "subcategoria": "geral",
+  "rolagem": "d100",
+  "headers": [
+    "d100",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "O chão treme violentamente e se abre em uma gigantesca fissura"
+    ],
+    [
+      "04–05",
+      "Um terrível zumbido preenche o ar, ficando cada vez mais alto"
+    ],
+    [
+      "06–07",
+      "Você sente o cheiro intenso de fumaça e chamas"
+    ],
+    [
+      "08–09",
+      "Uma estrela brilhante surge no céu, visível até mesmo ao meio-dia"
+    ],
+    [
+      "10–11",
+      "Você encontra um saco meio aberto de moedas de ouro brilhantes"
+    ],
+    [
+      "12–13",
+      "Um homem coloca um bilhete e uma poção estranha em sua mão"
+    ],
+    [
+      "14–15",
+      "Alguém que o observava ao longe sai da sua linha de visão"
+    ],
+    [
+      "20–21",
+      "Alguém tenta bater sua carteira"
+    ],
+    [
+      "22–23",
+      "Um estranho som de tique-taque emana de sua mochila"
+    ],
+    [
+      "24–25",
+      "Surge um cavalo espumando de medo; selado, mas sem cavaleiro"
+    ],
+    [
+      "26–27",
+      "Um monte na terra se move rapidamente em sua direção"
+    ],
+    [
+      "28–29",
+      "Você sente que está sendo magicamente perscrutado"
+    ],
+    [
+      "30–31",
+      "Alguém tenta esconder um objeto em você"
+    ],
+    [
+      "32–33",
+      "Você tem uma forte sensação de medo e perigo"
+    ],
+    [
+      "34–35",
+      "Uma mulher lhe entrega um gato preto e sai correndo"
+    ],
+    [
+      "36–37",
+      "Uma pequena criatura da floresta salta de uma mochila"
+    ],
+    [
+      "38–39",
+      "Você sente cheiro de lilases e ouve uma fraca risada fantasmagórica"
+    ],
+    [
+      "40–41",
+      "Um bilhete enrolado em uma adaga fina cai ao seu lado"
+    ],
+    [
+      "42–43",
+      "Um meteoro verde e brilhante atravessa o céu"
+    ],
+    [
+      "44–45",
+      "Alguém próximo lhe encara movendo os lábios, como se falasse algo"
+    ],
+    [
+      "46–47",
+      "Um par de olhos amarelos o observa da escuridão"
+    ],
+    [
+      "50–53",
+      "Você escuta o choro de dor de uma fera logo à frente"
+    ],
+    [
+      "58–59",
+      "Um objeto cai do alto e quase acerta sua cabeça"
+    ],
+    [
+      "60–61",
+      "Uma gaivota pousa na sua cabeça e cospe uma garrafa estranha"
+    ],
+    [
+      "62–63",
+      "Surge um cheiro de ozônio e a eletricidade crepita no ar"
+    ],
+    [
+      "64–65",
+      "Você vê uma trilha de pequenas moedas de prata que leva a uma curva"
+    ],
+    [
+      "68–69",
+      "Todas as fontes de luz se apagam de repente"
+    ],
+    [
+      "70–71",
+      "Uma debandada de animais selvagens entra em seu campo de visão"
+    ],
+    [
+      "72–73",
+      "Uma velha aponta para você e grita: “Lá estão eles!”"
+    ],
+    [
+      "76–77",
+      "Um coro de uivos ecoa à distância"
+    ],
+    [
+      "78–79",
+      "Dois goblins beliscando e estapeando um ao outro surgem à distância"
+    ],
+    [
+      "80–81",
+      "Você percebe que não está sozinho: há algo atrás de você"
+    ],
+    [
+      "82–83",
+      "Há um som repentino de água corrente vindo até você"
+    ],
+    [
+      "84–85",
+      "Você escuta um grito de perfurar os tímpanos que ninguém mais ouve"
+    ],
+    [
+      "88–89",
+      "Uma tempestade violenta e com ventos fortes se inicia de repente"
+    ],
+    [
+      "90–91",
+      "Um raio cai Adjacente e deixa um objeto brilhante no local"
+    ],
+    [
+      "92–93",
+      "Um orbe multicolorido flutua até você e depois se afasta"
+    ],
+    [
+      "94–95",
+      "Uma carroça desgovernada está vindo em sua direção"
+    ],
+    [
+      "96–97",
+      "Um PNJ abandona seu disfarce, se revelando um inimigo"
+    ],
+    [
+      "98–99",
+      "Um demônio surge para você e lhe faz uma oferta tentadora"
+    ],
+    [
+      "00",
+      "Um ser radiante surge para você com uma mensagem de aviso"
+    ],
+    [
+      "48–49",
+      "Uma orc com uma flecha fincada nas costas entra pela porta de repente"
+    ],
+    [
+      "54–55",
+      "Uma grande nuvem de morcegos colide contra você e parte rodopiando"
+    ],
+    [
+      "56–57",
+      "Um mendigo debilitado sussurra que tem um segredo para lhe contar"
+    ],
+    [
+      "66–67",
+      "Um homem de olhar selvagem avança com um livro sagrado para o alto"
+    ],
+    [
+      "74–75",
+      "Um estranho de passagem pressiona uma moeda antiga em sua mão"
+    ],
+    [
+      "86–87",
+      "Um homem lhe dá um tapa com uma luva e depois a joga aos seus pés"
+    ],
+    [
+      "02–03",
+      "Uma equipe de assassinos está a caminho para matar todo o seu grupo"
+    ],
+    [
+      "04–05",
+      "O governante local paga 2.000 PO pelas suas cabeças"
+    ],
+    [
+      "06–07",
+      "O culto de Shune está planejando um grande golpe à meia-noite"
+    ],
+    [
+      "08–09",
+      "Uma antiga porta de pedra foi encontrada no porão do castelo"
+    ],
+    [
+      "10–11",
+      "Homens-lagarto têm assaltado caravanas perto do pântano"
+    ],
+    [
+      "12–13",
+      "Esqueletos com armaduras vagam pela névoa do cemitério"
+    ],
+    [
+      "14–15",
+      "Um terremoto revelou uma ruína dentro de uma fenda profunda"
+    ],
+    [
+      "16–17",
+      "Soldados orcs assumiram o controle de uma fortaleza abandonada"
+    ],
+    [
+      "18–19",
+      "Há um salão cheio de estátuas douradas sob o poço"
+    ],
+    [
+      "20–21",
+      "Quem sobrevive à Prova da Lótus recebe um estranho dom"
+    ],
+    [
+      "22–23",
+      "O Capitão da Guarda foi feito refém por bandidos"
+    ],
+    [
+      "24–25",
+      "As Cavernas de Cristal são o lar de um culto de feiticeiros psíquicos"
+    ],
+    [
+      "26–27",
+      "Um crocodilo arrastou uma mula cheia de tesouros para o esgoto"
+    ],
+    [
+      "28–29",
+      "Uma bruxa vidente fala augúrios e presságios verdadeiros"
+    ],
+    [
+      "30–31",
+      "A cada lua cheia, a despensa do Unicórnio Saltitante é roubada"
+    ],
+    [
+      "32–33",
+      "Um famoso grupo de exploradores não retornou de uma aventura"
+    ],
+    [
+      "34–35",
+      "Um meteoro brilhante caiu nas profundezas do pântano"
+    ],
+    [
+      "36–37",
+      "O fogo não acenderá e nem queimará à vista da Fonte do Leão"
+    ],
+    [
+      "38–39",
+      "A perdida Joia de Barbalt está escondida dentro das Cavernas Uivantes"
+    ],
+    [
+      "42–43",
+      "Um alçapão na taverna Coruja Vermelha conduz ao Shadowdark"
+    ]
+  ]
+}

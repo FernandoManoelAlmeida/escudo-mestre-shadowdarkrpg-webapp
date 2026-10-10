@@ -1,0 +1,201 @@
+{
+  "id": "tesouros-0-3",
+  "titulo": "Tesouros 0–3",
+  "categoria": "tesouros",
+  "subcategoria": "0-3",
+  "rolagem": "d100",
+  "headers": [
+    "d100",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "00",
+      "Arma mágica +1 (benefício) (200 PO)"
+    ],
+    [
+      "01",
+      "Garfo de estanho torto (1 PC)"
+    ],
+    [
+      "02–03",
+      "Tocha enlameada (2 PC)"
+    ],
+    [
+      "04–05",
+      "Saco de seixos lisos (2 PC)"
+    ],
+    [
+      "06–07",
+      "10 PC em um saco engordurado"
+    ],
+    [
+      "08–09",
+      "Lampião enferrujado com vidro quebrado (1 PO)"
+    ],
+    [
+      "10–11",
+      "Dente de prata (1 PO)"
+    ],
+    [
+      "12–13",
+      "Adaga cega (1 PO)"
+    ],
+    [
+      "14–15",
+      "Dois frascos de vidro vazios (6 PO)"
+    ],
+    [
+      "16–17",
+      "60 PP em uma bota apodrecida"
+    ],
+    [
+      "18–19",
+      "Espelho de mão trincado (8 PO)"
+    ],
+    [
+      "20–21",
+      "Machado grande com lâmina corroída (9 PO)"
+    ],
+    [
+      "22–23",
+      "10 PO em uma caixa de madeira mofada"
+    ],
+    [
+      "24–25",
+      "Uma lasca de esmeralda (10 PO)"
+    ],
+    [
+      "26–27",
+      "Arco longo e um conjunto de 40 flechas (10 PO)"
+    ],
+    [
+      "28–29",
+      "Armadura de couro empoeirada e tingida de preto (10 PO)"
+    ],
+    [
+      "30–31",
+      "Escudo pesado e arranhado (10 PO)"
+    ],
+    [
+      "32–33",
+      "Espada bastarda simples, mas bem forjada (10 PO)"
+    ],
+    [
+      "34–35",
+      "12 PO no bolso de um manto rasgado"
+    ],
+    [
+      "36–37",
+      "Espada grande com lâmina amassada (12 PO)"
+    ],
+    [
+      "38–39",
+      "Par de espadas curtas forjadas por elfos (14 PO)"
+    ],
+    [
+      "40–41",
+      "Tigela dourada (15 PO)"
+    ],
+    [
+      "42–43",
+      "Estatueta de obsidiana de Shune, a Maléfica (15 PO)"
+    ],
+    [
+      "44–45",
+      "Pérola menor que o normal (20 PO)"
+    ],
+    [
+      "46–47",
+      "Broche de um escaravelho de jade e ouro (20 PO)"
+    ],
+    [
+      "48–49",
+      "Saco com 10 cravos de prata (2 PO cada)"
+    ],
+    [
+      "50–53",
+      "Medalhão de mitral com o retrato de um halfling (20 PO)"
+    ],
+    [
+      "54–55",
+      "Dois escudos anões forjados com maestria (20 PO)"
+    ],
+    [
+      "56–57",
+      "Par de adagas prateadas (10 PO cada)"
+    ],
+    [
+      "58–59",
+      "Caneca de hidromel de cobre e ouro (20 PO)"
+    ],
+    [
+      "60–61",
+      "Conjunto com cinco escamas vermelhas de dragão (5 PO cada)"
+    ],
+    [
+      "62–63",
+      "Capa leve e quente, tecida com seda de aranha (25 PO)"
+    ],
+    [
+      "64–65",
+      "Conjunto requintado de peças de jogo em marfim (25 PO)"
+    ],
+    [
+      "66–67",
+      "Conjunto de cota de malha inacabado (30 PO)"
+    ],
+    [
+      "68–69",
+      "Trio idêntico de martelos de guerra (10 PO cada)"
+    ],
+    [
+      "70–71",
+      "Uma lasca de safira (30 PO)"
+    ],
+    [
+      "72–73",
+      "Conjunto de chinelos de seda e uma túnica (35 PO)"
+    ],
+    [
+      "74–75",
+      "Diadema de prata e ouro (40 PO)"
+    ],
+    [
+      "76–77",
+      "Pérola polida e radiante (40 PO)"
+    ],
+    [
+      "78–79",
+      "Escudo de mitral gravado com dragões voadores (40 PO)"
+    ],
+    [
+      "82–83",
+      "Conjunto de cota de malha refinado (60 PO)"
+    ],
+    [
+      "84–85",
+      "Esmeralda rachada (60 PO)"
+    ],
+    [
+      "86–87",
+      "Duas pérolas lustrosas (40 PO cada)"
+    ],
+    [
+      "88–89",
+      "Pergaminho de magia de grau 1 (80 PO)"
+    ],
+    [
+      "92–93",
+      "Varinha mágica, magia de grau 2 (100 PO)"
+    ],
+    [
+      "96–97",
+      "Armadura +1 (benefício, maldição) (150 PO)"
+    ],
+    [
+      "98–99",
+      "Bolsa do Espaço Infinito (virtude, defeito) (150 PO)"
+    ]
+  ]
+}

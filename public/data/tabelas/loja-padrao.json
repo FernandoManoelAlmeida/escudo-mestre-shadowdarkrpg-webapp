@@ -1,0 +1,53 @@
+{
+  "id": "loja-padrao",
+  "titulo": "Loja padrão",
+  "categoria": "lojas",
+  "subcategoria": "padrao",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Cervejeiro"
+    ],
+    [
+      "2",
+      "Açougueiro"
+    ],
+    [
+      "3",
+      "Alfaiate"
+    ],
+    [
+      "4",
+      "Ferreiro comum"
+    ],
+    [
+      "5",
+      "Equipamentos de aventura"
+    ],
+    [
+      "6",
+      "Curtidor de couros"
+    ],
+    [
+      "7",
+      "Engenheiro naval/carpinteiro"
+    ],
+    [
+      "8",
+      "Pedreiro"
+    ],
+    [
+      "9",
+      "Arauto/pregoeiro"
+    ],
+    [
+      "10",
+      "Gado"
+    ]
+  ]
+}

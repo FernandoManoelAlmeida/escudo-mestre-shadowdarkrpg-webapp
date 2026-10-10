@@ -1,0 +1,53 @@
+{
+  "id": "encontro-pradarias",
+  "titulo": "Encontros — PRADARIAS",
+  "categoria": "encontro",
+  "subcategoria": "pradarias",
+  "rolagem": "d100",
+  "headers": [
+    "d12",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "10–11",
+      "Um redemoinho de poeira é, na verdade, um elemental de ar furioso"
+    ],
+    [
+      "12–13",
+      "Nuvens negras e altas avançam: uma tempestade violenta é iminente"
+    ],
+    [
+      "94–95",
+      "Um brutamontes das cavernas cego pelo sol avança feroz até os sons"
+    ],
+    [
+      "00",
+      "Um anjo principi sai de uma tempestade para conceder uma dádiva"
+    ],
+    [
+      "02–03",
+      "Um grupo de 1d4 basiliscos toma banho de sol sobre rochas planas"
+    ],
+    [
+      "06–07",
+      "Mirell, um garimpeiro de ouro e pérolas, grita contra invasores"
+    ],
+    [
+      "26–27",
+      "Um grupo de 2d8 leões caçadores espreita pela linha costeira"
+    ],
+    [
+      "28–29",
+      "Um hipogrifo luta em desespero para se libertar de um crocodilo"
+    ],
+    [
+      "40–41",
+      "Um caranguejo gigante coberto de algas emerge da água"
+    ],
+    [
+      "42–43",
+      "Falsted, o halfling, se agarra a um bote que virou e está afundando"
+    ]
+  ]
+}

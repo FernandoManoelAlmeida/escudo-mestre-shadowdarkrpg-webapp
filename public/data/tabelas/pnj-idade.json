@@ -1,0 +1,37 @@
+{
+  "id": "pnj-idade",
+  "titulo": "Idade do PNJ",
+  "categoria": "pnjs",
+  "subcategoria": "idade",
+  "rolagem": "d8",
+  "headers": [
+    "d8",
+    "Idade"
+  ],
+  "rows": [
+    [
+      "1",
+      "Adolescente"
+    ],
+    [
+      "2",
+      "Jovem adulto"
+    ],
+    [
+      "3–4",
+      "Adulto"
+    ],
+    [
+      "5–6",
+      "Meia-idade"
+    ],
+    [
+      "7",
+      "Idoso"
+    ],
+    [
+      "8",
+      "Ancião"
+    ]
+  ]
+}

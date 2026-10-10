@@ -1,0 +1,205 @@
+{
+  "id": "rumores-taverna",
+  "titulo": "Rumores",
+  "categoria": "rumores",
+  "subcategoria": "taverna",
+  "rolagem": "d100",
+  "headers": [
+    "d100",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Uma fera encouraçada, grande como um navio, devasta áreas próximas"
+    ],
+    [
+      "40–41",
+      "Um grupo de anões mineradores escavou uma estátua com tentáculos"
+    ],
+    [
+      "46–47",
+      "Três ladrões acabaram de roubar pedras preciosas nas proximidades"
+    ],
+    [
+      "48–49",
+      "Harpias vigiam os penhascos ao redor da Tumba de Diridia"
+    ],
+    [
+      "50–53",
+      "Um górgon vaga pelas ruínas dos Salões Sob a Montanha"
+    ],
+    [
+      "54–55",
+      "Abaixo da Abadia Vermelha fica o Túmulo Perdido de Ur-Din"
+    ],
+    [
+      "58–59",
+      "Um mago acidentalmente deixou seu trio de cocatrizes escapar"
+    ],
+    [
+      "60–61",
+      "Um lorde local, de algum modo, ficou preso no topo de um telhado"
+    ],
+    [
+      "62–63",
+      "Bartomeu, o Príncipe Pirata, será enforcado ao meio-dia"
+    ],
+    [
+      "64–65",
+      "Goblins espeleólogos encontraram uma catedral subterrânea"
+    ],
+    [
+      "66–67",
+      "O Mecanismo Kytheriano afundou no mar perto de Myrkhos"
+    ],
+    [
+      "68–69",
+      "Cogumelos raros e valiosos crescem dentro de uma cripta antiga"
+    ],
+    [
+      "70–71",
+      "A Igreja de Santa Terragnis irá pagar pelo retorno de uma relíquia"
+    ],
+    [
+      "72–73",
+      "Uma erupção vulcânica revelou túneis nas paredes da caldeira"
+    ],
+    [
+      "74–75",
+      "As ruínas ciclópicas de Tal-Yool ficam nas profundezas da floresta"
+    ],
+    [
+      "76–77",
+      "Um jogador está apostando um rubi em um jogo de Magos e Ladrões"
+    ],
+    [
+      "80–81",
+      "Coveiros acharam um caixão acorrentado em um túmulo sem nome"
+    ],
+    [
+      "82–83",
+      "A torre abandonada de um mago está cheia de criaturas mecânicas"
+    ],
+    [
+      "84–85",
+      "A Guilda dos Ladrões está prestes a atacar um lorde mercador rival"
+    ],
+    [
+      "86–87",
+      "Vendavais revelaram um monólito de pedra no meio do deserto"
+    ],
+    [
+      "88–89",
+      "Exploradores rivais acharam o mapa para o Tesouro de Jiraal"
+    ],
+    [
+      "90–91",
+      "Um monstro chamado de O Escultor espreita sob a universidade"
+    ],
+    [
+      "92–93",
+      "O Corcel Ônix está na Fortaleza de Ekmaras, nas terras devastadas"
+    ],
+    [
+      "94–95",
+      "A princesa foi raptada por um grupo de feiticeiros"
+    ],
+    [
+      "96–97",
+      "A tumba de um Cavaleiro do Caos foi encontrada sob um templo"
+    ],
+    [
+      "00",
+      "A dragonesa Ixamir acordou de seu sono de 200 anos"
+    ],
+    [
+      "56–57",
+      "Um sábio moribundo está em busca de um poderoso grupo de heróis"
+    ],
+    [
+      "78–79",
+      "Druidas da Lua abençoarão uma espada usada para matar o lobisomem"
+    ],
+    [
+      "98–99",
+      "A lendária Biblioteca de Gehemna apareceu do lado de fora da cidade"
+    ],
+    [
+      "1",
+      "Resgate oCáliceDo mago maligno"
+    ],
+    [
+      "2",
+      "Encontre oPrisioneiroVagando pelos ermos"
+    ],
+    [
+      "3",
+      "Destrua oEspadaNo fundo do rio"
+    ],
+    [
+      "4",
+      "Se infiltre noCofreNos esgotos da cidade"
+    ],
+    [
+      "5",
+      "Se esgueire porCultoAbaixo dos túmulos"
+    ],
+    [
+      "6",
+      "Recupere oEspíritoDo herói caído"
+    ],
+    [
+      "7",
+      "Derrote oAssassino Na biblioteca mágica"
+    ],
+    [
+      "8",
+      "Espione oDemônioNa corte do rei"
+    ],
+    [
+      "9",
+      "Suborne oNobreDa linhagem anciã"
+    ],
+    [
+      "10",
+      "Entregue oCaçadorNa torre do feiticeiro"
+    ],
+    [
+      "11",
+      "Escape doRefémNa Floresta das Trevas"
+    ],
+    [
+      "12",
+      "Prenda oLadrãoEscondendo-se nas periferias"
+    ],
+    [
+      "13",
+      "Pare oEspiãoDo Lorde Anão"
+    ],
+    [
+      "14",
+      "Faça amizade com oLobisomemNa tumba mofada"
+    ],
+    [
+      "15",
+      "Pacifique oRelíquiaDos cavaleiros reais"
+    ],
+    [
+      "16",
+      "Convença oAlto sacerdoteSacrificando inocentes"
+    ],
+    [
+      "17",
+      "Roube oMercadorNas catacumbas"
+    ],
+    [
+      "18",
+      "Escolte oBruxaChantageando o barão"
+    ],
+    [
+      "19",
+      "Expulse oRitualNa Guilda dos Ladrões"
+    ]
+  ]
+}

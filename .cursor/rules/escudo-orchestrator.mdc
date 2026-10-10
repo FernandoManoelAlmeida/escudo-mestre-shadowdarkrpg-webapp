@@ -1,0 +1,15 @@
+---
+description: Escudo do Mestre — ler AGENTS.md e invocar skill adequada
+alwaysApply: true
+---
+
+# Orquestrador Escudo do Mestre
+
+**Fonte única:** [AGENTS.md](../AGENTS.md)
+
+## Antes de agir
+
+1. Classifique: migração / dev / deploy / dados / feature / pergunta de mesa
+2. Conteúdo MD → editar no OPD; código PWA → este repo
+3. Skills em `.cursor/skills/` — não duplicar regras aqui
+4. Português brasileiro

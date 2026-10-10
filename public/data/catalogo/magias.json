@@ -1,0 +1,2258 @@
+{
+  "magias": [
+    {
+      "id": "abjurar",
+      "nome": "ABJURAR",
+      "descricao": "Você e uma criatura que você toca morrem.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "absorver",
+      "nome": "ABSORVER",
+      "descricao": "Você cria uma barreira de força absorvente ao seu redor.\n\nReduza pela metade todo o Dano que você pegar durante a duração da Magia (Rodada FOR baixo).",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      },
+      "duracao": "5 rodadas",
+      "alcance": "Auto"
+    },
+    {
+      "id": "alarme",
+      "nome": "ALARME",
+      "descricao": "Você toca um objeto, como o limiar de uma porta, e insere um alarme mágico nele. Se qualquer criatura que você não designou durante a conjuração da magia tocar ou atravessar esse objeto, um sino mágico soará em sua mente.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      },
+      "duracao": "1 dia"
+    },
+    {
+      "id": "alquimia",
+      "nome": "ALQUIMIA",
+      "descricao": "Um objeto inanimado de Humano Tamanho ou menos você toque transforma-se em outro material de valor igual ou menor.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 3
+      }
+    },
+    {
+      "id": "alterar-se",
+      "nome": "ALTERAR-SE",
+      "descricao": "Você altera magicamente a sua forma física, ganhando uma característica que modifica sua anatomia atual.\n\nPor exemplo, você pode fazer crescer guelras funcionais em seu pescoço, ou adicionar garras de urso aos seus dedos. Essa magia não pode fazer crescer asas ou membros.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 2,
+        "bruxa": 2
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ],
+      "duracao": "5 rodadas"
+    },
+    {
+      "id": "alucinac-a-o",
+      "nome": "ALUCINAÇÃO",
+      "descricao": "Uma criatura-alvo que esteja Perto, e cujo nível seja igual ou menor que o seu, é dominada por visões daquilo que ainda pode acontecer.\n\nEnquanto a magia durar, o alvo não pode agir no próprio turno, a menos que tenha sucesso em um teste de Sabedoria igual ao seu último teste de conjuração.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 3
+      }
+    },
+    {
+      "id": "ana-tema",
+      "nome": "ANÁTEMA",
+      "descricao": "Por 1 dia, todos os aliados desprezam e abandonam a criatura que você tocar.\n\nCada vez que você ou seus aliados ferirem o alvo, os antigos aliados dele podem fazer um teste de SAB CD 15 para encerrar os efeitos dessa magia.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 5
+      }
+    },
+    {
+      "id": "animar-mortos",
+      "nome": "ANIMAR MORTOS",
+      "descricao": "Você toca os restos mortais de um humanoide, e ele se ergue como um zumbi ou esqueleto sob seu controle. Os restos mortais devem ter pelo menos três membros e a cabeça intactos.\n\nA criatura morta-viva age em seu turno. Após 1 dia, a criatura se desfaz em pó sepulcral.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      },
+      "duracao": "1 dia"
+    },
+    {
+      "id": "apaziguar",
+      "nome": "APAZIGUAR",
+      "descricao": "Intervalo: Perto\n\nEscolha uma criatura dentro do alcance de NV 3 ou menos. Ele deve fazer um Teste de Moral (criaturas imunes a testes de Moral não são afetadas por esta Magia).",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "arma-purificadora",
+      "nome": "ARMA PURIFICADORA",
+      "descricao": "Uma arma que você toca é envolvida por chamas purificadoras. Ela causa 1d4 de dano adicional (1d6 contra mortos-vivos) ao longo da duração.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 2
+      }
+    },
+    {
+      "id": "arma-sagrada",
+      "nome": "ARMA SAGRADA",
+      "descricao": "Uma arma que você toca é imbuída com uma bênção sagrada. A arma se torna mágica, e passa a ter +1 em jogadas de ataque e dano ao longo da duração.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 1
+      }
+    },
+    {
+      "id": "armadura-arcana",
+      "nome": "ARMADURA ARCANA",
+      "descricao": "Uma camada invisível de força mágica protege seus órgãos vitais. Sua CA se torna 14 (ou 18, em caso de sucesso crítico no teste de conjuração) enquanto a magia durar.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "arrombar",
+      "nome": "ARROMBAR",
+      "descricao": "Uma porta, janela, portão, baú ou portal que você possa ver e que esteja dentro do alcance se abre instantaneamente, superando todas as fechaduras e barreiras mundanas.\n\nEssa magia cria um barulho alto que pode ser ouvido por todas as criaturas que estiverem ao alcance da sua voz.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "a-rvore-do-mundo",
+      "nome": "ÁRVORE DO MUNDO",
+      "descricao": "As raízes da Árvore do Mundo, a fonte da vida, envolvem a alma de uma criatura que você tocar.\n\nEnquanto a magia durar, o alvo não pode ter seus PV reduzidos a menos do que 1.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 5
+      }
+    },
+    {
+      "id": "augu-rio",
+      "nome": "AUGÚRIO",
+      "descricao": "Você interpreta o significado de presságios e prenúncios sobrenaturais.\n\nFaça uma pergunta ao MJ sobre um curso de ação específico. O MJ responderá se aquela ação será “próspera” ou resultará em um “infortúnio”.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote",
+        "bruxa"
+      ],
+      "grau": {
+        "sacerdote": 2,
+        "bruxa": 2
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ]
+    },
+    {
+      "id": "banir",
+      "nome": "BANIR",
+      "descricao": "Com uma palavra de poder, você envia uma criatura extraplanar de Nv 6 ou menos que o ouve de volta à sua dimensão de origema.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      },
+      "alcance": "Perto"
+    },
+    {
+      "id": "be-nc-a-o",
+      "nome": "BÊNÇÃO",
+      "descricao": "Uma criatura que você toca ganha uma ficha de sorte.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 2
+      }
+    },
+    {
+      "id": "bola-de-fogo",
+      "nome": "BOLA DE FOGO",
+      "descricao": "Você lança uma pequena chama que se transforma em uma explosão de fogo. Todas as criaturas que estiverem em um cubo de tamanho Perto, ao redor de onde a chama cai, sofrem 4d6 de dano.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "bolha-de-ar",
+      "nome": "BOLHA DE AR",
+      "descricao": "Globo de ar fresco na cabeça de 1 criatura voluntária que você veja.",
+      "origem": "astraldark",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 2,
+        "sacerdote": 2
+      },
+      "duracao": "24 horas",
+      "alcance": "Perto"
+    },
+    {
+      "id": "boneca-de-vodu",
+      "nome": "BONECA DE VODU",
+      "descricao": "Você prende um pouco de cabelo ou pedaço de carne retirado de uma criatura a uma pequena boneca de estopa conjurada pela magia.\n\nEm seu turno, enquanto se concentra nessa magia, você pode alfinetar a boneca. A cada vez que você faz isso, a criatura à qual o cabelo ou carne pertence sofre 2d6 de dano. Quando a magia se encerra, o cabelo ou pedaço de carne utilizado queima até virar cinzas.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 3
+      },
+      "alcance": "no mesmo plano"
+    },
+    {
+      "id": "caldeira-o",
+      "nome": "CALDEIRÃO",
+      "descricao": "Você conjura um caldeirão fervente próximo a você. Ele pode produzir um dos seguintes efeitos:\n\n-  Qualquer item mundano quebrado colocado dentro do caldeirão será reparado.\n\n-  Um sapo gordo e coaxante salta para fora e segue suas instruções por 3 rodadas.\n\n-  Você pode preencher o caldeirão com o equivalente a 3 espaços de equipamento. O caldeirão expele esses itens na próxima vez que você conjurar essa magia (expelir os itens conta como um efeito único do caldeirão).",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 1
+      },
+      "duracao": "1 rodada"
+    },
+    {
+      "id": "ca-ntico",
+      "nome": "CÂNTICO",
+      "descricao": "Você inicia um cântico sobrenatural que eleva sua visão para além de suas limitações comuns.\n\nEnquanto a magia durar, você pode ver todas as coisas invisíveis e ocultas como se estivessem claramente visíveis. Esta magia não lhe permite ver em condições em que você normalmente não poderia, como na escuridão ou através de paredes.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 1
+      }
+    },
+    {
+      "id": "carvalho-freixo-e-espinheiro",
+      "nome": "CARVALHO, FREIXO E ESPINHEIRO",
+      "descricao": "Enquanto a magia durar, fadas, diabos e demônios não podem atacar você. Essas criaturas também não podem possuir, induzir ou encantar você.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 1
+      }
+    },
+    {
+      "id": "casca-viva",
+      "nome": "CASCA VIVA",
+      "descricao": "Encapsula 1 criatura voluntária ou incapacitada: animação suspensa, não consome ar nem ração, imune a vácuo. Dura 1 dia ou até o conjurador terminar (ação + toque). Quebrar a casca: 1d6 dano e libera.",
+      "origem": "astraldark",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 3,
+        "sacerdote": 3
+      },
+      "duracao": "1 dia",
+      "alcance": "Adjacente"
+    },
+    {
+      "id": "cativar",
+      "nome": "CATIVAR",
+      "descricao": "Uma pequena criatura natural que você toque (como um rato ou mariposa) o considera como um amigo para a duração da Magia.\n\nVocê pode dar à criatura um comando, que ela tenta completar com o melhor de sua capacidade e inteligência mesmo após o fim da magia.\n\nSe o comando prejudicar diretamente a criatura, ela abandona a tarefa.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 2
+      },
+      "duracao": "5 rodadas"
+    },
+    {
+      "id": "cegueira-surdez",
+      "nome": "CEGUEIRA/SURDEZ",
+      "descricao": "Você profere uma censura divina, cegando ou ensurdecendo uma criatura que você possa ver e que esteja dentro do alcance.\n\nA criatura tem DESV em tarefas que dependam do sentido perdido.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 2
+      }
+    },
+    {
+      "id": "chuva-de-sapos",
+      "nome": "CHUVA DE SAPOS",
+      "descricao": "Uma chuva de sapos revoltados atinge um cubo de tamanho Perto ao redor de um ponto que você possa ver, dentro do alcance.\n\nTodas as criaturas dentro da área afetada pela chuva sofrem 1d6 de dano. Qualquer sapo sobrevivente salta para longe e desaparece.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 2
+      }
+    },
+    {
+      "id": "ci-rculo-ma-gico",
+      "nome": "CÍRCULO MÁGICO",
+      "descricao": "Você conjura um círculo de runas em um cubo de tamanho Perto centrado em você. Escolha um tipo de criatura (demônios, por exemplo).\n\nEnquanto a magia durar, criaturas do tipo escolhido não podem atacar ou conjurar magias hostis contra quem estiver dentro do círculo. As criaturas escolhidas também não podem possuir, induzir ou encantar quem estiver dentro do círculo.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "clara-o",
+      "nome": "CLARÃO",
+      "descricao": "Intervalo: Perto\n\nUm flash de luz branca e ofuscante irrompe de você. Todos os inimigos ao alcance que o virem serão Cego enquanto a Magia durar.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      },
+      "duracao": "1 Rodada"
+    },
+    {
+      "id": "cogumelo",
+      "nome": "COGUMELO",
+      "descricao": "Você conjura um cogumelo carnudo e salpicado em sua mão. Ele desapa-rece ao final do seu próximo turno.\n\nUma criatura que comer o cogumelo recupera 1d6 pontos de vida.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 2
+      }
+    },
+    {
+      "id": "coluna-de-chamas",
+      "nome": "COLUNA DE CHAMAS",
+      "descricao": "Você invoca um pilar de fogo sagrado, imolando uma criatura que você possa ver e que esteja dentro do alcance. O alvo sofre 2d6 de dano.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 4
+      }
+    },
+    {
+      "id": "comando",
+      "nome": "COMANDO",
+      "descricao": "Você emite um comando verbal para uma criatura dentro do alcance e que possa entender você. O comando deve ter apenas uma palavra, como “ajoelhe-se”. O alvo obedece ao comando enquanto você mantiver a concentração.\n\nSe o seu comando for diretamente prejudicial à criatura, ela poderá fazer um teste de Carisma contra o seu último teste de conjuração. Com um sucesso, a magia se encerra.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 3
+      }
+    },
+    {
+      "id": "comunha-o",
+      "nome": "COMUNHÃO",
+      "descricao": "Você busca pelos conselhos de seu deus. Faça até três perguntas de “sim” ou “não” ao MJ. Ele responderá honestamente \"sim\" ou \"não\" a cada uma delas.\n\nSe você conjurar essa magia mais de uma vez em 24 horas, considere uma falha no teste de conjuração como uma falha crítica.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 4
+      }
+    },
+    {
+      "id": "confusa-o",
+      "nome": "CONFUSÃO",
+      "descricao": "Você hipnotiza uma criatura que você possa ver e que esteja dentro do alcance. O alvo não pode realizar ações, e se move em uma direção aleatória no turno dele. Se o alvo for de nível 9+, ele pode fazer um teste de SAB contra o seu último teste de conjuração no início do turno dele para tentar encerrar a magia.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "controlar-a-gua",
+      "nome": "CONTROLAR ÁGUA",
+      "descricao": "Você move e molda a água. Você pode fazer um corpo de água de até 30 metros (em largura e em profundidade) mudar a sua forma, desafiar a gravidade, ou fluir em uma direção diferente.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 4,
+        "sacerdote": 4
+      }
+    },
+    {
+      "id": "corvo",
+      "nome": "CORVO",
+      "descricao": "Você sussurra uma mensagem aos próprios corvos de Odin, e eles a levam por todos os mundos até o destinatário.\n\nFale uma frase curta e o nome do destinatário, vivo ou morto. Essa criatura ouvirá a mensagem sussurrada em sua mente.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 3
+      },
+      "alcance": "ilimitado"
+    },
+    {
+      "id": "coven",
+      "nome": "COVEN",
+      "descricao": "Você invoca a magia que compartilha com suas companheiras bruxas.\n\nVocê recupera o uso de uma magia de grau 3 ou inferior que não podia conjurar novamente nesse dia.\n\nApós conjurar essa magia com sucesso, você não poderá conjurá-la novamente até que você complete um descanso.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 3
+      }
+    },
+    {
+      "id": "criar-ar",
+      "nome": "CRIAR AR",
+      "descricao": "Renova ar fresco em torno de 1 criatura ou num ponto ou melhora a qualidade do ar em 1 degrau numa zona Perto.",
+      "origem": "astraldark",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 1,
+        "sacerdote": 1
+      },
+      "duracao": "1 hora",
+      "alcance": "Adjacente ou Perto"
+    },
+    {
+      "id": "criar-morto-vivo",
+      "nome": "CRIAR MORTO-VIVO",
+      "descricao": "Você conjura uma criatura morta-viva com sede de vingança para agir de acordo com seus comandos.\n\nQuando conjura essa magia, você escolhe entre invocar um inumano ou uma aparição. A criatura surge ao seu lado, sob seu controle.\n\nA criatura morta-viva age em seu turno. Depois de 1 dia, ela se desfaz em fumaça.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      },
+      "duracao": "1 dia"
+    },
+    {
+      "id": "criar-passagem",
+      "nome": "CRIAR PASSAGEM",
+      "descricao": "Um túnel da sua altura se abre em um obstáculo que você tocar, e permanece ao longo da duração.\n\nO comprimento da passagem pode ser, no máximo, igual à distância\n\nPerto, e precisa ser em linha reta.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "cu-pula-antimagia",
+      "nome": "CÚPULA ANTIMAGIA",
+      "descricao": "Um cubo de anulação mágica, invisível e de tamanho Perto, surge centrado em você.\n\nDentro do cubo, nenhuma magia pode ser conjurada. Itens mágicos e magias não têm efeito nessa zona, e nenhuma magia pode entrar nela.\n\nO cubo se move com você. Magias como dissipar magia não têm efeito sobre ele.\n\nOutra cúpula antimagia não afeta essa magia.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "cura",
+      "nome": "CURA",
+      "descricao": "Uma criatura que você toca tem seus PV totalmente recuperados.\n\nVocê não pode conjurar essa magia novamente até que complete um descanso.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 5
+      }
+    },
+    {
+      "id": "cura-em-massa",
+      "nome": "CURA EM MASSA",
+      "descricao": "Todos os aliados Perto de você recuperam 2d6 pontos de vida.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 3
+      }
+    },
+    {
+      "id": "curar-ferimentos",
+      "nome": "CURAR FERIMENTOS",
+      "descricao": "Seu toque restaura uma vida que foi reduzida.\n\nRole uma quantidade de d6 igual a 1 + metade do seu nível (arredondando para baixo). Um alvo que você tocar recupera essa quantidade de pontos de vida.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 1
+      }
+    },
+    {
+      "id": "danc-a-das-sombras",
+      "nome": "DANÇA DAS SOMBRAS",
+      "descricao": "Você transforma sombras em uma ilusão visível, audível e convincente em uma área Perto de você.\n\nA ilusão pode ser tão grande quanto uma pessoa e pode se mover para Perto de onde surgiu.\n\nA ilusão não pode afetar objetos físicos. Tocar a ilusão revela sua natureza falsa.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 1
+      },
+      "duracao": "3 rodadas"
+    },
+    {
+      "id": "debilitar-mente",
+      "nome": "DEBILITAR MENTE",
+      "descricao": "Uma criatura humanoide de NV 9 ou menos no alcance tem INT e CAR reduzidos a 1 pela duração. Ela não pode conjurar magias.",
+      "origem": "Cursed Scroll 5 - Preview pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      },
+      "duracao": "** 10 rodadas",
+      "alcance": "** Perto"
+    },
+    {
+      "id": "dedo-da-morte",
+      "nome": "DEDO DA MORTE",
+      "descricao": "Uma criatura que você toca, de nível 9 ou menor, morre.\n\nConsidere uma falha no teste de conjuração para essa magia como uma falha crítica, e role a falha mágica com Desvantagem.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 9
+      }
+    },
+    {
+      "id": "descanso-eterno",
+      "nome": "DESCANSO ETERNO",
+      "descricao": "Você envia instantaneamente uma criatura morta-viva que você toca para o além-vida, destruindo-a permanentemente.\n\nSeu alvo pode ser uma criatura morta-viva de nível 9 ou menor.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 3
+      }
+    },
+    {
+      "id": "desejo",
+      "nome": "DESEJO",
+      "descricao": "Essa poderosa magia altera a realidade.\n\nFaça um único desejo, falando da forma mais clara e exata possível. Seu desejo se torna realidade, de acordo com a interpretação do MJ.\n\nA falha no teste de conjuração é considerada uma falha crítica. Role a falha mágica com Desvantagem.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "desintegrar",
+      "nome": "DESINTEGRAR",
+      "descricao": "Seu dedo dispara um raio verde que transforma uma criatura ou objeto em cinzas.\n\nUma criatura-alvo de nível 5 ou menor morre instantaneamente. Se a criatura for de nível 6+, ela sofre 3d8 de dano.\n\nUm objeto não mágico com o tamanho máximo de uma árvore grande será destruído.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "destino",
+      "nome": "DESTINO",
+      "descricao": "Você torce dolorosamente os fios dourados do destino de uma criatura.\n\nUma criatura-alvo dentro do alcance, sofre 1d10 de dano e perde quaisquer fichas de sorte que possuir.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 2
+      }
+    },
+    {
+      "id": "destruic-a-o",
+      "nome": "DESTRUIÇÃO",
+      "descricao": "Você invoca chamas punitivas sobre uma criatura que você possa ver e que esteja dentro do alcance. Ela sofre 1d6 de dano.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 2
+      }
+    },
+    {
+      "id": "detectar-magia",
+      "nome": "DETECTAR MAGIA",
+      "descricao": "Você pode sentir a presença de magia dentro do alcance Perto, enquanto a magia durar. Se você se concentrar por duas rodadas, poderá identificar suas propriedades gerais. Barreiras completas bloqueiam esta magia.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "detectar-pensamentos",
+      "nome": "DETECTAR PENSAMENTOS",
+      "descricao": "Você espia a mente de uma criatura que você possa ver e que esteja dentro do alcance. A cada rodada, você desvenda os pensamentos imediatos do alvo.\n\nNo turno dele, o alvo faz um teste de Sabedoria contra o seu último teste de conjuração. Se o alvo tiver sucesso, ele percebe a sua presença dentro da mente dele e a magia se encerra.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "disco-flutuante",
+      "nome": "DISCO FLUTUANTE",
+      "descricao": "Você cria um disco de força circular e flutuante com um centro côncavo, que pode carregar o equivalente a 20 espaços de equipamento. Ele flutua ao nível da sua cintura, e automaticamente permanece Perto de você. O disco não pode cruzar abismos ou buracos mais profundos do que a altura de um humano.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "dissipar-magia",
+      "nome": "DISSIPAR MAGIA",
+      "descricao": "Encerra uma magia que afeta um alvo que você possa ver e que esteja dentro do alcance.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "domi-nios",
+      "nome": "DOMÍNIOS",
+      "descricao": "Seres poderosos surgem para ajudá-lo.\n\nO nível total desses seres (de forma combinada) deve ser de 16 ou menos. PJs caóticos invocam demônios/diabos, e PJs ordeiros ou neutros invocam anjos.\n\nOs seres agem por vontade própria para ajudá-lo em seu turno. Após 10 rodadas, eles retornam aos seus reinos.\n\nVocê não pode conjurar essa magia novamente até que complete uma penitência.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 5
+      }
+    },
+    {
+      "id": "empurrar-puxar",
+      "nome": "EMPURRAR/PUXAR",
+      "descricao": "Você mover um objeto de tamanho Humano ou uma criatura de NV 4 ou menos a Perto Distância.\n\nSe o alvo estiver ancorado de uma forma que impeça o movimento livre, a CD FOR lançar esta Magia é 18.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      },
+      "alcance": "Perto"
+    },
+    {
+      "id": "encantar-pessoa",
+      "nome": "ENCANTAR PESSOA",
+      "descricao": "Você encanta magicamente um humanoide de nível 2 ou menor e que esteja Perto de você. Ele passa a considerá-lo um amigo enquanto a magia durar.\n\nA magia se encerra caso ele perceba que você ou seus aliados fizeram qualquer coisa para machucá-lo.\n\nO alvo saberá que você o encantou magicamente depois que a magia for encerrada.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 1,
+        "bruxa": 2
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ],
+      "duracao": "1d8 dias"
+    },
+    {
+      "id": "encarar-o-vazio",
+      "nome": "ENCARAR O VAZIO",
+      "descricao": "Seus olhos ficam negros enquanto você olha para a escuridão entre as estrelas.\n\nUma criatura de nível 6 ou menor, e que você possa ver, fica sob seu controle. Você decide as ações da criatura durante o turno dela.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 6
+      }
+    },
+    {
+      "id": "enfraquecer",
+      "nome": "ENFRAQUECER",
+      "descricao": "Uma criatura que você toca tem um atributo aleatório reduzido para 3 (-4) por uma semana. Role um d6 para determinar qual atributo:\n\n1: Força; 2: Destreza; 3: Constituição; 4: Inteligência; 5: Sabedoria; 6: Carisma.\n\nSe você falhar no teste de conjuração, um atributo aleatório é reduzido para 3 por uma semana.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 5
+      }
+    },
+    {
+      "id": "enganar",
+      "nome": "ENGANAR",
+      "descricao": "Você conjura uma ilusão convincente, visível e audível, dentro do alcance.\n\nCriaturas que perceberem a ilusão reagem a ela como se fosse real, embora não possa causar dano real.\n\nTocar na ilusão instantaneamente revela sua natureza falsa.\n\nVocê pode forçar uma criatura que interagir com a ilusão a fazer um teste de SAB CD 15. Se a criatura falhar, ela ficará encantada pela ilusão enquanto a magia durar, e buscará protegê-la.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 4
+      }
+    },
+    {
+      "id": "enxame",
+      "nome": "ENXAME",
+      "descricao": "Um denso enxame de morcegos, ratos ou gafanhotos ferozes surge em um cubo de tamanho Perto ao redor de um ponto que você possa ver, dentro do alcance.\n\nTodas as criaturas que iniciarem seu turno dentro da área do enxame sofrem 2d6 de dano e ficam cegas.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 3
+      }
+    },
+    {
+      "id": "escudo-da-fe",
+      "nome": "ESCUDO DA FÉ",
+      "descricao": "Uma força protetora, forjada pela sua crença divina, circunda você. Você ganha um bônus de +2 em sua classe de armadura ao longo da duração.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 1
+      }
+    },
+    {
+      "id": "esfera-resiliente",
+      "nome": "ESFERA RESILIENTE",
+      "descricao": "Você conjura uma esfera sem peso e com aspecto vítreo ao seu redor, que se estende até a distância Adjacente.\n\nEnquanto a magia durar, nada pode atravessar ou quebrar a esfera.\n\nVocê pode rolar a esfera o equivalente à distância Perto durante o seu turno.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "estase",
+      "nome": "ESTASE",
+      "descricao": "Uma criatura voluntária que você toca fica suspensa no tempo. Se o alvo não estiver disposto, deverá ser de NV 5 ou menos.\n\nO alvo fica Inconsciente e não Idade. Suas funções corporais cessam, embora permaneça vivo.\n\nVocê pode encerrar a Magia a qualquer momento ou quando uma condição predefinida que você escolheu ao lançar a Magia for atendida.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      },
+      "duracao": "Indefinite"
+    },
+    {
+      "id": "evocar-fu-ria",
+      "nome": "EVOCAR FÚRIA",
+      "descricao": "Você desperta a fúria desenfreada que está presa dentro de alguém.\n\nUm humanoide voluntário e que você tocar entra em estado de fúria. O alvo fica imune a testes de moral, tem VANT em testes de FOR e ataques corpo a corpo, e causa +1d4 de dano enquanto a magia durar.\n\nSe o alvo não atacar outra criatura no turno dele, a magia se encerra.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 1
+      },
+      "duracao": "1d4 rodadas"
+    },
+    {
+      "id": "expulsar",
+      "nome": "EXPULSAR",
+      "descricao": "Você afasta uma criatura, expulsando-a da sua presença.\n\nEscolha uma criatura que você possa ver. Enquanto a magia durar, essa criatura não pode se aproximar de você mais do que o alcance Perto. Ela ainda pode atacá-lo de fora do alcance Perto.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 3
+      },
+      "alcance": "Longe"
+    },
+    {
+      "id": "expulsar-mortos-vivos",
+      "nome": "EXPULSAR MORTOS-VIVOS",
+      "descricao": "Você repele mortos-vivos, forçando-os a fugir. Você deve apresentar um símbolo sagrado para conjurar essa magia.\n\nMortos-vivos que estiverem Perto de você devem fazer um teste de Carisma contra seu teste de conjuração. Caso falhe por 10+ pontos, e for de nível igual ou menor que o seu, a criatura será destruída. Se falhar por menos que 10 pontos, ela fugirá de você por 5 rodadas.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 1
+      }
+    },
+    {
+      "id": "expulsar-profano",
+      "nome": "EXPULSAR PROFANO",
+      "descricao": "Você repele criaturas que são opostas ao seu alinhamento, forçando-as a fugir. Você deve apresentar um símbolo sagrado para conjurar essa magia.\n\nSe seu alinhamento for ordeiro ou neutro, essa magia afetará demônios, diabos e Entidades Exteriores. Se seu alinhamento for caótico, essa magia afetará anjos e criaturas do meio natural.\n\nCriaturas afetadas que estiverem Perto de você devem fazer um teste de Carisma contra seu teste de conjuração. Caso falhe por 10+ pontos, e for de nível igual ou menor que o seu, a criatura será destruída. Se falhar por menos que 10 pontos, ela fugirá de você por 5 rodadas.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 3
+      }
+    },
+    {
+      "id": "fabricar",
+      "nome": "FABRICAR",
+      "descricao": "Criaturas não podem ser alvos dessa magia.\n\nVocê pode transformar um conjunto de matérias-primas, equivalente ao tamanho de uma árvore, em um trabalho finalizado. Por exemplo, você converte uma pilha de tijolos ou pedras em uma ponte. O trabalho finalizado se transforma novamente em matéria-prima quando a magia se encerra.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "fala-verdadeira",
+      "nome": "FALA VERDADEIRA",
+      "descricao": "Uma criatura natural que você toca entende e pode se comunicar com você na verdadeira linguagema de todos os animais.\n\nVocê pode fazer uma pergunta sim ou não à criatura. O GM responde verdadeiramente “sim” ou “não”.\n\nSe você lançar esta Magia mais de uma vez na mesma criatura em 24 horas, trate uma falha no Teste de Conjuração como uma falha crítica.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 2
+      }
+    },
+    {
+      "id": "falar-com-mortos",
+      "nome": "FALAR COM MORTOS",
+      "descricao": "Um cadáver que você toca responde às suas perguntas com uma voz distante e sibilante.\n\nVocê pode fazer até três perguntas de “sim” ou “não” ao cadáver (uma de cada vez). O MJ irá responder honestamente “sim” ou “não” a cada uma delas.\n\nSe você conjurar essa magia mais de uma vez em 24 horas, considere uma falha no teste de conjuração como uma falha crítica.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 3,
+        "sacerdote": 3
+      }
+    },
+    {
+      "id": "fale-com-o-objeto",
+      "nome": "FALE COM O OBJETO",
+      "descricao": "Um objeto que você toca mentalmente responde às suas perguntas.\n\nA inteligência do objeto corresponde à raridade de seus materiais primários. Um diamante é mais espirituoso que uma pedra.\n\nVocê pode fazer ao objeto até três perguntas sim ou não (uma de cada vez). O Mestre responde verdadeiramente “sim” ou “não” a cada um.\n\nSe você lançar esta Magia mais de uma vez em 24 horas, trate uma falha no Teste de Conjuração como uma falha crítica.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "fantoche",
+      "nome": "FANTOCHE",
+      "descricao": "Uma criatura humanoide de nível 2 ou menor que você toca fica enredada em seus movimentos. Em seu turno, a criatura imita todos os seus movimentos.\n\nSe imitar seus movimentos for causar dano direto a si mesma ou a um aliado, ela pode fazer um teste de CAR CD 15. Em um sucesso, ela resiste a imitar você.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 2
+      }
+    },
+    {
+      "id": "flecha-a-cida",
+      "nome": "FLECHA ÁCIDA",
+      "descricao": "Você conjura uma flecha corrosiva que atinge um inimigo, causando 1d6 de dano por rodada. A flecha permanece no alvo enquanto durar sua concentração.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "forjar-elmo",
+      "nome": "FORJAR ELMO",
+      "descricao": "Toque cadeira Grande ou menor + bastão de cristal (500 PO, consumido). Vira elmo permanente.\n\n---",
+      "origem": "astraldark",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      },
+      "duracao": "1 hora",
+      "alcance": "Adjacente",
+      "ritual": true
+    },
+    {
+      "id": "forma-de-lobo",
+      "nome": "FORMA DE LOBO",
+      "descricao": "Você e seu equipamento se transfor-mam em um lobo enquanto a magia durar. Você assume os atributos de FOR, DES e CON, PV, CA, velocidade, ataques e características físicas do lobo. Você mantém sua INT, SAB e CAR.\n\nVocê pode conjurar magias enquanto estiver nesta forma. Se chegar a 0 PV, você retorna à sua forma original com 0 PV.\n\nSe o seu nível for 5+, você pode se transformar em um lobo-terrível ou um lobo do inverno.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 3
+      }
+    },
+    {
+      "id": "forma-gasosa",
+      "nome": "FORMA GASOSA",
+      "descricao": "Você e os seus equipamentos se transformam em uma nuvem de fumaça enquanto a magia durar.\n\nVocê pode voar e atravessar qualquer abertura que fumaça normalmente poderia. Você pode sentir o terreno e qualquer movimento Perto ao seu redor.\n\nVocê não pode conjurar magias enquanto estiver nessa forma.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "fundir",
+      "nome": "FUNDIR",
+      "descricao": "Intervalo: Self\n\nVocê se funde ligeiramente com o plano etéreo, libertando-se dos obstáculos físicos.\n\nVocê pode ignorar qualquer efeito que possa impactar seu Movimento durante a Magia.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      },
+      "duracao": "5 rodadas"
+    },
+    {
+      "id": "gafanhoto",
+      "nome": "GAFANHOTO",
+      "descricao": "Uma nuvem desorientadora de gafanhotos raivosos e cortantes preenche uma área ao seu redor até Perto.\n\nA nuvem se moverr com você enquanto você moverr. Você não é afetado por isso.\n\nAs criaturas na área de efeito recebem 1d10 Dano por Rodada no início de seu Turnooo. Eles devem passar em um Teste de CON igual ao seu último Teste de Conjuração ou serão incapazes de se mover em seu Turnooo.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 3
+      },
+      "duracao": "Focus",
+      "alcance": "Perto"
+    },
+    {
+      "id": "glifo",
+      "nome": "GLIFO",
+      "descricao": "Você desenha um símbolo arcano em um objeto que transmite um O dos seguintes efeitos mágicos:\n\n-  Vincular. Um leitor de NV 6 ou menos fica Paralisado por 1 Hora.\n\n-  Ferir. O leitor leva 3d6 Dano.\n\n-  Mensagema. O leitor ouve uma breve mensagema mental.\n\n-  Sigilo de Teletransporte. Trate o objeto como um sigilo de teletransporte de acordo com a Magia de teletransporte.\n\nO glifo desaparece uma vez ativado.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      },
+      "duracao": "1 Semana"
+    },
+    {
+      "id": "guarda",
+      "nome": "GUARDA",
+      "descricao": "Intervalo: Self\n\nVocê se protege com um feitiço mágico contra emboscadas.\n\nDurante a duração da Magia, você não pode ser Surpreso (você rola Iniciativa durante rodadas de Surpresa e é tratado como consciente de todos os inimigos).",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      },
+      "duracao": "10 rodadas"
+    },
+    {
+      "id": "hipnotizar",
+      "nome": "HIPNOTIZAR",
+      "descricao": "Uma criatura de nível 3 ou menor que possa vê-lo fica atônita.\n\nSe a linha de visão entre a criatura e você for quebrada, ela pode fazer um teste de CAR CD 15. Em um sucesso, a magia se encerra.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 3
+      }
+    },
+    {
+      "id": "identificar",
+      "nome": "IDENTIFICAR",
+      "descricao": "Intervalo: toque\n\nVocê aprende todas as propriedades mágicas de um Item que toca. Você não pode lançar esta Magia novamente até completar um descanso.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "ilusa-o",
+      "nome": "ILUSÃO",
+      "descricao": "Você cria uma ilusão convincente, audível e visível, que preenche um cubo de tamanho Perto ou menor, dentro do alcance.\n\nA ilusão não pode causar dano, mas criaturas que acreditarem que a ilusão é real reagem a ela como se pudesse.\n\nUma criatura que investiga a ilusão de longe deve ter sucesso em um teste de Sabedoria contra o seu último teste de conjuração para perceber a natureza falsa da ilusão.\n\nTocar a ilusão também revela sua falsa natureza.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "imobilizar-monstro",
+      "nome": "IMOBILIZAR MONSTRO",
+      "descricao": "Você paralisa uma criatura que você possa ver e que esteja dentro do alcance. Se o alvo for de nível 9+, ele pode fazer um teste de Força contra o seu último teste de conju-ração, no início do turno dele, para encerrar a magia.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "imobilizar-pessoa",
+      "nome": "IMOBILIZAR PESSOA",
+      "descricao": "Você paralisa magicamente uma criatura humanoide de nível 4 ou menor que você possa ver e que esteja dentro do alcance.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "instilar",
+      "nome": "INSTILAR",
+      "descricao": "Uma Arma que você empunha está imbuída de força vital. Torna-se uma Arma +1 enquanto durar a Magia.\n\nSe a Arma for um Cajado, ela causa d6 Dano em vez de d4.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 1
+      },
+      "duracao": "5 rodadas",
+      "alcance": "Pessoal"
+    },
+    {
+      "id": "invisibilidade",
+      "nome": "INVISIBILIDADE",
+      "descricao": "Uma criatura que você toca se torna invisível enquanto a magia durar.\n\nA magia se encerra se o alvo atacar ou conjurar uma magia.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 2,
+        "bruxa": 2
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ],
+      "duracao": "10 rodadas"
+    },
+    {
+      "id": "invocar-extraplanar",
+      "nome": "INVOCAR EXTRAPLANAR",
+      "descricao": "Você acessa os planos exteriores e invoca uma criatura de lá.\n\nVocê invoca um elemental ou Entidade Exterior de nível 7 ou menor. A criatura fica sob seu controle e age em seu turno.\n\nSe sua concentração falhar, você perde o controle da criatura e ela se torna hostil a você e a seus aliados.\n\nVocê deve ter sucesso em um teste de conjuração em seu turno para fazer com que a criatura retorne aos planos exteriores.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "invocar-tempestade",
+      "nome": "INVOCAR TEMPESTADE",
+      "descricao": "Você invoca uma tempestade violenta que afeta uma área ao seu redor em até um quilômetro e meio durante toda a duração.\n\nA tempestade traz céus escurecidos, vento forte e chuva torrencial.\n\nDurante O Magia, você pode lançar contpapel de água (Shadowdark RPG pág. 57), mesmo que não conheça a Magia.\n\nDurante O Magia, você pode lançar raio relâmpago (Shadowdark RPG pág. 64), mesmo que você não conheça a Magia.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 4
+      },
+      "duracao": "10 rodadas",
+      "alcance": "1,5 km"
+    },
+    {
+      "id": "ira",
+      "nome": "IRA",
+      "descricao": "Suas armas se tornam mágicas (+2), e causam um d8 de dano adicional enquanto a magia durar.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 4
+      }
+    },
+    {
+      "id": "jarro-de-alma",
+      "nome": "JARRO DE ALMA",
+      "descricao": "Você transfere a alma de uma criatura que tocar, de nível 9 ou menor, para um receptáculo, como uma jarra. O corpo da criatura fica em estado de coma, mas não morre.\n\nSe o receptáculo for quebrado ou aberto, a alma da criatura retorna ao seu corpo.\n\nVocê pode possuir o corpo vazio com seu próprio espírito, assumindo o controle dele. Durante esse período, seu corpo fica em estado de coma. Se o corpo que você está possuindo morrer, a sua alma retorna ao seu corpo original.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 9
+      },
+      "duracao": "permanente"
+    },
+    {
+      "id": "julgamento",
+      "nome": "JULGAMENTO",
+      "descricao": "Você bane instantaneamente uma criatura que você toca, enviando-a junto com todos os pertences que ela estiver carregando para enfrentar o julgamento do seu deus.\n\nVocê pode banir uma criatura inteligente de nível 10 ou menor.\n\nQuando a criatura retornar, após 5 rodadas, ela terá seus pontos de vida totalmente curados se seus feitos tiverem agradado ao seu deus. Ela terá seus pontos de vida reduzidos a 1, se seus feitos enfureceram o seu deus. E se o seu deus não puder julgar as ações da criatura, ela retornará sem qualquer alteração.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 5
+      }
+    },
+    {
+      "id": "ler-as-runas",
+      "nome": "LER AS RUNAS",
+      "descricao": "Você faz uma pergunta aos deuses e lança as pedras rúnicas, interpretando o significado dos resultados.\n\nFaça uma pergunta de “sim” ou “não” ao MJ. Ele responderá honestamente “sim” ou “não”.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 2
+      }
+    },
+    {
+      "id": "levitac-a-o",
+      "nome": "LEVITAÇÃO",
+      "descricao": "Você pode flutuar verticalmente pelo equivalente à distância Perto por rodada em seu turno. Você também pode se impulsionar contra objetos sólidos para se mover horizontalmente.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "luz",
+      "nome": "LUZ",
+      "descricao": "Um objeto que você toca se ilumina com uma luz brilhante e que não emite calor, clareando até a distância Perto, durante 1 hora de tempo real.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 1,
+        "sacerdote": 1
+      },
+      "duracao": "1 hora de tempo real"
+    },
+    {
+      "id": "luz-de-bruxa",
+      "nome": "LUZ DE BRUXA",
+      "descricao": "Você invoca um fogo-fátuo flutuante que oscila no ar e ilumina Um raio Adjacente ao redor dele.\n\nA luz pode mudar de cor e assumir formas vagas. Ela pode flutuar para Perto durante seu turno.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 1
+      }
+    },
+    {
+      "id": "ma-e-da-noite",
+      "nome": "MÃE DA NOITE",
+      "descricao": "Você implora à Mãe da Noite para lhe conceder poder.\n\nFaça um único desejo, declarando-o com a maior precisão possível. Seu desejo se realiza, conforme a interpre-tação do MJ.\n\nSe falhar no teste de conjuração, a Mãe da Noite arrastará você até o Anoitecer para julgá-lo. Você não poderá conjurar essa magia novamente até cumprir com as exigências dela.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 5
+      }
+    },
+    {
+      "id": "magnetizar",
+      "nome": "MAGNETIZAR",
+      "descricao": "Um objeto que você toca do tamanho de um cavalo fica fortemente magnetizado.\n\nAtrai todos os objetos magnéticos menores dentro do Perto.\n\nSe puder mover-se, ele será puxado em direção a objetos magnéticos maiores dentro de Perto. Uma criatura de metal deve passar em um Teste de FOR igual ao seu Teste de Conjuração para resistir.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 2
+      },
+      "duracao": "5 rodadas"
+    },
+    {
+      "id": "manto-da-noite",
+      "nome": "MANTO DA NOITE",
+      "descricao": "Você se envolve em um manto ondulante de sombras. Enquanto a magia durar, sua CA se torna 17 (20 em um sucesso crítico no teste de conjuração).\n\nVocê tem Vantagem em testes de Destreza para se esgueirar e se esconder enquanto a magia durar.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 4
+      },
+      "duracao": "8 rodadas"
+    },
+    {
+      "id": "ma-os-flamejantes",
+      "nome": "MÃOS FLAMEJANTES",
+      "descricao": "Você abre suas mãos enquanto seus polegares se tocam, liberando um círculo de chamas que se estende pela área Adjacente ao redor de onde você está.\n\nCriaturas dentro da área de efeito sofrem 1d6 de dano, e objetos inflamáveis se incendeiam.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "mau-olhado",
+      "nome": "MAU OLHADO",
+      "descricao": "Uma criatura-alvo sofre 1d4 de dano e não pode ver você até o fim do próximo turno dela.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 1
+      }
+    },
+    {
+      "id": "mesmerismo-de-mazzim",
+      "nome": "MESMERISMO DE MAZZIM",
+      "descricao": "Você tece uma névoa atordoante de magia negra em torno dos alvos.\n\nTodas as criaturas humanoides de NV 5 ou menos no alcance devem passar em um teste de CAR contra a última rolagem de conjuração que você fez no início do turno delas.\n\nCriaturas que falham ficam imóveis e boquiabertas, encarando imagens invisíveis.",
+      "origem": "Cursed Scroll 5 - Preview pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      },
+      "duracao": "** Foco",
+      "alcance": "** Perto"
+    },
+    {
+      "id": "metamorfose",
+      "nome": "METAMORFOSE",
+      "descricao": "Você se transforma, assim como qualquer equipamento que estiver carregando, em outra criatura natural que você já tenha visto e que seja de nível 10 ou menor. Você assume as características e os atributos físicos da criatura, mas mantém suas próprias características e atributos não físicos (incluindo INT, SAB e CAR).\n\nSe você chegar a 0 ponto de vida enquanto estiver sob efeito dessa magia, você retorna à sua verdadeira forma com 1 PV.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 5,
+        "bruxa": 10
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ]
+    },
+    {
+      "id": "mice-lio",
+      "nome": "MICÉLIO",
+      "descricao": "Você conecta sua mente com a vasta rede de fungos da Terra.\n\nFaça ao GM uma pergunta de até 15 palavras. O GM responde com sinceridade usando até 15 palavras.\n\nSe você lançar esta Magia mais de uma vez em 24 horas, trate uma falha no Teste de Conjuração como uma falha crítica.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 4
+      },
+      "alcance": "Pessoal"
+    },
+    {
+      "id": "mi-ssil-ma-gico",
+      "nome": "MÍSSIL MÁGICO",
+      "descricao": "Você tem Vantagem no teste de conjuração dessa magia.\n\nUm raio de força brilhante se projeta de sua mão aberta, causando 1d4 de dano a um alvo.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "muralha-de-energia",
+      "nome": "MURALHA DE ENERGIA",
+      "descricao": "Você ergue suas mãos e conjura uma muralha de energia transparente.\n\nA parede é fina e deve estar em contato com outra superfície, podendo cobrir uma área de tamanho Perto, em largura e comprimento. Você escolhe o formato.\n\nNada que esteja no mesmo plano pode atravessar a muralha fisicamente.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "ne-voa",
+      "nome": "NÉVOA",
+      "descricao": "Uma densa névoa surge em uma área Adjacente ao seu redor, tornando-o difícil de enxergar. A névoa se move com você. Ataques contra criaturas dentro da névoa têm Desvantagem.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 1
+      }
+    },
+    {
+      "id": "ne-voa-mortal",
+      "nome": "NÉVOA MORTAL",
+      "descricao": "Uma nuvem malcheirosa de veneno amarelado preenche um cubo de tamanho Perto dentro do alcance. Ela se espalha por todos os ângulos.\n\nCriaturas dentro da nuvem ficam cegas e sofrem 2d6 de dano no início de seus turnos.\n\nUma criatura de nível 9 ou menor que encerrar seu turno completamente imerso na nuvem morrerá.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "nomear",
+      "nome": "NOMEAR",
+      "descricao": "Você aprende o Nome Verdadeiro (RPG Shadowdark pág. 319) de uma criatura que você toca.\n\nSe a criatura quiser, você pode dar a ela um novo Nome Verdadeiro. Uma criatura só pode mudar seu Nome Verdadeiro uma vez durante sua vida.\n\nSe isso acontecer, seu Alinhamento muda para o seu Alinhamento.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 5
+      }
+    },
+    {
+      "id": "objeto-fixo",
+      "nome": "OBJETO FIXO",
+      "descricao": "Um objeto que você toca e que pese até 2 kg se torna fixo em sua posição atual. Ele pode sustentar até duas toneladas enquanto a magia durar.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "obstruir-porta",
+      "nome": "OBSTRUIR PORTA",
+      "descricao": "Enquanto a magia durar, você mantém um portal magicamente fechado. Uma criatura deve ter sucesso em um teste de Força contra seu teste de conjuração para abrir o portal. A magia arrombar encerra essa magia.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "olho-arcano",
+      "nome": "OLHO ARCANO",
+      "descricao": "Você conjura um olho invisível, do tamanho de uma uva, dentro do alcance.\n\nVocê pode enxergar através do olho. Ele pode ver no escuro até Perto, voar por até Perto em seu turno, e se espremer através de pequenas aberturas tão estreitas quanto o buraco de uma fechadura.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "olho-de-gato",
+      "nome": "OLHO DE GATO",
+      "descricao": "A \n\níris de seus olhos se expande, preenchendo-o completamente, e suas pupilas se tornam fendas verticais pretas.\n\nVocê pode ver criaturas invisíveis e portas secretas enquanto a magia durar.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 2
+      }
+    },
+    {
+      "id": "olho-maligno",
+      "nome": "OLHO MALIGNO",
+      "descricao": "Uma criatura alvo sofre 1d4 de dano e não pode vê-lo até o fim do próximo turno dela.",
+      "origem": "Cursed Scroll 5 - Preview pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      },
+      "duracao": "** Instantânea",
+      "alcance": "** Perto"
+    },
+    {
+      "id": "orbe-prisma-tico",
+      "nome": "ORBE PRISMÁTICO",
+      "descricao": "Você envia um orbe estroboscópico de energia em direção a um alvo dentro do alcance.\n\nEscolha um tipo de energia: fogo, frio ou eletricidade. O orbe causa 3d8 de dano e uma explosão concussiva do tipo de energia escolhida.\n\nSe o tipo de energia for contrário à natureza do alvo (como energia de frio contra um elemental de fogo), o orbe causa o dobro de dano.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "ossos-de-vidro",
+      "nome": "OSSOS DE VIDRO",
+      "descricao": "Uma criatura que você toca se torna frágil. Ela sofre o dobro de dano enquanto a magia durar.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 4
+      }
+    },
+    {
+      "id": "oxidar",
+      "nome": "OXIDAR",
+      "descricao": "Um objeto inanimado que você toca do tamanho de uma porta ou menos tem d100 anos.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 1
+      }
+    },
+    {
+      "id": "palavra-de-poder-matar",
+      "nome": "PALAVRA DE PODER: MATAR",
+      "descricao": "Você profere a Palavra da Perdição. Uma criatura-alvo de nível 9 ou menor morrerá se puder ouvi-lo.\n\nA falha no teste de conjuração é considerada uma falha crítica. Role a falha mágica com Desvantagem.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "pa-ntano-borbulhante",
+      "nome": "PÂNTANO BORBULHANTE",
+      "descricao": "Você transforma uma parte do chão (um cubo de tamanho Perto), dentro do alcance, em um pântano lamacento e borbulhante de areia movediça.\n\nUma criatura presa na lama não pode se mover, e deve ter sucesso em um teste de DES contra o seu teste de conjuração para se libertar.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 2
+      },
+      "duracao": "5 rodadas"
+    },
+    {
+      "id": "passo-nebuloso",
+      "nome": "PASSO NEBULOSO",
+      "descricao": "Em uma nuvem de fumaça, você se teleporta para uma área Perto e que você possa ver.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "passo-oni-rico",
+      "nome": "PASSO ONÍRICO",
+      "descricao": "Você e quaisquer outras criaturas Adjacentes e voluntárias entram no sonho de uma criatura adormecida cujo nome você pronuncie, desde que ela esteja no mesmo plano.\n\nVocê e quem estiver viajando com você podem sair da criatura, surgindo ao lado dela como se tivessem sido teleportados.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 5
+      }
+    },
+    {
+      "id": "pele-de-cortic-a",
+      "nome": "PELE DE CORTIÇA",
+      "descricao": "Sua pele endurece em casca dura de árvore. Sua CA torna-se 15 (18 em uma Conjuração Teste crítica) pela duração da Magia.\n\nVocê recebe o dobro de Dano do Fogo enquanto está sob os efeitos da Magia.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 2
+      },
+      "duracao": "1 dia",
+      "alcance": "Pessoal"
+    },
+    {
+      "id": "pele-rocha",
+      "nome": "PELE-ROCHA",
+      "descricao": "Sua pele se torna semelhante a granito. Enquanto a magia durar, sua CA se torna 17 (ou 20, em um sucesso crítico no teste de conjuração).",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "permane-ncia",
+      "nome": "PERMANÊNCIA",
+      "descricao": "FOR lançar esta Magia, você deve espalhar um diamante em pó no alvo.\n\nEscolha um objeto ao alcance que esteja atualmente sob os efeitos de uma Magia que você lançou. A duração dessa Magia passa a ser de 1 Ano.\n\nVocê não pode alterar os efeitos da Magia original após lançar permanência. Por exemplo, você não pode mais mover um objeto sob os efeitos da telecinesia.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      },
+      "duracao": "1 Ano"
+    },
+    {
+      "id": "pesadelo",
+      "nome": "PESADELO",
+      "descricao": "Você visita os sonhos de uma criatura adormecida, enviando-lhe pesadelos aterrorizantes.\n\nVocê pode escolher uma criatura cujo nível seja menor ou igual à metade do seu nível, arredondando para baixo (mínimo de 1). O alvo deve estar dormindo e você deve tê-lo visto pessoalmente antes.\n\nSe você mantiver a concentração por 3 rodadas consecutivas, a criatura morre devido ao medo.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 4
+      },
+      "alcance": "no mesmo plano"
+    },
+    {
+      "id": "pilar-de-sal",
+      "nome": "PILAR DE SAL",
+      "descricao": "Uma criatura-alvo se torna uma estátua feita de sal endurecido.\n\nSeu alvo pode ser uma criatura de nível 5 ou menor e que você possa ver.\n\nSe você mantiver a concentração nessa magia por 3 rodadas seguidas, a transformação se torna permanente.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 4
+      }
+    },
+    {
+      "id": "poc-a-o",
+      "nome": "POÇÃO",
+      "descricao": "Como parte da conjuração desta magia, você deve abençoar uma única dose de qualquer líquido.\n\nO líquido recebe propriedades curativas por 1 dia. Uma criatura que o ingerir pode encerrar os efeitos de um veneno ou é estabilizada e não morre (a criatura permanece com 0 PV).",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 1
+      }
+    },
+    {
+      "id": "polimorfia",
+      "nome": "POLIMORFIA",
+      "descricao": "Você transforma uma criatura que você toca em outra criatura natural de mesmo tamanho ou menor, à sua escolha. Qualquer equipamento que o alvo carregue se mescla à sua nova forma.\n\nO alvo ganha as características e atributos físicos da criatura, porém retém suas próprias características e atributos não físicos.\n\nSe o alvo chegar a 0 ponto de vida, ele retorna à sua verdadeira forma com metade de seus PV anteriores.\n\nSeu alvo pode ser qualquer criatura voluntária, ou uma criatura involun-tária cujo nível seja menor ou igual à metade do seu nível, arredondando para baixo (mínimo de 1).",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 4,
+        "bruxa": 4
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ],
+      "duracao": "10 rodadas"
+    },
+    {
+      "id": "porta-dimensional",
+      "nome": "PORTA DIMENSIONAL",
+      "descricao": "Você teleporta a si mesmo, e até uma outra criatura voluntária e que esteja Adjacente, para qualquer lugar que você possa ver.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 4,
+        "bruxa": 4
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ]
+    },
+    {
+      "id": "pressa-gio",
+      "nome": "PRESSÁGIO",
+      "descricao": "Você lança os ossos divinatórios ou espia a escuridão entre as estrelas, procurando por um presságio.\n\nVocê pode fazer uma pergunta de “sim” ou “não” ao MJ. Ele responderá honestamente “sim” ou “não”.\n\nSe você conjurar essa magia mais de uma vez em 24 horas, considere uma falha no teste de conjuração como uma falha crítica.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 4,
+        "bruxa": 3
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ]
+    },
+    {
+      "id": "pressa-gio-de-freya",
+      "nome": "PRESSÁGIO DE FREYA",
+      "descricao": "Enquanto a magia durar, você não perde a capacidade de conjurar uma magia caso falhe no teste para conjurá-la.\n\nSe obtiver uma falha crítica em um teste de conjuração, você pode rolar o teste novamente. Você deve usar o novo resultado.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 4
+      },
+      "duracao": "1d6 rodadas"
+    },
+    {
+      "id": "profecia",
+      "nome": "PROFECIA",
+      "descricao": "Você entra em comunhão direta com seu deus em busca de um direcionamento.\n\nFaça uma pergunta ao MJ. Ele responde honestamente, de acordo com o conhecimento que seu deus possui. Divindades são poderosas, mas não oniscientes.\n\nVocê não pode conjurar essa magia novamente até que complete uma penitência.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 5
+      }
+    },
+    {
+      "id": "proibir",
+      "nome": "PROIBIR",
+      "descricao": "Intervalo: Self\n\nAs criaturas não podem se teletransportar FOR dentro, FOR fora ou dentro de uma área de efeito que se estenda até Perto x2 de você. Esta área de efeito se mover com você.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      },
+      "duracao": "10 rodadas"
+    },
+    {
+      "id": "protec-a-o-contra-energia",
+      "nome": "PROTEÇÃO CONTRA ENERGIA",
+      "descricao": "Uma criatura que você toca se torna imune à fúria dos elementos.\n\nEscolha entre eletricidade, fogo ou frio. Enquanto a magia durar, o alvo se torna imune a danos causados pela energia do tipo escolhido.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "protec-a-o-contra-o-bem",
+      "nome": "PROTEÇÃO CONTRA O BEM",
+      "descricao": "Pela duração da magia, seres leais têm Desvantagem em rolagens de ataque e testes de conjuração hostis contra o alvo. Esses seres também não podem possuir, compelir ou enfeitiçar o alvo.\n\nA magia termina se você ou seus aliados fizerem algo que machuque o alvo e ele perceba.",
+      "origem": "Cursed Scroll 5 - Preview pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      },
+      "duracao": "** Foco",
+      "alcance": "** Adjacente"
+    },
+    {
+      "id": "protec-a-o-contra-o-mal",
+      "nome": "PROTEÇÃO CONTRA O MAL",
+      "descricao": "Enquanto a magia durar, seres caóticos têm Desvantagem em jogadas de ataque e conjurações hostis contra o alvo. Esses seres também não podem possuir, induzir ou encantar o alvo.\n\nQuando a magia é conjurada em um alvo já possuído, a entidade que o possui faz um teste de Carisma contra o último teste de conjuração. Se falhar, a entidade será expulsa.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 1,
+        "sacerdote": 1
+      }
+    },
+    {
+      "id": "purificar",
+      "nome": "PURIFICAR",
+      "descricao": "Expurgas toxinas naturais de uma criatura que tocas.\n\nAcabar com os efeitos de um Veneno que atualmente afeta o alvo.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "queda-suave",
+      "nome": "QUEDA SUAVE",
+      "descricao": "Você pode tentar conjurar essa magia quando estiver caindo.\n\nA velocidade da sua queda diminui, e assim você pode aterrissar sobre seus pés de forma segura.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "ragnarok",
+      "nome": "RAGNAROK",
+      "descricao": "Você olha profundamente para os fios do destino, e compreende a sina de uma alma após uma batalha do Ragnarok. Ela irá viver ou morrer?\n\nEscolha uma criatura dentro do alcance. Você só pode usar esta magia uma vez na mesma criatura.\n\nEssa criatura deve ter sucesso em um teste de CON igual ao seu último teste de conjuração, ou morrerá instantaneamente.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 5
+      },
+      "alcance": "Longe"
+    },
+    {
+      "id": "raio-de-luar",
+      "nome": "RAIO DE LUAR",
+      "descricao": "Um raio oscilante de luar prateado atinge uma criatura no alcance Longe. Ela sofre 3d6 de dano.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 4
+      }
+    },
+    {
+      "id": "reflexos",
+      "nome": "REFLEXOS",
+      "descricao": "Você cria um número de cópias ilusórias de si mesmo igual à metade do seu nível, arredondando para baixo (mínimo de 1). As cópias lhe cercam e imitam você.\n\nA cada vez que uma criatura ataca você, o ataque erra e faz com que uma das cópias evapore. Se todas as ilusões desaparecerem, a magia se encerra.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "regenerac-a-o",
+      "nome": "REGENERAÇÃO",
+      "descricao": "Uma criatura que você toca recupera 1d4 pontos de vida em seu turno, enquanto a magia durar. Essa magia também faz crescer partes do corpo que foram perdidas.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 4
+      }
+    },
+    {
+      "id": "rela-mpago",
+      "nome": "RELÂMPAGO",
+      "descricao": "Você dispara um raio branco-azulado de relâmpago a partir de suas mãos, atingindo todas as criaturas em linha reta até o alcance da magia.\n\nCriaturas que forem atingidas pelo raio sofrem 3d6 de dano.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "remeter",
+      "nome": "REMETER",
+      "descricao": "Você envia mentalmente uma mensagem curta para qualquer criatura que lhe seja familiar, e que esteja no mesmo plano que você.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      },
+      "alcance": "ilimitado"
+    },
+    {
+      "id": "restaurac-a-o",
+      "nome": "RESTAURAÇÃO",
+      "descricao": "Com o toque de suas mãos, você expurga as maldições e doenças. À sua escolha, você encerra uma maldição, doença ou moléstia que esteja afetando o alvo.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 3
+      }
+    },
+    {
+      "id": "revelar",
+      "nome": "REVELAR",
+      "descricao": "Acabe com todos os efeitos de invisibilidade a uma Perto de você.\n\nVocê também fica ciente da localização de qualquer criatura escondida dentro do alcance.",
+      "origem": "Cursed Scroll 6 - City of Masks pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      },
+      "alcance": "Perto"
+    },
+    {
+      "id": "risada-dolorosa",
+      "nome": "RISADA DOLOROSA",
+      "descricao": "Um alvo que você tocar, de nível 4 ou inferior, desaba indefeso, rindo de maneira perturbadora e dolorosa enquanto a magia durar.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 4
+      }
+    },
+    {
+      "id": "sabedoria-de-odin",
+      "nome": "SABEDORIA DE ODIN",
+      "descricao": "Enquanto a magia durar, adicione seu nível como bônus adicional em todos os testes de Sabedoria e testes de conjuração.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 4
+      },
+      "duracao": "1d6 rodadas"
+    },
+    {
+      "id": "sacrifi-cio",
+      "nome": "SACRIFÍCIO",
+      "descricao": "Como parte da conjuração desta magia, você deve sacrificar uma criatura viva de NV 2 ou maior em um ritual.\n\nO alvo que você tocar ganha um bônus no seu próximo teste ou jogada de ataque igual ao nível da criatura sacrificada.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 2
+      }
+    },
+    {
+      "id": "seda-de-aranha",
+      "nome": "SEDA DE ARANHA",
+      "descricao": "Fios pegajosos de seda de aranha cobrem suas mãos e pés.\n\nEnquanto a magia durar, você pode caminhar em superfícies verticais tão facilmente quanto se estivesse no chão.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 2
+      }
+    },
+    {
+      "id": "serpente-do-mundo",
+      "nome": "SERPENTE DO MUNDO",
+      "descricao": "O \n\nveneno torturante da Serpente do Mundo goteja das armas de uma criatura que você tocar.\n\nO alvo causa dano dobrado em cada ataque (x4 em um acerto crítico) enquanto a magia durar.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 5
+      }
+    },
+    {
+      "id": "silenciar-elmo",
+      "nome": "SILENCIAR ELMO",
+      "descricao": "Piloto: INT CD 15 ou o elmo não propulsa por 1d4 rodadas (deriva; armas de convés funcionam). Sucesso: sem efeito. 1 natural no teste do piloto: +1 rodada.",
+      "origem": "astraldark",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      },
+      "duracao": "1 hora",
+      "alcance": "Longe"
+    },
+    {
+      "id": "sile-ncio",
+      "nome": "SILÊNCIO",
+      "descricao": "Você silencia magicamente um cubo de tamanho Perto que esteja dentro do alcance da magia. Criaturas dentro dessa área ficam surdas, e quaisquer sons que elas emitam não serão ouvidos.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "sono",
+      "nome": "SONO",
+      "descricao": "Você tece uma magia relaxante que preenche um cubo de tamanho Perto que se estende a partir de você. Criaturas vivas e que estejam dentro da área de efeito caem em um sono profundo, caso sejam de nível 2 ou menor.\n\nSacudi-las vigorosamente ou causar dano a elas irá despertá-las.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      }
+    },
+    {
+      "id": "sopro",
+      "nome": "SOPRO",
+      "descricao": "Você pode prender a respiração durante a Magia.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 1
+      },
+      "duracao": "10 rodadas",
+      "alcance": "Pessoal"
+    },
+    {
+      "id": "sussurro",
+      "nome": "SUSSURRO",
+      "descricao": "Você sussurra no ouvido de outra criatura, implantando uma memória falsa em sua mente.\n\nVocê descreve uma memória curta e falsa que o alvo acredita ser verdadeira de agora em diante.\n\nSe você falhar no teste de conjuração, o MJ escolhe uma memória falsa e curta para implantar em sua mente.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 3
+      }
+    },
+    {
+      "id": "teia",
+      "nome": "TEIA",
+      "descricao": "Você cria um cubo de tamanho Perto formado por uma teia de aranha densa e pegajosa, dentro do alcance. Uma criatura que ficar presa na teia não pode se mover, e deve ter sucesso em um teste de Força contra seu teste de conjuração para se libertar.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 2
+      }
+    },
+    {
+      "id": "telecinese",
+      "nome": "TELECINESE",
+      "descricao": "Você ergue uma criatura ou objeto com sua mente. Escolha um alvo que pese 450 quilos ou menos. Você pode movê-lo a uma distância Perto, em qualquer direção, e mantê-lo no lugar.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 4
+      }
+    },
+    {
+      "id": "teleporte",
+      "nome": "TELEPORTE",
+      "descricao": "Você e quaisquer criaturas volun-tárias à sua escolha, e que estejam Adjacentes, se teleportam para um local que você escolher, no mesmo plano em que vocês estão.\n\nVocê pode viajar para um sigilo de teleporte que já conheça, ou para um local onde você já esteve anteriormente. Caso contrário, há uma chance de 50% de que você surja fora do local pretendido.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 5
+      }
+    },
+    {
+      "id": "terremoto",
+      "nome": "TERREMOTO",
+      "descricao": "A terra treme violentamente e se abre, engolindo as criaturas até a sua destruição.\n\nTodas as criaturas que estiverem no chão a uma distância de Perto x2 de você recebem 4d6 Dano.\n\nCada criatura afetada de NV 9 ou menos deve passar um Teste DES igual ao Dano que tomaram ou então ser engolido pela terra, para nunca mais ser visto.",
+      "origem": "Cursed Scroll 4 - River of Night pt-BR",
+      "listas": [
+        "druida"
+      ],
+      "grau": {
+        "druida": 5
+      },
+      "alcance": "Perto x2"
+    },
+    {
+      "id": "transe",
+      "nome": "TRANSE",
+      "descricao": "Você entra em transe, absorvendo breves visões sobre o destino de uma criatura. Uma criatura humanoide que você tocar (não pode ser você mesmo) ganha uma ficha de sorte. Ela não pode ter mais do que uma ficha de sorte ao mesmo tempo.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 1
+      }
+    },
+    {
+      "id": "transic-a-o-planar",
+      "nome": "TRANSIÇÃO PLANAR",
+      "descricao": "Você dobra o espaço e o tempo, transportando a si mesmo e a todas as criaturas Adjacentes e voluntárias para um local em outro plano, à sua escolha.\n\nA menos que você já tenha visitado o local anteriormente, você surge em um lugar aleatório no plano de destino.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "sacerdote"
+      ],
+      "grau": {
+        "mago": 5,
+        "sacerdote": 5
+      }
+    },
+    {
+      "id": "trapac-a-de-loki",
+      "nome": "TRAPAÇA DE LOKI",
+      "descricao": "Você é preenchido pela astúcia hipnótica de Loki. As criaturas que puderem ouvir você falar irão alterar suas próprias crenças e memórias para se adequarem à sua sugestão.\n\nEscolha uma criatura que possa ouvir e compreender você e esteja dentro do alcance. Você faz uma declaração plausível, verdadeira ou não.\n\nO alvo deve fazer um teste de SAB contra seu teste de conjuração. Se falhar, ele passa a acreditar no que você disse como se fosse verdade, independentemente do que ele saiba.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 4
+      }
+    },
+    {
+      "id": "travessura",
+      "nome": "TRAVESSURA",
+      "descricao": "Você enfeitiça magicamente um humanoide de nível 2 ou menos dentro do alcance perto.\n\nO alvo é dominado por compulsão de cometer travessuras prejudiciais pela duração da magia.\n\nA cada rodada, tenta um ato sorrateiro e cruel que atrapalhe ou incomode o aliado mais próximo.",
+      "origem": "Cursed Scroll 5 - Preview pt-BR",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 1
+      },
+      "duracao": "** 5 rodadas",
+      "alcance": "** Perto"
+    },
+    {
+      "id": "trova-o-de-thor",
+      "nome": "TROVÃO DE THOR",
+      "descricao": "Thor lança um raio para atingir um alvo. O alvo sofre 3d6 de dano.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 4
+      },
+      "alcance": "Longe"
+    },
+    {
+      "id": "uivo",
+      "nome": "UIVO",
+      "descricao": "Todos os inimigos que estiverem Perto devem fazer um teste de moral imediatamente. Essa magia não afeta criaturas que são imunes a testes de moral.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 3
+      }
+    },
+    {
+      "id": "valqui-ria",
+      "nome": "VALQUÍRIA",
+      "descricao": "Você invoca uma valquíria para auxiliá-lo. Ela surge em um local dentro do alcance Perto e age por vontade própria para ajudá-lo. Quando a magia se encerra, ela retorna a Valhala.\n\nVocê não pode conjurar essa magia novamente até completar uma penitência.",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR",
+      "listas": [
+        "vidente"
+      ],
+      "grau": {
+        "vidente": 5
+      },
+      "duracao": "10 rodadas"
+    },
+    {
+      "id": "vassoura-voadora",
+      "nome": "VASSOURA VOADORA",
+      "descricao": "Você conjura uma vassoura voadora em sua mão. O usuário da vassoura pode voar por uma distância Perto a cada rodada e pode levitar no mesmo lugar.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 3
+      }
+    },
+    {
+      "id": "veneno",
+      "nome": "VENENO",
+      "descricao": "Um objeto vestido ou carregado que você tocar se torna tóxico enquanto a magia durar. Qualquer criatura em contato com o objeto no início do turno dela sofre 1d6 de dano.",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR",
+      "listas": [
+        "bruxa"
+      ],
+      "grau": {
+        "bruxa": 2
+      },
+      "duracao": "5 rodadas"
+    },
+    {
+      "id": "vide-ncia",
+      "nome": "VIDÊNCIA",
+      "descricao": "Você observa através de uma bola de cristal ou de um espelho d’água, invocando imagens de um lugar distante.\n\nEnquanto a magia durar, você pode enxergar e ouvir uma criatura ou local à sua escolha, que precisa estar no mesmo plano que você.\n\nEssa magia tem CD 18 para conjurar se você tentar visualizar uma criatura ou local que não seja familiar a você.\n\nA cada rodada, as criaturas que você visualiza podem fazer um teste de SAB contra o seu último teste de conjuração. Em um sucesso, elas ficam cientes da sua observação mágica.",
+      "origem": "livro",
+      "listas": [
+        "mago",
+        "bruxa"
+      ],
+      "grau": {
+        "mago": 5,
+        "bruxa": 5
+      },
+      "origens": [
+        "livro",
+        "Cursed Scroll 1 - Diabruras pt-BR"
+      ]
+    },
+    {
+      "id": "vinganc-a-divina",
+      "nome": "VINGANÇA DIVINA",
+      "descricao": "Você se torna o avatar divino da ira de seu deus, envolto em chamas sagradas ou em uma aura obscura de corrupção ardente.\n\nEnquanto a magia durar, você pode voar por até Perto, suas armas se tornam mágicas, e você tem um bônus de +4 em ataques e dano de sua arma.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 5
+      }
+    },
+    {
+      "id": "voo",
+      "nome": "VOO",
+      "descricao": "Seus pés se erguem do solo, e você se eleva no ar como um pássaro. Você pode voar por até Perto enquanto a magia durar, e também é capaz de pairar sobre o mesmo lugar.",
+      "origem": "livro",
+      "listas": [
+        "mago"
+      ],
+      "grau": {
+        "mago": 3
+      }
+    },
+    {
+      "id": "zona-da-verdade",
+      "nome": "ZONA DA VERDADE",
+      "descricao": "Você induz uma criatura que você possa ver a falar a verdade. Ela não pode proferir uma mentira de forma proposital enquanto estiver dentro do alcance.",
+      "origem": "livro",
+      "listas": [
+        "sacerdote"
+      ],
+      "grau": {
+        "sacerdote": 2
+      }
+    }
+  ]
+}

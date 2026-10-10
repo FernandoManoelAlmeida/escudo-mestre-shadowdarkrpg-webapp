@@ -1,0 +1,12 @@
+.next/
+node_modules/
+build/
+out/
+coverage/
+public/
+next-env.d.ts
+yarn.lock
+package-lock.json
+public/sw.js
+public/workbox-*.js
+public/swe-worker-*.js

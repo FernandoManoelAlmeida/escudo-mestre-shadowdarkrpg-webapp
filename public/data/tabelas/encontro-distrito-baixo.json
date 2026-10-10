@@ -1,0 +1,113 @@
+{
+  "id": "encontro-distrito-baixo",
+  "titulo": "Encontros — DISTRITO BAIXO",
+  "categoria": "encontro",
+  "subcategoria": "distrito-baixo",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "46–47",
+      "Um dono de loja sussurra sobre “mercadorias exóticas” à venda"
+    ],
+    [
+      "50–53",
+      "Uma briga de 2d6 plebeus bêbados transborda para fora da taverna"
+    ],
+    [
+      "56–57",
+      "Um ferreiro joga ferraduras quentes em uma pilha perto dos PJs"
+    ],
+    [
+      "58–59",
+      "Uma velha cega mostra seu “gato” (um rato gigante feroz)"
+    ],
+    [
+      "62–63",
+      "Um mercenário a cavalo arrasta um homem ao tribunal de débitos"
+    ],
+    [
+      "64–65",
+      "Dois mendigos se estapeiam por um espeto de rato queimado"
+    ],
+    [
+      "68–69",
+      "Um mendigo desnutrido é, de fato, 3 kobolds em um saco de juta"
+    ],
+    [
+      "70–71",
+      "Um oficial e quatro guardas arrastam um homem relutante"
+    ],
+    [
+      "72–73",
+      "Dois treinadores de cães rivais perdem o controle de seus mastins"
+    ],
+    [
+      "74–75",
+      "Exploradores rivais acusam os PJs de saquear no “território” deles"
+    ],
+    [
+      "76–77",
+      "Um grande grupo de gatos se reúne sob as docas ou varandas"
+    ],
+    [
+      "78–79",
+      "Um carregador de tochas segue os PJs, implorando por trabalho"
+    ],
+    [
+      "84–85",
+      "Três criminosos encapuzados arrastam um grande saco de um cortiço"
+    ],
+    [
+      "86–87",
+      "Um ser de olhos vermelhos observa a partir de uma janela escura"
+    ],
+    [
+      "90–91",
+      "Uma refinaria descarta um barril de gordura rançosa (óleo x10)"
+    ],
+    [
+      "92–93",
+      "Velha Esmeralda distribui vinho quente com especiarias (cura 1d4)"
+    ],
+    [
+      "94–95",
+      "Um mendigo cheio de pústulas é, na verdade, o Duque disfarçado"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante vende a escritura de uma velha loja"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "Um item mágico derrubado brilha dentro de um esgoto imundo"
+    ],
+    [
+      "54–55",
+      "Telhas de barro despencam do telhado desgastado de um armazém"
+    ],
+    [
+      "60–61",
+      "Uma trupe de malabaristas entorna cerveja e joga facas loucamente"
+    ],
+    [
+      "66–67",
+      "Uma nascente de água limpa emerge entre paralelepípedos rachados"
+    ],
+    [
+      "80–81",
+      "Um grito agudo pode ser ouvido vindo dos galpões cobertos de mofo"
+    ],
+    [
+      "82–83",
+      "Lady Unwin pergunta aos PJs como chegar ao sórdido Rato Vermelho"
+    ]
+  ]
+}

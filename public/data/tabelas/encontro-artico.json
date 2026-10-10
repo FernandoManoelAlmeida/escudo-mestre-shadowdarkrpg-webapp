@@ -1,0 +1,81 @@
+{
+  "id": "encontro-artico",
+  "titulo": "Encontros — ÁRTICO",
+  "categoria": "encontro",
+  "subcategoria": "artico",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Um kraken albino se agita dentro de uma montanha cristalina de gelo"
+    ],
+    [
+      "24–25",
+      "Os Ratos de Gelo (3d6 goblins) montam armadilhas, e podem negociar"
+    ],
+    [
+      "40–41",
+      "O Andarilho dos Ermos surge (inumano NV 10, espada grande gélida)"
+    ],
+    [
+      "46–47",
+      "Uma ursa polar ataca quem se aproximar de seus 1d4 filhotes"
+    ],
+    [
+      "50–53",
+      "Uma roca de asas quebradas luta contra 2d6 caçadores humanos"
+    ],
+    [
+      "72–73",
+      "Um remorhaz persegue 1d6 halflings até o seu ninho de filhotes"
+    ],
+    [
+      "74–75",
+      "Um grupo de exploradores rivais emerge de uma caverna de gelo"
+    ],
+    [
+      "76–77",
+      "Uma área de cogumelos brancos e brilhosos ressona um zumbido"
+    ],
+    [
+      "78–79",
+      "Os PJs são o próximo alvo de Leedrin, o Eremita (saqueador)"
+    ],
+    [
+      "84–85",
+      "Um túnel largo no gelo conduz até a boca de um verme púrpura"
+    ],
+    [
+      "86–87",
+      "Uma área com 2d20 corpos de anões; são zumbis e levantam à noite"
+    ],
+    [
+      "90–91",
+      "Acampamento de 2d20 pastores de iaques oferece comida e abrigo"
+    ],
+    [
+      "92–93",
+      "O sol prismático que brilha no gelo é um portal para o reino Feérico"
+    ],
+    [
+      "94–95",
+      "Um demônio cubi exilado caminha furiosamente pela neve"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante viaja em um trenó puxado por uma rena"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "Vapor emerge de um oásis de fontes sulfúricas e regenerativas"
+    ]
+  ]
+}

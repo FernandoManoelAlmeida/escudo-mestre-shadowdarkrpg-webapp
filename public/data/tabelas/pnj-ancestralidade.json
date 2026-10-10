@@ -1,0 +1,37 @@
+{
+  "id": "pnj-ancestralidade",
+  "titulo": "Ancestralidade do PNJ",
+  "categoria": "pnjs",
+  "subcategoria": "ancestralidade",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Ancestralidade"
+  ],
+  "rows": [
+    [
+      "1–4",
+      "Humano"
+    ],
+    [
+      "5–6",
+      "Elfo"
+    ],
+    [
+      "7–8",
+      "Anão"
+    ],
+    [
+      "9–10",
+      "Halfling"
+    ],
+    [
+      "11",
+      "Meio-orc"
+    ],
+    [
+      "12",
+      "Goblin"
+    ]
+  ]
+}

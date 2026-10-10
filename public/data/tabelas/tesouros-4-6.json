@@ -1,0 +1,185 @@
+{
+  "id": "tesouros-4-6",
+  "titulo": "Tesouros 4–6",
+  "categoria": "tesouros",
+  "subcategoria": "4-6",
+  "rolagem": "d100",
+  "headers": [
+    "d100",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "00",
+      "Arma mágica +2 (benefício, maldição) (500 PO)"
+    ],
+    [
+      "01",
+      "3 PC espalhadas"
+    ],
+    [
+      "02–03",
+      "Anel de madeira entalhado com um padrão de nós (5 PC)"
+    ],
+    [
+      "04–05",
+      "Chave de ferro pesada (1 PP)"
+    ],
+    [
+      "06–07",
+      "Escudo de madeira reforçado com aço (10 PO)"
+    ],
+    [
+      "08–09",
+      "Colar com uma âncora dourada (10 PO)"
+    ],
+    [
+      "10–11",
+      "Saco com 20 bolinhas de vidro (5 PP cada)"
+    ],
+    [
+      "12–13",
+      "Espada grande serrilhada (12 PO)"
+    ],
+    [
+      "14–15",
+      "Três azagaias com pontas de prata (4 PO cada)"
+    ],
+    [
+      "16–17",
+      "Saco com especiarias raras (15 PO)"
+    ],
+    [
+      "18–19",
+      "Cachimbo de mogno decorado com marfim (25 PO)"
+    ],
+    [
+      "20–21",
+      "Conjunto de dados de osso polido (25 PO)"
+    ],
+    [
+      "22–23",
+      "Frasco de cobre gravado com uma coruja (30 PO)"
+    ],
+    [
+      "24–25",
+      "Tapa-olho feito de couro de asa de morcego (30 PO)"
+    ],
+    [
+      "26–27",
+      "Bandoleira de couro com 10 garrafas azuis (3 PO cada)"
+    ],
+    [
+      "28–29",
+      "Pequena pintura a óleo de uma elfa (35 PO)"
+    ],
+    [
+      "30–31",
+      "Pérola opalescente (40 PO)"
+    ],
+    [
+      "32–33",
+      "Martelo de guerra cerimonial com extremidades douradas (40 PO)"
+    ],
+    [
+      "34–35",
+      "Anel de prata com uma esmeralda pequena (40 PO)"
+    ],
+    [
+      "36–37",
+      "Tapeçaria de um unicórnio em uma clareira na floresta (45 PO)"
+    ],
+    [
+      "38–39",
+      "Boneco mecânico de um dragão, feito por goblins (45 PO)"
+    ],
+    [
+      "40–41",
+      "Conjunto incompleto de cota de malha (50 PO)"
+    ],
+    [
+      "42–43",
+      "Maça incrustada com símbolos sagrados dourados (50 PO)"
+    ],
+    [
+      "44–45",
+      "Vaso delicado e antigo de fabricação Myrkhosiana (50 PO)"
+    ],
+    [
+      "46–47",
+      "Incenso raro que repele mortos-vivos (50 PO)"
+    ],
+    [
+      "48–49",
+      "Casco de minotauro com uma ferradura de ouro (50 PO)"
+    ],
+    [
+      "50–53",
+      "Espada longa com uma pérola flamejante no pomo (50 PO)"
+    ],
+    [
+      "54–55",
+      "Estatueta de cristal verde de Memnon (50 PO)"
+    ],
+    [
+      "58–59",
+      "Seis velas pretas decoradas com runas douradas (10 PO cada)"
+    ],
+    [
+      "60–61",
+      "Conjunto de cota de malha fabricado por anões (60 PO)"
+    ],
+    [
+      "64–65",
+      "Conjunto incompleto de armadura de placas (65 PO)"
+    ],
+    [
+      "66–67",
+      "Fragmento magnético e iridescente de um meteorito (65 PO)"
+    ],
+    [
+      "68–69",
+      "Espelho de corpo inteiro com uma moldura de ouro (70 PO)"
+    ],
+    [
+      "70–71",
+      "Escaravelho grande e verde preservado em âmbar (75 PO)"
+    ],
+    [
+      "72–73",
+      "Alaúde entalhado em pau-ferro com detalhes dourados (75 PO)"
+    ],
+    [
+      "74–75",
+      "Presa de marfim gravada com anjos e demônios lutando (80 PO)"
+    ],
+    [
+      "76–77",
+      "Escudo de mitral incrustado com pequenas pérolas azuis (80 PO)"
+    ],
+    [
+      "78–79",
+      "Dois ovos de grifo intactos (40 PO cada)"
+    ],
+    [
+      "80–81",
+      "Conjunto de armadura de placas feita de aço escurecido (130 PO)"
+    ],
+    [
+      "82–83",
+      "Pergaminho de magia de grau 2 (140 PO)"
+    ],
+    [
+      "86–87",
+      "Pergaminho de magia de grau 3 (200 PO)"
+    ],
+    [
+      "92–93",
+      "Varinha mágica, magia de grau 3 (maldição) (250 PO)"
+    ],
+    [
+      "96–97",
+      "Armadura mágica +2 (benefício, maldição) (300 PO)"
+    ]
+  ]
+}

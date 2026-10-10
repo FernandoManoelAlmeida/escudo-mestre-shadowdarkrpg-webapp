@@ -1,0 +1,141 @@
+{
+  "id": "encontro-distrito-comercial",
+  "titulo": "Encontros — DISTRITO COMERCIAL",
+  "categoria": "encontro",
+  "subcategoria": "distrito-comercial",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "01",
+      "Seis cultistas do caos cobrem as cabeças dos PJs com sacos de juta"
+    ],
+    [
+      "08–09",
+      "Três crianças desnutridas cutucam os equipamentos e bolsos dos PJs"
+    ],
+    [
+      "16–17",
+      "A Guarda pede aos PJs para “distrair” os seguranças de um vendedor"
+    ],
+    [
+      "20–21",
+      "Uma mulher derrama pó discretamente em um barril de especiarias"
+    ],
+    [
+      "22–23",
+      "Várias cabras bloqueiam a passagem; mastigam equipamentos soltos"
+    ],
+    [
+      "24–25",
+      "Um vendedor de frutas, corado de raiva, acusa uma mulher de roubo"
+    ],
+    [
+      "26–27",
+      "Um vendedor corta uma fruta que cheira a carne em decomposição"
+    ],
+    [
+      "30–31",
+      "Sons de gritos e cerâmica quebrando ecoam de uma carroça coberta"
+    ],
+    [
+      "48–49",
+      "Um nobre visitante anda insolentemente com 6 guardas agressivos"
+    ],
+    [
+      "50–53",
+      "Um macaquinho de colete e chapéu vermelhos rouba as pessoas"
+    ],
+    [
+      "54–55",
+      "Malabaristas furtam secretamente os bolsos dos espectadores"
+    ],
+    [
+      "56–57",
+      "Um musculoso berserk vira uma mesa e começa uma briga a socos"
+    ],
+    [
+      "58–59",
+      "Um homem de lábios vermelhos oferece uma sanguinária viciante"
+    ],
+    [
+      "60–61",
+      "Um goblin corre carregando quatro galinhas agitadas pelas pernas"
+    ],
+    [
+      "62–63",
+      "Quatro monges vestindo túnicas insistem em exorcizar os PJs"
+    ],
+    [
+      "64–65",
+      "Exploradores rivais brindam sobre a cabeça sangrando de um troll"
+    ],
+    [
+      "66–67",
+      "Um urso pardo acorrentado se solta e destrói tudo furiosamente"
+    ],
+    [
+      "68–69",
+      "Um mendigo quer trocar um anel de sinete roubado por ouro"
+    ],
+    [
+      "72–73",
+      "Um menino de rua rouba um pão da barraca do padeiro"
+    ],
+    [
+      "74–75",
+      "A Guarda tenta prender um encantador de serpentes enfurecido"
+    ],
+    [
+      "86–87",
+      "Um ladrão tenta plantar uma estatueta de marfim roubada em um PJ"
+    ],
+    [
+      "88–89",
+      "Um centauro musgoso trota e causa espanto; procura por um PJ"
+    ],
+    [
+      "92–93",
+      "Um apotecário oferece uma amostra de chás ou infusões aos PJs"
+    ],
+    [
+      "94–95",
+      "Um espelho antigo se quebra, libertando a aparição aprisionada"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante está vendendo um pergaminho aleatório"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "00",
+      "O Senhor Supremo disfarçado entrega um diamante a um dos PJs"
+    ],
+    [
+      "46–47",
+      "Um engolidor de espadas tenta usar a arma de um PJ no espetáculo"
+    ],
+    [
+      "70–71",
+      "Uma velha em uma tenda fumegante amaldiçoa rivais por pagamento"
+    ],
+    [
+      "76–77",
+      "Uma maçã vermelha brilhante surge na mão de uma estátua de Gede"
+    ],
+    [
+      "84–85",
+      "Pedintes religiosos colocam miçangas ao redor dos pescoços dos PJs"
+    ],
+    [
+      "90–91",
+      "Três camelos irritados cospem em qualquer um que passe por perto"
+    ]
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "encontro-cavernas",
+  "titulo": "Encontros — CAVERNAS",
+  "categoria": "encontro",
+  "subcategoria": "cavernas",
+  "rolagem": "d100",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "42–43",
+      "Um kobold com o rabo preso em uma armadilha de urso pede socorro"
+    ],
+    [
+      "46–47",
+      "Um drider ferido e exilado desliza rapidamente pelo teto"
+    ],
+    [
+      "48–49",
+      "Um elemental de água rodopia preso em uma poça rasa"
+    ],
+    [
+      "68–69",
+      "Um troll arrasta o cadáver de um explorador rival pela perna"
+    ],
+    [
+      "70–71",
+      "Uma cobra gigante descansa em uma série de túneis nas paredes"
+    ],
+    [
+      "74–75",
+      "Exploradores rivais fogem de um grupo de aranhas sibilantes"
+    ],
+    [
+      "78–79",
+      "Uma aparição paira sobre seu próprio corpo recém-falecido"
+    ],
+    [
+      "80–81",
+      "Uma serpe surge bufando pela câmara, arrastando um cervo"
+    ],
+    [
+      "90–91",
+      "Uma patrulha de 2d4 anões assa carneiro ao redor de uma fogueira"
+    ],
+    [
+      "92–93",
+      "Uma nuvem de morcegos assustados rodopiando para a superfície"
+    ],
+    [
+      "94–95",
+      "O chão treme quando um bulete subterrâneo atravessa os túneis"
+    ],
+    [
+      "96–97",
+      "O Mercador Errante explora cavernas à caça de trufas subterrâneas"
+    ],
+    [
+      "98–99",
+      "Role dois encontros e combine os resultados (role de novo 98–99)"
+    ],
+    [
+      "62–63",
+      "Um elfo guerreiro rastreia um otyugh ferido que fugiu caverna adentro"
+    ],
+    [
+      "66–67",
+      "Pinturas rupestres luminosas de alces correndo emitem uma luz suave"
+    ],
+    [
+      "76–77",
+      "A escultura de um anão de pedra fala magicamente com transeuntes"
+    ],
+    [
+      "82–83",
+      "Binkin e Bobbin, halflings gêmeos, tropeçam para dentro da câmara"
+    ],
+    [
+      "00",
+      "Um orc místico (O) oferece 2 poções aleatórias com efeitos benéficos"
+    ],
+    [
+      "42–43",
+      "Um escorpião gigante se esgueira atrás de um goblin meditando"
+    ],
+    [
+      "44–45",
+      "A falsa miragem de um oásis cintila à distância"
+    ]
+  ]
+}

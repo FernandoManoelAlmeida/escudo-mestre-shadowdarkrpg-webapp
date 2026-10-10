@@ -1,0 +1,105 @@
+{
+  "id": "tesouros-7-9",
+  "titulo": "Tesouros 7–9",
+  "categoria": "tesouros",
+  "subcategoria": "7-9",
+  "rolagem": "d100",
+  "headers": [
+    "d100",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "00",
+      "Arma mágica +3 (benefício, virtude) (900 PO)"
+    ],
+    [
+      "10–11",
+      "Par de espadas bastardas com pomos decorados com grifos (20 PO)"
+    ],
+    [
+      "30–31",
+      "Símbolo sagrado de Madeera em ouro, com uma pérola grande (60 PO)"
+    ],
+    [
+      "46–47",
+      "Pérola gigante e radiante (80 PO)"
+    ],
+    [
+      "48–49",
+      "Lampião feito de vitrais intricados (80 PO)"
+    ],
+    [
+      "50–53",
+      "Píton articulada feita de ouro polido e em tamanho real (80 PO)"
+    ],
+    [
+      "54–55",
+      "Pintura a óleo de um bardo famoso (85 PO)"
+    ],
+    [
+      "56–57",
+      "Pedaço de meteorito em forma de um ídolo com tentáculos (85 PO)"
+    ],
+    [
+      "58–59",
+      "Sobretudo de seda preto e bordado com um leão dourado (90 PO)"
+    ],
+    [
+      "60–61",
+      "Par de pérolas lustrosas dispostas em um cofre de prata (90 PO)"
+    ],
+    [
+      "62–63",
+      "Elmo dourado com penas de roca (95 PO)"
+    ],
+    [
+      "64–65",
+      "Bestiário desenhado à mão cheio de criaturas raras (95 PO)"
+    ],
+    [
+      "66–67",
+      "Filhote de serpe preservado em âmbar (110 PO)"
+    ],
+    [
+      "68–69",
+      "Pingente com três pérolas luminosas (120 PO)"
+    ],
+    [
+      "72–73",
+      "Esmeralda cintilante e facetada (120 PO)"
+    ],
+    [
+      "78–79",
+      "Varinha mágica, magia de grau 3 (250 PO)"
+    ],
+    [
+      "80–81",
+      "Pergaminho de magia de grau 4 (260 PO)"
+    ],
+    [
+      "84–85",
+      "Varinha mágica, magia de grau 4 (defeito) (300 PO)"
+    ],
+    [
+      "88–89",
+      "Armadura mágica +2 (benefício) (300 PO)"
+    ],
+    [
+      "90–91",
+      "Armadura mágica de mitral +2 (benefício, virtude) (320 PO)"
+    ],
+    [
+      "92–93",
+      "Ídolo de um escorpião, 1 bênção Ferrão da Morte (320 PO)"
+    ],
+    [
+      "96–97",
+      "Estátua de coruja, 1 bênção Olho Arcano (350 PO)"
+    ],
+    [
+      "98–99",
+      "Arma mágica +2 (benefício, defeito) (500 PO)"
+    ]
+  ]
+}

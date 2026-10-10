@@ -1,0 +1,37 @@
+{
+  "id": "atividade-criaturas",
+  "titulo": "Atividade Criaturas",
+  "categoria": "encontros",
+  "subcategoria": "encontros",
+  "rolagem": "2d6",
+  "headers": [
+    "2d6",
+    "Atividade"
+  ],
+  "rows": [
+    [
+      "2–4",
+      "Caçando"
+    ],
+    [
+      "5–6",
+      "Comendo"
+    ],
+    [
+      "7–8",
+      "Construindo / em seu ninho"
+    ],
+    [
+      "9–10",
+      "Socializando / brincando"
+    ],
+    [
+      "11",
+      "Mantendo guarda"
+    ],
+    [
+      "12",
+      "Dormindo"
+    ]
+  ]
+}

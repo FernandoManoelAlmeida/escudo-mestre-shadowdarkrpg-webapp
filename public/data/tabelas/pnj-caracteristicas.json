@@ -1,0 +1,135 @@
+{
+  "id": "pnj-caracteristicas",
+  "titulo": "Características do PNJ",
+  "categoria": "pnjs",
+  "subcategoria": "caracteristicas",
+  "rolagem": "d20",
+  "headers": [
+    "d20",
+    "Aparência",
+    "Trejeito",
+    "Segredo"
+  ],
+  "rows": [
+    [
+      "1",
+      "Careca",
+      "Cospe muito",
+      "Oculta fugitivos"
+    ],
+    [
+      "2",
+      "Robusto",
+      "Sempre comendo",
+      "Adora filhotes"
+    ],
+    [
+      "3",
+      "Muito alto",
+      "Se move rápido",
+      "Incendiário"
+    ],
+    [
+      "4",
+      "Marca de beleza",
+      "Truques com cartas",
+      "Em um culto religioso"
+    ],
+    [
+      "5",
+      "Caolho",
+      "Reza em voz alta",
+      "É meio-demônio"
+    ],
+    [
+      "6",
+      "Musculoso",
+      "Apologético",
+      "Furta sem precisar"
+    ],
+    [
+      "7",
+      "Cicatriz no rosto",
+      "Deixa coisas caírem",
+      "Medo de tempestades"
+    ],
+    [
+      "8",
+      "Esbelto",
+      "Faz juramentos",
+      "Guelras funcionais"
+    ],
+    [
+      "9",
+      "Queixo fendido",
+      "Sotaque raro",
+      "É contrabandista"
+    ],
+    [
+      "10",
+      "Frágil",
+      "Se assusta facilmente",
+      "É um lobisomem"
+    ],
+    [
+      "11",
+      "Sobrancelhas grossas",
+      "Esquecido",
+      "Cheira mentiras"
+    ],
+    [
+      "12",
+      "Tatuado",
+      "Fala baixo",
+      "Expulso de família rica"
+    ],
+    [
+      "13",
+      "Seis dedos",
+      "Fala alto",
+      "Amigo do príncipe"
+    ],
+    [
+      "14",
+      "Muito baixo",
+      "Arrogante",
+      "Explorador aposentado"
+    ],
+    [
+      "15",
+      "Nariz grande",
+      "Fuma cachimbo",
+      "Basilisco mascote"
+    ],
+    [
+      "16",
+      "Grisalho",
+      "Impulsivo",
+      "Identidade falsa"
+    ],
+    [
+      "17",
+      "Chapéu largo",
+      "Tem tremores",
+      "Apaixonado pelo garçom"
+    ],
+    [
+      "18",
+      "Dente de ouro",
+      "Se move devagar",
+      "Saiu da Guilda dos Ladrões"
+    ],
+    [
+      "19",
+      "Cabelos trançados",
+      "Escreve em um diário",
+      "Foi aprendiz de um mago"
+    ],
+    [
+      "20",
+      "Sua muito",
+      "Faz trocadilhos",
+      "Grande débito em apostas"
+    ]
+  ]
+}

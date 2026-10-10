@@ -1,0 +1,33 @@
+{
+  "id": "assentamento-nome",
+  "titulo": "Nome de assentamento",
+  "categoria": "assentamentos",
+  "subcategoria": "nome",
+  "rolagem": "d20",
+  "headers": [
+    "d20",
+    "Nome"
+  ],
+  "rows": [
+    [
+      "1–4",
+      "Prefixo + sufixo (combine duas colunas do livro)"
+    ],
+    [
+      "5–8",
+      "Nome de fundador + “ville”"
+    ],
+    [
+      "9–12",
+      "Característica local (rio, pedra, bosque)"
+    ],
+    [
+      "13–16",
+      "Animal ou planta emblemática"
+    ],
+    [
+      "17–20",
+      "Epíteto antigo (ruínas, torre, ponte)"
+    ]
+  ]
+}

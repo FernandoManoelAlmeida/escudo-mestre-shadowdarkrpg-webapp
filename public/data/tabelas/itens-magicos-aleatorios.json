@@ -1,0 +1,33 @@
+{
+  "id": "itens-magicos-aleatorios",
+  "titulo": "Item mágico aleatório",
+  "categoria": "itens",
+  "subcategoria": "magicos",
+  "rolagem": "d20",
+  "headers": [
+    "d20",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1–10",
+      "Poção (tipo aleatório)"
+    ],
+    [
+      "11–14",
+      "Pergaminho (1º–3º círculo)"
+    ],
+    [
+      "15–17",
+      "Arma +1"
+    ],
+    [
+      "18–19",
+      "Armadura +1"
+    ],
+    [
+      "20",
+      "Item raro (MJ escolhe do catálogo)"
+    ]
+  ]
+}

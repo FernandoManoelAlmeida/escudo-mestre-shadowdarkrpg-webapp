@@ -1,0 +1,60 @@
+{
+  "id": "falha-magica-mago-1-2",
+  "titulo": "Falha Magica Mago 1 2",
+  "categoria": "falha-magica",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Efeito"
+  ],
+  "rows": [
+    [
+      "1",
+      "Devastação! Role duas vezes e combine ambos os efeitos (role novamente qualquer 1 adicional)"
+    ],
+    [
+      "2",
+      "Explosão! Você sofre 1d8 de dano"
+    ],
+    [
+      "3",
+      "Refração! Você atinge a si mesmo com a magia"
+    ],
+    [
+      "4",
+      "Sua mão escorregou! Sua magia atinge um aliado aleatório"
+    ],
+    [
+      "5",
+      "Lesão mental! Você não pode conjurar essa magia novamente por uma semana"
+    ],
+    [
+      "6",
+      "Descorporação! Um item aleatório do seu equipamento desaparece para sempre"
+    ],
+    [
+      "7",
+      "Infecção arcana! Você perde a habilidade de conjurar uma magia aleatória em cada um de seus turnos, até que tenha sucesso em um teste de conjuração no início do seu turno"
+    ],
+    [
+      "8",
+      "Falha harmônica! Você perde a habilidade de conjurar uma magia aleatória até que complete um descanso"
+    ],
+    [
+      "9",
+      "Puft! Você suprime qualquer luz que estiver Perto de você, incluindo a luz do sol e luzes mágicas. Dura 10 rodadas"
+    ],
+    [
+      "10",
+      "O horror! Você grita descontroladamente usando o idioma Primordial durante 3 rodadas, atraindo muita atenção"
+    ],
+    [
+      "11",
+      "Surto de energia! Você emite um forte brilho roxo por 10 rodadas, concedendo Vantagem aos inimigos em ataques contra você"
+    ],
+    [
+      "12",
+      "Conduíte instável! Você tem Desvantagem na conjuração de magias do mesmo grau por 10 rodadas"
+    ]
+  ]
+}
