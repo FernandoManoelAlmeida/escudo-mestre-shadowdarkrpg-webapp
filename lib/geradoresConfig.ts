@@ -16,7 +16,8 @@ export const GERADOR_MODULES: GeradorModule[] = [
   {
     slug: "encontros",
     title: "Encontros",
-    description: "Local do bioma + distância/atividade (criaturas), armadilha ou tesouro conforme o Livro.",
+    description:
+      "Bioma → encontro; distância e atividade só nas linhas marcadas (selva/masmorra). Armadilha, tesouro e combinar quando aplicável.",
     match: (e) =>
       e.id.startsWith("encontro-") &&
       !["teste-encontro", "distancia-inicial-encontro", "atividade-criaturas", "nivel-perigo"].includes(
@@ -44,7 +45,8 @@ export const GERADOR_MODULES: GeradorModule[] = [
   {
     slug: "falha-magica",
     title: "Falha mágica",
-    description: "Efeito quando o mago rola 1 natural em conjuração.",
+    description:
+      "d12 ao rolar 1 natural: mago (Livro, por grau da magia) e bruxa / cavaleiro de São Ydris (Cursed Scroll 1). Sacerdote: penitência nas regras, sem tabela aqui.",
     match: (e) => e.categoria === "falha-magica",
   },
   {
@@ -112,13 +114,15 @@ export const GERADOR_MODULES: GeradorModule[] = [
   {
     slug: "lojas",
     title: "Lojas",
-    description: "Tipo de estabelecimento e mercadorias à venda.",
+    description:
+      "Qualidade (precária, padrão ou refinada), tipo, nome em duas partes e «conhecida por»; clientes opcionais.",
     match: (e) => e.categoria === "lojas",
   },
   {
     slug: "assentamentos",
     title: "Assentamentos",
-    description: "Detalhes de povoado ou cidade (tamanho, traços).",
+    description:
+      "Tipo (vilarejo a metrópole), distritos, alinhamento, POIs por distrito e nome opcional.",
     match: (e) => e.categoria === "assentamentos",
   },
   {
@@ -166,12 +170,17 @@ export function geradorHrefForTabela(tableId: string): string | null {
     "perigos-ambientais": "perigos",
     reacao: "reacao",
     "falha-magica-mago-1-2": "falha-magica",
+    "falha-magica-mago-3-4": "falha-magica",
+    "falha-magica-mago-5": "falha-magica",
+    "falha-magica-diabolica-1-3": "falha-magica",
+    "falha-magica-diabolica-4-5": "falha-magica",
     "xp-tesouro": "xp-tesouro",
     "solodark-oraculo": "solodark",
     "solodark-oraculo-detalhe": "solodark",
   };
   const slug = map[tableId];
   if (slug) return `/geradores/${slug}`;
+  if (tableId.startsWith("falha-magica-")) return "/geradores/falha-magica";
   if (tableId.startsWith("tesouros-")) return "/geradores/tesouros";
   if (tableId.startsWith("tesouro-")) return "/geradores/tesouros";
   if (tableId === "itens-magicos-aleatorios")
@@ -188,7 +197,11 @@ export function geradorHrefForTabela(tableId: string): string | null {
 
 export function modulesWithData(index: TabelaIndexEntry[]): GeradorModule[] {
   return GERADOR_MODULES.filter((mod) => {
-    if (mod.slug === "encontros") {
+    if (
+      mod.slug === "encontros" ||
+      mod.slug === "lojas" ||
+      mod.slug === "assentamentos"
+    ) {
       return index.some((e) => mod.match(e));
     }
     return index.some((e) => mod.match(e));

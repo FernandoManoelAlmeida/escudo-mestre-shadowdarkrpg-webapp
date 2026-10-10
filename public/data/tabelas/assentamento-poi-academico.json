@@ -1,0 +1,29 @@
+{
+  "id": "assentamento-poi-academico",
+  "titulo": "POI — Distrito Acadêmico",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-academico",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Biblioteca"
+    ],
+    [
+      "2–3",
+      "Salão de conferências"
+    ],
+    [
+      "4–5",
+      "Taverna padrão"
+    ],
+    [
+      "6",
+      "Torre de mago"
+    ]
+  ]
+}

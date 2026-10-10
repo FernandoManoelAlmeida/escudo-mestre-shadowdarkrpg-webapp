@@ -9,149 +9,185 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "01",
-      "Uma nevasca ou tempestade de raios impede viagens por 1d4 dias"
-    ],
-    [
-      "14–15",
-      "Skaldor, o troll, mastiga ossos de anões dentro de sua caverna úmida"
-    ],
-    [
-      "20–21",
-      "Uma nuvem de morcegos sibilantes debanda de uma ravina estreita"
-    ],
-    [
-      "36–37",
-      "Uma erupção vulcânica faz jorrar cinzas, gases quentes e fluxos de lava"
-    ],
-    [
-      "38–39",
-      "Um leão da montanha salta de um esconderijo até o PJ na retaguarda"
-    ],
-    [
-      "54–55",
-      "Uma pilha de troncos se desprende e desliza encosta abaixo"
-    ],
-    [
-      "56–57",
-      "Um pesadelo se eleva majestosamente de um vulcão próximo"
-    ],
-    [
-      "64–65",
-      "Um ciclope arranca uma árvore do chão para usá-la como clava"
-    ],
-    [
-      "66–67",
-      "Um enorme perfil de um rei anão está esculpido nos penhascos"
-    ],
-    [
-      "82–83",
-      "Hiraldo, o Espadachim treina em um desfiladeiro afastado"
-    ],
-    [
-      "84–85",
-      "Um minotauro irrompe bufando de um arco de pedra esculpida"
-    ],
-    [
-      "86–87",
-      "Uma serpe mergulha pela face da montanha enquanto caça"
-    ],
-    [
-      "90–91",
-      "Um cavaleiro reza sentado sob uma queda d'água estreita e fria"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante procura anfíbios raros sob as pedras"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "60–61",
-      "Um dragão de fogo dorme em um monte de moedas cercado por lava"
-    ],
-    [
-      "76–77",
-      "Um machado anão enferrujado está preso ao crânio de um minotauro"
-    ],
-    [
-      "92–93",
-      "Um santuário à Madeera concede +1 ficha de sorte por uma oferenda"
-    ],
-    [
-      "94–95",
-      "Um ogro de duas cabeças discute consigo enquanto faz um ensopado"
-    ],
-    [
-      "00",
-      "Rathgamnon, a Esfinge se aproxima para conceder um item mágico"
-    ],
-    [
-      "02–03",
-      "Uma gigante da tempestade furiosa: \"Por que estão no meu reino?\""
-    ],
-    [
-      "04–05",
-      "Uma hidra e um kraken agitam os mares em uma luta épica"
-    ],
-    [
-      "06–07",
-      "Lyrellos, um príncipe sereiano, se incomoda com os trajes dos Pjs"
-    ],
-    [
-      "08–09",
-      "Uma onda traiçoeira avança sobre os PJs; é um elemental de água"
-    ],
-    [
-      "10–11",
-      "Um polvo gigante agarra os PJs por debaixo d'água"
-    ],
-    [
-      "12–13",
-      "Uma tempestade violenta atinge o grupo e ameaça embarcações"
-    ],
-    [
-      "18–19",
-      "Algas marrons e densas transformam a superfície da água em lama"
-    ],
-    [
-      "20–21",
-      "Um bando de ratos gigantes nada para longe de um naufrágio"
-    ],
-    [
-      "22–23",
-      "Um enorme plesiossauro emerge das profundezas sombrias"
-    ],
-    [
-      "24–25",
-      "Piratas de recrutamento forçado surgem em uma rápida galé negra"
-    ],
-    [
-      "28–29",
-      "Um polvo gigante e um plesiossauro lutam até a morte"
-    ],
-    [
-      "30–31",
-      "Um fantasma e 3d20 esqueletos tripulam um navio tombado"
-    ],
-    [
-      "36–37",
-      "Recifes de corais traiçoeiros obstruem a passagem de navios"
-    ],
-    [
-      "38–39",
-      "Uma névoa deslizante na água esconde 2d4 fogos-fátuos brilhantes"
-    ],
-    [
-      "42–43",
-      "Um pirata desidratado e bronzeado flutua em um barril de rum"
-    ],
-    [
-      "44–45",
-      "Ondas altas arremessam amontoados de águas-vivas violetas pelo ar"
-    ]
+    {
+      "faixa": "01",
+      "texto": "Uma nevasca ou tempestade de raios impede viagens por 1d4 dias",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "14–15",
+      "texto": "Skaldor, o troll, mastiga ossos de anões dentro de sua caverna úmida",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "20–21",
+      "texto": "Uma nuvem de morcegos sibilantes debanda de uma ravina estreita",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Uma erupção vulcânica faz jorrar cinzas, gases quentes e fluxos de lava",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "38–39",
+      "texto": "Um leão da montanha salta de um esconderijo até o PJ na retaguarda",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "54–55",
+      "texto": "Uma pilha de troncos se desprende e desliza encosta abaixo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Um pesadelo se eleva majestosamente de um vulcão próximo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "64–65",
+      "texto": "Um ciclope arranca uma árvore do chão para usá-la como clava",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Um enorme perfil de um rei anão está esculpido nos penhascos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Hiraldo, o Espadachim treina em um desfiladeiro afastado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "84–85",
+      "texto": "Um minotauro irrompe bufando de um arco de pedra esculpida",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "Uma serpe mergulha pela face da montanha enquanto caça",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Um cavaleiro reza sentado sob uma queda d'água estreita e fria",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante procura anfíbios raros sob as pedras",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "60–61",
+      "texto": "Um dragão de fogo dorme em um monte de moedas cercado por lava",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "Um machado anão enferrujado está preso ao crânio de um minotauro",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Um santuário à Madeera concede +1 ficha de sorte por uma oferenda",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "Um ogro de duas cabeças discute consigo enquanto faz um ensopado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "00",
+      "texto": "Rathgamnon, a Esfinge se aproxima para conceder um item mágico",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "02–03",
+      "texto": "Uma gigante da tempestade furiosa: \"Por que estão no meu reino?\"",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "04–05",
+      "texto": "Uma hidra e um kraken agitam os mares em uma luta épica",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "06–07",
+      "texto": "Lyrellos, um príncipe sereiano, se incomoda com os trajes dos Pjs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "08–09",
+      "texto": "Uma onda traiçoeira avança sobre os PJs; é um elemental de água",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "10–11",
+      "texto": "Um polvo gigante agarra os PJs por debaixo d'água",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "12–13",
+      "texto": "Uma tempestade violenta atinge o grupo e ameaça embarcações",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "18–19",
+      "texto": "Algas marrons e densas transformam a superfície da água em lama",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "20–21",
+      "texto": "Um bando de ratos gigantes nada para longe de um naufrágio",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "22–23",
+      "texto": "Um enorme plesiossauro emerge das profundezas sombrias",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "24–25",
+      "texto": "Piratas de recrutamento forçado surgem em uma rápida galé negra",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "28–29",
+      "texto": "Um polvo gigante e um plesiossauro lutam até a morte",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "30–31",
+      "texto": "Um fantasma e 3d20 esqueletos tripulam um navio tombado",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Recifes de corais traiçoeiros obstruem a passagem de navios",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "38–39",
+      "texto": "Uma névoa deslizante na água esconde 2d4 fogos-fátuos brilhantes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "42–43",
+      "texto": "Um pirata desidratado e bronzeado flutua em um barril de rum",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "44–45",
+      "texto": "Ondas altas arremessam amontoados de águas-vivas violetas pelo ar",
+      "followUp": "cena_evento"
+    }
   ]
 }

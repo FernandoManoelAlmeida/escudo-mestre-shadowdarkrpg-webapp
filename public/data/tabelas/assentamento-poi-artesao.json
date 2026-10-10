@@ -1,0 +1,29 @@
+{
+  "id": "assentamento-poi-artesao",
+  "titulo": "POI — Distrito Artesão",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-artesao",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Troncos de punição pública"
+    ],
+    [
+      "2–3",
+      "Templo modesto"
+    ],
+    [
+      "4–5",
+      "Taverna padrão"
+    ],
+    [
+      "6",
+      "Loja refinada"
+    ]
+  ]
+}

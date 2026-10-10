@@ -1,12 +1,12 @@
 {
-  "id": "assentamento-nome",
-  "titulo": "Nome de assentamento",
+  "id": "assentamento-nome-estilo",
+  "titulo": "Estilos de nome (referência GM)",
   "categoria": "assentamentos",
-  "subcategoria": "nome",
+  "subcategoria": "nome-estilo",
   "rolagem": "d20",
   "headers": [
     "d20",
-    "Nome"
+    "Estilo"
   ],
   "rows": [
     [

@@ -9,133 +9,165 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "26–27",
-      "Um homem morrendo na sarjeta pede para contar um segredo terrível"
-    ],
-    [
-      "30–31",
-      "Um cadáver cai de um telhado com um bilhete: “Escória de Bywater”"
-    ],
-    [
-      "36–37",
-      "Quanto mais os PJs dão esmolas, maior a turba de crianças pedintes"
-    ],
-    [
-      "42–43",
-      "Uma velha esguia vende “poções do amor” (polimorfia em salamandra)"
-    ],
-    [
-      "56–57",
-      "Um mago sombrio e 1d4 aprendizes conduzem um plebeu nervoso"
-    ],
-    [
-      "58–59",
-      "Um halfling na beira do poço olha em volta e destampa um frasco"
-    ],
-    [
-      "60–61",
-      "Cânticos podem ser ouvidos vindo de um templo velho em ruínas"
-    ],
-    [
-      "66–67",
-      "Uma estátua de Shune, em um beco, estende as mãos manchadas"
-    ],
-    [
-      "68–69",
-      "Um homem magro se aproxima e sussurra: “Sanguinária, 3 pratas”"
-    ],
-    [
-      "74–75",
-      "Exploradores rivais cutucam uma porta selada com tijolos"
-    ],
-    [
-      "78–79",
-      "O Louco Davord desafia um dos PJs para um jogo de “solte a bota”"
-    ],
-    [
-      "86–87",
-      "O “Inofensivo” Tio Istvold persegue os PJs rindo maleficamente"
-    ],
-    [
-      "88–89",
-      "Um berserk enfurecido cambaleia para fora de um ponto de drogas"
-    ],
-    [
-      "90–91",
-      "Uma velha corcunda oferece abrigo seguro contra arruaceiros"
-    ],
-    [
-      "92–93",
-      "Uma pedra solta esconde uma caixa com 80 PO e uma poção"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante paga 5 PO por cada besouro de esterco gigante"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "62–63",
-      "Um jovem nobre com “trapos de plebeu” limpos falha em se misturar"
-    ],
-    [
-      "70–71",
-      "Trabalhadores levantando caixas pesadas escorregam; um fica preso"
-    ],
-    [
-      "72–73",
-      "Um vendedor ambulante alegre vende ratos crocantes no espeto: 2 PC"
-    ],
-    [
-      "76–77",
-      "Um lamento distante (fantasma) ecoa de uma construção interditada"
-    ],
-    [
-      "82–83",
-      "Um mago goblin oculto no telhado oferece uma magia por um favor"
-    ],
-    [
-      "00",
-      "Um pergaminho sujo flutua até o chão; é um pergaminho de magia"
-    ],
-    [
-      "01",
-      "Uma roca sobrevoa e, depois, mergulha em direção aos PJs"
-    ],
-    [
-      "02–03",
-      "Um esmilodonte caçador está rondando em meio à grama alta"
-    ],
-    [
-      "04–05",
-      "Um filhote de mamute foge de uma matilha de 2d6 lobos"
-    ],
-    [
-      "18–19",
-      "Há fumaça no vento: um incêndio crescente se alastra por perto"
-    ],
-    [
-      "20–21",
-      "Um elemental de terra sorve em um campo de gêiser lamacento"
-    ],
-    [
-      "30–31",
-      "Uma torre vazia está coberta de runas pintadas com os dedos"
-    ],
-    [
-      "34–35",
-      "Uma manada de 2d6 mamutes debandam em direção aos PJs"
-    ],
-    [
-      "36–37",
-      "Um orc solitário está sentado em um antigo círculo de pedras"
-    ],
-    [
-      "38–39",
-      "Grandes pedras cheias de runas selam túmulos antigos"
-    ]
+    {
+      "faixa": "26–27",
+      "texto": "Um homem morrendo na sarjeta pede para contar um segredo terrível",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "30–31",
+      "texto": "Um cadáver cai de um telhado com um bilhete: “Escória de Bywater”",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Quanto mais os PJs dão esmolas, maior a turba de crianças pedintes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "42–43",
+      "texto": "Uma velha esguia vende “poções do amor” (polimorfia em salamandra)",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Um mago sombrio e 1d4 aprendizes conduzem um plebeu nervoso",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Um halfling na beira do poço olha em volta e destampa um frasco",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "60–61",
+      "texto": "Cânticos podem ser ouvidos vindo de um templo velho em ruínas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Uma estátua de Shune, em um beco, estende as mãos manchadas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "68–69",
+      "texto": "Um homem magro se aproxima e sussurra: “Sanguinária, 3 pratas”",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "Exploradores rivais cutucam uma porta selada com tijolos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "O Louco Davord desafia um dos PJs para um jogo de “solte a bota”",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "O “Inofensivo” Tio Istvold persegue os PJs rindo maleficamente",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "88–89",
+      "texto": "Um berserk enfurecido cambaleia para fora de um ponto de drogas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Uma velha corcunda oferece abrigo seguro contra arruaceiros",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Uma pedra solta esconde uma caixa com 80 PO e uma poção",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante paga 5 PO por cada besouro de esterco gigante",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Um jovem nobre com “trapos de plebeu” limpos falha em se misturar",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "70–71",
+      "texto": "Trabalhadores levantando caixas pesadas escorregam; um fica preso",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "72–73",
+      "texto": "Um vendedor ambulante alegre vende ratos crocantes no espeto: 2 PC",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "Um lamento distante (fantasma) ecoa de uma construção interditada",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Um mago goblin oculto no telhado oferece uma magia por um favor",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um pergaminho sujo flutua até o chão; é um pergaminho de magia",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "01",
+      "texto": "Uma roca sobrevoa e, depois, mergulha em direção aos PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "02–03",
+      "texto": "Um esmilodonte caçador está rondando em meio à grama alta",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "04–05",
+      "texto": "Um filhote de mamute foge de uma matilha de 2d6 lobos",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "18–19",
+      "texto": "Há fumaça no vento: um incêndio crescente se alastra por perto",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "20–21",
+      "texto": "Um elemental de terra sorve em um campo de gêiser lamacento",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "30–31",
+      "texto": "Uma torre vazia está coberta de runas pintadas com os dedos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "34–35",
+      "texto": "Uma manada de 2d6 mamutes debandam em direção aos PJs",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Um orc solitário está sentado em um antigo círculo de pedras",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "38–39",
+      "texto": "Grandes pedras cheias de runas selam túmulos antigos",
+      "followUp": "cena_evento"
+    }
   ]
 }

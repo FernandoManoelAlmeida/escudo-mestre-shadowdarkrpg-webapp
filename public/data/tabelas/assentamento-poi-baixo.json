@@ -1,0 +1,33 @@
+{
+  "id": "assentamento-poi-baixo",
+  "titulo": "POI — Distrito Baixo",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-baixo",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Cemitério"
+    ],
+    [
+      "2–3",
+      "Taverna precária"
+    ],
+    [
+      "4",
+      "Loja precária"
+    ],
+    [
+      "5",
+      "Loja padrão"
+    ],
+    [
+      "6",
+      "Armazéns/galpões"
+    ]
+  ]
+}

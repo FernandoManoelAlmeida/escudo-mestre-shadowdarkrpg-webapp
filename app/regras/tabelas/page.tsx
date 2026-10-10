@@ -7,7 +7,7 @@ import { getEscudo } from "@/lib/escudo";
 import type { EscudoData } from "@/lib/escudo";
 import { getTabelasIndex, getTabelaById } from "@/lib/tabelas";
 import type { TabelaIndexEntry } from "@/lib/tabelas";
-import type { RollTableData } from "@/lib/rollTable";
+import { rowAsCells, type RollTableData } from "@/lib/rollTable";
 import { ResponsiveTable } from "@/components/ui/ResponsiveTable";
 import { Accordion } from "@/components/ui/Accordion";
 import { RegrasTabelasSkeleton } from "@/components/skeletons";
@@ -96,7 +96,7 @@ function MarkdownTableView({ table, entryId }: { table: RollTableData; entryId: 
         <tbody>
           {table.rows.map((row, i) => (
             <tr key={i}>
-              {row.map((cell, j) => (
+              {rowAsCells(row).map((cell, j) => (
                 <td key={j}>{cell}</td>
               ))}
             </tr>

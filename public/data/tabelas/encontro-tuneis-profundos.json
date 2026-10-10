@@ -9,77 +9,95 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "44–45",
-      "Uma armadilha de drow, com dardos envenenados e teias, é acionada"
-    ],
-    [
-      "46–47",
-      "Um halfling cego e pálido cuida de um rebanho de 2d6 cocatrizes"
-    ],
-    [
-      "50–53",
-      "Duas tribos de homens-fera lutam por um frio altar de obsidiana"
-    ],
-    [
-      "54–55",
-      "O chão desaba em um buraco de 2d6 x 3 metros de profundidade"
-    ],
-    [
-      "66–67",
-      "Vapores de gás com um cheiro azedo causam alucinações auditivas"
-    ],
-    [
-      "76–77",
-      "A gravidade repentinamente se inverte por 1d4 rodadas"
-    ],
-    [
-      "78–79",
-      "Um sacerdote drow louco lidera um grupo de 3d6 carniçais drow"
-    ],
-    [
-      "82–83",
-      "Um sacerdote humano desaparecido há 15 anos oferece cura"
-    ],
-    [
-      "86–87",
-      "Uma sombra se ergue a partir da sombra de um PJ e o ataca"
-    ],
-    [
-      "94–95",
-      "Uma velha bruxa da noite cavalga um escorpião gigante translúcido"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante se espreme para fora de uma fissura estreita"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "00",
-      "Um baú de tesouro antigo guarda um item mágico aleatório"
-    ],
-    [
-      "56–57",
-      "Dois minotauros espreitam um ao outro e a qualquer um no caminho"
-    ],
-    [
-      "58–59",
-      "Um ninho de 2d12 mantos negros é atraído por qualquer barulho alto"
-    ],
-    [
-      "72–73",
-      "Um brutamontes das cavernas luta com 1d4 rastejadores de caverna"
-    ],
-    [
-      "74–75",
-      "Um grupo de exploradores rivais sem tochas entra no campo de visão"
-    ],
-    [
-      "84–85",
-      "Esqueletos velhos e mofados se fundem em uma naga óssea sibilante"
-    ]
+    {
+      "faixa": "44–45",
+      "texto": "Uma armadilha de drow, com dardos envenenados e teias, é acionada",
+      "followUp": "armadilha"
+    },
+    {
+      "faixa": "46–47",
+      "texto": "Um halfling cego e pálido cuida de um rebanho de 2d6 cocatrizes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "50–53",
+      "texto": "Duas tribos de homens-fera lutam por um frio altar de obsidiana",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "54–55",
+      "texto": "O chão desaba em um buraco de 2d6 x 3 metros de profundidade",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Vapores de gás com um cheiro azedo causam alucinações auditivas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "A gravidade repentinamente se inverte por 1d4 rodadas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "Um sacerdote drow louco lidera um grupo de 3d6 carniçais drow",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Um sacerdote humano desaparecido há 15 anos oferece cura",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "Uma sombra se ergue a partir da sombra de um PJ e o ataca",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "Uma velha bruxa da noite cavalga um escorpião gigante translúcido",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante se espreme para fora de uma fissura estreita",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um baú de tesouro antigo guarda um item mágico aleatório",
+      "followUp": "item_magico"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Dois minotauros espreitam um ao outro e a qualquer um no caminho",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Um ninho de 2d12 mantos negros é atraído por qualquer barulho alto",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "72–73",
+      "texto": "Um brutamontes das cavernas luta com 1d4 rastejadores de caverna",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "Um grupo de exploradores rivais sem tochas entra no campo de visão",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "84–85",
+      "texto": "Esqueletos velhos e mofados se fundem em uma naga óssea sibilante",
+      "followUp": "cena_evento"
+    }
   ]
 }

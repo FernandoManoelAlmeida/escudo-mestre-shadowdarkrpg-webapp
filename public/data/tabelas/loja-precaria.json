@@ -1,0 +1,61 @@
+{
+  "id": "loja-precaria",
+  "titulo": "Loja precária",
+  "categoria": "lojas",
+  "subcategoria": "precaria",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Padaria imunda"
+    ],
+    [
+      "2",
+      "Equipamentos de aventura usados"
+    ],
+    [
+      "3",
+      "Coletor de cadáveres"
+    ],
+    [
+      "4",
+      "Loja de penhores/contrabando"
+    ],
+    [
+      "5",
+      "Agiota"
+    ],
+    [
+      "6",
+      "Coletor de excrementos"
+    ],
+    [
+      "7",
+      "Curtume"
+    ],
+    [
+      "8",
+      "Cirurgião clandestino"
+    ],
+    [
+      "9",
+      "Caçador de ratos"
+    ],
+    [
+      "10",
+      "Peixaria"
+    ],
+    [
+      "11",
+      "Casa de apostas"
+    ],
+    [
+      "12",
+      "Ponto de drogas"
+    ]
+  ]
+}

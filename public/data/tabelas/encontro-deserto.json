@@ -9,21 +9,25 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "01",
-      "Um verme púrpura emerge das areias e se ergue acima da superfície"
-    ],
-    [
-      "12–13",
-      "O vento levanta uma tempestade de areia cegante que dura 1d4 horas"
-    ],
-    [
-      "56–57",
-      "Trombetas de guerra soam à distância; 3d20 bandidos se aproximam"
-    ],
-    [
-      "58–59",
-      "Um elemental de fogo queima como uma fogueira em uma duna alta"
-    ]
+    {
+      "faixa": "01",
+      "texto": "Um verme púrpura emerge das areias e se ergue acima da superfície",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "12–13",
+      "texto": "O vento levanta uma tempestade de areia cegante que dura 1d4 horas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Trombetas de guerra soam à distância; 3d20 bandidos se aproximam",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Um elemental de fogo queima como uma fogueira em uma duna alta",
+      "followUp": "cena_evento"
+    }
   ]
 }

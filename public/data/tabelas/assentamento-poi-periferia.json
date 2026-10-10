@@ -1,0 +1,33 @@
+{
+  "id": "assentamento-poi-periferia",
+  "titulo": "POI — Periferia",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-periferia",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Pensão decadente"
+    ],
+    [
+      "2–3",
+      "Taverna precária"
+    ],
+    [
+      "4",
+      "Esconderijo de criminosos"
+    ],
+    [
+      "5",
+      "Loja precária"
+    ],
+    [
+      "6",
+      "Cabana de uma bruxa ou bruxo"
+    ]
+  ]
+}

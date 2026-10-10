@@ -9,89 +9,110 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "58–59",
-      "Um rastejador de caverna devora um zumbi recém-destruído"
-    ],
-    [
-      "62–63",
-      "Um vampiro oferece passagem segura por alguns goles de sangue"
-    ],
-    [
-      "66–67",
-      "Um crânio rola por aí, parando para fazer críticas ou comentários"
-    ],
-    [
-      "68–69",
-      "Uma gosma preta goteja de rachaduras finas no teto"
-    ],
-    [
-      "94–95",
-      "O arquimago humano Rantarim (N) procura por um tomo antigo"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante sai, ofegante, de um caixão"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "00",
-      "Um local oculto esconde 1d4 itens da Tabela de Tesouros 7-9"
-    ],
-    [
-      "78–79",
-      "Um carniçal salivante está preso à parede por quatro estacas de ferro"
-    ],
-    [
-      "86–87",
-      "Uma urna com o nome \"Bimbles\" guarda o zumbi azul de uma cocatriz"
-    ],
-    [
-      "88–89",
-      "Um enxame de centopeias assola um rastejador de caverna em aflição"
-    ],
-    [
-      "90–91",
-      "Um inumano radiante (O), animado por energia sagrada, se aproxima"
-    ],
-    [
-      "92–93",
-      "Um sino suave soa; todos que o ouvirem por 2 rodadas curam 2d6 PV"
-    ],
-    [
-      "01",
-      "O Oráculo de Dez Olhos surge flutuando e falando sobre perdição"
-    ],
-    [
-      "04–05",
-      "Uma hidra albina emerge repentinamente, açoitada por 2d4 drow"
-    ],
-    [
-      "06–07",
-      "Um duergar pede ajuda; outros 2d4 preparam uma emboscada"
-    ],
-    [
-      "08–09",
-      "Uma sacerdotisa drow lidera 2d6 drow em busca de novos cativos"
-    ],
-    [
-      "30–31",
-      "O chão estremece: um verme púrpura chega em 1d4 rodadas"
-    ],
-    [
-      "34–35",
-      "Um estrangulador persegue os PJs e os ataca pela retaguarda"
-    ],
-    [
-      "36–37",
-      "Um terremoto faz um túnel desabar"
-    ],
-    [
-      "38–39",
-      "Um ogro zumbi vaga sem rumo em direção ao som"
-    ]
+    {
+      "faixa": "58–59",
+      "texto": "Um rastejador de caverna devora um zumbi recém-destruído",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Um vampiro oferece passagem segura por alguns goles de sangue",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Um crânio rola por aí, parando para fazer críticas ou comentários",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "68–69",
+      "texto": "Uma gosma preta goteja de rachaduras finas no teto",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "O arquimago humano Rantarim (N) procura por um tomo antigo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante sai, ofegante, de um caixão",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um local oculto esconde 1d4 itens da Tabela de Tesouros 7-9",
+      "followUp": "tesouro"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "Um carniçal salivante está preso à parede por quatro estacas de ferro",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "Uma urna com o nome \"Bimbles\" guarda o zumbi azul de uma cocatriz",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "88–89",
+      "texto": "Um enxame de centopeias assola um rastejador de caverna em aflição",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Um inumano radiante (O), animado por energia sagrada, se aproxima",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Um sino suave soa; todos que o ouvirem por 2 rodadas curam 2d6 PV",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "01",
+      "texto": "O Oráculo de Dez Olhos surge flutuando e falando sobre perdição",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "04–05",
+      "texto": "Uma hidra albina emerge repentinamente, açoitada por 2d4 drow",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "06–07",
+      "texto": "Um duergar pede ajuda; outros 2d4 preparam uma emboscada",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "08–09",
+      "texto": "Uma sacerdotisa drow lidera 2d6 drow em busca de novos cativos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "30–31",
+      "texto": "O chão estremece: um verme púrpura chega em 1d4 rodadas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "34–35",
+      "texto": "Um estrangulador persegue os PJs e os ataca pela retaguarda",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Um terremoto faz um túnel desabar",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "38–39",
+      "texto": "Um ogro zumbi vaga sem rumo em direção ao som",
+      "followUp": "cena_evento"
+    }
   ]
 }

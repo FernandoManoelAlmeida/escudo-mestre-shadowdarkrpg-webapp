@@ -9,81 +9,100 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "12–13",
-      "Uma árvore antiga e podre se quebra e cai na direção dos PJs"
-    ],
-    [
-      "14–15",
-      "Um otyugh faminto se esconde em uma pilha de vegetação podre"
-    ],
-    [
-      "54–55",
-      "Um fio de armadilha aciona e derruba uma rede larga e oculta"
-    ],
-    [
-      "56–57",
-      "Dois ursos pardos flanqueiam os PJs e avançam contra eles"
-    ],
-    [
-      "58–59",
-      "Um enxame de centopeias se contorce para fora do solo enlameado"
-    ],
-    [
-      "60–61",
-      "Uma dríade encara um poço cercado por antigas paredes de pedra"
-    ],
-    [
-      "62–63",
-      "Um leprechaun presunçoso insulta os PJs de um galho alto"
-    ],
-    [
-      "64–65",
-      "Um monte cambaleante colide com a lateral de uma pequena ravina"
-    ],
-    [
-      "66–67",
-      "Uma enorme cabeça de pedra meio enterrada espreita da terra"
-    ],
-    [
-      "74–75",
-      "Hrugin, o troll, arrasta 1d4 exploradores rivais feridos e amarrados"
-    ],
-    [
-      "76–77",
-      "Rosas carmesim brotam ao redor de uma estátua desgastada de Gede"
-    ],
-    [
-      "78–79",
-      "Um ogro tenta arrancar uma pequena árvore para usar como clava"
-    ],
-    [
-      "88–89",
-      "Um dragão da floresta irritável move-se preguiçosamente pela mata"
-    ],
-    [
-      "90–91",
-      "Um acampamento de 2d20 berserks se dispõe a trocar mercadorias"
-    ],
-    [
-      "92–93",
-      "Uma capela de pedra abandonada oferece um abrigo seguro"
-    ],
-    [
-      "94–95",
-      "Um orc-chefe discursa ferozmente para 2d12 orcs aplaudindo"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante surge de um tronco de árvore apodrecido"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "00",
-      "Um unicórnio cintilante surge sob um raio de sol"
-    ]
+    {
+      "faixa": "12–13",
+      "texto": "Uma árvore antiga e podre se quebra e cai na direção dos PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "14–15",
+      "texto": "Um otyugh faminto se esconde em uma pilha de vegetação podre",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "54–55",
+      "texto": "Um fio de armadilha aciona e derruba uma rede larga e oculta",
+      "followUp": "armadilha"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Dois ursos pardos flanqueiam os PJs e avançam contra eles",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Um enxame de centopeias se contorce para fora do solo enlameado",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "60–61",
+      "texto": "Uma dríade encara um poço cercado por antigas paredes de pedra",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Um leprechaun presunçoso insulta os PJs de um galho alto",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "64–65",
+      "texto": "Um monte cambaleante colide com a lateral de uma pequena ravina",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Uma enorme cabeça de pedra meio enterrada espreita da terra",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "Hrugin, o troll, arrasta 1d4 exploradores rivais feridos e amarrados",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "Rosas carmesim brotam ao redor de uma estátua desgastada de Gede",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "Um ogro tenta arrancar uma pequena árvore para usar como clava",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "88–89",
+      "texto": "Um dragão da floresta irritável move-se preguiçosamente pela mata",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Um acampamento de 2d20 berserks se dispõe a trocar mercadorias",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Uma capela de pedra abandonada oferece um abrigo seguro",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "Um orc-chefe discursa ferozmente para 2d12 orcs aplaudindo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante surge de um tronco de árvore apodrecido",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um unicórnio cintilante surge sob um raio de sol",
+      "followUp": "cena_evento"
+    }
   ]
 }

@@ -20,17 +20,94 @@
       "rolagem": "d12"
     },
     {
-      "id": "assentamento-nome",
-      "titulo": "Nome de assentamento",
+      "id": "assentamento-alinhamento",
+      "titulo": "Alinhamento do assentamento",
       "categoria": "assentamentos",
-      "subcategoria": "nome",
+      "subcategoria": "alinhamento",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-distrito",
+      "titulo": "Distrito",
+      "categoria": "assentamentos",
+      "subcategoria": "distrito",
+      "rolagem": "d8"
+    },
+    {
+      "id": "assentamento-nome-estilo",
+      "titulo": "Estilos de nome (referência GM)",
+      "categoria": "assentamentos",
+      "subcategoria": "nome-estilo",
       "rolagem": "d20"
     },
     {
-      "id": "encontro-masmorra-piloto",
-      "titulo": "Encontro — masmorra (piloto)",
-      "categoria": "encontro",
-      "subcategoria": "masmorra",
+      "id": "assentamento-nome-exemplos",
+      "titulo": "Nomes de assentamento (exemplos)",
+      "categoria": "assentamentos",
+      "subcategoria": "nome-exemplos",
+      "rolagem": "d20"
+    },
+    {
+      "id": "assentamento-poi-academico",
+      "titulo": "POI — Distrito Acadêmico",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-academico",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-poi-alto",
+      "titulo": "POI — Distrito Alto",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-alto",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-poi-artesao",
+      "titulo": "POI — Distrito Artesão",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-artesao",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-poi-baixo",
+      "titulo": "POI — Distrito Baixo",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-baixo",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-poi-comercial",
+      "titulo": "POI — Distrito Comercial",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-comercial",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-poi-castelo",
+      "titulo": "POI — Distrito do Castelo",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-castelo",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-poi-religioso",
+      "titulo": "POI — Distrito Religioso",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-religioso",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-poi-periferia",
+      "titulo": "POI — Periferia",
+      "categoria": "assentamentos",
+      "subcategoria": "poi-periferia",
+      "rolagem": "d6"
+    },
+    {
+      "id": "assentamento-tipo",
+      "titulo": "Tipo de assentamento",
+      "categoria": "assentamentos",
+      "subcategoria": "tipo",
       "rolagem": "d6"
     },
     {
@@ -222,6 +299,30 @@
       "rolagem": "d12"
     },
     {
+      "id": "falha-magica-mago-3-4",
+      "titulo": "Falha Mágica Mago 3 4",
+      "categoria": "falha-magica",
+      "rolagem": "d12"
+    },
+    {
+      "id": "falha-magica-mago-5",
+      "titulo": "Falha Mágica Mago 5",
+      "categoria": "falha-magica",
+      "rolagem": "d12"
+    },
+    {
+      "id": "falha-magica-diabolica-1-3",
+      "titulo": "Falhas Diabólicas 1 3",
+      "categoria": "falha-magica",
+      "rolagem": "d12"
+    },
+    {
+      "id": "falha-magica-diabolica-4-5",
+      "titulo": "Falhas Diabólicas 4 5",
+      "categoria": "falha-magica",
+      "rolagem": "d12"
+    },
+    {
       "id": "armas-comuns",
       "titulo": "Armas comuns (sorteio)",
       "categoria": "itens",
@@ -236,6 +337,13 @@
       "rolagem": "d20"
     },
     {
+      "id": "loja-clientes-interessantes",
+      "titulo": "Clientes interessantes",
+      "categoria": "lojas",
+      "subcategoria": "clientes",
+      "rolagem": "d4"
+    },
+    {
       "id": "loja-padrao",
       "titulo": "Loja padrão",
       "categoria": "lojas",
@@ -243,11 +351,25 @@
       "rolagem": "d12"
     },
     {
+      "id": "loja-precaria",
+      "titulo": "Loja precária",
+      "categoria": "lojas",
+      "subcategoria": "precaria",
+      "rolagem": "d12"
+    },
+    {
       "id": "loja-refinada",
       "titulo": "Loja refinada",
       "categoria": "lojas",
       "subcategoria": "refinada",
-      "rolagem": "d100"
+      "rolagem": "d10"
+    },
+    {
+      "id": "loja-nome-conhecida",
+      "titulo": "Nome da loja",
+      "categoria": "lojas",
+      "subcategoria": "nome",
+      "rolagem": "d20"
     },
     {
       "id": "pnj-ancestralidade",

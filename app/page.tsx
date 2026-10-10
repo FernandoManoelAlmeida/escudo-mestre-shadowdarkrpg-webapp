@@ -3,9 +3,7 @@
 import styled from "styled-components";
 import { REGRAS_CASA_RESUMO } from "@/lib/regrasCasaResumo";
 import { SolodarkOracleWidget } from "@/components/home/SolodarkOracleWidget";
-
-const GITHUB_WEBAPP_URL =
-  "https://github.com/FernandoManoelAlmeida/escudo-mestre-shadowdarkrpg-webapp";
+import { assetUrl } from "@/lib/basePath";
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
@@ -23,40 +21,19 @@ const TitleRow = styled.div`
   margin: ${({ theme }) => theme.spacing.md} 0;
 `;
 
-const TitleLink = styled.a`
+const TitleBrand = styled.div`
   display: block;
   text-align: center;
-  text-decoration: none;
-  color: ${({ theme }) => theme.colors.text};
-  border: 1px solid ${({ theme }) => theme.colors.borderHighlight};
-  border-radius: ${({ theme }) => theme.borderRadius};
-  padding: ${({ theme }) => theme.spacing.lg};
   max-width: 720px;
   width: 100%;
-  transition: border-color 0.2s, background-color 0.2s;
-
-  &:hover {
-    background: ${({ theme }) => theme.colors.surfaceHover};
-    border-color: ${({ theme }) => theme.colors.primary};
-  }
-  &:focus-visible {
-    outline: 2px solid ${({ theme }) => theme.colors.primary};
-    outline-offset: 4px;
-  }
 `;
 
-const HomeTitle = styled.h1`
-  margin: 0;
-  font-size: ${({ theme }) => theme.typography.fontSize.xl};
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
-const HomeSubtitle = styled.p`
-  margin: ${({ theme }) => theme.spacing.sm} 0 0;
-  font-size: ${({ theme }) => theme.typography.fontSize.sm};
-  color: ${({ theme }) => theme.colors.textMuted};
+const ThirdPartyLogo = styled.img`
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
 `;
 
 const Description = styled.div`
@@ -168,24 +145,22 @@ const LicenseFooter = styled.footer`
 `;
 
 const SHADOWDARK_FAN_URL =
-  "https://thearcanelibrary.com/pages/shadowdark-rpg-third-party-license";
+  "https://www.thearcanelibrary.com/blogs/shadowdark-blog/faq-on-the-shadowdark-rpg-third-party-license?srsltid=AU7gw4U5AoVRnEGZZibHYPn0Mn3uWJk-wWkG_m-03x9QN8wgrs0A0-j0";
 
 export default function Home() {
   return (
     <Page>
       <TitleRow>
-        <TitleLink
-          href={GITHUB_WEBAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Abrir repositório do Escudo Shadowdark no GitHub"
-        >
-          <HomeTitle>Escudo do Mestre</HomeTitle>
-          <HomeSubtitle>Shadowdark RPG — Mundo Fraturado</HomeSubtitle>
-        </TitleLink>
+        <TitleBrand>
+          <ThirdPartyLogo
+            src={assetUrl("/branding/third-party-shadowdark-logo-white.png")}
+            alt="Shadowdark RPG — conteúdo de terceiros licenciado"
+            width={2066}
+            height={852}
+            decoding="async"
+          />
+        </TitleBrand>
       </TitleRow>
-
-      <SolodarkOracleWidget />
 
       <Description>
         <p>
@@ -204,6 +179,8 @@ export default function Home() {
           suplementos licenciados.
         </p>
       </Description>
+
+      <SolodarkOracleWidget />
 
       <RegrasSection aria-labelledby="regras-em-uso">
         <SectionTitle id="regras-em-uso">Regras em uso</SectionTitle>

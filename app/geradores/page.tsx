@@ -67,9 +67,9 @@ export default function GeradoresPage() {
           <span>{mod.description}</span>
         </Card>
       ))}
-      <Card href="/arcanos/itens">
+      <Card href="/geradores/itens-magicos-aleatorios">
         <strong>Catálogo de itens mágicos</strong>
-        <span>Consulta — use Itens mágicos aleatórios para sortear.</span>
+        <span>Sorteio aleatório de item mágico (Livro / Cursed Scroll).</span>
       </Card>
       {modules.length === 0 && <p>Carregando módulos…</p>}
     </Page>

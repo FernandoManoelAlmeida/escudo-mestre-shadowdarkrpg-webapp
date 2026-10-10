@@ -33,6 +33,14 @@ export function GeradorModuloClient({ slug }: Props) {
       router.replace("/geradores/pnjs");
       return;
     }
+    if (slug === "lojas") {
+      router.replace("/geradores/lojas");
+      return;
+    }
+    if (slug === "assentamentos") {
+      router.replace("/geradores/assentamentos");
+      return;
+    }
     getTabelasIndex()
       .then((idx) => {
         if (mod) setTables(tablesForModule(mod, idx));
@@ -40,7 +48,12 @@ export function GeradorModuloClient({ slug }: Props) {
       .finally(() => setLoading(false));
   }, [mod, slug, router]);
 
-  if (slug === "encontros" || slug === "pnjs") {
+  if (
+    slug === "encontros" ||
+    slug === "pnjs" ||
+    slug === "lojas" ||
+    slug === "assentamentos"
+  ) {
     return <Page><p>Redirecionando…</p></Page>;
   }
 

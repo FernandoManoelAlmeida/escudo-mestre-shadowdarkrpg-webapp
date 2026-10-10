@@ -9,45 +9,55 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "10–11",
-      "Um redemoinho de poeira é, na verdade, um elemental de ar furioso"
-    ],
-    [
-      "12–13",
-      "Nuvens negras e altas avançam: uma tempestade violenta é iminente"
-    ],
-    [
-      "94–95",
-      "Um brutamontes das cavernas cego pelo sol avança feroz até os sons"
-    ],
-    [
-      "00",
-      "Um anjo principi sai de uma tempestade para conceder uma dádiva"
-    ],
-    [
-      "02–03",
-      "Um grupo de 1d4 basiliscos toma banho de sol sobre rochas planas"
-    ],
-    [
-      "06–07",
-      "Mirell, um garimpeiro de ouro e pérolas, grita contra invasores"
-    ],
-    [
-      "26–27",
-      "Um grupo de 2d8 leões caçadores espreita pela linha costeira"
-    ],
-    [
-      "28–29",
-      "Um hipogrifo luta em desespero para se libertar de um crocodilo"
-    ],
-    [
-      "40–41",
-      "Um caranguejo gigante coberto de algas emerge da água"
-    ],
-    [
-      "42–43",
-      "Falsted, o halfling, se agarra a um bote que virou e está afundando"
-    ]
+    {
+      "faixa": "10–11",
+      "texto": "Um redemoinho de poeira é, na verdade, um elemental de ar furioso",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "12–13",
+      "texto": "Nuvens negras e altas avançam: uma tempestade violenta é iminente",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "Um brutamontes das cavernas cego pelo sol avança feroz até os sons",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um anjo principi sai de uma tempestade para conceder uma dádiva",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "02–03",
+      "texto": "Um grupo de 1d4 basiliscos toma banho de sol sobre rochas planas",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "06–07",
+      "texto": "Mirell, um garimpeiro de ouro e pérolas, grita contra invasores",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "26–27",
+      "texto": "Um grupo de 2d8 leões caçadores espreita pela linha costeira",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "28–29",
+      "texto": "Um hipogrifo luta em desespero para se libertar de um crocodilo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "40–41",
+      "texto": "Um caranguejo gigante coberto de algas emerge da água",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "42–43",
+      "texto": "Falsted, o halfling, se agarra a um bote que virou e está afundando",
+      "followUp": "cena_evento"
+    }
   ]
 }

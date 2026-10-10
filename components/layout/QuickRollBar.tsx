@@ -4,7 +4,11 @@ import { useState } from "react";
 import styled from "styled-components";
 import { rollFormula, parseFormula, isAllowedDiceSides } from "@/lib/dice";
 import { useRollToast } from "@/context/RollToastContext";
-import { D20RollButton } from "@/components/ui/D20RollButton";
+import { DiceRollIconButton } from "@/components/ui/DiceRollIconButton";
+import {
+  ariaLabelForRoll,
+  parseDiceTokensFromFormula,
+} from "@/lib/diceDisplay";
 
 const Wrap = styled.div`
   position: relative;
@@ -105,10 +109,16 @@ export function QuickRollBar({
           placeholder="ex: 4d8, 2d20+5"
           aria-label="Fórmula de dados"
         />
-        <D20RollButton
+        <DiceRollIconButton
           size="small"
+          formula={validDice ? formula : undefined}
+          parsed={validDice ? parseDiceTokensFromFormula(formula) : null}
           onClick={handleRoll}
-          aria-label="Rolar dados"
+          aria-label={
+            validDice
+              ? ariaLabelForRoll(formula, "formula")
+              : "Rolar dados"
+          }
         />
       </RollRow>
       {showFeedback && hintInvalidFormat && (

@@ -54,6 +54,30 @@ export function treasureTableId(band: TreasureBand): string {
   return ids[band];
 }
 
+/** Usa followUp da linha migrada; senão heurística por texto. */
+export function classifyEncounterRow(
+  texto: string,
+  followUp?: EncounterKind,
+): EncounterClassification {
+  if (followUp) {
+    switch (followUp) {
+      case "cena_evento":
+        return { kind: "cena_evento" };
+      case "criatura":
+        return { kind: "criatura" };
+      case "armadilha":
+        return { kind: "armadilha" };
+      case "tesouro":
+        return { kind: "tesouro", treasureBand: parseTreasureBand(texto) };
+      case "item_magico":
+        return { kind: "item_magico" };
+      case "combinar":
+        return { kind: "combinar" };
+    }
+  }
+  return classifyEncounterResult(texto);
+}
+
 export function classifyEncounterResult(texto: string): EncounterClassification {
   const t = texto.trim();
   const lower = t.toLowerCase();

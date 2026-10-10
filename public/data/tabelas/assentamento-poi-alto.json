@@ -1,0 +1,33 @@
+{
+  "id": "assentamento-poi-alto",
+  "titulo": "POI — Distrito Alto",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-alto",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Sede de guilda"
+    ],
+    [
+      "2–3",
+      "Taverna refinada"
+    ],
+    [
+      "4",
+      "Mansão"
+    ],
+    [
+      "5",
+      "Loja refinada"
+    ],
+    [
+      "6",
+      "Posto avançado da Guarda da Cidade"
+    ]
+  ]
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import styled from "styled-components";
-import type { RollTableData } from "@/lib/rollTable";
+import { rowAsCells, type RollTableData } from "@/lib/rollTable";
 
 const GridTable = styled.table`
   width: 100%;
@@ -32,13 +32,16 @@ export function TabelaRollTableView({ table }: { table: RollTableData }) {
         </tr>
       </thead>
       <tbody>
-        {table.rows.map((row, i) => (
-          <tr key={i}>
-            {row.map((cell, j) => (
-              <td key={j}>{cell}</td>
-            ))}
-          </tr>
-        ))}
+        {table.rows.map((row, i) => {
+          const cells = rowAsCells(row);
+          return (
+            <tr key={i}>
+              {cells.map((cell, j) => (
+                <td key={j}>{cell}</td>
+              ))}
+            </tr>
+          );
+        })}
       </tbody>
     </GridTable>
   );

@@ -9,185 +9,231 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "01",
-      "Um aprendiz de mago bêbado invocou uma marilith furiosa"
-    ],
-    [
-      "02–03",
-      "Tentáculos irrompem e tentam agarrar através de um bueiro"
-    ],
-    [
-      "04–05",
-      "A longa rixa entre dois docentes explode em uma guerra de magia"
-    ],
-    [
-      "08–09",
-      "Um assassino pula sobre o palco onde um filósofo discursa"
-    ],
-    [
-      "10–11",
-      "Um adolescente foge de uma livraria carregando um grimório"
-    ],
-    [
-      "14–15",
-      "Um velho artesão vende bombas de confete e fogos de artifício"
-    ],
-    [
-      "16–17",
-      "Uma nuvem de 2d4 morcegos-ferrão roxos jorram de uma chaminé"
-    ],
-    [
-      "18–19",
-      "Guardas isolam rapidamente um grande círculo de fogo azul"
-    ],
-    [
-      "20–21",
-      "Um homem suspeito vende \"poções baratas\" (2 poções misturadas)"
-    ],
-    [
-      "22–23",
-      "Um professor míope insiste que um PJ tem um artigo atrasado"
-    ],
-    [
-      "24–25",
-      "Quatro alunos mal-educados jogam moedas na cabeça das pessoas"
-    ],
-    [
-      "26–27",
-      "Fregueses fogem de uma luz vermelha na taverna Lesma Voadora"
-    ],
-    [
-      "28–29",
-      "Uivos inumanos ecoam de um alojamento nas proximidades"
-    ],
-    [
-      "30–31",
-      "A estátua de serpe da escola, o Velho Rolf, ganha vida em frenesi"
-    ],
-    [
-      "32–33",
-      "Um nobre vermelho de raiva diz a um PJ: \"mostre o devido respeito\""
-    ],
-    [
-      "34–35",
-      "O campeão de Magos e Ladrões da escola desafia um dos PJs"
-    ],
-    [
-      "36–37",
-      "Cinzas incandescentes caem da janela estilhaçada de uma torre"
-    ],
-    [
-      "38–39",
-      "Um mago de óculos começa a medir e a cutucar um PJ"
-    ],
-    [
-      "40–41",
-      "Um caldeirão mágico aparece e despeja 1d6 ratos gigantes"
-    ],
-    [
-      "44–45",
-      "Um PJ pisa em uma runa (pegadinha) que cola seus sapatos no chão"
-    ],
-    [
-      "06–07",
-      "Uma mulher furtivamente se oferece para comprar \"cadáveres frescos\""
-    ],
-    [
-      "12–13",
-      "Uma chuva ácida e amarela cai do céu: uma magia deu muito errado"
-    ],
-    [
-      "42–43",
-      "Um homem pálido olha fixamente para um PJ e murmura: \"Me ajude!\""
-    ],
-    [
-      "60–61",
-      "Uma bruxa faz previsões em uma tenda improvisada por 1 PO"
-    ],
-    [
-      "62–63",
-      "Um estudante pede para ser aprendiz de um dos PJs"
-    ],
-    [
-      "64–65",
-      "Um feiticeiro (um oni disfarçado) observa o grupo enquanto bebe"
-    ],
-    [
-      "66–67",
-      "Uma estátua de coruja animada secretamente segue os PJs"
-    ],
-    [
-      "68–69",
-      "Um mago tenta atrair um PJ para um beco para drenar seu sangue"
-    ],
-    [
-      "70–71",
-      "Quebradeira e gritaria irrompem em uma biblioteca"
-    ],
-    [
-      "72–73",
-      "Um grimório voa para fora de uma janela e tenta escapar"
-    ],
-    [
-      "74–75",
-      "Um professor invoca um demônio vrock, mas perde o controle"
-    ],
-    [
-      "80–81",
-      "Três aprendizes arrogantes provocam uma briga com os PJs"
-    ],
-    [
-      "82–83",
-      "Um artista aborda um PJ e implora para fazer um retrato dele"
-    ],
-    [
-      "84–85",
-      "Um bibliotecário nervoso entrega um livro estranho a um PJ e foge"
-    ],
-    [
-      "86–87",
-      "O Professor Krall perde a paciência e conduz 2d6 zumbis pelas ruas"
-    ],
-    [
-      "88–89",
-      "Estudantes da universidade rival vandalizam uma estátua venerada"
-    ],
-    [
-      "90–91",
-      "Um acadêmico oferece um rubi pela solução de um enigma"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante vende reagentes alquímicos cáusticos"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "00",
-      "Um arquimago confia um item mágico aleatório aos personagens"
-    ],
-    [
-      "46–47",
-      "Duas armaduras animadas duelam em um conflito destrutivo na rua"
-    ],
-    [
-      "48–49",
-      "Um estudante submisso, intimidado por um guarda, aponta para os PJs"
-    ],
-    [
-      "78–79",
-      "A cocatriz de estimação de um mago se solta em uma taverna lotada"
-    ],
-    [
-      "92–93",
-      "Um mago desastrado quebra uma garrafa de vidro contendo uma naga"
-    ],
-    [
-      "94–95",
-      "Os personagens se deparam com um ritual secreto com 5 aprendizes"
-    ]
-  ]
+    {
+      "faixa": "01",
+      "texto": "Um aprendiz de mago bêbado invocou uma marilith furiosa",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "02–03",
+      "texto": "Tentáculos irrompem e tentam agarrar através de um bueiro",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "04–05",
+      "texto": "A longa rixa entre dois docentes explode em uma guerra de magia",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "08–09",
+      "texto": "Um assassino pula sobre o palco onde um filósofo discursa",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "10–11",
+      "texto": "Um adolescente foge de uma livraria carregando um grimório",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "14–15",
+      "texto": "Um velho artesão vende bombas de confete e fogos de artifício",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "16–17",
+      "texto": "Uma nuvem de 2d4 morcegos-ferrão roxos jorram de uma chaminé",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "18–19",
+      "texto": "Guardas isolam rapidamente um grande círculo de fogo azul",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "20–21",
+      "texto": "Um homem suspeito vende \"poções baratas\" (2 poções misturadas)",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "22–23",
+      "texto": "Um professor míope insiste que um PJ tem um artigo atrasado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "24–25",
+      "texto": "Quatro alunos mal-educados jogam moedas na cabeça das pessoas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "26–27",
+      "texto": "Fregueses fogem de uma luz vermelha na taverna Lesma Voadora",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "28–29",
+      "texto": "Uivos inumanos ecoam de um alojamento nas proximidades",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "30–31",
+      "texto": "A estátua de serpe da escola, o Velho Rolf, ganha vida em frenesi",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "32–33",
+      "texto": "Um nobre vermelho de raiva diz a um PJ: \"mostre o devido respeito\"",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "34–35",
+      "texto": "O campeão de Magos e Ladrões da escola desafia um dos PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Cinzas incandescentes caem da janela estilhaçada de uma torre",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "38–39",
+      "texto": "Um mago de óculos começa a medir e a cutucar um PJ",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "40–41",
+      "texto": "Um caldeirão mágico aparece e despeja 1d6 ratos gigantes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "44–45",
+      "texto": "Um PJ pisa em uma runa (pegadinha) que cola seus sapatos no chão",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "06–07",
+      "texto": "Uma mulher furtivamente se oferece para comprar \"cadáveres frescos\"",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "12–13",
+      "texto": "Uma chuva ácida e amarela cai do céu: uma magia deu muito errado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "42–43",
+      "texto": "Um homem pálido olha fixamente para um PJ e murmura: \"Me ajude!\"",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "60–61",
+      "texto": "Uma bruxa faz previsões em uma tenda improvisada por 1 PO",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Um estudante pede para ser aprendiz de um dos PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "64–65",
+      "texto": "Um feiticeiro (um oni disfarçado) observa o grupo enquanto bebe",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Uma estátua de coruja animada secretamente segue os PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "68–69",
+      "texto": "Um mago tenta atrair um PJ para um beco para drenar seu sangue",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "70–71",
+      "texto": "Quebradeira e gritaria irrompem em uma biblioteca",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "72–73",
+      "texto": "Um grimório voa para fora de uma janela e tenta escapar",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "Um professor invoca um demônio vrock, mas perde o controle",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "80–81",
+      "texto": "Três aprendizes arrogantes provocam uma briga com os PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Um artista aborda um PJ e implora para fazer um retrato dele",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "84–85",
+      "texto": "Um bibliotecário nervoso entrega um livro estranho a um PJ e foge",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "O Professor Krall perde a paciência e conduz 2d6 zumbis pelas ruas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "88–89",
+      "texto": "Estudantes da universidade rival vandalizam uma estátua venerada",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Um acadêmico oferece um rubi pela solução de um enigma",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante vende reagentes alquímicos cáusticos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um arquimago confia um item mágico aleatório aos personagens",
+      "followUp": "item_magico"
+    },
+    {
+      "faixa": "46–47",
+      "texto": "Duas armaduras animadas duelam em um conflito destrutivo na rua",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "48–49",
+      "texto": "Um estudante submisso, intimidado por um guarda, aponta para os PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "A cocatriz de estimação de um mago se solta em uma taverna lotada",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Um mago desastrado quebra uma garrafa de vidro contendo uma naga",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "Os personagens se deparam com um ritual secreto com 5 aprendizes",
+      "followUp": "cena_evento"
+    }
+  ],
+  "cadeia_default": "cena"
 }

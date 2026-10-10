@@ -5,14 +5,43 @@ export type RollTableLine = {
   creatureSlug?: string;
 };
 
+export type RollTableObjectRow = {
+  faixa: string;
+  texto: string;
+  followUp?: string;
+};
+
+export type RollTableRow = string[] | RollTableObjectRow;
+
 export type RollTableData = {
   id: string;
   titulo: string;
   categoria: string;
   rolagem: string;
   headers: string[];
-  rows: string[][];
+  rows: RollTableRow[];
 };
+
+function isObjectRow(row: RollTableRow): row is RollTableObjectRow {
+  return !Array.isArray(row) && typeof row === "object" && row !== null;
+}
+
+export function rowAsCells(row: RollTableRow): string[] {
+  if (isObjectRow(row)) return [row.faixa, row.texto];
+  return row;
+}
+
+export function rowTexto(row: RollTableRow): string {
+  if (isObjectRow(row)) return row.texto;
+  const cells = row;
+  if (cells.length <= 1) return cells[0] ?? "";
+  return cells.slice(1).join(" — ");
+}
+
+export function rowFollowUp(row: RollTableRow): string | undefined {
+  if (isObjectRow(row)) return row.followUp;
+  return undefined;
+}
 
 export type RollOnTableOptions = {
   /** Soma ao total de dados (ex. MOD CAR em 2d6 + MOD CAR). */
@@ -25,6 +54,10 @@ export type RollOnTableResult = {
   modifier: number;
   texto: string;
   linha: number;
+  followUp?: string;
+  /** Célula de faixa da tabela (ex. 24–25, 00). */
+  faixa?: string;
+  matched: boolean;
 };
 
 const DICE_RE = /(\d*)d(\d+)/i;
@@ -89,32 +122,46 @@ export function parseRangeCell(cell: string): { min: number; max: number } | nul
   return null;
 }
 
-function firstColumnLooksLikeRanges(rows: string[][]): boolean {
-  return rows.some((row) => parseRangeCell(row[0] ?? "") !== null);
+function firstColumnLooksLikeRanges(rows: RollTableRow[]): boolean {
+  return rows.some((row) => parseRangeCell(rowAsCells(row)[0] ?? "") !== null);
 }
 
-export function findRowIndexForValue(
-  rows: string[][],
+export function findRowMatchForValue(
+  rows: RollTableRow[],
   value: number,
-): number {
-  if (!rows.length) return 0;
+): { index: number; faixa: string } | null {
+  if (!rows.length) return null;
 
   if (firstColumnLooksLikeRanges(rows)) {
     for (let i = 0; i < rows.length; i++) {
-      const range = parseRangeCell(rows[i][0] ?? "");
-      if (range && value >= range.min && value <= range.max) return i;
+      const cells = rowAsCells(rows[i]);
+      const range = parseRangeCell(cells[0] ?? "");
+      if (range && value >= range.min && value <= range.max) {
+        return { index: i, faixa: cells[0] ?? "" };
+      }
     }
-    return rows.length - 1;
+    return null;
   }
 
   const idx = Math.min(Math.max(0, value - 1), rows.length - 1);
-  return idx;
+  const faixa = rowAsCells(rows[idx])[0] ?? String(value);
+  return { index: idx, faixa };
+}
+
+/** @deprecated Prefer findRowMatchForValue — sem fallback para última linha em faixas. */
+export function findRowIndexForValue(
+  rows: RollTableRow[],
+  value: number,
+): number {
+  const match = findRowMatchForValue(rows, value);
+  if (match) return match.index;
+  return rows.length ? rows.length - 1 : 0;
 }
 
 /** Infere d100 quando faixas percentis; senão usa cabeçalho ou NdM explícito. */
 export function inferRolagemFromTable(
   headers: string[],
-  rows: string[][],
+  rows: RollTableRow[],
   explicit?: string,
 ): string {
   if (explicit && parseDiceFormula(explicit)) return parseDiceFormula(explicit)!;
@@ -126,11 +173,11 @@ export function inferRolagemFromTable(
   let hasDoubleDigitRange = false;
   let has00 = false;
   for (const row of rows) {
-    const range = parseRangeCell(row[0] ?? "");
+    const range = parseRangeCell(rowAsCells(row)[0] ?? "");
     if (!range) continue;
     maxInCol = Math.max(maxInCol, range.max);
     if (range.min >= 20 || range.max >= 20) hasDoubleDigitRange = true;
-    if (row[0]?.trim() === "00") has00 = true;
+    if (rowAsCells(row)[0]?.trim() === "00") has00 = true;
   }
   if (has00 || maxInCol > 20 || hasDoubleDigitRange) return "d100";
 
@@ -154,18 +201,50 @@ export function effectiveRolagem(table: RollTableData): string {
   return inferRolagemFromTable(table.headers, table.rows, table.rolagem);
 }
 
+const SPARSE_REROLL_MAX = 40;
+
 export function rollOnTable(
   table: RollTableData,
   options?: RollOnTableOptions,
 ): RollOnTableResult {
   const formula = effectiveRolagem(table);
-  const diceTotal = rollDiceFormula(formula);
   const modifier = options?.modifier ?? 0;
+  const isPercentile = /d100/i.test(formula);
+
+  for (let attempt = 0; attempt < SPARSE_REROLL_MAX; attempt++) {
+    const diceTotal = rollDiceFormula(formula);
+    const valor = diceTotal + modifier;
+    const match = findRowMatchForValue(table.rows, valor);
+    if (match) {
+      const row = table.rows[match.index];
+      const texto = row ? rowTexto(row) : String(valor);
+      const followUp = row ? rowFollowUp(row) : undefined;
+      return {
+        valor,
+        diceTotal,
+        modifier,
+        texto,
+        linha: match.index,
+        followUp,
+        faixa: match.faixa,
+        matched: true,
+      };
+    }
+    if (!isPercentile) break;
+  }
+
+  const diceTotal = rollDiceFormula(formula);
   const valor = diceTotal + modifier;
-  const linha = findRowIndexForValue(table.rows, valor);
-  const row = table.rows[linha] ?? [];
-  const texto = row.slice(1).join(" — ") || row.join(" — ") || String(valor);
-  return { valor, diceTotal, modifier, texto, linha };
+  return {
+    valor,
+    diceTotal,
+    modifier,
+    texto: isPercentile
+      ? `Nenhuma entrada na tabela para d100 = ${valor}. Role de novo.`
+      : String(valor),
+    linha: -1,
+    matched: false,
+  };
 }
 
 /** Compat: rolagem livre só com fórmula NdM. */

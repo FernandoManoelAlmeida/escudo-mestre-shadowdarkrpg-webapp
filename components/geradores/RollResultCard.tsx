@@ -23,15 +23,32 @@ const Text = styled.div`
 
 type RollResultCardProps = {
   titulo?: string;
+  /** Ex.: d100, 2d6 */
+  diceLabel?: string;
   valor?: string | number;
+  faixa?: string;
   texto: string;
 };
 
-export function RollResultCard({ titulo, valor, texto }: RollResultCardProps) {
+export function RollResultCard({
+  titulo,
+  diceLabel,
+  valor,
+  faixa,
+  texto,
+}: RollResultCardProps) {
+  const rollLine =
+    valor !== undefined && diceLabel
+      ? `Rolagem ${diceLabel}: ${valor}`
+      : valor !== undefined
+        ? `Resultado: ${valor}`
+        : undefined;
+
   return (
     <Card>
       {titulo && <Label>{titulo}</Label>}
-      {valor !== undefined && <Label>Resultado: {valor}</Label>}
+      {rollLine && <Label>{rollLine}</Label>}
+      {faixa && <Label>Faixa: {faixa}</Label>}
       <Text>{texto}</Text>
     </Card>
   );

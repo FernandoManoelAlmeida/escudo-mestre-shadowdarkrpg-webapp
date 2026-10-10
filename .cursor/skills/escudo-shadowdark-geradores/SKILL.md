@@ -13,7 +13,7 @@ description: >-
 |------|----------|
 | `/` (home) | **Oráculo d6** (Astraldark): sim/não; detalhe só em 1 ou 6 |
 | `/geradores` | Hub (módulos com dados no índice) |
-| `/geradores/encontros` | Cadeia condicional: local → (criatura: distância+atividade; armadilha/tesouro: tabela própria). Reação manual 2d6+MOD CAR. Ver `lib/encounterFollowUp.ts` |
+| `/geradores/encontros` | Um botão «Rolar encontro»: cadeia por linha (`followUp` no JSON, coluna **Cadeia** no vault). Criatura → distância+atividade; armadilha/tesouro/item/combinar conforme linha. Reação 2d6+MOD CAR só após criatura errante. Ver `lib/encounterFollowUp.ts`, `scripts/encounter-cadeia-lib.js` |
 | `/geradores/[modulo]` | `TableGeneratorModule` genérico (`lib/geradoresConfig.ts` → `GERADOR_MODULES`) |
 | `/geradores/armadilhas`, `perigos`, `reacao`, `falha-magica`, `xp-tesouro`, `tesouros`, `solodark` | Tabelas por categoria/id (`solodark`: sim/não + detalhe d6) |
 | `/geradores/itens-*` | Itens por subcategoria (`armas`, `pocoes`, `magicos-aleatorios`, …) |
@@ -29,6 +29,7 @@ description: >-
 - `lib/rollTable.ts`, `lib/geradoresUi.ts`, `lib/tabelas.ts`, `public/data/tabelas/`
 - Vault: `repos/shadowdarkrpg-fantasia/Referências/shadowdark/Tabelas/`
 - Encontros do Livro: `node scripts/extract-tabelas-livro-shadowdark.js` → migrate
+- Coluna **Cadeia** nos MD `encontros/locais/`; repor com `node scripts/apply-encounter-cadeia-vault.js` (heurística) e rever manualmente; depois `yarn migrate:tabelas-shadowdark`
 
 ## Regra
 

@@ -9,113 +9,141 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "04–05",
-      "Um velho despeja um punhado de gemas em uma caixa de esmolas"
-    ],
-    [
-      "16–17",
-      "Tentáculos chicoteantes irrompem das mangas de um cultista do caos"
-    ],
-    [
-      "28–29",
-      "Um homem cai em êxtase e se transforma em um elemental de fogo"
-    ],
-    [
-      "36–37",
-      "Um alçapão no fundo de um beco se abre para o porão de um templo"
-    ],
-    [
-      "50–53",
-      "Um mendigo pustulento vaga imerso em um delírio febril"
-    ],
-    [
-      "54–55",
-      "Místicos queimam um incenso alucinógeno no meio da rua"
-    ],
-    [
-      "58–59",
-      "Um cultista nas sombras lança um dardo envenenado em um PJ"
-    ],
-    [
-      "60–61",
-      "Um orador faz um sermão incitante para uma multidão frenética"
-    ],
-    [
-      "64–65",
-      "Cultistas libertinos de Gede distribuem inúmeras taças de vinho"
-    ],
-    [
-      "66–67",
-      "Um sacerdote com um sorriso forçado dá 5 PO a novos convertidos"
-    ],
-    [
-      "70–71",
-      "O Desfile dos Nove atrai espectadores e batedores de carteira"
-    ],
-    [
-      "72–73",
-      "Um monge ateia fogo em si mesmo e entra em um templo"
-    ],
-    [
-      "74–75",
-      "Exploradores rivais saem de uma igreja, recém-batizados"
-    ],
-    [
-      "76–77",
-      "A Guarda arrasta o agitado Barão Hallin para fora de um templo"
-    ],
-    [
-      "82–83",
-      "Um templário disfarçado de plebeu cuida de um leproso caído"
-    ],
-    [
-      "84–85",
-      "Uma mulher grita: \"Tudo será dissolvido!\" e arremessa ácido"
-    ],
-    [
-      "88–89",
-      "Um anjo domini surge em um lampejo de luz; ele aponta para um PJ"
-    ],
-    [
-      "92–93",
-      "A Fonte de Madeera tem 5% de chance de encerrar uma maldição"
-    ],
-    [
-      "94–95",
-      "O Senhor Supremo entra em um templo cercado por 3d6 cavaleiros"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante vende réplicas de vestes sacerdotais"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "00",
-      "Um alto sacerdote escolhe um PJ para receber uma bênção rara"
-    ],
-    [
-      "46–47",
-      "Quatro criminosos mascarados interrompem um rico cortejo fúnebre"
-    ],
-    [
-      "48–49",
-      "Durante um casamento, um homem se ergue e grita: \"Eu sou contra!\""
-    ],
-    [
-      "62–63",
-      "Os olhos de uma plebeia se tornam brancos e ela profere um augúrio"
-    ],
-    [
-      "78–79",
-      "Místicos erguem najas para serem beijadas; chance de ataque de 10%"
-    ],
-    [
-      "80–81",
-      "Um sacerdote salpica água benta com um pincel; ela queima caóticos"
-    ]
-  ]
+    {
+      "faixa": "04–05",
+      "texto": "Um velho despeja um punhado de gemas em uma caixa de esmolas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "16–17",
+      "texto": "Tentáculos chicoteantes irrompem das mangas de um cultista do caos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "28–29",
+      "texto": "Um homem cai em êxtase e se transforma em um elemental de fogo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Um alçapão no fundo de um beco se abre para o porão de um templo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "50–53",
+      "texto": "Um mendigo pustulento vaga imerso em um delírio febril",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "54–55",
+      "texto": "Místicos queimam um incenso alucinógeno no meio da rua",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Um cultista nas sombras lança um dardo envenenado em um PJ",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "60–61",
+      "texto": "Um orador faz um sermão incitante para uma multidão frenética",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "64–65",
+      "texto": "Cultistas libertinos de Gede distribuem inúmeras taças de vinho",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Um sacerdote com um sorriso forçado dá 5 PO a novos convertidos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "70–71",
+      "texto": "O Desfile dos Nove atrai espectadores e batedores de carteira",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "72–73",
+      "texto": "Um monge ateia fogo em si mesmo e entra em um templo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "Exploradores rivais saem de uma igreja, recém-batizados",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "A Guarda arrasta o agitado Barão Hallin para fora de um templo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Um templário disfarçado de plebeu cuida de um leproso caído",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "84–85",
+      "texto": "Uma mulher grita: \"Tudo será dissolvido!\" e arremessa ácido",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "88–89",
+      "texto": "Um anjo domini surge em um lampejo de luz; ele aponta para um PJ",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "A Fonte de Madeera tem 5% de chance de encerrar uma maldição",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "O Senhor Supremo entra em um templo cercado por 3d6 cavaleiros",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante vende réplicas de vestes sacerdotais",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um alto sacerdote escolhe um PJ para receber uma bênção rara",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "46–47",
+      "texto": "Quatro criminosos mascarados interrompem um rico cortejo fúnebre",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "48–49",
+      "texto": "Durante um casamento, um homem se ergue e grita: \"Eu sou contra!\"",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Os olhos de uma plebeia se tornam brancos e ela profere um augúrio",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "Místicos erguem najas para serem beijadas; chance de ataque de 10%",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "80–81",
+      "texto": "Um sacerdote salpica água benta com um pincel; ela queima caóticos",
+      "followUp": "cena_evento"
+    }
+  ],
+  "cadeia_default": "cena"
 }

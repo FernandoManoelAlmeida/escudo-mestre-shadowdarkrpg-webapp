@@ -9,97 +9,120 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "01",
-      "Um brutamontes das cavernas mutante explode através de uma parede"
-    ],
-    [
-      "36–37",
-      "Um vazamento de gás: todas as fontes de luz explodem e se apagam"
-    ],
-    [
-      "38–39",
-      "Um cubo gelatinoso cheio de itens úteis está preso dentro de um fosso"
-    ],
-    [
-      "48–49",
-      "Um fantasma choroso flutua por perto, distraído em seus lamentos"
-    ],
-    [
-      "68–69",
-      "Um grupo de aranhas irrompe de um saco de ovos translúcidos"
-    ],
-    [
-      "70–71",
-      "Um ogro chamado Lud risca palavras grosseiras na parede"
-    ],
-    [
-      "80–81",
-      "Uma dríade procura sua árvore, que foi cortada por bugbears"
-    ],
-    [
-      "86–87",
-      "Um golem de pedra empilha as mesmas rochas incansavelmente"
-    ],
-    [
-      "88–89",
-      "Dois mantos negros se circundam em um duelo de intimidação"
-    ],
-    [
-      "94–95",
-      "As brasas incandescentes de uma fogueira recente ainda queimam"
-    ],
-    [
-      "96–97",
-      "Um minotauro guia o Mercador Errante por uma trilha"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "00",
-      "O cadáver de um explorador segura um item mágico aleatório"
-    ],
-    [
-      "46–47",
-      "Um estrangulador se esconde acima de uma mochila cheia de pedras"
-    ],
-    [
-      "58–59",
-      "Exploradores rivais guiam um frágil nobre turista em uma “aventura”"
-    ],
-    [
-      "76–77",
-      "Um ettercap tece um casulo de teias em volta de sua presa ainda viva"
-    ],
-    [
-      "82–83",
-      "Um gnomo das profundezas toca sons tenebrosos em fungos ecoantes"
-    ],
-    [
-      "28–29",
-      "Um gorila uivante esmurra e morde um crocodilo que se defende"
-    ],
-    [
-      "32–33",
-      "Um dragão da floresta dorme fora de uma caverna cheia de vinhas"
-    ],
-    [
-      "34–35",
-      "Um troll viscoso se balança entre galhos como um símio"
-    ],
-    [
-      "36–37",
-      "Flores carnívoras rosadas desabrocham e lançam dardos venenosos"
-    ],
-    [
-      "40–41",
-      "Um gigantesco braquiossauro caminha lentamente enquanto pasta"
-    ],
-    [
-      "42–43",
-      "Um braço humano se agita em uma poça escura de areia movediça"
-    ]
+    {
+      "faixa": "01",
+      "texto": "Um brutamontes das cavernas mutante explode através de uma parede",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Um vazamento de gás: todas as fontes de luz explodem e se apagam",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "38–39",
+      "texto": "Um cubo gelatinoso cheio de itens úteis está preso dentro de um fosso",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "48–49",
+      "texto": "Um fantasma choroso flutua por perto, distraído em seus lamentos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "68–69",
+      "texto": "Um grupo de aranhas irrompe de um saco de ovos translúcidos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "70–71",
+      "texto": "Um ogro chamado Lud risca palavras grosseiras na parede",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "80–81",
+      "texto": "Uma dríade procura sua árvore, que foi cortada por bugbears",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "Um golem de pedra empilha as mesmas rochas incansavelmente",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "88–89",
+      "texto": "Dois mantos negros se circundam em um duelo de intimidação",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "As brasas incandescentes de uma fogueira recente ainda queimam",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "Um minotauro guia o Mercador Errante por uma trilha",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "00",
+      "texto": "O cadáver de um explorador segura um item mágico aleatório",
+      "followUp": "item_magico"
+    },
+    {
+      "faixa": "46–47",
+      "texto": "Um estrangulador se esconde acima de uma mochila cheia de pedras",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Exploradores rivais guiam um frágil nobre turista em uma “aventura”",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "Um ettercap tece um casulo de teias em volta de sua presa ainda viva",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Um gnomo das profundezas toca sons tenebrosos em fungos ecoantes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "28–29",
+      "texto": "Um gorila uivante esmurra e morde um crocodilo que se defende",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "32–33",
+      "texto": "Um dragão da floresta dorme fora de uma caverna cheia de vinhas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "34–35",
+      "texto": "Um troll viscoso se balança entre galhos como um símio",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "36–37",
+      "texto": "Flores carnívoras rosadas desabrocham e lançam dardos venenosos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "40–41",
+      "texto": "Um gigantesco braquiossauro caminha lentamente enquanto pasta",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "42–43",
+      "texto": "Um braço humano se agita em uma poça escura de areia movediça",
+      "followUp": "cena_evento"
+    }
   ]
 }

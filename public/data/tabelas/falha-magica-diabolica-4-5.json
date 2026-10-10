@@ -1,0 +1,60 @@
+{
+  "id": "falha-magica-diabolica-4-5",
+  "titulo": "Falhas Diabólicas 4 5",
+  "categoria": "falha-magica",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Efeito"
+  ],
+  "rows": [
+    [
+      "1",
+      "Redemoinho! Role duas vezes e combine ambos os efeitos (role novamente qualquer 1 adicional)."
+    ],
+    [
+      "2",
+      "Ruína! Você sofre 1d8 de dano por grau da magia."
+    ],
+    [
+      "3",
+      "Apodrecimento mental! Você esquece permanentemente uma magia aleatória."
+    ],
+    [
+      "4",
+      "O Homem-salgueiro! Você invoca o Homem-salgueiro (que está furioso com você) em um espaço Perto de você. Ele permanece por 1d6 rodadas antes de desaparecer para o lugar de onde veio."
+    ],
+    [
+      "5",
+      "Diabretes amaldiçoados! Diabretes vindos do inferno gargalham e cercam você, roubam três peças aleatórias do seu equipamento e voam para longe."
+    ],
+    [
+      "6",
+      "Explosão de relâmpago! Você causa 3d6 de dano a si mesmo e a todas as criaturas próximas."
+    ],
+    [
+      "7",
+      "Ferro frio! Estacas de ferro frio são lançadas do reino etéreo, lhe perfurando. Você sofre 2d6 de dano e fica paralisado por 2 rodadas."
+    ],
+    [
+      "8",
+      "Mãe da Noite! Você desagrada à Mãe Sombria e perde a capacidade de conjurar essa magia até se redimir perante ela."
+    ],
+    [
+      "9",
+      "Catatonia! Você encara o nada e não pode realizar nenhuma ação pela próxima hora."
+    ],
+    [
+      "10",
+      "Língua de cachorro! Sua língua se projeta para fora sempre que você tenta conjurar uma magia de um grau aleatório, arruinando a magia. Esse efeito perdura até que você complete um descanso."
+    ],
+    [
+      "11",
+      "Bobagem! Você tem Desvantagem ao conjurar qualquer magia pelas próximas 10 rodadas."
+    ],
+    [
+      "12",
+      "Nêmesis! Em algum lugar, nasce uma criança que crescerá e se tornará um poderoso inimigo jurado contra você."
+    ]
+  ]
+}

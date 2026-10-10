@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import styled from "styled-components";
 import { getTabelaById } from "@/lib/tabelas";
 import type { TabelaIndexEntry } from "@/lib/tabelas";
-import { rollOnTable, type RollTableData } from "@/lib/rollTable";
+import { rollOnTable, effectiveRolagem, type RollTableData } from "@/lib/rollTable";
 import { GeneratorLayout } from "@/components/geradores/GeneratorLayout";
+import {
+  GeneratorActionRow,
+  GeneratorSecondaryLink,
+} from "@/components/geradores/GeneratorActionRow";
 import { RollResultCard } from "@/components/geradores/RollResultCard";
 import { FilterChips } from "@/components/geradores/FilterChips";
 import { FilterPanel, FilterGrid } from "@/components/ui/ListFilters";
@@ -15,20 +18,21 @@ import { regrasTabelaHref } from "@/lib/geradoresConfig";
 import {
   chipLabelForTable,
   isPlaceholderRolagem,
+  isFalhaMagicaModule,
+  isTesourosFaixaModule,
+  falhaMagicaSelectLabel,
+  falhaMagicaTables,
+  labelForFalhaMagica,
+  labelForTesourosFaixa,
   moduleDescriptionForDisplay,
   resultCardTitle,
   rollButtonLabel,
+  rollButtonAriaLabel,
+  tesourosFaixaSelectLabel,
+  tesourosFaixaTables,
 } from "@/lib/geradoresUi";
-
-const Btn = styled.button`
-  padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.md};
-  background: ${({ theme }) => theme.colors.rollButton};
-  color: ${({ theme }) => theme.colors.text};
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  min-height: 44px;
-`;
+import { RollButton } from "@/components/ui/RollButton";
+import { parseDiceTokensFromRolagem } from "@/lib/diceDisplay";
 
 const Hint = styled.p`
   font-size: ${({ theme }) => theme.typography.fontSize.sm};
@@ -47,14 +51,6 @@ const ModInput = styled.input`
   min-height: 44px;
 `;
 
-const RefLink = styled(Link)`
-  display: inline-block;
-  margin-top: ${({ theme }) => theme.spacing.md};
-  font-size: ${({ theme }) => theme.typography.fontSize.sm};
-  color: ${({ theme }) => theme.colors.primary};
-  text-decoration: none;
-`;
-
 type TableGeneratorModuleProps = {
   title: string;
   description?: string;
@@ -66,23 +62,36 @@ export function TableGeneratorModule({
   description,
   tables,
 }: TableGeneratorModuleProps) {
-  const [selectedId, setSelectedId] = useState(tables[0]?.id ?? "");
+  const tesourosFaixa = isTesourosFaixaModule(tables);
+  const falhaMagica = isFalhaMagicaModule(tables);
+  const displayTables = tesourosFaixa
+    ? tesourosFaixaTables(tables)
+    : falhaMagica
+      ? falhaMagicaTables(tables)
+      : tables;
+
+  const [selectedId, setSelectedId] = useState(displayTables[0]?.id ?? "");
   const [data, setData] = useState<RollTableData | null>(null);
   const [modCar, setModCar] = useState(0);
   const [result, setResult] = useState<{
     valor: number;
     texto: string;
     detail?: string;
+    faixa?: string;
+    diceLabel?: string;
   } | null>(null);
 
-  const singleTable = tables.length === 1;
+  const singleTable = displayTables.length === 1;
   const layoutDescription = moduleDescriptionForDisplay(title, description);
 
   useEffect(() => {
-    if (tables.length && !tables.some((t) => t.id === selectedId)) {
-      setSelectedId(tables[0].id);
+    if (
+      displayTables.length &&
+      !displayTables.some((t) => t.id === selectedId)
+    ) {
+      setSelectedId(displayTables[0].id);
     }
-  }, [tables, selectedId]);
+  }, [displayTables, selectedId]);
 
   useEffect(() => {
     if (!selectedId) {
@@ -92,18 +101,20 @@ export function TableGeneratorModule({
     getTabelaById(selectedId).then(setData);
   }, [selectedId]);
 
-  const selected = tables.find((t) => t.id === selectedId);
+  const selected = displayTables.find((t) => t.id === selectedId);
   const needsModCar =
     selected?.rolagem?.toUpperCase().includes("MOD CAR") ?? false;
 
-  const effectiveRolagem =
+  const previewRolagem =
     selected?.rolagem && !isPlaceholderRolagem(selected.rolagem)
       ? selected.rolagem
       : data?.rolagem && !isPlaceholderRolagem(data.rolagem)
         ? data.rolagem
         : undefined;
 
-  if (tables.length === 0) {
+  const rolagemForUi = data ? effectiveRolagem(data) : previewRolagem;
+
+  if (displayTables.length === 0) {
     return (
       <GeneratorLayout title={title} description={layoutDescription}>
         <p>Nenhuma tabela migrada para este módulo. Execute migrate no vault.</p>
@@ -111,14 +122,36 @@ export function TableGeneratorModule({
     );
   }
 
-  const useChips = tables.length > 1 && tables.length <= 6;
+  const useChips =
+    !tesourosFaixa &&
+    !falhaMagica &&
+    displayTables.length > 1 &&
+    displayTables.length <= 6;
+
+  function optionLabel(entry: TabelaIndexEntry): string {
+    if (tesourosFaixa) return labelForTesourosFaixa(entry);
+    if (falhaMagica) return labelForFalhaMagica(entry);
+    return chipLabelForTable(entry, title);
+  }
+
+  function selectFieldLabel(): string {
+    if (tesourosFaixa) return tesourosFaixaSelectLabel(tables);
+    if (falhaMagica) return falhaMagicaSelectLabel();
+    return "Tabela";
+  }
 
   function selectTable(id: string) {
     setSelectedId(id);
     setResult(null);
   }
 
-  const rollLabel = effectiveRolagem ? rollButtonLabel(effectiveRolagem) : "Rolar";
+  const rollLabel = rollButtonLabel(rolagemForUi);
+  const rollAria = rolagemForUi
+    ? rollButtonAriaLabel(rolagemForUi)
+    : "Rolar tabela";
+  const rollParsed = rolagemForUi
+    ? parseDiceTokensFromRolagem(rolagemForUi)
+    : null;
 
   return (
     <GeneratorLayout title={title} description={layoutDescription}>
@@ -126,9 +159,9 @@ export function TableGeneratorModule({
         <FilterPanel aria-label="Escolher tabela">
           {useChips ? (
             <FilterChips
-              options={tables.map((t) => ({
+              options={displayTables.map((t) => ({
                 id: t.id,
-                label: chipLabelForTable(t, title),
+                label: optionLabel(t),
               }))}
               value={selectedId}
               onChange={selectTable}
@@ -137,13 +170,13 @@ export function TableGeneratorModule({
             <FilterGrid $columns={1} $minWidth={0}>
               <SelectField
                 id="tabela-gerador"
-                label="Tabela"
+                label={selectFieldLabel()}
                 value={selectedId}
                 onChange={selectTable}
               >
-                {tables.map((t) => (
+                {displayTables.map((t) => (
                   <option key={t.id} value={t.id}>
-                    {chipLabelForTable(t, title)}
+                    {optionLabel(t)}
                   </option>
                 ))}
               </SelectField>
@@ -162,30 +195,43 @@ export function TableGeneratorModule({
           />
         </Hint>
       )}
-      <Btn
-        type="button"
-        disabled={!data}
-        onClick={() => {
-          if (!data) return;
-          const r = rollOnTable(data, {
-            modifier: needsModCar ? modCar : 0,
-          });
-          const detail =
-            r.modifier !== 0
-              ? `Dados: ${r.diceTotal} + MOD ${r.modifier} = ${r.valor}`
-              : r.diceTotal !== r.valor
-                ? `Dados: ${r.diceTotal}`
-                : undefined;
-          setResult({ valor: r.valor, texto: r.texto, detail });
-        }}
-      >
-        {rollLabel}
-      </Btn>
-      <RefLink href={regrasTabelaHref(selectedId)}>Ver tabela completa</RefLink>
+      <GeneratorActionRow>
+        <RollButton
+          parsed={rollParsed}
+          disabled={!data}
+          aria-label={rollAria}
+          onClick={() => {
+            if (!data) return;
+            const r = rollOnTable(data, {
+              modifier: needsModCar ? modCar : 0,
+            });
+            const detail =
+              r.modifier !== 0
+                ? `Dados: ${r.diceTotal} + MOD ${r.modifier} = ${r.valor}`
+                : r.diceTotal !== r.valor
+                  ? `Dados: ${r.diceTotal}`
+                  : undefined;
+            setResult({
+              valor: r.valor,
+              texto: r.texto,
+              detail,
+              faixa: r.faixa,
+              diceLabel: effectiveRolagem(data),
+            });
+          }}
+        >
+          {rollLabel}
+        </RollButton>
+        <GeneratorSecondaryLink href={regrasTabelaHref(selectedId)}>
+          Ver tabela completa
+        </GeneratorSecondaryLink>
+      </GeneratorActionRow>
       {result && (
         <RollResultCard
           titulo={resultCardTitle(title, singleTable, selected?.titulo)}
+          diceLabel={result.diceLabel}
           valor={result.valor}
+          faixa={result.faixa}
           texto={
             result.detail ? `${result.detail}\n${result.texto}` : result.texto
           }

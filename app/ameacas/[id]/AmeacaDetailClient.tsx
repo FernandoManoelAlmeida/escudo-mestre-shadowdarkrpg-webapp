@@ -7,6 +7,11 @@ import { getAmeacas, getAmeacaById, type Criatura } from "@/lib/ameacas";
 import { OrigemBadge } from "@/components/ameacas/OrigemBadge";
 import { extractAllDiceFormulas, rollFormula } from "@/lib/dice";
 import { useRollToast } from "@/context/RollToastContext";
+import { DiceFormulaIcons } from "@/components/ui/DiceFormulaIcons";
+import {
+  ariaLabelForRoll,
+  parseDiceTokensFromFormula,
+} from "@/lib/diceDisplay";
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
@@ -28,14 +33,21 @@ const Trait = styled.div`
 `;
 
 const RollBtn = styled.button`
+  display: inline-flex;
+  align-items: center;
   margin-left: ${({ theme }) => theme.spacing.sm};
-  padding: 2px 8px;
+  padding: 4px 8px;
   font-size: ${({ theme }) => theme.typography.fontSize.xs};
   background: ${({ theme }) => theme.colors.rollButton};
   color: ${({ theme }) => theme.colors.text};
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  vertical-align: middle;
+
+  img {
+    filter: brightness(0) invert(1);
+  }
 `;
 
 type Props = { id: string };
@@ -82,12 +94,16 @@ export function AmeacaDetailClient({ id }: Props) {
             <RollBtn
               key={f}
               type="button"
+              aria-label={ariaLabelForRoll(f, "formula")}
               onClick={() => {
                 const r = rollFormula(f);
                 if (r) addRoll(r);
               }}
             >
-              {f}
+              <DiceFormulaIcons
+                parsed={parseDiceTokensFromFormula(f)}
+                iconSize={16}
+              />
             </RollBtn>
           ))}
         </Trait>

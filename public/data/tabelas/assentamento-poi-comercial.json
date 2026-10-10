@@ -1,0 +1,29 @@
+{
+  "id": "assentamento-poi-comercial",
+  "titulo": "POI — Distrito Comercial",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-comercial",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Vidente"
+    ],
+    [
+      "2–4",
+      "Mercadorias raras e exóticas"
+    ],
+    [
+      "5",
+      "Apotecário"
+    ],
+    [
+      "6",
+      "Mercado ilícito"
+    ]
+  ]
+}

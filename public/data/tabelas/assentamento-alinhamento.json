@@ -1,0 +1,25 @@
+{
+  "id": "assentamento-alinhamento",
+  "titulo": "Alinhamento do assentamento",
+  "categoria": "assentamentos",
+  "subcategoria": "alinhamento",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1–3",
+      "Ordeiro"
+    ],
+    [
+      "4–5",
+      "Neutro"
+    ],
+    [
+      "6",
+      "Caótico"
+    ]
+  ]
+}

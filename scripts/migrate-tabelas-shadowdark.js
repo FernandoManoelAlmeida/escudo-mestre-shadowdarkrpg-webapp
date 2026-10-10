@@ -5,6 +5,12 @@ const { writeVersion } = require("./write-version");
 
 const PROJECT_ROOT = path.resolve(__dirname, "..");
 const OUT_DIR = path.join(PROJECT_ROOT, "public/data/tabelas");
+const {
+  inferCadeiaForRow,
+  normalizeCadeiaCell,
+  cadeiaToFollowUpKind,
+  defaultCadeiaForTable,
+} = require("./encounter-cadeia-lib");
 
 function slug(text) {
   return text
@@ -51,6 +57,42 @@ function parseTableFromBody(body) {
   return { headers, rows };
 }
 
+function buildRollRows(id, fm, table) {
+  const headers = table.headers;
+  const cadeiaCol = headers.findIndex((h) => /^cadeia$/i.test(h));
+  const resultadoCol = headers.findIndex((h) => /resultado/i.test(h));
+  const hasEncounterMeta =
+    id.startsWith("encontro-") &&
+    ![
+      "teste-encontro",
+      "distancia-inicial-encontro",
+      "atividade-criaturas",
+      "nivel-perigo",
+    ].includes(id);
+
+  if (!hasEncounterMeta && cadeiaCol < 0) {
+    return table.rows;
+  }
+
+  const textCol = resultadoCol >= 0 ? resultadoCol : 1;
+  const tableDefault = fm.cadeia_default
+    ? normalizeCadeiaCell(fm.cadeia_default)
+    : defaultCadeiaForTable(id);
+
+  return table.rows.map((cells) => {
+    const faixa = cells[0] ?? "";
+    const texto = cells[textCol] ?? cells[1] ?? "";
+    let cadeia =
+      cadeiaCol >= 0 && cells[cadeiaCol]
+        ? normalizeCadeiaCell(cells[cadeiaCol])
+        : null;
+    if (!cadeia && tableDefault) cadeia = tableDefault;
+    if (!cadeia) cadeia = inferCadeiaForRow(id, texto);
+    const followUp = cadeiaToFollowUpKind(cadeia);
+    return { faixa, texto, followUp };
+  });
+}
+
 function metaFromSkillBody(body, filePath) {
   const nome = body.match(/\*\*Nome:\*\*\s*(\S+)/)?.[1];
   const titulo = body.match(/^#\s+(.+)/m)?.[1]?.trim();
@@ -94,14 +136,16 @@ function main() {
     const subcategoria =
       fm.subcategoria ||
       (categoria === "encontros" ? path.basename(path.dirname(file)) : undefined);
+    const rollRows = buildRollRows(id, fm, table);
     const entry = {
       id,
       titulo: fm.titulo || skillMeta.titulo,
       categoria,
       subcategoria,
       rolagem: fm.rolagem || skillMeta.rolagem,
-      headers: table.headers,
-      rows: table.rows,
+      headers: table.headers.filter((h) => !/^cadeia$/i.test(h)),
+      rows: rollRows,
+      ...(fm.cadeia_default ? { cadeia_default: fm.cadeia_default } : {}),
     };
     const outFile = path.join(OUT_DIR, `${id}.json`);
     fs.writeFileSync(outFile, JSON.stringify(entry, null, 2));
@@ -127,4 +171,8 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { parseTableFromBody, metaFromSkillBody };
+module.exports = {
+  parseTableFromBody,
+  metaFromSkillBody,
+  buildRollRows,
+};

@@ -9,105 +9,131 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "46–47",
-      "Um dono de loja sussurra sobre “mercadorias exóticas” à venda"
-    ],
-    [
-      "50–53",
-      "Uma briga de 2d6 plebeus bêbados transborda para fora da taverna"
-    ],
-    [
-      "56–57",
-      "Um ferreiro joga ferraduras quentes em uma pilha perto dos PJs"
-    ],
-    [
-      "58–59",
-      "Uma velha cega mostra seu “gato” (um rato gigante feroz)"
-    ],
-    [
-      "62–63",
-      "Um mercenário a cavalo arrasta um homem ao tribunal de débitos"
-    ],
-    [
-      "64–65",
-      "Dois mendigos se estapeiam por um espeto de rato queimado"
-    ],
-    [
-      "68–69",
-      "Um mendigo desnutrido é, de fato, 3 kobolds em um saco de juta"
-    ],
-    [
-      "70–71",
-      "Um oficial e quatro guardas arrastam um homem relutante"
-    ],
-    [
-      "72–73",
-      "Dois treinadores de cães rivais perdem o controle de seus mastins"
-    ],
-    [
-      "74–75",
-      "Exploradores rivais acusam os PJs de saquear no “território” deles"
-    ],
-    [
-      "76–77",
-      "Um grande grupo de gatos se reúne sob as docas ou varandas"
-    ],
-    [
-      "78–79",
-      "Um carregador de tochas segue os PJs, implorando por trabalho"
-    ],
-    [
-      "84–85",
-      "Três criminosos encapuzados arrastam um grande saco de um cortiço"
-    ],
-    [
-      "86–87",
-      "Um ser de olhos vermelhos observa a partir de uma janela escura"
-    ],
-    [
-      "90–91",
-      "Uma refinaria descarta um barril de gordura rançosa (óleo x10)"
-    ],
-    [
-      "92–93",
-      "Velha Esmeralda distribui vinho quente com especiarias (cura 1d4)"
-    ],
-    [
-      "94–95",
-      "Um mendigo cheio de pústulas é, na verdade, o Duque disfarçado"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante vende a escritura de uma velha loja"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "00",
-      "Um item mágico derrubado brilha dentro de um esgoto imundo"
-    ],
-    [
-      "54–55",
-      "Telhas de barro despencam do telhado desgastado de um armazém"
-    ],
-    [
-      "60–61",
-      "Uma trupe de malabaristas entorna cerveja e joga facas loucamente"
-    ],
-    [
-      "66–67",
-      "Uma nascente de água limpa emerge entre paralelepípedos rachados"
-    ],
-    [
-      "80–81",
-      "Um grito agudo pode ser ouvido vindo dos galpões cobertos de mofo"
-    ],
-    [
-      "82–83",
-      "Lady Unwin pergunta aos PJs como chegar ao sórdido Rato Vermelho"
-    ]
-  ]
+    {
+      "faixa": "46–47",
+      "texto": "Um dono de loja sussurra sobre “mercadorias exóticas” à venda",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "50–53",
+      "texto": "Uma briga de 2d6 plebeus bêbados transborda para fora da taverna",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Um ferreiro joga ferraduras quentes em uma pilha perto dos PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Uma velha cega mostra seu “gato” (um rato gigante feroz)",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Um mercenário a cavalo arrasta um homem ao tribunal de débitos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "64–65",
+      "texto": "Dois mendigos se estapeiam por um espeto de rato queimado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "68–69",
+      "texto": "Um mendigo desnutrido é, de fato, 3 kobolds em um saco de juta",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "70–71",
+      "texto": "Um oficial e quatro guardas arrastam um homem relutante",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "72–73",
+      "texto": "Dois treinadores de cães rivais perdem o controle de seus mastins",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "Exploradores rivais acusam os PJs de saquear no “território” deles",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "Um grande grupo de gatos se reúne sob as docas ou varandas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "Um carregador de tochas segue os PJs, implorando por trabalho",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "84–85",
+      "texto": "Três criminosos encapuzados arrastam um grande saco de um cortiço",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "Um ser de olhos vermelhos observa a partir de uma janela escura",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Uma refinaria descarta um barril de gordura rançosa (óleo x10)",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Velha Esmeralda distribui vinho quente com especiarias (cura 1d4)",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "Um mendigo cheio de pústulas é, na verdade, o Duque disfarçado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante vende a escritura de uma velha loja",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um item mágico derrubado brilha dentro de um esgoto imundo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "54–55",
+      "texto": "Telhas de barro despencam do telhado desgastado de um armazém",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "60–61",
+      "texto": "Uma trupe de malabaristas entorna cerveja e joga facas loucamente",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Uma nascente de água limpa emerge entre paralelepípedos rachados",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "80–81",
+      "texto": "Um grito agudo pode ser ouvido vindo dos galpões cobertos de mofo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Lady Unwin pergunta aos PJs como chegar ao sórdido Rato Vermelho",
+      "followUp": "cena_evento"
+    }
+  ],
+  "cadeia_default": "cena"
 }

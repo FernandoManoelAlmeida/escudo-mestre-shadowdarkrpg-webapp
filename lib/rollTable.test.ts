@@ -3,6 +3,7 @@ import {
   parseDiceFormula,
   parseRangeCell,
   findRowIndexForValue,
+  findRowMatchForValue,
   inferRolagemFromTable,
   rollOnTable,
   type RollTableData,
@@ -63,6 +64,38 @@ describe("rollTable", () => {
     expect(r.texto).toContain("Desconfiado");
   });
 
+  it("findRowMatchForValue d100 esparso — buraco não cai na linha 00", () => {
+    const rows = [
+      ["01", "Kraken"],
+      ["24–25", "Ratos"],
+      ["00", "Oásis"],
+    ];
+    expect(findRowMatchForValue(rows, 3)).toBeNull();
+    expect(findRowMatchForValue(rows, 100)?.faixa).toBe("00");
+    expect(findRowMatchForValue(rows, 25)?.index).toBe(1);
+  });
+
+  it("rollOnTable d100 esparso re-roda até faixa válida", () => {
+    const table: RollTableData = {
+      id: "encontro-artico",
+      titulo: "Ártico",
+      categoria: "encontro",
+      rolagem: "d100",
+      headers: ["d20", "Resultado"],
+      rows: [
+        ["01", "Kraken"],
+        ["00", "Oásis"],
+      ],
+    };
+    vi.spyOn(Math, "random")
+      .mockReturnValueOnce(0.02)
+      .mockReturnValueOnce(0);
+    const r = rollOnTable(table);
+    expect(r.matched).toBe(true);
+    expect(r.texto).toBe("Kraken");
+    expect(r.valor).toBe(1);
+  });
+
   it("rollOnTable rumores d100 faixa 83", () => {
     const table: RollTableData = {
       id: "rumores-taverna",
@@ -76,8 +109,9 @@ describe("rollTable", () => {
         ["00", "Dragão"],
       ],
     };
-    const linha = findRowIndexForValue(table.rows, 83);
-    expect(table.rows[linha][1]).toBe("Torre mecânica");
+    const match = findRowMatchForValue(table.rows, 83);
+    expect(match?.index).toBe(1);
+    expect((table.rows[match!.index] as string[])[1]).toBe("Torre mecânica");
   });
 
   it("rollOnTable oráculo SoloDark d20 faixas 9, 10 e 20", () => {

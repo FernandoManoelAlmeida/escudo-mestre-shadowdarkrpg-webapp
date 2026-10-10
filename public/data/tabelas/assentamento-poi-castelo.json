@@ -1,0 +1,29 @@
+{
+  "id": "assentamento-poi-castelo",
+  "titulo": "POI — Distrito do Castelo",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-castelo",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Casa de banho real"
+    ],
+    [
+      "2–3",
+      "Quartel da Guarda da Cidade"
+    ],
+    [
+      "4–5",
+      "Teatro ou coliseu"
+    ],
+    [
+      "6",
+      "Castelo real"
+    ]
+  ]
+}

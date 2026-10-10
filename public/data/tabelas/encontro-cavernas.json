@@ -9,85 +9,105 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "42–43",
-      "Um kobold com o rabo preso em uma armadilha de urso pede socorro"
-    ],
-    [
-      "46–47",
-      "Um drider ferido e exilado desliza rapidamente pelo teto"
-    ],
-    [
-      "48–49",
-      "Um elemental de água rodopia preso em uma poça rasa"
-    ],
-    [
-      "68–69",
-      "Um troll arrasta o cadáver de um explorador rival pela perna"
-    ],
-    [
-      "70–71",
-      "Uma cobra gigante descansa em uma série de túneis nas paredes"
-    ],
-    [
-      "74–75",
-      "Exploradores rivais fogem de um grupo de aranhas sibilantes"
-    ],
-    [
-      "78–79",
-      "Uma aparição paira sobre seu próprio corpo recém-falecido"
-    ],
-    [
-      "80–81",
-      "Uma serpe surge bufando pela câmara, arrastando um cervo"
-    ],
-    [
-      "90–91",
-      "Uma patrulha de 2d4 anões assa carneiro ao redor de uma fogueira"
-    ],
-    [
-      "92–93",
-      "Uma nuvem de morcegos assustados rodopiando para a superfície"
-    ],
-    [
-      "94–95",
-      "O chão treme quando um bulete subterrâneo atravessa os túneis"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante explora cavernas à caça de trufas subterrâneas"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "62–63",
-      "Um elfo guerreiro rastreia um otyugh ferido que fugiu caverna adentro"
-    ],
-    [
-      "66–67",
-      "Pinturas rupestres luminosas de alces correndo emitem uma luz suave"
-    ],
-    [
-      "76–77",
-      "A escultura de um anão de pedra fala magicamente com transeuntes"
-    ],
-    [
-      "82–83",
-      "Binkin e Bobbin, halflings gêmeos, tropeçam para dentro da câmara"
-    ],
-    [
-      "00",
-      "Um orc místico (O) oferece 2 poções aleatórias com efeitos benéficos"
-    ],
-    [
-      "42–43",
-      "Um escorpião gigante se esgueira atrás de um goblin meditando"
-    ],
-    [
-      "44–45",
-      "A falsa miragem de um oásis cintila à distância"
-    ]
+    {
+      "faixa": "42–43",
+      "texto": "Um kobold com o rabo preso em uma armadilha de urso pede socorro",
+      "followUp": "armadilha"
+    },
+    {
+      "faixa": "46–47",
+      "texto": "Um drider ferido e exilado desliza rapidamente pelo teto",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "48–49",
+      "texto": "Um elemental de água rodopia preso em uma poça rasa",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "68–69",
+      "texto": "Um troll arrasta o cadáver de um explorador rival pela perna",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "70–71",
+      "texto": "Uma cobra gigante descansa em uma série de túneis nas paredes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "Exploradores rivais fogem de um grupo de aranhas sibilantes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "Uma aparição paira sobre seu próprio corpo recém-falecido",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "80–81",
+      "texto": "Uma serpe surge bufando pela câmara, arrastando um cervo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Uma patrulha de 2d4 anões assa carneiro ao redor de uma fogueira",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Uma nuvem de morcegos assustados rodopiando para a superfície",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "O chão treme quando um bulete subterrâneo atravessa os túneis",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante explora cavernas à caça de trufas subterrâneas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Um elfo guerreiro rastreia um otyugh ferido que fugiu caverna adentro",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Pinturas rupestres luminosas de alces correndo emitem uma luz suave",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "A escultura de um anão de pedra fala magicamente com transeuntes",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Binkin e Bobbin, halflings gêmeos, tropeçam para dentro da câmara",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um orc místico (O) oferece 2 poções aleatórias com efeitos benéficos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "42–43",
+      "texto": "Um escorpião gigante se esgueira atrás de um goblin meditando",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "44–45",
+      "texto": "A falsa miragem de um oásis cintila à distância",
+      "followUp": "cena_evento"
+    }
   ]
 }

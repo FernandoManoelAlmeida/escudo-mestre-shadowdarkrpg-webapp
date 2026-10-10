@@ -1,0 +1,60 @@
+{
+  "id": "falha-magica-mago-3-4",
+  "titulo": "Falha Mágica Mago 3 4",
+  "categoria": "falha-magica",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Efeito"
+  ],
+  "rows": [
+    [
+      "1",
+      "Devastação! Role duas vezes e combine ambos os efeitos (role novamente qualquer 1 adicional)"
+    ],
+    [
+      "2",
+      "Explosão em área! Você e todas as criaturas que estiverem Perto sofrem 2d6 de dano"
+    ],
+    [
+      "3",
+      "Refração dobrada! Você atinge a si mesmo e ao seu aliado mais próximo com duas cópias idênticas da magia"
+    ],
+    [
+      "4",
+      "Você errou o encantamento! Você conjura uma magia aleatória a partir de suas magias conhecidas nos mesmos alvos, até mesmo se isso normalmente não for possível"
+    ],
+    [
+      "5",
+      "Furto etéreo! Dois itens aleatórios do seu equipamento desaparecem para sempre"
+    ],
+    [
+      "6",
+      "Arcano-mutagênico! Você deve ter sucesso em um teste de Constituição CD 12, ou um atributo aleatório cairá para 3 (-4) até que você complete um descanso"
+    ],
+    [
+      "7",
+      "Bum! Você abre um buraco no chão com 9 m de profundidade, cujo centro é você. Você e todas as criaturas que estiverem Perto devem ter sucesso em um teste de Destreza CD 15 ou cairão nele"
+    ],
+    [
+      "8",
+      "Petrificação! 1d4 membros de seu corpo se petrificam pelas próximas 24 horas"
+    ],
+    [
+      "9",
+      "Estupefação! Você perde a habilidade de conjurar todas as magias do mesmo grau até que complete um descanso"
+    ],
+    [
+      "10",
+      "Não pode ser desvisto! Você deve ter sucesso em um teste de Sabedoria CD 12 ou irá delirar durante 1d10 rodadas"
+    ],
+    [
+      "11",
+      "Energias radioativas! Você é circundado por energias repulsivas, atraindo a hostilidade e os ataques de todos os inimigos que possam vê-lo pelas próximas 1d4 rodadas"
+    ],
+    [
+      "12",
+      "Canalização incontida! Você tem Desvantagem na conjuração de magias do mesmo grau e graus inferiores por 10 rodadas"
+    ]
+  ]
+}

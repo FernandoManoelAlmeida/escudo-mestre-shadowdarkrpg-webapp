@@ -5,13 +5,18 @@ import Link from "next/link";
 import styled from "styled-components";
 import { getTabelasIndex, getTabelaById } from "@/lib/tabelas";
 import type { TabelaIndexEntry } from "@/lib/tabelas";
-import { rollOnTable, type RollTableData } from "@/lib/rollTable";
+import { rollOnTable, effectiveRolagem, type RollTableData } from "@/lib/rollTable";
 import {
-  classifyEncounterResult,
+  classifyEncounterRow,
   buildEncounterFollowUps,
+  type EncounterKind,
 } from "@/lib/encounterFollowUp";
 import { regrasTabelaHref } from "@/lib/geradoresConfig";
 import { GeneratorLayout } from "@/components/geradores/GeneratorLayout";
+import {
+  GeneratorActionRow,
+  GeneratorSecondaryLink,
+} from "@/components/geradores/GeneratorActionRow";
 import { RollResultCard } from "@/components/geradores/RollResultCard";
 import { FilterChips } from "@/components/geradores/FilterChips";
 import { FilterPanel, FilterGrid } from "@/components/ui/ListFilters";
@@ -26,7 +31,6 @@ const Btn = styled.button`
   border-radius: 8px;
   cursor: pointer;
   min-height: 44px;
-  margin-right: ${({ theme }) => theme.spacing.sm};
 `;
 
 const Section = styled.section`
@@ -58,7 +62,13 @@ const MissingNote = styled.p`
   margin-top: ${({ theme }) => theme.spacing.sm};
 `;
 
-type StepResult = { label: string; valor: number; texto: string };
+type StepResult = {
+  label: string;
+  valor: number;
+  texto: string;
+  faixa?: string;
+  diceLabel?: string;
+};
 
 function isLocalEncontro(t: TabelaIndexEntry) {
   if (
@@ -71,15 +81,20 @@ function isLocalEncontro(t: TabelaIndexEntry) {
   ) {
     return false;
   }
-  return (
-    t.id.startsWith("encontro-") &&
-    ![
-      "teste-encontro",
-      "distancia-inicial-encontro",
-      "atividade-criaturas",
-      "nivel-perigo",
-    ].includes(t.id)
-  );
+  return t.id.startsWith("encontro-");
+}
+
+function parseFollowUpKind(raw?: string): EncounterKind | undefined {
+  if (!raw) return undefined;
+  const kinds: EncounterKind[] = [
+    "criatura",
+    "armadilha",
+    "tesouro",
+    "item_magico",
+    "cena_evento",
+    "combinar",
+  ];
+  return kinds.includes(raw as EncounterKind) ? (raw as EncounterKind) : undefined;
 }
 
 async function rollFollowUp(
@@ -94,7 +109,13 @@ async function rollFollowUp(
     };
   }
   const r = rollOnTable(t);
-  return { label, valor: r.valor, texto: r.texto };
+  return {
+    label,
+    valor: r.valor,
+    texto: r.texto,
+    faixa: r.faixa,
+    diceLabel: effectiveRolagem(t),
+  };
 }
 
 async function resolveEncounterFromLocal(
@@ -104,12 +125,17 @@ async function resolveEncounterFromLocal(
 ): Promise<boolean> {
   const r = rollOnTable(localTable);
   steps.push({
-    label: "Encontro no local",
+    label: "Encontro",
     valor: r.valor,
     texto: r.texto,
+    faixa: r.faixa,
+    diceLabel: effectiveRolagem(localTable),
   });
 
-  const classification = classifyEncounterResult(r.texto);
+  const classification = classifyEncounterRow(
+    r.texto,
+    parseFollowUpKind(r.followUp),
+  );
 
   if (classification.kind === "combinar") {
     await resolveEncounterFromLocal(localTable, steps, notes);
@@ -172,10 +198,16 @@ export default function EncontrosPage() {
   return (
     <GeneratorLayout
       title="Encontros"
-      description="Bioma → passos do Livro quando aplicam (criaturas, armadilhas, tesouro). Reação à parte."
+      description="Escolha o bioma e role o encontro. Distância e atividade só quando a linha pedir; armadilha, tesouro e combinar seguem o Livro."
     >
       <Section>
         <StepTitle>Local / bioma</StepTitle>
+        <Hint>
+          Cenas urbanas e eventos narrativos param no resultado principal. Para
+          criaturas errantes com distância e atividade, use tabelas de exploração
+          selvagem ou masmorra. Reação (2d6 + MOD CAR):{" "}
+          <InlineLink href="/geradores/reacao">gerador de reação</InlineLink>.
+        </Hint>
         {locais.length === 0 ? (
           <p>Nenhuma tabela de encontro por local migrada.</p>
         ) : (
@@ -204,35 +236,29 @@ export default function EncontrosPage() {
             )}
           </FilterPanel>
         )}
-        <Btn
-          type="button"
-          disabled={!localTable}
-          onClick={() => {
-            if (!localTable) return;
-            const r = rollOnTable(localTable);
-            setChain([
-              { label: "Encontro no local", valor: r.valor, texto: r.texto },
-            ]);
-            setNotes([]);
-            setShowReacao(false);
-          }}
-        >
-          Rolar só o local
-        </Btn>
-      </Section>
-
-      <Section>
-        <StepTitle>Cadeia completa</StepTitle>
-        <Btn type="button" disabled={!localTable} onClick={() => void runChain()}>
-          Rolar cadeia
-        </Btn>
-        <InlineLink href="/regras/tabelas" style={{ marginLeft: 8 }}>
-          Ver tabelas
-        </InlineLink>
+        <GeneratorActionRow>
+          <Btn
+            type="button"
+            disabled={!localTable}
+            onClick={() => void runChain()}
+          >
+            Rolar encontro
+          </Btn>
+          <GeneratorSecondaryLink href="/regras/tabelas">
+            Ver tabelas
+          </GeneratorSecondaryLink>
+        </GeneratorActionRow>
       </Section>
 
       {chain.map((s, i) => (
-        <RollResultCard key={i} titulo={s.label} valor={s.valor} texto={s.texto} />
+        <RollResultCard
+          key={i}
+          titulo={s.label}
+          diceLabel={s.diceLabel}
+          valor={s.valor}
+          faixa={s.faixa}
+          texto={s.texto}
+        />
       ))}
 
       {notes.map((n, i) => (

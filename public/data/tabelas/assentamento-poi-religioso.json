@@ -1,0 +1,33 @@
+{
+  "id": "assentamento-poi-religioso",
+  "titulo": "POI — Distrito Religioso",
+  "categoria": "assentamentos",
+  "subcategoria": "poi-religioso",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Templo arruinado"
+    ],
+    [
+      "2–3",
+      "Capela a uma divindade menor"
+    ],
+    [
+      "4",
+      "Santuário proibido"
+    ],
+    [
+      "5",
+      "Templo a um deus maior"
+    ],
+    [
+      "6",
+      "Local sagrado e reverenciado"
+    ]
+  ]
+}

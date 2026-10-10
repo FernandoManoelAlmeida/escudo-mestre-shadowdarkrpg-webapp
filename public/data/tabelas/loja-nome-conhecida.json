@@ -1,0 +1,135 @@
+{
+  "id": "loja-nome-conhecida",
+  "titulo": "Nome da loja",
+  "categoria": "lojas",
+  "subcategoria": "nome",
+  "rolagem": "d20",
+  "headers": [
+    "d20",
+    "Nome (1)",
+    "Nome (2)",
+    "Conhecida por"
+  ],
+  "rows": [
+    [
+      "1",
+      "Informante",
+      "e Filhos",
+      "Proprietário antigo e amado"
+    ],
+    [
+      "2",
+      "O Sapo",
+      "Imperial",
+      "Compra itens de valor"
+    ],
+    [
+      "3",
+      "O Martelo",
+      "Robusto",
+      "Cobra a mais de clientes ocasionais"
+    ],
+    [
+      "4",
+      "Mercadorias",
+      "de Rosa",
+      "Fachada para a Guilda dos Ladrões"
+    ],
+    [
+      "5",
+      "As Filhas",
+      "do Rei",
+      "O gato residente, Crumpet"
+    ],
+    [
+      "6",
+      "Bugigangas",
+      "e a Raposa",
+      "Uma senha é necessária para entrar"
+    ],
+    [
+      "7",
+      "O Castelo",
+      "Nobre",
+      "Cerveja grátis em qualquer compra"
+    ],
+    [
+      "8",
+      "Coisas Refinadas",
+      "de Sylvia",
+      "Guarda-costas fortemente armados"
+    ],
+    [
+      "9",
+      "Curiosidades",
+      "do Amanhecer",
+      "Paga bem por objetos curiosos"
+    ],
+    [
+      "10",
+      "O Besouro",
+      "da Esquina",
+      "Sala secreta por trás de uma estante"
+    ],
+    [
+      "11",
+      "Armazém",
+      "de Grigor",
+      "Receptar mercadorias ilícitas"
+    ],
+    [
+      "12",
+      "Fortaleza",
+      "Real",
+      "Toca em um gongo a cada venda"
+    ],
+    [
+      "13",
+      "Moedas",
+      "e Coroa",
+      "Mercadorias de lugares distantes"
+    ],
+    [
+      "14",
+      "A Lareira",
+      "de Ralina",
+      "Itens ruins e baratos"
+    ],
+    [
+      "15",
+      "A Roda",
+      "do Vilarejo",
+      "Acusar os clientes de roubo"
+    ],
+    [
+      "16",
+      "Mercadoria",
+      "Dourado",
+      "Mercadorias de origem duvidosa"
+    ],
+    [
+      "17",
+      "O Mercado",
+      "e as Botas",
+      "Papagaio falante do proprietário"
+    ],
+    [
+      "18",
+      "O Lampião",
+      "de Marvolo",
+      "Estátua de bronze de um diabo"
+    ],
+    [
+      "19",
+      "Vendíveis",
+      "Alegre",
+      "É mal-assombrada"
+    ],
+    [
+      "20",
+      "Os Estoques",
+      "de Jade",
+      "Problema sério com roedores"
+    ]
+  ]
+}

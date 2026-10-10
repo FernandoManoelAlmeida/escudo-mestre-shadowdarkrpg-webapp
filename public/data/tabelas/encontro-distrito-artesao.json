@@ -9,117 +9,146 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "32–33",
-      "Um comerciante entrega um cálice de ouro a um PJ e grita: “ladrão!”"
-    ],
-    [
-      "34–35",
-      "Uma mantícora desorientada cai do céu em uma praça movimentada"
-    ],
-    [
-      "42–43",
-      "Uma bigorna sustentada por cordas cai em direção a um transeunte"
-    ],
-    [
-      "48–49",
-      "Um cliente enfurecido está destruindo tudo dentro de uma olaria"
-    ],
-    [
-      "54–55",
-      "Rebeldes derrubam a estátua do Senhor Supremo sobre a multidão"
-    ],
-    [
-      "58–59",
-      "Um nobre velho e bêbado desafia um PJ para um duelo até a morte"
-    ],
-    [
-      "62–63",
-      "Um careca de óculos observa os PJs e faz anotações"
-    ],
-    [
-      "66–67",
-      "Um objeto brilhante (olho de crocodilo) reluz dentro de um bueiro"
-    ],
-    [
-      "68–69",
-      "Espectadores zombam, jogam tomates e atormentam um bardo"
-    ],
-    [
-      "70–71",
-      "Uma mulher de manto com capuz arranca cartazes de procurado"
-    ],
-    [
-      "74–75",
-      "No Festival das Recompensas, pessoas são chicoteadas com juncos"
-    ],
-    [
-      "76–77",
-      "Uma estátua de Ord em bronze pisca e aponta para uma taverna"
-    ],
-    [
-      "78–79",
-      "Um mímico de rua segue um dos PJs, imitando suas ações"
-    ],
-    [
-      "80–81",
-      "Um mendigo ergue uma tigela; dentro, há um dedo recém cortado"
-    ],
-    [
-      "84–85",
-      "Um assador de perus oferece uma coxa grátis para o lutador mais forte"
-    ],
-    [
-      "86–87",
-      "Um membro solitário da Guarda da Cidade tenta furtar um colar"
-    ],
-    [
-      "88–89",
-      "Um grupo de mulheres persegue um halfling carregando uma torta"
-    ],
-    [
-      "90–91",
-      "Uma voz sussurrante chama um PJ a partir de um poço escuro"
-    ],
-    [
-      "92–93",
-      "Um raio de sol revela uma porta secreta no fundo de um beco vazio"
-    ],
-    [
-      "96–97",
-      "O Mercador Errante surge com uma poção para vender"
-    ],
-    [
-      "98–99",
-      "Role dois encontros e combine os resultados (role de novo 98–99)"
-    ],
-    [
-      "46–47",
-      "Três halflings com jaquetas longas vendem \"tônico” (água de esgoto)"
-    ],
-    [
-      "56–57",
-      "Um transeunte cai morto por um dardo venenoso destinado a um PJ"
-    ],
-    [
-      "60–61",
-      "Uma praça sedia um evento para bardos: uma competição de insultos"
-    ],
-    [
-      "64–65",
-      "Uma mulher nervosa passa um bilhete a um PJ: “Eles estão de olho!”"
-    ],
-    [
-      "82–83",
-      "Um sapateiro dança pelas ruas usando um par de botas amaldiçoadas"
-    ],
-    [
-      "94–95",
-      "Exploradores rivais desafiam o grupo para uma competição de bebidas"
-    ],
-    [
-      "00",
-      "Um avaliador revela que a arma de um dos PJs é, na verdade, mágica"
-    ]
-  ]
+    {
+      "faixa": "32–33",
+      "texto": "Um comerciante entrega um cálice de ouro a um PJ e grita: “ladrão!”",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "34–35",
+      "texto": "Uma mantícora desorientada cai do céu em uma praça movimentada",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "42–43",
+      "texto": "Uma bigorna sustentada por cordas cai em direção a um transeunte",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "48–49",
+      "texto": "Um cliente enfurecido está destruindo tudo dentro de uma olaria",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "54–55",
+      "texto": "Rebeldes derrubam a estátua do Senhor Supremo sobre a multidão",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Um nobre velho e bêbado desafia um PJ para um duelo até a morte",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "Um careca de óculos observa os PJs e faz anotações",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "66–67",
+      "texto": "Um objeto brilhante (olho de crocodilo) reluz dentro de um bueiro",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "68–69",
+      "texto": "Espectadores zombam, jogam tomates e atormentam um bardo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "70–71",
+      "texto": "Uma mulher de manto com capuz arranca cartazes de procurado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "74–75",
+      "texto": "No Festival das Recompensas, pessoas são chicoteadas com juncos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "76–77",
+      "texto": "Uma estátua de Ord em bronze pisca e aponta para uma taverna",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "78–79",
+      "texto": "Um mímico de rua segue um dos PJs, imitando suas ações",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "80–81",
+      "texto": "Um mendigo ergue uma tigela; dentro, há um dedo recém cortado",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "84–85",
+      "texto": "Um assador de perus oferece uma coxa grátis para o lutador mais forte",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "86–87",
+      "texto": "Um membro solitário da Guarda da Cidade tenta furtar um colar",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "88–89",
+      "texto": "Um grupo de mulheres persegue um halfling carregando uma torta",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "90–91",
+      "texto": "Uma voz sussurrante chama um PJ a partir de um poço escuro",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "92–93",
+      "texto": "Um raio de sol revela uma porta secreta no fundo de um beco vazio",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "96–97",
+      "texto": "O Mercador Errante surge com uma poção para vender",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "98–99",
+      "texto": "Role dois encontros e combine os resultados (role de novo 98–99)",
+      "followUp": "combinar"
+    },
+    {
+      "faixa": "46–47",
+      "texto": "Três halflings com jaquetas longas vendem \"tônico” (água de esgoto)",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Um transeunte cai morto por um dardo venenoso destinado a um PJ",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "60–61",
+      "texto": "Uma praça sedia um evento para bardos: uma competição de insultos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "64–65",
+      "texto": "Uma mulher nervosa passa um bilhete a um PJ: “Eles estão de olho!”",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "82–83",
+      "texto": "Um sapateiro dança pelas ruas usando um par de botas amaldiçoadas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "94–95",
+      "texto": "Exploradores rivais desafiam o grupo para uma competição de bebidas",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "00",
+      "texto": "Um avaliador revela que a arma de um dos PJs é, na verdade, mágica",
+      "followUp": "cena_evento"
+    }
+  ],
+  "cadeia_default": "cena"
 }

@@ -1,0 +1,135 @@
+{
+  "id": "assentamento-nome-exemplos",
+  "titulo": "Nomes de assentamento (exemplos)",
+  "categoria": "assentamentos",
+  "subcategoria": "nome-exemplos",
+  "rolagem": "d20",
+  "headers": [
+    "d20",
+    "Exemplo 1",
+    "Exemplo 2",
+    "Exemplo 3"
+  ],
+  "rows": [
+    [
+      "1",
+      "Reduto de Bruga",
+      "Feira Nova",
+      "Doraine"
+    ],
+    [
+      "2",
+      "Última Vigília",
+      "Fortaleza de Ivan",
+      "Meridia"
+    ],
+    [
+      "3",
+      "Água Negra",
+      "Galina",
+      "Portão do Rei"
+    ],
+    [
+      "4",
+      "Ostlin",
+      "Lampião Aceso",
+      "Myrkhos"
+    ],
+    [
+      "5",
+      "Árvore Caída",
+      "Crista do Corvo",
+      "Rularn"
+    ],
+    [
+      "6",
+      "Vorn",
+      "Ponte de Ferro",
+      "Ordos"
+    ],
+    [
+      "7",
+      "Condado da Colina",
+      "Skalvin",
+      "Thane"
+    ],
+    [
+      "8",
+      "Abrigo da Noite",
+      "Toresk",
+      "Rahgbat"
+    ],
+    [
+      "9",
+      "Reduto Marin",
+      "Colina das Botas",
+      "Salinas"
+    ],
+    [
+      "10",
+      "Muro Quebrado",
+      "Vila das Névoas",
+      "Cais do Leste"
+    ],
+    [
+      "11",
+      "Torre Cinzenta",
+      "Campo dos Carrascos",
+      "Vau Profundo"
+    ],
+    [
+      "12",
+      "Santuário Velho",
+      "Passagem Estreita",
+      "Porto de Vidro"
+    ],
+    [
+      "13",
+      "Vale dos Corvos",
+      "Ribeira Alta",
+      "Moinho do Norte"
+    ],
+    [
+      "14",
+      "Cidade das Pontes",
+      "Bosque Escuro",
+      "Forte do Sal"
+    ],
+    [
+      "15",
+      "Lago Negro",
+      "Cruzamento",
+      "Morro do Sino"
+    ],
+    [
+      "16",
+      "Pedra Alta",
+      "Vila do Mercador",
+      "Costa Brava"
+    ],
+    [
+      "17",
+      "Ruína do Rei",
+      "Campo de Cinzas",
+      "Enseada Quieta"
+    ],
+    [
+      "18",
+      "Três Irmãos",
+      "Vale do Trovão",
+      "Passo do Lobo"
+    ],
+    [
+      "19",
+      "Cidade Antiga",
+      "Refúgio dos Peregrinos",
+      "Torre do Oráculo"
+    ],
+    [
+      "20",
+      "Porto Cinzento",
+      "Aldeia do Ferro",
+      "Cidadela de Ash"
+    ]
+  ]
+}

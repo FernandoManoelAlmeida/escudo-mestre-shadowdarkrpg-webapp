@@ -9,77 +9,95 @@
     "Resultado"
   ],
   "rows": [
-    [
-      "08–09",
-      "Uma pantera cai uivando sobre um PJ do alto de um galho de árvore"
-    ],
-    [
-      "10–11",
-      "Um gorila bufando caça cautelosamente pela vegetação densa do solo"
-    ],
-    [
-      "18–19",
-      "Uma colônia de minúsculas formigas mordedoras se espalha no solo"
-    ],
-    [
-      "56–57",
-      "Um drider pendurado em uma árvore observa a área com olhos atentos"
-    ],
-    [
-      "58–59",
-      "Um mago viperiano e seus 1d4 servos zumbis inspecionam uma rocha"
-    ],
-    [
-      "62–63",
-      "O Doutor Bartom Halsy lidera uma expedição com 2d12 camponeses"
-    ],
-    [
-      "08–09",
-      "Um cliente carrancudo paga uma bebida para todos, exceto os PJs"
-    ],
-    [
-      "12–13",
-      "Um halfling bêbado se balança em um lustre antigo que range"
-    ],
-    [
-      "14–15",
-      "Uma mulher se aproxima em fúria e joga bebida no rosto de um PJ"
-    ],
-    [
-      "16–17",
-      "Um cliente pediu uma naja crua, e ela se ergue do prato sibilando"
-    ],
-    [
-      "18–19",
-      "Há uma poça escorregadia de cerveja se espalhando pelo chão"
-    ],
-    [
-      "22–23",
-      "Um longo grito apavorado vem da cozinha"
-    ],
-    [
-      "26–27",
-      "Um homem esguio sussurra: \"Precisa de veneno? Tenho o melhor!\""
-    ],
-    [
-      "28–29",
-      "Um elfo cínico desafia um PJ para um jogo de dados; são viciados"
-    ],
-    [
-      "30–31",
-      "Um mago carrancudo lê um livro e lança olhares aos barulhentos"
-    ],
-    [
-      "32–33",
-      "Meio-orc e halfling em uma queda de braço; halfling está ganhando"
-    ],
-    [
-      "34–35",
-      "Dois bardos rivais iniciam uma competição de canto hilariante"
-    ],
-    [
-      "38–39",
-      "Cinco anões alegres cantam e dão cabeçadas uns nos outros"
-    ]
+    {
+      "faixa": "08–09",
+      "texto": "Uma pantera cai uivando sobre um PJ do alto de um galho de árvore",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "10–11",
+      "texto": "Um gorila bufando caça cautelosamente pela vegetação densa do solo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "18–19",
+      "texto": "Uma colônia de minúsculas formigas mordedoras se espalha no solo",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "56–57",
+      "texto": "Um drider pendurado em uma árvore observa a área com olhos atentos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "58–59",
+      "texto": "Um mago viperiano e seus 1d4 servos zumbis inspecionam uma rocha",
+      "followUp": "criatura"
+    },
+    {
+      "faixa": "62–63",
+      "texto": "O Doutor Bartom Halsy lidera uma expedição com 2d12 camponeses",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "08–09",
+      "texto": "Um cliente carrancudo paga uma bebida para todos, exceto os PJs",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "12–13",
+      "texto": "Um halfling bêbado se balança em um lustre antigo que range",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "14–15",
+      "texto": "Uma mulher se aproxima em fúria e joga bebida no rosto de um PJ",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "16–17",
+      "texto": "Um cliente pediu uma naja crua, e ela se ergue do prato sibilando",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "18–19",
+      "texto": "Há uma poça escorregadia de cerveja se espalhando pelo chão",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "22–23",
+      "texto": "Um longo grito apavorado vem da cozinha",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "26–27",
+      "texto": "Um homem esguio sussurra: \"Precisa de veneno? Tenho o melhor!\"",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "28–29",
+      "texto": "Um elfo cínico desafia um PJ para um jogo de dados; são viciados",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "30–31",
+      "texto": "Um mago carrancudo lê um livro e lança olhares aos barulhentos",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "32–33",
+      "texto": "Meio-orc e halfling em uma queda de braço; halfling está ganhando",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "34–35",
+      "texto": "Dois bardos rivais iniciam uma competição de canto hilariante",
+      "followUp": "cena_evento"
+    },
+    {
+      "faixa": "38–39",
+      "texto": "Cinco anões alegres cantam e dão cabeçadas uns nos outros",
+      "followUp": "cena_evento"
+    }
   ]
 }

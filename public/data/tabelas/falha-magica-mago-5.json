@@ -1,0 +1,60 @@
+{
+  "id": "falha-magica-mago-5",
+  "titulo": "Falha Mágica Mago 5",
+  "categoria": "falha-magica",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Efeito"
+  ],
+  "rows": [
+    [
+      "1",
+      "Devastação! Role duas vezes e combine ambos os efeitos (role novamente qualquer 1 adicional)"
+    ],
+    [
+      "2",
+      "Extrusão piroclástica! Você causa 3d8 de dano a si mesmo e a todas as criaturas que estiverem Perto de você"
+    ],
+    [
+      "3",
+      "Incisão astral! Uma lâmina sobrenatural corta a sua memória. Você esquece uma magia aleatória permanentemente"
+    ],
+    [
+      "4",
+      "O Grimlow! Você acidentalmente invoca um Grimlow hostil em uma área Perto de você. Ele permanece por 2d4 rodadas antes de desaparecer e voltar para o lugar de onde veio"
+    ],
+    [
+      "5",
+      "Aura de plasma sombrio! Ataques contra você atravessam uma aura maléfica, causando o dobro de dano pelas próximas 2d6 rodadas"
+    ],
+    [
+      "6",
+      "Portal! Você abre um portal mágico para este ou outro plano. Algo terrível irá atravessá-lo em 1d4 rodadas, a menos que você o feche em seu turno com um teste de Inteligência CD 18"
+    ],
+    [
+      "7",
+      "Repetição arcana descontrolada! Sua magia atinge uma criatura aleatória que você possa ver, mesmo que isso normalmente não seja possível. A cada turno seguinte, você deve ter sucesso em um teste de conjuração para a mesma magia, ou irá conjurá-la em uma outra criatura aleatória da mesma maneira (em um sucesso o efeito é encerrado)"
+    ],
+    [
+      "8",
+      "Obstrução arcana! Você perde a habilidade de conjurar todas as magias de um grau aleatório até que complete um descanso"
+    ],
+    [
+      "9",
+      "O que espreita além do véu! Você deve ter sucesso em um teste de Sabedoria CD 15 ou cairá em um delírio insano durante 1d4 horas"
+    ],
+    [
+      "10",
+      "Equilíbrio de Ord! Você deve escolher entre sacrificar de forma permanente um item mágico ou a habilidade de conjurar uma magia de grau 3+ que você conheça"
+    ],
+    [
+      "11",
+      "Reação em cadeia não mitigada! Você tem Desvantagem na conjuração de todas as magias pelas próximas 10 rodadas"
+    ],
+    [
+      "12",
+      "Desfiar! Você abre um grande buraco no tecido do universo próximo a você. Essa fenda sem luz aumenta a cada rodada"
+    ]
+  ]
+}

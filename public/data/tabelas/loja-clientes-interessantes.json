@@ -1,0 +1,44 @@
+{
+  "id": "loja-clientes-interessantes",
+  "titulo": "Clientes interessantes",
+  "categoria": "lojas",
+  "subcategoria": "clientes",
+  "rolagem": "d4",
+  "headers": [
+    "d4",
+    "Opção 1",
+    "Opção 2",
+    "Opção 3",
+    "Opção 4"
+  ],
+  "rows": [
+    [
+      "1",
+      "Mago estranho",
+      "1d10 crianças",
+      "Velha ranzinza",
+      "Anão ruidoso"
+    ],
+    [
+      "2",
+      "Elfo nervoso",
+      "Valentão astuto",
+      "Guarda da cidade",
+      "1d4 sacerdotes"
+    ],
+    [
+      "3",
+      "Goblin pirata",
+      "Mago de capuz",
+      "Cavaleiro meio-orc",
+      "Bêbado"
+    ],
+    [
+      "4",
+      "Criança fitando",
+      "Grupo rival",
+      "Halfling sombrio",
+      "Punguista"
+    ]
+  ]
+}

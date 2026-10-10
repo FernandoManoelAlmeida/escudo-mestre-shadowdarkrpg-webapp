@@ -1,0 +1,60 @@
+{
+  "id": "falha-magica-diabolica-1-3",
+  "titulo": "Falhas Diabólicas 1 3",
+  "categoria": "falha-magica",
+  "rolagem": "d12",
+  "headers": [
+    "d12",
+    "Efeito"
+  ],
+  "rows": [
+    [
+      "1",
+      "Diabrura! Role duas vezes e combine ambos os efeitos (role novamente qualquer 1 adicional)."
+    ],
+    [
+      "2",
+      "Definhar! Você sofre 1d6 de dano por grau da magia."
+    ],
+    [
+      "3",
+      "Salamandra! Você se transforma em uma pequena salamandra com 1 ponto de vida por 3 rodadas. Você não pode conjurar magias nessa forma."
+    ],
+    [
+      "4",
+      "Olhar maligno de Shune! Você não pode conjurar essa magia e uma outra magia aleatória por uma semana."
+    ],
+    [
+      "5",
+      "Fadas ladras! Você perde um item aleatório do seu equipamento."
+    ],
+    [
+      "6",
+      "Teias de aranha! Teias mentais nublam sua mente. Você não pode conjurar essa magia novamente por uma semana."
+    ],
+    [
+      "7",
+      "Gargalhadas! Você cai no chão em um ataque de risadas incontroláveis, incapaz de fazer qualquer coisa além de rir pelas próximas 3 rodadas."
+    ],
+    [
+      "8",
+      "Problema dobrado! Você perde a capacidade de conjurar uma magia aleatória até que complete um descanso."
+    ],
+    [
+      "9",
+      "Gás de pântano! Gás sulfúrico preenche o ar em um cubo de tamanho Perto ao seu redor. Todas as criaturas que encerrarem o turno nessa área ficam cegas e sofrem 1d6 de dano. Ele dura 3 rodadas."
+    ],
+    [
+      "10",
+      "Morcego! Um morcego furioso aparece na sua cabeça, batendo asas e se agarrando ao seu rosto. Você fica cego por 3 rodadas ou até conseguir afastar a criatura."
+    ],
+    [
+      "11",
+      "Sal! Você é cercado por um anel de sal e não pode tocá-lo ou atravessá-lo até que algo quebre o círculo."
+    ],
+    [
+      "12",
+      "Sifão! Você tem Desvantagem na conjuração de magias do mesmo grau ou inferior pelas próximas 10 rodadas."
+    ]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "assentamento-distrito",
+  "titulo": "Distrito",
+  "categoria": "assentamentos",
+  "subcategoria": "distrito",
+  "rolagem": "d8",
+  "headers": [
+    "d8",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Periferia"
+    ],
+    [
+      "2",
+      "Distrito Baixo"
+    ],
+    [
+      "3",
+      "Distrito Artesão"
+    ],
+    [
+      "4",
+      "Distrito Comercial"
+    ],
+    [
+      "5",
+      "Distrito Alto"
+    ],
+    [
+      "6",
+      "Distrito Religioso"
+    ],
+    [
+      "7",
+      "Distrito Acadêmico"
+    ],
+    [
+      "8",
+      "Distrito do Castelo"
+    ]
+  ]
+}

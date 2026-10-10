@@ -1,0 +1,34 @@
+{
+  "id": "assentamento-tipo",
+  "titulo": "Tipo de assentamento",
+  "categoria": "assentamentos",
+  "subcategoria": "tipo",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Tipo",
+    "Dados no mapa"
+  ],
+  "rows": [
+    [
+      "1",
+      "Vilarejo",
+      "3d4"
+    ],
+    [
+      "2–3",
+      "Cidade pequena",
+      "4d4"
+    ],
+    [
+      "4–5",
+      "Cidade grande",
+      "6d6"
+    ],
+    [
+      "6",
+      "Metrópole",
+      "8d8"
+    ]
+  ]
+}

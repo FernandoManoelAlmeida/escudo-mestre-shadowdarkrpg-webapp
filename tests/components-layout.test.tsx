@@ -122,8 +122,9 @@ describe("layout components", () => {
     );
     const input = screen.getByRole("textbox", { name: /fórmula de dados/i });
     fireEvent.change(input, { target: { value: "2d6" } });
-    const buttons = screen.getAllByRole("button", { name: /rolar dados/i });
-    fireEvent.click(buttons[0]!);
+    fireEvent.click(
+      screen.getByRole("button", { name: /rolar 2 dados de seis faces/i }),
+    );
     await waitFor(() => {
       expect(
         screen.getByRole("button", { name: /total \d+/i }),
