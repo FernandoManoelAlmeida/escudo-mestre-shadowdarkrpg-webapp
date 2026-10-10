@@ -36,7 +36,7 @@ export default function manifest(): MetadataRoute.Manifest {
 
   return {
     id: `${base}/`,
-    name: "Escudo do Mestre — Ordem Paranormal",
+    name: "Escudo do Mestre — Shadowdark",
     short_name: "Escudo SD",
     description:
       "Regras, bestiário e geradores do Escudo Shadowdark (Mundo Fraturado).",

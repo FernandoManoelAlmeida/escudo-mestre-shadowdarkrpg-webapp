@@ -7,20 +7,15 @@ const VIEWBOX_H = 400;
 
 type OrdemParanormalDesesperoLogoProps = {
   className?: string;
-  /** Texto acessível (título dentro do SVG) */
   alt?: string;
 };
 
-/**
- * Logo da página inicial como SVG com bitmap lossless embutido por referência.
- * O desenho em si é raster (WebP lossless gerado a partir do PNG original), então
- * não há perda visual; o ficheiro é menor e escala nítido a qualquer tamanho.
- */
+/** Spot art Shadowdark (ícone / hero). Fonte: shadowdark.dnddeutsch.de — ver public/icons/src/. */
 export function OrdemParanormalDesesperoLogo({
   className,
-  alt = "Ordem Paranormal Desespero",
+  alt = "Shadowdark RPG",
 }: OrdemParanormalDesesperoLogoProps) {
-  const href = assetUrl("/logo-ordem-paranormal-desespero.webp");
+  const href = assetUrl("/logo-shadowdark-spot-art.webp");
 
   return (
     <svg
