@@ -65,8 +65,8 @@ export function chipLabelForTable(
 
 export function resultCardTitle(
   moduleTitle: string,
-  tableTitulo?: string,
   singleTable: boolean,
+  tableTitulo?: string,
 ): string | undefined {
   if (singleTable || !tableTitulo) return undefined;
   const t = normalizeLabel(moduleTitle);

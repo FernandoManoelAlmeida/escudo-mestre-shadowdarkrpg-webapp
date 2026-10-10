@@ -12,7 +12,7 @@ export const CLASS_LABELS: Record<string, string> = {
   feiticeiro: "Feiticeiro",
 };
 
-const LIST_ORDER = [
+const LIST_ORDER: SpellLista[] = [
   "mago",
   "sacerdote",
   "bruxa",
@@ -67,8 +67,8 @@ export function magiaOrigemSlugs(m: Magia): string[] {
   return m.origem ? [m.origem] : [];
 }
 
-export function collectClassSlugs(magias: Magia[]): string[] {
-  const set = new Set<string>();
+export function collectClassSlugs(magias: Magia[]): SpellLista[] {
+  const set = new Set<SpellLista>();
   for (const m of magias) {
     for (const l of m.listas || []) set.add(l);
   }

@@ -25,4 +25,12 @@ GITHUB_PAGES=1 NEXT_PUBLIC_BASE_PATH=/escudo-mestre-shadowdarkrpg-webapp yarn bu
 
 URL esperada: `https://ferandomanoelalmeida.github.io/escudo-mestre-shadowdarkrpg-webapp/`
 
+### Repositório privado
+
+No plano Free, **GitHub Pages não existe** em repo privado (`configure-pages` devolve 404). Torne o repo **público** (como o Escudo OPRPG) ou use plano com Pages em privado.
+
+### «Get Pages site failed» com repo já público
+
+Só tornar o repo público **não** activa o Pages. Confirme em **Settings → Pages** que a origem é **GitHub Actions** (ou API `POST .../pages` com `build_type=workflow`). Enquanto `has_pages` for falso na API, o passo **Setup Pages** falha.
+
 Ver também [PWA e basePath](pwa-e-basepath.md) e skill `escudo-shadowdark-deploy`.

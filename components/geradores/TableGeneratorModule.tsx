@@ -184,7 +184,7 @@ export function TableGeneratorModule({
       <RefLink href={regrasTabelaHref(selectedId)}>Ver tabela completa</RefLink>
       {result && (
         <RollResultCard
-          titulo={resultCardTitle(title, selected?.titulo, singleTable)}
+          titulo={resultCardTitle(title, singleTable, selected?.titulo)}
           valor={result.valor}
           texto={
             result.detail ? `${result.detail}\n${result.texto}` : result.texto
