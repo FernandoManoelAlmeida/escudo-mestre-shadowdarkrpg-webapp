@@ -3,6 +3,10 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { assetUrl } from "@/lib/basePath";
+import {
+  getPwaServiceWorkerUrls,
+  isPwaDebugEnabled,
+} from "@/lib/pwaServiceWorkerUrls";
 
 const APP_VERSION_KEY = "app-version";
 
@@ -94,10 +98,9 @@ export default function UpdateBanner() {
       }
     };
 
-    /** URLs absolutas evitam resolução errada do script em subpaths (ex.: GitHub Pages). */
-    const scopeUrl = new URL(assetUrl("/"), window.location.origin).href;
-    const swScriptUrl = new URL(assetUrl("/sw.js"), window.location.origin)
-      .href;
+    const { scopeUrl, swScriptUrl } = getPwaServiceWorkerUrls(
+      window.location.origin,
+    );
 
     void navigator.serviceWorker
       .register(swScriptUrl, { scope: scopeUrl })
@@ -109,8 +112,14 @@ export default function UpdateBanner() {
         }
         await checkVersion();
       })
-      .catch(() => {
+      .catch((err: unknown) => {
         /* sw.js em falta ou contexto não seguro — não quebrar a app */
+        if (isPwaDebugEnabled()) {
+          console.warn("[PWA] Falha ao registar service worker:", err, {
+            swScriptUrl,
+            scopeUrl,
+          });
+        }
         void checkVersion();
       });
 

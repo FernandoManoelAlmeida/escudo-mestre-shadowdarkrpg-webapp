@@ -6,6 +6,8 @@ A aplicação expõe um **manifest** de aplicação web e, em **produção**, po
 
 ## Instalar
 
+Use a **URL de produção** (GitHub Pages com `/escudo-mestre-shadowdarkrpg-webapp/` no caminho). Em `yarn dev` no telemóvel o navegador costuma criar só um **atalho**, não a instalação PWA completa (igual ao Escudo OPRPG).
+
 - **Android / Chrome:** menu do navegador → **Instalar aplicação** ou banner de instalação, conforme o navegador.
 - **Desktop Chrome:** ícone de instalação na barra de endereços quando disponível.
 - **iOS Safari:** **Partilhar** → **Ecrã Inicial**.

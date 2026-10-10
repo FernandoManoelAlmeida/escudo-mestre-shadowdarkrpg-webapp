@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { includeUrlInPrecacheManifest } from "./lib/pwaPrecacheFilter";
+import { subpathRuntimeCachingEntries } from "./lib/pwaWorkboxPatterns";
 
 const buildForCapacitor = process.env.BUILD_ANDROID_CAPACITOR === "1";
 const buildForGitHubPages = process.env.GITHUB_PAGES === "1";
@@ -91,6 +92,7 @@ const withPWA = require("@ducanh2912/next-pwa").default({
       },
     ],
     runtimeCaching: [
+      ...subpathRuntimeCachingEntries(basePath),
       {
         urlPattern: dataCachePattern,
         handler: "CacheFirst",
@@ -127,6 +129,7 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_BASE_PATH: buildForGitHubPages
       ? basePath
       : (process.env.NEXT_PUBLIC_BASE_PATH ?? ""),
+    NEXT_PUBLIC_DEBUG_PWA: process.env.NEXT_PUBLIC_DEBUG_PWA ?? "",
   },
   ...((buildForCapacitor || buildForGitHubPages) && {
     output: "export",

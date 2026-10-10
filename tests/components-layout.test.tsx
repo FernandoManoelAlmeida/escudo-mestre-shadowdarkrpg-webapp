@@ -131,6 +131,44 @@ describe("layout components", () => {
     });
   });
 
+  it("UpdateBanner regista SW com URLs do basePath", async () => {
+    vi.stubEnv(
+      "NEXT_PUBLIC_BASE_PATH",
+      "/escudo-mestre-shadowdarkrpg-webapp",
+    );
+    vi.resetModules();
+    const { default: UpdateBannerWithBase } = await import(
+      "@/components/layout/UpdateBanner"
+    );
+    const register = vi.fn(() =>
+      Promise.resolve({
+        update: () => Promise.resolve(),
+      } as ServiceWorkerRegistration),
+    );
+    const sw = globalThis.navigator.serviceWorker as {
+      register: ReturnType<typeof vi.fn>;
+    };
+    sw.register = register;
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({
+        ok: true,
+        json: async () => ({ buildId: "b1" }),
+        text: async () => "",
+      })) as typeof fetch,
+    );
+    renderWithTheme(<UpdateBannerWithBase />);
+    await waitFor(() => {
+      expect(register).toHaveBeenCalledWith(
+        "http://localhost:3000/escudo-mestre-shadowdarkrpg-webapp/sw.js",
+        {
+          scope:
+            "http://localhost:3000/escudo-mestre-shadowdarkrpg-webapp/",
+        },
+      );
+    });
+  });
+
   it("UpdateBanner Recarregar limpa caches, desregistra SW e chama location.reload", async () => {
     const unregister = vi.fn(() => Promise.resolve());
     const cacheDelete = vi.fn(() => Promise.resolve(true));

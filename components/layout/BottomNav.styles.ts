@@ -6,16 +6,28 @@ export const Nav = styled.nav`
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
   height: ${({ theme }) => theme.bottomNavHeight};
   background: ${({ theme }) => theme.colors.surface};
   border-top: 1px solid ${({ theme }) => theme.colors.border};
   box-shadow: 0 -1px 0 0 ${({ theme }) => theme.colors.borderHighlight};
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: ${({ theme }) => theme.spacing.xl};
+  justify-content: space-between;
+  gap: 0;
+  overflow: visible;
   z-index: 100;
-  padding: 0 ${({ theme }) => theme.spacing.sm};
+  padding: 0 max(${({ theme }) => theme.spacing.xs}, env(safe-area-inset-left, 0px))
+    max(0px, env(safe-area-inset-bottom, 0px))
+    max(${({ theme }) => theme.spacing.xs}, env(safe-area-inset-right, 0px));
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    justify-content: center;
+    gap: ${({ theme }) => theme.spacing.lg};
+    padding: 0 ${({ theme }) => theme.spacing.md};
+  }
 `;
 
 export const NavItemWrap = styled.span`
@@ -26,13 +38,19 @@ export const NavItemWrap = styled.span`
   justify-content: center;
 `;
 
+const navSlot = `
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 20%;
+`;
+
 export const NavLink = styled.a<{ $active?: boolean }>`
+  ${navSlot}
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2px;
-  min-width: 64px;
   min-height: 44px;
   color: ${({ theme, $active }) =>
     $active ? theme.colors.primary : theme.colors.textMuted};
@@ -50,6 +68,12 @@ export const NavLink = styled.a<{ $active?: boolean }>`
   &:hover {
     color: ${({ theme }) => theme.colors.text};
     background: ${({ theme }) => theme.colors.surfaceHover};
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    flex: 0 0 auto;
+    max-width: none;
+    min-width: 64px;
   }
 `;
 
@@ -100,9 +124,11 @@ export const CentralButtonIcon = styled(RasterIconSvg)`
   height: 28px;
   display: block;
   flex-shrink: 0;
+  filter: brightness(0) invert(1);
 `;
 
 export const CentralLink = styled.a`
+  flex: 0 0 auto;
   text-decoration: none;
   border-radius: 50%;
   display: flex;

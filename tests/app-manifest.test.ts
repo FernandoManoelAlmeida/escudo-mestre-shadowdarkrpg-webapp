@@ -14,10 +14,12 @@ describe("app/manifest", () => {
     expect(m.name).toContain("Escudo do Mestre");
     expect(m.start_url).toBe("/meu-repo/");
     expect(m.scope).toBe("/meu-repo/");
-    expect(m.icons).toHaveLength(4);
+    expect(m.icons).toHaveLength(6);
     expect(
       m.icons?.filter((i) => i.purpose === "any").map((i) => i.src),
     ).toEqual([
+      "/meu-repo/icons/icon-192.png",
+      "/meu-repo/icons/icon-512.png",
       "/meu-repo/icons/icon-192.webp",
       "/meu-repo/icons/icon-512.webp",
     ]);
@@ -31,6 +33,7 @@ describe("app/manifest", () => {
     const mod = await import("@/app/manifest");
     const m = mod.default();
     expect(m.start_url).toBe("/");
-    expect(m.icons?.[0]?.src).toBe("/icons/icon-192.webp");
+    expect(m.icons?.[0]?.src).toBe("/icons/icon-192.png");
+    expect(m.name).toContain("Shadowdark");
   });
 });

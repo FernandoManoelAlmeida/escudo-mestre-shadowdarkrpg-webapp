@@ -34,15 +34,24 @@ async function main() {
     .toFile(logoWebp);
   console.log("OK", logoWebp);
 
-  const sizes = [
+  const webpSizes = [
     [192, path.join(root, "public", "icons", "icon-192.webp")],
     [512, path.join(root, "public", "icons", "icon-512.webp")],
     [50, path.join(root, "public", "icons", "header-icon.webp")],
   ];
-  for (const [size, out] of sizes) {
+  for (const [size, out] of webpSizes) {
     await sharp(pwaSource)
       .resize(size, size, { fit: "contain", background: BG })
       .webp({ quality: 90, effort: 6 })
+      .toFile(out);
+    console.log("OK", out);
+  }
+
+  for (const size of [192, 512]) {
+    const out = path.join(root, "public", "icons", `icon-${size}.png`);
+    await sharp(pwaSource)
+      .resize(size, size, { fit: "contain", background: BG })
+      .png()
       .toFile(out);
     console.log("OK", out);
   }
