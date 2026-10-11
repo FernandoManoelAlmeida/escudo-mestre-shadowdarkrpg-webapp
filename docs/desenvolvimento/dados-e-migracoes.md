@@ -57,9 +57,61 @@ Conferir sempre no **Livro de Regras pt-BR** antes de alterar `rolagem` no front
 
 `lib/rollTable.ts`: `parseDiceFormula`, faixas (`parseRangeCell`), `rollOnTable(table, { modifier })`. Tabelas percentis e reação usam **lookup por faixa**, não `valor - 1`.
 
+## Catálogo — itens mágicos
+
+- **Só fichas de item** (Benefício, Bônus, Maldição ou Personalidade). Tabelas roláveis, classes, PNJs e regras de aventura **não** entram no catálogo — vão para `Tabelas/` ou outro pipeline.
+- Heurísticas partilhadas: `scripts/catalogo-itens-magicos-lib.js` (extract, migrate e `validate:data`).
+- Regenerar MD no Fantasia (a partir da raiz do Escudo):
+
+```bash
+VAULT="../shadowdarkrpg-fantasia"
+LIVRO="$VAULT/Referências/Shadowdark/Livros de Regras/Livro de Regras pt-BR.md"
+OUT="$VAULT/Referências/Shadowdark/Catálogos/Itens Mágicos.md"
+CS="$VAULT/Referências/Shadowdark/Livros de Regras/cursed-scrolls"
+node scripts/extract-itens-magicos-livro-shadowdark.js "$LIVRO" "$OUT" \
+  --append-cursed-scroll "$CS/Cursed Scroll 1 - Diabruras pt-BR.md" \
+  --append-cursed-scroll "$CS/Cursed Scroll 2 - Red Sands pt-BR.md" \
+  --append-cursed-scroll "$CS/Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md" \
+  --append-cursed-scroll "$CS/Cursed Scroll 4 - River of Night pt-BR.md" \
+  --append-cursed-scroll "$CS/Cursed Scroll 5 - Preview pt-BR.md" \
+  --append-cursed-scroll "$CS/Cursed Scroll 6 - City of Masks pt-BR.md"
+yarn migrate:catalogo-itens-magicos-shadowdark -- "$OUT"
+```
+
+- Contagem esperada após migrate: **98** (95 livro + 3 Cursed Scroll). Auditoria: `node scripts/audit-catalogo-itens-magicos.js "$OUT" --json public/data/catalogo/itens-magicos.json --write docs/desenvolvimento/auditoria-itens-magicos.md`
+
+## Catálogo — classes, ancestralidades e regras homebrew
+
+- Lib partilhada: `scripts/catalogo-personagem-lib.js` (extract + migrate). Catálogos no vault usam delimitador `---` + `## Nome` entre entradas (corpos podem ter `##` e `---` internos).
+- Migrate de **classes** passa `catalogoKind: "classe"` em `parseEntradasFromMd` (finalização `finalizeClassDescricao` + `normalizeClassDescricao` com seções `##`; ancestralidades continuam com `finalizeAncestryDescricao`).
+- Extract de classes (`extractClassesFromText`): mescla flavor, stats e tabela de talentos órfãos antes de `# Classe:`; corta contaminação da classe seguinte só após `###/## Talentos`; `trimNextClassFlavorContamination` não corta flavor da própria classe quando ainda não há seção de talentos.
+- `yarn validate:data --strict` exige tabela GFM em `## Talentos` e parágrafo introdutório (≥ 40 caracteres antes do primeiro `##`) em cada classe — ver `assertClassTalentTables` / `assertClassIntroParagraphs` em `catalogo-personagem-lib.js`.
+- Glossário público Astraldark no migrate: `scripts/sanitize-catalogo-astraldark.js` + `astraldark-public-glossary.js` (dedupe por `id`; prioridade `astraldark` > `homebrew` > `cursed-scroll` > `livro`).
+- Saídas: `public/data/catalogo/classes.json`, `ancestralidades.json`, `regras-homebrew.json` (o migrate de homebrew também atualiza `escudo-shadowdark.json` via `sync-regras-homebrew-escudo.js`, listando a regra em `/regras` como as seções do compêndio — ex. `/regras/multiclasse-simples`).
+- Contagens esperadas (`yarn validate:data`): **19** classes (incl. Bárbaro homebrew); **10** ancestralidades (6 livro + 2 Astraldark + Drow/Duergar homebrew após dedupe); **1** regra `multiclasse-simples`.
+
+```bash
+VAULT="../shadowdarkrpg-fantasia"
+LIVRO="$VAULT/Referências/Shadowdark/Livros de Regras/Livro de Regras pt-BR.md"
+CAT="$VAULT/Referências/Shadowdark/Catálogos"
+CS="$VAULT/Referências/Shadowdark/Livros de Regras/cursed-scrolls"
+HB="$VAULT/Referências/Shadowdark/Homebrews"
+node scripts/extract-classes-shadowdark.js --livro "$LIVRO" --out "$CAT/Classes.md" \
+  --homebrews "$HB" \
+  $(for f in "$CS"/*.md; do printf -- '--cursed-scroll %q ' "$f"; done)
+node scripts/extract-ancestralidades-shadowdark.js \
+  --livro "$LIVRO" --out "$CAT/Ancestralidades.md" \
+  --astraldark "$VAULT/astraldark" \
+  --homebrews "$VAULT/Referências/Shadowdark/Homebrews"
+node scripts/extract-regras-homebrew-shadowdark.js \
+  "$VAULT/Referências/Shadowdark/Homebrews/Multiclasse simples pt-BR.md" \
+  "$CAT/Regras Homebrew.md"
+yarn migrate:from-fantasia
+```
+
 ## Cursed Scrolls
 
-Ficheiros em `Livros de Regras/cursed-scrolls/Cursed Scroll N - … pt-BR.md`. Itens mágicos: append no extract de catálogo com `origem` = nome do ficheiro. Tabelas/monstros: extrair para vault quando necessário; depois migrate.
+Ficheiros em `Livros de Regras/cursed-scrolls/Cursed Scroll N - … pt-BR.md`. Itens mágicos: `--append-cursed-scroll` no extract acima; cada bloco `###` é filtrado pela lib (não há capítulo `# Itens Mágicos` nos CS). Tabelas/monstros: extrair para vault quando necessário; depois migrate.
 
 ## Ameaças homebrew (distribuição pública)
 
@@ -78,5 +130,10 @@ Ordem no `FilterPanel`: busca → filtros (grid 2 colunas quando fizer sentido) 
 
 - `lib/rollTable.test.ts` — reação, d100, inferência
 - `tests/scripts.test.ts` — índice de tabelas, `buildRollRows`, Gith ×7, glossário
+- `tests/catalogo-itens-magicos-lib.test.ts` — heurísticas do catálogo de itens
+- `tests/catalogo-personagem-lib.test.ts` — classes/ancestralidades (extract)
+- `tests/catalogoClassDescricao.test.ts` — `normalizeClassDescricao`, `catalogoKind: classe`, títulos CS
+- `tests/sanitize-catalogo-astraldark.test.ts` — glossário e dedupe
+- `tests/tabelas.test.ts` — `formatTabelaTituloExibicao`
 - `tests/ameacas-lib.test.ts` — `tipoParaListagem`
 - `tests/trait-markdown.test.tsx` — traços sem `**` visível

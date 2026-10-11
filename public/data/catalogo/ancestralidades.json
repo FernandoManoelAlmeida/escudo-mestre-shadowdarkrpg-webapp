@@ -1,0 +1,74 @@
+{
+  "entradas": [
+    {
+      "id": "anao",
+      "nome": "ANÃO",
+      "origem": "livro",
+      "fonte": "livro",
+      "descricao": "Povo corajoso e robusto, tão resiliente quanto os reinos de pedra que eles esculpem dentro das montanhas.\n\n---\n\n## Idiomas\n\nVocê conhece os idiomas Comum e Anão.\n\n---\n\n## Robusto\n\nInicia com +2 PV. Role os pontos de vida a cada nível com Vantagem."
+    },
+    {
+      "id": "elfo",
+      "nome": "ELFO",
+      "origem": "livro",
+      "fonte": "livro",
+      "descricao": "Povo etéreo e gracioso, que venera o conhecimento e a beleza\n\nOs elfos enxergam longe e vivem bastante.\n\n---\n\n## Idiomas\n\nVocê conhece os idiomas Comum, Élfico e Silvestre.\n\n---\n\n## Visão Aguçada\n\nVocê recebe um bônus de +1 em jogadas de ataque com armas à distância, ou um bônus de +1 em testes de conjuração."
+    },
+    {
+      "id": "goblin",
+      "nome": "GOBLIN",
+      "origem": "livro",
+      "fonte": "livro",
+      "descricao": "Criaturas verdes e espertas que prosperam em locais escuros e apertados. Os goblins são tão ferozes quanto pequenos.\n\n---\n\n## Idiomas\n\nVocê conhece os idiomas Comum e Goblin.\n\n---\n\n## Sentidos Apurados\n\nVocê não pode ser surpreendido."
+    },
+    {
+      "id": "halfling",
+      "nome": "HALFLING",
+      "origem": "livro",
+      "fonte": "livro",
+      "descricao": "Pequenos e alegres habitantes do campo, com personalidades travessas. Eles apreciam os prazeres simples da vida.\n\n---\n\n## Idiomas\n\nVocê conhece o idioma Comum.\n\n---\n\n## Furtivo\n\nUma vez por dia, você pode ficar invisível por 3 rodadas."
+    },
+    {
+      "id": "humano",
+      "nome": "HUMANO",
+      "origem": "livro",
+      "fonte": "livro",
+      "descricao": "Povo corajoso, adaptável e diverso que aprende de forma rápida e realiza feitos poderosos.\n\n---\n\n## Idiomas\n\nVocê conhece o idioma Comum e um idioma comum adicional (pág. 32).\n\n---\n\n## Ambicioso\n\nVocê ganha uma rolagem de talento adicional no nível 1."
+    },
+    {
+      "id": "meio-orc",
+      "nome": "MEIO-ORC",
+      "origem": "livro",
+      "fonte": "livro",
+      "descricao": "Guerreiros imponentes e com presas, que são tão implacáveis quanto os orcs e tão ousados quanto os humanos.\n\n---\n\n## Idiomas\n\nVocê conhece os idiomas Comum e Orc.\n\n---\n\n## Poderoso\n\nVocê recebe um bônus de +1 em jogadas de ataque e dano com armas corpo a corpo."
+    },
+    {
+      "id": "elfo-estelar",
+      "nome": "Elfo Estelar",
+      "origem": "Elfo Estelar ancestralidade pt-BR.md",
+      "fonte": "astraldark",
+      "descricao": "Há muito tempo, elfos atravessaram o Vazio Prateado para ficar perto dos seus deuses. A vida no Plano Astral deixou uma centelha nos olhos — luz estelar. Nada envelhece no Astral: longevidade traz melancolia ou distância.\n\n## Idiomas\n\nVocê conhece **Comum** e **Élfico**.\n\n## Visão Aguçada\n\nVocê recebe um bônus de **+1** em jogadas de ataque com armas à distância, ou um bônus de **+1** em testes de conjuração.\n\n## Progressão por nível (opcional)\n\nGanhos no nível de personagem **3** e **5**, se a mesa usar esta progressão.\n\n| Nível | Traço adicional |\n| ----- | --------------- |\n| **3** | **Fogo Astral:** **ação**, **3/dia**: luz como tocha (si/objeto **Perto**, **1 h**) *ou* chama (**Longe**, **1d4**). |\n| **5** | **Passo Estelar:** **1/dia**, **ação**: teletransporte até **Longe** (linha de visão). |\n\n---"
+    },
+    {
+      "id": "matriprole",
+      "nome": "Matriprole",
+      "origem": "Matriprole ancestralidade pt-BR.md",
+      "fonte": "astraldark",
+      "descricao": "Guerreiros psiônicos do Plano Astral, prole da Matriarca; cultivam a espada prateada e a disciplina marcial. O Idioma Astral marca quem carrega esse legado.\n\n## Idiomas\n\nVocê conhece **Comum** e o **Idioma Astral**.\n\n## Conhecimento Astral\n\nApós cada **descanso**, **+1** em testes do atributo escolhido no dia.\n\n## Progressão por nível (opcional)\n\nGanhos no nível de personagem **3** e **5**, se a mesa usar esta progressão.\n\n| Nível | Traço adicional |\n| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **3** | **Psionismo Matriprole:** **ação**, **3/dia**, alcance **Perto**. Mãos invisíveis manipulam um objeto; sem empurrar/desarmar/dano; até fim do turno. |\n| **5** | **Passo astral:** **1/dia**, **ação**: teletransporte até **Longe** (linha de visão). |\n\n---"
+    },
+    {
+      "id": "drow",
+      "nome": "Drow",
+      "origem": "Homebrews/Drow ancestralidade pt-BR.md",
+      "fonte": "homebrew",
+      "descricao": "Elfos do subterrâneo, pele como obsidiana polida, cabelos brancos ou amarelo-pálido, olhos claros (lilás, prata, rosa, vermelho, azul). Moldados por gerações sob a terra e pela magia das profundezas; alguns fogem dessa herança, outros a carregam com orgulho.\n\n## Idiomas\n\nVocê conhece **Comum** e **Élfico**.\n\n## Resistência a Veneno\n\nVocê tem **Vantagem** em testes para resistir a veneno (MJ decide o que conta).\n\n## Sensibilidade à Luz Solar\n\nSob **luz solar direta** (céu aberto ao sol; não tocha nem dia nublado), você tem **Desvantagem** em jogadas de ataque e em testes que dependam da visão.\n\n## Progressão por nível (opcional)\n\nGanhos no nível de personagem **3** e **5**, se a mesa usar esta progressão.\n\n| Nível | Traço adicional |\n| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n| **3** | **Magia Drow:** **ação**, **1/dia**. Escolha um: **Marca Feérica** — um alvo **Perto** ou **Longe** fica marcado até ao fim do teu **próximo turno**; os teus ataques contra ele têm **Vantagem**; ou **Luzes Dançantes** — até quatro pontos de luz fraca **Perto** (como velas), **1 hora** ou até apagar. |\n| **5** | **Escuridão:** **1/dia**, **ação**: zona de escuridão mágica **Perto** por **3 rodadas**. Luz mundane não atravessa; conta como escuridão total para quem estiver dentro, inclusive para si. |\n\n---"
+    },
+    {
+      "id": "duergar",
+      "nome": "Duergar",
+      "origem": "Homebrews/Duergar ancestralidade pt-BR.md",
+      "fonte": "homebrew",
+      "descricao": "Anões cinzentos das profundezas — pele acinzentada, temperamento duro, memória longa de jugos e rebeliões. Moldados pela vida sob a terra e por magia que incha o corpo ou o some da vista. Alguns fogem dessa herança; outros a carregam como prova de sobrevivência.\n\n## Idiomas\n\nVocê conhece **Comum** e **Anão**.\n\n## Robusto\n\nInicia com **+2** PV. Role os pontos de vida a cada nível com **Vantagem**.\n\n## Resistência a Veneno\n\nVocê tem **Vantagem** em testes para resistir a veneno (MJ decide o que conta).\n\n## Sensibilidade à Luz Solar\n\nSob **luz solar direta** (céu aberto ao sol; não tocha nem dia nublado), você tem **Desvantagem** em jogadas de ataque e em testes que dependam da visão.\n\n## Progressão por nível (opcional)\n\nGanhos no nível de personagem **3** e **5**, se a mesa usar esta progressão.\n\n| Nível | Traço adicional |\n| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| **3** | **Aumentar:** **1/dia**, **ação** (não usável sob sol direto): durante **3 rodadas**, **+1** em ataque e dano corpo a corpo; ocupa espaço como criatura maior se o MJ permitir (corredores apertados limitam). |\n| **5** | **Invisibilidade:** **1/dia**, **ação** (não usável sob sol direto): invisível por **3 rodadas** ou até atacar ou conjurar. |\n\n---"
+    }
+  ]
+}

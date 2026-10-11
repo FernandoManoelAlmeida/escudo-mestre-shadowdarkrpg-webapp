@@ -3,7 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import { getEscudo, filterRegrasIndex } from "@/lib/escudo";
+import {
+  getEscudo,
+  filterRegrasIndex,
+  formatEscudoSectionHeading,
+} from "@/lib/escudo";
 import type { EscudoData } from "@/lib/escudo";
 import { RasterIconSvg } from "@/components/ui/RasterIconSvg";
 import { RegrasPageSkeleton } from "@/components/skeletons";
@@ -183,6 +187,8 @@ export default function RegrasPage() {
         <QuickLinks>
           <QuickLink href="/regras/tabelas">Tabelas</QuickLink>
           <QuickLink href="/regras/glossario">Glossário</QuickLink>
+          <QuickLink href="/regras/classes">Classes</QuickLink>
+          <QuickLink href="/regras/ancestralidades">Ancestralidades</QuickLink>
         </QuickLinks>
       </FilterPanel>
       {values.q.trim() ? (
@@ -202,13 +208,18 @@ export default function RegrasPage() {
         ) : (
           filtered.map((item) => {
             const section = data.sections.find((s) => s.id === item.id);
-            const preview = section?.subsections
-              .slice(0, 3)
-              .map((sub) => sub.title)
-              .join(" · ");
+            const preview = section?.homebrew
+              ? "Homebrew de mesa"
+              : section?.subsections
+                  .slice(0, 3)
+                  .map((sub) => sub.title)
+                  .join(" · ");
             return (
               <StyledLink key={item.id} href={`/regras/${item.id}`}>
-                § {item.id} — {item.title}
+                {formatEscudoSectionHeading({
+                  ...item,
+                  chapter: item.chapter ?? section?.chapter,
+                })}
                 {preview ? <SectionPreview>{preview}</SectionPreview> : null}
               </StyledLink>
             );

@@ -323,6 +323,24 @@
       "rolagem": "d12"
     },
     {
+      "id": "penitencia-sacerdote",
+      "titulo": "Penitencia Sacerdote",
+      "categoria": "falha-magica",
+      "rolagem": "—"
+    },
+    {
+      "id": "vidente-penitencia",
+      "titulo": "Vidente Penitencia",
+      "categoria": "falha-magica",
+      "rolagem": "d4"
+    },
+    {
+      "id": "vidente-sacrificio-falha-grave",
+      "titulo": "Vidente Sacrificio Falha Grave",
+      "categoria": "falha-magica",
+      "rolagem": "d6"
+    },
+    {
       "id": "armas-comuns",
       "titulo": "Armas comuns (sorteio)",
       "categoria": "itens",

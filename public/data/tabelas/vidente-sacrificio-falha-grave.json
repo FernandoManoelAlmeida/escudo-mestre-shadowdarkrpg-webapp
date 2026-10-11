@@ -1,0 +1,32 @@
+{
+  "id": "vidente-sacrificio-falha-grave",
+  "titulo": "Vidente Sacrificio Falha Grave",
+  "categoria": "falha-magica",
+  "rolagem": "d6",
+  "headers": [
+    "d6",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1–2",
+      "Sacrifique temporariamente 1d4 PV (mínimo 1); retornam em uma semana"
+    ],
+    [
+      "3",
+      "Sacrifique 1 ponto de CAR permanentemente"
+    ],
+    [
+      "4",
+      "Reduza temporariamente sua SAB em 2; retorna em duas semanas"
+    ],
+    [
+      "5",
+      "Sacrifique ritualisticamente 9 vidas humanoides"
+    ],
+    [
+      "6",
+      "Afunde ritualisticamente um dracar em chamas no mar"
+    ]
+  ]
+}

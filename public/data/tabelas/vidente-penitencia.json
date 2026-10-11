@@ -1,0 +1,28 @@
+{
+  "id": "vidente-penitencia",
+  "titulo": "Vidente Penitencia",
+  "categoria": "falha-magica",
+  "rolagem": "d4",
+  "headers": [
+    "d4",
+    "Resultado"
+  ],
+  "rows": [
+    [
+      "1",
+      "Sacrifique temporariamente 1d4 PV (você fica com um mínimo de 1 PV); eles retornam em uma semana"
+    ],
+    [
+      "2",
+      "Reduza temporariamente sua SAB em 2 pontos; eles retornam em duas semanas"
+    ],
+    [
+      "3",
+      "Jejue e medite em silêncio por três dias e três noites"
+    ],
+    [
+      "4",
+      "Afunde ritualisticamente um dracar em chamas no mar"
+    ]
+  ]
+}

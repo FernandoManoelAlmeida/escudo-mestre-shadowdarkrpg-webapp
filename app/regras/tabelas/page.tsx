@@ -13,6 +13,8 @@ import {
   matchesTabelaIndexEntry,
   sortEscudoTableKeys,
   sortTabelaIndexEntries,
+  formatTabelaTituloExibicao,
+  escudoTableDisplayName,
 } from "@/lib/tabelas";
 import type { TabelaIndexEntry } from "@/lib/tabelas";
 import { SortOrderButtons, SORT_FIELD_NOME } from "@/components/ui/SortOrderButtons";
@@ -155,7 +157,7 @@ function TabelaMigradaBlock({
     <TableBlock id={`tabela-${entry.id}`}>
       <Accordion
         id={`tabela-${entry.id}`}
-        title={entry.titulo}
+        title={formatTabelaTituloExibicao(entry.titulo)}
         defaultOpen={openFromHash}
       >
         <Meta>
@@ -286,7 +288,7 @@ export default function TabelasPage() {
               <TableBlock key={key} id={`tabela-escudo-${key}`}>
                 <Accordion
                   id={`tabela-escudo-${key}`}
-                  title={key.replace(/_/g, " ")}
+                  title={formatTabelaTituloExibicao(escudoTableDisplayName(key))}
                 >
                   <ResponsiveTable table={table} />
                 </Accordion>

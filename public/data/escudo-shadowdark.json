@@ -38,6 +38,12 @@
       "id": "6",
       "title": "MJ e progressão",
       "anchor": "6-mj-e-progressao"
+    },
+    {
+      "id": "multiclasse-simples",
+      "title": "Multiclasse simples",
+      "anchor": "multiclasse-simples",
+      "chapter": "7"
     }
   ],
   "sections": [
@@ -156,6 +162,49 @@
           "tableRef": "xp-tesouro"
         }
       ]
+    },
+    {
+      "id": "multiclasse-simples",
+      "title": "Multiclasse simples",
+      "homebrew": true,
+      "subsections": [
+        {
+          "id": "princi-pios",
+          "title": "Princípios",
+          "content": "- **Duas classes fixas** escolhidas na criação do personagem; não há “um nível em outra classe” depois.\n- **Habilidades iniciais de ambas** as classes no 1º nível, mas **sem talento de classe** nesse nível (exceto humano Ambicioso; ver abaixo).\n- **Proficiência importa:** armas, armaduras e restrições de cada habilidade seguem a classe cuja mecânica você está usando naquele momento.\n- **Uma progressão conjuradora por nível:** ao subir de nível, escolha de qual classe conjuradora aprende magias (ou ganha dádivas, no caso do Warlock).\n- **Provação:** personagens na Provação são nível 0 (sem classe). A multiclasse escolhe-se ao **passar a nível 1**; a Provação narrativa liga-se a **uma** das duas classes, à escolha do jogador."
+        },
+        {
+          "id": "regras-base",
+          "title": "Regras base",
+          "content": "### Escolha na criação\n\n1. Escolha **duas classes** entre as 18 disponíveis (4 do Livro de Regras + 14 dos zines; ver apêndice).\n2. Defina qual é a **classe primária** (para títulos; ver abaixo).\n3. Receba **todas as habilidades de 1º nível** de ambas as classes, respeitando proficiências e restrições.\n4. **Não role** na tabela de talentos de nenhuma das duas classes no 1º nível.\n\n### Humanos (Ambicioso)\n\nHumanos multiclasse **não** rolam talento de classe no 1º nível como as outras ancestralidades; o talento **Ambicioso** concede **1 rolagem** na tabela da **classe A** ou da **classe B** (à escolha do jogador).\n\n### Pontos de vida\n\nNo 1º nível e a cada nível subsequente:\n\n1. Role o dado de PV de **cada** classe.\n2. Some os dois resultados, **some o modificador de CON uma única vez** e **divida por 2**, arredondando **para cima**.\n\n*Exemplo:* Guerreiro/Ladrão com CON +2 no 1º nível — role 1d8 e 1d4; suponha 5 e 3 → (5 + 3 + 2) ÷ 2 = 5 PV.\n\n**Robusto** (anão): +2 PV inicial **uma vez**. Ao rolar PV, role **ambos** os dados com Vantagem, depois aplique a média + CON como acima.\n\n### Armas e armaduras\n\nO personagem pode **empunhar e vestir** qualquer item listado nas proficiências de **qualquer** das duas classes.\n\nPorém, **habilidades específicas de classe** só funcionam se você estiver usando equipamento permitido **pela classe que concede aquela habilidade**. **Conjurar** exige a restrição de armadura da classe cuja feature de conjuração você está a usar — poder vestir a armadura da outra classe **não** basta.\n\n| Exemplo | Regra |\n| ------------------------------- | ----------------------------------------------------------------------- |\n| Guerreiro/Ladrão | Apunhalada Pelas Costas exige armas de Ladrão. |\n| Guerreiro/Mago | Conjuração de magias de mago exige **sem armadura**. |\n| Lobo do Mar/Vidente | Muralha de Escudo exige escudo **e** proficiência de Lobo do Mar. |\n| Guerreiro Basilisco/Patrulheiro | Olhar Petrificante e Pele de Pedra exigem **sem armadura** (como Mago). |\n\n### Talentos ao subir de nível\n\nRolagens de talento de classe nos níveis **1, 3, 5, 7 e 9** (como no Livro de Regras). Multiclasse **não** rola no nível 1 (exceto Ambicioso, acima). Nos níveis 3, 5, 7 e 9, **escolha** em qual das duas classes rolar.\n\nA escolha da tabela de talentos é **independente** da escolha de progressão de magias ou dádivas no mesmo nível (pode avançar magias de uma classe e talento da outra).\n\n### Títulos\n\nUse a tabela de títulos da **classe primária** (definida na criação) para todo o personagem.\n\n### Idiomas\n\nSome os idiomas de ambas as classes; **não duplique** o mesmo idioma.\n\n### Experiência e níveis\n\nPor padrão, **sem alteração** nas regras de XP e subida de nível do Livro de Regras.\n\n**Opcional (MJ):** combos considerados muito fortes podem exigir **+10 XP** por nível para subir — avise o grupo na criação."
+        },
+        {
+          "id": "progressa-o-especial",
+          "title": "Progressão especial",
+          "content": "### Magias e conjuração\n\nClasses com tabela de magias conhecidas: **Bruxa**, **Cavaleiro de São Ydris**, **Mago**, **Sacerdote**, **Vidente**.\n\n- A cada nível, escolha **uma** dessas classes (se o personagem tiver mais de uma) para ganhar magias novas conforme a **tabela de conhecidas daquela classe** (não misture totais entre tabelas).\n- Magias iniciais no 1º nível: só as que cada classe **concede nesse nível** (ex.: Bruxa = 3 de grau 1; Cavaleiro de São Ydris = 0).\n- **Bruxa** e **Cavaleiro de São Ydris** compartilham a lista de magias de bruxa, mas só progridem **uma** tabela por nível — não acumulem o dobro de magias.\n- Ao conjurar magias de bruxa: se o PJ tiver a feature **Conjuração** do Cavaleiro de São Ydris, usa a restrição dele (**todas** as armaduras); senão, restrição da Bruxa (**couro**).\n- **Atributo de conjuração** segue a classe cuja magia está sendo lançada (INT mago, SAB sacerdote/vidente, CAR bruxa/Ydris).\n\n### Warlock (Dádivas Patronais)\n\n- No 1º nível, a **dádiva patronal** inicial entra com as habilidades de 1º nível do Warlock.\n- Dádivas e talentos do patrono seguem o (e o patrono em uso, ex. ).\n- **Dádivas extras** ou novas dádivas: só quando, num nível com rolagem de talento (3, 5, 7, 9), a escolha de talento/progressão for **Warlock** — role na tabela de Dádivas Patronais ou de talentos de Warlock, conforme as regras do patrono/CS1.\n\n### Ras-Godai (Lótus Negro)\n\n- A progressão do Lótus Negro **não** conta como classe conjuradora para a regra “uma por nível”.\n- Restrições de equipamento e talentos de Ras-Godai aplicam-se normalmente; proficiência de Ras-Godai é **armadura de couro** apenas.\n\n### Bardo (conjuração parcial)\n\n- Fascinar, Inspirar e talentos de Bardo seguem o .\n- Uso de **pergaminhos e varinhas** (CAR) **não** substitui progressão na tabela de magias de outra classe conjuradora.\n\n### Wyrdling (Corrupção)\n\n- Talentos da Tabela de Corrupção só **progridem** (novos talentos de Corrupção) quando **Wyrdling** for escolhido na progressão daquele nível.\n\n### Vidente\n\n- Magias de vidente (SAB), Presságio, Predestinado e Penitência de Vidente seguem o .\n- Ao subir de nível, se escolher Vidente para magias, use a tabela de Magias de Vidente Conhecidas.\n\n### Magias de druida (CS4)\n\n- *Druid Spells* no expande a lista do **mago neutro** — não é classe e **não** se aplica diretamente à multiclasse."
+        },
+        {
+          "id": "ape-ndice-18-classes",
+          "title": "Apêndice — 18 classes",
+          "content": "| Classe | PV | Armadura | Conjuração | Fonte |\n| -------------------------- | --- | ------------------- | ------------------------------------------ | --------------------------------------------- |\n| **Guerreiro** | 1d8 | todas | Não | |\n| **Ladrão** | 1d4 | couro, cota mitral | Não | |\n| **Mago** | 1d4 | nenhuma | Magias de mago (INT) | |\n| **Sacerdote** | 1d6 | todas | Magias de sacerdote (SAB) | |\n| **Bruxa** | 1d4 | couro | Magias de bruxa (CAR) | |\n| **Cavaleiro de São Ydris** | 1d6 | todas | Magias de bruxa (CAR), progressão tardia | |\n| **Warlock** | 1d6 | couro, cota, escudo | Patrono + Dádivas (sem tabela tradicional) | |\n| **Cavaleiro do Deserto** | 1d8 | couro + escudo | Não | |\n| **Lutador de Arena** | 1d8 | couro + escudo | Não | |\n| **Ras-Godai** | 1d6 | couro | Lótus Negro (talentos) | |\n| **Lobo do Mar** | 1d8 | couro, cota, escudo | Não | |\n| **Vidente** | 1d6 | couro | Magias de vidente (SAB) | |\n| **Guerreiro Basilisco** | 1d8 | **nenhuma** | Não | |\n| **Patrulheiro** | 1d8 | couro, cota | Não | |\n| **Explorador** | 1d6 | couro, cota, escudo | Não | |\n| **Wyrdling** | 1d6 | couro, cota, escudo | Não (Corrupção) | |\n| **Bardo** | 1d6 | couro, cota, escudo | Parcial (pergaminhos/varinhas, CAR) | |\n| **Duelista** | 1d8 | couro, cota mitral | Não | |\n\n> **CS5:** é material **parcial** (preview oficial); classes Explorador e Wyrdling podem receber errata no volume completo."
+        },
+        {
+          "id": "exemplos-marciais",
+          "title": "Exemplos marciais",
+          "content": "### Guerreiro / Ladrão\n\nPV médio alto (d8 + d4). Maestria em Armas e Bravura do Guerreiro; Ladroagem e Apunhalada do Ladrão. **Apunhalada** só com adaga, arco curto, besta, clava ou espada curta. Títulos pela classe primária.\n\n### Cavaleiro do Deserto / Lutador de Arena\n\nPV 1d8 + 1d8 (média d8). Montaria e Investida de um lado; Flourish, Implacável e Last Stand do outro. Ambos usam couro e escudo — pouco conflito de equipamento; o MJ pode pedir +10 XP/nível se o combo parecer dominante na mesa.\n\n### Guerreiro Basilisco / Patrulheiro\n\nPV 1d8 + 1d8. **Sem armadura** para Pele de Pedra e Olhar Petrificante; Herbalismo e Wayfinder exigem proficiência de Patrulheiro. CA vem de Pele de Pedra quando sem armadura; cota de malha de Patrulheiro não ajuda nas habilidades basilisco."
+        },
+        {
+          "id": "exemplos-conjuradores-e-hi-bridos",
+          "title": "Exemplos conjuradores e híbridos",
+          "content": "| Combo | Foco na mesa |\n| ------------------------- | --------------------------------------------------------------------------------------------------- |\n| **Guerreiro / Mago** | Magias (INT) **sem armadura**; Maestria em Armas com armadura pesada quando não conjura. |\n| **Sacerdote / Bruxa** | SAB vs CAR; armaduras distintas (todas vs couro). Uma tabela de magias por nível. |\n| **Warlock / Ladrão** | Dádivas patronais + Ladroagem/Apunhalada; conjuração tradicional limitada ao patrono. |\n| **Mago / Bardo** | Tabela de mago (INT) vs pergaminhos/varinhas do Bardo (CAR) — progressões separadas. |\n| **Ras-Godai / Ladrão** | Lótus Negro + Apunhalada; ambos em armadura leve; Assassinate com armas de Ladrão. |\n| **Explorador / Wyrdling** | Equipamento de Confiança + Pseudópode/Corrupção; novos talentos de Corrupção só em níveis Wyrdling. |\n| **Lobo do Mar / Vidente** | Muralha de Escudo (escudo) + magias (SAB); Deuses Antigos vs Presságio/Predestinado. |\n\n**Nota transversal:** Mago (INT), Sacerdote (SAB), Bruxa (CAR), Vidente (SAB), Warlock (dádivas), Bardo (pergaminhos/varinhas, CAR)."
+        },
+        {
+          "id": "notas-para-o-mestre",
+          "title": "Notas para o Mestre",
+          "content": "1. **Teste na mesa:** regra homebrew — ajuste XP opcional (+10/nível) se combos ficarem acima da curva.\n2. **CS5 incompleto:** trate Explorador e Wyrdling como preview; avise jogadores que errata futura pode alterar talentos.\n3. **Provação:** escolha as duas classes ao passar a nível 1; uma delas “conta” para a Provação narrativa.\n4. **SoloDark:** PJs multiclasse funcionam com (2–4 personagens, criação RAW + este homebrew se o jogador solo quiser).\n5. **Sem Into The Shadowlands:** este guia não usa classes ou regras desse suplemento.\n6. **Falhas de conjuração:** Bruxa, Cavaleiro de São Ydris e Vidente mantêm suas tabelas e penalidades específicas ao lançar magias da respectiva lista.\n\n---"
+        }
+      ],
+      "chapter": "7"
     }
   ],
   "tables": {

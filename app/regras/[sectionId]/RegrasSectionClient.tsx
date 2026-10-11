@@ -2,7 +2,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import { getEscudo, getSection, getTable } from "@/lib/escudo";
+import {
+  getEscudo,
+  getSection,
+  getTable,
+  formatEscudoSectionHeading,
+} from "@/lib/escudo";
 import type { EscudoData, EscudoTable } from "@/lib/escudo";
 import { getTabelaById } from "@/lib/tabelas";
 import { rowAsCells, type RollTableRow } from "@/lib/rollTable";
@@ -68,6 +73,17 @@ const ContentWrap = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+`;
+
+const HomebrewNotice = styled.p`
+  padding: ${({ theme }) => theme.spacing.md};
+  margin: 0 0 ${({ theme }) => theme.spacing.lg};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  background: ${({ theme }) => theme.colors.surface};
+  font-size: ${({ theme }) => theme.typography.fontSize.sm};
+  line-height: 1.5;
+  color: ${({ theme }) => theme.colors.textMuted};
 `;
 
 const FormulaList = styled.ul`
@@ -159,14 +175,15 @@ export function RegrasSectionClient({ sectionId }: RegrasSectionClientProps) {
   return (
     <Page>
       <BackLink href="/regras">← Regras</BackLink>
-      <Title>
-        § {section.id} — {section.title}
-      </Title>
+      <Title>{formatEscudoSectionHeading(section)}</Title>
+      {section.homebrew ? (
+        <HomebrewNotice>
+          Homebrew de mesa — confirme com o grupo antes de usar na campanha.
+        </HomebrewNotice>
+      ) : null}
       {section.subsections.map((sub) => (
         <Subsection key={sub.id}>
-          <Subtitle>
-            {sub.id} — {sub.title}
-          </Subtitle>
+          <Subtitle>{sub.title}</Subtitle>
           {sub.content && (
             <ContentWrap>
               <MarkdownContent>{sub.content}</MarkdownContent>

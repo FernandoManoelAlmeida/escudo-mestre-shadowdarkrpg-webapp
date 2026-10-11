@@ -93,6 +93,9 @@ describe("páginas client", () => {
     expect(
       screen.getByRole("link", { name: /política de conteúdo de terceiros/i }),
     ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /astraldark.*pdf/i }),
+    ).toHaveAttribute("href", expect.stringContaining("Astraldark%20pt-BR.pdf"));
   });
 
   it(

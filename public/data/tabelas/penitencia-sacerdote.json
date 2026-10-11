@@ -1,0 +1,16 @@
+{
+  "id": "penitencia-sacerdote",
+  "titulo": "Penitencia Sacerdote",
+  "categoria": "falha-magica",
+  "rolagem": "—",
+  "headers": [
+    "Referência",
+    "Orientação"
+  ],
+  "rows": [
+    [
+      "—",
+      "O sacerdote deve realizar uma penitência imposta pelo seu deus (ou pelo mestre, alinhada à divindade escolhida) antes de conjurar novamente a mesma magia. Exemplos: jejum, vigília, confissão pública, reparação a um ferido, destruição de um ídolo profano, ou missão de um dia sem armadura pesada. Não há tabela d12 de falha mágica no Livro — consequência narrativa ligada à Divindade."
+    ]
+  ]
+}

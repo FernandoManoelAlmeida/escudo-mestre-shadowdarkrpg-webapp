@@ -63,6 +63,11 @@ export function escudoTableDisplayName(key: string): string {
   return key.replace(/_/g, " ");
 }
 
+/** Só apresentação na UI de /regras/tabelas. */
+export function formatTabelaTituloExibicao(titulo: string): string {
+  return titulo.toLocaleUpperCase("pt-BR");
+}
+
 export function matchesEscudoTableKey(key: string, q: string): boolean {
   const busca = q.trim().toLowerCase();
   if (!busca) return true;

@@ -8,6 +8,8 @@ export type EscudoIndexItem = {
   id: string;
   title: string;
   anchor: string;
+  /** Número exibido na listagem (ex.: homebrew após cap. 6 do livro). */
+  chapter?: string;
 };
 
 export type EscudoSubsection = {
@@ -22,6 +24,9 @@ export type EscudoSection = {
   id: string;
   title: string;
   subsections: EscudoSubsection[];
+  chapter?: string;
+  /** Regra de mesa (ex.: multiclasse) — exibir aviso na ficha. */
+  homebrew?: boolean;
 };
 
 export type TableRow = Record<string, string | number>;
@@ -65,6 +70,18 @@ export function getSection(
   sectionId: string,
 ): EscudoSection | undefined {
   return escudo.sections.find((s) => s.id === sectionId);
+}
+
+/** Título de lista/ficha: capítulos numéricos do livro vs. seções por slug (homebrew). */
+export function formatEscudoSectionHeading(section: {
+  id: string;
+  title: string;
+  chapter?: string;
+}): string {
+  const num =
+    section.chapter ?? (/^\d+$/.test(section.id) ? section.id : undefined);
+  if (num) return `§ ${num} — ${section.title}`;
+  return `§ ${section.title}`;
 }
 
 export function getTable(

@@ -3,6 +3,7 @@
 import styled from "styled-components";
 import { REGRAS_CASA_RESUMO } from "@/lib/regrasCasaResumo";
 import { SolodarkOracleWidget } from "@/components/home/SolodarkOracleWidget";
+import { AstraldarkPdfBanner } from "@/components/home/AstraldarkPdfBanner";
 import { assetUrl } from "@/lib/basePath";
 
 const Page = styled.div`
@@ -177,6 +178,8 @@ export default function Home() {
       </Description>
 
       <SolodarkOracleWidget />
+
+      <AstraldarkPdfBanner />
 
       <RegrasSection aria-labelledby="regras-em-uso">
         <SectionTitle id="regras-em-uso">Regras em uso</SectionTitle>

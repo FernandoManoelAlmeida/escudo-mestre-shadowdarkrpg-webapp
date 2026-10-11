@@ -54,7 +54,16 @@ function stripWikilinks(text) {
     .replace(/\[\[([^\]|#]+)(#[^\]|]+)?(\|([^\]]+))?\]\]/g, (_, _t, _a, _p, display) =>
       display ? display.trim() : "",
     )
-    .replace(/\s{2,}/g, " ")
+    .replace(/[ \t]{2,}/g, " ")
+    .trim();
+}
+
+function collapseHorizontalSpaces(text) {
+  return text
+    .split("\n")
+    .map((line) => line.replace(/[ \t]{2,}/g, " ").trimEnd())
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
     .trim();
 }
 
@@ -64,7 +73,7 @@ function applyPublicGlossary(text) {
   for (const [from, to] of REPLACEMENTS) {
     out = out.split(from).join(to);
   }
-  return out.replace(/\s{2,}/g, " ").trim();
+  return collapseHorizontalSpaces(out);
 }
 
 function collectHomebrewStrings(creature) {

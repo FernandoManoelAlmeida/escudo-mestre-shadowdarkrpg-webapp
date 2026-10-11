@@ -44,6 +44,27 @@ const grimorioMd = resolveVaultPath(
   "Catálogos",
   "Grimório.md",
 );
+const classesMd = resolveVaultPath(
+  vault,
+  "Referências",
+  "shadowdark",
+  "Catálogos",
+  "Classes.md",
+);
+const ancestralidadesMd = resolveVaultPath(
+  vault,
+  "Referências",
+  "shadowdark",
+  "Catálogos",
+  "Ancestralidades.md",
+);
+const regrasHomebrewMd = resolveVaultPath(
+  vault,
+  "Referências",
+  "shadowdark",
+  "Catálogos",
+  "Regras Homebrew.md",
+);
 
 const args = process.argv.slice(2);
 const noUpdate = args.includes("--no-update");
@@ -89,6 +110,18 @@ if (fs.existsSync(grimorioMd)) {
   run("migrate-catalogo-magias-shadowdark.js", [grimorioMd]);
 } else {
   console.warn("Aviso: Grimório MD ausente:", grimorioMd);
+}
+
+if (fs.existsSync(classesMd)) {
+  run("migrate-catalogo-classes-shadowdark.js", [classesMd]);
+}
+
+if (fs.existsSync(ancestralidadesMd)) {
+  run("migrate-catalogo-ancestralidades-shadowdark.js", [ancestralidadesMd]);
+}
+
+if (fs.existsSync(regrasHomebrewMd)) {
+  run("migrate-regras-homebrew-shadowdark.js", [regrasHomebrewMd]);
 }
 
 console.log("\n--- validate-migrated-data ---");
