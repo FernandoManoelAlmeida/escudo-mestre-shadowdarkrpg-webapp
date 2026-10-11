@@ -60,6 +60,34 @@ const SectionTitle = styled.h2`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
+const PromoRow = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.spacing.md};
+  margin: ${({ theme }) => theme.spacing.lg} 0;
+
+  & > * {
+    min-width: 0;
+  }
+
+  & > section {
+    margin: 0;
+  }
+
+  & > a {
+    margin: 0;
+    max-width: none;
+    height: 100%;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: ${({ theme }) => theme.spacing.md};
+    align-items: stretch;
+  }
+`;
+
 const RegrasSection = styled.section`
   margin-top: ${({ theme }) => theme.spacing.md};
 `;
@@ -177,9 +205,10 @@ export default function Home() {
         </p>
       </Description>
 
-      <SolodarkOracleWidget />
-
-      <AstraldarkPdfBanner />
+      <PromoRow>
+        <SolodarkOracleWidget />
+        <AstraldarkPdfBanner />
+      </PromoRow>
 
       <RegrasSection aria-labelledby="regras-em-uso">
         <SectionTitle id="regras-em-uso">Regras em uso</SectionTitle>
