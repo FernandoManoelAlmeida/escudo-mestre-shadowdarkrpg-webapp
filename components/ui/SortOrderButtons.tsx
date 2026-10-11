@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import styled from "styled-components";
 import type { OrdenarSentido, SortOrderValue } from "@/lib/sortOrder";
 
@@ -25,12 +26,21 @@ const SortLabel = styled.span`
   color: ${({ theme }) => theme.colors.textMuted};
 `;
 
+const ActionsRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.md};
+  width: 100%;
+  min-width: 0;
+`;
+
 const OrderGroup = styled.div`
   display: inline-flex;
+  flex: 0 0 auto;
   flex-wrap: wrap;
   gap: ${({ theme }) => theme.spacing.xs};
   align-items: center;
-  min-height: 40px;
+  min-height: 32px;
 `;
 
 const OrderBtn = styled.button<{ $active?: boolean }>`
@@ -65,11 +75,12 @@ const OrderBtn = styled.button<{ $active?: boolean }>`
   }
 `;
 
-const Wrap = styled.div`
+const Wrap = styled.div<{ $fullWidth?: boolean }>`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacing.xs};
   min-width: 0;
+  width: ${({ $fullWidth }) => ($fullWidth ? "100%" : "auto")};
 `;
 
 type SortOrderButtonsProps = {
@@ -78,6 +89,8 @@ type SortOrderButtonsProps = {
   fields: SortOrderField[];
   value: SortOrderValue;
   onChange: (next: SortOrderValue) => void;
+  /** Ex.: «Limpar filtros» na mesma linha dos botões de ordenação. */
+  trailing?: ReactNode;
 };
 
 export function SortOrderButtons({
@@ -86,6 +99,7 @@ export function SortOrderButtons({
   fields,
   value,
   onChange,
+  trailing,
 }: SortOrderButtonsProps) {
   function handleClick(field: SortOrderField) {
     if (value.por === field.key) {
@@ -98,38 +112,45 @@ export function SortOrderButtons({
     onChange({ por: field.key, sentido: field.defaultSentido });
   }
 
-  return (
-    <Wrap>
-      <SortLabel id={id}>{label}</SortLabel>
-      <OrderGroup role="group" aria-labelledby={id}>
-        {fields.map((field) => {
-          const active = value.por === field.key;
-          const display = active
-            ? value.sentido === "asc"
-              ? field.ascShort
-              : field.descShort
-            : field.label;
-          const ariaLabel = active
-            ? value.sentido === "asc"
-              ? field.ascAriaLabel
-              : field.descAriaLabel
-            : field.inactiveAriaLabel;
+  const buttons = fields.map((field) => {
+    const active = value.por === field.key;
+    const display = active
+      ? value.sentido === "asc"
+        ? field.ascShort
+        : field.descShort
+      : field.label;
+    const ariaLabel = active
+      ? value.sentido === "asc"
+        ? field.ascAriaLabel
+        : field.descAriaLabel
+      : field.inactiveAriaLabel;
 
-          return (
-            <OrderBtn
-              key={field.key}
-              type="button"
-              $active={active}
-              aria-pressed={active}
-              aria-label={ariaLabel}
-              title={ariaLabel}
-              onClick={() => handleClick(field)}
-            >
-              {display}
-            </OrderBtn>
-          );
-        })}
-      </OrderGroup>
+    return (
+      <OrderBtn
+        key={field.key}
+        type="button"
+        $active={active}
+        aria-pressed={active}
+        aria-label={ariaLabel}
+        title={ariaLabel}
+        onClick={() => handleClick(field)}
+      >
+        {display}
+      </OrderBtn>
+    );
+  });
+
+  return (
+    <Wrap $fullWidth={Boolean(trailing)}>
+      <SortLabel id={id}>{label}</SortLabel>
+      {trailing ? (
+        <ActionsRow>
+          <OrderGroup role="group" aria-labelledby={id}>{buttons}</OrderGroup>
+          {trailing}
+        </ActionsRow>
+      ) : (
+        <OrderGroup role="group" aria-labelledby={id}>{buttons}</OrderGroup>
+      )}
     </Wrap>
   );
 }

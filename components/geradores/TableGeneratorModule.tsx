@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import { getTabelaById } from "@/lib/tabelas";
 import type { TabelaIndexEntry } from "@/lib/tabelas";
@@ -12,7 +12,13 @@ import {
 } from "@/components/geradores/GeneratorActionRow";
 import { RollResultCard } from "@/components/geradores/RollResultCard";
 import { FilterChips } from "@/components/geradores/FilterChips";
-import { FilterPanel, FilterGrid } from "@/components/ui/ListFilters";
+import { FilterClearButton } from "@/components/ui/FilterClearButton";
+import {
+  FilterPanel,
+  FilterGrid,
+  FilterPanelClearRow,
+} from "@/components/ui/ListFilters";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { SelectField } from "@/components/ui/SelectField";
 import { regrasTabelaHref } from "@/lib/geradoresConfig";
 import {
@@ -70,9 +76,22 @@ export function TableGeneratorModule({
       ? falhaMagicaTables(tables)
       : tables;
 
-  const [selectedId, setSelectedId] = useState(displayTables[0]?.id ?? "");
+  const filterDefaults = useMemo(
+    () => ({ tabela: "", modCar: "0" }),
+    [],
+  );
+  const { values, setField, clear, hasActive } = useListFiltersInUrl(
+    filterDefaults,
+    { debouncedKeys: [] },
+  );
+  const selectedId = useMemo(() => {
+    if (values.tabela && displayTables.some((t) => t.id === values.tabela)) {
+      return values.tabela;
+    }
+    return displayTables[0]?.id ?? "";
+  }, [values.tabela, displayTables]);
+  const modCar = parseInt(values.modCar, 10) || 0;
   const [data, setData] = useState<RollTableData | null>(null);
-  const [modCar, setModCar] = useState(0);
   const [result, setResult] = useState<{
     valor: number;
     texto: string;
@@ -83,15 +102,6 @@ export function TableGeneratorModule({
 
   const singleTable = displayTables.length === 1;
   const layoutDescription = moduleDescriptionForDisplay(title, description);
-
-  useEffect(() => {
-    if (
-      displayTables.length &&
-      !displayTables.some((t) => t.id === selectedId)
-    ) {
-      setSelectedId(displayTables[0].id);
-    }
-  }, [displayTables, selectedId]);
 
   useEffect(() => {
     if (!selectedId) {
@@ -141,7 +151,7 @@ export function TableGeneratorModule({
   }
 
   function selectTable(id: string) {
-    setSelectedId(id);
+    setField("tabela", id);
     setResult(null);
   }
 
@@ -182,6 +192,9 @@ export function TableGeneratorModule({
               </SelectField>
             </FilterGrid>
           )}
+          <FilterPanelClearRow>
+            <FilterClearButton onClick={clear} disabled={!hasActive} />
+          </FilterPanelClearRow>
         </FilterPanel>
       )}
       {needsModCar && (
@@ -191,7 +204,9 @@ export function TableGeneratorModule({
             type="number"
             aria-label="MOD CAR"
             value={modCar}
-            onChange={(e) => setModCar(parseInt(e.target.value, 10) || 0)}
+            onChange={(e) =>
+              setField("modCar", String(parseInt(e.target.value, 10) || 0))
+            }
           />
         </Hint>
       )}

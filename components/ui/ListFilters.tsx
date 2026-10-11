@@ -47,7 +47,7 @@ export const FilterGrid = styled.div<{ $columns?: number; $minWidth?: number }>`
   }
 `;
 
-/** Linha ordenar + filtros (paridade OPRPG). */
+/** @deprecated Preferir FilterPanelSortRow + FilterGrid separados. */
 export const FilterSortRow = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
@@ -57,6 +57,29 @@ export const FilterSortRow = styled.div`
   @media (max-width: 520px) {
     grid-template-columns: 1fr;
   }
+`;
+
+/** Ordenação (+ opcional limpar na 2ª coluna). */
+export const FilterPanelSortRow = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: ${({ theme }) => theme.spacing.md};
+  align-items: end;
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+
+  &:has(> :only-child) {
+    grid-template-columns: max-content;
+  }
+`;
+
+/** Limpar filtros — último bloco do FilterPanel. */
+export const FilterPanelClearRow = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 `;
 
 export const FilterResultCount = styled.p`

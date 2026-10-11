@@ -116,21 +116,43 @@ function walkMd(dir, acc = []) {
 }
 
 function main() {
-  const root = process.argv[2];
+  const argv = process.argv.slice(2);
+  const strict = argv.includes("--strict");
+  const root = argv.find((a) => !a.startsWith("--"));
   if (!root || !fs.existsSync(root)) {
-    console.error("Uso: node scripts/migrate-tabelas-shadowdark.js <Tabelas/>");
+    console.error(
+      "Uso: node scripts/migrate-tabelas-shadowdark.js <Tabelas/> [--strict]",
+    );
     process.exit(1);
   }
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const index = [];
+  const seenIds = new Map();
+  let ignored = 0;
   for (const file of walkMd(path.resolve(root))) {
     const raw = fs.readFileSync(file, "utf8");
     const fm = parseFrontmatter(raw);
     const table = parseTableFromBody(fm.body);
-    if (!table || table.rows.length === 0) continue;
+    if (!table || table.rows.length === 0) {
+      ignored++;
+      if (strict) {
+        console.error("STRICT: MD sem tabela:", file);
+        process.exit(1);
+      }
+      continue;
+    }
 
     const skillMeta = metaFromSkillBody(fm.body, file);
     const id = fm.id || skillMeta.id;
+    if (seenIds.has(id)) {
+      const msg = `ID duplicado "${id}": ${seenIds.get(id)} e ${file}`;
+      if (strict) {
+        console.error("STRICT:", msg);
+        process.exit(1);
+      }
+      console.warn("Aviso:", msg);
+    }
+    seenIds.set(id, file);
     const categoria =
       fm.categoria || skillMeta.categoria || path.basename(path.dirname(file));
     const subcategoria =
@@ -165,7 +187,21 @@ function main() {
     path.join(OUT_DIR, "tabelas-index.json"),
     JSON.stringify({ tabelas: index }, null, 2),
   );
-  console.log("Tabelas:", index.length);
+
+  const indexIds = new Set(index.map((e) => e.id));
+  let orphansRemoved = 0;
+  for (const name of fs.readdirSync(OUT_DIR)) {
+    if (!name.endsWith(".json") || name === "tabelas-index.json") continue;
+    const id = name.replace(/\.json$/, "");
+    if (!indexIds.has(id)) {
+      fs.unlinkSync(path.join(OUT_DIR, name));
+      orphansRemoved++;
+    }
+  }
+
+  console.log(
+    `Tabelas: ${index.length} | ignorados: ${ignored} | órfãos removidos: ${orphansRemoved}`,
+  );
   writeVersion(PROJECT_ROOT);
 }
 

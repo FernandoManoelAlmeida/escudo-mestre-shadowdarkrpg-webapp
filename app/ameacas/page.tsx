@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import {
   getAmeacas,
   filterAmeacas,
+  getAlinhamentosParaFiltro,
+  labelAlinhamento,
   tipoParaListagem,
   type AmeacasData,
   type Criatura,
@@ -13,10 +15,11 @@ import {
 } from "@/lib/ameacas";
 import { OrigemBadge } from "@/components/ameacas/OrigemBadge";
 import { SelectField } from "@/components/ui/SelectField";
+import { FilterClearButton } from "@/components/ui/FilterClearButton";
 import {
   FilterPanel,
   FilterSearchInput,
-  FilterSortRow,
+  FilterGrid,
   FilterResultCount,
 } from "@/components/ui/ListFilters";
 import {
@@ -25,7 +28,18 @@ import {
   sortFieldNv,
 } from "@/components/ui/SortOrderButtons";
 import type { SortOrderValue } from "@/lib/sortOrder";
+import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { AmeacasPageSkeleton } from "@/components/skeletons";
+
+const AMEACAS_FILTER_DEFAULTS = {
+  q: "",
+  origem: "todas",
+  al: "todas",
+  ord: "nome:asc",
+};
+
+const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
@@ -75,12 +89,11 @@ const Meta = styled.span`
 
 export default function AmeacasPage() {
   const [data, setData] = useState<AmeacasData | null>(null);
-  const [texto, setTexto] = useState("");
-  const [origem, setOrigem] = useState<OrigemCriatura | "todas">("todas");
-  const [ordenar, setOrdenar] = useState<SortOrderValue>({
-    por: "nome",
-    sentido: "asc",
-  });
+  const filterDefaults = useMemo(() => AMEACAS_FILTER_DEFAULTS, []);
+  const { values, setField, clear, hasActive } =
+    useListFiltersInUrl(filterDefaults);
+
+  const ordenar = decodeSortOrder(values.ord, DEFAULT_SORT);
 
   useEffect(() => {
     getAmeacas().then(setData);
@@ -88,9 +101,13 @@ export default function AmeacasPage() {
 
   if (!data) return <AmeacasPageSkeleton />;
 
+  const alinhamentos = getAlinhamentosParaFiltro(data);
+  const origem = values.origem as OrigemCriatura | "todas";
+  const al = values.al;
   const list = filterAmeacas(data, {
-    texto,
+    texto: values.q,
     origem,
+    al: al === "todas" ? undefined : al,
     ordenarPor: ordenar.por as "nome" | "nv",
     ordenarSentido: ordenar.sentido,
   });
@@ -107,27 +124,49 @@ export default function AmeacasPage() {
         <FilterSearchInput
           type="search"
           placeholder="Buscar nome, traço, tipo…"
-          value={texto}
-          onChange={(e) => setTexto(e.target.value)}
+          value={values.q}
+          onChange={(e) => setField("q", e.target.value)}
           aria-label="Buscar criaturas"
         />
-        <FilterSortRow>
-          <SortOrderButtons
-            fields={[SORT_FIELD_NOME, sortFieldNv()]}
-            value={ordenar}
-            onChange={setOrdenar}
-          />
+        <FilterGrid $columns={2} $minWidth={400}>
           <SelectField
             id="filtro-origem-ameacas"
             label="Origem"
             value={origem}
-            onChange={(v) => setOrigem(v as OrigemCriatura | "todas")}
+            onChange={(v) => setField("origem", v)}
           >
             <option value="todas">Todas</option>
             <option value="oficial">Oficial</option>
             <option value="homebrew">Homebrew</option>
           </SelectField>
-        </FilterSortRow>
+          <SelectField
+            id="filtro-al-ameacas"
+            label="Alinhamento (AL)"
+            value={al}
+            onChange={(v) => setField("al", v)}
+          >
+            <option value="todas">Todos</option>
+            {alinhamentos.map((code) => (
+              <option key={code} value={code}>
+                {labelAlinhamento(code)}
+              </option>
+            ))}
+          </SelectField>
+        </FilterGrid>
+        <SortOrderButtons
+          fields={[SORT_FIELD_NOME, sortFieldNv()]}
+          value={ordenar}
+          onChange={(next) =>
+            setField("ord", encodeSortOrder(next.por, next.sentido))
+          }
+          trailing={
+            <FilterClearButton
+              variant="aside"
+              onClick={clear}
+              disabled={!hasActive}
+            />
+          }
+        />
       </FilterPanel>
       <FilterResultCount>
         {list.length === data.ameacas.length

@@ -91,4 +91,7 @@ if (fs.existsSync(grimorioMd)) {
   console.warn("Aviso: Grimório MD ausente:", grimorioMd);
 }
 
+console.log("\n--- validate-migrated-data ---");
+run("validate-migrated-data.js", ["--strict"]);
+
 console.log("\n=== Migração Fantasia concluída ===");

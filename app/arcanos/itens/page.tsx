@@ -7,11 +7,17 @@ import { MarkdownBody } from "@/components/catalogo/MarkdownBody";
 import {
   FilterPanel,
   FilterSearchInput,
+  FilterPanelSortRow,
   FilterResultCount,
 } from "@/components/ui/ListFilters";
 import { SortOrderButtons, SORT_FIELD_NOME } from "@/components/ui/SortOrderButtons";
 import type { SortOrderValue } from "@/lib/sortOrder";
 import { sortCatalogoItens } from "@/lib/itensMagicos";
+import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
+
+const ITENS_FILTER_DEFAULTS = { q: "", ord: "nome:asc" };
+const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
@@ -41,11 +47,9 @@ type Catalogo = { itens: ItemEntry[] };
 
 export default function ArcanosItensPage() {
   const [data, setData] = useState<Catalogo | null>(null);
-  const [busca, setBusca] = useState("");
-  const [ordenar, setOrdenar] = useState<SortOrderValue>({
-    por: "nome",
-    sentido: "asc",
-  });
+  const filterDefaults = useMemo(() => ITENS_FILTER_DEFAULTS, []);
+  const { values, setField } = useListFiltersInUrl(filterDefaults);
+  const ordenar = decodeSortOrder(values.ord, DEFAULT_SORT);
 
   useEffect(() => {
     const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -56,7 +60,7 @@ export default function ArcanosItensPage() {
 
   const filtered = useMemo(() => {
     if (!data?.itens) return [];
-    const q = busca.trim().toLowerCase();
+    const q = values.q.trim().toLowerCase();
     const list = q
       ? data.itens.filter(
           (it) =>
@@ -65,7 +69,7 @@ export default function ArcanosItensPage() {
         )
       : [...data.itens];
     return sortCatalogoItens(list, ordenar.sentido);
-  }, [data, busca, ordenar.sentido]);
+  }, [data, values.q, ordenar.sentido]);
 
   return (
     <Page>
@@ -82,15 +86,19 @@ export default function ArcanosItensPage() {
         <FilterSearchInput
           type="search"
           placeholder="Buscar por nome ou texto…"
-          value={busca}
-          onChange={(e) => setBusca(e.target.value)}
+          value={values.q}
+          onChange={(e) => setField("q", e.target.value)}
           aria-label="Buscar itens mágicos"
         />
-        <SortOrderButtons
-          fields={[SORT_FIELD_NOME]}
-          value={ordenar}
-          onChange={setOrdenar}
-        />
+        <FilterPanelSortRow>
+          <SortOrderButtons
+            fields={[SORT_FIELD_NOME]}
+            value={ordenar}
+            onChange={(next) =>
+              setField("ord", encodeSortOrder(next.por, next.sentido))
+            }
+          />
+        </FilterPanelSortRow>
       </FilterPanel>
       <FilterResultCount>
         {data?.itens && filtered.length === data.itens.length

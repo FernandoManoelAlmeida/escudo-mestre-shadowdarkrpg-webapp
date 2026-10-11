@@ -21,6 +21,7 @@
     "migrate:catalogo-magias-shadowdark": "node scripts/migrate-catalogo-magias-shadowdark.js",
     "extract:magias-shadowdark": "node scripts/extract-magias-from-vault.js",
     "migrate:from-fantasia": "node scripts/migrate-from-fantasia.js",
+    "validate:data": "node scripts/validate-migrated-data.js --strict",
     "build:android:twa:init": "node scripts/init-twa.js",
     "build:android:twa": "cd android-twa && npx @bubblewrap/cli build",
     "build:capacitor": "cross-env BUILD_ANDROID_CAPACITOR=1 next build --webpack",

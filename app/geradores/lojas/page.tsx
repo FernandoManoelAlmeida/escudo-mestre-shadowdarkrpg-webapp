@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { getTabelaById } from "@/lib/tabelas";
@@ -25,7 +25,13 @@ import {
   GeneratorSecondaryLink,
 } from "@/components/geradores/GeneratorActionRow";
 import { RollResultCard } from "@/components/geradores/RollResultCard";
-import { FilterPanel, FilterGrid } from "@/components/ui/ListFilters";
+import { FilterClearButton } from "@/components/ui/FilterClearButton";
+import {
+  FilterPanel,
+  FilterGrid,
+  FilterPanelClearRow,
+} from "@/components/ui/ListFilters";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { SelectField } from "@/components/ui/SelectField";
 
 const Btn = styled.button`
@@ -84,12 +90,19 @@ const QUALIDADE_LABELS: Record<LojaQualidade, string> = {
   refinada: "Refinada",
 };
 
+const LOJAS_FILTER_DEFAULTS = { qualidade: "padrao", clientes: "0" };
+
 export default function LojasPage() {
-  const [qualidade, setQualidade] = useState<LojaQualidade>("padrao");
+  const filterDefaults = useMemo(() => LOJAS_FILTER_DEFAULTS, []);
+  const { values, setField, clear, hasActive } = useListFiltersInUrl(
+    filterDefaults,
+    { debouncedKeys: [] },
+  );
+  const qualidade = values.qualidade as LojaQualidade;
+  const incluirClientes = values.clientes === "1";
   const [tipoTable, setTipoTable] = useState<RollTableData | null>(null);
   const [nomeTable, setNomeTable] = useState<RollTableData | null>(null);
   const [clientesTable, setClientesTable] = useState<RollTableData | null>(null);
-  const [incluirClientes, setIncluirClientes] = useState(false);
   const [steps, setSteps] = useState<StepResult[]>([]);
 
   const tipoId = LOJA_QUALIDADE_TABLE_IDS[qualidade];
@@ -172,7 +185,7 @@ export default function LojasPage() {
               id="loja-qualidade"
               label="Qualidade"
               value={qualidade}
-              onChange={(v) => setQualidade(v as LojaQualidade)}
+              onChange={(v) => setField("qualidade", v)}
             >
               {(Object.keys(QUALIDADE_LABELS) as LojaQualidade[]).map((q) => (
                 <option key={q} value={q}>
@@ -181,15 +194,20 @@ export default function LojasPage() {
               ))}
             </SelectField>
           </FilterGrid>
+          <CheckRow>
+            <input
+              type="checkbox"
+              checked={incluirClientes}
+              onChange={(e) =>
+                setField("clientes", e.target.checked ? "1" : "0")
+              }
+            />
+            Incluir cliente interessante (d4 + d4)
+          </CheckRow>
+          <FilterPanelClearRow>
+            <FilterClearButton onClick={clear} disabled={!hasActive} />
+          </FilterPanelClearRow>
         </FilterPanel>
-        <CheckRow>
-          <input
-            type="checkbox"
-            checked={incluirClientes}
-            onChange={(e) => setIncluirClientes(e.target.checked)}
-          />
-          Incluir cliente interessante (d4 + d4)
-        </CheckRow>
         <GeneratorActionRow>
           <Btn
             type="button"

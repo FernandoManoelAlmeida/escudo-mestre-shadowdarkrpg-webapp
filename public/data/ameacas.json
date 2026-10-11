@@ -1733,10 +1733,9 @@
       "tags": []
     },
     {
-      "id": "monge-githzerai",
-      "nome": "MONGE GITHZERAI",
-      "flavor": "Humanóide esguio, idêntico em traços aos githyanki, mas de vestes simples e postura serena. Discípulo de Zerthimon que testa o corpo e a mente nos extremos do multiverso — inclusive no Limbo.",
-      "tipo": "Índice por NV:. [[#NV 2|NV 2]] | [[#NV 3|NV 3]] | [[#NV 6|NV 6]] | [[#NV 8|NV 8]] | [[#NV 11|NV 11]] | [[#NV 14|NV 14]]",
+      "id": "monge-matrimpio",
+      "nome": "MONGE MATRÍMPIO",
+      "flavor": "Humanóide esguio, idêntico em traços aos matriyanki, mas de vestes simples e postura serena. Discípulo de Zerthimon que testa o corpo e a mente nos extremos do multiverso — inclusive no Limbo.",
       "ca": 14,
       "pv": 12,
       "atq": "2 golpe psi +4 (1d6 + 1d4 psíquico)",
@@ -1765,11 +1764,8 @@
           "descricao": "Vantagem em testes contra medo, encantamento e efeitos psíquicos."
         }
       ],
-      "fonte": "Githyanki Githzerai",
       "origem": "homebrew",
-      "tags": [
-        "Índice por NV:. [[#NV 2|NV 2]] | [[#NV 3|NV 3]] | [[#NV 6|NV 6]] | [[#NV 8|NV 8]] | [[#NV 11|NV 11]] | [[#NV 14|NV 14]]"
-      ]
+      "tags": []
     },
     {
       "id": "morcego-gigante",
@@ -2673,6 +2669,37 @@
       "tags": []
     },
     {
+      "id": "guerreiro-matriprole",
+      "nome": "GUERREIRO MATRIPROLE",
+      "flavor": "Humanóide de pele dourada-esverdeada e orelhas serrilhadas, vestindo meia-armadura e empunhando uma lâmina prateada impregnada de energia psíquica. Soldado fanático de Rainha Imortal.",
+      "ca": 15,
+      "pv": 16,
+      "atq": "2 lâmina psi +4 (1d8 + 1d4 psíquico)",
+      "mv": "Perto",
+      "atributos": {
+        "F": 2,
+        "D": 2,
+        "C": 1,
+        "I": 1,
+        "S": 1,
+        "Car": 0
+      },
+      "al": "C",
+      "nv": 3,
+      "tracos": [
+        {
+          "nome": "Passo Nebuloso",
+          "descricao": "2/dia (máx. 1/turno). Teleporta até Perto (linha de visão). Não gasta o movimento do turno."
+        },
+        {
+          "nome": "Mente Blindada",
+          "descricao": "Vantagem em testes contra medo, encantamento e efeitos psíquicos."
+        }
+      ],
+      "origem": "homebrew",
+      "tags": []
+    },
+    {
       "id": "harpia",
       "nome": "HARPIA",
       "flavor": "Terríveis mulheres aladas, com a parte inferior de seus corpos semelhante a um abutre. Elas entoam uma canção hipnótica.",
@@ -2970,6 +2997,51 @@
       "fonte": "Bestiário",
       "origem": "oficial",
       "tags": []
+    },
+    {
+      "id": "lanca-estelar",
+      "nome": "LANÇA-ESTELAR",
+      "tipo": "Celestial (Montaria)",
+      "ca": 15,
+      "pv": 18,
+      "atq": "1 chifre +4 (1d6)",
+      "mv": "Perto x2 (voar)",
+      "atributos": {
+        "F": 4,
+        "D": 2,
+        "C": 2,
+        "I": 0,
+        "S": 1,
+        "Car": -1
+      },
+      "al": "N",
+      "nv": 3,
+      "tracos": [
+        {
+          "nome": "Investida",
+          "descricao": "Se moveu pelo menos Perto em linha reta imediatamente antes do ataque de chifre, o alvo sofre +2d6 de dano perfurante adicional."
+        },
+        {
+          "nome": "Voo de Passagem",
+          "descricao": "Ao voar para fora do alcance de um inimigo, não provoca ataques de oportunidade."
+        },
+        {
+          "nome": "Manto de Invisibilidade",
+          "descricao": "3/dia. A Lança-Estelar e **um** cavaleiro escolhido por ela tornam-se invisíveis (incluindo equipamento) até a Lança-Estelar ou o cavaleiro atacar ou conjurar, ou até a Lança-Estelar encerrar o efeito."
+        },
+        {
+          "nome": "Telepatia",
+          "descricao": "Longe (Celestial / Matri)."
+        },
+        {
+          "nome": "Alma da Grande Caverna",
+          "descricao": "Ao morrer, a alma regressa à Grande Caverna no coração do deus morto e renasce noutro corpo adulto lá — o número de lanças-estelares no multiverso é finito enquanto a caverna existir. (*Flavor; sem respawn no encontro atual.*)"
+        }
+      ],
+      "origem": "homebrew",
+      "tags": [
+        "Celestial"
+      ]
     },
     {
       "id": "leao",
@@ -4629,7 +4701,7 @@
       "nome": "KIRK",
       "epitet": "CAVALEIRO DOS ESPINHOS",
       "flavor": "Mercenário de armadura negra eriçada de espinhos; espada farpada e escudo crivado. Mata gente importante da Anelada para forçar a verdade à luz — a cidade não é a última, e os Anciões alimentam o Grande Antigo.",
-      "tipo": "Humanóide (humano).. Guilda dos Mercenários; esconderijo na Baixada Cinzenta. Assassino em série.",
+      "tipo": "Humanóide (humano)",
       "ca": 17,
       "pv": 26,
       "atq": "3 espada farpada +4 (1d8) ou 1 trombada de escudo espinhoso +3 (1d6)",
@@ -4662,7 +4734,6 @@
           "descricao": "Em praça lotada, multidão ou noite com cobertura: Vantagem em DES para escapar ou esconder-se. Perseguidores têm Desvantagem no mesmo teste se o local estiver lotado."
         }
       ],
-      "fonte": "Kirk",
       "origem": "homebrew",
       "tags": [
         "Humanóide"
@@ -4796,8 +4867,8 @@
       "id": "putaria",
       "nome": "PUT'ARIA",
       "epitet": "CAVALEIRA ARTISTA",
-      "flavor": "Cavaleira-artista githyanki de pele acinzentada e olhos escuros; veste cota de malha githyanki e empunha uma lâmina astral prateada. Marcada pela Rainha-Lich Vlaakith, mistura artes marciais, psionismo e magia sombria com charme de menestrel — juramentos em gith (Ch'mar, zal'a Vlaakith).",
-      "tipo": "Humanóide (Githyanki).. Patrono: **Vlaakith**, Rainha-Lich dos Githyanki.",
+      "flavor": "Cavaleira-artista matriyanki de pele acinzentada e olhos escuros; veste cota de malha matriyanki e empunha uma lâmina astral prateada. Marcada pela Rainha-Lich Rainha Imortal, mistura artes marciais, psionismo e magia sombria com charme de menestrel — juramentos em matri (Ch'mar, zal'a Rainha Imortal).",
+      "tipo": "Humanóide (Matriprole)",
       "ca": 16,
       "pv": 24,
       "atq": "2 espada astral gith +5 (1d8 + 1d4) ou 1 rajada mística (Perto) +5 (1d6)",
@@ -4846,7 +4917,6 @@
           "descricao": "CD 12. 1/dia (máx. 1/turno). Teletransporte até **perto** (linha de visão). Não gasta o movimento do turno."
         }
       ],
-      "fonte": "Put'Aria",
       "origem": "homebrew",
       "tags": [
         "Humanóide"
@@ -4885,7 +4955,7 @@
       "nome": "RÖGNVALDR",
       "epitet": "BERSERK DRACONATO",
       "flavor": "Draconato de escamas rubras e olhos âmbar; torso cicatrizado, voz grave e presença magnética. Ex-berserk da horda que mistura fúria de combate, charme predatório e sopro ancestral de dragão vermelho.",
-      "tipo": "Humanóide (Draconato).. Ancestralidade **vermelha** (fogo). Título: **Berserk** (Guerreiro nv. 5–6).",
+      "tipo": "Humanóide (Draconato)",
       "ca": 15,
       "pv": 26,
       "atq": "2 machado grande +5 (1d12) ou 1 sopro de fogo",
@@ -4930,7 +5000,6 @@
           "descricao": "Vantagem em Blefar, Intimidação e Atuação."
         }
       ],
-      "fonte": "Rögnvaldr",
       "origem": "homebrew",
       "tags": [
         "Humanóide"
@@ -5988,6 +6057,45 @@
       "tags": []
     },
     {
+      "id": "zerth-matrimpio",
+      "nome": "ZERTH MATRÍMPIO",
+      "flavor": "Guardião planar dos santuários matrizerai. Disciplina de Zerthimon feita carne: punhos psíquicos e mente que atravessa planos sem deixar rastro para matriyanki ou ghaik.",
+      "ca": 17,
+      "pv": 32,
+      "atq": "2 golpe psi +6 (1d8 + 1d6 psíquico)",
+      "mv": "Perto",
+      "atributos": {
+        "F": 1,
+        "D": 4,
+        "C": 2,
+        "I": 3,
+        "S": 3,
+        "Car": 1
+      },
+      "al": "N",
+      "nv": 6,
+      "tracos": [
+        {
+          "nome": "Assassino Fantasmal",
+          "descricao": "1/dia. 1 alvo Perto: SAB CD 14 ou Desvantagem em ataques e 2d8 psíquico no início de cada turno por 1d4 rodadas (SAB CD 14 no início do turno para encerrar)."
+        },
+        {
+          "nome": "Salto Psiônico",
+          "descricao": "2/dia (máx. 1/turno). Salta até Longe (linha de visão). Não gasta o movimento do turno."
+        },
+        {
+          "nome": "Defesa Psiônica",
+          "descricao": "2/dia. Quando seria atingido, +2 CA contra esse ataque; ou ignora 1 queda."
+        },
+        {
+          "nome": "Mente Blindada",
+          "descricao": "Vantagem em testes contra medo, encantamento e efeitos psíquicos."
+        }
+      ],
+      "origem": "homebrew",
+      "tags": []
+    },
+    {
       "id": "anaconda",
       "nome": "ANACONDA",
       "epitet": "Gigante",
@@ -6500,7 +6608,7 @@
       "nome": "ALEXIA",
       "epitet": "GOVERNADORA ANELADA",
       "flavor": "Elfa astral de pele clara e olhos com brilho estelar; vestes de governança impecáveis e voz baixa, precisa. Cada favor parece espontâneo — e cada dívida, permanente.",
-      "tipo": "Humanóide (Elfo Astral).. Representante do Conselho de Anciões na Cidade Anelada. Barda política (oratória e trama, não música).",
+      "tipo": "Humanóide (Elfo Estelar)",
       "ca": 14,
       "pv": 38,
       "atq": "2 magia +6 ou 1 adaga +4 (1d4)",
@@ -6565,7 +6673,6 @@
           "descricao": "Enxerga em penumbra ou escuridão total até alcance Perto."
         }
       ],
-      "fonte": "Alexia",
       "origem": "homebrew",
       "tags": [
         "Humanóide"
@@ -6721,6 +6828,45 @@
       ],
       "fonte": "Bestiário",
       "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "cavaleiro-matriprole",
+      "nome": "CAVALEIRO MATRIPROLE",
+      "flavor": "Elite de Rainha Imortal em armadura de placas de liga astral. Caçador de invasores do Plano Astral — especialmente conjuradores.",
+      "ca": 18,
+      "pv": 40,
+      "atq": "3 espada de prata +6 (1d8 + 1d6 psíquico)",
+      "mv": "Perto",
+      "atributos": {
+        "F": 3,
+        "D": 2,
+        "C": 2,
+        "I": 2,
+        "S": 2,
+        "Car": 2
+      },
+      "al": "C",
+      "nv": 8,
+      "tracos": [
+        {
+          "nome": "Corte Astral",
+          "descricao": "Acerto crítico contra alvo em projeção astral: corta o cordão de prata — morte instantânea."
+        },
+        {
+          "nome": "Telecinese",
+          "descricao": "1/dia. Move objeto ou criatura (peso moderado) até Perto, qualquer direção. FOR CD 13 para resistir."
+        },
+        {
+          "nome": "Passo Nebuloso",
+          "descricao": "2/dia (máx. 1/turno). Teleporta até Perto (linha de visão). Não gasta o movimento do turno."
+        },
+        {
+          "nome": "Mente Blindada",
+          "descricao": "Vantagem em testes contra medo, encantamento e efeitos psíquicos."
+        }
+      ],
+      "origem": "homebrew",
       "tags": []
     },
     {
@@ -8091,6 +8237,41 @@
       "tags": []
     },
     {
+      "id": "psion-matrimpio",
+      "nome": "PSION MATRÍMPIO",
+      "flavor": "Arquiteto psíquico dos santuários no Limbo. Lidera rrakkma — incursões contra colônias Predador de Cérebros — e estuda como os antigos matri foram transformados. Paira imóvel enquanto a realidade se curva à sua vontade.",
+      "ca": 18,
+      "pv": 52,
+      "atq": "3 distorção psíquica +7 (2d8 psíquico)",
+      "mv": "",
+      "atributos": {
+        "F": 1,
+        "D": 4,
+        "C": 2,
+        "I": 4,
+        "S": 4,
+        "Car": 2
+      },
+      "al": "N",
+      "nv": 11,
+      "tracos": [
+        {
+          "nome": "Distorção Psíquica",
+          "descricao": "Alcance Perto ou Longe. Em acerto, escolhe: Fascinar até o próximo turno do Psion (CAR CD 15) *ou* derrubar (alvo de tamanho médio ou menor)."
+        },
+        {
+          "nome": "Defesa Psiônica",
+          "descricao": "3/dia. Quando seria atingido, +2 CA contra esse ataque; ou ignora 1 queda."
+        },
+        {
+          "nome": "Mente Blindada",
+          "descricao": "Vantagem em testes contra medo, encantamento e efeitos psíquicos."
+        }
+      ],
+      "origem": "homebrew",
+      "tags": []
+    },
+    {
       "id": "vampiro",
       "nome": "VAMPIRO",
       "flavor": "Mortos-vivos pálidos, poderosos e maléficos que se alimentam de sangue. Eles detestam a luz do sol e protegem seus caixões a todo custo.",
@@ -8370,7 +8551,7 @@
       "nome": "SINH",
       "epitet": "O DRAGÃO ADORMECIDO",
       "flavor": "Dragão pálido e morto-vivo; a Lança de Yorgh atravessa-lhe o peito. Escamas esbranquiçadas, fôlego de fogo tóxico, sono interrompido pela Maldisombra.",
-      "tipo": "Morto-vivo (Dragão).. Young / adormecido. Guardião de Forjafunda nos Reinos Esquecidos.",
+      "tipo": "Morto-vivo (Dragão)",
       "ca": 16,
       "pv": 58,
       "atq": "3 despedaçar +8 (2d10) ou 1 sopro de fogo tóxico ou 1 investida aérea",
@@ -8407,7 +8588,6 @@
           "descricao": "Em vez do sopro: move-se até Perto x2 em linha e ataca um alvo no caminho +8 (2d10); DES CD 15 para evitar (metade do dano se passar)."
         }
       ],
-      "fonte": "Sinh",
       "origem": "homebrew",
       "tags": [
         "Morto-vivo"
@@ -8449,7 +8629,7 @@
       "id": "doppelganger-vampirico",
       "nome": "DOPPELGANGER VAMPÍRICO",
       "flavor": "Morto-vivo sem rosto que rouba pele e sangue; infiltra-se entre os vivos até a máscara cair.",
-      "tipo": "Morto-vivo (Metamorfo).. Homebrew. Mescla de [[Bestiário#VAMPIRO|VAMPIRO]] e [[Bestiário#DOPPELGANGER|DOPPELGANGER]].",
+      "tipo": "Morto-vivo (Metamorfo)",
       "ca": 16,
       "pv": 62,
       "atq": "3 mordida +8 (1d8 + drenar sangue) ou 1 encantar",
@@ -8494,7 +8674,6 @@
           "descricao": "Deve dormir em um caixão diariamente, ou perde 2d6 PV por dia, que não podem ser curados até que descanse em um caixão. Sofre 3d8 de dano a cada rodada que estiver sob luz solar direta. Não pode ser morto, a menos que seu coração seja perfurado com uma estaca de madeira enquanto estiver com 0 PV."
         }
       ],
-      "fonte": "Doppelganger Vampírico",
       "origem": "homebrew",
       "tags": [
         "Morto-vivo"
@@ -8701,6 +8880,49 @@
       "tags": []
     },
     {
+      "id": "dragomante-matriprole",
+      "nome": "DRAGOMANTE MATRIPROLE",
+      "flavor": "Arcano-guerreiro em manto carmesim, pairando com magia dos dragões vermelhos de dragão vermelho. Enviado só para extinção.",
+      "ca": 18,
+      "pv": 60,
+      "atq": "3 golpe dracônico +8 (1d8 + 2d6 fogo)",
+      "mv": "",
+      "atributos": {
+        "F": 0,
+        "D": 3,
+        "C": 4,
+        "I": 5,
+        "S": 3,
+        "Car": 4
+      },
+      "al": "C",
+      "nv": 14,
+      "tracos": [
+        {
+          "nome": "Amedrontar",
+          "descricao": "Em acerto com golpe dracônico: Desvantagem em ataques por 1d4 rodadas (CAR CD 15 para evitar) enquanto o Dragomante estiver visível; o alvo não pode se aproximar voluntariamente. Efeito não cumulativo."
+        },
+        {
+          "nome": "Sopro Dracônico Conjurado (jogar 1d6 por rodada, recarrega se tirar 5–6)",
+          "descricao": "Cubo de tamanho Perto × 2. DES CD 16 ou 4d8 fogo + 4d8 força (metade se passar)."
+        },
+        {
+          "nome": "Passo Nebuloso",
+          "descricao": "3/dia (máx. 1/turno). Teleporta até Perto (linha de visão). Não gasta o movimento do turno."
+        },
+        {
+          "nome": "Mente Blindada",
+          "descricao": "Vantagem em testes contra medo, encantamento e efeitos psíquicos."
+        },
+        {
+          "nome": "Imunidade ao Fogo",
+          "descricao": "Imune a dano de fogo."
+        }
+      ],
+      "origem": "homebrew",
+      "tags": []
+    },
+    {
       "id": "valquiria",
       "nome": "VALQUÍRIA",
       "flavor": "Mulheres guerreiras e angelicais, enviadas por Freya para carregar até os salões de Valhala as almas dos guerreiros dignos que morreram em batalha.",
@@ -8736,7 +8958,7 @@
       "id": "eldritch-lich",
       "nome": "ELDRITCH LICH",
       "flavor": "Um mago ou feiticeiro que ouviu demais o sussurro de um Grande Antigo. Morto-vivo, mas abrigado por um parasita vermiforme do Reino Distante no torso — a boca do parasita abre-se no peito, e tentáculos estranhos brotam da carne. Murmura sem cessar; às vezes partilha os sussurros incompreensíveis por telepatia.",
-      "tipo": "Morto-vivo (Aberração).. Patrono: Grande Antigo (role na tabela abaixo). Filactério = o parasita, não um objeto mundano.",
+      "tipo": "Morto-vivo (Aberração)",
       "ca": 17,
       "pv": 70,
       "atq": "1 tentáculo parasitário +8 (2d10 + 2d8) e 2 sussurro psíquico ou 1 magia +8 e 2 sussurro psíquico",
@@ -8758,7 +8980,7 @@
         },
         {
           "nome": "Parasita do Reino Distante",
-          "descricao": "Ao morrer, implode no parasita, que some para o Reino Distante. Em 2d4 dias, o lich renasce num ponto a até ~1,5 km de onde caiu. Se morrer dentro de um círculo mágico (ou magia equivalente) feito para conter mortos-vivos, em vez disso renasce como um [[Bestiário#OTYUGH|OTYUGH]] com todas as memórias do lich."
+          "descricao": "Ao morrer, implode no parasita, que some para o Reino Distante. Em 2d4 dias, o lich renasce num ponto a até ~1,5 km de onde caiu. Se morrer dentro de um círculo mágico (ou magia equivalente) feito para conter mortos-vivos, em vez disso renasce como um OTYUGH com todas as memórias do lich."
         },
         {
           "nome": "Vontade do Vazio",
@@ -8770,7 +8992,7 @@
         },
         {
           "nome": "Tentáculo Parasitário",
-          "descricao": "Alcance Perto. Em acerto: CON CD 15 ou envenenado. No fim de cada turno do alvo, CON CD 15 de novo para encerrar. Na terceira falha (total, enquanto o veneno durar), o alvo morre e dissolve-se numa [[Bestiário#BOCA MATRAQUEANTE|BOCA MATRAQUEANTE]] leal ao lich (mesma iniciativa)."
+          "descricao": "Alcance Perto. Em acerto: CON CD 15 ou envenenado. No fim de cada turno do alvo, CON CD 15 de novo para encerrar. Na terceira falha (total, enquanto o veneno durar), o alvo morre e dissolve-se numa BOCA MATRAQUEANTE leal ao lich (mesma iniciativa)."
         },
         {
           "nome": "Sussurro Psíquico",
@@ -8789,7 +9011,7 @@
           "descricao": "Pessoal. CD 14. Magias hostis que tenham o lich como alvo são conjuradas com CD 18. Dura 1d4 rodadas."
         },
         {
-          "nome": "Fome de Hadar (Magia de INT)",
+          "nome": "Fome de a Fome Sombria (Magia de INT)",
           "descricao": "CD 14. Cubo Perto centrado num ponto Longe: escuridão mágica e frio por 1d4 rodadas. Criaturas no cubo no início do turno: CON CD 15 ou 2d8 de dano. 2/dia."
         },
         {
@@ -8805,7 +9027,6 @@
           "descricao": "CD 15. Pessoal. Foge para outro plano (ou o Reino Distante). 1/dia."
         }
       ],
-      "fonte": "Eldritch Lich",
       "origem": "homebrew",
       "tags": [
         "Morto-vivo"

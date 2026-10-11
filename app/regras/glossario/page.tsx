@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { getEscudo, sortGlossary } from "@/lib/escudo";
@@ -10,11 +10,16 @@ import type { SortOrderValue } from "@/lib/sortOrder";
 import MarkdownContent from "@/components/ui/MarkdownContent";
 import InlineBold from "@/components/ui/InlineBold";
 import { RegrasGlossarioSkeleton } from "@/components/skeletons";
+import { FilterClearButton } from "@/components/ui/FilterClearButton";
 import {
   FilterPanel,
   FilterSearchInput,
+  FilterPanelSortRow,
+  FilterPanelClearRow,
   FilterResultCount,
 } from "@/components/ui/ListFilters";
+import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
@@ -78,14 +83,16 @@ const DescWrap = styled.div`
   }
 `;
 
+const GLOSSARIO_FILTER_DEFAULTS = { q: "", ord: "nome:asc" };
+const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
+
 export default function GlossarioPage() {
   const [data, setData] = useState<EscudoData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [query, setQuery] = useState("");
-  const [ordenar, setOrdenar] = useState<SortOrderValue>({
-    por: "nome",
-    sentido: "asc",
-  });
+  const filterDefaults = useMemo(() => GLOSSARIO_FILTER_DEFAULTS, []);
+  const { values, setField, clear, hasActive } =
+    useListFiltersInUrl(filterDefaults);
+  const ordenar = decodeSortOrder(values.ord, DEFAULT_SORT);
 
   useEffect(() => {
     getEscudo()
@@ -96,7 +103,7 @@ export default function GlossarioPage() {
   if (loading || !data) return <RegrasGlossarioSkeleton />;
 
   const glossary = data.glossary ?? [];
-  const q = query.trim().toLowerCase();
+  const q = values.q.trim().toLowerCase();
   const filtered = sortGlossary(
     q
       ? glossary.filter(
@@ -117,15 +124,22 @@ export default function GlossarioPage() {
         <FilterSearchInput
           type="search"
           placeholder="Buscar termo (ex.: AGI, PD, DT…)"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          value={values.q}
+          onChange={(e) => setField("q", e.target.value)}
           aria-label="Buscar no glossário"
         />
-        <SortOrderButtons
-          fields={[SORT_FIELD_NOME]}
-          value={ordenar}
-          onChange={setOrdenar}
-        />
+        <FilterPanelSortRow>
+          <SortOrderButtons
+            fields={[SORT_FIELD_NOME]}
+            value={ordenar}
+            onChange={(next) =>
+              setField("ord", encodeSortOrder(next.por, next.sentido))
+            }
+          />
+        </FilterPanelSortRow>
+        <FilterPanelClearRow>
+          <FilterClearButton onClick={clear} disabled={!hasActive} />
+        </FilterPanelClearRow>
       </FilterPanel>
       <FilterResultCount>
         {filtered.length === glossary.length

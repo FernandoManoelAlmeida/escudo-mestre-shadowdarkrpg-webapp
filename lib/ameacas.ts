@@ -79,15 +79,35 @@ function tipoIndiceOuLixo(text: string): boolean {
   return false;
 }
 
-/** Tipo curto na listagem do bestiário (homebrew: só categoria antes de «..»). */
+/** Tipo na listagem — igual ao livro base: só verbetes oficiais com tipo curto no JSON. */
 export function tipoParaListagem(c: Criatura): string | undefined {
+  if (c.origem === "homebrew") return undefined;
   const raw = c.tipo?.trim();
   if (!raw) return undefined;
-  if (c.origem !== "homebrew") return raw;
+  if (tipoIndiceOuLixo(raw)) return undefined;
+  return raw;
+}
 
-  const short = raw.split("..")[0]?.trim().replace(/\.$/, "") ?? "";
-  if (tipoIndiceOuLixo(short)) return undefined;
-  return short;
+function normalizarChaveNome(s: string): string {
+  return s
+    .normalize("NFD")
+    .replace(/\u0300-\u036f/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+/** Fonte na ficha — homebrew não mostra (evita título de documento, ex. «Matriprole Matrímpio»). */
+export function fonteParaFicha(c: Criatura): string | undefined {
+  if (c.origem === "homebrew") return undefined;
+  const fonte = c.fonte?.trim();
+  if (!fonte) return undefined;
+  if (/^besti[aá]rio$/i.test(fonte)) return undefined;
+  const chaveFonte = normalizarChaveNome(fonte);
+  const nomePrincipal = normalizarChaveNome(c.nome.split(",")[0] ?? c.nome);
+  const chaveId = normalizarChaveNome(c.id.replace(/-/g, " "));
+  if (chaveFonte === nomePrincipal || chaveFonte === chaveId) return undefined;
+  return fonte;
 }
 
 function textoParaBusca(a: Criatura): string {
@@ -118,6 +138,36 @@ export function getTiposParaFiltro(data: AmeacasData): string[] {
   return Array.from(set).sort((x, y) => x.localeCompare(y, "pt-BR"));
 }
 
+const ALINHAMENTO_LABEL: Record<string, string> = {
+  C: "Caótico",
+  N: "Neutro",
+  O: "Ordeiro",
+};
+
+const ALINHAMENTO_ORDEM = ["O", "N", "C", "L"];
+
+export function labelAlinhamento(al: string): string {
+  const code = al.trim().toUpperCase();
+  const nome = ALINHAMENTO_LABEL[code];
+  return nome ? `${code} — ${nome}` : al;
+}
+
+export function getAlinhamentosParaFiltro(data: AmeacasData): string[] {
+  const set = new Set<string>();
+  for (const a of data.ameacas) {
+    const code = a.al?.trim();
+    if (code) set.add(code.toUpperCase());
+  }
+  return Array.from(set).sort((x, y) => {
+    const ix = ALINHAMENTO_ORDEM.indexOf(x);
+    const iy = ALINHAMENTO_ORDEM.indexOf(y);
+    if (ix >= 0 && iy >= 0) return ix - iy;
+    if (ix >= 0) return -1;
+    if (iy >= 0) return 1;
+    return x.localeCompare(y);
+  });
+}
+
 export function filterAmeacas(
   data: AmeacasData,
   filters: FiltrosAmeacas,
@@ -135,7 +185,8 @@ export function filterAmeacas(
   }
 
   if (filters.al) {
-    list = list.filter((a) => a.al === filters.al);
+    const al = filters.al.toUpperCase();
+    list = list.filter((a) => a.al?.trim().toUpperCase() === al);
   }
 
   if (filters.tipo) {

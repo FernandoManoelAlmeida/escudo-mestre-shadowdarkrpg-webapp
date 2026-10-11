@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { getEscudo, filterRegrasIndex } from "@/lib/escudo";
@@ -12,6 +12,7 @@ import {
   FilterSearchInput,
   FilterResultCount,
 } from "@/components/ui/ListFilters";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
@@ -132,7 +133,8 @@ export default function RegrasPage() {
   const [data, setData] = useState<EscudoData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [busca, setBusca] = useState("");
+  const filterDefaults = useMemo(() => ({ q: "" }), []);
+  const { values, setField } = useListFiltersInUrl(filterDefaults);
 
   useEffect(() => {
     getEscudo()
@@ -161,7 +163,7 @@ export default function RegrasPage() {
       </Page>
     );
 
-  const filtered = filterRegrasIndex(data, { texto: busca || undefined });
+  const filtered = filterRegrasIndex(data, { texto: values.q || undefined });
 
   return (
     <Page>
@@ -174,8 +176,8 @@ export default function RegrasPage() {
         <FilterSearchInput
           type="search"
           placeholder="Buscar nas regras (seções, tabelas, glossário…)"
-          value={busca}
-          onChange={(e) => setBusca(e.target.value)}
+          value={values.q}
+          onChange={(e) => setField("q", e.target.value)}
           aria-label="Buscar texto nas regras"
         />
         <QuickLinks>
@@ -183,7 +185,7 @@ export default function RegrasPage() {
           <QuickLink href="/regras/glossario">Glossário</QuickLink>
         </QuickLinks>
       </FilterPanel>
-      {busca.trim() ? (
+      {values.q.trim() ? (
         <FilterResultCount>
           {filtered.length === data.index.length
             ? `${filtered.length} seções`
@@ -193,7 +195,7 @@ export default function RegrasPage() {
       <Links>
         {filtered.length === 0 ? (
           <FeedbackBlock showIcon>
-            {busca.trim()
+            {values.q.trim()
               ? "Nenhum resultado encontrado."
               : "Nenhuma regra disponível no momento."}
           </FeedbackBlock>

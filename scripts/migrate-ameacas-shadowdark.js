@@ -5,6 +5,10 @@
 const fs = require("fs");
 const path = require("path");
 const { writeVersion } = require("./write-version");
+const {
+  sanitizeHomebrewCreature,
+  slugFromNome,
+} = require("./astraldark-public-glossary");
 
 const PROJECT_ROOT = path.resolve(__dirname, "..");
 const OUT_PATH = path.join(PROJECT_ROOT, "public/data/ameacas.json");
@@ -16,14 +20,7 @@ const SKIP_FILES = new Set([
 ]);
 
 function slug(nome) {
-  return nome
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/\u0300-\u036f/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/[^a-z0-9-]/g, "")
-    .replace(/^-+|-+$/g, "");
+  return slugFromNome(nome);
 }
 
 function normalizeMd(text) {
@@ -73,15 +70,21 @@ function parseFrontmatter(md) {
   return out;
 }
 
-function extractTipo(lines, statsIdx) {
+function extractTipo(lines, statsIdx, options = {}) {
+  const { origem } = options;
   for (let i = 0; i < statsIdx; i++) {
     const line = lines[i].trim();
     const m = line.match(/^\*\*([^*]+)\*\*\.?\s*(.*)$/);
     if (!m) continue;
     const label = m[1].trim();
     if (/^(Tesouro|Comportamento)$/i.test(label)) continue;
+    if (/^índice por nv/i.test(label)) continue;
+    const cleanLabel = label.replace(/\.+$/, "").trim();
+    if (origem === "homebrew") {
+      return cleanLabel;
+    }
     const rest = m[2]?.trim();
-    return rest ? `${label}. ${rest}` : label;
+    return rest ? `${cleanLabel}. ${rest}` : cleanLabel;
   }
   return undefined;
 }
@@ -95,7 +98,13 @@ function parseTracos(lines, statsIdx) {
     if (line === "---") break;
     if (line.startsWith("**Tesouro:**") || line.startsWith("**Comportamento:**"))
       break;
-    if (line.startsWith("*Fonte:") || line.startsWith("[[") || line.startsWith("#"))
+    if (
+      line.startsWith("*Fonte:") ||
+      line.startsWith("[[") ||
+      line.startsWith("#") ||
+      /^\*Adaptação do hub/i.test(line) ||
+      /dndbeyond\.com/i.test(line)
+    )
       break;
     if (!line) {
       i++;
@@ -114,34 +123,6 @@ function parseTracos(lines, statsIdx) {
     i++;
   }
   return tracos;
-}
-
-function extractField(block, label) {
-  const re = new RegExp(
-    `\\*\\*${label}:\\*\\*\\s*([\\s\\S]*?)(?=\\n---|\\n\\*\\*Tesouro:\\*\\*|\\n\\*\\*Comportamento:\\*\\*|\\n\\[\\[|$)`,
-    "i",
-  );
-  const m = block.match(re);
-  if (!m) return undefined;
-  return m[1].replace(/\s+/g, " ").trim();
-}
-
-function extractNotas(block) {
-  const parts = block.split("\n---\n");
-  if (parts.length < 2) return undefined;
-  const tail = parts[parts.length - 1];
-  const lines = tail
-    .split("\n")
-    .map((l) => l.trim())
-    .filter(
-      (l) =>
-        l &&
-        !l.startsWith("[[") &&
-        !l.startsWith("**Tesouro:") &&
-        !l.startsWith("**Comportamento:"),
-    );
-  if (!lines.length) return undefined;
-  return lines.join(" ").trim();
 }
 
 function parseCreatureBlock(block, defaults) {
@@ -168,18 +149,18 @@ function parseCreatureBlock(block, defaults) {
   if (!stats) return null;
 
   const statsIdx = lines.findIndex((l) => l.trim() === statsLine.trim());
-  const tipo = extractTipo(lines, statsIdx);
-  const tracos = parseTracos(lines, statsIdx);
-  const fonteItalic = block.match(/\*Fonte:\s*([^*]+)\*/i)?.[1]?.trim();
-
   const fm = defaults.frontmatter || {};
   const origem =
     fm.origem === "oficial" || fm.origem === "homebrew"
       ? fm.origem
       : defaults.origem;
+
+  const tipo = extractTipo(lines, statsIdx, { origem });
+  const tracos = parseTracos(lines, statsIdx);
+  const fonteItalic = block.match(/\*Fonte:\s*([^*]+)\*/i)?.[1]?.trim();
   const fonte = fm.fonte || fonteItalic || defaults.fonte;
 
-  return {
+  let creature = {
     id: slug(nome),
     nome,
     epitet,
@@ -191,6 +172,25 @@ function parseCreatureBlock(block, defaults) {
     origem,
     tags: tipo ? [tipo.split("(")[0].trim()] : [],
   };
+
+  if (origem === "homebrew") {
+    creature = sanitizeHomebrewCreature(creature);
+  }
+
+  return creature;
+}
+
+function splitCreatureBlocksFromBody(body) {
+  const normalized = normalizeMd(body);
+  const parts = normalized.split(/\n(?=###\s+)/);
+  const blocks = [];
+  for (const part of parts) {
+    const trimmed = part.trim();
+    if (!trimmed.startsWith("### ")) continue;
+    if (!/^CA\s+\d/im.test(trimmed)) continue;
+    blocks.push(trimmed);
+  }
+  return blocks;
 }
 
 function parseBestiario(md) {
@@ -207,19 +207,56 @@ function parseBestiario(md) {
   return creatures;
 }
 
+function stripAttributionFooter(body) {
+  const idx = body.lastIndexOf("\n---\n");
+  if (idx === -1) return body;
+  const tail = body.slice(idx + 5);
+  if (
+    tail.length < 700 &&
+    /dndbeyond|Monster Manual|Wizards of the Coast|Adaptação do hub/i.test(tail)
+  ) {
+    return body.slice(0, idx);
+  }
+  return body;
+}
+
 function parseAvulsaFile(filePath) {
   const raw = fs.readFileSync(filePath, "utf8");
   const fm = parseFrontmatter(raw);
-  const body = raw.replace(/^---\n[\s\S]*?\n---\n/, "");
-  const block = body.includes("### ")
-    ? body
-    : `### ${path.basename(filePath, ".md")}\n${body}`;
-  const c = parseCreatureBlock(block, {
+  let body = raw.replace(/^---\n[\s\S]*?\n---\n/, "");
+  body = stripAttributionFooter(body);
+
+  const blocks = splitCreatureBlocksFromBody(body);
+  const defaults = {
     origem: fm.origem === "oficial" ? "oficial" : "homebrew",
-    fonte: fm.fonte || path.basename(filePath, ".md"),
+    fonte:
+      blocks.length === 1 ? fm.fonte?.trim() || undefined : undefined,
     frontmatter: fm,
-  });
-  return c;
+  };
+  if (blocks.length === 0) {
+    const block = body.includes("### ")
+      ? body
+      : `### ${path.basename(filePath, ".md")}\n${body}`;
+    const single = parseCreatureBlock(block, defaults);
+    return single ? [single] : [];
+  }
+
+  const creatures = [];
+  for (const block of blocks) {
+    const c = parseCreatureBlock(block, defaults);
+    if (c) creatures.push(c);
+  }
+  return creatures;
+}
+
+function uniqueId(map, creature) {
+  let id = creature.id;
+  let n = 2;
+  while (map.has(id) && map.get(id).nome !== creature.nome) {
+    id = `${creature.id}-${n}`;
+    n++;
+  }
+  return { ...creature, id };
 }
 
 function main() {
@@ -243,10 +280,19 @@ function main() {
       if (!name.endsWith(".md")) continue;
       const base = name.toLowerCase();
       if (SKIP_FILES.has(base) || base === "bestiário.md") continue;
-      const c = parseAvulsaFile(path.join(ameacasDir, name));
-      if (c) {
-        map.set(c.id, c);
-        console.log("Avulsa:", name, "→", c.id, `(${c.origem})`);
+      const list = parseAvulsaFile(path.join(ameacasDir, name));
+      for (const c of list) {
+        const entry = uniqueId(map, c);
+        map.set(entry.id, entry);
+      }
+      if (list.length) {
+        console.log(
+          "Avulsa:",
+          name,
+          "→",
+          list.map((c) => c.id).join(", "),
+          `(${list[0].origem})`,
+        );
       }
     }
   }
@@ -273,4 +319,8 @@ module.exports = {
   parseCreatureBlock,
   slug,
   parseTracos,
+  splitCreatureBlocksFromBody,
+  parseAvulsaFile,
+  extractTipo,
+  stripAttributionFooter,
 };

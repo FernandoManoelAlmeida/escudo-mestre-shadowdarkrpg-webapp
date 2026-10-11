@@ -3,6 +3,15 @@ import React from "react";
 
 export const mockUsePathname = vi.fn(() => "/");
 
+const defaultSearchParams = new URLSearchParams();
+
+export const mockUseSearchParams = vi.fn(
+  () =>
+    defaultSearchParams as ReturnType<
+      typeof import("next/navigation").useSearchParams
+    >,
+);
+
 vi.mock("next/link", () => ({
   default({
     children,
@@ -26,6 +35,7 @@ export const serverInsertedHtmlCallbacks: Array<() => unknown> = [];
 
 vi.mock("next/navigation", () => ({
   usePathname: () => mockUsePathname(),
+  useSearchParams: () => mockUseSearchParams(),
   useRouter: () => ({
     push: vi.fn(),
     replace: vi.fn(),

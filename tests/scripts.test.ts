@@ -54,9 +54,17 @@ describe("scripts/write-version", () => {
 });
 
 describe("scripts/migrate-ameacas-shadowdark", () => {
-  const { slug, parseStatsLine, parseCreatureBlock } = require(
-    "../scripts/migrate-ameacas-shadowdark.js",
-  );
+  const {
+    slug,
+    parseStatsLine,
+    parseCreatureBlock,
+    splitCreatureBlocksFromBody,
+    stripAttributionFooter,
+  } = require("../scripts/migrate-ameacas-shadowdark.js");
+  const {
+    sanitizeHomebrewCreature,
+    findForbiddenInHomebrew,
+  } = require("../scripts/astraldark-public-glossary.js");
 
   it("slug", () => {
     expect(slug("Olá Mundo!")).toBe("ola-mundo");
@@ -114,6 +122,98 @@ Fascinar. CD 12 CAR.
     expect(c).not.toHaveProperty("tesouro");
     expect(c).not.toHaveProperty("comportamento");
     expect(c).not.toHaveProperty("notas");
+  });
+
+  it("stripAttributionFooter preserva --- internos de documento multi-ficha", () => {
+    const body = `# Intro\n\n---\n\n### MONGE GITHZERAI\n\nCA 14, PV 12, ATQ 2 golpe, MV Perto, F +1, D +2, C +1, I +1, S +2, Car +0, AL L, NV 2\n\n---\n\n*Adaptação do hub a partir do Monster Manual 2024 (dndbeyond.com).*`;
+    const trimmed = stripAttributionFooter(body);
+    expect(trimmed).toContain("MONGE GITHZERAI");
+    expect(trimmed).not.toMatch(/dndbeyond/i);
+  });
+
+  it("splitCreatureBlocksFromBody conta blocos ### com CA", () => {
+    const body = `## NV 2\n\n### MONGE GITHZERAI\n\nCA 14, PV 12, ATQ 2 golpe, MV Perto, F +1, D +2, C +1, I +1, S +2, Car +0, AL L, NV 2\n\n## NV 3\n\n### GUERREIRO GITHYANKI\n\nCA 15, PV 16, ATQ 2 lâmina, MV Perto, F +2, D +2, C +1, I +1, S +1, Car +0, AL C, NV 3\n`;
+    expect(splitCreatureBlocksFromBody(body).length).toBe(2);
+  });
+
+  it("sanitizeHomebrewCreature renomeia Gith e aplica glossário nos traços", () => {
+    const c = sanitizeHomebrewCreature({
+      origem: "homebrew",
+      nome: "GUERREIRO GITHYANKI",
+      nv: 3,
+      ca: 15,
+      pv: 16,
+      tracos: [{ nome: "Telepatia", descricao: "Longe (Celestial / Gith)." }],
+      tags: [],
+    });
+    expect(c.nome).toBe("GUERREIRO MATRIPROLE");
+    expect(c.id).toBe("guerreiro-matriprole");
+    expect(findForbiddenInHomebrew(c)).toHaveLength(0);
+  });
+});
+
+describe("scripts/migrate-tabelas buildRollRows", () => {
+  const { buildRollRows } = require("../scripts/migrate-tabelas-shadowdark.js");
+
+  it("encontro-* produz objetos com faixa, texto e followUp", () => {
+    const table = {
+      headers: ["d100", "Resultado", "Cadeia"],
+      rows: [["01", "Um lobo", "criatura"]],
+    };
+    const rows = buildRollRows("encontro-floresta", {}, table);
+    expect(rows[0]).toMatchObject({
+      faixa: "01",
+      texto: "Um lobo",
+      followUp: "criatura",
+    });
+  });
+
+  it("tabela simples mantém string[][]", () => {
+    const table = {
+      headers: ["d6", "Efeito"],
+      rows: [["1", "Nada"]],
+    };
+    const rows = buildRollRows("reacao", {}, table);
+    expect(rows).toEqual([["1", "Nada"]]);
+  });
+});
+
+describe("scripts/validate-migrated-data IDs geradores", () => {
+  const projectRoot = path.resolve(
+    path.dirname(new URL(import.meta.url).pathname),
+    "..",
+  );
+  const { REQUIRED_TABLE_IDS, GITH_PUBLIC_IDS } = require(
+    "../scripts/validate-migrated-data.js",
+  );
+  const { findForbiddenInHomebrew } = require(
+    "../scripts/astraldark-public-glossary.js",
+  );
+
+  it("índice de tabelas contém IDs dos geradores de assentamento e loja", () => {
+    const indexPath = path.join(
+      projectRoot,
+      "public/data/tabelas/tabelas-index.json",
+    );
+    if (!fs.existsSync(indexPath)) return;
+    const { tabelas } = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+    const ids = new Set(tabelas.map((t: { id: string }) => t.id));
+    for (const id of REQUIRED_TABLE_IDS) {
+      expect(ids.has(id)).toBe(true);
+    }
+  });
+
+  it("ameacas.json expõe as 7 fichas Gith com glossário público", () => {
+    const ameacasPath = path.join(projectRoot, "public/data/ameacas.json");
+    if (!fs.existsSync(ameacasPath)) return;
+    const { ameacas } = JSON.parse(fs.readFileSync(ameacasPath, "utf8"));
+    const byId = new Map(ameacas.map((a: { id: string }) => [a.id, a]));
+    for (const id of GITH_PUBLIC_IDS) {
+      expect(byId.has(id)).toBe(true);
+      const c = byId.get(id);
+      expect(findForbiddenInHomebrew(c)).toHaveLength(0);
+    }
+    expect(byId.has("githyanki-githzerai")).toBe(false);
   });
 });
 

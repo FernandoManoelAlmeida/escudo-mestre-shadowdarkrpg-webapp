@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { getTabelasIndex, getTabelaById } from "@/lib/tabelas";
@@ -19,7 +19,13 @@ import {
 } from "@/components/geradores/GeneratorActionRow";
 import { RollResultCard } from "@/components/geradores/RollResultCard";
 import { FilterChips } from "@/components/geradores/FilterChips";
-import { FilterPanel, FilterGrid } from "@/components/ui/ListFilters";
+import { FilterClearButton } from "@/components/ui/FilterClearButton";
+import {
+  FilterPanel,
+  FilterGrid,
+  FilterPanelClearRow,
+} from "@/components/ui/ListFilters";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { SelectField } from "@/components/ui/SelectField";
 import { TabelaRollTableView } from "@/components/geradores/TabelaRollTableView";
 
@@ -158,9 +164,21 @@ async function resolveEncounterFromLocal(
   return classification.kind === "criatura";
 }
 
+const ENCONTROS_FILTER_DEFAULTS = { local: "" };
+
 export default function EncontrosPage() {
   const [locais, setLocais] = useState<TabelaIndexEntry[]>([]);
-  const [localId, setLocalId] = useState("");
+  const filterDefaults = useMemo(() => ENCONTROS_FILTER_DEFAULTS, []);
+  const { values, setField, clear, hasActive } = useListFiltersInUrl(
+    filterDefaults,
+    { debouncedKeys: [] },
+  );
+  const localId = useMemo(() => {
+    if (values.local && locais.some((l) => l.id === values.local)) {
+      return values.local;
+    }
+    return locais[0]?.id ?? "";
+  }, [values.local, locais]);
   const [localTable, setLocalTable] = useState<RollTableData | null>(null);
   const [chain, setChain] = useState<StepResult[]>([]);
   const [notes, setNotes] = useState<string[]>([]);
@@ -169,9 +187,7 @@ export default function EncontrosPage() {
 
   useEffect(() => {
     getTabelasIndex().then((all) => {
-      const enc = all.filter(isLocalEncontro);
-      setLocais(enc);
-      if (enc.length) setLocalId(enc[0].id);
+      setLocais(all.filter(isLocalEncontro));
     });
     getTabelaById("reacao").then(setReacaoTable);
   }, []);
@@ -216,7 +232,7 @@ export default function EncontrosPage() {
               <FilterChips
                 options={locais.map((l) => ({ id: l.id, label: l.titulo }))}
                 value={localId}
-                onChange={setLocalId}
+                onChange={(id) => setField("local", id)}
               />
             ) : (
               <FilterGrid $columns={1} $minWidth={0}>
@@ -224,7 +240,7 @@ export default function EncontrosPage() {
                   id="encontro-local"
                   label="Local / bioma"
                   value={localId}
-                  onChange={setLocalId}
+                  onChange={(id) => setField("local", id)}
                 >
                   {locais.map((l) => (
                     <option key={l.id} value={l.id}>
@@ -234,6 +250,9 @@ export default function EncontrosPage() {
                 </SelectField>
               </FilterGrid>
             )}
+            <FilterPanelClearRow>
+              <FilterClearButton onClick={clear} disabled={!hasActive} />
+            </FilterPanelClearRow>
           </FilterPanel>
         )}
         <GeneratorActionRow>

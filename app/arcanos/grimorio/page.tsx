@@ -21,12 +21,25 @@ import {
   sortFieldGrau,
 } from "@/components/ui/SortOrderButtons";
 import { SelectField } from "@/components/ui/SelectField";
+import { FilterClearButton } from "@/components/ui/FilterClearButton";
 import {
   FilterPanel,
   FilterSearchInput,
   FilterGrid,
   FilterResultCount,
 } from "@/components/ui/ListFilters";
+import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
+
+const GRIMORIO_FILTER_DEFAULTS = {
+  q: "",
+  classe: "",
+  origem: "",
+  grau: "",
+  ord: "nome:asc",
+};
+
+const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing.lg};
@@ -76,14 +89,13 @@ function magiaMatchesGrau(m: Magia, classe: string, grauStr: string): boolean {
 
 export default function GrimorioPage() {
   const [magias, setMagias] = useState<Magia[]>([]);
-  const [busca, setBusca] = useState("");
-  const [classe, setClasse] = useState("");
-  const [origem, setOrigem] = useState("");
-  const [grau, setGrau] = useState("");
-  const [ordenar, setOrdenar] = useState<SortOrderValue>({
-    por: "nome",
-    sentido: "asc",
-  });
+  const filterDefaults = useMemo(() => GRIMORIO_FILTER_DEFAULTS, []);
+  const { values, setField, clear, hasActive } =
+    useListFiltersInUrl(filterDefaults);
+  const ordenar = decodeSortOrder(values.ord, DEFAULT_SORT);
+  const classe = values.classe;
+  const origem = values.origem;
+  const grau = values.grau;
 
   useEffect(() => {
     getMagias()
@@ -103,7 +115,7 @@ export default function GrimorioPage() {
   }, [magias]);
 
   const filtered = useMemo(() => {
-    const q = busca.trim().toLowerCase();
+    const q = values.q.trim().toLowerCase();
     const list = magias.filter((m) => {
       if (classe && !m.listas.includes(classe as SpellLista)) return false;
       if (origem && !magiaOrigemSlugs(m).includes(origem)) return false;
@@ -119,7 +131,7 @@ export default function GrimorioPage() {
       ordenarSentido: ordenar.sentido,
       classeFiltro: classe || undefined,
     });
-  }, [magias, busca, classe, origem, grau, ordenar]);
+  }, [magias, values.q, classe, origem, grau, ordenar]);
 
   return (
     <Page>
@@ -131,16 +143,16 @@ export default function GrimorioPage() {
         <FilterSearchInput
           type="search"
           placeholder="Buscar por nome ou texto…"
-          value={busca}
-          onChange={(e) => setBusca(e.target.value)}
+          value={values.q}
+          onChange={(e) => setField("q", e.target.value)}
           aria-label="Buscar magias"
         />
-        <FilterGrid $columns={3}>
+        <FilterGrid $columns={2} $minWidth={400}>
           <SelectField
             id="grimorio-filtro-classe"
             label="Classe"
             value={classe}
-            onChange={setClasse}
+            onChange={(v) => setField("classe", v)}
           >
             <option value="">Todas</option>
             {classSlugs.map((slug) => (
@@ -153,7 +165,7 @@ export default function GrimorioPage() {
             id="grimorio-filtro-origem"
             label="Origem"
             value={origem}
-            onChange={setOrigem}
+            onChange={(v) => setField("origem", v)}
           >
             <option value="">Todas</option>
             {origens.map((o) => (
@@ -166,7 +178,7 @@ export default function GrimorioPage() {
             id="grimorio-filtro-grau"
             label="Grau"
             value={grau}
-            onChange={setGrau}
+            onChange={(v) => setField("grau", v)}
           >
             <option value="">Todos</option>
             {graus.map((n) => (
@@ -179,7 +191,16 @@ export default function GrimorioPage() {
         <SortOrderButtons
           fields={[SORT_FIELD_NOME, sortFieldGrau()]}
           value={ordenar}
-          onChange={setOrdenar}
+          onChange={(next) =>
+            setField("ord", encodeSortOrder(next.por, next.sentido))
+          }
+          trailing={
+            <FilterClearButton
+              variant="aside"
+              onClick={clear}
+              disabled={!hasActive}
+            />
+          }
         />
       </FilterPanel>
       <FilterResultCount>

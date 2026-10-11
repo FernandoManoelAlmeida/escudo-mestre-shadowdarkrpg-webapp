@@ -3,8 +3,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import { getAmeacas, getAmeacaById, type Criatura } from "@/lib/ameacas";
+import {
+  getAmeacas,
+  getAmeacaById,
+  fonteParaFicha,
+  type Criatura,
+} from "@/lib/ameacas";
 import { OrigemBadge } from "@/components/ameacas/OrigemBadge";
+import { TraitMarkdown } from "@/components/ameacas/TraitMarkdown";
 import { extractAllDiceFormulas, rollFormula } from "@/lib/dice";
 import { useRollToast } from "@/context/RollToastContext";
 import { DiceFormulaIcons } from "@/components/ui/DiceFormulaIcons";
@@ -68,6 +74,8 @@ export function AmeacaDetailClient({ id }: Props) {
   if (criatura === null)
     return <Page>Ameaça não encontrada.</Page>;
 
+  const fonteFicha = fonteParaFicha(criatura);
+
   return (
     <Page>
       <Link href="/ameacas">← Bestiário</Link>
@@ -76,11 +84,10 @@ export function AmeacaDetailClient({ id }: Props) {
         {criatura.epitet ? `, ${criatura.epitet}` : ""}
       </h1>
       <OrigemBadge origem={criatura.origem} />
-      {criatura.fonte && (
-        <p style={{ opacity: 0.7, fontSize: "0.875rem" }}>{criatura.fonte}</p>
+      {fonteFicha && (
+        <p style={{ opacity: 0.7, fontSize: "0.875rem" }}>{fonteFicha}</p>
       )}
       {criatura.flavor && <p><em>{criatura.flavor}</em></p>}
-      {criatura.tipo && <p>{criatura.tipo}</p>}
       <Stats>
         CA {criatura.ca}, PV {criatura.pv}, ATQ {criatura.atq}, MV {criatura.mv},
         F {criatura.atributos.F}, D {criatura.atributos.D}, C {criatura.atributos.C},
@@ -89,7 +96,8 @@ export function AmeacaDetailClient({ id }: Props) {
       </Stats>
       {criatura.tracos.map((t) => (
         <Trait key={t.nome}>
-          <strong>{t.nome}.</strong> {t.descricao}
+          <strong>{t.nome}.</strong>{" "}
+          <TraitMarkdown>{t.descricao}</TraitMarkdown>
           {extractAllDiceFormulas(t.descricao).map((f) => (
             <RollBtn
               key={f}
