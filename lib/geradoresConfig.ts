@@ -1,3 +1,4 @@
+import type { OrdenarSentido } from "@/lib/sortOrder";
 import type { TabelaIndexEntry } from "@/lib/tabelas";
 
 export type GeradorModule = {
@@ -213,6 +214,53 @@ export function tablesForModule(
   index: TabelaIndexEntry[],
 ): TabelaIndexEntry[] {
   return index.filter((e) => mod.match(e));
+}
+
+export type GeradorCard = {
+  slug: string;
+  title: string;
+  description: string;
+  href: string;
+};
+
+export function geradorCardsFromModules(modules: GeradorModule[]): GeradorCard[] {
+  const cards: GeradorCard[] = modules.map((m) => ({
+    slug: m.slug,
+    title: m.title,
+    description: m.description,
+    href: `/geradores/${m.slug}`,
+  }));
+  if (!cards.some((c) => c.slug === "itens-magicos-aleatorios")) {
+    cards.push({
+      slug: "itens-magicos-aleatorios",
+      title: "Catálogo de itens mágicos",
+      description: "Sorteio aleatório de item mágico (Livro / Cursed Scroll).",
+      href: "/geradores/itens-magicos-aleatorios",
+    });
+  }
+  return cards;
+}
+
+export function matchesGeradorCard(card: GeradorCard, q: string): boolean {
+  const busca = q.trim().toLowerCase();
+  if (!busca) return true;
+  return (
+    card.title.toLowerCase().includes(busca) ||
+    card.description.toLowerCase().includes(busca) ||
+    card.slug.toLowerCase().includes(busca)
+  );
+}
+
+export function sortGeradorCards(
+  cards: GeradorCard[],
+  ordenarSentido: OrdenarSentido,
+): GeradorCard[] {
+  const list = [...cards];
+  list.sort((a, b) => {
+    const cmp = a.title.localeCompare(b.title, "pt-BR", { sensitivity: "base" });
+    return ordenarSentido === "asc" ? cmp : -cmp;
+  });
+  return list;
 }
 
 export { DICE_HEADER };

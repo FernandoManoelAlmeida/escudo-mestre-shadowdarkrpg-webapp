@@ -10,12 +10,10 @@ import type { SortOrderValue } from "@/lib/sortOrder";
 import MarkdownContent from "@/components/ui/MarkdownContent";
 import InlineBold from "@/components/ui/InlineBold";
 import { RegrasGlossarioSkeleton } from "@/components/skeletons";
-import { FilterClearButton } from "@/components/ui/FilterClearButton";
 import {
   FilterPanel,
   FilterSearchInput,
   FilterPanelSortRow,
-  FilterPanelClearRow,
   FilterResultCount,
 } from "@/components/ui/ListFilters";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
@@ -90,8 +88,7 @@ export default function GlossarioPage() {
   const [data, setData] = useState<EscudoData | null>(null);
   const [loading, setLoading] = useState(true);
   const filterDefaults = useMemo(() => GLOSSARIO_FILTER_DEFAULTS, []);
-  const { values, setField, clear, hasActive } =
-    useListFiltersInUrl(filterDefaults);
+  const { values, setField } = useListFiltersInUrl(filterDefaults);
   const ordenar = decodeSortOrder(values.ord, DEFAULT_SORT);
 
   useEffect(() => {
@@ -137,9 +134,6 @@ export default function GlossarioPage() {
             }
           />
         </FilterPanelSortRow>
-        <FilterPanelClearRow>
-          <FilterClearButton onClick={clear} disabled={!hasActive} />
-        </FilterPanelClearRow>
       </FilterPanel>
       <FilterResultCount>
         {filtered.length === glossary.length

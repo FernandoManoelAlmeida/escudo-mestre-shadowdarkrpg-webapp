@@ -1,12 +1,30 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { getEscudo } from "@/lib/escudo";
 import type { EscudoData } from "@/lib/escudo";
-import { getTabelasIndex, getTabelaById } from "@/lib/tabelas";
+import {
+  ensureTabelaIndexEntry,
+  getTabelasIndex,
+  getTabelaById,
+  matchesEscudoTableKey,
+  matchesTabelaIndexEntry,
+  sortEscudoTableKeys,
+  sortTabelaIndexEntries,
+} from "@/lib/tabelas";
 import type { TabelaIndexEntry } from "@/lib/tabelas";
+import { SortOrderButtons, SORT_FIELD_NOME } from "@/components/ui/SortOrderButtons";
+import type { SortOrderValue } from "@/lib/sortOrder";
+import {
+  FilterPanel,
+  FilterSearchInput,
+  FilterPanelSortRow,
+  FilterResultCount,
+} from "@/components/ui/ListFilters";
+import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
+import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { rowAsCells, type RollTableData } from "@/lib/rollTable";
 import { ResponsiveTable } from "@/components/ui/ResponsiveTable";
 import { Accordion } from "@/components/ui/Accordion";
@@ -72,6 +90,9 @@ const GridTable = styled.table`
     background: ${({ theme }) => theme.colors.surfaceHover};
   }
 `;
+
+const TABELAS_FILTER_DEFAULTS = { q: "", ord: "nome:asc" };
+const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
 
 const GeradorLink = styled(Link)`
   display: inline-block;
@@ -153,6 +174,9 @@ export default function TabelasPage() {
   const [index, setIndex] = useState<TabelaIndexEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [hashTableId, setHashTableId] = useState<string | null>(null);
+  const filterDefaults = useMemo(() => TABELAS_FILTER_DEFAULTS, []);
+  const { values, setField } = useListFiltersInUrl(filterDefaults);
+  const ordenar = decodeSortOrder(values.ord, DEFAULT_SORT);
 
   const syncHash = useCallback(() => {
     setHashTableId(parseRegrasTabelaHash(window.location.hash));
@@ -182,9 +206,32 @@ export default function TabelasPage() {
     return scrollToTabelaElement(hashTableId, { behavior });
   }, [loading, hashTableId]);
 
+  const filteredIndex = useMemo(() => {
+    const q = values.q;
+    let list = q
+      ? index.filter((e) => matchesTabelaIndexEntry(e, q))
+      : [...index];
+    list = ensureTabelaIndexEntry(list, index, hashTableId);
+    return sortTabelaIndexEntries(list, ordenar.sentido);
+  }, [index, values.q, hashTableId, ordenar.sentido]);
+
+  const filteredEscudoKeys = useMemo(() => {
+    const keys = escudo?.tables ? Object.keys(escudo.tables) : [];
+    const q = values.q;
+    let list = q
+      ? keys.filter((key) => matchesEscudoTableKey(key, q))
+      : [...keys];
+    if (hashTableId?.startsWith("escudo-")) {
+      const escKey = hashTableId.slice("escudo-".length);
+      if (escKey && !list.includes(escKey)) list = [...list, escKey];
+    }
+    return sortEscudoTableKeys(list, ordenar.sentido);
+  }, [escudo, values.q, hashTableId, ordenar.sentido]);
+
   if (loading || !escudo) return <RegrasTabelasSkeleton />;
 
-  const escudoTables = escudo.tables ? Object.entries(escudo.tables) : [];
+  const totalCount = index.length + (escudo.tables ? Object.keys(escudo.tables).length : 0);
+  const visibleCount = filteredIndex.length + filteredEscudoKeys.length;
 
   return (
     <Page>
@@ -192,10 +239,34 @@ export default function TabelasPage() {
       <Title>Tabelas</Title>
       <Meta>Consulta integral — rolagem apenas em Geradores.</Meta>
 
-      {index.length > 0 && (
+      <FilterPanel aria-label="Filtros das tabelas">
+        <FilterSearchInput
+          type="search"
+          placeholder="Buscar tabela (título, categoria, rolagem…)"
+          value={values.q}
+          onChange={(e) => setField("q", e.target.value)}
+          aria-label="Buscar nas tabelas"
+        />
+        <FilterPanelSortRow>
+          <SortOrderButtons
+            fields={[SORT_FIELD_NOME]}
+            value={ordenar}
+            onChange={(next) =>
+              setField("ord", encodeSortOrder(next.por, next.sentido))
+            }
+          />
+        </FilterPanelSortRow>
+      </FilterPanel>
+      <FilterResultCount>
+        {visibleCount === totalCount
+          ? `${visibleCount} tabelas`
+          : `${visibleCount} de ${totalCount} tabelas`}
+      </FilterResultCount>
+
+      {filteredIndex.length > 0 && (
         <>
           <Meta>Tabelas de mesa (conteúdo integral do vault)</Meta>
-          {index.map((entry) => (
+          {filteredIndex.map((entry) => (
             <TabelaMigradaBlock
               key={entry.id}
               entry={entry}
@@ -205,21 +276,29 @@ export default function TabelasPage() {
         </>
       )}
 
-      {escudoTables.length > 0 && (
+      {filteredEscudoKeys.length > 0 && (
         <>
           <Meta style={{ marginTop: "1.5rem" }}>Tabelas no compêndio</Meta>
-          {escudoTables.map(([key, table]) => (
-            <TableBlock key={key} id={`tabela-escudo-${key}`}>
-              <Accordion id={`tabela-escudo-${key}`} title={key.replace(/_/g, " ")}>
-                <ResponsiveTable table={table} />
-              </Accordion>
-            </TableBlock>
-          ))}
+          {filteredEscudoKeys.map((key) => {
+            const table = escudo.tables[key];
+            if (!table) return null;
+            return (
+              <TableBlock key={key} id={`tabela-escudo-${key}`}>
+                <Accordion
+                  id={`tabela-escudo-${key}`}
+                  title={key.replace(/_/g, " ")}
+                >
+                  <ResponsiveTable table={table} />
+                </Accordion>
+              </TableBlock>
+            );
+          })}
         </>
       )}
 
-      {index.length === 0 && escudoTables.length === 0 && (
-        <p>Nenhuma tabela disponível.</p>
+      {totalCount === 0 && <p>Nenhuma tabela disponível.</p>}
+      {totalCount > 0 && visibleCount === 0 && (
+        <p>Nenhuma tabela encontrada.</p>
       )}
     </Page>
   );

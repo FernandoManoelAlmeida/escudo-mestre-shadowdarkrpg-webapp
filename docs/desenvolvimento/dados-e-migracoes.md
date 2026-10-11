@@ -72,7 +72,7 @@ Ficheiros em `Livros de Regras/cursed-scrolls/Cursed Scroll N - … pt-BR.md`. I
 
 Estado dos filtros sincroniza com a **query string** da rota (`?q=…`, `ord=nome:asc`, etc.) via `router.replace`, para restaurar ao voltar do detalhe ou do histórico do browser. Busca (`q`) usa debounce ~300 ms na URL.
 
-Ordem no `FilterPanel`: busca → filtros (grid 2 colunas quando fizer sentido) → ordenação; **Limpar filtros** ao lado da ordenação no bestiário e grimório; hub de regras e itens mágicos não exibem o botão (a URL continua sincronizada). Glossário e geradores mantêm limpar em linha própria. Hook: `hooks/useListFiltersInUrl.ts`; helpers: `lib/listFilterQuery.ts`.
+Ordem no `FilterPanel`: busca → filtros (grid 2 colunas quando fizer sentido) → ordenação; **Limpar filtros** ao lado da ordenação no bestiário e grimório; hub de regras, glossário, itens mágicos, índice de **Tabelas** e hub de **Geradores** usam só busca + ordenação (sem botão limpar; URL com `q` e `ord`). Geradores de mesa (encontros, lojas, módulos) mantêm limpar no painel de rolagem. Hook: `hooks/useListFiltersInUrl.ts`; helpers: `lib/listFilterQuery.ts`.
 
 ## Testes
 
