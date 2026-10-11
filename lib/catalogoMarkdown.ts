@@ -62,7 +62,7 @@ export function normalizeLivroPlainAncestry(raw: string): string {
       sections.push({ title: "Idiomas", body: p });
       continue;
     }
-    const trait = p.match(/^([A-ZÁÉÍÓÚÃÕÇ][^.]{1,60})\.\s+(.+)$/s);
+    const trait = p.match(/^([A-ZÁÉÍÓÚÃÕÇ][^.]{1,60})\.\s+([\s\S]+)$/);
     if (trait) {
       sections.push({ title: trait[1].trim(), body: trait[2].trim() });
       continue;

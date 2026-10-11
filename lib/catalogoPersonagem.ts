@@ -94,9 +94,7 @@ export function classeDetailSubtitle(entrada: CatalogoPersonagemEntrada): string
   return null;
 }
 
-export async function fetchCatalogoJson<T extends { entradas: CatalogoPersonagemEntrada[] }>(
-  path: string,
-): Promise<T | null> {
+export async function fetchCatalogoJson<T>(path: string): Promise<T | null> {
   const res = await fetch(`${base}${path}`);
   if (!res.ok) return null;
   return (await res.json()) as T;
