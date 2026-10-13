@@ -7,11 +7,18 @@ const ASTRALDARK_PDF_URL =
   "https://github.com/FernandoManoelAlmeida/public-rpg-repo/blob/master/SD-RPG/Astraldark%20pt-BR.pdf";
 
 const Wrap = styled.a`
-  display: block;
-  max-width: 720px;
-  margin: ${({ theme }) => theme.spacing.lg} auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: ${({ theme }) => theme.spacing.md};
+  box-sizing: border-box;
   border-radius: ${({ theme }) => theme.borderRadius};
-  border: 1px solid ${({ theme }) => theme.colors.border};
+  border: 1px solid ${({ theme }) => theme.colors.borderHighlight};
+  background-color: #03070f;
   overflow: hidden;
   transition:
     opacity 0.15s ease,
@@ -26,7 +33,11 @@ const Wrap = styled.a`
 const Img = styled.img`
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
   filter: invert(1);
 `;
 

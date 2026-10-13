@@ -15,15 +15,8 @@ import MarkdownContent from "@/components/ui/MarkdownContent";
 import { ResponsiveTable } from "@/components/ui/ResponsiveTable";
 import { Accordion } from "@/components/ui/Accordion";
 import { RegrasSectionSkeleton } from "@/components/skeletons";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const BackLink = styled(Link)`
   display: inline-flex;
@@ -164,16 +157,16 @@ export function RegrasSectionClient({ sectionId }: RegrasSectionClientProps) {
   const section = getSection(data, sectionId);
   if (!section) {
     return (
-      <Page>
+      <PageContainer>
         <BackLink href="/regras">← Regras</BackLink>
         <Title>§ {sectionId}</Title>
         <p>Seção não encontrada.</p>
-      </Page>
+      </PageContainer>
     );
   }
 
   return (
-    <Page>
+    <PageContainer>
       <BackLink href="/regras">← Regras</BackLink>
       <Title>{formatEscudoSectionHeading(section)}</Title>
       {section.homebrew ? (
@@ -201,6 +194,6 @@ export function RegrasSectionClient({ sectionId }: RegrasSectionClientProps) {
           )}
         </Subsection>
       ))}
-    </Page>
+    </PageContainer>
   );
 }

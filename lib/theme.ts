@@ -45,6 +45,7 @@ export const theme = {
   },
   bottomNavHeight: "56px",
   headerHeight: "124px",
+  contentMaxWidth: "720px",
   borderRadius: "4px",
 } as const;
 

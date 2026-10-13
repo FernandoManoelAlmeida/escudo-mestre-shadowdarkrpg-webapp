@@ -14,17 +14,12 @@ import { TraitMarkdown } from "@/components/ameacas/TraitMarkdown";
 import { extractAllDiceFormulas, rollFormula } from "@/lib/dice";
 import { useRollToast } from "@/context/RollToastContext";
 import { DiceFormulaIcons } from "@/components/ui/DiceFormulaIcons";
+import { PageContainer } from "@/components/layout/PageContainer";
 import {
   ariaLabelForRoll,
   parseDiceTokensFromFormula,
 } from "@/lib/diceDisplay";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Stats = styled.p`
   font-family: monospace;
@@ -70,14 +65,14 @@ export function AmeacaDetailClient({ id }: Props) {
     });
   }, [id]);
 
-  if (criatura === undefined) return <Page>Carregando…</Page>;
+  if (criatura === undefined) return <PageContainer>Carregando…</PageContainer>;
   if (criatura === null)
-    return <Page>Ameaça não encontrada.</Page>;
+    return <PageContainer>Ameaça não encontrada.</PageContainer>;
 
   const fonteFicha = fonteParaFicha(criatura);
 
   return (
-    <Page>
+    <PageContainer>
       <Link href="/ameacas">← Bestiário</Link>
       <h1>
         {criatura.nome}
@@ -116,6 +111,6 @@ export function AmeacaDetailClient({ id }: Props) {
           ))}
         </Trait>
       ))}
-    </Page>
+    </PageContainer>
   );
 }

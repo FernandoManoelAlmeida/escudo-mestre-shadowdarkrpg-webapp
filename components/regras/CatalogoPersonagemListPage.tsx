@@ -26,19 +26,12 @@ import {
   sortCatalogoPersonagem,
   type CatalogoPersonagemEntrada,
 } from "@/lib/catalogoPersonagem";
+import { PageContainer } from "@/components/layout/PageContainer";
 import {
   grimorioLinkLabelForClasse,
   grimorioPathForClasse,
 } from "@/lib/classeGrimorio";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const BackLink = styled(Link)`
   display: inline-flex;
@@ -152,16 +145,16 @@ export function CatalogoPersonagemListPage({
 
   if (!entradas) {
     return (
-      <Page>
+      <PageContainer>
         <BackLink href="/regras">← Regras</BackLink>
         <Title>{title}</Title>
         <p>Carregando…</p>
-      </Page>
+      </PageContainer>
     );
   }
 
   return (
-    <Page>
+    <PageContainer>
       <BackLink href="/regras">← Regras</BackLink>
       <Title>{title}</Title>
       <FilterPanel aria-label={`Filtros de ${title.toLowerCase()}`}>
@@ -218,18 +211,10 @@ export function CatalogoPersonagemListPage({
           </Row>
         );
       })}
-    </Page>
+    </PageContainer>
   );
 }
 
-const DetailPage = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 type DetailProps = {
   title: string;
@@ -248,18 +233,18 @@ export function CatalogoPersonagemDetail({
 }: DetailProps) {
   if (loading) {
     return (
-      <DetailPage>
+      <PageContainer>
         <BackLink href={listPath}>← {title}</BackLink>
         <p>Carregando…</p>
-      </DetailPage>
+      </PageContainer>
     );
   }
   if (!entrada) {
     return (
-      <DetailPage>
+      <PageContainer>
         <BackLink href={listPath}>← {title}</BackLink>
         <p>Entrada não encontrada.</p>
-      </DetailPage>
+      </PageContainer>
     );
   }
   const subtitle =
@@ -270,7 +255,7 @@ export function CatalogoPersonagemDetail({
     catalogKind === "classe" ? grimorioLinkLabelForClasse(entrada.id) : null;
 
   return (
-    <DetailPage>
+    <PageContainer>
       <BackLink href={listPath}>← {title}</BackLink>
       <Title>
         {catalogKind === "ancestralidade"
@@ -285,6 +270,6 @@ export function CatalogoPersonagemDetail({
         descricao={entrada.descricao}
         descricaoKind={catalogKind}
       />
-    </DetailPage>
+    </PageContainer>
   );
 }

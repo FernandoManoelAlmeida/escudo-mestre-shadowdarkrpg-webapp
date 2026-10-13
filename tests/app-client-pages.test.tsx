@@ -69,7 +69,7 @@ describe("páginas client", () => {
         return { ok: false, json: async () => ({}) };
       }) as typeof fetch,
     );
-    renderWithTheme(<Home />);
+    renderWithTheme(<Home />, { withToast: true });
     expect(
       screen.getByRole("heading", { name: /oráculo \(d20\)/i }),
     ).toBeInTheDocument();

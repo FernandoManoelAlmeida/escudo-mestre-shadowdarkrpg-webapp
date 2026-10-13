@@ -2,12 +2,8 @@
 
 import styled from "styled-components";
 import { SkeletonBox } from "@/components/ui/Skeleton";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-`;
 
 const BackLink = styled(SkeletonBox)`
   width: 100px;
@@ -70,7 +66,7 @@ const Line = styled(SkeletonBox)`
 
 export function AmeacaDetailSkeleton() {
   return (
-    <Page>
+    <PageContainer>
       <BackLink aria-hidden />
       <Sheet>
         <Header>
@@ -103,6 +99,6 @@ export function AmeacaDetailSkeleton() {
           <Line $width="60%" aria-hidden />
         </Block>
       </Sheet>
-    </Page>
+    </PageContainer>
   );
 }

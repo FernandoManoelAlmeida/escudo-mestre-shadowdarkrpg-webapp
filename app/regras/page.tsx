@@ -17,15 +17,8 @@ import {
   FilterResultCount,
 } from "@/components/ui/ListFilters";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.xl};
@@ -150,27 +143,27 @@ export default function RegrasPage() {
   if (loading) return <RegrasPageSkeleton />;
   if (error)
     return (
-      <Page>
+      <PageContainer>
         <Title>Regras</Title>
         <FeedbackBlock
           showIcon
         >{`Não foi possível carregar os dados.\n${error}`}</FeedbackBlock>
-      </Page>
+      </PageContainer>
     );
   if (!data)
     return (
-      <Page>
+      <PageContainer>
         <Title>Regras</Title>
         <FeedbackBlock showIcon>
           Nenhuma regra disponível no momento.
         </FeedbackBlock>
-      </Page>
+      </PageContainer>
     );
 
   const filtered = filterRegrasIndex(data, { texto: values.q || undefined });
 
   return (
-    <Page>
+    <PageContainer>
       <Title>Regras</Title>
       <Intro>
         Índice do Escudo do Mestre. Use os atalhos abaixo para tabelas e
@@ -226,6 +219,6 @@ export default function RegrasPage() {
           })
         )}
       </Links>
-    </Page>
+    </PageContainer>
   );
 }

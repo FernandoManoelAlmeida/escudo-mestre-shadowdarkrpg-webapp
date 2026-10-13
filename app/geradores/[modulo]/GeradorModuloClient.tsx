@@ -7,12 +7,8 @@ import styled from "styled-components";
 import { getTabelasIndex } from "@/lib/tabelas";
 import { GERADOR_MODULES, tablesForModule } from "@/lib/geradoresConfig";
 import { TableGeneratorModule } from "@/components/geradores/TableGeneratorModule";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-`;
 
 type Props = { slug: string };
 
@@ -54,19 +50,19 @@ export function GeradorModuloClient({ slug }: Props) {
     slug === "lojas" ||
     slug === "assentamentos"
   ) {
-    return <Page><p>Redirecionando…</p></Page>;
+    return <PageContainer><p>Redirecionando…</p></PageContainer>;
   }
 
   if (!mod) {
     return (
-      <Page>
+      <PageContainer>
         <p>Módulo não encontrado.</p>
         <Link href="/geradores">← Geradores</Link>
-      </Page>
+      </PageContainer>
     );
   }
 
-  if (loading) return <Page><p>Carregando…</p></Page>;
+  if (loading) return <PageContainer><p>Carregando…</p></PageContainer>;
 
   return (
     <TableGeneratorModule

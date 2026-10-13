@@ -9,15 +9,8 @@ import {
   formatMagiaOrigensBlock,
 } from "@/lib/magiasFormat";
 import { MarkdownBody } from "@/components/catalogo/MarkdownBody";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const MetaBlock = styled.dl`
   margin: ${({ theme }) => theme.spacing.md} 0;
@@ -52,19 +45,19 @@ export function MagiaDetailClient({ id }: Props) {
     });
   }, [id]);
 
-  if (magia === undefined) return <Page>Carregando…</Page>;
+  if (magia === undefined) return <PageContainer>Carregando…</PageContainer>;
   if (magia === null)
     return (
-      <Page>
+      <PageContainer>
         <Link href="/arcanos/grimorio">← Grimório</Link>
         <p>Magia não encontrada.</p>
-      </Page>
+      </PageContainer>
     );
 
   const classesGrau = formatMagiaClassesGrau(magia);
 
   return (
-    <Page>
+    <PageContainer>
       <Link href="/arcanos/grimorio">← Grimório</Link>
       <h1>{magia.nome}</h1>
       <MetaBlock>
@@ -98,6 +91,6 @@ export function MagiaDetailClient({ id }: Props) {
         ) : null}
       </MetaBlock>
       <MarkdownBody>{magia.descricao}</MarkdownBody>
-    </Page>
+    </PageContainer>
   );
 }

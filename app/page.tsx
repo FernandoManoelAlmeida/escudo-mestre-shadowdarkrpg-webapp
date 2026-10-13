@@ -5,15 +5,7 @@ import { REGRAS_CASA_RESUMO } from "@/lib/regrasCasaResumo";
 import { SolodarkOracleWidget } from "@/components/home/SolodarkOracleWidget";
 import { AstraldarkPdfBanner } from "@/components/home/AstraldarkPdfBanner";
 import { assetUrl } from "@/lib/basePath";
-
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
+import { PageContainer } from "@/components/layout/PageContainer";
 
 const TitleRow = styled.div`
   display: flex;
@@ -25,7 +17,6 @@ const TitleRow = styled.div`
 const TitleBrand = styled.div`
   display: block;
   text-align: center;
-  max-width: 720px;
   width: 100%;
 `;
 
@@ -39,7 +30,7 @@ const ThirdPartyLogo = styled.img`
 
 const Description = styled.div`
   color: ${({ theme }) => theme.colors.text};
-  margin: 0 0 ${({ theme }) => theme.spacing.xl};
+  margin: ${({ theme }) => theme.spacing.xl} 0;
   font-size: ${({ theme }) => theme.typography.fontSize.sm};
   line-height: 1.6;
 
@@ -178,7 +169,7 @@ const SHADOWDARK_FAN_URL =
 
 export default function Home() {
   return (
-    <Page>
+    <PageContainer>
       <TitleRow>
         <TitleBrand>
           <ThirdPartyLogo
@@ -196,9 +187,7 @@ export default function Home() {
           Este é um <strong>Escudo do Mestre</strong> feito de fã para fã: uma
           referência rápida para mestrar sessões de Shadowdark RPG.
         </p>
-        <p>
-          Regras curadas, bestiário, geradores de mesa e tabelas.
-        </p>
+        <p>Regras curadas, bestiário, geradores de mesa e tabelas.</p>
         <p>
           Apoie o RPG oficial: adquira o Livro de Regras Shadowdark e
           suplementos licenciados.
@@ -228,8 +217,8 @@ export default function Home() {
       <LicenseFooter id="licenca">
         <SectionTitle>Licença</SectionTitle>
         <p>
-          Ferramenta de fã para Shadowdark RPG. Não afiliada à The Arcane Library.
-          Shadowdark RPG © The Arcane Library LLC. Consulte a{" "}
+          Ferramenta de fã para Shadowdark RPG. Não afiliada à The Arcane
+          Library. Shadowdark RPG © The Arcane Library LLC. Consulte a{" "}
           <a
             href={SHADOWDARK_FAN_URL}
             target="_blank"
@@ -241,6 +230,6 @@ export default function Home() {
           .
         </p>
       </LicenseFooter>
-    </Page>
+    </PageContainer>
   );
 }

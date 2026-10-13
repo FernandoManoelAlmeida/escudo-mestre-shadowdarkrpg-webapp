@@ -15,18 +15,11 @@ import type { SortOrderValue } from "@/lib/sortOrder";
 import { sortCatalogoItens } from "@/lib/itensMagicos";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
+import { PageContainer } from "@/components/layout/PageContainer";
 
 const ITENS_FILTER_DEFAULTS = { q: "", ord: "nome:asc" };
 const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.xl};
@@ -72,7 +65,7 @@ export default function ArcanosItensPage() {
   }, [data, values.q, ordenar.sentido]);
 
   return (
-    <Page>
+    <PageContainer>
       <p>
         <Link href="/arcanos">← Arcanos</Link>
       </p>
@@ -114,6 +107,6 @@ export default function ArcanosItensPage() {
           <MarkdownBody>{it.descricao}</MarkdownBody>
         </Item>
       ))}
-    </Page>
+    </PageContainer>
   );
 }

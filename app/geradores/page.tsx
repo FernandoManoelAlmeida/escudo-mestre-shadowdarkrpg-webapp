@@ -20,18 +20,11 @@ import {
 } from "@/components/ui/ListFilters";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
+import { PageContainer } from "@/components/layout/PageContainer";
 
 const GERADORES_FILTER_DEFAULTS = { q: "", ord: "nome:asc" };
 const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Card = styled(Link)`
   display: block;
@@ -87,7 +80,7 @@ export default function GeradoresPage() {
   }, [allCards, values.q, ordenar.sentido]);
 
   return (
-    <Page>
+    <PageContainer>
       <Title>Geradores</Title>
       <Intro>
         Ferramentas de mesa — cada rolagem usa tabelas migradas do vault. Resultados
@@ -128,6 +121,6 @@ export default function GeradoresPage() {
           <span>{mod.description}</span>
         </Card>
       ))}
-    </Page>
+    </PageContainer>
   );
 }

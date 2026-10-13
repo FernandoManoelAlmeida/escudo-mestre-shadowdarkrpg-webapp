@@ -2,12 +2,8 @@
 
 import styled from "styled-components";
 import { SkeletonBox } from "@/components/ui/Skeleton";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-`;
 
 const LogoSkeleton = styled(SkeletonBox)`
   width: 100%;
@@ -52,7 +48,7 @@ const GridItem = styled.div`
 
 export function HomePageSkeleton() {
   return (
-    <Page>
+    <PageContainer>
       <LogoSkeleton aria-hidden />
 
       <DescriptionSkeleton>
@@ -77,6 +73,6 @@ export function HomePageSkeleton() {
           </GridItem>
         ))}
       </Grid>
-    </Page>
+    </PageContainer>
   );
 }

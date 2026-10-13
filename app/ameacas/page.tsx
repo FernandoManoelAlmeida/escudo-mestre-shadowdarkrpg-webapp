@@ -31,6 +31,7 @@ import type { SortOrderValue } from "@/lib/sortOrder";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { AmeacasPageSkeleton } from "@/components/skeletons";
+import { PageContainer } from "@/components/layout/PageContainer";
 
 const AMEACAS_FILTER_DEFAULTS = {
   q: "",
@@ -40,15 +41,6 @@ const AMEACAS_FILTER_DEFAULTS = {
 };
 
 const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
-
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-  max-width: 1000px;
-  margin: 0 auto;
-`;
 
 const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.xl};
@@ -115,7 +107,7 @@ export default function AmeacasPage() {
   const homebrew = data.ameacas.length - oficial;
 
   return (
-    <Page>
+    <PageContainer>
       <Title>Bestiário</Title>
       <Sub>
         Oficial + homebrew · {oficial} oficial · {homebrew} homebrew
@@ -188,6 +180,6 @@ export default function AmeacasPage() {
           </Meta>
         </Card>
       ))}
-    </Page>
+    </PageContainer>
   );
 }

@@ -2,15 +2,8 @@
 
 import styled from "styled-components";
 import { SkeletonBox } from "@/components/ui/Skeleton";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Title = styled(SkeletonBox)`
   width: 100px;
@@ -63,7 +56,7 @@ const ItemLine = styled(SkeletonBox)`
 
 export function RegrasPageSkeleton() {
   return (
-    <Page>
+    <PageContainer>
       <Title aria-hidden />
       <Intro aria-hidden />
       <Intro $width="85%" aria-hidden />
@@ -79,6 +72,6 @@ export function RegrasPageSkeleton() {
           </ListItem>
         ))}
       </List>
-    </Page>
+    </PageContainer>
   );
 }

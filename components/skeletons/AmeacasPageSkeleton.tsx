@@ -2,15 +2,7 @@
 
 import styled from "styled-components";
 import { SkeletonBox } from "@/components/ui/Skeleton";
-
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-  max-width: 1000px;
-  margin: 0 auto;
-`;
+import { PageContainer } from "@/components/layout/PageContainer";
 
 const Title = styled(SkeletonBox)`
   width: 140px;
@@ -109,7 +101,7 @@ const CardMeta = styled(SkeletonBox)`
 
 export function AmeacasPageSkeleton() {
   return (
-    <Page>
+    <PageContainer>
       <Title aria-hidden />
       <FilterPanel>
         <FilterSection>
@@ -150,6 +142,6 @@ export function AmeacasPageSkeleton() {
           </Card>
         ))}
       </List>
-    </Page>
+    </PageContainer>
   );
 }

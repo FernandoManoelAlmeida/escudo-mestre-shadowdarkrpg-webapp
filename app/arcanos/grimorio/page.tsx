@@ -30,6 +30,7 @@ import {
 } from "@/components/ui/ListFilters";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
+import { PageContainer } from "@/components/layout/PageContainer";
 
 const GRIMORIO_FILTER_DEFAULTS = {
   q: "",
@@ -41,14 +42,6 @@ const GRIMORIO_FILTER_DEFAULTS = {
 
 const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.xl};
@@ -134,7 +127,7 @@ export default function GrimorioPage() {
   }, [magias, values.q, classe, origem, grau, ordenar]);
 
   return (
-    <Page>
+    <PageContainer>
       <p>
         <Link href="/arcanos">← Arcanos</Link>
       </p>
@@ -214,6 +207,6 @@ export default function GrimorioPage() {
           <Meta>{formatMagiaRowMeta(m)}</Meta>
         </Row>
       ))}
-    </Page>
+    </PageContainer>
   );
 }

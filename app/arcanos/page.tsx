@@ -2,15 +2,8 @@
 
 import Link from "next/link";
 import styled from "styled-components";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize.xl};
@@ -51,7 +44,7 @@ const QuickLink = styled(Link)`
 
 export default function ArcanosHubPage() {
   return (
-    <Page>
+    <PageContainer>
       <Title>Arcanos</Title>
       <Intro>
         Catálogo de itens mágicos e grimório de magias do Shadowdark (livro,
@@ -61,6 +54,6 @@ export default function ArcanosHubPage() {
         <QuickLink href="/arcanos/itens">Itens mágicos</QuickLink>
         <QuickLink href="/arcanos/grimorio">Grimório de magias</QuickLink>
       </QuickLinks>
-    </Page>
+    </PageContainer>
   );
 }

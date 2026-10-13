@@ -2,15 +2,8 @@
 
 import styled from "styled-components";
 import { SkeletonBox } from "@/components/ui/Skeleton";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const BackLink = styled(SkeletonBox)`
   width: 90px;
@@ -45,7 +38,7 @@ const Line = styled(SkeletonBox)`
 
 export function RegrasSectionSkeleton() {
   return (
-    <Page>
+    <PageContainer>
       <BackLink aria-hidden />
       <Title aria-hidden />
       <Subsection>
@@ -60,6 +53,6 @@ export function RegrasSectionSkeleton() {
         <Line $width="100%" aria-hidden />
         <Line $width="70%" aria-hidden />
       </Subsection>
-    </Page>
+    </PageContainer>
   );
 }

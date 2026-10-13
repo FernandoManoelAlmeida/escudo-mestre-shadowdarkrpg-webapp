@@ -2,15 +2,8 @@
 
 import Link from "next/link";
 import styled from "styled-components";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const Back = styled(Link)`
   display: inline-block;
@@ -43,11 +36,11 @@ export function GeneratorLayout({
   children,
 }: GeneratorLayoutProps) {
   return (
-    <Page>
+    <PageContainer>
       <Back href="/geradores">← Geradores</Back>
       <Title>{title}</Title>
       {description && <Desc>{description}</Desc>}
       {children}
-    </Page>
+    </PageContainer>
   );
 }

@@ -36,15 +36,8 @@ import {
   parseRegrasTabelaHash,
 } from "@/lib/geradoresConfig";
 import { scrollToTabelaElement } from "@/lib/scrollToTabelaHash";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const BackLink = styled(Link)`
   display: inline-flex;
@@ -236,7 +229,7 @@ export default function TabelasPage() {
   const visibleCount = filteredIndex.length + filteredEscudoKeys.length;
 
   return (
-    <Page>
+    <PageContainer>
       <BackLink href="/regras">← Regras</BackLink>
       <Title>Tabelas</Title>
       <Meta>Consulta integral — rolagem apenas em Geradores.</Meta>
@@ -302,6 +295,6 @@ export default function TabelasPage() {
       {totalCount > 0 && visibleCount === 0 && (
         <p>Nenhuma tabela encontrada.</p>
       )}
-    </Page>
+    </PageContainer>
   );
 }

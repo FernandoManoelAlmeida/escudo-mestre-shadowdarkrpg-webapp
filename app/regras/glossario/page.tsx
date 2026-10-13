@@ -18,15 +18,8 @@ import {
 } from "@/components/ui/ListFilters";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
+import { PageContainer } from "@/components/layout/PageContainer";
 
-const Page = styled.div`
-  padding: ${({ theme }) => theme.spacing.lg};
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: calc(
-    ${({ theme }) => theme.bottomNavHeight} + ${({ theme }) => theme.spacing.xl}
-  );
-`;
 
 const BackLink = styled(Link)`
   display: inline-flex;
@@ -114,7 +107,7 @@ export default function GlossarioPage() {
   );
 
   return (
-    <Page>
+    <PageContainer>
       <BackLink href="/regras">← Regras</BackLink>
       <Title>Glossário</Title>
       <FilterPanel aria-label="Filtros do glossário">
@@ -165,6 +158,6 @@ export default function GlossarioPage() {
           ))
         )}
       </List>
-    </Page>
+    </PageContainer>
   );
 }

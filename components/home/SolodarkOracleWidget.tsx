@@ -7,6 +7,8 @@ import { getTabelaById } from "@/lib/tabelas";
 import { rollOnTable, type RollTableData } from "@/lib/rollTable";
 import { regrasTabelaHref } from "@/lib/geradoresConfig";
 import { D20RollButton } from "@/components/ui/D20RollButton";
+import { useRollToast } from "@/context/RollToastContext";
+import { emitSolodarkOracleRolls } from "@/lib/solodarkOracleToast";
 
 const Card = styled.section`
   margin: ${({ theme }) => theme.spacing.lg} 0;
@@ -37,34 +39,6 @@ const Hint = styled.p`
   line-height: 1.45;
 `;
 
-const ResultBox = styled.div`
-  margin-top: ${({ theme }) => theme.spacing.md};
-  padding: ${({ theme }) => theme.spacing.md};
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: 8px;
-  background: ${({ theme }) => theme.colors.surfaceHover};
-`;
-
-const ResultWord = styled.div`
-  font-size: ${({ theme }) => theme.typography.fontSize.xl};
-  font-weight: 700;
-  color: ${({ theme }) => theme.colors.primary};
-  letter-spacing: 0.02em;
-`;
-
-const ResultDetail = styled.p`
-  margin: ${({ theme }) => theme.spacing.sm} 0 0;
-  font-size: ${({ theme }) => theme.typography.fontSize.base};
-  line-height: 1.45;
-  color: ${({ theme }) => theme.colors.text};
-`;
-
-const ResultMeta = styled.div`
-  margin-top: ${({ theme }) => theme.spacing.sm};
-  font-size: ${({ theme }) => theme.typography.fontSize.sm};
-  color: ${({ theme }) => theme.colors.textMuted};
-`;
-
 const LinksRow = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -92,16 +66,10 @@ function solodarkNuanceHint(valor: number): string | null {
   return null;
 }
 
-type OracleRollResult = {
-  simNao: { valor: number; texto: string };
-  reviravolta?: { valor: number; texto: string };
-  nuance?: string;
-};
-
 export function SolodarkOracleWidget() {
   const [oracleTable, setOracleTable] = useState<RollTableData | null>(null);
   const [algoTable, setAlgoTable] = useState<RollTableData | null>(null);
-  const [result, setResult] = useState<OracleRollResult | null>(null);
+  const { addRoll } = useRollToast();
 
   useEffect(() => {
     getTabelaById(ORACLE_ID).then(setOracleTable);
@@ -111,16 +79,16 @@ export function SolodarkOracleWidget() {
   function roll() {
     if (!oracleTable) return;
     const simNao = rollOnTable(oracleTable);
-    const next: OracleRollResult = {
-      simNao: { valor: simNao.valor, texto: simNao.texto },
-    };
+    let algoRoll;
     if (simNao.valor === 10 && algoTable) {
-      const rev = rollOnTable(algoTable);
-      next.reviravolta = { valor: rev.valor, texto: rev.texto };
+      algoRoll = rollOnTable(algoTable);
     }
-    const hint = solodarkNuanceHint(simNao.valor);
-    if (hint) next.nuance = hint;
-    setResult(next);
+    const nuance = solodarkNuanceHint(simNao.valor);
+    emitSolodarkOracleRolls(addRoll, oracleTable, simNao, {
+      algoTable: algoRoll ? algoTable : undefined,
+      algoRoll,
+      nuance,
+    });
   }
 
   const ready = Boolean(oracleTable);
@@ -143,26 +111,6 @@ export function SolodarkOracleWidget() {
           onClick={() => roll()}
         />
       </HeaderRow>
-
-      {result && (
-        <ResultBox aria-live="polite" aria-atomic="true">
-          <ResultWord>{result.simNao.texto}</ResultWord>
-          {result.reviravolta && (
-            <>
-              <ResultDetail>
-                Reviravolta — {result.reviravolta.texto}
-              </ResultDetail>
-            </>
-          )}
-          {result.nuance && <ResultDetail>{result.nuance}</ResultDetail>}
-          <ResultMeta>
-            Oráculo · d20 = {result.simNao.valor}
-            {result.reviravolta
-              ? ` · Algo acontece · d100 = ${result.reviravolta.valor}`
-              : ""}
-          </ResultMeta>
-        </ResultBox>
-      )}
 
       <LinksRow>
         <TableLink href={regrasTabelaHref(ORACLE_ID)}>
