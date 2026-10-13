@@ -19,4 +19,11 @@ describe("isGitHubPagesBuild", () => {
     vi.stubEnv("GITHUB_PAGES", "false");
     expect(isGitHubPagesBuild()).toBe(false);
   });
+
+  it("aceita GITHUB_ACTIONS com NEXT_PUBLIC_BASE_PATH", () => {
+    vi.stubEnv("GITHUB_PAGES", "");
+    vi.stubEnv("GITHUB_ACTIONS", "true");
+    vi.stubEnv("NEXT_PUBLIC_BASE_PATH", "/escudo-mestre-shadowdarkrpg-webapp");
+    expect(isGitHubPagesBuild()).toBe(true);
+  });
 });

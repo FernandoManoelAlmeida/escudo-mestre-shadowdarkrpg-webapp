@@ -52,6 +52,22 @@ describe("scripts/write-version", () => {
     expect(JSON.parse(outRaw).generatedAt).toBe("2021-01-01T00:00:00.000Z");
   });
 
+  it("copia public/<basePath>/sw.js para out/sw.js quando aplicável", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "em-wv5-"));
+    fs.mkdirSync(path.join(dir, "public", "repo"), { recursive: true });
+    fs.mkdirSync(path.join(dir, "out"), { recursive: true });
+    fs.writeFileSync(
+      path.join(dir, "public", "repo", "sw.js"),
+      'precacheAndRoute([{url:"/repo/data/x.json"}])',
+      "utf8",
+    );
+    const { syncPwaArtifactsToOut } = require("../scripts/write-version.js");
+    syncPwaArtifactsToOut(dir, "/repo");
+    expect(fs.readFileSync(path.join(dir, "out", "sw.js"), "utf8")).toContain(
+      "/repo/data/x.json",
+    );
+  });
+
   it("copia public/sw.js para out/ após o build PWA", () => {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), "em-wv4-"));
     fs.mkdirSync(path.join(dir, "public"), { recursive: true });

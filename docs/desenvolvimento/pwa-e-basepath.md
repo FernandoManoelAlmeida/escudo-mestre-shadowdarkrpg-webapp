@@ -34,7 +34,7 @@ Debug de registo falhado: build com `NEXT_PUBLIC_DEBUG_PWA=1` e ver consola `[PW
 
 - [`scripts/write-version.js`](../../scripts/write-version.js) grava `public/version.json` com `buildId` (lê `.next/BUILD_ID` quando existe) e `generatedAt`.
 - Regrava também `out/version.json` após o export, para o banner de actualização não ficar com build antigo.
-- O mesmo script **copia `public/sw.js` e `public/workbox-*.js` para `out/`** depois do `next-pwa` gerar o SW — o export estático pode ter copiado um `sw.js` antigo sem o prefixo do `basePath`.
+- O mesmo script **copia `public/sw.js` (ou `public/<basePath>/sw.js`) e `workbox-*.js` para `out/sw.js`** depois do `next-pwa` gerar o SW — o export estático pode ter copiado um `sw.js` antigo sem o prefixo do `basePath`.
 - [`lib/pwaPrefixPrecacheUrl.ts`](../../lib/pwaPrefixPrecacheUrl.ts) prefixa entradas do precache (`/data/…` → `/repo/data/…`). CI corre [`scripts/verify-pwa-github-pages.js`](../../scripts/verify-pwa-github-pages.js) após o build (`yarn verify:pwa-github-pages`).
 - **`public/sw.js` e `public/workbox-*.js` não são versionados** (`.gitignore`) — só gere com build de Pages, por exemplo:
   `GITHUB_PAGES=1 NEXT_PUBLIC_BASE_PATH=/escudo-mestre-shadowdarkrpg-webapp yarn build`

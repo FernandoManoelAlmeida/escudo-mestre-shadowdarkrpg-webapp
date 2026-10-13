@@ -72,6 +72,9 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
+        env:
+          NODE_ENV: production
+          GITHUB_PAGES: "1"
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
 
       - name: Verify PWA (GitHub Pages subpath)

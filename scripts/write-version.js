@@ -62,20 +62,22 @@ function writeVersion(projectRoot = path.resolve(__dirname, ".."), opts = {}) {
  * O export estático pode copiar `public/sw.js` para `out/` antes do next-pwa
  * regenerar o SW com precache prefixado. Garantir que o deploy usa o SW final.
  */
-function syncPwaArtifactsToOut(projectRoot) {
-  const publicDir = path.join(projectRoot, "public");
+function syncPwaArtifactsToOut(projectRoot, basePath = process.env.NEXT_PUBLIC_BASE_PATH) {
+  const {
+    findExistingSwPath,
+    listPublicWorkboxFiles,
+  } = require("./pwa-artifact-paths.js");
   const outDir = path.join(projectRoot, "out");
-  const swPublic = path.join(publicDir, "sw.js");
+  if (!fs.existsSync(outDir)) return;
+
+  const swSource = findExistingSwPath(projectRoot, basePath);
   const swOut = path.join(outDir, "sw.js");
-  if (fs.existsSync(swPublic) && fs.existsSync(outDir)) {
-    fs.copyFileSync(swPublic, swOut);
+  if (swSource && swSource !== swOut) {
+    fs.copyFileSync(swSource, swOut);
   }
-  if (fs.existsSync(publicDir) && fs.existsSync(outDir)) {
-    for (const name of fs.readdirSync(publicDir)) {
-      if (name.startsWith("workbox-") && name.endsWith(".js")) {
-        fs.copyFileSync(path.join(publicDir, name), path.join(outDir, name));
-      }
-    }
+
+  for (const wb of listPublicWorkboxFiles(projectRoot, basePath)) {
+    fs.copyFileSync(wb, path.join(outDir, path.basename(wb)));
   }
 }
 
