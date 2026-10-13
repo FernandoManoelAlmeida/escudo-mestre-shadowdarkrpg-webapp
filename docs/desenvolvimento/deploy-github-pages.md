@@ -15,7 +15,20 @@ Workflow: [`.github/workflows/nextjs.yml`](../../.github/workflows/nextjs.yml) �
 
 ```bash
 yarn test:run
+yarn build:pages:ci-simulate
+```
+
+Simula o CI (limpa `.next`/`out`, install, build, verify). Em Linux idêntico ao runner:
+
+```bash
+docker run --rm -v "$PWD":/app -w /app node:20-bookworm bash scripts/simulate-github-pages-ci.sh
+```
+
+Build rápido sem o script completo:
+
+```bash
 GITHUB_PAGES=1 NEXT_PUBLIC_BASE_PATH=/escudo-mestre-shadowdarkrpg-webapp yarn build
+yarn verify:pwa-github-pages
 ```
 
 ## Configuração GitHub (uma vez)
@@ -35,6 +48,6 @@ Só tornar o repo público **não** activa o Pages. Confirme em **Settings → P
 
 ### PWA no Android: «Não foi possível abrir o aplicativo»
 
-O workflow corre `yarn verify:pwa-github-pages` após o build — o `out/sw.js` deployado deve ter precache com prefixo `/escudo-mestre-shadowdarkrpg-webapp/`, não `/data/` na raiz do `github.io`. Após deploy, confira no DevTools (Application → Manifest / Service Workers) ou com `curl …/sw.js | grep '/data/'` (não deve listar `url:"/data/`). Utilizador: [PWA e offline (utilizador)](../usuario/pwa-e-offline.md#não-foi-possível-abrir-o-aplicativo-android).
+O workflow apaga `.next` antes de cada build (evita cache webpack sem SW), corre `yarn build` (que falha em `write-version` se faltar `sw.js`) e depois `yarn verify:pwa-github-pages`. O `out/sw.js` deployado deve ter precache com prefixo `/escudo-mestre-shadowdarkrpg-webapp/`, não `/data/` na raiz do `github.io`. Após deploy, confira no DevTools (Application → Manifest / Service Workers) ou com `curl …/sw.js | grep '/data/'` (não deve listar `url:"/data/`). Utilizador: [PWA e offline (utilizador)](../usuario/pwa-e-offline.md#não-foi-possível-abrir-o-aplicativo-android).
 
 Ver também [PWA e basePath](pwa-e-basepath.md) e skill `escudo-shadowdark-deploy`.

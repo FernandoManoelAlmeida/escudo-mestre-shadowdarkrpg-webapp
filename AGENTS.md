@@ -26,6 +26,7 @@ Fonte única para agentes neste webapp. Stubs (`CLAUDE.md`, `GEMINI.md`, `TRAE.m
 | Actualizar JSON a partir do Fantasia | `yarn migrate:from-fantasia` | `escudo-shadowdark-migrate-fantasia` |
 | Dev local, testes, lint | `yarn install`, `yarn dev`, `yarn test:run`, `yarn lint` | `escudo-shadowdark-dev` |
 | GitHub Pages, PWA, cache SW | push `master` ou `GITHUB_PAGES=1 yarn build` | `escudo-shadowdark-deploy` |
+| Gate antes de entregar / push Pages | `yarn build:pages:ci-simulate` | `escudo-shadowdark-pages-pre-entrega` |
 | Hotfix em JSON | `public/data/*.json` + testes | `escudo-shadowdark-data` |
 | Páginas, BottomNav, tema, toaster de rolagens em traços | `app/`, `components/`, `lib/dice.ts` | `escudo-shadowdark-features` |
 | Geradores `/geradores/*`, tabelas MD | `app/geradores/`, `lib/rollTable.ts` | `escudo-shadowdark-geradores` |

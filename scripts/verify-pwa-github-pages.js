@@ -46,12 +46,8 @@ function assertPrecachePrefixed(swPath, label) {
 }
 
 function isGitHubPagesBuildEnv() {
-  const v = process.env.GITHUB_PAGES;
-  if (v === "1" || v === "true") return true;
-  if (process.env.GITHUB_ACTIONS === "true" && basePath.startsWith("/")) {
-    return true;
-  }
-  return false;
+  const { isGitHubPagesBuildEnv: detect } = require("./pages-build-env.js");
+  return detect(basePath);
 }
 
 function main() {
@@ -88,8 +84,9 @@ function main() {
   const swOut = path.join(projectRoot, "out", "sw.js");
   const swSource = findExistingSwPath(projectRoot, basePath);
   if (!swSource) {
+    const { formatSwDiagnostic } = require("./pwa-artifact-paths.js");
     fail(
-      "sw.js em falta (public/, public/<basePath>/ ou out/) — confirme GITHUB_PAGES (1 ou true), next build --webpack e plugin PWA activo",
+      `sw.js em falta (public/, public/<basePath>/ ou out/) — confirme GITHUB_PAGES (1 ou true), next build --webpack e plugin PWA activo.\n${formatSwDiagnostic(projectRoot, basePath)}`,
     );
   }
   assertPrecachePrefixed(swOut, "out/sw.js");

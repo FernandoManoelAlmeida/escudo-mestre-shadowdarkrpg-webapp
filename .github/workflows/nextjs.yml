@@ -64,9 +64,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.APP_DIR }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles(format('{0}/package-lock.json', env.APP_DIR), format('{0}/yarn.lock', env.APP_DIR)) }}-${{ hashFiles(format('{0}/**.[jt]s', env.APP_DIR), format('{0}/**.[jt]sx', env.APP_DIR)) }}
+          key: ${{ runner.os }}-nextjs-pwa-export-v2-${{ hashFiles(format('{0}/package-lock.json', env.APP_DIR), format('{0}/yarn.lock', env.APP_DIR)) }}-${{ hashFiles(format('{0}/**.[jt]s', env.APP_DIR), format('{0}/**.[jt]sx', env.APP_DIR)) }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles(format('{0}/package-lock.json', env.APP_DIR), format('{0}/yarn.lock', env.APP_DIR)) }}-
+            ${{ runner.os }}-nextjs-pwa-export-v2-${{ hashFiles(format('{0}/package-lock.json', env.APP_DIR), format('{0}/yarn.lock', env.APP_DIR)) }}-
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
@@ -75,9 +75,16 @@ jobs:
         env:
           NODE_ENV: production
           GITHUB_PAGES: "1"
-        run: ${{ steps.detect-package-manager.outputs.manager }} run build
+        run: |
+          rm -rf .next
+          ${{ steps.detect-package-manager.outputs.manager }} run build
 
       - name: Verify PWA (GitHub Pages subpath)
+        env:
+          NODE_ENV: production
+          GITHUB_PAGES: "1"
+          GITHUB_ACTIONS: "true"
+          NEXT_PUBLIC_BASE_PATH: "/${{ github.event.repository.name }}"
         run: ${{ steps.detect-package-manager.outputs.manager }} run verify:pwa-github-pages
 
       - name: Upload artifact

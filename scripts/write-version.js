@@ -55,7 +55,38 @@ function writeVersion(projectRoot = path.resolve(__dirname, ".."), opts = {}) {
 
   syncPwaArtifactsToOut(projectRoot);
 
+  if (!opts.skipPagesSwCheck) {
+    assertPagesServiceWorker(projectRoot);
+  }
+
   return payload;
+}
+
+/**
+ * Falha o build Pages se o export existir mas o next-pwa não gerou SW.
+ * @param {string} projectRoot
+ * @param {string} [basePath]
+ */
+function assertPagesServiceWorker(
+  projectRoot,
+  basePath = process.env.NEXT_PUBLIC_BASE_PATH,
+) {
+  const { isGitHubPagesBuildEnv } = require("./pages-build-env.js");
+  const {
+    findExistingSwPath,
+    formatSwDiagnostic,
+  } = require("./pwa-artifact-paths.js");
+  if (!isGitHubPagesBuildEnv(basePath)) return;
+  const outDir = path.join(projectRoot, "out");
+  if (!fs.existsSync(outDir)) return;
+
+  if (!findExistingSwPath(projectRoot, basePath)) {
+    console.error(
+      "write-version: sw.js em falta após build GitHub Pages (next build --webpack + @ducanh2912/next-pwa).",
+    );
+    console.error(formatSwDiagnostic(projectRoot, basePath));
+    process.exit(1);
+  }
 }
 
 /**
@@ -85,4 +116,8 @@ if (require.main === module) {
   writeVersion();
 }
 
-module.exports = { writeVersion, syncPwaArtifactsToOut };
+module.exports = {
+  writeVersion,
+  syncPwaArtifactsToOut,
+  assertPagesServiceWorker,
+};

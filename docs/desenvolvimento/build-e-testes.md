@@ -12,13 +12,20 @@ Isto executa `next build --webpack` seguido de `node scripts/write-version.js`, 
 
 Quando `GITHUB_PAGES=1` ou `BUILD_ANDROID_CAPACITOR=1`, o `next.config.ts` activa `output: "export"`, `images.unoptimized` e `trailingSlash: true`. O resultado publicável fica em **`out/`**.
 
-Build local simulando Pages:
+Build local simulando Pages (recomendado antes do push):
+
+```bash
+yarn build:pages:ci-simulate
+```
+
+Equivalente manual:
 
 ```bash
 GITHUB_PAGES=1 NEXT_PUBLIC_BASE_PATH=/nome-do-repo yarn build
+yarn verify:pwa-github-pages
 ```
 
-Substitua `nome-do-repo` pelo segmento do caminho (ex.: `escudo-mestre-oprpg-webapp`).
+Substitua `nome-do-repo` pelo segmento do caminho (ex.: `escudo-mestre-shadowdarkrpg-webapp`).
 
 ## Servir a pasta `out/` localmente
 
@@ -39,6 +46,14 @@ yarn test:coverage
 ```
 
 Os testes usam **Vitest** e **Testing Library** (`tests/`, `*.test.ts`).
+
+Simulação completa do CI (build longo, ~15 min):
+
+```bash
+yarn test:pages-ci
+```
+
+O workflow do GitHub não repete este teste — usa `rm -rf .next`, `yarn build` e `verify:pwa-github-pages`.
 
 ## Lint e formatação
 

@@ -6,13 +6,15 @@ description: >-
 
 # escudo-shadowdark-deploy
 
+Antes do push: skill **`escudo-shadowdark-pages-pre-entrega`** (`yarn build:pages:ci-simulate`).
+
 ## Build
 
 ```bash
-GITHUB_PAGES=1 NEXT_PUBLIC_BASE_PATH=/escudo-mestre-shadowdarkrpg-webapp yarn build
+yarn build:pages:ci-simulate
 ```
 
-CI: [`.github/workflows/nextjs.yml`](../../.github/workflows/nextjs.yml) — push `master`.
+CI: [`.github/workflows/nextjs.yml`](../../.github/workflows/nextjs.yml) — push `master` (build + verify PWA).
 
 ## Checklist
 

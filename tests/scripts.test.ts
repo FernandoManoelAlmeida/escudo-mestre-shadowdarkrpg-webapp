@@ -7,7 +7,10 @@ import os from "node:os";
 const require = createRequire(import.meta.url);
 
 describe("scripts/write-version", () => {
-  const { writeVersion } = require("../scripts/write-version.js");
+  const {
+    writeVersion,
+    assertPagesServiceWorker,
+  } = require("../scripts/write-version.js");
 
   it("grava version.json com buildId fallback", () => {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), "em-wv-"));
@@ -66,6 +69,21 @@ describe("scripts/write-version", () => {
     expect(fs.readFileSync(path.join(dir, "out", "sw.js"), "utf8")).toContain(
       "/repo/data/x.json",
     );
+  });
+
+  it("assertPagesServiceWorker termina build Pages sem sw.js", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "em-wv6-"));
+    fs.mkdirSync(path.join(dir, "out"), { recursive: true });
+    vi.stubEnv("GITHUB_PAGES", "1");
+    vi.stubEnv("NEXT_PUBLIC_BASE_PATH", "/repo");
+    const exit = vi
+      .spyOn(process, "exit")
+      .mockImplementation((code: number | null | undefined) => {
+        throw new Error(`exit:${code}`);
+      });
+    expect(() => assertPagesServiceWorker(dir)).toThrow("exit:1");
+    exit.mockRestore();
+    vi.unstubAllEnvs();
   });
 
   it("copia public/sw.js para out/ após o build PWA", () => {
