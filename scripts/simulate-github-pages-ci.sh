@@ -16,9 +16,8 @@ echo "== simulate-github-pages-ci =="
 echo "ROOT=$ROOT"
 echo "NEXT_PUBLIC_BASE_PATH=$NEXT_PUBLIC_BASE_PATH"
 
-rm -rf .next out
-rm -f public/sw.js public/workbox-*.js 2>/dev/null || true
-rm -rf "public/${BP_SEG}" 2>/dev/null || true
+rm -rf .next
+node scripts/clean-pwa-export-artifacts.js
 
 yarn install --frozen-lockfile
 rm -rf .next

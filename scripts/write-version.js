@@ -84,6 +84,9 @@ function assertPagesServiceWorker(
     console.error(
       "write-version: sw.js em falta após build GitHub Pages (next build --webpack + @ducanh2912/next-pwa).",
     );
+    console.error(
+      "  Dica: o log do build deve incluir linhas «(pwa)»; sem elas, confirme --webpack, devDependency webpack e que configure-pages não usa static_site_generator: next.",
+    );
     console.error(formatSwDiagnostic(projectRoot, basePath));
     process.exit(1);
   }
