@@ -21,10 +21,10 @@ export function ancestralidadeDisplayNome(nome: string): string {
   return nome.toLocaleUpperCase("pt-BR");
 }
 
-export function sortCatalogoPersonagem(
-  entradas: CatalogoPersonagemEntrada[],
+export function sortCatalogoPersonagem<T extends CatalogoPersonagemEntrada>(
+  entradas: T[],
   ordenarSentido: OrdenarSentido,
-): CatalogoPersonagemEntrada[] {
+): T[] {
   const list = [...entradas];
   list.sort((a, b) => {
     const cmp = a.nome.localeCompare(b.nome, "pt-BR", { sensitivity: "base" });
