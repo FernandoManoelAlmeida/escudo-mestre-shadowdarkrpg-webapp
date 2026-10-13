@@ -1,5 +1,4 @@
 import type { RollResult } from "@/lib/dice";
-import type { RollToastContextValue } from "@/context/RollToastContext";
 import {
   effectiveRolagem,
   type RollOnTableResult,
@@ -38,7 +37,10 @@ export function tableRollToRollResult(
   };
 }
 
-type AddRollFn = RollToastContextValue["addRoll"];
+type AddRollFn = (
+  result: RollResult,
+  opts?: { suffix?: string; label?: string },
+) => void;
 
 export function emitSolodarkOracleRolls(
   addRoll: AddRollFn,

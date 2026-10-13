@@ -85,7 +85,8 @@ export function SolodarkOracleWidget() {
     }
     const nuance = solodarkNuanceHint(simNao.valor);
     emitSolodarkOracleRolls(addRoll, oracleTable, simNao, {
-      algoTable: algoRoll ? algoTable : undefined,
+      algoTable:
+        algoRoll && algoTable != null ? algoTable : undefined,
       algoRoll,
       nuance,
     });
