@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
+  ameacaDisplayNome,
   filterAmeacas,
   fonteParaFicha,
   getAlinhamentosParaFiltro,
@@ -23,6 +24,12 @@ function criatura(partial: Partial<Criatura> & Pick<Criatura, "id" | "nome">): C
     ...partial,
   };
 }
+
+describe("ameacaDisplayNome", () => {
+  it("exibe nome em caixa alta pt-BR", () => {
+    expect(ameacaDisplayNome("Criatura Teste")).toBe("CRIATURA TESTE");
+  });
+});
 
 describe("tipoParaListagem", () => {
   it("homebrew nunca mostra tipo no card (só NV · AL)", () => {

@@ -21,6 +21,22 @@ export function ancestralidadeDisplayNome(nome: string): string {
   return nome.toLocaleUpperCase("pt-BR");
 }
 
+export function sortAntecedentesPorNumero(
+  entradas: AntecedenteEntrada[],
+  ordenarSentido: OrdenarSentido,
+): AntecedenteEntrada[] {
+  const list = [...entradas];
+  list.sort((a, b) => {
+    const cmpNum = (a.numero ?? 0) - (b.numero ?? 0);
+    if (cmpNum !== 0) {
+      return ordenarSentido === "asc" ? cmpNum : -cmpNum;
+    }
+    const cmpNome = a.nome.localeCompare(b.nome, "pt-BR", { sensitivity: "base" });
+    return ordenarSentido === "asc" ? cmpNome : -cmpNome;
+  });
+  return list;
+}
+
 export function sortCatalogoPersonagem<T extends CatalogoPersonagemEntrada>(
   entradas: T[],
   ordenarSentido: OrdenarSentido,

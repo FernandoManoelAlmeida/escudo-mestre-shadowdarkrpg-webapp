@@ -12,6 +12,7 @@ import {
   antecedenteLinhaTitulo,
   antecedenteListaFiltroLabel,
   fonteLabel,
+  sortAntecedentesPorNumero,
   sortCatalogoPersonagem,
 } from "@/lib/catalogoPersonagem";
 import {
@@ -25,6 +26,7 @@ import { SelectField } from "@/components/ui/SelectField";
 import {
   SortOrderButtons,
   SORT_FIELD_NOME,
+  SORT_FIELD_NUMERO_DADO,
 } from "@/components/ui/SortOrderButtons";
 import type { SortOrderValue } from "@/lib/sortOrder";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
@@ -106,8 +108,8 @@ const EntryDesc = styled.span`
   color: ${({ theme }) => theme.colors.textMuted};
 `;
 
-const FILTER_DEFAULTS = { q: "", fonte: "", lista: "", ord: "nome:asc" };
-const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
+const FILTER_DEFAULTS = { q: "", fonte: "", lista: "", ord: "numero:asc" };
+const DEFAULT_SORT: SortOrderValue = { por: "numero", sentido: "asc" };
 
 function matchesFilters(e: AntecedenteEntrada, q: string, fonte: string, lista: string) {
   if (fonte && e.fonte !== fonte) return false;
@@ -137,11 +139,15 @@ export function AntecedentesPage() {
 
   const sections = useMemo(() => {
     const grouped = groupAntecedentesPorLista(filtered);
-    if (ordenar.por !== "nome") return grouped;
-    return grouped.map(({ lista, entradas: grupo }) => ({
-      lista,
-      entradas: sortCatalogoPersonagem(grupo, ordenar.sentido),
-    }));
+    return grouped.map(({ lista, entradas: grupo }) => {
+      let sorted = grupo;
+      if (ordenar.por === "nome") {
+        sorted = sortCatalogoPersonagem(grupo, ordenar.sentido);
+      } else if (ordenar.por === "numero") {
+        sorted = sortAntecedentesPorNumero(grupo, ordenar.sentido);
+      }
+      return { lista, entradas: sorted };
+    });
   }, [filtered, ordenar.por, ordenar.sentido]);
 
   const fontes = useMemo(() => {
@@ -216,7 +222,7 @@ export function AntecedentesPage() {
           ) : null}
         </FilterGrid>
         <SortOrderButtons
-          fields={[SORT_FIELD_NOME]}
+          fields={[SORT_FIELD_NUMERO_DADO, SORT_FIELD_NOME]}
           value={ordenar}
           onChange={(next) =>
             setField("ord", encodeSortOrder(next.por, next.sentido))

@@ -166,6 +166,17 @@ export const SORT_FIELD_NOME: SortOrderField = {
   inactiveAriaLabel: "Ordenar por nome; clique para A → Z",
 };
 
+export const SORT_FIELD_NUMERO_DADO: SortOrderField = {
+  key: "numero",
+  label: "Nº dado",
+  ascShort: "Nº ↑",
+  descShort: "Nº ↓",
+  defaultSentido: "asc",
+  ascAriaLabel: "Número no dado (menor → maior)",
+  descAriaLabel: "Número no dado (maior → menor)",
+  inactiveAriaLabel: "Ordenar por número no dado; clique para menor primeiro",
+};
+
 export function sortFieldNv(): SortOrderField {
   return {
     key: "nv",

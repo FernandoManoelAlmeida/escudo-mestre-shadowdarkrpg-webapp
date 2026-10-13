@@ -106,7 +106,9 @@ describe("páginas client", () => {
       renderWithTheme(<AmeacasPage />);
       await waitFor(
         () => {
-          expect(screen.getByText(ameacaMinimal.nome)).toBeInTheDocument();
+          expect(
+            screen.getByText(ameacaMinimal.nome.toLocaleUpperCase("pt-BR")),
+          ).toBeInTheDocument();
         },
         { timeout: asyncPageTimeout },
       );
