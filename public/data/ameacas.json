@@ -1619,7 +1619,7 @@
         },
         {
           "nome": "Reputação estranha",
-          "descricao": "Afeiçoado tem Desvantagem em todo teste de CAR."
+          "descricao": "Afeiçoado tem Desvantagem em todo teste de CAR. Não se aplica caso Gunter tenha sido afastado."
         },
         {
           "nome": "Manifestar Orgalorg",
