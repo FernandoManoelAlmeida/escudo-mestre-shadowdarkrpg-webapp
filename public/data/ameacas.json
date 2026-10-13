@@ -1622,12 +1622,12 @@
           "descricao": "Afeiçoado tem Desvantagem em todo teste de CAR. Não se aplica caso Gunter tenha sido afastado."
         },
         {
-          "nome": "Manifestar Orgalorg",
-          "descricao": "Só em espaço selvagem, plano Astral ou fora da gravidade dominante de um planeta: Troca de ficha imediata para **ORGALORG, O QUEBRA-MUNDOS**."
+          "nome": "Essência Inquebrável",
+          "descricao": "Ao 0 PV o corpo some, em **1d4 dias** reaparece como com PV máximos e amnesia total **adjacente** ao afeiçoado se este existir no plano; senão, local aleatório no mundo."
         },
         {
-          "nome": "Essência Inquebrável",
-          "descricao": "Ao 0 PV ou quando Orgalorg sofre Colapso Gravitacional: o corpo some, em **1d4 dias** reaparece como pinguim com PV máximos e amnesia total; **Adjacente** ao afeiçoado se este existir no plano; senão, local aleatório no mundo."
+          "nome": "Manifestar Orgalorg",
+          "descricao": "Em espaço selvagem, plano Astral ou fora da gravidade dominante de um planeta: Se torna **ORGALORG, O QUEBRA-MUNDOS**."
         }
       ],
       "origem": "homebrew",
@@ -8614,7 +8614,7 @@
         },
         {
           "nome": "Colapso Gravitacional",
-          "descricao": "A **0 PV** ou ao entrar na atmosfera de um planeta com gravidade normal: volta a ser Gunter."
+          "descricao": "A **0 PV** ou entrar na atmosfera de um planeta com gravidade normal: volta a ser **GUNTER**."
         }
       ],
       "origem": "homebrew",
