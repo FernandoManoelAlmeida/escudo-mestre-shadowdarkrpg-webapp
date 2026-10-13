@@ -141,6 +141,36 @@
       "tags": []
     },
     {
+      "id": "pinguim",
+      "nome": "PINGUÍM",
+      "flavor": "Ave de costa gelada e água fria; anda em bando e foge do que não conhece.",
+      "tipo": "Animal",
+      "ca": 11,
+      "pv": 2,
+      "atq": "1 bico +0 (1)",
+      "mv": "Perto (nadar)",
+      "atributos": {
+        "F": -3,
+        "D": 0,
+        "C": 1,
+        "I": -4,
+        "S": -2,
+        "Car": -4
+      },
+      "al": "N",
+      "nv": 0,
+      "tracos": [
+        {
+          "nome": "Bandada",
+          "descricao": "Em grupo de 6 ou mais, Vantagem em testes de DES para fugir."
+        }
+      ],
+      "origem": "homebrew",
+      "tags": [
+        "Animal"
+      ]
+    },
+    {
       "id": "rato",
       "nome": "RATO",
       "flavor": "Roedores esguios e transmissores de doenças que infestam lugares subterrâneos.",
@@ -1558,6 +1588,49 @@
       ],
       "fonte": "Bestiário",
       "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "gunter",
+      "nome": "GUNTER",
+      "flavor": "Um pinguim de olhos redondos e passo desajeitado com algo antigo dormindo por baixo de suas penas.",
+      "ca": 11,
+      "pv": 8,
+      "atq": "1 tapa ou bico +2 (1d4)",
+      "mv": "Perto",
+      "atributos": {
+        "F": -2,
+        "D": 3,
+        "C": 1,
+        "I": -2,
+        "S": -2,
+        "Car": 0
+      },
+      "al": "N",
+      "nv": 2,
+      "tracos": [
+        {
+          "nome": "Gravidade do Mundo",
+          "descricao": "Na superfície de um planeta Gunter é um pinguim comum. INT CD 18 para notar aberração disfarçada. Imune a medo de criaturas inferiores; demônios e mortos-vivos inteligentes podem sentir mal adormecido."
+        },
+        {
+          "nome": "Afeiçoar",
+          "descricao": "Um humanoide por vez se torna afeiçoado. Vínculo após 1 descanso com atividade reconfortante envolvendo Gunter; ou o candidato gasta 1 ação e passa em CAR CD 18 (tentar de novo após outro descanso se falhar). Novo vínculo substitui o anterior. Enquanto o afeiçoado viver no mesmo plano, Gunter fica em **Perto** e segue em viagem. CAR CD 12, 1/dia, para afastar por 1d4 horas. Gunter funciona como familiar do afeiçoado."
+        },
+        {
+          "nome": "Reputação estranha",
+          "descricao": "Afeiçoado tem Desvantagem em todo teste de CAR."
+        },
+        {
+          "nome": "Manifestar Orgalorg",
+          "descricao": "Só em espaço selvagem, plano Astral ou fora da gravidade dominante de um planeta: Troca de ficha imediata para **ORGALORG, O QUEBRA-MUNDOS**."
+        },
+        {
+          "nome": "Essência Inquebrável",
+          "descricao": "Ao 0 PV ou quando Orgalorg sofre Colapso Gravitacional: o corpo some, em **1d4 dias** reaparece como pinguim com PV máximos e amnesia total; **Adjacente** ao afeiçoado se este existir no plano; senão, local aleatório no mundo."
+        }
+      ],
+      "origem": "homebrew",
       "tags": []
     },
     {
@@ -8493,6 +8566,58 @@
       ],
       "fonte": "Cursed Scroll 1.",
       "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "orgalorg",
+      "nome": "ORGALORG",
+      "epitet": "O QUEBRA-MUNDOS",
+      "flavor": "Antes do tempo, um vazio que escolheu portas abertas em busca de destruição e morte pelo multiverso.",
+      "ca": 15,
+      "pv": 56,
+      "atq": "3 tentáculo cósmico (Longe) +7 (2d8) ou 1 bico estrelado (Longe) +6 (2d6)",
+      "mv": "Perto x2 (levitar)",
+      "atributos": {
+        "F": 4,
+        "D": 2,
+        "C": 4,
+        "I": 3,
+        "S": 3,
+        "Car": 0
+      },
+      "al": "C",
+      "nv": 12,
+      "tracos": [
+        {
+          "nome": "Só no Vazio",
+          "descricao": "Orgalorg só se manifesta no espaço selvagem, plano Astral ou fora da gravidade dominante de um planeta."
+        },
+        {
+          "nome": "Antes do Tempo",
+          "descricao": "Imortal, imune a envelhecimento e medo."
+        },
+        {
+          "nome": "Sussurro telepático",
+          "descricao": "Um alvo que Orgalorg possa ver e que esteja **Longe**: SAB CD 15 ou 3d8 de dano e atordoado até o fim do próximo turno de Orgalorg."
+        },
+        {
+          "nome": "Expansão sem Peso",
+          "descricao": "Ataques de tentáculo e bico usam alcance **Longe**."
+        },
+        {
+          "nome": "Absorver Essência",
+          "descricao": "Alvo **Longe** acertado por tentáculo: CON CD 15 ou perde 1d8 PV máximos até descanso longo."
+        },
+        {
+          "nome": "Quebra de Mundos",
+          "descricao": "1/encontro se não interrompido: concentra 2 rodadas; no início da terceira, CON CD 15 ou 4d8 de dano em criaturas num cubo **Perto** centrado em Orgalorg. Interrompe se Orgalorg sofrer 20+ de dano em uma rodada antes de completar."
+        },
+        {
+          "nome": "Colapso Gravitacional",
+          "descricao": "A **0 PV** ou ao entrar na atmosfera de um planeta com gravidade normal: volta a ser Gunter."
+        }
+      ],
+      "origem": "homebrew",
       "tags": []
     },
     {
