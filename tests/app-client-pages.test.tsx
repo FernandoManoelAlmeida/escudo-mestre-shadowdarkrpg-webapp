@@ -242,7 +242,9 @@ describe("páginas client", () => {
           expect(
             screen.getByRole("heading", { name: "Antecedentes" }),
           ).toBeInTheDocument();
-          expect(screen.getByText(/Livro de Regras \(d20\)/)).toBeInTheDocument();
+          expect(
+            screen.getByRole("heading", { name: "Livro de Regras" }),
+          ).toBeInTheDocument();
           expect(screen.getByText(/Moleque/)).toBeInTheDocument();
           expect(screen.getByText(/Você cresceu nas ruas/)).toBeInTheDocument();
         },

@@ -8,6 +8,7 @@ import {
   splitCatalogoMarkdownSections,
 } from "../lib/catalogoMarkdown";
 import {
+  catalogoFonteBadgeLabel,
   classeListBadge,
   classeListTitle,
   cursedScrollNumber,
@@ -73,5 +74,18 @@ describe("listagem de classes", () => {
   it("título só com nome; badge com Cursed Scroll N", () => {
     expect(classeListTitle(vidente)).toBe("Vidente");
     expect(classeListBadge(vidente)).toBe("Cursed Scroll 3");
+  });
+
+  it("badge de secção antecedentes: Cursed Scroll N", () => {
+    expect(catalogoFonteBadgeLabel(vidente)).toBe("Cursed Scroll 3");
+    expect(
+      catalogoFonteBadgeLabel({
+        id: "x",
+        nome: "X",
+        descricao: "",
+        fonte: "cursed-scroll",
+        origem: "Cursed Scroll 1 - Diabruras pt-BR.md",
+      }),
+    ).toBe("Cursed Scroll 1");
   });
 });

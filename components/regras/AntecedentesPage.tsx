@@ -11,6 +11,7 @@ import {
 import {
   antecedenteLinhaTitulo,
   antecedenteListaFiltroLabel,
+  catalogoFonteBadgeLabel,
   fonteLabel,
   sortAntecedentesPorNumero,
   sortCatalogoPersonagem,
@@ -245,13 +246,16 @@ export function AntecedentesPage() {
         <p>Nenhum resultado encontrado.</p>
       ) : (
         sections.map(({ lista, entradas: grupo }) => {
-          const fonte = grupo[0]?.fonte;
+          const ref = grupo[0];
+          const fonteBadge = ref ? catalogoFonteBadgeLabel(ref) : null;
           return (
             <Section key={lista} aria-labelledby={`sec-${lista}`}>
               <SectionHead>
-                <SectionTitle id={`sec-${lista}`}>{lista}</SectionTitle>
-                {fonte ? (
-                  <FonteBadge>{fonteLabel(fonte) ?? fonte}</FonteBadge>
+                <SectionTitle id={`sec-${lista}`}>
+                  {antecedenteListaFiltroLabel(lista)}
+                </SectionTitle>
+                {fonteBadge ? (
+                  <FonteBadge>{fonteBadge}</FonteBadge>
                 ) : null}
               </SectionHead>
               <EntryList>

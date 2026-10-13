@@ -49,6 +49,13 @@ export function sortCatalogoPersonagem<T extends CatalogoPersonagemEntrada>(
   return list;
 }
 
+/** Badge de fonte em secções (ex. antecedentes), ex. «Cursed Scroll 1». */
+export function catalogoFonteBadgeLabel(
+  entrada: CatalogoPersonagemEntrada,
+): string | null {
+  return classeListBadge(entrada) ?? fonteLabel(entrada.fonte);
+}
+
 export function fonteLabel(fonte?: string): string | null {
   switch (fonte) {
     case "livro":
