@@ -73,6 +73,9 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
 
+      - name: Verify PWA (GitHub Pages subpath)
+        run: ${{ steps.detect-package-manager.outputs.manager }} run verify:pwa-github-pages
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

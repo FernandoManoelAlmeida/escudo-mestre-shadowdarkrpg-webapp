@@ -33,4 +33,8 @@ No plano Free, **GitHub Pages não existe** em repo privado (`configure-pages` d
 
 Só tornar o repo público **não** activa o Pages. Confirme em **Settings → Pages** que a origem é **GitHub Actions** (ou API `POST .../pages` com `build_type=workflow`). Enquanto `has_pages` for falso na API, o passo **Setup Pages** falha.
 
+### PWA no Android: «Não foi possível abrir o aplicativo»
+
+O workflow corre `yarn verify:pwa-github-pages` após o build — o `out/sw.js` deployado deve ter precache com prefixo `/escudo-mestre-shadowdarkrpg-webapp/`, não `/data/` na raiz do `github.io`. Após deploy, confira no DevTools (Application → Manifest / Service Workers) ou com `curl …/sw.js | grep '/data/'` (não deve listar `url:"/data/`). Utilizador: [PWA e offline (utilizador)](../usuario/pwa-e-offline.md#não-foi-possível-abrir-o-aplicativo-android).
+
 Ver também [PWA e basePath](pwa-e-basepath.md) e skill `escudo-shadowdark-deploy`.

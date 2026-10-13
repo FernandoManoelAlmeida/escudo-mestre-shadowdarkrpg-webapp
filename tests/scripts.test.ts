@@ -51,6 +51,26 @@ describe("scripts/write-version", () => {
     expect(JSON.parse(outRaw).buildId).toBe(payload.buildId);
     expect(JSON.parse(outRaw).generatedAt).toBe("2021-01-01T00:00:00.000Z");
   });
+
+  it("copia public/sw.js para out/ após o build PWA", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "em-wv4-"));
+    fs.mkdirSync(path.join(dir, "public"), { recursive: true });
+    fs.mkdirSync(path.join(dir, "out"), { recursive: true });
+    fs.writeFileSync(
+      path.join(dir, "public", "sw.js"),
+      'precacheAndRoute([{url:"/repo/data/x.json"}])',
+      "utf8",
+    );
+    fs.writeFileSync(
+      path.join(dir, "out", "sw.js"),
+      'precacheAndRoute([{url:"/data/x.json"}])',
+      "utf8",
+    );
+    writeVersion(dir);
+    expect(fs.readFileSync(path.join(dir, "out", "sw.js"), "utf8")).toContain(
+      "/repo/data/x.json",
+    );
+  });
 });
 
 describe("scripts/migrate-ameacas-shadowdark", () => {

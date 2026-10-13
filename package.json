@@ -6,6 +6,7 @@
     "dev": "ulimit -n 10240 2>/dev/null || true; rm -f .next/dev/lock 2>/dev/null; next dev --webpack",
     "postinstall": "patch-package",
     "build": "next build --webpack && node scripts/write-version.js",
+    "verify:pwa-github-pages": "node scripts/verify-pwa-github-pages.js",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",

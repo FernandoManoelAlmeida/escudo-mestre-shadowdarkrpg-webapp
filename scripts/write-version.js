@@ -53,6 +53,24 @@ function writeVersion(projectRoot = path.resolve(__dirname, ".."), opts = {}) {
     fs.writeFileSync(outVersionPath, body, "utf8");
   }
 
+  /**
+   * O export estático pode copiar `public/sw.js` para `out/` antes do next-pwa
+   * regenerar o SW com precache prefixado. Garantir que o deploy usa o SW final.
+   */
+  const swPublic = path.join(projectRoot, "public", "sw.js");
+  const swOut = path.join(projectRoot, "out", "sw.js");
+  if (fs.existsSync(swPublic) && fs.existsSync(path.dirname(swOut))) {
+    fs.copyFileSync(swPublic, swOut);
+  }
+  const outDir = path.join(projectRoot, "out");
+  if (fs.existsSync(publicDir) && fs.existsSync(outDir)) {
+    for (const name of fs.readdirSync(publicDir)) {
+      if (name.startsWith("workbox-") && name.endsWith(".js")) {
+        fs.copyFileSync(path.join(publicDir, name), path.join(outDir, name));
+      }
+    }
+  }
+
   return payload;
 }
 

@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Gerados pelo @ducanh2912/next-pwa no build (usar GITHUB_PAGES=1 para Pages)
+/public/sw.js
+/public/workbox-*.js
+/public/swe-worker-*.js

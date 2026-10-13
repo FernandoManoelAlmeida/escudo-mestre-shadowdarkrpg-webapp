@@ -6,13 +6,26 @@ A aplicação expõe um **manifest** de aplicação web e, em **produção**, po
 
 ## Instalar
 
-Use a **URL de produção** (GitHub Pages com `/escudo-mestre-shadowdarkrpg-webapp/` no caminho). Em `yarn dev` no telemóvel o navegador costuma criar só um **atalho**, não a instalação PWA completa (igual ao Escudo OPRPG).
+Use a **URL de produção** com barra final, por exemplo:
 
-- **Android / Chrome:** menu do navegador → **Instalar aplicação** ou banner de instalação, conforme o navegador.
+`https://fernandomanoelalmeida.github.io/escudo-mestre-shadowdarkrpg-webapp/`
+
+Em `yarn dev` no telemóvel o navegador costuma criar só um **atalho**, não a instalação PWA completa (igual ao Escudo OPRPG).
+
+- **Android / Chrome (recomendado):** menu → **Instalar aplicação** ou banner de instalação.
+- **Brave:** também permite instalar, mas o WebAPK falha mais vezes; se aparecer *«Não foi possível abrir o aplicativo»*, teste no **Chrome** primeiro.
 - **Desktop Chrome:** ícone de instalação na barra de endereços quando disponível.
 - **iOS Safari:** **Partilhar** → **Ecrã Inicial**.
 
 O nome curto e ícones vêm do manifest configurado no projecto.
+
+### «Não foi possível abrir o aplicativo» (Android)
+
+1. Confirme que a **mesma URL de produção** abre a home no Chrome (sem página 404 do GitHub).
+2. **Desinstale** o atalho ou app «Escudo SD» (Definições → Apps).
+3. No Chrome: ícone do cadeado / informações do site → **Armazenamento** → **Limpar dados** para esse site.
+4. Volte à URL de produção e instale de novo pelo **Chrome** (não Brave).
+5. Se ainda falhar após um deploy recente, aguarde alguns minutos e repita o passo 4 (cache do WebAPK).
 
 ## Desenvolvimento vs. produção
 

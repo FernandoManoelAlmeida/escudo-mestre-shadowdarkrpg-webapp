@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { includeUrlInPrecacheManifest } from "./lib/pwaPrecacheFilter";
+import { prefixPrecacheUrl } from "./lib/pwaPrefixPrecacheUrl";
 import { subpathRuntimeCachingEntries } from "./lib/pwaWorkboxPatterns";
 
 const buildForCapacitor = process.env.BUILD_ANDROID_CAPACITOR === "1";
@@ -7,44 +8,6 @@ const buildForGitHubPages = process.env.GITHUB_PAGES === "1";
 const basePath = buildForGitHubPages
   ? process.env.NEXT_PUBLIC_BASE_PATH || "/escudo-mestre-shadowdarkrpg-webapp"
   : "";
-
-/** Precache do Workbox às vezes lista `/_next/...` ou URL absoluta sem o segmento do GitHub Pages. */
-function prefixPrecacheUrl(url: string, bp: string): string {
-  if (!bp) return url;
-  const root = bp.endsWith("/") ? bp.slice(0, -1) : bp;
-  if (url === root || url.startsWith(`${root}/`)) return url;
-
-  try {
-    const u = new URL(url);
-    const p = u.pathname;
-    if (
-      p.startsWith("/_next/") ||
-      p === "/_next" ||
-      (p.startsWith("/static/") && !p.startsWith(`${root}/`))
-    ) {
-      u.pathname = `${root}${p}`;
-      return u.href;
-    }
-    return url;
-  } catch {
-    /* URL relativa ao origin do SW */
-  }
-
-  if (
-    url.startsWith("/_next/") ||
-    url === "/_next" ||
-    url.startsWith("/static/")
-  ) {
-    return `${root}${url}`;
-  }
-  if (url.startsWith("_next/")) {
-    return `${root}/${url}`;
-  }
-  if (url.startsWith("/") && !url.startsWith(`${root}/`)) {
-    return `${root}${url}`;
-  }
-  return url;
-}
 
 const dataCachePattern =
   basePath !== ""
