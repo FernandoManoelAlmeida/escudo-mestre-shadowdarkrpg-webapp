@@ -46,8 +46,8 @@ Fonte única para agentes neste webapp. Stubs (`CLAUDE.md`, `GEMINI.md`, `TRAE.m
 
 | Área | Path |
 |------|------|
-| Rotas | `app/` — `/`, `/regras`, `/ameacas`, `/geradores`, `/geradores/encontros`, `/arcanos` (+ `/arcanos/itens`, `/arcanos/grimorio`, `/arcanos/grimorio/[id]`); redirect `/itens-magicos` → `/arcanos` |
-| Regras | `lib/escudo.ts` → `escudo-shadowdark.json` |
+| Rotas | `app/` — `/`, `/regras` (+ `/regras/tabelas`, `/regras/glossario`, `/regras/classes`, `/regras/ancestralidades`, `/regras/antecedentes`, `/regras/[sectionId]`), `/ameacas`, `/geradores`, `/arcanos` (+ itens/grimório); redirect `/itens-magicos` → `/arcanos` |
+| Regras | `lib/escudo.ts` → `escudo-shadowdark.json`; catálogos PJ em `lib/classes.ts`, `lib/ancestralidades.ts`, `lib/antecedentes.ts` |
 | Criaturas | `lib/ameacas.ts` |
 | Rolagens | `lib/dice.ts`, `lib/rollTable.ts` |
 | Layout | `components/layout/` — `BottomNav`, `QuickRollBar` |

@@ -32,12 +32,23 @@ const ANCESTRALIDADES_PATH = path.join(
   PROJECT_ROOT,
   "public/data/catalogo/ancestralidades.json",
 );
+const ANTECEDENTES_PATH = path.join(
+  PROJECT_ROOT,
+  "public/data/catalogo/antecedentes.json",
+);
 const REGRAS_HOMEBREW_PATH = path.join(
   PROJECT_ROOT,
   "public/data/catalogo/regras-homebrew.json",
 );
 
 const EXPECTED_ANCESTRALIDADES_COUNT = 10;
+const EXPECTED_ANTECEDENTES_COUNT = 68;
+const EXPECTED_ANTECEDENTES_BY_LISTA = {
+  "Livro de Regras (d20)": 20,
+  "Antecedentes diabólicos": 20,
+  "Antecedentes nórdicos": 20,
+  "Antecedentes a bordo (d8)": 8,
+};
 const EXPECTED_CLASSES_MIN = 17;
 const EXPECTED_CLASSES_MAX = 20;
 
@@ -260,6 +271,42 @@ function validateClasses() {
   return ok;
 }
 
+function validateAntecedentes() {
+  if (!fs.existsSync(ANTECEDENTES_PATH)) {
+    return fail("antecedentes.json ausente");
+  }
+  const { entradas } = JSON.parse(fs.readFileSync(ANTECEDENTES_PATH, "utf8"));
+  let ok = true;
+  if (!Array.isArray(entradas) || entradas.length !== EXPECTED_ANTECEDENTES_COUNT) {
+    ok =
+      fail(
+        `antecedentes: esperados ${EXPECTED_ANTECEDENTES_COUNT}, encontrados ${entradas?.length ?? 0}`,
+      ) && ok;
+  }
+  const ids = new Set();
+  const byLista = {};
+  for (const e of entradas) {
+    if (!e.id || !e.nome || !e.descricao || !e.lista) {
+      ok = fail(`antecedentes: entrada incompleta ${e.id || e.nome}`) && ok;
+    }
+    if (ids.has(e.id)) ok = fail(`antecedentes: id duplicado ${e.id}`) && ok;
+    ids.add(e.id);
+    byLista[e.lista] = (byLista[e.lista] || 0) + 1;
+    const forbidden = findForbiddenInCatalogEntry(e);
+    if (forbidden.length) {
+      ok = fail(`antecedentes ${e.id}: termos proibidos: ${forbidden.join(", ")}`) && ok;
+    }
+  }
+  for (const [lista, count] of Object.entries(EXPECTED_ANTECEDENTES_BY_LISTA)) {
+    if (byLista[lista] !== count) {
+      ok =
+        fail(`antecedentes "${lista}": esperados ${count}, encontrados ${byLista[lista] ?? 0}`) &&
+        ok;
+    }
+  }
+  return ok;
+}
+
 function validateRegrasHomebrew() {
   if (!fs.existsSync(REGRAS_HOMEBREW_PATH)) return fail("regras-homebrew.json ausente");
   const { regras } = JSON.parse(fs.readFileSync(REGRAS_HOMEBREW_PATH, "utf8"));
@@ -285,8 +332,9 @@ function main() {
   const i = validateItensMagicos();
   const c = validateClasses();
   const an = validateAncestralidades();
+  const ant = validateAntecedentes();
   const rh = validateRegrasHomebrew();
-  if (t && a && i && c && an && rh) {
+  if (t && a && i && c && an && ant && rh) {
     console.log("OK: tabelas + ameaças + catálogos");
     process.exit(0);
   }
@@ -303,6 +351,7 @@ module.exports = {
   validateItensMagicos,
   validateClasses,
   validateAncestralidades,
+  validateAntecedentes,
   validateRegrasHomebrew,
   REQUIRED_TABLE_IDS,
   GITH_PUBLIC_IDS,

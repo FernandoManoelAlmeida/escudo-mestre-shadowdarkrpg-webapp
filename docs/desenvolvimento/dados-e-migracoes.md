@@ -21,6 +21,7 @@ Vault canónico: `repos/shadowdarkrpg-fantasia/Referências/Shadowdark/` (resolv
 | `public/data/tabelas/*.json` | `migrate-tabelas-shadowdark.js` | `Tabelas/**/*.md` (frontmatter `id`, `rolagem`; remove JSON órfãos; `--strict`) |
 | `public/data/catalogo/itens-magicos.json` | `migrate-catalogo-itens-magicos-shadowdark.js` | `Catálogos/Itens Mágicos.md` |
 | `public/data/catalogo/magias.json` | `migrate-catalogo-magias-shadowdark.js` | `Catálogos/Grimório.md` |
+| `public/data/catalogo/antecedentes.json` | `migrate-catalogo-antecedentes-shadowdark.js` | `Catálogos/Antecedentes.md` (extract: `extract-antecedentes-shadowdark.js`) |
 
 ### Extração do livro (vault)
 
@@ -87,7 +88,7 @@ yarn migrate:catalogo-itens-magicos-shadowdark -- "$OUT"
 - Extract de classes (`extractClassesFromText`): mescla flavor, stats e tabela de talentos órfãos antes de `# Classe:`; corta contaminação da classe seguinte só após `###/## Talentos`; `trimNextClassFlavorContamination` não corta flavor da própria classe quando ainda não há seção de talentos.
 - `yarn validate:data --strict` exige tabela GFM em `## Talentos` e parágrafo introdutório (≥ 40 caracteres antes do primeiro `##`) em cada classe — ver `assertClassTalentTables` / `assertClassIntroParagraphs` em `catalogo-personagem-lib.js`.
 - Glossário público Astraldark no migrate: `scripts/sanitize-catalogo-astraldark.js` + `astraldark-public-glossary.js` (dedupe por `id`; prioridade `astraldark` > `homebrew` > `cursed-scroll` > `livro`).
-- Saídas: `public/data/catalogo/classes.json`, `ancestralidades.json`, `regras-homebrew.json` (o migrate de homebrew também atualiza `escudo-shadowdark.json` via `sync-regras-homebrew-escudo.js`, listando a regra em `/regras` como as seções do compêndio — ex. `/regras/multiclasse-simples`).
+- Saídas: `public/data/catalogo/classes.json`, `ancestralidades.json`, `antecedentes.json`, `regras-homebrew.json` (o migrate de homebrew também atualiza `escudo-shadowdark.json` via `sync-regras-homebrew-escudo.js`, listando a regra em `/regras` como as seções do compêndio — ex. `/regras/multiclasse-simples`).
 - Contagens esperadas (`yarn validate:data`): **19** classes (incl. Bárbaro homebrew); **10** ancestralidades (6 livro + 2 Astraldark + Drow/Duergar homebrew após dedupe); **1** regra `multiclasse-simples`.
 
 ```bash

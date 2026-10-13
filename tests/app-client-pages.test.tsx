@@ -8,6 +8,7 @@ import ArcanosItensPage from "@/app/arcanos/itens/page";
 import GrimorioPage from "@/app/arcanos/grimorio/page";
 import { MagiaDetailClient } from "@/app/arcanos/grimorio/[id]/MagiaDetailClient";
 import RegrasPage from "@/app/regras/page";
+import RegrasAntecedentesPage from "@/app/regras/antecedentes/page";
 import RegrasTabelasPage from "@/app/regras/tabelas/page";
 import RegrasGlossarioPage from "@/app/regras/glossario/page";
 import { AmeacaDetailClient } from "@/app/ameacas/[id]/AmeacaDetailClient";
@@ -207,6 +208,41 @@ describe("páginas client", () => {
       await waitFor(
         () => {
           expect(screen.getByText(/§ 1 — Mecânica/)).toBeInTheDocument();
+        },
+        { timeout: asyncPageTimeout },
+      );
+      expect(
+        screen.getByRole("link", { name: "Antecedentes" }),
+      ).toHaveAttribute("href", "/regras/antecedentes");
+    },
+    asyncPageTimeout,
+  );
+
+  it(
+    "Antecedentes lista secções na mesma página",
+    async () => {
+      stubFetchJson({
+        entradas: [
+          {
+            id: "livro-moleque",
+            nome: "Moleque",
+            descricao: "Você cresceu nas ruas.",
+            fonte: "livro",
+            lista: "Livro de Regras (d20)",
+            rolagem: "d20",
+            numero: 1,
+          },
+        ],
+      });
+      renderWithTheme(<RegrasAntecedentesPage />);
+      await waitFor(
+        () => {
+          expect(
+            screen.getByRole("heading", { name: "Antecedentes" }),
+          ).toBeInTheDocument();
+          expect(screen.getByText(/Livro de Regras \(d20\)/)).toBeInTheDocument();
+          expect(screen.getByText(/Moleque/)).toBeInTheDocument();
+          expect(screen.getByText(/Você cresceu nas ruas/)).toBeInTheDocument();
         },
         { timeout: asyncPageTimeout },
       );

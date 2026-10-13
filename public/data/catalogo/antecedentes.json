@@ -1,0 +1,684 @@
+{
+  "entradas": [
+    {
+      "id": "livro-moleque",
+      "nome": "Moleque",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 1,
+      "descricao": "Você cresceu em meio às impiedosas ruas de uma grande cidade."
+    },
+    {
+      "id": "livro-procurado",
+      "nome": "Procurado",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 2,
+      "descricao": "Há um preço pela sua cabeça, mas você tem aliados."
+    },
+    {
+      "id": "livro-iniciado-do-culto",
+      "nome": "Iniciado do Culto",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 3,
+      "descricao": "Você conhece segredos e rituais blasfemos."
+    },
+    {
+      "id": "livro-guilda-dos-ladroes",
+      "nome": "Guilda dos Ladrões",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 4,
+      "descricao": "Você tem conexões, contatos e dívidas."
+    },
+    {
+      "id": "livro-banido",
+      "nome": "Banido",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 5,
+      "descricao": "Seu povo lhe exilou por crimes que você supostamente cometeu."
+    },
+    {
+      "id": "livro-orfao",
+      "nome": "Órfão",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 6,
+      "descricao": "Um guardião incomum lhe resgatou e lhe criou."
+    },
+    {
+      "id": "livro-aprendiz-de-mago",
+      "nome": "Aprendiz de Mago",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 7,
+      "descricao": "Você tem um dom natural e talento para magia."
+    },
+    {
+      "id": "livro-joalheiro",
+      "nome": "Joalheiro",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 8,
+      "descricao": "Você pode identificar valores e autenticidade facilmente."
+    },
+    {
+      "id": "livro-herbalista",
+      "nome": "Herbalista",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 9,
+      "descricao": "Você conhece plantas, remédios e venenos."
+    },
+    {
+      "id": "livro-barbaro",
+      "nome": "Bárbaro",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 10,
+      "descricao": "Você deixou a horda, mas ela não saiu totalmente de você."
+    },
+    {
+      "id": "livro-mercenario",
+      "nome": "Mercenário",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 11,
+      "descricao": "Você lutou contra amigos e inimigos pelo seu dinheiro."
+    },
+    {
+      "id": "livro-marinheiro",
+      "nome": "Marinheiro",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 12,
+      "descricao": "Pirata, marinheiro particular ou mercador: os mares são seus."
+    },
+    {
+      "id": "livro-acolito",
+      "nome": "Acólito",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 13,
+      "descricao": "Você foi bem treinado em ritos religiosos e doutrinas."
+    },
+    {
+      "id": "livro-soldado",
+      "nome": "Soldado",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 14,
+      "descricao": "Você serviu como combatente em um exército organizado."
+    },
+    {
+      "id": "livro-guardiao",
+      "nome": "Guardião",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 15,
+      "descricao": "As florestas e regiões selvagens são seu verdadeiro lar."
+    },
+    {
+      "id": "livro-batedor",
+      "nome": "Batedor",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 16,
+      "descricao": "Você sobreviveu graças à furtividade, observação e velocidade."
+    },
+    {
+      "id": "livro-menestrel",
+      "nome": "Menestrel",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 17,
+      "descricao": "Você viajou por longas distâncias com seu charme e talento."
+    },
+    {
+      "id": "livro-estudioso",
+      "nome": "Estudioso",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 18,
+      "descricao": "Você sabe muito sobre história antiga e lendas."
+    },
+    {
+      "id": "livro-nobre",
+      "nome": "Nobre",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 19,
+      "descricao": "Carregar um nome famoso abriu muitas portas para você."
+    },
+    {
+      "id": "livro-cirurgiao",
+      "nome": "Cirurgião",
+      "origem": "Guia de Jogo Rapido pt-BR.md",
+      "fonte": "livro",
+      "lista": "Livro de Regras (d20)",
+      "rolagem": "d20",
+      "numero": 20,
+      "descricao": "Você entende de anatomia, cirurgias e primeiros socorros."
+    },
+    {
+      "id": "diabolicos-eremita",
+      "nome": "Eremita",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 1,
+      "descricao": "Os ermos (e suas criaturas) são a sua família."
+    },
+    {
+      "id": "diabolicos-exilado",
+      "nome": "Exilado",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 2,
+      "descricao": "Você foi exilado por crimes, sejam eles reais ou suposições."
+    },
+    {
+      "id": "diabolicos-nascido-da-madeira",
+      "nome": "Nascido da Madeira",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 3,
+      "descricao": "Eles encontraram você no buraco de um carvalho."
+    },
+    {
+      "id": "diabolicos-amnesico",
+      "nome": "Amnésico",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 4,
+      "descricao": "Seu passado é um borrão, mas algumas memórias retornam."
+    },
+    {
+      "id": "diabolicos-assombrado",
+      "nome": "Assombrado",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 5,
+      "descricao": "Um espírito que não descansou quer algo de você."
+    },
+    {
+      "id": "diabolicos-fugitivo",
+      "nome": "Fugitivo",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 6,
+      "descricao": "Um salvador anônimo ajudou você a desaparecer."
+    },
+    {
+      "id": "diabolicos-tocado-pelo-feerico",
+      "nome": "Tocado pelo Feérico",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 7,
+      "descricao": "Uma fada se tornou sua amiga durante sua infância."
+    },
+    {
+      "id": "diabolicos-nascido-da-bruxa",
+      "nome": "Nascido da Bruxa",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 8,
+      "descricao": "Eles queimaram a sua mãe, mas lhe pouparam."
+    },
+    {
+      "id": "diabolicos-coletor",
+      "nome": "Coletor",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 9,
+      "descricao": "Você sabe diferenciar o que é comestível do que é mortal."
+    },
+    {
+      "id": "diabolicos-redentor",
+      "nome": "Redentor",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 10,
+      "descricao": "Você deve redimir o nome de seu povo."
+    },
+    {
+      "id": "diabolicos-marcado",
+      "nome": "Marcado",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 11,
+      "descricao": "Você carrega uma marca sobrenatural. Maldição ou dom?"
+    },
+    {
+      "id": "diabolicos-sacrificio",
+      "nome": "Sacrifício",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 12,
+      "descricao": "Você seria sacrificado em um ritual, mas escapou."
+    },
+    {
+      "id": "diabolicos-abandonado",
+      "nome": "Abandonado",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 13,
+      "descricao": "Eles te deixaram para trás, mas você se recusou a morrer."
+    },
+    {
+      "id": "diabolicos-caido",
+      "nome": "Caído",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 14,
+      "descricao": "Você caiu em desgraça. Você irá aceitar ou se redimir?"
+    },
+    {
+      "id": "diabolicos-atraido",
+      "nome": "Atraído",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 15,
+      "descricao": "Você ouviu um sussurro chamando-o e o seguiu."
+    },
+    {
+      "id": "diabolicos-asceta",
+      "nome": "Asceta",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 16,
+      "descricao": "As pessoas o temem, mas buscam você por conselhos."
+    },
+    {
+      "id": "diabolicos-crianca-lobo",
+      "nome": "Criança-lobo",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 17,
+      "descricao": "Muito tempo atrás, você entrou na cidade vestindo peles."
+    },
+    {
+      "id": "diabolicos-curador",
+      "nome": "Curador",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 18,
+      "descricao": "Você entende como a vida e a morte se interligam."
+    },
+    {
+      "id": "diabolicos-escolhido",
+      "nome": "Escolhido",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 19,
+      "descricao": "Uma entidade sobrenatural escolheu você para um propósito."
+    },
+    {
+      "id": "diabolicos-nascido-do-demonio",
+      "nome": "Nascido do Demônio",
+      "origem": "Cursed Scroll 1 - Diabruras pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes diabólicos",
+      "rolagem": "d20",
+      "numero": 20,
+      "descricao": "Um de seus ancestrais é um demônio poderoso."
+    },
+    {
+      "id": "nordicos-libertado",
+      "nome": "Libertado",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 1,
+      "descricao": "Você era um escravo, mas escapou ou ganhou sua liberdade"
+    },
+    {
+      "id": "nordicos-desalojado",
+      "nome": "Desalojado",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 2,
+      "descricao": "Você fugiu após um jarl rival atacar seu vilarejo"
+    },
+    {
+      "id": "nordicos-criminoso",
+      "nome": "Criminoso",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 3,
+      "descricao": "Você foi exilado do seu vilarejo por causa de um crime"
+    },
+    {
+      "id": "nordicos-errante",
+      "nome": "Errante",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 4,
+      "descricao": "Você ainda não encontrou um jarl digno da sua lealdade"
+    },
+    {
+      "id": "nordicos-agricultor",
+      "nome": "Agricultor",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 5,
+      "descricao": "Você trabalha com a terra e conhece todas as plantas"
+    },
+    {
+      "id": "nordicos-criador-de-gado",
+      "nome": "Criador de Gado",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 6,
+      "descricao": "Você tem uma boa intuição sobre todos os animais"
+    },
+    {
+      "id": "nordicos-cacador",
+      "nome": "Caçador",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 7,
+      "descricao": "Você sabe se mover silenciosamente nos ermos"
+    },
+    {
+      "id": "nordicos-pescador",
+      "nome": "Pescador",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 8,
+      "descricao": "Você conhece todas as criaturas e lendas marítimas"
+    },
+    {
+      "id": "nordicos-executor",
+      "nome": "Executor",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 9,
+      "descricao": "Você executa a lei do jarl em seu vilarejo"
+    },
+    {
+      "id": "nordicos-mercador",
+      "nome": "Mercador",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 10,
+      "descricao": "Você tem conexões comerciais em todos os vilarejos"
+    },
+    {
+      "id": "nordicos-artesao",
+      "nome": "Artesão",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 11,
+      "descricao": "Você consegue construir e consertar qualquer item útil"
+    },
+    {
+      "id": "nordicos-fabricante-de-arcos",
+      "nome": "Fabricante de Arcos",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 12,
+      "descricao": "Você pode construir e consertar arcos ou flechas"
+    },
+    {
+      "id": "nordicos-aprendiz-de-vidente",
+      "nome": "Aprendiz de Vidente",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 13,
+      "descricao": "Você conhece um pouco das artes místicas"
+    },
+    {
+      "id": "nordicos-carpinteiro-naval",
+      "nome": "Carpinteiro Naval",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 14,
+      "descricao": "Você sabe construir e consertar dracares"
+    },
+    {
+      "id": "nordicos-ferreiro",
+      "nome": "Ferreiro",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 15,
+      "descricao": "Armas, armaduras, ferraduras: você faz de tudo"
+    },
+    {
+      "id": "nordicos-viajante-distante",
+      "nome": "Viajante Distante",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 16,
+      "descricao": "Você conhece muitos povos e costumes distantes"
+    },
+    {
+      "id": "nordicos-skald",
+      "nome": "Skald",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 17,
+      "descricao": "Você é um poeta e conhece todas as baladas antigas"
+    },
+    {
+      "id": "nordicos-estirpe-heroica",
+      "nome": "Estirpe Heroica",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 18,
+      "descricao": "Você é descendente de um guerreiro famoso"
+    },
+    {
+      "id": "nordicos-sangue-nobre",
+      "nome": "Sangue Nobre",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 19,
+      "descricao": "Você é o filho de 1d6: 1–5. jarl, 6. rei"
+    },
+    {
+      "id": "nordicos-sangue-divino",
+      "nome": "Sangue Divino",
+      "origem": "Cursed Scroll 3 - Sol da Meia-Noite pt-BR.md",
+      "fonte": "cursed-scroll",
+      "lista": "Antecedentes nórdicos",
+      "rolagem": "d20",
+      "numero": 20,
+      "descricao": "Você descende de um deus, e carrega uma marca dele"
+    },
+    {
+      "id": "astral-desertor",
+      "nome": "Desertor",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 1,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    },
+    {
+      "id": "astral-artilheiro",
+      "nome": "Artilheiro",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 2,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    },
+    {
+      "id": "astral-contrabandista",
+      "nome": "Contrabandista",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 3,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    },
+    {
+      "id": "astral-pescador-astral",
+      "nome": "Pescador astral",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 4,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    },
+    {
+      "id": "astral-capitao-deposto",
+      "nome": "Capitão deposto",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 5,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    },
+    {
+      "id": "astral-cartografo-estelar",
+      "nome": "Cartógrafo estelar",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 6,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    },
+    {
+      "id": "astral-passageiro-com-divida",
+      "nome": "Passageiro com dívida",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 7,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    },
+    {
+      "id": "astral-sobrevivente-da-maldisombra",
+      "nome": "Sobrevivente da Maldisombra",
+      "origem": "Astraldark pt-BR.md",
+      "fonte": "astraldark",
+      "lista": "Antecedentes a bordo (d8)",
+      "rolagem": "d8",
+      "numero": 8,
+      "descricao": "Antecedente de personagem a bordo de uma nave astral."
+    }
+  ]
+}

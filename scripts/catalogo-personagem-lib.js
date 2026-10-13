@@ -916,6 +916,209 @@ function parseAncestryFile(md, { origem, fonte, nomeFromH1 = true }) {
   };
 }
 
+function parseAntecedenteMetaFromBody(body, defaultFonte = "livro") {
+  let rest = body.trim();
+  let origem = defaultFonte === "livro" ? "livro" : defaultFonte;
+  let fonte = defaultFonte;
+  let lista = "";
+  let rolagem = "";
+  let numero;
+
+  const pull = (label) => {
+    const re = new RegExp(`^\\*${label}:\\s*([^*]+)\\*`, "im");
+    const m = rest.match(re);
+    if (!m) return null;
+    rest = rest.replace(re, "").trim();
+    return m[1].trim();
+  };
+
+  const o = pull("Origem");
+  if (o) origem = o;
+  const f = pull("Fonte");
+  if (f) fonte = f;
+  const l = pull("Lista");
+  if (l) lista = l;
+  const r = pull("Rolagem");
+  if (r) rolagem = r;
+  const n = pull("Número");
+  if (n) numero = Number.parseInt(n, 10);
+
+  let id;
+  const idLine = pull("Id");
+  if (idLine) id = idLine;
+
+  return { origem, fonte, lista, rolagem, numero, id, descricao: rest.trim() };
+}
+
+function splitAntecedenteCell(text) {
+  const t = text
+    .trim()
+    .replace(/d20Masculino.*/i, "")
+    .trim();
+  const dot = t.search(/\.\s+/);
+  if (dot > 0 && dot < 120) {
+    return {
+      nome: t.slice(0, dot).trim(),
+      descricao: t.slice(dot + 1).trim(),
+    };
+  }
+  return { nome: t, descricao: "" };
+}
+
+function parseAntecedenteTableRows(sectionMd) {
+  const rows = [];
+  const lines = sectionMd.split("\n");
+  let inTable = false;
+  for (const line of lines) {
+    if (
+      /^\|\s*d\d+\s*\|/i.test(line) &&
+      (/Resultado|Antecedente/i.test(line))
+    ) {
+      inTable = true;
+      continue;
+    }
+    if (inTable && /^\|\s*---/.test(line)) continue;
+    const rowMatch = line.match(/^\|\s*(\d+)\s*\|\s*(.+?)\s*\|?\s*$/);
+    if (inTable && rowMatch) {
+      const numero = Number.parseInt(rowMatch[1], 10);
+      const { nome, descricao } = splitAntecedenteCell(rowMatch[2]);
+      if (!nome) continue;
+      rows.push({
+        numero,
+        nome,
+        descricao: descricao || (rowMatch[2].includes(".") ? "" : ""),
+      });
+      continue;
+    }
+    if (inTable && line.trim() && !line.trim().startsWith("|")) {
+      if (!/^\d+[A-Za-z]/.test(line.trim())) break;
+    }
+  }
+  return rows;
+}
+
+function mergeAntecedenteRowsByNumero(primary, secondary) {
+  const byNum = new Map(primary.map((r) => [r.numero, r]));
+  for (const r of secondary) {
+    if (!byNum.has(r.numero)) byNum.set(r.numero, r);
+  }
+  return [...byNum.values()].sort((a, b) => a.numero - b.numero);
+}
+
+function rowsToAntecedenteEntradas(rows, options) {
+  const {
+    idPrefix,
+    origem,
+    fonte,
+    lista,
+    rolagem,
+    defaultDescricao = "",
+  } = options;
+  return rows.map((r) => {
+    const descricao =
+      r.descricao?.trim() ||
+      defaultDescricao ||
+      (fonte === "astraldark"
+        ? "Antecedente de personagem a bordo de uma nave astral."
+        : "");
+    return {
+      id: `${idPrefix}-${slug(r.nome)}`,
+      nome: r.nome,
+      origem,
+      fonte,
+      lista,
+      rolagem,
+      numero: r.numero,
+      descricao,
+    };
+  });
+}
+
+function extractAntecedentesTableAfterMarker(md, markerRe, options) {
+  const idx = md.search(markerRe);
+  if (idx < 0) return [];
+  const slice = md.slice(idx);
+  const end = slice.search(/\n# [^#\s]/);
+  const section = end >= 0 ? slice.slice(0, end) : slice.slice(0, 12000);
+  let rows = parseAntecedenteTableRows(section);
+  if (options.secondaryMarker) {
+    const idx2 = md.search(options.secondaryMarker);
+    if (idx2 >= 0) {
+      const slice2 = md.slice(idx2);
+      const end2 = slice2.search(/\n# Nomes /i);
+      const sec = end2 >= 0 ? slice2.slice(0, end2) : slice2.slice(0, 4000);
+      rows = mergeAntecedenteRowsByNumero(rows, parseAntecedenteTableRows(sec));
+    }
+  }
+  return rowsToAntecedenteEntradas(rows, options);
+}
+
+function extractAntecedentesGuia(md, options) {
+  const start = md.search(/^# Antecedentes\s*$/m);
+  const end = md.search(/^# Atributos\s*$/m);
+  if (start < 0 || end < 0 || end <= start) return [];
+  const section = md.slice(start, end);
+  const rows = parseAntecedenteTableRows(section);
+  return rowsToAntecedenteEntradas(rows, options);
+}
+
+function parseAntecedentesFromMd(md) {
+  const blocks = md
+    .split(/\n---\n## /)
+    .slice(1)
+    .map((b) => `## ${b.trim()}`);
+  const entradas = [];
+  const skipped = [];
+  const seen = new Set();
+
+  for (const block of blocks) {
+    const lines = block.split("\n");
+    const nome = lines[0].replace(/^##\s+/, "").trim();
+    if (!nome) continue;
+    const rawBody = lines.slice(1).join("\n").trim();
+    const meta = parseAntecedenteMetaFromBody(rawBody);
+    const id = meta.id || slug(nome);
+    if (seen.has(id)) {
+      skipped.push({ nome, reasons: ["duplicate_id"] });
+      continue;
+    }
+    seen.add(id);
+    if (!meta.descricao && meta.fonte !== "astraldark") {
+      skipped.push({ nome, reasons: ["empty_body"] });
+      continue;
+    }
+    entradas.push({
+      id,
+      nome,
+      origem: meta.origem,
+      fonte: meta.fonte,
+      lista: meta.lista,
+      rolagem: meta.rolagem,
+      numero: meta.numero,
+      descricao: meta.descricao || "Antecedente de personagem a bordo de uma nave astral.",
+    });
+  }
+  return { entradas, skipped };
+}
+
+function toAntecedenteCatalogMd(title, intro, entradas) {
+  const lines = [`# ${title}`, "", intro, ""];
+  for (const e of entradas) {
+    lines.push("---");
+    lines.push(`## ${e.nome}`);
+    lines.push(`*Id: ${e.id}*`);
+    if (e.origem && e.origem !== "livro") lines.push(`*Origem: ${e.origem}*`);
+    if (e.fonte) lines.push(`*Fonte: ${e.fonte}*`);
+    if (e.lista) lines.push(`*Lista: ${e.lista}*`);
+    if (e.rolagem) lines.push(`*Rolagem: ${e.rolagem}*`);
+    if (e.numero != null) lines.push(`*Número: ${e.numero}*`);
+    lines.push("");
+    lines.push(e.descricao);
+    lines.push("");
+  }
+  return lines.join("\n");
+}
+
 module.exports = {
   slug,
   parseOrigemFromBody,
@@ -953,4 +1156,13 @@ module.exports = {
   normalizeClassDescricao,
   finalizeClassDescricao,
   ANCESTRY_LIVRO_NAMES,
+  parseAntecedenteMetaFromBody,
+  splitAntecedenteCell,
+  parseAntecedenteTableRows,
+  mergeAntecedenteRowsByNumero,
+  rowsToAntecedenteEntradas,
+  extractAntecedentesTableAfterMarker,
+  extractAntecedentesGuia,
+  parseAntecedentesFromMd,
+  toAntecedenteCatalogMd,
 };

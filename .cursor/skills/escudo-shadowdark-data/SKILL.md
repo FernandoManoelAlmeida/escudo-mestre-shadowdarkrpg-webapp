@@ -14,5 +14,10 @@ description: >-
 | `tabelas/*.json` | `lib/rollTable.ts` |
 | `catalogo/itens-magicos.json` | `/arcanos/itens` |
 | `catalogo/magias.json` | `/arcanos/grimorio`, `/arcanos/grimorio/[id]` |
+| `catalogo/ancestralidades.json` | `/regras/ancestralidades` |
+| `catalogo/classes.json` | `/regras/classes` |
+| `catalogo/antecedentes.json` | `/regras/antecedentes` (página única, sem detalhe por id) |
+
+Fonte MD: `Referências/shadowdark/Catálogos/Antecedentes.md` — `yarn extract:antecedentes-shadowdark` (paths no script) ou editar MD; `yarn migrate:catalogo-antecedentes-shadowdark`.
 
 Após editar: `yarn test:run`. Fluxo normal: `escudo-shadowdark-migrate-fantasia`.

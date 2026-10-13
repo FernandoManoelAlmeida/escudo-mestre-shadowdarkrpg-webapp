@@ -58,6 +58,13 @@ const ancestralidadesMd = resolveVaultPath(
   "Catálogos",
   "Ancestralidades.md",
 );
+const antecedentesMd = resolveVaultPath(
+  vault,
+  "Referências",
+  "shadowdark",
+  "Catálogos",
+  "Antecedentes.md",
+);
 const regrasHomebrewMd = resolveVaultPath(
   vault,
   "Referências",
@@ -118,6 +125,10 @@ if (fs.existsSync(classesMd)) {
 
 if (fs.existsSync(ancestralidadesMd)) {
   run("migrate-catalogo-ancestralidades-shadowdark.js", [ancestralidadesMd]);
+}
+
+if (fs.existsSync(antecedentesMd)) {
+  run("migrate-catalogo-antecedentes-shadowdark.js", [antecedentesMd]);
 }
 
 if (fs.existsSync(regrasHomebrewMd)) {

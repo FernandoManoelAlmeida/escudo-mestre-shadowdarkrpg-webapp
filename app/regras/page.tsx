@@ -182,6 +182,7 @@ export default function RegrasPage() {
           <QuickLink href="/regras/glossario">Glossário</QuickLink>
           <QuickLink href="/regras/classes">Classes</QuickLink>
           <QuickLink href="/regras/ancestralidades">Ancestralidades</QuickLink>
+          <QuickLink href="/regras/antecedentes">Antecedentes</QuickLink>
         </QuickLinks>
       </FilterPanel>
       {values.q.trim() ? (

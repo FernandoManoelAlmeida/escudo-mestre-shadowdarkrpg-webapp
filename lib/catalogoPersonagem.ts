@@ -8,6 +8,12 @@ export type CatalogoPersonagemEntrada = {
   fonte?: "livro" | "cursed-scroll" | "astraldark" | "homebrew" | string;
 };
 
+export type AntecedenteEntrada = CatalogoPersonagemEntrada & {
+  lista: string;
+  rolagem?: string;
+  numero?: number;
+};
+
 const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 /** Nome na UI do catálogo de ancestralidades (livro usa caixa alta; homebrew/Astraldark alinham na exibição). */
@@ -98,4 +104,47 @@ export async function fetchCatalogoJson<T>(path: string): Promise<T | null> {
   const res = await fetch(`${base}${path}`);
   if (!res.ok) return null;
   return (await res.json()) as T;
+}
+
+const LISTA_ANTECEDENTES_ORDER = [
+  "Livro de Regras (d20)",
+  "Antecedentes diabólicos",
+  "Antecedentes nórdicos",
+  "Antecedentes a bordo (d8)",
+];
+
+export function antecedenteLinhaTitulo(entrada: AntecedenteEntrada): string {
+  if (entrada.numero != null) {
+    return `${entrada.numero} — ${entrada.nome}`;
+  }
+  return entrada.nome;
+}
+
+/** Rótulo curto no filtro «Lista» (sem sufixo de rolagem). */
+export function antecedenteListaFiltroLabel(lista: string): string {
+  return lista.replace(/\s*\(d\d+\)\s*$/i, "").trim();
+}
+
+export function groupAntecedentesPorLista(
+  entradas: AntecedenteEntrada[],
+): { lista: string; entradas: AntecedenteEntrada[] }[] {
+  const map = new Map<string, AntecedenteEntrada[]>();
+  for (const e of entradas) {
+    const key = e.lista || "Outros";
+    if (!map.has(key)) map.set(key, []);
+    map.get(key)!.push(e);
+  }
+  const keys = [...map.keys()].sort((a, b) => {
+    const ia = LISTA_ANTECEDENTES_ORDER.indexOf(a);
+    const ib = LISTA_ANTECEDENTES_ORDER.indexOf(b);
+    const ra = ia >= 0 ? ia : 99;
+    const rb = ib >= 0 ? ib : 99;
+    if (ra !== rb) return ra - rb;
+    return a.localeCompare(b, "pt-BR");
+  });
+  return keys.map((lista) => {
+    const list = map.get(lista) ?? [];
+    list.sort((a, b) => (a.numero ?? 0) - (b.numero ?? 0));
+    return { lista, entradas: list };
+  });
 }
