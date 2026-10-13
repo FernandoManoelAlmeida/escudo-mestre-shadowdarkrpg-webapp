@@ -4,7 +4,7 @@ Workflow: [`.github/workflows/nextjs.yml`](../../.github/workflows/nextjs.yml) �
 
 ## Variáveis no CI
 
-- `GITHUB_PAGES=1` — `output: "export"` e `basePath` em `next.config.ts`
+- `GITHUB_PAGES=1` (local) ou `true` (injetado pelo `configure-pages` no CI) — `output: "export"` e `basePath` em `next.config.ts` (`lib/githubPagesEnv.ts`)
 - `NEXT_PUBLIC_BASE_PATH=/${{ github.event.repository.name }}` — ex.: `/escudo-mestre-shadowdarkrpg-webapp`
 
 ## `.nojekyll`

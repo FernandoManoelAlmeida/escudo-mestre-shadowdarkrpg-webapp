@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
+import { isGitHubPagesBuild } from "./lib/githubPagesEnv";
 import { includeUrlInPrecacheManifest } from "./lib/pwaPrecacheFilter";
 import { prefixPrecacheUrl } from "./lib/pwaPrefixPrecacheUrl";
 import { subpathRuntimeCachingEntries } from "./lib/pwaWorkboxPatterns";
 
 const buildForCapacitor = process.env.BUILD_ANDROID_CAPACITOR === "1";
-const buildForGitHubPages = process.env.GITHUB_PAGES === "1";
+const buildForGitHubPages = isGitHubPagesBuild();
 const basePath = buildForGitHubPages
   ? process.env.NEXT_PUBLIC_BASE_PATH || "/escudo-mestre-shadowdarkrpg-webapp"
   : "";

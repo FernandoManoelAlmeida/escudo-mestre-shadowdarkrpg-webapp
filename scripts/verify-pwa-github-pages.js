@@ -45,9 +45,16 @@ function assertPrecachePrefixed(swPath, label) {
   }
 }
 
+function isGitHubPagesBuild() {
+  const v = process.env.GITHUB_PAGES;
+  return v === "1" || v === "true";
+}
+
 function main() {
-  const pagesBuild =
-    process.env.GITHUB_PAGES === "1" || Boolean(basePath);
+  const { syncPwaArtifactsToOut } = require("./write-version.js");
+  syncPwaArtifactsToOut(projectRoot);
+
+  const pagesBuild = isGitHubPagesBuild() || Boolean(basePath);
   if (!pagesBuild) {
     console.log("verify-pwa-github-pages: SKIP (sem GITHUB_PAGES / basePath)");
     return;
@@ -73,11 +80,15 @@ function main() {
     fail("out/.nojekyll em falta (GitHub Pages ignora _next/ sem isto)");
   }
 
-  assertPrecachePrefixed(path.join(projectRoot, "out", "sw.js"), "out/sw.js");
-  assertPrecachePrefixed(
-    path.join(projectRoot, "public", "sw.js"),
-    "public/sw.js",
-  );
+  const swPublic = path.join(projectRoot, "public", "sw.js");
+  const swOut = path.join(projectRoot, "out", "sw.js");
+  if (!fs.existsSync(swPublic)) {
+    fail(
+      "public/sw.js em falta — confirme GITHUB_PAGES (1 ou true), next build --webpack e plugin PWA activo",
+    );
+  }
+  assertPrecachePrefixed(swOut, "out/sw.js");
+  assertPrecachePrefixed(swPublic, "public/sw.js");
 
   console.log(
     `verify-pwa-github-pages: OK (basePath=${basePath}, precache alinhado)`,
