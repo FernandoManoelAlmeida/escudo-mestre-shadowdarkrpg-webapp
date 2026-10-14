@@ -1,8 +1,24 @@
 "use client";
 
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import styled from "styled-components";
+
+/** Links internos via next/link (respeita basePath no GitHub Pages). */
+function MarkdownLink({
+  href,
+  children,
+}: {
+  href?: string;
+  children?: React.ReactNode;
+}) {
+  if (!href) return <>{children}</>;
+  if (/^(https?:|mailto:|tel:|#)/i.test(href)) {
+    return <a href={href}>{children}</a>;
+  }
+  return <Link href={href}>{children}</Link>;
+}
 
 const Wrapper = styled.div`
   color: ${({ theme }) => theme.colors.text};
@@ -179,6 +195,7 @@ export default function MarkdownContent({ children }: { children: string }) {
         remarkPlugins={[remarkGfm]}
         components={{
           table: TableWrapper,
+          a: MarkdownLink,
           strong: ({ children }) => <strong>{children}</strong>,
           em: ({ children }) => <em>{children}</em>,
         }}
