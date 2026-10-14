@@ -1783,7 +1783,7 @@
     {
       "id": "monge-matrimpio",
       "nome": "MONGE MATRÍMPIO",
-      "flavor": "Humanóide esguio, idêntico em traços aos matriyanki, mas de vestes simples e postura serena. Discípulo de Zerthimon que testa o corpo e a mente nos extremos do multiverso — inclusive no Limbo.",
+      "flavor": "Humanóide esguio, idêntico em traços aos matriprole, mas de vestes simples e postura serena. Discípulo de Zerthimon que testa o corpo e a mente nos extremos do multiverso — inclusive no Limbo.",
       "ca": 14,
       "pv": 12,
       "atq": "2 golpe psi +4 (1d6 + 1d4 psíquico)",
@@ -2765,7 +2765,7 @@
     {
       "id": "guerreiro-matriprole",
       "nome": "GUERREIRO MATRIPROLE",
-      "flavor": "Humanóide de pele dourada-esverdeada e orelhas serrilhadas, vestindo meia-armadura e empunhando uma lâmina prateada impregnada de energia psíquica. Soldado fanático de Rainha Imortal.",
+      "flavor": "Humanóide de pele dourada-esverdeada e orelhas serrilhadas, vestindo meia-armadura e empunhando uma lâmina prateada impregnada de energia psíquica. Soldado fanático de Matriarca.",
       "ca": 15,
       "pv": 16,
       "atq": "2 lâmina psi +4 (1d8 + 1d4 psíquico)",
@@ -4936,11 +4936,11 @@
       "id": "putaria",
       "nome": "PUT'ARIA",
       "epitet": "CAVALEIRA ARTISTA",
-      "flavor": "Cavaleira-artista matriyanki de pele acinzentada e olhos escuros; veste cota de malha matriyanki e empunha uma lâmina astral prateada. Marcada pela Rainha-Lich Rainha Imortal, mistura artes marciais, psionismo e magia sombria com charme de menestrel — juramentos em matri (Ch'mar, zal'a Rainha Imortal).",
+      "flavor": "Cavaleira-artista matriprole de pele acinzentada e olhos escuros; veste cota de malha matriprole e empunha uma lâmina astral prateada. Marcada pela Rainha-Lich Matriarca, mistura artes marciais, psionismo e magia sombria com charme de menestrel — juramentos em matri (Ch'mar, zal'a Matriarca).",
       "tipo": "Humanóide (Matriprole)",
       "ca": 16,
       "pv": 24,
-      "atq": "2 espada astral gith +5 (1d8 + 1d4) ou 1 rajada mística (Perto) +5 (1d6)",
+      "atq": "2 espada astral matri +5 (1d8 + 1d4) ou 1 rajada mística (Perto) +5 (1d6)",
       "mv": "Perto",
       "atributos": {
         "F": 0,
@@ -6128,7 +6128,7 @@
     {
       "id": "zerth-matrimpio",
       "nome": "ZERTH MATRÍMPIO",
-      "flavor": "Guardião planar dos santuários matrizerai. Disciplina de Zerthimon feita carne: punhos psíquicos e mente que atravessa planos sem deixar rastro para matriyanki ou ghaik.",
+      "flavor": "Guardião planar dos santuários matrímpio. Disciplina de Zerthimon feita carne: punhos psíquicos e mente que atravessa planos sem deixar rastro para matriprole ou ghaik.",
       "ca": 17,
       "pv": 32,
       "atq": "2 golpe psi +6 (1d8 + 1d6 psíquico)",
@@ -6901,7 +6901,7 @@
     {
       "id": "cavaleiro-matriprole",
       "nome": "CAVALEIRO MATRIPROLE",
-      "flavor": "Elite de Rainha Imortal em armadura de placas de liga astral. Caçador de invasores do Plano Astral — especialmente conjuradores.",
+      "flavor": "Elite de Matriarca em armadura de placas de liga astral. Caçador de invasores do Plano Astral — especialmente conjuradores.",
       "ca": 18,
       "pv": 40,
       "atq": "3 espada de prata +6 (1d8 + 1d6 psíquico)",

@@ -204,6 +204,33 @@ Fascinar. CD 12 CAR.
     expect(c.id).toBe("guerreiro-matriprole");
     expect(findForbiddenInHomebrew(c)).toHaveLength(0);
   });
+
+  it("sanitizeHomebrewCreature: githyanki minúsculo → matriprole (não matriyanki); Vlaakith → Matriarca; atq sanitizado", () => {
+    const { applyPublicGlossary } = require("../scripts/astraldark-public-glossary.js");
+    expect(applyPublicGlossary("cota de malha githyanki")).toBe(
+      "cota de malha matriprole",
+    );
+    expect(applyPublicGlossary("Vlaakith")).toBe("Matriarca");
+    const c = sanitizeHomebrewCreature({
+      origem: "homebrew",
+      nome: "PUT'ARIA",
+      nv: 5,
+      ca: 16,
+      pv: 24,
+      atq: "2 espada astral gith +5 (1d8 + 1d4)",
+      flavor:
+        "Cavaleira-artista githyanki. Marcada pela Rainha-Lich Vlaakith.",
+      tipo: "Humanóide (Githyanki).",
+      tracos: [],
+      tags: [],
+    });
+    expect(c.flavor).not.toMatch(/matriyanki|githyanki|Vlaakith/i);
+    expect(c.flavor).toContain("matriprole");
+    expect(c.flavor).toContain("Matriarca");
+    expect(c.tipo).toContain("Matriprole");
+    expect(c.atq).toBe("2 espada astral matri +5 (1d8 + 1d4)");
+    expect(findForbiddenInHomebrew(c)).toHaveLength(0);
+  });
 });
 
 describe("scripts/migrate-tabelas buildRollRows", () => {
