@@ -4940,7 +4940,7 @@
       "tipo": "Humanóide (Matriprole)",
       "ca": 16,
       "pv": 24,
-      "atq": "2 espada astral matri +5 (1d8 + 1d4) ou 1 rajada mística (Perto) +5 (1d6)",
+      "atq": "2 espada astral matri +5 (1d12) ou 1 rajada mística (Perto) +5 (1d6)",
       "mv": "Perto",
       "atributos": {
         "F": 0,
