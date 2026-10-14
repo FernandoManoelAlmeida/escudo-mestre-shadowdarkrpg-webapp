@@ -165,10 +165,7 @@ export default function RegrasPage() {
   return (
     <PageContainer>
       <Title>Regras</Title>
-      <Intro>
-        Índice do Escudo do Mestre. Use os atalhos abaixo para tabelas e
-        glossário.
-      </Intro>
+      <Intro>Índice do Escudo do Mestre.</Intro>
       <FilterPanel aria-label="Filtros das regras">
         <FilterSearchInput
           type="search"

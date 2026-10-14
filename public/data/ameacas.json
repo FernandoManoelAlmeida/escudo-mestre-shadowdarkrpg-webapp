@@ -311,39 +311,6 @@
       "tags": []
     },
     {
-      "id": "ant",
-      "nome": "ANT",
-      "epitet": "Gigante",
-      "flavor": "Formigas vermelhas do tamanho de um boi com mandíbulas em forma de gancho. Eles atacam em enxames e carregam presas vivas FOR suas colônias FOR serem devoradas.",
-      "ca": 12,
-      "pv": 5,
-      "atq": "1 mordida +3 (1d6 + agarrar)",
-      "mv": "Perto (escalar)",
-      "atributos": {
-        "F": 3,
-        "D": 1,
-        "C": 1,
-        "I": -3,
-        "S": 0,
-        "Car": -3
-      },
-      "al": "N",
-      "nv": 1,
-      "tracos": [
-        {
-          "nome": "Agarre",
-          "descricao": "CD 12 FOR ou preso nas mandíbulas da formiga. CD 12 FOR em Turno FOR se libertar. A formiga pode carregar alvos agarrados quando se Mover."
-        },
-        {
-          "nome": "Poderoso",
-          "descricao": "Vantagem em verificações FOR FOR objetos Mover."
-        }
-      ],
-      "fonte": "Cursed Scroll 4.",
-      "origem": "oficial",
-      "tags": []
-    },
-    {
       "id": "aprendiz",
       "nome": "APRENDIZ",
       "flavor": "Um mago encapuzado carregando um grimório fino e recém-encadernado.",
@@ -404,8 +371,8 @@
       "tags": []
     },
     {
-      "id": "basilisco-hatchling",
-      "nome": "basilisco HATCHLING",
+      "id": "basilisco-filhote",
+      "nome": "BASILISCO FILHOTE",
       "flavor": "Basiliscos novatos de seis patas, do tamanho das iguanas. Eles podem petrificar parcialmente criaturas por um curto período de tempo.",
       "ca": 13,
       "pv": 6,
@@ -428,6 +395,29 @@
         }
       ],
       "fonte": "Cursed Scroll 4.",
+      "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "burro",
+      "nome": "BURRO",
+      "flavor": "Primas robustas e de orelhas longas dos cavalos; excelentes animais de carga.",
+      "ca": 10,
+      "pv": 6,
+      "atq": "1 casco +3 (1d4)",
+      "mv": "Perto",
+      "atributos": {
+        "F": 3,
+        "D": 0,
+        "C": 2,
+        "I": -2,
+        "S": 1,
+        "Car": -2
+      },
+      "al": "N",
+      "nv": 1,
+      "tracos": [],
+      "fonte": "Cursed Scroll 2.",
       "origem": "oficial",
       "tags": []
     },
@@ -534,29 +524,6 @@
       "tags": []
     },
     {
-      "id": "donkey",
-      "nome": "DONKEY",
-      "flavor": "Stocky, long-eared cousins of horses that are capable haulers.",
-      "ca": 10,
-      "pv": 6,
-      "atq": "1 casco +3 (1d4)",
-      "mv": "Perto",
-      "atributos": {
-        "F": 3,
-        "D": 0,
-        "C": 2,
-        "I": -2,
-        "S": 1,
-        "Car": -2
-      },
-      "al": "N",
-      "nv": 1,
-      "tracos": [],
-      "fonte": "Cursed Scroll 2.",
-      "origem": "oficial",
-      "tags": []
-    },
-    {
       "id": "fada",
       "nome": "FADA",
       "flavor": "Pequeno povo feérico com asas agitadas de mariposa ou borboleta.",
@@ -581,6 +548,38 @@
         }
       ],
       "fonte": "Bestiário",
+      "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "formiga-gigante",
+      "nome": "FORMIGA GIGANTE",
+      "flavor": "Formigas vermelhas do tamanho de um boi com mandíbulas em forma de gancho. Atacam em enxames e carregam presas vivas para suas colônias para serem devoradas.",
+      "ca": 12,
+      "pv": 5,
+      "atq": "1 mordida +3 (1d6 + agarrar)",
+      "mv": "Perto (escalar)",
+      "atributos": {
+        "F": 3,
+        "D": 1,
+        "C": 1,
+        "I": -3,
+        "S": 0,
+        "Car": -3
+      },
+      "al": "N",
+      "nv": 1,
+      "tracos": [
+        {
+          "nome": "Agarre",
+          "descricao": "CD 12 FOR ou preso nas mandíbulas da formiga. CD 12 FOR no turno para se libertar. A formiga pode carregar alvos agarrados quando se move."
+        },
+        {
+          "nome": "Poderoso",
+          "descricao": "Vantagem em testes de FOR para mover objetos."
+        }
+      ],
+      "fonte": "Cursed Scroll 4.",
       "origem": "oficial",
       "tags": []
     },
@@ -882,12 +881,12 @@
       "tags": []
     },
     {
-      "id": "rookie",
-      "nome": "ROOKIE",
-      "flavor": "Inexperienced Poço fighters.",
+      "id": "recruta",
+      "nome": "RECRUTA",
+      "flavor": "Combatentes inexperientes de arena.",
       "ca": 14,
       "pv": 5,
-      "atq": "1 shortsword +1 (1d6) ou 1 javelin (Adjacente/Longe) +1 (1d4)",
+      "atq": "1 espada curta +1 (1d6) ou 1 dardo (Adjacente/Longe) +1 (1d4)",
       "mv": "Perto",
       "atributos": {
         "F": 1,
@@ -1126,30 +1125,6 @@
         }
       ],
       "fonte": "Bestiário",
-      "origem": "oficial",
-      "tags": []
-    },
-    {
-      "id": "camel",
-      "nome": "CAMEL",
-      "epitet": "Prata",
-      "flavor": "Rare camels with soft, silvery hair and affable dispositions.",
-      "ca": 10,
-      "pv": 13,
-      "atq": "1 casco +3 (1d6) ou 1 cuspe (Perto) +0 (1d4)",
-      "mv": "Perto x2",
-      "atributos": {
-        "F": 3,
-        "D": 0,
-        "C": 4,
-        "I": -2,
-        "S": 1,
-        "Car": 0
-      },
-      "al": "N",
-      "nv": 2,
-      "tracos": [],
-      "fonte": "Cursed Scroll 2.",
       "origem": "oficial",
       "tags": []
     },
@@ -1687,7 +1662,7 @@
     {
       "id": "javelina",
       "nome": "JAVELINA",
-      "epitet": "DISEASED",
+      "epitet": "DOENTE",
       "flavor": "Um porco de cascos afiados com pelo ruivo salpicado de manchas brancas. Linhas incrustadas de icor preto escorrem de seus olhos e boca.",
       "ca": 10,
       "pv": 10,
@@ -2028,6 +2003,29 @@
         }
       ],
       "fonte": "Bestiário",
+      "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "scrag",
+      "nome": "SCRAG",
+      "flavor": "Lagartos-monitor cor de bronze do tamanho de vacas. Correm pelo chão com as patas agarradas às paredes.",
+      "ca": 12,
+      "pv": 11,
+      "atq": "1 garra +2 (1d6)",
+      "mv": "Perto (escalar)",
+      "atributos": {
+        "F": 2,
+        "D": 2,
+        "C": 2,
+        "I": -2,
+        "S": 1,
+        "Car": -3
+      },
+      "al": "N",
+      "nv": 2,
+      "tracos": [],
+      "fonte": "Cursed Scroll 2.",
       "origem": "oficial",
       "tags": []
     },
@@ -2384,6 +2382,29 @@
       "tags": []
     },
     {
+      "id": "cavalo-de-guerra",
+      "nome": "CAVALO DE GUERRA",
+      "flavor": "Corcéis musculosos treinados para transportar guerreiros no combate.",
+      "ca": 11,
+      "pv": 15,
+      "atq": "1 cascos +4 (1d6)",
+      "mv": "Perto x2",
+      "atributos": {
+        "F": 3,
+        "D": 1,
+        "C": 2,
+        "I": -3,
+        "S": 1,
+        "Car": -1
+      },
+      "al": "N",
+      "nv": 3,
+      "tracos": [],
+      "fonte": "Cursed Scroll 2.",
+      "origem": "oficial",
+      "tags": []
+    },
+    {
       "id": "centauro",
       "nome": "CENTAURO",
       "flavor": "Seres que vivem em rebanhos, com a parte superior do corpo de um humano e a parte inferior de um cavalo.",
@@ -2544,8 +2565,8 @@
       "tags": []
     },
     {
-      "id": "escorpiaogigante",
-      "nome": "ESCORPIÃOGIGANTE",
+      "id": "escorpiao-gigante",
+      "nome": "ESCORPIÃO GIGANTE",
       "flavor": "Escorpiões revestidos de quitina, tão grandes quanto camelos.",
       "ca": 14,
       "pv": 13,
@@ -2884,30 +2905,6 @@
         }
       ],
       "fonte": "Bestiário",
-      "origem": "oficial",
-      "tags": []
-    },
-    {
-      "id": "horse",
-      "nome": "HORSE",
-      "epitet": "WAR",
-      "flavor": "Corcéis musculosos treinados FOR transportar guerreiros FOR o combate.",
-      "ca": 11,
-      "pv": 15,
-      "atq": "1 hooves +4 (1d6)",
-      "mv": "Perto x2",
-      "atributos": {
-        "F": 3,
-        "D": 1,
-        "C": 2,
-        "I": -3,
-        "S": 1,
-        "Car": -1
-      },
-      "al": "N",
-      "nv": 3,
-      "tracos": [],
-      "fonte": "Cursed Scroll 2.",
       "origem": "oficial",
       "tags": []
     },
@@ -3271,10 +3268,9 @@
       "tags": []
     },
     {
-      "id": "scrag",
-      "nome": "SCRAG",
-      "epitet": "WAR",
-      "flavor": "Oversized scrag lizards trained to be unflinching in Combate.",
+      "id": "scrag-de-guerra",
+      "nome": "SCRAG DE GUERRA",
+      "flavor": "Lagartos scrag sobredimensionados treinados para não hesitar no combate.",
       "ca": 12,
       "pv": 15,
       "atq": "1 garra +3 (1d6)",
@@ -4792,11 +4788,11 @@
       "tracos": [
         {
           "nome": "Conjunto de Espinhos",
-          "descricao": "Ao entrar em Adjacente a um inimigo (investir, rolar ou embater), esse alvo sofre 1 de dano perfurante (sem teste)."
+          "descricao": "Ao entrar em Adjacente a um inimigo, esse alvo sofre 1 de dano perfurante."
         },
         {
           "nome": "Sangramento",
-          "descricao": "Espada farpada e escudo espinhoso. Após Kirk acertar o mesmo alvo 2 vezes no combate, esse alvo faz CON CD 12; falha = sofre 1d4 de dano uma vez no início do próximo turno dele (sangue)."
+          "descricao": "Espada farpada e escudo espinhoso. Após Kirk acertar o mesmo alvo 2 vezes no combate, CON CD 12 ou sofre 1d4 de dano uma vez no início do próximo turno dele."
         },
         {
           "nome": "Escudo Espinhoso",
@@ -4804,7 +4800,7 @@
         },
         {
           "nome": "Fuga na Multidão",
-          "descricao": "Em praça lotada, multidão ou noite com cobertura: Vantagem em DES para escapar ou esconder-se. Perseguidores têm Desvantagem no mesmo teste se o local estiver lotado."
+          "descricao": "Em fuga Vantagem em DES para escapar ou esconder-se. Perseguidores têm Desvantagem no mesmo teste se o local estiver lotado."
         }
       ],
       "origem": "homebrew",
@@ -4959,7 +4955,7 @@
       "tracos": [
         {
           "nome": "Rajada Mística (Magia de CAR)",
-          "descricao": "**Ação**; **3/dia**; **Perto**. +5. 1d6 de dano a **1 alvo**. Em acerto, **opcionalmente** empurra o alvo para **Longe** (FOR CD 12; falha = deslocado) **e/ou** aplica **Amedrontar**: alvo testa **CAR CD 15**; falha = Desvantagem em ataques por **1d4 rodadas** enquanto Put'Aria estiver visível e não pode se aproximar voluntariamente; sucesso = sem Amedrontar (dano mantém-se). *Efeito não cumulativo.*"
+          "descricao": "**Ação**; **3/dia**; **Perto**. +5. 1d6 de dano a **1 alvo**. Em acerto, **opcionalmente** FOR CD 12 ou empurra o alvo para **Longe** **ou** aplica **Amedrontar**: alvo testa **CAR CD 15** ou Desvantagem em ataques por **1d4 rodadas** enquanto Put'Aria estiver visível e não pode se aproximar voluntariamente. *Efeito não cumulativo.*"
         },
         {
           "nome": "Conhecimento Astral",
@@ -4971,7 +4967,7 @@
         },
         {
           "nome": "Fascinar",
-          "descricao": "CD 12 CAR. Transfixa alvos em **perto** com NV ≤ 3. Falha impede novo uso até descanso."
+          "descricao": "CD 12 CAR ou alvos em **perto** com NV igual ou menor que 3 fica paralizado. Falha impede novo uso até descanso."
         },
         {
           "nome": "Inspirar",
@@ -4979,15 +4975,15 @@
         },
         {
           "nome": "Fome Reveladora",
-          "descricao": "1/dia. Por **1 hora**, em alcance **Perto**, enxerga no escuro (sem precisar de luz) e vê criaturas e objetos invisíveis."
+          "descricao": "1/dia. Por **1 hora**, em alcance **Perto**, enxerga no escuro e vê criaturas e objetos invisíveis."
         },
         {
           "nome": "Artes do Caos",
-          "descricao": "Vantagem em Blefar, Diplomacia e Atuação."
+          "descricao": "Vantagem testes de CAR em inteções agressivas."
         },
         {
           "nome": "Passo Nebuloso (Magia de CAR, grau 2)",
-          "descricao": "CD 12. 1/dia (máx. 1/turno). Teletransporte até **perto** (linha de visão). Não gasta o movimento do turno."
+          "descricao": "CD 12. 1/dia (máx. 1/turno). Teletransporte até **Perto**x2 (linha de visão). Não gasta o movimento do turno."
         }
       ],
       "origem": "homebrew",
@@ -5041,7 +5037,7 @@
         "S": 0,
         "Car": 5
       },
-      "al": "C",
+      "al": "N",
       "nv": 5,
       "tracos": [
         {
@@ -5058,11 +5054,11 @@
         },
         {
           "nome": "Sedução",
-          "descricao": "1/dia. Um humanoide em **perto** que possa vê-lo fica encantado por 1d6 horas (CAR CD 15 para evitar). Encantado trata Rögnvaldr como aliado íntimo e confiável; não o ataca nem auxilia combate contra ele; obedece pedidos razoáveis que não causem dano direto a si ou a aliados próximos."
+          "descricao": "1/dia, um humanoide em **perto** que possa vê-lo CAR CD 15 ou fica encantado por 1d6 horas. Encantado trata Rögnvaldr como aliado íntimo e confiável; não o ataca nem auxilia combate contra ele; obedece pedidos razoáveis que não causem dano direto a si ou a aliados próximos."
         },
         {
           "nome": "Sopro de Fogo",
-          "descricao": "Em vez de 1 ataque: preenche um cubo **perto** a partir de Rögnvaldr. DES CD 14 ou 2d10 de dano de fogo (metade se passar). 2/dia."
+          "descricao": "2/dia, em vez de 1 ataque: preenche um cubo **perto** a partir de Rögnvaldr. DES CD 14 ou 2d10 de dano de fogo, metade se passar."
         },
         {
           "nome": "Visão no Escuro",
@@ -5070,7 +5066,7 @@
         },
         {
           "nome": "Presença Predatória",
-          "descricao": "Vantagem em Blefar, Intimidação e Atuação."
+          "descricao": "Vantagem testes de CAR em inteções agressivas."
         }
       ],
       "origem": "homebrew",
@@ -6169,9 +6165,8 @@
       "tags": []
     },
     {
-      "id": "anaconda",
-      "nome": "ANACONDA",
-      "epitet": "Gigante",
+      "id": "anaconda-gigante",
+      "nome": "ANACONDA GIGANTE",
       "flavor": "Uma cobra anfíbia de 6 metros de comprimento com listras vermelhas e olhos amarelos Perfurante.",
       "ca": 12,
       "pv": 33,
@@ -7583,8 +7578,8 @@
       "tags": []
     },
     {
-      "id": "caminhanteda-geada",
-      "nome": "CAMINHANTEDA GEADA",
+      "id": "caminhante-da-geada",
+      "nome": "CAMINHANTE DA GEADA",
       "flavor": "Seres com forma humanoide, formados a partir de gelo negro do espaço. Seus olhos são dois pontos de luz branca e cintilante.",
       "ca": 16,
       "pv": 43,
@@ -8389,32 +8384,8 @@
       "tags": []
     },
     {
-      "id": "braquiossauro",
-      "nome": "BRAQUIOSSAURO",
-      "flavor": "Grandes animais de pescoços longos que se alimentam de árvores. São lentos e pacíficos.",
-      "ca": 13,
-      "pv": 57,
-      "atq": "3 pisotear +7 (2d10)",
-      "mv": "Perto x2",
-      "atributos": {
-        "F": 6,
-        "D": -1,
-        "C": 3,
-        "I": -3,
-        "S": 1,
-        "Car": -3
-      },
-      "al": "N",
-      "nv": 12,
-      "tracos": [],
-      "fonte": "Bestiário",
-      "origem": "oficial",
-      "tags": []
-    },
-    {
-      "id": "catfish",
-      "nome": "CATFISH",
-      "epitet": "Gigante",
+      "id": "bagre-gigante",
+      "nome": "BAGRE GIGANTE",
       "flavor": "Um bagre com bigodes e escancarado, do tamanho de uma baleia. Listras de minerais se acumulam em sua pele, dando-lhe listras de tigre que brilham em prata e cobre ao sol.",
       "ca": 13,
       "pv": 56,
@@ -8437,6 +8408,29 @@
         }
       ],
       "fonte": "Cursed Scroll 4.",
+      "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "braquiossauro",
+      "nome": "BRAQUIOSSAURO",
+      "flavor": "Grandes animais de pescoços longos que se alimentam de árvores. São lentos e pacíficos.",
+      "ca": 13,
+      "pv": 57,
+      "atq": "3 pisotear +7 (2d10)",
+      "mv": "Perto x2",
+      "atributos": {
+        "F": 6,
+        "D": -1,
+        "C": 3,
+        "I": -3,
+        "S": 1,
+        "Car": -3
+      },
+      "al": "N",
+      "nv": 12,
+      "tracos": [],
+      "fonte": "Bestiário",
       "origem": "oficial",
       "tags": []
     },
