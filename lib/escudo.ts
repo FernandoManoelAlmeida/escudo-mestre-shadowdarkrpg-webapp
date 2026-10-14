@@ -65,6 +65,11 @@ export async function getEscudo(): Promise<EscudoData> {
   return cached;
 }
 
+/** Limpa cache (testes). */
+export function clearEscudoCache(): void {
+  cached = null;
+}
+
 export function getSection(
   escudo: EscudoData,
   sectionId: string,

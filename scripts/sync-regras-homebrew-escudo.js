@@ -12,7 +12,7 @@ const REGRAS_PATH = path.join(PROJECT_ROOT, "public/data/catalogo/regras-homebre
 
 /** Capítulo na listagem /regras (após § 6 do livro). */
 const LIST_CHAPTER_BY_RULE_ID = {
-  "multiclasse-simples": "7",
+  "multiclasse-simples": "8",
 };
 
 function stripFonteLine(text) {

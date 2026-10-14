@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { screen, waitFor, fireEvent } from "@testing-library/react";
 import { renderWithTheme } from "./utils/render-theme";
 import Home from "@/app/page";
@@ -13,6 +13,7 @@ import RegrasTabelasPage from "@/app/regras/tabelas/page";
 import RegrasGlossarioPage from "@/app/regras/glossario/page";
 import { AmeacaDetailClient } from "@/app/ameacas/[id]/AmeacaDetailClient";
 import { RegrasSectionClient } from "@/app/regras/[sectionId]/RegrasSectionClient";
+import { clearEscudoCache } from "@/lib/escudo";
 import { escudoFixture } from "./fixtures/escudo-data";
 import { ameacasFixture, ameacaMinimal } from "./fixtures/ameacas-data";
 import React from "react";
@@ -20,11 +21,22 @@ import React from "react";
 function stubFetchJson(data: unknown) {
   vi.stubGlobal(
     "fetch",
-    vi.fn(async () => ({
-      ok: true,
-      json: async () => data,
-      text: async () => "",
-    })) as typeof fetch,
+    vi.fn(async (input: RequestInfo | URL) => {
+      const url = String(input);
+      // Evita que getTabelaById trate o fixture do Escudo como tabela.
+      if (url.includes("/data/tabelas/") && !url.includes("tabelas-index")) {
+        return {
+          ok: false,
+          json: async () => ({}),
+          text: async () => "",
+        };
+      }
+      return {
+        ok: true,
+        json: async () => data,
+        text: async () => "",
+      };
+    }) as typeof fetch,
   );
 }
 
@@ -32,6 +44,10 @@ function stubFetchJson(data: unknown) {
 const asyncPageTimeout = 15_000;
 
 describe("páginas client", () => {
+  beforeEach(() => {
+    clearEscudoCache();
+  });
+
   it("Home renderiza oráculo SoloDark, regras em uso e licença", () => {
     vi.stubGlobal(
       "fetch",
@@ -362,7 +378,103 @@ describe("páginas client", () => {
       fireEvent.click(
         screen.getAllByRole("button", { name: /ver tabela/i })[0],
       );
-      expect(screen.getByRole("table")).toBeInTheDocument();
+      expect(screen.getAllByRole("table").length).toBeGreaterThan(0);
+    },
+    asyncPageTimeout,
+  );
+
+  it(
+    "RegrasSectionClient mostra Distâncias e Testes e CDs abertas sem acordeão",
+    async () => {
+      stubFetchJson(escudoFixture);
+      renderWithTheme(<RegrasSectionClient sectionId="1" />);
+      await waitFor(
+        () => {
+          expect(screen.getByText("Distâncias")).toBeInTheDocument();
+          expect(screen.getByText("Testes e CDs")).toBeInTheDocument();
+        },
+        { timeout: asyncPageTimeout },
+      );
+      // ResponsiveTable pode esconder <table> via media query no jsdom.
+      expect(
+        screen.getAllByRole("table", { hidden: true }).length,
+      ).toBeGreaterThanOrEqual(2);
+      // Ainda há acordeão para outras tabelas da secção (ex.: Termos).
+      expect(
+        screen.getAllByRole("button", { name: /ver tabela/i }).length,
+      ).toBeGreaterThanOrEqual(1);
+    },
+    asyncPageTimeout,
+  );
+
+  it(
+    "RegrasSectionClient mostra tabelas de Exploração abertas sem acordeão",
+    async () => {
+      stubFetchJson(escudoFixture);
+      renderWithTheme(<RegrasSectionClient sectionId="2" />);
+      await waitFor(
+        () => {
+          expect(screen.getByText("Perigo")).toBeInTheDocument();
+        },
+        { timeout: asyncPageTimeout },
+      );
+      expect(
+        screen.getAllByRole("table", { hidden: true }).length,
+      ).toBeGreaterThanOrEqual(2);
+      expect(
+        screen.queryByRole("button", { name: /ver tabela/i }),
+      ).not.toBeInTheDocument();
+    },
+    asyncPageTimeout,
+  );
+
+  it(
+    "RegrasSectionClient Magia liga falhas críticas às tabelas",
+    async () => {
+      stubFetchJson(escudoFixture);
+      renderWithTheme(<RegrasSectionClient sectionId="4" />);
+      await waitFor(
+        () => {
+          expect(screen.getByText("Falhas críticas")).toBeInTheDocument();
+        },
+        { timeout: asyncPageTimeout },
+      );
+      expect(
+        screen.getByRole("link", { name: /falha mágica — mago, graus 1–2/i }),
+      ).toHaveAttribute(
+        "href",
+        "/regras/tabelas#tabela-falha-magica-mago-1-2",
+      );
+      expect(
+        screen.getByRole("link", { name: /falhas diabólicas, graus 1–3/i }),
+      ).toHaveAttribute(
+        "href",
+        "/regras/tabelas#tabela-falha-magica-diabolica-1-3",
+      );
+      expect(
+        screen.queryByRole("button", { name: /ver tabela/i }),
+      ).not.toBeInTheDocument();
+    },
+    asyncPageTimeout,
+  );
+
+  it(
+    "RegrasSectionClient mostra tabela de MJ e progressão aberta sem acordeão",
+    async () => {
+      stubFetchJson(escudoFixture);
+      renderWithTheme(<RegrasSectionClient sectionId="6" />);
+      await waitFor(
+        () => {
+          expect(screen.getByText("XP e tesouro")).toBeInTheDocument();
+        },
+        { timeout: asyncPageTimeout },
+      );
+      expect(
+        screen.getAllByRole("table", { hidden: true }).length,
+      ).toBeGreaterThanOrEqual(1);
+      expect(
+        screen.queryByRole("button", { name: /ver tabela/i }),
+      ).not.toBeInTheDocument();
     },
     asyncPageTimeout,
   );

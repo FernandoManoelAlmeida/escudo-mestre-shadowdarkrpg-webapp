@@ -16,6 +16,8 @@ import { ResponsiveTable } from "@/components/ui/ResponsiveTable";
 import { Accordion } from "@/components/ui/Accordion";
 import { RegrasSectionSkeleton } from "@/components/skeletons";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { CondicoesSection } from "@/components/regras/CondicoesSection";
+import { condicoesFromSection } from "@/lib/condicoes";
 
 
 const BackLink = styled(Link)`
@@ -118,8 +120,20 @@ function rollJsonToEscudo(
   };
 }
 
+/** Tabelas de consulta imediata nas secções de regras — sem acordeão. */
+const TABLES_ALWAYS_VISIBLE = new Set([
+  "testes_e_cds",
+  "distancias",
+  "teste-encontro",
+  "nivel-perigo",
+  "xp-tesouro",
+]);
+
 function SubsectionTable({ data, tableRef }: { data: EscudoData; tableRef: string }) {
-  const [table, setTable] = useState<EscudoTable | null>(null);
+  const alwaysVisible = TABLES_ALWAYS_VISIBLE.has(tableRef);
+  const [table, setTable] = useState<EscudoTable | null>(
+    () => getTable(data, tableRef) ?? null,
+  );
 
   useEffect(() => {
     const local = getTable(data, tableRef);
@@ -127,13 +141,22 @@ function SubsectionTable({ data, tableRef }: { data: EscudoData; tableRef: strin
       setTable(local);
       return;
     }
+    let cancelled = false;
     getTabelaById(tableRef).then((t) => {
+      if (cancelled) return;
       if (!t?.headers?.length || !Array.isArray(t.rows)) return;
       setTable(rollJsonToEscudo(t.headers, t.rows));
     });
+    return () => {
+      cancelled = true;
+    };
   }, [data, tableRef]);
 
   if (!table) return null;
+
+  if (alwaysVisible) {
+    return <ResponsiveTable table={table} />;
+  }
 
   return (
     <Accordion id={`tabela-${tableRef}`} title="Ver tabela">
@@ -165,6 +188,9 @@ export function RegrasSectionClient({ sectionId }: RegrasSectionClientProps) {
     );
   }
 
+  const isCondicoes = sectionId === "7" || section.title === "Condições";
+  const condicoes = isCondicoes ? condicoesFromSection(section) : [];
+
   return (
     <PageContainer>
       <BackLink href="/regras">← Regras</BackLink>
@@ -174,26 +200,30 @@ export function RegrasSectionClient({ sectionId }: RegrasSectionClientProps) {
           Homebrew de mesa — confirme com o grupo antes de usar na campanha.
         </HomebrewNotice>
       ) : null}
-      {section.subsections.map((sub) => (
-        <Subsection key={sub.id}>
-          <Subtitle>{sub.title}</Subtitle>
-          {sub.content && (
-            <ContentWrap>
-              <MarkdownContent>{sub.content}</MarkdownContent>
-            </ContentWrap>
-          )}
-          {sub.formulas && sub.formulas.length > 0 && (
-            <FormulaList>
-              {sub.formulas.map((f, i) => (
-                <li key={i}>{f}</li>
-              ))}
-            </FormulaList>
-          )}
-          {sub.tableRef && (
-            <SubsectionTable data={data} tableRef={sub.tableRef} />
-          )}
-        </Subsection>
-      ))}
+      {isCondicoes ? (
+        <CondicoesSection entradas={condicoes} />
+      ) : (
+        section.subsections.map((sub) => (
+          <Subsection key={sub.id}>
+            <Subtitle>{sub.title}</Subtitle>
+            {sub.content && (
+              <ContentWrap>
+                <MarkdownContent>{sub.content}</MarkdownContent>
+              </ContentWrap>
+            )}
+            {sub.formulas && sub.formulas.length > 0 && (
+              <FormulaList>
+                {sub.formulas.map((f, i) => (
+                  <li key={i}>{f}</li>
+                ))}
+              </FormulaList>
+            )}
+            {sub.tableRef && (
+              <SubsectionTable data={data} tableRef={sub.tableRef} />
+            )}
+          </Subsection>
+        ))
+      )}
     </PageContainer>
   );
 }

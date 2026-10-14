@@ -13,8 +13,8 @@ describe("formatEscudoSectionHeading", () => {
       formatEscudoSectionHeading({
         id: "multiclasse-simples",
         title: "Multiclasse simples",
-        chapter: "7",
+        chapter: "8",
       }),
-    ).toBe("§ 7 — Multiclasse simples");
+    ).toBe("§ 8 — Multiclasse simples");
   });
 });
