@@ -8563,58 +8563,6 @@
       "tags": []
     },
     {
-      "id": "orgalorg",
-      "nome": "ORGALORG",
-      "epitet": "O QUEBRA-MUNDOS",
-      "flavor": "Antes do tempo, um vazio que escolheu portas abertas em busca de destruição e morte pelo multiverso.",
-      "ca": 15,
-      "pv": 56,
-      "atq": "3 tentáculo cósmico (Longe) +7 (2d8) ou 1 bico estrelado (Longe) +6 (2d6)",
-      "mv": "Perto x2 (levitar)",
-      "atributos": {
-        "F": 4,
-        "D": 2,
-        "C": 4,
-        "I": 3,
-        "S": 3,
-        "Car": 0
-      },
-      "al": "C",
-      "nv": 12,
-      "tracos": [
-        {
-          "nome": "Só no Vazio",
-          "descricao": "Orgalorg só se manifesta no espaço selvagem, plano Astral ou fora da gravidade dominante de um planeta."
-        },
-        {
-          "nome": "Antes do Tempo",
-          "descricao": "Imortal, imune a envelhecimento e medo."
-        },
-        {
-          "nome": "Sussurro telepático",
-          "descricao": "Um alvo que Orgalorg possa ver e que esteja **Longe**: SAB CD 15 ou 3d8 de dano e atordoado até o fim do próximo turno de Orgalorg."
-        },
-        {
-          "nome": "Expansão sem Peso",
-          "descricao": "Ataques de tentáculo e bico usam alcance **Longe**."
-        },
-        {
-          "nome": "Absorver Essência",
-          "descricao": "Alvo **Longe** acertado por tentáculo: CON CD 15 ou perde 1d8 PV máximos até descanso longo."
-        },
-        {
-          "nome": "Quebra de Mundos",
-          "descricao": "1/encontro se não interrompido: concentra 2 rodadas; no início da terceira, CON CD 15 ou 4d8 de dano em criaturas num cubo **Perto** centrado em Orgalorg. Interrompe se Orgalorg sofrer 20+ de dano em uma rodada antes de completar."
-        },
-        {
-          "nome": "Colapso Gravitacional",
-          "descricao": "A **0 PV** ou entrar na atmosfera de um planeta com gravidade normal: volta a ser **GUNTER**."
-        }
-      ],
-      "origem": "homebrew",
-      "tags": []
-    },
-    {
       "id": "rei-jaguar",
       "nome": "Rei Jaguar",
       "flavor": "Um homem majestoso com cabeça de onça preta e olhos amarelos vívidos. Ele usa trajes dourados e cravejados de gemas e carrega um Rodada Escudo com uma cara de onça rosnante.",
@@ -9774,6 +9722,62 @@
       ],
       "fonte": "Bestiário",
       "origem": "oficial",
+      "tags": []
+    },
+    {
+      "id": "orgalorg",
+      "nome": "ORGALORG",
+      "epitet": "O QUEBRA-MUNDOS",
+      "flavor": "Antes do tempo, um vazio que escolheu portas abertas em busca de destruição e morte pelo multiverso.",
+      "ca": 21,
+      "pv": 135,
+      "atq": "4 tentáculo cósmico (Longe) +13 (3d10) e 1 bico estrelado (Longe) +13 (4d10)",
+      "mv": "Perto x3 (levitar)",
+      "atributos": {
+        "F": 6,
+        "D": 3,
+        "C": 5,
+        "I": 5,
+        "S": 5,
+        "Car": 2
+      },
+      "al": "C",
+      "nv": 30,
+      "tracos": [
+        {
+          "nome": "Só no Vazio",
+          "descricao": "Orgalorg só se manifesta no espaço selvagem, plano Astral ou fora da gravidade dominante de um planeta."
+        },
+        {
+          "nome": "Antes do Tempo",
+          "descricao": "Imortal, imune a envelhecimento e medo."
+        },
+        {
+          "nome": "Primordial do Vazio",
+          "descricao": "Só pode ser ferido por fontes de dano mágicas. Magias hostis que tenham Orgalorg como alvo são conjuradas com CD 18."
+        },
+        {
+          "nome": "Sussurro telepático",
+          "descricao": "Um alvo que Orgalorg possa ver e que esteja Longe: SAB CD 18 ou 5d8 de dano e atordoado até o fim do próximo turno de Orgalorg."
+        },
+        {
+          "nome": "Expansão sem Peso",
+          "descricao": "Ataques de tentáculo e bico usam alcance Longe."
+        },
+        {
+          "nome": "Absorver Essência",
+          "descricao": "Alvo Longe acertado por tentáculo: CON CD 18 ou perde 2d8 PV máximos até descanso longo."
+        },
+        {
+          "nome": "Quebra de Mundos",
+          "descricao": "1/encontro se não interrompido: concentra 2 rodadas; no início da terceira, CON CD 18 ou 8d8 de dano em criaturas num cubo Perto centrado em Orgalorg. Interrompe se Orgalorg sofrer 30+ de dano em uma rodada antes de completar."
+        },
+        {
+          "nome": "Colapso Gravitacional",
+          "descricao": "A 0 PV ou entrar na atmosfera de um planeta com gravidade normal: volta a ser GUNTER."
+        }
+      ],
+      "origem": "homebrew",
       "tags": []
     }
   ]
