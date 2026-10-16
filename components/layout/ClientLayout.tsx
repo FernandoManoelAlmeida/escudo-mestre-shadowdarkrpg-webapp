@@ -3,7 +3,6 @@
 import { ThemeProvider } from "styled-components";
 import { theme } from "@/lib/theme";
 import { GlobalStyles } from "@/components/layout/GlobalStyles";
-import Header from "@/components/layout/Header";
 import BottomNav from "@/components/layout/BottomNav";
 import UpdateBanner from "@/components/layout/UpdateBanner";
 import { RollToastProvider } from "@/context/RollToastContext";
@@ -31,7 +30,6 @@ export default function ClientLayout({
         >
           Pular para o conteúdo
         </a>
-        <Header />
         <main id="main-content" role="main">
           {children}
         </main>

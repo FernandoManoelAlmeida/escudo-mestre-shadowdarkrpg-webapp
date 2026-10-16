@@ -1,7 +1,6 @@
 "use client";
 
 import { createGlobalStyle } from "styled-components";
-import { assetUrl } from "@/lib/basePath";
 
 const fallback = {
   typography: { fontFamily: '"Inter", system-ui, sans-serif' },
@@ -11,21 +10,10 @@ const fallback = {
     primary: "#d54d4d",
     primaryHover: "#e86565",
   },
-  headerHeight: "124px",
   bottomNavHeight: "56px",
 };
 
-const jslBlackletterUrl = assetUrl("/fonts/JBLACK.TTF");
-
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: "JSL Blackletter";
-    src: url("${jslBlackletterUrl}") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
   * {
     box-sizing: border-box;
   }
@@ -58,9 +46,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme?.colors?.primaryHover ?? fallback.colors.primaryHover};
   }
   main {
-    padding-top: var(--header-height, 124px);
-    padding-bottom: ${({ theme }) => theme?.bottomNavHeight ?? fallback.bottomNavHeight};
-    min-height: calc(100vh - var(--header-height, 124px) - ${({ theme }) => theme?.bottomNavHeight ?? fallback.bottomNavHeight});
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   /* Personalização Global do Scrollbar */

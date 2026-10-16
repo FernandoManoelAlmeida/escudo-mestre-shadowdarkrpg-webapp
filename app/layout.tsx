@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import StyledComponentsRegistry from "@/components/layout/Registry";
 import ClientLayout from "@/components/layout/ClientLayout";
+import { assetUrl } from "@/lib/basePath";
 import { pwaIconPath } from "@/lib/rasterIcons";
 import { pwaChromeColors } from "@/lib/pwaColors";
+
+const jslBlackletterUrl = assetUrl("/fonts/JBLACK.TTF");
 
 export const metadata: Metadata = {
   title: "Escudo do Mestre — Shadowdark",
@@ -52,9 +55,16 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
-        <script
+        <link
+          rel="preload"
+          href={jslBlackletterUrl}
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <style
           dangerouslySetInnerHTML={{
-            __html: `document.documentElement.style.setProperty('--header-height','48px');`,
+            __html: `@font-face{font-family:"JSL Blackletter";src:url("${jslBlackletterUrl}") format("truetype");font-weight:normal;font-style:normal;font-display:block;}`,
           }}
         />
       </head>

@@ -4,7 +4,6 @@ import { renderWithTheme } from "./utils/render-theme";
 import StyledComponentsRegistry from "@/components/layout/Registry";
 import ClientLayout from "@/components/layout/ClientLayout";
 import BottomNav from "@/components/layout/BottomNav";
-import Header from "@/components/layout/Header";
 import { QuickRollBar } from "@/components/layout/QuickRollBar";
 import UpdateBanner from "@/components/layout/UpdateBanner";
 import RollToaster from "@/components/ui/RollToaster";
@@ -81,15 +80,6 @@ describe("layout components", () => {
     expect(
       screen.getAllByRole("link", { name: /ameaças/i }).length,
     ).toBeGreaterThan(0);
-  });
-
-  it("Header exibe título e barra de rolagem", async () => {
-    renderWithTheme(<Header />, { withToast: true });
-    expect(screen.getByRole("banner")).toBeInTheDocument();
-    await waitFor(() => {
-      const inputs = screen.getAllByPlaceholderText("ex: 4d8, 2d20+5");
-      expect(inputs.length).toBeGreaterThanOrEqual(1);
-    });
   });
 
   it("QuickRollBar mostra dado não permitido e Enter rola", async () => {

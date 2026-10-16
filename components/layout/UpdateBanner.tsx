@@ -12,7 +12,7 @@ const APP_VERSION_KEY = "app-version";
 
 const Bar = styled.div`
   position: fixed;
-  top: calc(var(--header-height, 124px) + ${({ theme }) => theme.spacing.xs});
+  top: ${({ theme }) => theme.spacing.xs};
   left: ${({ theme }) => theme.spacing.sm};
   right: ${({ theme }) => theme.spacing.sm};
   max-width: 400px;

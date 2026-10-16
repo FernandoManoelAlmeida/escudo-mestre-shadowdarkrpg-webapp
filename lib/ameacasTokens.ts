@@ -1,3 +1,5 @@
+import { mapTokenNomenclature } from "@/lib/githNomenclature";
+
 export type AmeacaToken = {
   url: string;
   credito?: string;
@@ -21,7 +23,11 @@ export async function getAmeacasTokens(): Promise<AmeacasTokensData> {
     return cached;
   }
   const raw = (await res.json()) as Partial<AmeacasTokensData>;
-  cached = { tokens: raw.tokens ?? {} };
+  const tokens: Record<string, AmeacaToken> = {};
+  for (const [id, tok] of Object.entries(raw.tokens ?? {})) {
+    tokens[id] = mapTokenNomenclature(tok);
+  }
+  cached = { tokens };
   return cached;
 }
 

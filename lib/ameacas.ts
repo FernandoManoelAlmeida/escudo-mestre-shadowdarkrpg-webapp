@@ -1,4 +1,5 @@
 import { keepAmeacaForCopyrightFree } from "@/lib/copyrightFreeFilter";
+import { mapCriaturaNomenclature } from "@/lib/githNomenclature";
 
 export type OrigemCriatura = "oficial" | "homebrew";
 
@@ -69,7 +70,9 @@ export async function getAmeacas(): Promise<AmeacasData> {
   if (!res.ok) throw new Error("Falha ao carregar ameaças");
   const raw = (await res.json()) as AmeacasData;
   cached = {
-    ameacas: raw.ameacas.filter((a) => keepAmeacaForCopyrightFree(a)),
+    ameacas: raw.ameacas
+      .filter((a) => keepAmeacaForCopyrightFree(a))
+      .map(mapCriaturaNomenclature),
   };
   return cached;
 }
