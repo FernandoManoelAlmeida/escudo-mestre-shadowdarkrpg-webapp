@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import { MarkdownBody } from "@/components/catalogo/MarkdownBody";
 import {
   FilterPanel,
@@ -13,9 +14,11 @@ import {
 import { SortOrderButtons, SORT_FIELD_NOME } from "@/components/ui/SortOrderButtons";
 import type { SortOrderValue } from "@/lib/sortOrder";
 import { sortCatalogoItens } from "@/lib/itensMagicos";
+import { keepItemMagicoForCopyrightFree } from "@/lib/copyrightFreeFilter";
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { areGeradoresEnabled } from "@/lib/copyrightFreeRoutes";
 
 const ITENS_FILTER_DEFAULTS = { q: "", ord: "nome:asc" };
 const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
@@ -53,28 +56,33 @@ export default function ArcanosItensPage() {
 
   const filtered = useMemo(() => {
     if (!data?.itens) return [];
+    const allowed = data.itens.filter((it) =>
+      keepItemMagicoForCopyrightFree(it),
+    );
     const q = values.q.trim().toLowerCase();
     const list = q
-      ? data.itens.filter(
+      ? allowed.filter(
           (it) =>
             it.nome.toLowerCase().includes(q) ||
             it.descricao.toLowerCase().includes(q),
         )
-      : [...data.itens];
+      : [...allowed];
     return sortCatalogoItens(list, ordenar.sentido);
   }, [data, values.q, ordenar.sentido]);
 
   return (
     <PageContainer>
       <p>
-        <Link href="/arcanos">← Arcanos</Link>
+        <HistoryBackLink href="/arcanos">← Arcanos</HistoryBackLink>
       </p>
       <Title>Itens mágicos</Title>
-      <p>
-        <Link href="/geradores/itens-magicos-aleatorios">
-          Sortear item mágico aleatório →
-        </Link>
-      </p>
+      {areGeradoresEnabled() && (
+        <p>
+          <Link href="/geradores/itens-magicos-aleatorios">
+            Sortear item mágico aleatório →
+          </Link>
+        </p>
+      )}
       <FilterPanel aria-label="Filtros de itens mágicos">
         <FilterSearchInput
           type="search"

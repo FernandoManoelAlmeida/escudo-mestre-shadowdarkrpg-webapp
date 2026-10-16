@@ -36,4 +36,14 @@ describe("app/manifest", () => {
     expect(m.icons?.[0]?.src).toBe("/icons/icon-192.png");
     expect(m.name).toContain("Shadowdark");
   });
+
+  it("COPYRIGHT_FREE mantém os mesmos ícones PWA", async () => {
+    vi.stubEnv("NEXT_PUBLIC_BASE_PATH", "");
+    vi.stubEnv("NEXT_PUBLIC_COPYRIGHT_FREE", "1");
+    vi.resetModules();
+    const mod = await import("@/app/manifest");
+    const m = mod.default();
+    expect(m.icons?.[0]?.src).toBe("/icons/icon-192.png");
+  });
 });
+

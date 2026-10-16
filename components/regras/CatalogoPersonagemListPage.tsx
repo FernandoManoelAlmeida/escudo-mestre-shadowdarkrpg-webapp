@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { CatalogoPersonagemFicha } from "@/components/regras/CatalogoPersonagemFicha";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import {
   FilterPanel,
   FilterSearchInput,
@@ -33,7 +34,7 @@ import {
 } from "@/lib/classeGrimorio";
 
 
-const BackLink = styled(Link)`
+const BackLink = styled(HistoryBackLink)`
   display: inline-flex;
   margin-bottom: ${({ theme }) => theme.spacing.md};
   color: ${({ theme }) => theme.colors.primary};

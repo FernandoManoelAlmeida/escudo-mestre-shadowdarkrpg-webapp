@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import styled from "styled-components";
 import { getMagias, type Magia, type SpellLista } from "@/lib/magias";
 import {
@@ -129,7 +130,7 @@ export default function GrimorioPage() {
   return (
     <PageContainer>
       <p>
-        <Link href="/arcanos">← Arcanos</Link>
+        <HistoryBackLink href="/arcanos">← Arcanos</HistoryBackLink>
       </p>
       <Title>Grimório de magias</Title>
       <FilterPanel aria-label="Filtros do grimório">

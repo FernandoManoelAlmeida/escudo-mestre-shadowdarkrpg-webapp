@@ -6,7 +6,7 @@ import InlineBold from "@/components/ui/InlineBold";
 import { Accordion } from "@/components/ui/Accordion";
 import { D20RollButton } from "@/components/ui/D20RollButton";
 import { RasterIconSvg } from "@/components/ui/RasterIconSvg";
-import { OrdemParanormalDesesperoLogo } from "@/components/branding/OrdemParanormalDesesperoLogo";
+import { ShadowdarkSpotArtLogo } from "@/components/branding/ShadowdarkSpotArtLogo";
 import MarkdownContent from "@/components/ui/MarkdownContent";
 import { ResponsiveTable } from "@/components/ui/ResponsiveTable";
 import RollToaster from "@/components/ui/RollToaster";
@@ -54,8 +54,8 @@ describe("UI components", () => {
     expect(screen.getByRole("img", { name: "Início" })).toBeInTheDocument();
   });
 
-  it("OrdemParanormalDesesperoLogo", () => {
-    renderWithTheme(<OrdemParanormalDesesperoLogo alt="Logo" />);
+  it("ShadowdarkSpotArtLogo", () => {
+    renderWithTheme(<ShadowdarkSpotArtLogo alt="Logo" />);
     expect(screen.getByRole("img", { name: "Logo" })).toBeInTheDocument();
   });
 

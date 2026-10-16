@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { getAncestralidadeById, type Ancestralidade } from "@/lib/ancestralidades";
 import { CatalogoPersonagemDetail } from "@/components/regras/CatalogoPersonagemListPage";
+import { CatalogoPersonagemRouteGate } from "@/components/copyright/CatalogoPersonagemRouteGate";
 
 export default function RegrasAncestralidadeDetailClient() {
   const params = useParams();
@@ -22,12 +23,14 @@ export default function RegrasAncestralidadeDetailClient() {
   }, [id]);
 
   return (
-    <CatalogoPersonagemDetail
-      title="Ancestralidades"
-      listPath="/regras/ancestralidades"
-      entrada={entrada}
-      loading={loading}
-      catalogKind="ancestralidade"
-    />
+    <CatalogoPersonagemRouteGate kind="ancestralidades">
+      <CatalogoPersonagemDetail
+        title="Ancestralidades"
+        listPath="/regras/ancestralidades"
+        entrada={entrada}
+        loading={loading}
+        catalogKind="ancestralidade"
+      />
+    </CatalogoPersonagemRouteGate>
   );
 }

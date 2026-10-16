@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import styled from "styled-components";
 import {
   getEscudo,
@@ -20,7 +20,7 @@ import { CondicoesSection } from "@/components/regras/CondicoesSection";
 import { condicoesFromSection } from "@/lib/condicoes";
 
 
-const BackLink = styled(Link)`
+const BackLink = styled(HistoryBackLink)`
   display: inline-flex;
   align-items: center;
   margin-bottom: ${({ theme }) => theme.spacing.md};

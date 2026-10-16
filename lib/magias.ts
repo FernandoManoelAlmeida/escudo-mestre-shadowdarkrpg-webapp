@@ -1,3 +1,5 @@
+import { keepMagiaForCopyrightFree } from "@/lib/copyrightFreeFilter";
+
 export type SpellLista =
   | "mago"
   | "sacerdote"
@@ -30,7 +32,10 @@ export async function getMagias(): Promise<MagiasData> {
   const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const res = await fetch(`${base}/data/catalogo/magias.json`);
   if (!res.ok) throw new Error(`magias.json: ${res.status}`);
-  cache = (await res.json()) as MagiasData;
+  const raw = (await res.json()) as MagiasData;
+  cache = {
+    magias: raw.magias.filter((m) => keepMagiaForCopyrightFree(m)),
+  };
   return cache;
 }
 

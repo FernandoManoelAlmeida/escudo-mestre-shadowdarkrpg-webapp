@@ -41,7 +41,7 @@ export const NavItemWrap = styled.span`
 const navSlot = `
   flex: 1 1 0;
   min-width: 0;
-  max-width: 20%;
+  max-width: 25%;
 `;
 
 export const NavLink = styled.a<{ $active?: boolean }>`

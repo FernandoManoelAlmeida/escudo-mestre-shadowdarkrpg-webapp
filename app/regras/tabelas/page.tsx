@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import { getEscudo } from "@/lib/escudo";
 import type { EscudoData } from "@/lib/escudo";
 import {
@@ -28,6 +29,8 @@ import {
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { rowAsCells, type RollTableData } from "@/lib/rollTable";
+import { CopyrightFreeRouteGate } from "@/components/copyright/CopyrightFreeRouteGate";
+import { isCopyrightFreeRouteEnabled } from "@/lib/copyrightFreeRoutes";
 import { ResponsiveTable } from "@/components/ui/ResponsiveTable";
 import { Accordion } from "@/components/ui/Accordion";
 import { RegrasTabelasSkeleton } from "@/components/skeletons";
@@ -39,7 +42,7 @@ import { scrollToTabelaElement } from "@/lib/scrollToTabelaHash";
 import { PageContainer } from "@/components/layout/PageContainer";
 
 
-const BackLink = styled(Link)`
+const BackLink = styled(HistoryBackLink)`
   display: inline-flex;
   margin-bottom: ${({ theme }) => theme.spacing.md};
   color: ${({ theme }) => theme.colors.primary};
@@ -222,6 +225,12 @@ export default function TabelasPage() {
     }
     return sortEscudoTableKeys(list, ordenar.sentido);
   }, [escudo, values.q, hashTableId, ordenar.sentido]);
+
+  if (!isCopyrightFreeRouteEnabled("/regras/tabelas")) {
+    return (
+      <CopyrightFreeRouteGate enabled={false}>{null}</CopyrightFreeRouteGate>
+    );
+  }
 
   if (loading || !escudo) return <RegrasTabelasSkeleton />;
 

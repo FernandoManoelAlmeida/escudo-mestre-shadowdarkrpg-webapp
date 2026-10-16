@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import styled from "styled-components";
 import { getEscudo, sortGlossary } from "@/lib/escudo";
 import type { EscudoData, GlossaryItem } from "@/lib/escudo";
@@ -19,9 +19,11 @@ import {
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { CopyrightFreeRouteGate } from "@/components/copyright/CopyrightFreeRouteGate";
+import { isCopyrightFreeRouteEnabled } from "@/lib/copyrightFreeRoutes";
 
 
-const BackLink = styled(Link)`
+const BackLink = styled(HistoryBackLink)`
   display: inline-flex;
   align-items: center;
   margin-bottom: ${({ theme }) => theme.spacing.md};
@@ -89,6 +91,12 @@ export default function GlossarioPage() {
       .then(setData)
       .finally(() => setLoading(false));
   }, []);
+
+  if (!isCopyrightFreeRouteEnabled("/regras/glossario")) {
+    return (
+      <CopyrightFreeRouteGate enabled={false}>{null}</CopyrightFreeRouteGate>
+    );
+  }
 
   if (loading || !data) return <RegrasGlossarioSkeleton />;
 

@@ -43,6 +43,7 @@ export type GlossaryItem = {
 };
 
 import type { OrdenarSentido } from "@/lib/sortOrder";
+import { keepEscudoProsaForCopyrightFree } from "@/lib/copyrightFreeFilter";
 
 export type EscudoData = {
   meta: EscudoMeta;
@@ -61,7 +62,20 @@ export async function getEscudo(): Promise<EscudoData> {
   if (cached) return cached;
   const res = await fetch(ESCUDO_URL);
   if (!res.ok) throw new Error("Falha ao carregar Escudo");
-  cached = (await res.json()) as EscudoData;
+  const raw = (await res.json()) as EscudoData;
+  if (!keepEscudoProsaForCopyrightFree()) {
+    const homebrewSections = raw.sections.filter((s) => s.homebrew);
+    const homebrewIds = new Set(homebrewSections.map((s) => s.id));
+    cached = {
+      meta: raw.meta,
+      index: raw.index.filter((i) => homebrewIds.has(i.id)),
+      sections: homebrewSections,
+      tables: {},
+      glossary: [],
+    };
+    return cached;
+  }
+  cached = raw;
   return cached;
 }
 

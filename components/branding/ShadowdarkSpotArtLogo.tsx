@@ -1,20 +1,23 @@
 "use client";
 
 import { assetUrl } from "@/lib/basePath";
+import { isCopyrightFree } from "@/lib/copyrightFree";
 
 const VIEWBOX_W = 700;
 const VIEWBOX_H = 400;
 
-type OrdemParanormalDesesperoLogoProps = {
+type ShadowdarkSpotArtLogoProps = {
   className?: string;
   alt?: string;
 };
 
-/** Spot art Shadowdark (ícone / hero). Fonte: shadowdark.dnddeutsch.de — ver public/icons/src/. */
-export function OrdemParanormalDesesperoLogo({
+/** Spot art Shadowdark. Fonte: shadowdark.dnddeutsch.de — ver public/icons/src/. */
+export function ShadowdarkSpotArtLogo({
   className,
   alt = "Shadowdark RPG",
-}: OrdemParanormalDesesperoLogoProps) {
+}: ShadowdarkSpotArtLogoProps) {
+  if (isCopyrightFree()) return null;
+
   const href = assetUrl("/logo-shadowdark-spot-art.webp");
 
   return (

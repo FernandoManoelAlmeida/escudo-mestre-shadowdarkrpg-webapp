@@ -95,6 +95,7 @@ const nextConfig: NextConfig = {
       ? basePath
       : (process.env.NEXT_PUBLIC_BASE_PATH ?? ""),
     NEXT_PUBLIC_DEBUG_PWA: process.env.NEXT_PUBLIC_DEBUG_PWA ?? "",
+    NEXT_PUBLIC_COPYRIGHT_FREE: process.env.NEXT_PUBLIC_COPYRIGHT_FREE ?? "",
   },
   ...((buildForCapacitor || buildForGitHubPages) && {
     output: "export",

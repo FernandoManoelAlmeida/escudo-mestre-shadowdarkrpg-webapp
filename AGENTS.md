@@ -49,7 +49,8 @@ Fonte única para agentes neste webapp. Stubs (`CLAUDE.md`, `GEMINI.md`, `TRAE.m
 |------|------|
 | Rotas | `app/` — `/`, `/regras` (+ `/regras/tabelas`, `/regras/glossario`, `/regras/classes`, `/regras/ancestralidades`, `/regras/antecedentes`, `/regras/[sectionId]`), `/ameacas`, `/geradores`, `/arcanos` (+ itens/grimório); redirect `/itens-magicos` → `/arcanos` |
 | Regras | `lib/escudo.ts` → `escudo-shadowdark.json`; catálogos PJ em `lib/classes.ts`, `lib/ancestralidades.ts`, `lib/antecedentes.ts` |
-| Criaturas | `lib/ameacas.ts` |
+| Criaturas | `lib/ameacas.ts`; tokens `lib/ameacasTokens.ts` + `public/data/ameacas-tokens.json` |
+| COPYRIGHT_FREE | `lib/copyrightFree.ts`, `lib/copyrightFreeFilter.ts` |
 | Rolagens | `lib/dice.ts`, `lib/rollTable.ts` |
 | Layout | `components/layout/` — `BottomNav`, `QuickRollBar` |
 | Dados | `public/data/` |
@@ -88,6 +89,17 @@ Docs: [`docs/desenvolvimento/integracao-hub-ttrpg.md`](docs/desenvolvimento/inte
 - Não editar JSON sem schema de `lib/escudo.ts` / `lib/ameacas.ts`
 - Geradores: rolagem **efémera** — não persistir resultados no PWA
 
+### COPYRIGHT_FREE e licença (FAQ TPL)
+
+- Flag: `NEXT_PUBLIC_COPYRIGHT_FREE=1` — omite o que a [FAQ da Shadowdark RPG Third-Party License](https://www.thearcanelibrary.com/blogs/shadowdark-blog/faq-on-the-shadowdark-rpg-third-party-license) não cobre (arte de terceiros, Cursed Scroll, classes/tabelas/prosa de regras do core). Mantém monstro/magia/item do core, Astraldark/homebrew e UI própria.
+- Helper: `lib/copyrightFree.ts` (`isCopyrightFree`) + filtros em `lib/copyrightFreeFilter.ts`.
+- Tokens You See This: sidecar `public/data/ameacas-tokens.json` (sobrevive a `yarn migrate:from-fantasia`); só na ficha quando a flag está **off**.
+- Home: flag **on** → logo Creator Kit; flag **off** → wordmark «Shadowdark Mastershield» (JSL Blackletter em `public/fonts/`).
+- Ícones do app (home/header/PWA): KEEP nos dois builds (mesmos assets). Logo Spot Art grande continua GATE; Creator Kit na home só com flag on.
+- Com flag on, rotas sem conteúdo (tabelas, glossário, geradores) ficam ocultas na nav e redireccionam via `CopyrightFreeRouteGate`.
+- GM helpers / VTT: a FAQ indica licença especial da TAL; a flag **não** substitui esse acordo — só remove conteúdo claramente fora da TPL.
+- Créditos de ícones: [`docs/icon-credits.md`](docs/icon-credits.md).
+
 ---
 
 ## 6. Skills (canónicas neste repo)
@@ -102,3 +114,4 @@ Proxies no hub: [`.cursor/skills/escudo-shadowdark/`](../../.cursor/skills/escud
 | `escudo-shadowdark-data` | `.cursor/skills/escudo-shadowdark-data/` |
 | `escudo-shadowdark-features` | `.cursor/skills/escudo-shadowdark-features/` |
 | `escudo-shadowdark-geradores` | `.cursor/skills/escudo-shadowdark-geradores/` |
+| `escudo-shadowdark-copyright-free` | `.cursor/skills/escudo-shadowdark-copyright-free/` |

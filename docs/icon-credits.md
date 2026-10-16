@@ -13,3 +13,25 @@
 Atribuição sugerida: ícones por Skoll e Delapouite via [game-icons.net](https://game-icons.net/), licença CC BY 3.0.
 
 Os SVG usam `fill="currentColor"`; na UI os botões aplicam `filter: brightness(0) invert(1)` para ícones claros sobre o fundo vermelho de rolagem.
+
+Com `NEXT_PUBLIC_COPYRIGHT_FREE=1`, os SVG Game-icons **não** são mostrados (fallback textual `dN` em `DiceIcon`).
+
+## Tipografia do wordmark Mastershield
+
+| Arquivo | Origem | Licença |
+|---------|--------|---------|
+| `public/fonts/JBLACK.TTF` (+ `JBLACK.TXT`) | [JSL Blackletter](http://www.gate.net/~shipbrk/) — Jeffrey S. Lee | Distribuição livre inalterada com o readme; não incluir em pacote comercial sem permissão do autor |
+
+Usada só no wordmark «Shadowdark Mastershield» (build com `COPYRIGHT_FREE` off).
+
+## Ícones do app (PWA / home)
+
+| Item | Ambos os builds |
+|------|-----------------|
+| `header-icon`, `home-icon`, `icon-192/512` | KEEP — mesmos assets (`yarn icons:pwa`); tratados como dentro da licença do app |
+| Logo Creator Kit | Só na home com `COPYRIGHT_FREE=1` (`third-party-shadowdark-logo-white.png`) |
+| Spot Art logo WebP | GATE — oculto com `COPYRIGHT_FREE=1` (`ShadowdarkSpotArtLogo`) |
+
+## Tokens You See This
+
+Mapa em `public/data/ameacas-tokens.json` (URLs WordPress; hotlink na ficha). Fora da TPL — só com flag off. Crédito: [You see this — Tokens](https://youseethis.blog/tokens/).

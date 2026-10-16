@@ -1,8 +1,7 @@
 "use client";
 
 import { createGlobalStyle } from "styled-components";
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+import { assetUrl } from "@/lib/basePath";
 
 const fallback = {
   typography: { fontFamily: '"Inter", system-ui, sans-serif' },
@@ -16,10 +15,12 @@ const fallback = {
   bottomNavHeight: "56px",
 };
 
+const jslBlackletterUrl = assetUrl("/fonts/JBLACK.TTF");
+
 export const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: "SigilosDeConhecimento";
-    src: url("${basePath}/fonts/SigilosDeConhecimento.ttf") format("truetype");
+    font-family: "JSL Blackletter";
+    src: url("${jslBlackletterUrl}") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;

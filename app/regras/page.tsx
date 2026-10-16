@@ -18,6 +18,11 @@ import {
 } from "@/components/ui/ListFilters";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { isCopyrightFree } from "@/lib/copyrightFree";
+import { isCopyrightFreeRouteEnabled } from "@/lib/copyrightFreeRoutes";
+import { getClasses } from "@/lib/classes";
+import { getAncestralidades } from "@/lib/ancestralidades";
+import { getAntecedentes } from "@/lib/antecedentes";
 
 
 const Title = styled.h1`
@@ -120,7 +125,9 @@ function FeedbackBlock({
 }) {
   return (
     <FeedbackWrapper>
-      {showIcon && <FeedbackIcon name="icon-exception" decorative />}
+      {showIcon && !isCopyrightFree() && (
+        <FeedbackIcon name="icon-exception" decorative />
+      )}
       <FeedbackText>{children}</FeedbackText>
     </FeedbackWrapper>
   );
@@ -130,14 +137,35 @@ export default function RegrasPage() {
   const [data, setData] = useState<EscudoData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showClasses, setShowClasses] = useState(true);
+  const [showAncestralidades, setShowAncestralidades] = useState(true);
+  const [showAntecedentes, setShowAntecedentes] = useState(true);
   const filterDefaults = useMemo(() => ({ q: "" }), []);
   const { values, setField } = useListFiltersInUrl(filterDefaults);
+  const showTabelas = isCopyrightFreeRouteEnabled("/regras/tabelas");
+  const showGlossario = isCopyrightFreeRouteEnabled("/regras/glossario");
 
   useEffect(() => {
     getEscudo()
       .then(setData)
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    if (!isCopyrightFree()) {
+      setShowClasses(true);
+      setShowAncestralidades(true);
+      setShowAntecedentes(true);
+      return;
+    }
+    Promise.all([getClasses(), getAncestralidades(), getAntecedentes()]).then(
+      ([classes, ancestralidades, antecedentes]) => {
+        setShowClasses(classes.length > 0);
+        setShowAncestralidades(ancestralidades.length > 0);
+        setShowAntecedentes(antecedentes.length > 0);
+      },
+    );
   }, []);
 
   if (loading) return <RegrasPageSkeleton />;
@@ -175,11 +203,21 @@ export default function RegrasPage() {
           aria-label="Buscar texto nas regras"
         />
         <QuickLinks>
-          <QuickLink href="/regras/tabelas">Tabelas</QuickLink>
-          <QuickLink href="/regras/glossario">Glossário</QuickLink>
-          <QuickLink href="/regras/classes">Classes</QuickLink>
-          <QuickLink href="/regras/ancestralidades">Ancestralidades</QuickLink>
-          <QuickLink href="/regras/antecedentes">Antecedentes</QuickLink>
+          {showTabelas && (
+            <QuickLink href="/regras/tabelas">Tabelas</QuickLink>
+          )}
+          {showGlossario && (
+            <QuickLink href="/regras/glossario">Glossário</QuickLink>
+          )}
+          {showClasses && (
+            <QuickLink href="/regras/classes">Classes</QuickLink>
+          )}
+          {showAncestralidades && (
+            <QuickLink href="/regras/ancestralidades">Ancestralidades</QuickLink>
+          )}
+          {showAntecedentes && (
+            <QuickLink href="/regras/antecedentes">Antecedentes</QuickLink>
+          )}
         </QuickLinks>
       </FilterPanel>
       {values.q.trim() ? (

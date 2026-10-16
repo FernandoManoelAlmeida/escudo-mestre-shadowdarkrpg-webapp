@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import styled from "styled-components";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 
 
-const Back = styled(Link)`
+const Back = styled(HistoryBackLink)`
   display: inline-block;
   margin-bottom: ${({ theme }) => theme.spacing.md};
   color: ${({ theme }) => theme.colors.primary};

@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "SigilosDeConhecimento";
-  src: url("/fonts/SigilosDeConhecimento.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --background: #181f26;
   --foreground: #e8ecf0;

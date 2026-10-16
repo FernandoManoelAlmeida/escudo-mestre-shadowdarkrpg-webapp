@@ -1,5 +1,6 @@
 "use client";
 
+import { GeradoresRouteGate } from "@/components/copyright/GeradoresRouteGate";
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
@@ -212,6 +213,7 @@ export default function EncontrosPage() {
   }
 
   return (
+    <GeradoresRouteGate>
     <GeneratorLayout
       title="Encontros"
       description="Escolha o bioma e role o encontro. Distância e atividade só quando a linha pedir; armadilha, tesouro e combinar seguem o Livro."
@@ -297,5 +299,7 @@ export default function EncontrosPage() {
         </Section>
       )}
     </GeneratorLayout>
+  
+    </GeradoresRouteGate>
   );
 }

@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import type { RasterIconName } from "@/lib/rasterIcons";
+import { isCopyrightFreeRouteEnabled } from "@/lib/copyrightFreeRoutes";
 import {
   Nav,
   NavLink,
@@ -13,7 +14,7 @@ import {
   CentralLink,
 } from "./BottomNav.styles";
 
-const items: { href: string; label: string; iconName: RasterIconName }[] = [
+const ALL_ITEMS: { href: string; label: string; iconName: RasterIconName }[] = [
   { href: "/regras", label: "Regras", iconName: "regras-icon" },
   { href: "/geradores", label: "Geradores", iconName: "geradores-icon" },
   { href: "/", label: "Início", iconName: "home-icon" },
@@ -23,6 +24,9 @@ const items: { href: string; label: string; iconName: RasterIconName }[] = [
 
 export default function BottomNav() {
   const pathname = usePathname();
+  const items = ALL_ITEMS.filter((item) =>
+    isCopyrightFreeRouteEnabled(item.href),
+  );
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,

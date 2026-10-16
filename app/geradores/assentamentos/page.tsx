@@ -1,5 +1,6 @@
 "use client";
 
+import { GeradoresRouteGate } from "@/components/copyright/GeradoresRouteGate";
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
@@ -183,6 +184,7 @@ export default function AssentamentosPage() {
   }, [distritoTable, alinhamentoTable, poiTables]);
 
   return (
+    <GeradoresRouteGate>
     <GeneratorLayout
       title="Assentamentos"
       description="Tipo, distritos no mapa (pool de dados), alinhamento e um POI por distrito. No Livro: jogue os dados no papel, desenhe o contorno e role 1d4 POIs por distrito na mesa."
@@ -303,5 +305,7 @@ export default function AssentamentosPage() {
         </Hint>
       )}
     </GeneratorLayout>
+  
+    </GeradoresRouteGate>
   );
 }

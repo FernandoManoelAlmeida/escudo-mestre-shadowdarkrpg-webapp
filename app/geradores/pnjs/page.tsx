@@ -1,5 +1,6 @@
 "use client";
 
+import { GeradoresRouteGate } from "@/components/copyright/GeradoresRouteGate";
 import { useCallback, useState } from "react";
 import styled from "styled-components";
 import { GeneratorLayout } from "@/components/geradores/GeneratorLayout";
@@ -153,6 +154,7 @@ export default function GeradorPnjsPage() {
   }, []);
 
   return (
+    <GeradoresRouteGate>
     <GeneratorLayout
       title="PNJs"
       description="Mini-ficha rápida e exploradores rivais (Livro de Regras)."
@@ -187,5 +189,7 @@ export default function GeradorPnjsPage() {
         </>
       )}
     </GeneratorLayout>
+  
+    </GeradoresRouteGate>
   );
 }

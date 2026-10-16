@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import styled from "styled-components";
 import { getMagias, getMagiaById, type Magia } from "@/lib/magias";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import {
   formatMagiaClassesGrau,
   formatMagiaOrigensBlock,
@@ -49,7 +49,7 @@ export function MagiaDetailClient({ id }: Props) {
   if (magia === null)
     return (
       <PageContainer>
-        <Link href="/arcanos/grimorio">← Grimório</Link>
+        <HistoryBackLink href="/arcanos/grimorio">← Grimório</HistoryBackLink>
         <p>Magia não encontrada.</p>
       </PageContainer>
     );
@@ -58,7 +58,7 @@ export function MagiaDetailClient({ id }: Props) {
 
   return (
     <PageContainer>
-      <Link href="/arcanos/grimorio">← Grimório</Link>
+      <HistoryBackLink href="/arcanos/grimorio">← Grimório</HistoryBackLink>
       <h1>{magia.nome}</h1>
       <MetaBlock>
         <div>

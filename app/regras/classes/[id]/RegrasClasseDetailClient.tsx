@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { getClasseById, type Classe } from "@/lib/classes";
 import { CatalogoPersonagemDetail } from "@/components/regras/CatalogoPersonagemListPage";
+import { CatalogoPersonagemRouteGate } from "@/components/copyright/CatalogoPersonagemRouteGate";
 
 export default function RegrasClasseDetailClient() {
   const params = useParams();
@@ -22,12 +23,14 @@ export default function RegrasClasseDetailClient() {
   }, [id]);
 
   return (
-    <CatalogoPersonagemDetail
-      title="Classes"
-      listPath="/regras/classes"
-      entrada={entrada}
-      loading={loading}
-      catalogKind="classe"
-    />
+    <CatalogoPersonagemRouteGate kind="classes">
+      <CatalogoPersonagemDetail
+        title="Classes"
+        listPath="/regras/classes"
+        entrada={entrada}
+        loading={loading}
+        catalogKind="classe"
+      />
+    </CatalogoPersonagemRouteGate>
   );
 }

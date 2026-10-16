@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import StyledComponentsRegistry from "@/components/layout/Registry";
 import ClientLayout from "@/components/layout/ClientLayout";
-import { assetUrl } from "@/lib/basePath";
+import { pwaIconPath } from "@/lib/rasterIcons";
 import { pwaChromeColors } from "@/lib/pwaColors";
 
 export const metadata: Metadata = {
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   icons: {
-    icon: assetUrl("/icons/header-icon.webp"),
-    apple: assetUrl("/icons/icon-192.webp"),
+    icon: pwaIconPath("header-icon.webp"),
+    apple: pwaIconPath("icon-192.webp"),
   },
   /** Windows / Edge legado: Live Tile e cor da barra de navegação ao fixar o site. */
   other: {

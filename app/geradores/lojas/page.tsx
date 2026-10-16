@@ -1,5 +1,6 @@
 "use client";
 
+import { GeradoresRouteGate } from "@/components/copyright/GeradoresRouteGate";
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
@@ -166,6 +167,7 @@ export default function LojasPage() {
   }
 
   return (
+    <GeradoresRouteGate>
     <GeneratorLayout
       title="Lojas"
       description="Escolha a qualidade do estabelecimento, role o tipo e o nome (duas partes + «conhecida por»). Clientes opcionais: d4 na linha e d4 na opção."
@@ -233,5 +235,7 @@ export default function LojasPage() {
         />
       ))}
     </GeneratorLayout>
+  
+    </GeradoresRouteGate>
   );
 }

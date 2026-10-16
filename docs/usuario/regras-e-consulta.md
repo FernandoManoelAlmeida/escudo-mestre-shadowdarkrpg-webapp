@@ -20,7 +20,7 @@
 
 ## Dados e actualização
 
-Todo o conteúdo de regras vem do ficheiro `escudo-mestre-casa.json` (em produção, servido como ficheiro estático). Se algo estiver desactualizado em relação à sua mesa, a correcção é feita no **repositório** do projecto (ver [Dados e migrações](../desenvolvimento/dados-e-migracoes.md)).
+Todo o conteúdo de regras vem do ficheiro `escudo-shadowdark.json` (em produção, servido como ficheiro estático). Se algo estiver desactualizado em relação à sua mesa, a correcção é feita no **repositório** do projecto (ver [Dados e migrações](../desenvolvimento/dados-e-migracoes.md)).
 
 ## Documentação relacionada
 

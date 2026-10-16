@@ -6,6 +6,8 @@ import { SolodarkOracleWidget } from "@/components/home/SolodarkOracleWidget";
 import { AstraldarkPdfBanner } from "@/components/home/AstraldarkPdfBanner";
 import { assetUrl } from "@/lib/basePath";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { isCopyrightFree } from "@/lib/copyrightFree";
+import { ShadowdarkMastershieldWordmark } from "@/components/branding/ShadowdarkMastershieldWordmark";
 
 const TitleRow = styled.div`
   display: flex;
@@ -165,20 +167,26 @@ const LicenseFooter = styled.footer`
 `;
 
 const SHADOWDARK_FAN_URL =
-  "https://www.thearcanelibrary.com/blogs/shadowdark-blog/faq-on-the-shadowdark-rpg-third-party-license?srsltid=AU7gw4U5AoVRnEGZZibHYPn0Mn3uWJk-wWkG_m-03x9QN8wgrs0A0-j0";
+  "https://www.thearcanelibrary.com/blogs/shadowdark-blog/faq-on-the-shadowdark-rpg-third-party-license";
 
 export default function Home() {
+  const copyrightFree = isCopyrightFree();
+
   return (
     <PageContainer>
       <TitleRow>
         <TitleBrand>
-          <ThirdPartyLogo
-            src={assetUrl("/branding/third-party-shadowdark-logo-white.png")}
-            alt="Shadowdark RPG — conteúdo de terceiros licenciado"
-            width={2066}
-            height={852}
-            decoding="async"
-          />
+          {copyrightFree ? (
+            <ThirdPartyLogo
+              src={assetUrl("/branding/third-party-shadowdark-logo-white.png")}
+              alt="Designed for use with Shadowdark RPG"
+              width={2066}
+              height={852}
+              decoding="async"
+            />
+          ) : (
+            <ShadowdarkMastershieldWordmark />
+          )}
         </TitleBrand>
       </TitleRow>
 
@@ -216,19 +224,47 @@ export default function Home() {
 
       <LicenseFooter id="licenca">
         <SectionTitle>Licença</SectionTitle>
-        <p>
-          Ferramenta de fã para Shadowdark RPG. Não afiliada à The Arcane
-          Library. Shadowdark RPG © The Arcane Library LLC. Consulte a{" "}
-          <a
-            href={SHADOWDARK_FAN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Política de conteúdo de terceiros Shadowdark (nova aba)"
-          >
-            política de conteúdo de terceiros
-          </a>
-          .
-        </p>
+        {copyrightFree ? (
+          <p>
+            Escudo do Mestre Shadowdark is an independent product published under
+            the Shadowdark RPG Third-Party License and is not affiliated with The
+            Arcane Library, LLC. Shadowdark RPG © 2023 The Arcane Library, LLC.
+            Consulte a{" "}
+            <a
+              href={SHADOWDARK_FAN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="FAQ da Third-Party License Shadowdark (nova aba)"
+            >
+              FAQ da Third-Party License
+            </a>
+            .
+          </p>
+        ) : (
+          <p>
+            Ferramenta de fã para Shadowdark RPG (uso de mesa). Este build pode
+            incluir conteúdo de terceiros fora da Third-Party License (ex.
+            tokens{" "}
+            <a
+              href="https://youseethis.blog/tokens/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              You see this
+            </a>
+            ). Não afiliada à The Arcane Library. Shadowdark RPG © The Arcane
+            Library LLC.{" "}
+            <a
+              href={SHADOWDARK_FAN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="FAQ da Third-Party License Shadowdark (nova aba)"
+            >
+              FAQ da licença
+            </a>
+            .
+          </p>
+        )}
       </LicenseFooter>
     </PageContainer>
   );

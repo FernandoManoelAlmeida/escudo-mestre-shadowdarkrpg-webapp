@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import styled from "styled-components";
 import {
   getAmeacas,
@@ -9,6 +9,12 @@ import {
   fonteParaFicha,
   type Criatura,
 } from "@/lib/ameacas";
+import {
+  getAmeacasTokens,
+  getTokenByAmeacaId,
+  type AmeacaToken,
+} from "@/lib/ameacasTokens";
+import { isCopyrightFree } from "@/lib/copyrightFree";
 import { OrigemBadge } from "@/components/ameacas/OrigemBadge";
 import { TraitMarkdown } from "@/components/ameacas/TraitMarkdown";
 import { extractAllDiceFormulas, rollFormula } from "@/lib/dice";
@@ -19,7 +25,6 @@ import {
   ariaLabelForRoll,
   parseDiceTokensFromFormula,
 } from "@/lib/diceDisplay";
-
 
 const Stats = styled.p`
   font-family: monospace;
@@ -51,19 +56,57 @@ const RollBtn = styled.button`
   }
 `;
 
+const TokenFigure = styled.figure`
+  margin: ${({ theme }) => theme.spacing.xl} 0 0;
+  padding: 0;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    margin-top: ${({ theme }) => theme.spacing.sm};
+    font-size: ${({ theme }) => theme.typography.fontSize.xs};
+    opacity: 0.75;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+`;
+
 type Props = { id: string };
 
 export function AmeacaDetailClient({ id }: Props) {
   const [criatura, setCriatura] = useState<Criatura | null | undefined>(
     undefined,
   );
+  const [token, setToken] = useState<AmeacaToken | null>(null);
+  const [tokenBroken, setTokenBroken] = useState(false);
   const { addRoll } = useRollToast();
+  const showTokens = !isCopyrightFree();
 
   useEffect(() => {
     getAmeacas().then((data) => {
       setCriatura(getAmeacaById(data, id) ?? null);
     });
   }, [id]);
+
+  useEffect(() => {
+    if (!showTokens) {
+      setToken(null);
+      return;
+    }
+    setTokenBroken(false);
+    getAmeacasTokens().then((data) => {
+      setToken(getTokenByAmeacaId(data, id) ?? null);
+    });
+  }, [id, showTokens]);
 
   if (criatura === undefined) return <PageContainer>Carregando…</PageContainer>;
   if (criatura === null)
@@ -73,7 +116,7 @@ export function AmeacaDetailClient({ id }: Props) {
 
   return (
     <PageContainer>
-      <Link href="/ameacas">← Bestiário</Link>
+      <HistoryBackLink href="/ameacas">← Bestiário</HistoryBackLink>
       <h1>
         {criatura.nome}
         {criatura.epitet ? `, ${criatura.epitet}` : ""}
@@ -82,12 +125,17 @@ export function AmeacaDetailClient({ id }: Props) {
       {fonteFicha && (
         <p style={{ opacity: 0.7, fontSize: "0.875rem" }}>{fonteFicha}</p>
       )}
-      {criatura.flavor && <p><em>{criatura.flavor}</em></p>}
+      {criatura.flavor && (
+        <p>
+          <em>{criatura.flavor}</em>
+        </p>
+      )}
       <Stats>
         CA {criatura.ca}, PV {criatura.pv}, ATQ {criatura.atq}, MV {criatura.mv},
-        F {criatura.atributos.F}, D {criatura.atributos.D}, C {criatura.atributos.C},
-        I {criatura.atributos.I}, S {criatura.atributos.S}, Car{" "}
-        {criatura.atributos.Car}, AL {criatura.al}, NV {criatura.nv}
+        F {criatura.atributos.F}, D {criatura.atributos.D}, C{" "}
+        {criatura.atributos.C}, I {criatura.atributos.I}, S{" "}
+        {criatura.atributos.S}, Car {criatura.atributos.Car}, AL {criatura.al},
+        NV {criatura.nv}
       </Stats>
       {criatura.tracos.map((t) => (
         <Trait key={t.nome}>
@@ -111,6 +159,28 @@ export function AmeacaDetailClient({ id }: Props) {
           ))}
         </Trait>
       ))}
+      {showTokens && token && !tokenBroken && (
+        <TokenFigure>
+          <img
+            src={token.url}
+            alt={token.rotulo ?? criatura.nome}
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={() => setTokenBroken(true)}
+          />
+          <figcaption>
+            Arte:{" "}
+            <a
+              href="https://youseethis.blog/tokens/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {token.credito ?? "You see this."}
+            </a>
+          </figcaption>
+        </TokenFigure>
+      )}
     </PageContainer>
   );
 }

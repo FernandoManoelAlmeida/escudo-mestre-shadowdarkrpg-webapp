@@ -30,18 +30,12 @@ export const HeaderTitleWrap = styled.div`
   flex-shrink: 0;
 `;
 
-export const HeaderTitle = styled.h1<{ $specialFont?: boolean }>`
+export const HeaderTitle = styled.h1`
   margin: 0;
-  font-size: ${({ theme, $specialFont }) =>
-    $specialFont ? theme.typography.fontSize.xl : theme.typography.fontSize.lg};
-  font-weight: ${({ $specialFont }) => ($specialFont ? "normal" : "500")};
+  font-size: ${({ theme }) => theme.typography.fontSize.lg};
+  font-weight: 500;
   color: ${({ theme }) => theme.colors.text};
-  letter-spacing: ${({ $specialFont }) => ($specialFont ? "0.05em" : "0.02em")};
-  font-family: ${({ $specialFont }) =>
-    $specialFont ? '"SigilosDeConhecimento", serif' : "inherit"};
-  transition:
-    font-family 0.5s ease,
-    letter-spacing 0.5s ease;
+  letter-spacing: 0.02em;
 `;
 
 export const DesktopRollWrap = styled.div`

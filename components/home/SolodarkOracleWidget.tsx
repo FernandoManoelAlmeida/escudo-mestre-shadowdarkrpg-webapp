@@ -9,6 +9,7 @@ import { regrasTabelaHref } from "@/lib/geradoresConfig";
 import { D20RollButton } from "@/components/ui/D20RollButton";
 import { useRollToast } from "@/context/RollToastContext";
 import { emitSolodarkOracleRolls } from "@/lib/solodarkOracleToast";
+import { isCopyrightFree } from "@/lib/copyrightFree";
 
 const Card = styled.section`
   margin: ${({ theme }) => theme.spacing.lg} 0;
@@ -70,11 +71,13 @@ export function SolodarkOracleWidget() {
   const [oracleTable, setOracleTable] = useState<RollTableData | null>(null);
   const [algoTable, setAlgoTable] = useState<RollTableData | null>(null);
   const { addRoll } = useRollToast();
+  const copyrightFree = isCopyrightFree();
 
   useEffect(() => {
+    if (copyrightFree) return;
     getTabelaById(ORACLE_ID).then(setOracleTable);
     getTabelaById(ALGO_ID).then(setAlgoTable);
-  }, []);
+  }, [copyrightFree]);
 
   function roll() {
     if (!oracleTable) return;
@@ -93,6 +96,8 @@ export function SolodarkOracleWidget() {
   }
 
   const ready = Boolean(oracleTable);
+
+  if (copyrightFree) return null;
 
   return (
     <Card aria-labelledby="solodark-oracle-title">

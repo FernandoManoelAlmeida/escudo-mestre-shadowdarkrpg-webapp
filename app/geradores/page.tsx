@@ -21,6 +21,7 @@ import {
 import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { GeradoresRouteGate } from "@/components/copyright/GeradoresRouteGate";
 
 const GERADORES_FILTER_DEFAULTS = { q: "", ord: "nome:asc" };
 const DEFAULT_SORT: SortOrderValue = { por: "nome", sentido: "asc" };
@@ -80,6 +81,7 @@ export default function GeradoresPage() {
   }, [allCards, values.q, ordenar.sentido]);
 
   return (
+    <GeradoresRouteGate>
     <PageContainer>
       <Title>Geradores</Title>
       <Intro>
@@ -122,5 +124,6 @@ export default function GeradoresPage() {
         </Card>
       ))}
     </PageContainer>
+    </GeradoresRouteGate>
   );
 }

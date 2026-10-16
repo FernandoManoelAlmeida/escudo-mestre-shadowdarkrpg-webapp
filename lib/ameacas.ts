@@ -1,3 +1,5 @@
+import { keepAmeacaForCopyrightFree } from "@/lib/copyrightFreeFilter";
+
 export type OrigemCriatura = "oficial" | "homebrew";
 
 export type CriaturaAtributos = {
@@ -65,7 +67,10 @@ export async function getAmeacas(): Promise<AmeacasData> {
   if (cached) return cached;
   const res = await fetch(AMEACAS_URL);
   if (!res.ok) throw new Error("Falha ao carregar ameaças");
-  cached = (await res.json()) as AmeacasData;
+  const raw = (await res.json()) as AmeacasData;
+  cached = {
+    ameacas: raw.ameacas.filter((a) => keepAmeacaForCopyrightFree(a)),
+  };
   return cached;
 }
 
@@ -74,6 +79,11 @@ export function getAmeacaById(
   id: string,
 ): Criatura | undefined {
   return data.ameacas.find((a) => a.id === id);
+}
+
+/** Limpa cache (testes). */
+export function clearAmeacasCache(): void {
+  cached = null;
 }
 
 function tipoIndiceOuLixo(text: string): boolean {

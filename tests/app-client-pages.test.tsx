@@ -14,6 +14,8 @@ import RegrasGlossarioPage from "@/app/regras/glossario/page";
 import { AmeacaDetailClient } from "@/app/ameacas/[id]/AmeacaDetailClient";
 import { RegrasSectionClient } from "@/app/regras/[sectionId]/RegrasSectionClient";
 import { clearEscudoCache } from "@/lib/escudo";
+import { clearAmeacasTokensCache } from "@/lib/ameacasTokens";
+import { clearAmeacasCache } from "@/lib/ameacas";
 import { escudoFixture } from "./fixtures/escudo-data";
 import { ameacasFixture, ameacaMinimal } from "./fixtures/ameacas-data";
 import React from "react";
@@ -28,6 +30,13 @@ function stubFetchJson(data: unknown) {
         return {
           ok: false,
           json: async () => ({}),
+          text: async () => "",
+        };
+      }
+      if (url.includes("ameacas-tokens.json")) {
+        return {
+          ok: true,
+          json: async () => ({ tokens: {} }),
           text: async () => "",
         };
       }
@@ -46,6 +55,8 @@ const asyncPageTimeout = 15_000;
 describe("páginas client", () => {
   beforeEach(() => {
     clearEscudoCache();
+    clearAmeacasCache();
+    clearAmeacasTokensCache();
   });
 
   it("Home renderiza oráculo SoloDark, regras em uso e licença", () => {
@@ -108,7 +119,15 @@ describe("páginas client", () => {
       ),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("link", { name: /política de conteúdo de terceiros/i }),
+      screen.getByRole("img", { name: /shadowdark mastershield/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", {
+        name: /faq da third-party license shadowdark/i,
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /you see this/i }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: /astraldark.*pdf/i }),

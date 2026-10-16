@@ -230,7 +230,11 @@ export function geradorCardsFromModules(modules: GeradorModule[]): GeradorCard[]
     description: m.description,
     href: `/geradores/${m.slug}`,
   }));
-  if (!cards.some((c) => c.slug === "itens-magicos-aleatorios")) {
+  // Só acrescenta o atalho ao catálogo quando há módulos com dados (evita card fantasma).
+  if (
+    modules.length > 0 &&
+    !cards.some((c) => c.slug === "itens-magicos-aleatorios")
+  ) {
     cards.push({
       slug: "itens-magicos-aleatorios",
       title: "Catálogo de itens mágicos",

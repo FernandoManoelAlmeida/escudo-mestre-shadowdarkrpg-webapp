@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { assetUrl } from "@/lib/basePath";
+import { pwaIconPath } from "@/lib/rasterIcons";
 import { pwaInstallSolidColors } from "@/lib/pwaColors";
 
 export const dynamic = "force-static";
@@ -9,37 +9,37 @@ const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 export default function manifest(): MetadataRoute.Manifest {
   const icons: NonNullable<MetadataRoute.Manifest["icons"]> = [
     {
-      src: assetUrl("/icons/icon-192.png"),
+      src: pwaIconPath("icon-192.png"),
       sizes: "192x192",
       type: "image/png",
       purpose: "any",
     },
     {
-      src: assetUrl("/icons/icon-512.png"),
+      src: pwaIconPath("icon-512.png"),
       sizes: "512x512",
       type: "image/png",
       purpose: "any",
     },
     {
-      src: assetUrl("/icons/icon-192.webp"),
+      src: pwaIconPath("icon-192.webp"),
       sizes: "192x192",
       type: "image/webp",
       purpose: "any",
     },
     {
-      src: assetUrl("/icons/icon-192.webp"),
+      src: pwaIconPath("icon-192.webp"),
       sizes: "192x192",
       type: "image/webp",
       purpose: "maskable",
     },
     {
-      src: assetUrl("/icons/icon-512.webp"),
+      src: pwaIconPath("icon-512.webp"),
       sizes: "512x512",
       type: "image/webp",
       purpose: "any",
     },
     {
-      src: assetUrl("/icons/icon-512.webp"),
+      src: pwaIconPath("icon-512.webp"),
       sizes: "512x512",
       type: "image/webp",
       purpose: "maskable",

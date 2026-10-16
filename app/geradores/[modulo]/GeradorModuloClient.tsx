@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import styled from "styled-components";
 import { getTabelasIndex } from "@/lib/tabelas";
 import { GERADOR_MODULES, tablesForModule } from "@/lib/geradoresConfig";
 import { TableGeneratorModule } from "@/components/geradores/TableGeneratorModule";
 import { PageContainer } from "@/components/layout/PageContainer";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 
 
 type Props = { slug: string };
@@ -57,7 +57,7 @@ export function GeradorModuloClient({ slug }: Props) {
     return (
       <PageContainer>
         <p>Módulo não encontrado.</p>
-        <Link href="/geradores">← Geradores</Link>
+        <HistoryBackLink href="/geradores">← Geradores</HistoryBackLink>
       </PageContainer>
     );
   }

@@ -2,7 +2,7 @@
 
 ## O que é
 
-**Escudo do Mestre — Webapp** é uma aplicação **mobile-first** para consultar regras de casa do Escudo do Mestre (Ordem Paranormal RPG), fazer **rolagens** de dados e ver **fichas de ameaças**. O conteúdo de regras e ameaças vem de ficheiros JSON estáticos no repositório; não há servidor de jogo nem conta de utilizador.
+**Escudo do Mestre — Shadowdark** é uma aplicação **mobile-first** para consultar regras do Escudo do Mestre (Shadowdark RPG), fazer **rolagens** de dados, usar **geradores de mesa** e ver **fichas de ameaças**. O conteúdo de regras e ameaças vem de ficheiros JSON estáticos no repositório; não há servidor de jogo nem conta de utilizador.
 
 ## Funcionalidades principais
 
@@ -13,9 +13,11 @@
 | Secção | `/regras/[id]` | Texto formatado, fórmulas e tabelas por secção |
 | Tabelas | `/regras/tabelas` | Consulta centralizada de tabelas |
 | Glossário | `/regras/glossario` | Termos com busca |
-| Rolagens | `/rolagens` | Rolagem livre, teste de atributo e teste de perícia |
+| Rolagens | `/rolagens` | Rolagem livre e atalhos de mesa |
 | Ameaças | `/ameacas` | Lista com busca, filtros e ordenação |
 | Ficha | `/ameacas/[id]` | Detalhe de uma ameaça |
+| Geradores | `/geradores` | Tabelas e geradores de mesa |
+| Arcanos | `/arcanos` | Magias e itens mágicos |
 
 No **cabeçalho** existe ainda uma **barra de rolagem rápida** (fórmula de dados) disponível em qualquer página; os resultados aparecem como notificações (toasts).
 
@@ -38,8 +40,6 @@ No **cabeçalho** existe ainda uma **barra de rolagem rápida** (fórmula de dad
 
 ## Documentação relacionada
 
-- [Navegação e acessibilidade](navegacao-e-acessibilidade.md)
 - [Regras e consulta](regras-e-consulta.md)
-- [Rolagens](rolagens.md)
-- [Ameaças](ameacas.md)
+- [Navegação e acessibilidade](navegacao-e-acessibilidade.md)
 - [PWA e offline](pwa-e-offline.md)

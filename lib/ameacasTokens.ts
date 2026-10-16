@@ -1,0 +1,38 @@
+export type AmeacaToken = {
+  url: string;
+  credito?: string;
+  rotulo?: string;
+};
+
+export type AmeacasTokensData = {
+  tokens: Record<string, AmeacaToken>;
+};
+
+const TOKENS_URL =
+  (process.env.NEXT_PUBLIC_BASE_PATH || "") + "/data/ameacas-tokens.json";
+
+let cached: AmeacasTokensData | null = null;
+
+export async function getAmeacasTokens(): Promise<AmeacasTokensData> {
+  if (cached) return cached;
+  const res = await fetch(TOKENS_URL);
+  if (!res.ok) {
+    cached = { tokens: {} };
+    return cached;
+  }
+  const raw = (await res.json()) as Partial<AmeacasTokensData>;
+  cached = { tokens: raw.tokens ?? {} };
+  return cached;
+}
+
+export function getTokenByAmeacaId(
+  data: AmeacasTokensData,
+  id: string,
+): AmeacaToken | undefined {
+  return data.tokens?.[id];
+}
+
+/** Limpa cache (testes). */
+export function clearAmeacasTokensCache(): void {
+  cached = null;
+}

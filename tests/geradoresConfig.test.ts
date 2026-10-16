@@ -36,4 +36,9 @@ describe("geradoresConfig regras tabelas", () => {
       0,
     );
   });
+
+  it("sem módulos não injecta card fantasma de itens mágicos", () => {
+    expect(geradorCardsFromModules([])).toEqual([]);
+  });
 });
+

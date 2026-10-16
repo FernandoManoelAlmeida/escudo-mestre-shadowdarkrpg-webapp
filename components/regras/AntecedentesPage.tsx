@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import { HistoryBackLink } from "@/components/ui/HistoryBackLink";
 import styled from "styled-components";
 import {
   getAntecedentes,
@@ -34,7 +34,7 @@ import { decodeSortOrder, encodeSortOrder } from "@/lib/listFilterQuery";
 import { useListFiltersInUrl } from "@/hooks/useListFiltersInUrl";
 import { PageContainer } from "@/components/layout/PageContainer";
 
-const BackLink = styled(Link)`
+const BackLink = styled(HistoryBackLink)`
   display: inline-flex;
   margin-bottom: ${({ theme }) => theme.spacing.md};
   color: ${({ theme }) => theme.colors.primary};

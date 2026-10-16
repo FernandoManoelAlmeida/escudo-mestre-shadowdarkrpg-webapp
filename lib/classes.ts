@@ -3,6 +3,7 @@ import {
   sortCatalogoPersonagem,
   type CatalogoPersonagemEntrada,
 } from "@/lib/catalogoPersonagem";
+import { keepCatalogoPersonagemForCopyrightFree } from "@/lib/copyrightFreeFilter";
 import type { OrdenarSentido } from "@/lib/sortOrder";
 
 export type Classe = CatalogoPersonagemEntrada;
@@ -11,7 +12,9 @@ export async function getClasses(): Promise<Classe[]> {
   const data = await fetchCatalogoJson<{ entradas: Classe[] }>(
     "/data/catalogo/classes.json",
   );
-  return data?.entradas ?? [];
+  return (data?.entradas ?? []).filter((e) =>
+    keepCatalogoPersonagemForCopyrightFree(e),
+  );
 }
 
 export async function getClasseById(id: string): Promise<Classe | null> {

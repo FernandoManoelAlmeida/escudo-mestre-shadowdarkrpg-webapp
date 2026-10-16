@@ -1,5 +1,6 @@
 import type { OrdenarSentido } from "@/lib/sortOrder";
 import type { RollTableData } from "@/lib/rollTable";
+import { keepTabelaIndexForCopyrightFree } from "@/lib/copyrightFreeFilter";
 
 export type TabelaIndexEntry = {
   id: string;
@@ -12,6 +13,7 @@ export type TabelaIndexEntry = {
 const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export async function getTabelasIndex(): Promise<TabelaIndexEntry[]> {
+  if (!keepTabelaIndexForCopyrightFree()) return [];
   const res = await fetch(`${base}/data/tabelas/tabelas-index.json`);
   if (!res.ok) return [];
   const data = (await res.json()) as { tabelas: TabelaIndexEntry[] };
@@ -19,6 +21,7 @@ export async function getTabelasIndex(): Promise<TabelaIndexEntry[]> {
 }
 
 export async function getTabelaById(id: string): Promise<RollTableData | null> {
+  if (!keepTabelaIndexForCopyrightFree()) return null;
   const res = await fetch(`${base}/data/tabelas/${id}.json`);
   if (!res.ok) return null;
   return (await res.json()) as RollTableData;
