@@ -16,12 +16,12 @@ const Wordmark = styled.p`
 
 const LineShadowdark = styled.span`
   display: block;
-  font-size: 42px;
+  font-size: 52px;
 `;
 
 const LineMastershield = styled.span`
   display: block;
-  font-size: 62px;
+  font-size: 72px;
 `;
 
 type Props = {
