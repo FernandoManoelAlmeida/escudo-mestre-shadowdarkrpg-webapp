@@ -32,6 +32,13 @@ Usada só no wordmark «Shadowdark Mastershield» (build com `COPYRIGHT_FREE` of
 | Logo Creator Kit | Só na home com `COPYRIGHT_FREE=1` (`third-party-shadowdark-logo-white.png`) |
 | Spot Art logo WebP | GATE — oculto com `COPYRIGHT_FREE=1` (`ShadowdarkSpotArtLogo`) |
 
-## Tokens You See This
+## Tokens de ameaças
 
-Mapa em `public/data/ameacas-tokens.json` (URLs WordPress; hotlink na ficha). Fora da TPL — só com flag off. Crédito: [You see this — Tokens](https://youseethis.blog/tokens/).
+Mapa em `public/data/ameacas-tokens.json` (sobrevive a `yarn migrate:from-fantasia`). Fora da TPL — só na ficha com flag off.
+
+| Prioridade | Origem | Notas |
+|------------|--------|--------|
+| Primária | [Shadowdark Community Tokens](https://foundryvtt.com/packages/shadowdark-community-tokens) (Delgore) — tokens circulares via jsDelivr do [GitHub](https://github.com/PrototypeESBU/foundryvtt-shadowdark-community-tokens) | Arte do companion ao [Community Content](https://foundryvtt.com/packages/shadowdark-community-content); maioria AI, uso pessoal/não-comercial; ficha com `border-radius: 50%` |
+| Fallback | [You see this — Tokens](https://youseethis.blog/tokens/) | Hotlink WordPress onde não há match Community |
+
+Regenerar o sidecar: `node scripts/rebuild-ameacas-tokens.js` (mapa EN→id em `scripts/data/community-tokens-ameaca-map.json`; baseline YST em `scripts/data/ameacas-tokens-yst-fallback.json`).

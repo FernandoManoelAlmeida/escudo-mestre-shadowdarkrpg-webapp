@@ -1,1029 +1,1845 @@
 {
   "tokens": {
     "abolete": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/tentacles_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Tentacles, mass"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/aboleth.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Aboleth",
+      "fonte": "community-tokens"
     },
     "abutre": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/crow1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Crow"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/vulture.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Vulture",
+      "fonte": "community-tokens"
     },
     "acolito": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/acolyte_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Acolyte"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/acolyte.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Acolyte",
+      "fonte": "community-tokens"
+    },
+    "agua-viva": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/jellyfish.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Jellyfish",
+      "fonte": "community-tokens"
+    },
+    "alce": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/moose.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Moose",
+      "fonte": "community-tokens"
     },
     "anaconda-gigante": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/snake_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Snake"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Snake",
+      "fonte": "yst"
+    },
+    "anjo-domini": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/angel-domini.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Angel, Domini",
+      "fonte": "community-tokens"
+    },
+    "anjo-principi": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/angel-principi.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Angel, Principi",
+      "fonte": "community-tokens"
+    },
+    "anjo-serafim": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/angel-seraph.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Angel, Seraph",
+      "fonte": "community-tokens"
+    },
+    "ankheg": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ankheg.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ankheg",
+      "fonte": "community-tokens"
     },
     "aparicao": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wraith_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wraith"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wraith.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wraith",
+      "fonte": "community-tokens"
     },
     "aprendiz": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/magic_user_caratacus_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Magic User Caratacus"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/apprentice.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Apprentice",
+      "fonte": "community-tokens"
     },
     "aranha": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/spider_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Spider"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/spider.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Spider",
+      "fonte": "community-tokens"
     },
     "aranha-do-vazio": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/spider_black_widow_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Spider Black Widow"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/void-spider.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Void Spider",
+      "fonte": "community-tokens"
     },
     "aranha-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/spider_giant_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Spider"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/spider-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Spider, Giant",
+      "fonte": "community-tokens"
     },
     "aranhas": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/spider_giant_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Spider"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/spider-swarm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Spider, Swarm",
+      "fonte": "community-tokens"
+    },
+    "arcanjo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/archangel.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Archangel",
+      "fonte": "community-tokens"
     },
     "armadura-animada": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/living_statue_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Living statue John Asaro"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/animated-armor.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Animated Armor",
+      "fonte": "community-tokens"
     },
     "arquidiabo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/devil_horned_dat_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Devil Horned Dat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/archdevil.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Archdevil",
+      "fonte": "community-tokens"
     },
     "arquimago": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/03/magic_user_linda_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Magic User Linda"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/archmage.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Archmage",
+      "fonte": "community-tokens"
+    },
+    "arraia-gigante": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/manta-ray-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Manta Ray, Giant",
+      "fonte": "community-tokens"
     },
     "assassino": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/thief_sahra_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Thief Sahra"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/assassin.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Assassin",
+      "fonte": "community-tokens"
+    },
+    "azer": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/azer.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Azer",
+      "fonte": "community-tokens"
     },
     "bandido": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bandit_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bandit"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/bandit.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Bandit",
+      "fonte": "community-tokens"
     },
     "basilisco": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/basilisk_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Basilisk"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/basilisk.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Basilisk",
+      "fonte": "community-tokens"
     },
     "basilisco-filhote": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/basilisk_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Basilisk"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/basilisk-hatchling.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Basilisk Hatchling",
+      "fonte": "community-tokens"
     },
     "berserk": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/berserker_sven_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Berserker Sven"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/berserker.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Berserker",
+      "fonte": "community-tokens"
     },
     "besouro-de-esterco-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/beetle_giant.png",
-      "credito": "You see this.",
-      "rotulo": "Beetle Giant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dung-beetle-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dung Beetle, Giant",
+      "fonte": "community-tokens"
     },
     "boca-matraqueante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/tentacles_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Tentacles, mass"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gibbering-mouther.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gibbering Mouther",
+      "fonte": "community-tokens"
+    },
+    "braquiossauro": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/brachiosaurus.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Brachiosaurus",
+      "fonte": "community-tokens"
+    },
+    "brutamontes-das-cavernas": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/cave-brute.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Cave Brute",
+      "fonte": "community-tokens"
     },
     "bruxa-da-noite": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/hag_clotho_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Hag Clotho"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/hag-night.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Hag, Night",
+      "fonte": "community-tokens"
     },
     "bruxa-do-bosque": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/03/magic_user_linda_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Magic User Linda"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/hag-weald.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Hag, Weald",
+      "fonte": "community-tokens"
     },
     "bruxa-do-mar": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/hag_clotho_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Hag Clotho"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/hag-sea.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Hag, Sea",
+      "fonte": "community-tokens"
     },
     "bugbear": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bugbear_8_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bugbear"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/bugbear.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Bugbear",
+      "fonte": "community-tokens"
+    },
+    "bulete": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/bulette.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Bulette",
+      "fonte": "community-tokens"
     },
     "burro": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/mule_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Mule"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Mule",
+      "fonte": "yst"
     },
     "camelo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/camel_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Camel"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/camel.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Camel",
+      "fonte": "community-tokens"
+    },
+    "caminhante-da-geada": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rime-walker.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rime Walker",
+      "fonte": "community-tokens"
     },
     "campones": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/normal_human_9_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Normal Human"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/peasant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Peasant",
+      "fonte": "community-tokens"
     },
     "cao-infernal": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/hellhound_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Hellhound"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/hell-hound.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Hell Hound",
+      "fonte": "community-tokens"
     },
     "caranguejo-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/crab_giant_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Crab Giant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/crab-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Crab, Giant",
+      "fonte": "community-tokens"
     },
     "carnecal": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ghoul_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ghoul/Ghast"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ghast.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ghast",
+      "fonte": "community-tokens"
     },
     "carnical": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ghoul_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ghoul/Ghast"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ghoul.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ghoul",
+      "fonte": "community-tokens"
     },
     "cavaleiro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/fighter_shari_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Fighter Shari"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/knight.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Knight",
+      "fonte": "community-tokens"
     },
     "cavaleiro-matriprole": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/gith_2_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Githyanki"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Githyanki",
+      "fonte": "yst"
+    },
+    "cavalo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/horse.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Horse",
+      "fonte": "community-tokens"
     },
     "centauro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/centaur_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Centaur"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/centaur.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Centaur",
+      "fonte": "community-tokens"
     },
     "centopeia-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/centipede_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Centipede"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/centipede-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Centipede, Giant",
+      "fonte": "community-tokens"
     },
     "centopeias": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/centipete_4_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Centipete"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/centipede-swarm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Centipede, Swarm",
+      "fonte": "community-tokens"
     },
     "chuul": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/crab_giant_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Crab Giant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/chuul.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Chuul",
+      "fonte": "community-tokens"
     },
     "ciclope": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/cyclops_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Cyclops"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/cyclops.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Cyclops",
+      "fonte": "community-tokens"
     },
     "cobra-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/snake_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Snake"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/snake-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Snake, Giant",
+      "fonte": "community-tokens"
     },
     "cobra-naja": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/snake_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Snake"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/snake-cobra.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Snake, Cobra",
+      "fonte": "community-tokens"
     },
     "cobras": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/snake_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Snake"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/snake-swarm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Snake, Swarm",
+      "fonte": "community-tokens"
     },
     "cocatriz": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/cockatrice_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Cockatrice"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/cockatrice.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Cockatrice",
+      "fonte": "community-tokens"
+    },
+    "couatl": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/couatl.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Couatl",
+      "fonte": "community-tokens"
     },
     "cria-vampirica": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/vampire_nosferatu_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Vampire Nosferatu"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/vampire-spawn.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Vampire Spawn",
+      "fonte": "community-tokens"
     },
     "criminoso": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bandit_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bandit"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/thug.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Thug",
+      "fonte": "community-tokens"
     },
     "crocodilo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/crocodile_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Crocodile"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/crocodile.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Crocodile",
+      "fonte": "community-tokens"
     },
     "cubo-gelatinoso": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/gelatinous_cube_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Gelatinous Cube"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gelatinous-cube.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gelatinous Cube",
+      "fonte": "community-tokens"
     },
     "cultista": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/06/cultist_furry_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Cultist Furry"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/cultist.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Cultist",
+      "fonte": "community-tokens"
     },
     "demonio-balor": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/demon_vi_balor_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Demon Vi Balor"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/demon-balor.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Demon, Balor",
+      "fonte": "community-tokens"
     },
     "demonio-da-medula": {
       "url": "https://youseethis.blog/wp-content/uploads/2026/03/marrow_fiend_2_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Marrow Fiend"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Marrow Fiend",
+      "fonte": "yst"
+    },
+    "demonio-dretch": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/demon-dretch.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Demon, Dretch",
+      "fonte": "community-tokens"
     },
     "demonio-glabrezu": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/demon_iii_glabrezu_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Demon Iii Glabrezu"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/demon-glabrezu.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Demon, Glabrezu",
+      "fonte": "community-tokens"
     },
     "demonio-marilith": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/marilith_5_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Marilith"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/demon-marilith.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Demon, Marilith",
+      "fonte": "community-tokens"
     },
     "demonio-vrock": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/demon_i_vrock_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Demon I Vrock"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/demon-vrock.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Demon, Vrock",
+      "fonte": "community-tokens"
     },
     "diabo-chifrudo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/devil_horned_dat_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Devil Horned Dat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/devil-horned.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Devil, Horned",
+      "fonte": "community-tokens"
+    },
+    "diabo-cubi": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/devil-cubi.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Devil, Cubi",
+      "fonte": "community-tokens"
+    },
+    "diabo-erinia": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/devil-erinyes.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Devil, Erinyes",
+      "fonte": "community-tokens"
     },
     "diabo-farpado": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/devil_barbed_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Devil Barbed"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/devil-barbed.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Devil, Barbed",
+      "fonte": "community-tokens"
     },
     "diabrete": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/quasit_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Quasit"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/devil-imp.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Devil, Imp",
+      "fonte": "community-tokens"
     },
     "djinni": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/djini_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Djini"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/djinni.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Djinni",
+      "fonte": "community-tokens"
     },
     "doppelganger": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/doppleganger_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Doppleganger"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/doppelganger.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Doppelganger",
+      "fonte": "community-tokens"
     },
     "dragao-da-floresta": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/green_dragon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Green Dragon"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dragon-forest.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dragon, Forest",
+      "fonte": "community-tokens"
     },
     "dragao-de-fogo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/red_dragon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Red Dragon"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dragon-fire.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dragon, Fire",
+      "fonte": "community-tokens"
     },
     "dragao-de-gelo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/white_dragon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "White Dragon"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dragon-frost.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dragon, Frost",
+      "fonte": "community-tokens"
     },
     "dragao-do-deserto": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/blue_dragon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Blue Dragon"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dragon-desert.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dragon, Desert",
+      "fonte": "community-tokens"
     },
     "dragao-do-mar": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/gold_dragon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Gold Dragon DAT"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dragon-sea.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dragon, Sea",
+      "fonte": "community-tokens"
     },
     "dragao-do-pantano": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/black_dragon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Black Dragon"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dragon-swamp.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dragon, Swamp",
+      "fonte": "community-tokens"
     },
     "dragomante-matriprole": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/gith_3_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Githyanki"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Githyanki",
+      "fonte": "yst"
     },
     "driade": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/dryad_4_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Dryad"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/dryad.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Dryad",
+      "fonte": "community-tokens"
     },
     "drider": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/spider_giant_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Spider"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/drow-drider.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Drow, Drider",
+      "fonte": "community-tokens"
     },
     "drow": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elf_drow_morgana_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elf Drow Morgana"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/drow.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Drow",
+      "fonte": "community-tokens"
+    },
+    "druida": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/druid.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Druid",
+      "fonte": "community-tokens"
     },
     "duergar": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/derro_duergar_9_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Derro Duergar"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/duergar.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Duergar",
+      "fonte": "community-tokens"
     },
     "dverg": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/dwarf_humus_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Dwarf Humus"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Dwarf Humus",
+      "fonte": "yst"
     },
     "elefante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elephant_mamoth_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elephant Mamoth"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/elephant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Elephant",
+      "fonte": "community-tokens"
     },
     "elemental-de-agua": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elemental_water_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elemental, water"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/elemental-water-greater.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Elemental, Water (Greater)",
+      "fonte": "community-tokens"
+    },
+    "elemental-de-ar": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/elemental-air-greater.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Elemental, Air (Greater)",
+      "fonte": "community-tokens"
     },
     "elemental-de-fogo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elemental_fire_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elemental, fire"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/elemental-fire-greater.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Elemental, Fire (Greater)",
+      "fonte": "community-tokens"
     },
     "elemental-de-terra": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elemental_earth_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elemental, earth"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/elemental-earth-greater.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Elemental, Earth (Greater)",
+      "fonte": "community-tokens"
     },
     "elfo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elf_beax_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elf Beax"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/elf.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Elf",
+      "fonte": "community-tokens"
     },
     "ent": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/treant_3_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Treant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/treant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Treant",
+      "fonte": "community-tokens"
     },
     "escaravelhos": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/beetle_giant.png",
-      "credito": "You see this.",
-      "rotulo": "Beetle Giant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/scarab-swarm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Scarab, Swarm",
+      "fonte": "community-tokens"
     },
     "escorpiao": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/scorpion_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Scorpion"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/scorpion.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Scorpion",
+      "fonte": "community-tokens"
     },
     "escorpiao-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/scorpion_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Scorpion"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/scorpion-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Scorpion, Giant",
+      "fonte": "community-tokens"
+    },
+    "esfinge": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/sphinx.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Sphinx",
+      "fonte": "community-tokens"
     },
     "esmilodonte": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/sabre_tooth_tiger_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Sabre Tooth Tiger"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/smilodon.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Smilodon",
+      "fonte": "community-tokens"
+    },
+    "espantalho": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/scarecrow.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Scarecrow",
+      "fonte": "community-tokens"
     },
     "esqueleto": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/skeleton_dekkion_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Skeleton Dekkion"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/skeleton.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Skeleton",
+      "fonte": "community-tokens"
     },
     "estatua-da-cobra": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/living_statue_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Living statue John Asaro"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Living statue John Asaro",
+      "fonte": "yst"
+    },
+    "estrangulador": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/strangler.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Strangler",
+      "fonte": "community-tokens"
     },
     "ettercap": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/spider_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Spider"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ettercap.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ettercap",
+      "fonte": "community-tokens"
+    },
+    "fada": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/fairy.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Fairy",
+      "fonte": "community-tokens"
     },
     "fantasma": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wraith_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wraith"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ghost.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ghost",
+      "fonte": "community-tokens"
+    },
+    "fenix": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/phoenix.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Phoenix",
+      "fonte": "community-tokens"
+    },
+    "flor-apodrecida": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rot-flower.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rot Flower",
+      "fonte": "community-tokens"
+    },
+    "fogo-fatuo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/will-o'-wisp.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Will-o'-Wisp",
+      "fonte": "community-tokens"
     },
     "formiga-gigante": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/driver_ant_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Driver Ant"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Driver Ant",
+      "fonte": "yst"
+    },
+    "fungo-violeta": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/violet-fungus.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Violet Fungus",
+      "fonte": "community-tokens"
     },
     "gargula": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/gargoyle_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Gargoyle"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gargoyle.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gargoyle",
+      "fonte": "community-tokens"
     },
     "geleia-ocre": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ochre_jelly_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ochre Jelly"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ochre-jelly.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ochre Jelly",
+      "fonte": "community-tokens"
     },
     "gigante-bode": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/giant_hill_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Giant Hill"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/giant-goat.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Giant, Goat",
+      "fonte": "community-tokens"
     },
     "gigante-da-colina": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/giant_hill_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Giant Hill"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/giant-hill.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Giant, Hill",
+      "fonte": "community-tokens"
     },
     "gigante-da-tempestade": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/giant_storm_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Giant Storm"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/giant-storm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Giant, Storm",
+      "fonte": "community-tokens"
     },
     "gigante-das-nuvens": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/giant_storm_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Giant Storm"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/giant-cloud.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Giant, Cloud",
+      "fonte": "community-tokens"
+    },
+    "gigante-de-fogo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/giant-fire.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Giant, Fire",
+      "fonte": "community-tokens"
+    },
+    "gigante-de-gelo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/giant-frost.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Giant, Frost",
+      "fonte": "community-tokens"
     },
     "gigante-de-pedra": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/giant_stone_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Giant Stone"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/giant-stone.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Giant, Stone",
+      "fonte": "community-tokens"
     },
     "gladiador": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/mercenary_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Mercenary"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gladiator.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gladiator",
+      "fonte": "community-tokens"
     },
     "gnoll": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/gnoll_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Gnoll"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gnoll.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gnoll",
+      "fonte": "community-tokens"
     },
     "gnomo-das-profundezas": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/svirfneblin_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Svirfneblin"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gnome-deep.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gnome, Deep",
+      "fonte": "community-tokens"
     },
     "goblin": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/goblin_henchman_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Goblin Henchman"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/goblin.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Goblin",
+      "fonte": "community-tokens"
     },
     "goblin-chefe": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/goblin_11_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Goblin"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/goblin-boss.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Goblin, Boss",
+      "fonte": "community-tokens"
     },
     "goblin-xama": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/goblin_3_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Goblin"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/goblin-shaman.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Goblin, Shaman",
+      "fonte": "community-tokens"
     },
     "golem-de-argila": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/golem_clay_dat_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Golem Clay Dat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/golem-clay.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Golem, Clay",
+      "fonte": "community-tokens"
     },
     "golem-de-carne": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/golem_flesh_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Golem Flesh"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/golem-flesh.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Golem, Flesh",
+      "fonte": "community-tokens"
     },
     "golem-de-ferro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/golem_brass_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Brass Golem"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/golem-iron.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Golem, Iron",
+      "fonte": "community-tokens"
     },
     "golem-de-pedra": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/golem_stone_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Golem Stone"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/golem-stone.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Golem, Stone",
+      "fonte": "community-tokens"
     },
     "gorgon": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/gorgon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Gorgon"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gorgon.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gorgon",
+      "fonte": "community-tokens"
     },
     "gorila": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ape_white_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ape White"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gorilla.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gorilla",
+      "fonte": "community-tokens"
+    },
+    "grick": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/grick.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Grick",
+      "fonte": "community-tokens"
     },
     "grifo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/griffon_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Griffon"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/griffon.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Griffon",
+      "fonte": "community-tokens"
+    },
+    "grimlow": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/grimlow.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Grimlow",
+      "fonte": "community-tokens"
     },
     "guarda": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/mercenary_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Mercenary"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/guard.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Guard",
+      "fonte": "community-tokens"
     },
     "guerreiro-de-pedra": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/living_statue_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Living statue John Asaro"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Living statue John Asaro",
+      "fonte": "yst"
     },
     "guerreiro-matriprole": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/gith_1_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Githyanki"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Githyanki",
+      "fonte": "yst"
     },
     "harpia": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/harpy_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Harpy"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/harpy.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Harpy",
+      "fonte": "community-tokens"
     },
     "hero": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/berserker_sven_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Berserker Sven"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Berserker Sven",
+      "fonte": "yst"
     },
     "hipogrifo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/hipogriff_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Hippogriff"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/hippogriff.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Hippogriff",
+      "fonte": "community-tokens"
+    },
+    "hipopotamo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/hippopotamus.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Hippopotamus",
+      "fonte": "community-tokens"
     },
     "hobgoblin": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/hobgoblin_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Hobgoblin"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/hobgoblin.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Hobgoblin",
+      "fonte": "community-tokens"
     },
     "homem-fera": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/neanderthal_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Neanderthal (Beaux)"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/beastman.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Beastman",
+      "fonte": "community-tokens"
     },
     "homem-fungo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/02/mycanoid_8_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Mycanoid"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/mushroomfolk.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Mushroomfolk",
+      "fonte": "community-tokens"
     },
     "homem-rato": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/lycanthrope_wererat_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Lycanthrope Wererat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wererat.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wererat",
+      "fonte": "community-tokens"
     },
     "homem-urso": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/lycanthrope_werebear_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Lycanthrope Werebear"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Lycanthrope Werebear",
+      "fonte": "yst"
     },
     "homens-lagarto": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/lizard_man_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Lizard Man"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/lizardfolk.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Lizardfolk",
+      "fonte": "community-tokens"
     },
     "icor-limo": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/green_slime_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Green slime"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Green slime",
+      "fonte": "yst"
     },
     "ifriti": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/efreeti_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Efreeti"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/efreeti.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Efreeti",
+      "fonte": "community-tokens"
     },
     "inumano": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/wight_1_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Wight"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Wight",
+      "fonte": "yst"
     },
     "javali": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/boar_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Boar"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/boar.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Boar",
+      "fonte": "community-tokens"
     },
     "kobold": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/kobold_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Kobold"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/kobold.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Kobold",
+      "fonte": "community-tokens"
     },
     "kobold-feiticeiro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/kobold_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Kobold"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/kobold-sorcerer.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Kobold, Sorcerer",
+      "fonte": "community-tokens"
     },
     "kraken": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/octopos_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Octopus"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/kraken.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Kraken",
+      "fonte": "community-tokens"
     },
     "ladrao": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/thief_sahra_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Thief Sahra"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/thief.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Thief",
+      "fonte": "community-tokens"
     },
     "leao": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/07/cat_great_8_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Cat, great (Lion)"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/lion.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Lion",
+      "fonte": "community-tokens"
+    },
+    "leprechaun": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/leprechaun.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Leprechaun",
+      "fonte": "community-tokens"
+    },
+    "lich": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/lich.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Lich",
+      "fonte": "community-tokens"
     },
     "limo-cinzento": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/gray_ooze_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Gray Ooze"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/gray-ooze.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Gray Ooze",
+      "fonte": "community-tokens"
     },
     "limo-primordial": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/green_slime_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Green slime"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/primordial-slime.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Primordial Slime",
+      "fonte": "community-tokens"
     },
     "lobisomem": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/lycanthrope_werewolf_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Lycanthrope, werewolf"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/werewolf.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Werewolf",
+      "fonte": "community-tokens"
     },
     "lobo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wolf_warg_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wolf/Warg"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wolf.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wolf",
+      "fonte": "community-tokens"
     },
     "lobo-do-inverno": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wolf_warg_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wolf/Warg"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wolf-winter.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wolf, Winter",
+      "fonte": "community-tokens"
     },
     "lobo-terrivel": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wolf_warg_3_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wolf/Warg"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wolf-dire.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wolf, Dire",
+      "fonte": "community-tokens"
     },
     "magista": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/medium_nathan_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Medium Nathan"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/mage.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Mage",
+      "fonte": "community-tokens"
     },
     "mago-viperiano": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/reptilian_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Reptilian"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/viperian-wizard.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Viperian, Wizard",
+      "fonte": "community-tokens"
     },
     "mamute": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elephant_mamoth_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elephant Mamoth"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/mammoth.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Mammoth",
+      "fonte": "community-tokens"
     },
     "manticora": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/manticore_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Manticore"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/manticore.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Manticore",
+      "fonte": "community-tokens"
     },
     "manto-negro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/octopos_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Octopus"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/cloaker.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Cloaker",
+      "fonte": "community-tokens"
+    },
+    "mastim": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/mastiff.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Mastiff",
+      "fonte": "community-tokens"
     },
     "medusa": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/medusa_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Medusa"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/medusa.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Medusa",
+      "fonte": "community-tokens"
+    },
+    "mimico": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/mimic.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Mimic",
+      "fonte": "community-tokens"
     },
     "minotauro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/minotaur_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Minotaur"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/minotaur.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Minotaur",
+      "fonte": "community-tokens"
     },
     "monge-matrimpio": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/gith_4_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Githyanki"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Githyanki",
+      "fonte": "yst"
     },
     "monstro-da-ferrugem": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/rust_monster_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Rust monster"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rust-monster.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rust Monster",
+      "fonte": "community-tokens"
+    },
+    "monte-cambaleante": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/shambling-mound.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Shambling Mound",
+      "fonte": "community-tokens"
     },
     "morcego-de-piche": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/bat_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Bat"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Bat",
+      "fonte": "yst"
     },
     "morcego-do-vazio": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/bat_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Bat"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Bat",
+      "fonte": "yst"
     },
     "morcego-ferrao": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/09/stirge_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Stirge"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/stingbat.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Stingbat",
+      "fonte": "community-tokens"
     },
     "morcego-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bat_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/bat-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Bat, Giant",
+      "fonte": "community-tokens"
     },
     "morcegos": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bat_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/bat-swarm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Bat, Swarm",
+      "fonte": "community-tokens"
     },
     "mordanticus": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/mummy_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Mummy"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/mordanticus-the-flayed.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Mordanticus The Flayed",
+      "fonte": "community-tokens"
     },
     "mumia": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/mummy_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Mummy"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/mummy.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Mummy",
+      "fonte": "community-tokens"
     },
     "naga": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/snake_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Snake"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/naga.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Naga",
+      "fonte": "community-tokens"
     },
     "naga-ossea": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/snake_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Snake"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/naga-bone.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Naga, Bone",
+      "fonte": "community-tokens"
     },
     "ninfa-do-mar": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/nixie_2_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Nixie"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Nixie",
+      "fonte": "yst"
     },
     "nordico": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/nomad_2_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Nomad"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Nomad",
+      "fonte": "yst"
     },
     "o-mercador-errante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/merchant_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Merchant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/the-wandering-merchant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "The Wandering Merchant",
+      "fonte": "community-tokens"
     },
     "o-oraculo-de-dez-olhos": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/01/beholder_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Beholder"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/the-ten-eyed-oracle.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "The Ten-eyed Oracle",
+      "fonte": "community-tokens"
+    },
+    "o-tarrasque": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/the-tarrasque.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "The Tarrasque",
+      "fonte": "community-tokens"
+    },
+    "obe-ixx-de-azarumme": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/obe-ixx-of-azarumme.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Obe-ixx Of Azarumme",
+      "fonte": "community-tokens"
     },
     "ogro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ogre_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ogre"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ogre.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ogre",
+      "fonte": "community-tokens"
     },
     "oni": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ogre_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ogre"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/oni.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Oni",
+      "fonte": "community-tokens"
     },
     "orc": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/orc_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Orc"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/orc.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Orc",
+      "fonte": "community-tokens"
     },
     "orc-chefe": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/orc_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Orc"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/orc-chieftain.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Orc, Chieftain",
+      "fonte": "community-tokens"
     },
     "orca": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/whale_orca_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Whale Orca"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Whale Orca",
+      "fonte": "yst"
+    },
+    "otyugh": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/otyugh.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Otyugh",
+      "fonte": "community-tokens"
     },
     "pantera": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/cat_great_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Cat Great"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/panther.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Panther",
+      "fonte": "community-tokens"
+    },
+    "pegaso": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/pegasus.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Pegasus",
+      "fonte": "community-tokens"
     },
     "perseguidorinvisivel": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/invisible_stalker_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Invisible Stalker"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/invisible-stalker.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Invisible Stalker",
+      "fonte": "community-tokens"
+    },
+    "pesadelo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/nightmare.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Nightmare",
+      "fonte": "community-tokens"
+    },
+    "piranhas": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/piranha-swarm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Piranha, Swarm",
+      "fonte": "community-tokens"
     },
     "pirata": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/pirate_m_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Pirate"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/pirate.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Pirate",
+      "fonte": "community-tokens"
+    },
+    "plesiossauro": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/plesiosaurus.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Plesiosaurus",
+      "fonte": "community-tokens"
     },
     "polvo-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/octopos_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Octopus"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/octopus-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Octopus, Giant",
+      "fonte": "community-tokens"
     },
     "predador-de-cerebros": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/03/illithid_mind_flayer_5_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Illithid Mind Flayer"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/brain-eater.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Brain Eater",
+      "fonte": "community-tokens"
     },
     "profundo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/sahuagin_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Sahuagin"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/deep-one.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Deep One",
+      "fonte": "community-tokens"
+    },
+    "prole-do-vazio": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/void-spawn.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Void Spawn",
+      "fonte": "community-tokens"
     },
     "psion-matrimpio": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/gith_2_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Githyanki"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Githyanki",
+      "fonte": "yst"
+    },
+    "pterodactilo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/pterodactyl.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Pterodactyl",
+      "fonte": "community-tokens"
     },
     "pudim-negro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/black_pudding_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Black Pudding"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/black-pudding.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Black Pudding",
+      "fonte": "community-tokens"
     },
     "quimera": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/chimera_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Chimera"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/chimera.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Chimera",
+      "fonte": "community-tokens"
     },
     "rakshasa": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/rakshasa_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Rakshasa"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rakshasa.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rakshasa",
+      "fonte": "community-tokens"
     },
     "rastejador-de-caverna": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/carcass_carrion_crawler_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Carcass Carrion Crawler"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/cave-creeper.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Cave Creeper",
+      "fonte": "community-tokens"
     },
     "rathgamnon": {
-      "url": "https://youseethis.blog/wp-content/uploads/2026/07/cat_great_8_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Cat, great (Lion)"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rathgamnon.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rathgamnon",
+      "fonte": "community-tokens"
     },
     "rato": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/rat_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Rat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rat.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rat",
+      "fonte": "community-tokens"
     },
     "rato-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/rat_giant_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Rat, giant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rat-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rat, Giant",
+      "fonte": "community-tokens"
     },
     "rato-terrivel": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/rat_giant_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Rat, giant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rat-dire.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rat, Dire",
+      "fonte": "community-tokens"
     },
     "ratos": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/rat_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Rat"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rat-swarm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rat, Swarm",
+      "fonte": "community-tokens"
     },
     "recruta": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/fighter_shari_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Fighter Shari"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Fighter Shari",
+      "fonte": "yst"
+    },
+    "remorhaz": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/remorhaz.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Remorhaz",
+      "fonte": "community-tokens"
     },
     "rinoceronte": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/rhinoceros_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Rhinoceros"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/rhinoceros.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Rhinoceros",
+      "fonte": "community-tokens"
     },
     "roca": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/roc_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Roc"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/roc.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Roc",
+      "fonte": "community-tokens"
     },
     "sacerdote": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/12/acolyte_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Acolyte"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/priest.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Priest",
+      "fonte": "community-tokens"
     },
     "sacerdotisa-drow": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/elf_drow_morgana_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Elf Drow Morgana"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/drow-priestess.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Drow, Priestess",
+      "fonte": "community-tokens"
     },
     "sahuagin": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/sahuagin_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Sahuagin"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/sahuagin.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Sahuagin",
+      "fonte": "community-tokens"
     },
     "salamandra": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/reptilian_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Reptilian"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/salamander.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Salamander",
+      "fonte": "community-tokens"
     },
     "sanguessuga-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/leech_giant_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Leech Giant"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/leech-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Leech, Giant",
+      "fonte": "community-tokens"
     },
     "sapo-gigante": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/giant_frog_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Giant Frog"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/frog-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Frog, Giant",
+      "fonte": "community-tokens"
     },
     "saqueador": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bandit_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bandit"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/reaver.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Reaver",
+      "fonte": "community-tokens"
     },
     "sereia": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/merman_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Merman"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/siren.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Siren",
+      "fonte": "community-tokens"
     },
     "sereiano": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/merman_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Merman"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/merfolk.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Merfolk",
+      "fonte": "community-tokens"
     },
     "serpe": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wyvern_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wyvern"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wyvern.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wyvern",
+      "fonte": "community-tokens"
     },
     "serpente-marinha": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/snake_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Snake"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Snake",
+      "fonte": "yst"
     },
     "simio": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ape_white_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ape White"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ape.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ape",
+      "fonte": "community-tokens"
     },
     "simio-das-neves": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/ape_white_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Ape White"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/ape-snow.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Ape, Snow",
+      "fonte": "community-tokens"
     },
     "skrell": {
       "url": "https://youseethis.blog/wp-content/uploads/2026/01/hawk1_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Hawk"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Hawk",
+      "fonte": "yst"
     },
     "soldado": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/fighter_shari_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Fighter Shari"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/soldier.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Soldier",
+      "fonte": "community-tokens"
     },
     "sombra": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wraith_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wraith"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/shadow.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Shadow",
+      "fonte": "community-tokens"
+    },
+    "texugo": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/badger.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Badger",
+      "fonte": "community-tokens"
+    },
+    "tiranossauro": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/tyrannosaurus.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Tyrannosaurus",
+      "fonte": "community-tokens"
+    },
+    "triceratops": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/triceratops.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Triceratops",
+      "fonte": "community-tokens"
     },
     "troll": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/troll_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Troll"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/troll.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Troll",
+      "fonte": "community-tokens"
     },
     "troll-das-profundezas": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/troll_2_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Troll"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Troll",
+      "fonte": "yst"
     },
     "troll-de-gelo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/troll_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Troll"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/troll-frost.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Troll, Frost",
+      "fonte": "community-tokens"
+    },
+    "tubarao": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/shark.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Shark",
+      "fonte": "community-tokens"
+    },
+    "tubaraomegalodonte": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/shark-megalodon.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Shark, Megalodon",
+      "fonte": "community-tokens"
+    },
+    "uivante": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wight.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wight",
+      "fonte": "community-tokens"
+    },
+    "unicornio": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/unicorn.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Unicorn",
+      "fonte": "community-tokens"
     },
     "urso-coruja": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/owlbear_2_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Owlbear"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/owlbear.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Owlbear",
+      "fonte": "community-tokens"
     },
     "urso-pardo": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bear_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bear"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/bear-brown.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Bear, Brown",
+      "fonte": "community-tokens"
     },
     "urso-polar": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/bear_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Bear"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/bear-polar.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Bear, Polar",
+      "fonte": "community-tokens"
     },
     "vampiro": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/vampire_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Vampire Dee"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/vampire.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Vampire",
+      "fonte": "community-tokens"
+    },
+    "velociraptor": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/velociraptor.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Velociraptor",
+      "fonte": "community-tokens"
+    },
+    "verme-purpura": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/purple-worm.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Purple Worm",
+      "fonte": "community-tokens"
+    },
+    "vespa-gigante": {
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/wasp-giant.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Wasp, Giant",
+      "fonte": "community-tokens"
     },
     "viperiano": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/reptilian_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Reptilian"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/viperian.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Viperian",
+      "fonte": "community-tokens"
     },
     "viperiano-ofidico": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/reptilian_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Reptilian"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/viperian-ophid.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Viperian, Ophid",
+      "fonte": "community-tokens"
     },
     "worg": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/09/wolf_warg_1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Wolf/Warg"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/worg.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Worg",
+      "fonte": "community-tokens"
     },
     "zerth-matrimpio": {
       "url": "https://youseethis.blog/wp-content/uploads/2025/09/gith_1_fbb.png",
       "credito": "You see this.",
-      "rotulo": "Githyanki"
+      "creditoUrl": "https://youseethis.blog/tokens/",
+      "rotulo": "Githyanki",
+      "fonte": "yst"
     },
     "zumbi": {
-      "url": "https://youseethis.blog/wp-content/uploads/2025/10/zombie1_fbb.png",
-      "credito": "You see this.",
-      "rotulo": "Zombie1"
+      "url": "https://cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens@e6fb65df038781e9fe552107987a9cf128caeee3/artwork/tokens/zombie.webp",
+      "credito": "Shadowdark Community Tokens (Delgore)",
+      "creditoUrl": "https://foundryvtt.com/packages/shadowdark-community-tokens",
+      "rotulo": "Zombie",
+      "fonte": "community-tokens"
     }
   }
 }

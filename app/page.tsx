@@ -246,6 +246,14 @@ export default function Home() {
             incluir conteúdo de terceiros fora da Third-Party License (ex.
             tokens{" "}
             <a
+              href="https://foundryvtt.com/packages/shadowdark-community-tokens"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shadowdark Community Tokens
+            </a>
+            ; fallback{" "}
+            <a
               href="https://youseethis.blog/tokens/"
               target="_blank"
               rel="noopener noreferrer"

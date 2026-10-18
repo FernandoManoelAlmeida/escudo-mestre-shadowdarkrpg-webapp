@@ -40,9 +40,10 @@ export type AmeacasData = {
   ameacas: Criatura[];
 };
 
-/** Nome na listagem do bestiário (caixa alta, alinhado ao livro). */
-export function ameacaDisplayNome(nome: string): string {
-  return nome.toLocaleUpperCase("pt-BR");
+/** Nome na listagem/ficha do bestiário (caixa alta; inclui epíteto se houver). */
+export function ameacaDisplayNome(nome: string, epitet?: string): string {
+  const full = epitet?.trim() ? `${nome}, ${epitet.trim()}` : nome;
+  return full.toLocaleUpperCase("pt-BR");
 }
 
 export type OrdenarAmeacasPor = "nome" | "nv";

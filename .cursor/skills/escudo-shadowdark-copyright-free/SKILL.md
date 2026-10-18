@@ -57,7 +57,7 @@ Se o filtro actual **não** cobrir o caso:
 3. Testes unitários / UI da flag e do filtro.
 4. `yarn test:run`.
 
-Sidecar que sobrevive a migrate: `public/data/ameacas-tokens.json` (não embutir URL em `ameacas.json`).
+Sidecar que sobrevive a migrate: `public/data/ameacas-tokens.json` (Community Tokens primário + You See This fallback; regenerar com `yarn rebuild:ameacas-tokens`; não embutir URL em `ameacas.json`).
 
 ## 5. Verificação
 

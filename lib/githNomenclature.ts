@@ -113,7 +113,13 @@ export function mapCatalogoEntradaNomenclature<
 }
 
 export function mapTokenNomenclature<
-  T extends { url: string; credito?: string; rotulo?: string },
+  T extends {
+    url: string;
+    credito?: string;
+    creditoUrl?: string;
+    rotulo?: string;
+    fonte?: string;
+  },
 >(token: T): T {
   if (!token.rotulo) return token;
   return {

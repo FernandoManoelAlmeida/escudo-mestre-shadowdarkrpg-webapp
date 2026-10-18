@@ -29,6 +29,15 @@ describe("ameacaDisplayNome", () => {
   it("exibe nome em caixa alta pt-BR", () => {
     expect(ameacaDisplayNome("Criatura Teste")).toBe("CRIATURA TESTE");
   });
+
+  it("inclui epíteto após vírgula", () => {
+    expect(ameacaDisplayNome("Ratos", "Bando de")).toBe("RATOS, BANDO DE");
+  });
+
+  it("sem epíteto (ou vazio) mantém só o nome", () => {
+    expect(ameacaDisplayNome("Ratos")).toBe("RATOS");
+    expect(ameacaDisplayNome("Ratos", "  ")).toBe("RATOS");
+  });
 });
 
 describe("tipoParaListagem", () => {

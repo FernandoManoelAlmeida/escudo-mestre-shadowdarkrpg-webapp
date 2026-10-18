@@ -169,7 +169,7 @@ export default function AmeacasPage() {
       {list.map((c: Criatura) => (
         <Card key={c.id} href={`/ameacas/${c.id}`}>
           <CardHead>
-            <strong>{ameacaDisplayNome(c.nome)}</strong>
+            <strong>{ameacaDisplayNome(c.nome, c.epitet)}</strong>
             <OrigemBadge origem={c.origem} />
           </CardHead>
           <Meta>

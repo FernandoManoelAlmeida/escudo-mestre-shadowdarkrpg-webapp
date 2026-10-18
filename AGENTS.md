@@ -93,7 +93,7 @@ Docs: [`docs/desenvolvimento/integracao-hub-ttrpg.md`](docs/desenvolvimento/inte
 
 - Flag: `NEXT_PUBLIC_COPYRIGHT_FREE=1` — omite o que a [FAQ da Shadowdark RPG Third-Party License](https://www.thearcanelibrary.com/blogs/shadowdark-blog/faq-on-the-shadowdark-rpg-third-party-license) não cobre (arte de terceiros, Cursed Scroll, classes/tabelas/prosa de regras do core). Mantém monstro/magia/item do core, Astraldark/homebrew e UI própria.
 - Helper: `lib/copyrightFree.ts` (`isCopyrightFree`) + filtros em `lib/copyrightFreeFilter.ts`.
-- Tokens You See This: sidecar `public/data/ameacas-tokens.json` (sobrevive a `yarn migrate:from-fantasia`); só na ficha quando a flag está **off**.
+- Tokens de ameaças: sidecar `public/data/ameacas-tokens.json` (sobrevive a `yarn migrate:from-fantasia`); Community Tokens (Delgore) primário + You See This em fallback; regenerar com `node scripts/rebuild-ameacas-tokens.js`; só na ficha quando a flag está **off**.
 - Home: flag **on** → logo Creator Kit; flag **off** → wordmark «Shadowdark Mastershield» (JSL Blackletter em `public/fonts/`).
 - Ícones do app (home/header/PWA): KEEP nos dois builds (mesmos assets). Logo Spot Art grande continua GATE; Creator Kit na home só com flag on.
 - Com flag on, rotas sem conteúdo (tabelas, glossário, geradores) ficam ocultas na nav e redireccionam via `CopyrightFreeRouteGate`.

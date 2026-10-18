@@ -7,6 +7,7 @@ import {
   getAmeacas,
   getAmeacaById,
   fonteParaFicha,
+  ameacaDisplayNome,
   type Criatura,
 } from "@/lib/ameacas";
 import {
@@ -56,7 +57,7 @@ const RollBtn = styled.button`
   }
 `;
 
-const TokenFigure = styled.figure`
+const TokenFigure = styled.figure<{ $round?: boolean }>`
   margin: ${({ theme }) => theme.spacing.xl} 0 0;
   padding: 0;
   text-align: center;
@@ -67,6 +68,14 @@ const TokenFigure = styled.figure`
     max-width: 280px;
     height: auto;
     margin: 0 auto;
+    ${({ $round }) =>
+      $round
+        ? `
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+    `
+        : ""}
   }
 
   figcaption {
@@ -117,10 +126,7 @@ export function AmeacaDetailClient({ id }: Props) {
   return (
     <PageContainer>
       <HistoryBackLink href="/ameacas">← Bestiário</HistoryBackLink>
-      <h1>
-        {criatura.nome}
-        {criatura.epitet ? `, ${criatura.epitet}` : ""}
-      </h1>
+      <h1>{ameacaDisplayNome(criatura.nome, criatura.epitet)}</h1>
       <OrigemBadge origem={criatura.origem} />
       {fonteFicha && (
         <p style={{ opacity: 0.7, fontSize: "0.875rem" }}>{fonteFicha}</p>
@@ -160,7 +166,7 @@ export function AmeacaDetailClient({ id }: Props) {
         </Trait>
       ))}
       {showTokens && token && !tokenBroken && (
-        <TokenFigure>
+        <TokenFigure $round={token.fonte === "community-tokens"}>
           <img
             src={token.url}
             alt={token.rotulo ?? criatura.nome}
@@ -172,11 +178,14 @@ export function AmeacaDetailClient({ id }: Props) {
           <figcaption>
             Arte:{" "}
             <a
-              href="https://youseethis.blog/tokens/"
+              href={
+                token.creditoUrl ??
+                "https://foundryvtt.com/packages/shadowdark-community-tokens"
+              }
               target="_blank"
               rel="noopener noreferrer"
             >
-              {token.credito ?? "You see this."}
+              {token.credito ?? "Shadowdark Community Tokens"}
             </a>
           </figcaption>
         </TokenFigure>

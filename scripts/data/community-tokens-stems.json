@@ -1,0 +1,2454 @@
+{
+  "stems": {
+    "agarat": {
+      "nome": "Agarat",
+      "portrait": "monster24/portraits/agarat.webp",
+      "token": "monster24/tokens/agarat.webp"
+    },
+    "amm-bush": {
+      "nome": "Amm Bush",
+      "portrait": "monster24/portraits/amm-bush.webp",
+      "token": "monster24/tokens/amm-bush.webp"
+    },
+    "ammitang": {
+      "nome": "Ammitang",
+      "portrait": "monster24/portraits/ammitang.webp",
+      "token": "monster24/tokens/ammitang.webp"
+    },
+    "anaruk": {
+      "nome": "Anaruk",
+      "portrait": "monster24/portraits/anaruk.webp",
+      "token": "monster24/tokens/anaruk.webp"
+    },
+    "anzu": {
+      "nome": "Anzû",
+      "portrait": "monster24/portraits/anzu.webp",
+      "token": "monster24/tokens/anzu.webp"
+    },
+    "archer-bush": {
+      "nome": "Archer Bush",
+      "portrait": "monster24/portraits/archer-bush.webp",
+      "token": "monster24/tokens/archer-bush.webp"
+    },
+    "asp-men": {
+      "nome": "Asp-men",
+      "portrait": "monster24/portraits/asp-men.webp",
+      "token": "monster24/tokens/asp-men.webp"
+    },
+    "assassin-spider": {
+      "nome": "Assassin Spider",
+      "portrait": "monster24/portraits/assassin-spider.webp",
+      "token": "monster24/tokens/assassin-spider.webp"
+    },
+    "babbler": {
+      "nome": "Babbler",
+      "portrait": "monster24/portraits/babbler.webp",
+      "token": "monster24/tokens/babbler.webp"
+    },
+    "banshee": {
+      "nome": "Banshee",
+      "portrait": "monster24/portraits/banshee.webp",
+      "token": "monster24/tokens/banshee.webp"
+    },
+    "berbalang": {
+      "nome": "Berbalang",
+      "portrait": "monster24/portraits/berbalang.webp",
+      "token": "monster24/tokens/berbalang.webp"
+    },
+    "biters": {
+      "nome": "Biters",
+      "portrait": "monster24/portraits/biters.webp",
+      "token": "monster24/tokens/biters.webp"
+    },
+    "black-stele": {
+      "nome": "Black Stele",
+      "portrait": "monster24/portraits/black-stele.webp",
+      "token": "monster24/tokens/black-stele.webp"
+    },
+    "blemmyes": {
+      "nome": "Blemmyes",
+      "portrait": "monster24/portraits/blemmyes.webp",
+      "token": "monster24/tokens/blemmyes.webp"
+    },
+    "blood-orchid": {
+      "nome": "Blood Orchid",
+      "portrait": "monster24/portraits/blood-orchid.webp",
+      "token": "monster24/tokens/blood-orchid.webp"
+    },
+    "blood-vine": {
+      "nome": "Blood Vine",
+      "portrait": "monster24/portraits/blood-vine.webp",
+      "token": "monster24/tokens/blood-vine.webp"
+    },
+    "bloodbird": {
+      "nome": "Bloodbird",
+      "portrait": "monster24/portraits/bloodbird.webp",
+      "token": "monster24/tokens/bloodbird.webp"
+    },
+    "bloodwing": {
+      "nome": "Bloodwing",
+      "portrait": "monster24/portraits/bloodwing.webp",
+      "token": "monster24/tokens/bloodwing.webp"
+    },
+    "bloody-bones": {
+      "nome": "Bloody Bones",
+      "portrait": "monster24/portraits/bloody-bones.webp",
+      "token": "monster24/tokens/bloody-bones.webp"
+    },
+    "boarhound": {
+      "nome": "Boarhound",
+      "portrait": "monster24/portraits/boarhound.webp",
+      "token": "monster24/tokens/boarhound.webp"
+    },
+    "bone-devil": {
+      "nome": "Bone Devil",
+      "portrait": "monster24/portraits/bone-devil.webp",
+      "token": "monster24/tokens/bone-devil.webp"
+    },
+    "boneguard": {
+      "nome": "Boneguard",
+      "portrait": "monster24/portraits/boneguard.webp",
+      "token": "monster24/tokens/boneguard.webp"
+    },
+    "broodling": {
+      "nome": "Broodling",
+      "portrait": "monster24/portraits/broodling.webp",
+      "token": "monster24/tokens/broodling.webp"
+    },
+    "bugbear": {
+      "nome": "Bugbear",
+      "portrait": "artwork/portraits/bugbear.webp",
+      "token": "artwork/tokens/bugbear.webp"
+    },
+    "byakhee": {
+      "nome": "Byakhee",
+      "portrait": "monster24/portraits/byakhee.webp",
+      "token": "monster24/tokens/byakhee.webp"
+    },
+    "candle-wight": {
+      "nome": "Candle Wight",
+      "portrait": "monster24/portraits/candle-wight.webp",
+      "token": "monster24/tokens/candle-wight.webp"
+    },
+    "carcinid": {
+      "nome": "Carcinid",
+      "portrait": "monster24/portraits/carcinid.webp",
+      "token": "monster24/tokens/carcinid.webp"
+    },
+    "carnivorous-cave-moss": {
+      "nome": "Carnivorous Cave Moss",
+      "portrait": "monster24/portraits/carnivorous-cave-moss.webp",
+      "token": "monster24/tokens/carnivorous-cave-moss.webp"
+    },
+    "carnivorous-frog": {
+      "nome": "Carnivorous Frog",
+      "portrait": "monster24/portraits/carnivorous-frog.webp",
+      "token": "monster24/tokens/carnivorous-frog.webp"
+    },
+    "carnivorous-tumor": {
+      "nome": "Carnivorous Tumor",
+      "portrait": "monster24/portraits/carnivorous-tumor.webp",
+      "token": "monster24/tokens/carnivorous-tumor.webp"
+    },
+    "cat-sith": {
+      "nome": "Cat-sith",
+      "portrait": "monster24/portraits/cat-sith.webp",
+      "token": "monster24/tokens/cat-sith.webp"
+    },
+    "catoblepas": {
+      "nome": "Catoblepas",
+      "portrait": "monster24/portraits/catoblepas.webp",
+      "token": "monster24/tokens/catoblepas.webp"
+    },
+    "cecaelar": {
+      "nome": "Cecaelar",
+      "portrait": "monster24/portraits/cecaelar.webp",
+      "token": "monster24/tokens/cecaelar.webp"
+    },
+    "chain-devil": {
+      "nome": "Chain Devil",
+      "portrait": "monster24/portraits/chain-devil.webp",
+      "token": "monster24/tokens/chain-devil.webp"
+    },
+    "chaos-beast": {
+      "nome": "Chaos Beast",
+      "portrait": "monster24/portraits/chaos-beast.webp",
+      "token": "monster24/tokens/chaos-beast.webp"
+    },
+    "chaos-pudding": {
+      "nome": "Chaos Pudding",
+      "portrait": "monster24/portraits/chaos-pudding.webp",
+      "token": "monster24/tokens/chaos-pudding.webp"
+    },
+    "chest-lurker": {
+      "nome": "Chest Lurker",
+      "portrait": "monster24/portraits/chest-lurker.webp",
+      "token": "monster24/tokens/chest-lurker.webp"
+    },
+    "chon-chon": {
+      "nome": "Chon-chon",
+      "portrait": "monster24/portraits/chon-chon.webp",
+      "token": "monster24/tokens/chon-chon.webp"
+    },
+    "chromatic-stalker": {
+      "nome": "Chromatic Stalker",
+      "portrait": "monster24/portraits/chromatic-stalker.webp",
+      "token": "monster24/tokens/chromatic-stalker.webp"
+    },
+    "chupacabra": {
+      "nome": "Chupacabra",
+      "portrait": "monster24/portraits/chupacabra.webp",
+      "token": "monster24/tokens/chupacabra.webp"
+    },
+    "cinderbones": {
+      "nome": "Cinderbones",
+      "portrait": "monster24/portraits/cinderbones.webp",
+      "token": "monster24/tokens/cinderbones.webp"
+    },
+    "cooshee": {
+      "nome": "Cooshee",
+      "portrait": "monster24/portraits/cooshee.webp",
+      "token": "monster24/tokens/cooshee.webp"
+    },
+    "crag-crawler": {
+      "nome": "Crag Crawler",
+      "portrait": "monster24/portraits/crag-crawler.webp",
+      "token": "monster24/tokens/crag-crawler.webp"
+    },
+    "cragbeak": {
+      "nome": "Cragbeak",
+      "portrait": "monster24/portraits/cragbeak.webp",
+      "token": "monster24/tokens/cragbeak.webp"
+    },
+    "crawling-giant": {
+      "nome": "Crawling Giant",
+      "portrait": "monster24/portraits/crawling-giant.webp",
+      "token": "monster24/tokens/crawling-giant.webp"
+    },
+    "creeping-head": {
+      "nome": "Creeping Head",
+      "portrait": "monster24/portraits/creeping-head.webp",
+      "token": "monster24/tokens/creeping-head.webp"
+    },
+    "curserot-shambler": {
+      "nome": "Curserot Shambler",
+      "portrait": "monster24/portraits/curserot-shambler.webp",
+      "token": "monster24/tokens/curserot-shambler.webp"
+    },
+    "dark-young-of-shub-niggurath": {
+      "nome": "Dark Young Of Shub-Niggurath",
+      "portrait": "monster24/portraits/dark-young-of-shub-niggurath.webp",
+      "token": "monster24/tokens/dark-young-of-shub-niggurath.webp"
+    },
+    "death-dog": {
+      "nome": "Death Dog",
+      "portrait": "monster24/portraits/death-dog.webp",
+      "token": "monster24/tokens/death-dog.webp"
+    },
+    "death-knight": {
+      "nome": "Death Knight",
+      "portrait": "monster24/portraits/death-knight.webp",
+      "token": "monster24/tokens/death-knight.webp"
+    },
+    "death-shroud": {
+      "nome": "Death Shroud",
+      "portrait": "monster24/portraits/death-shroud.webp",
+      "token": "monster24/tokens/death-shroud.webp"
+    },
+    "demon-toad": {
+      "nome": "Demon Toad",
+      "portrait": "monster24/portraits/demon-toad.webp",
+      "token": "monster24/tokens/demon-toad.webp"
+    },
+    "devil-swine": {
+      "nome": "Devil-swine",
+      "portrait": "monster24/portraits/devil-swine.webp",
+      "token": "monster24/tokens/devil-swine.webp"
+    },
+    "dire-baboon": {
+      "nome": "Dire Baboon",
+      "portrait": "monster24/portraits/dire-baboon.webp",
+      "token": "monster24/tokens/dire-baboon.webp"
+    },
+    "dire-sloth": {
+      "nome": "Dire Sloth",
+      "portrait": "monster24/portraits/dire-sloth.webp",
+      "token": "monster24/tokens/dire-sloth.webp"
+    },
+    "dirt-wight": {
+      "nome": "Dirt Wight",
+      "portrait": "monster24/portraits/dirt-wight.webp",
+      "token": "monster24/tokens/dirt-wight.webp"
+    },
+    "drowned-man": {
+      "nome": "Drowned Man",
+      "portrait": "monster24/portraits/drowned-man.webp",
+      "token": "monster24/tokens/drowned-man.webp"
+    },
+    "ebon-mist": {
+      "nome": "Ebon Mist",
+      "portrait": "monster24/portraits/ebon-mist.webp",
+      "token": "monster24/tokens/ebon-mist.webp"
+    },
+    "erlking": {
+      "nome": "Erlking",
+      "portrait": "monster24/portraits/erlking.webp",
+      "token": "monster24/tokens/erlking.webp"
+    },
+    "eye-of-fear-and-flame": {
+      "nome": "Eye Of Fear And Flame",
+      "portrait": "monster24/portraits/eye-of-fear-and-flame.webp",
+      "token": "monster24/tokens/eye-of-fear-and-flame.webp"
+    },
+    "eye-biter": {
+      "nome": "Eye-biter",
+      "portrait": "monster24/portraits/eye-biter.webp",
+      "token": "monster24/tokens/eye-biter.webp"
+    },
+    "eye-fang": {
+      "nome": "Eye-fang",
+      "portrait": "monster24/portraits/eye-fang.webp",
+      "token": "monster24/tokens/eye-fang.webp"
+    },
+    "faun": {
+      "nome": "Faun",
+      "portrait": "monster24/portraits/faun.webp",
+      "token": "monster24/tokens/faun.webp"
+    },
+    "fennur": {
+      "nome": "Fennúr",
+      "portrait": "monster24/portraits/fennur.webp",
+      "token": "monster24/tokens/fennur.webp"
+    },
+    "feral-foetus": {
+      "nome": "Feral Foetus",
+      "portrait": "monster24/portraits/feral-foetus.webp",
+      "token": "monster24/tokens/feral-foetus.webp"
+    },
+    "firbolg": {
+      "nome": "Firbolg",
+      "portrait": "monster24/portraits/firbolg.webp",
+      "token": "monster24/tokens/firbolg.webp"
+    },
+    "flumph": {
+      "nome": "Flumph",
+      "portrait": "monster24/portraits/flumph.webp",
+      "token": "monster24/tokens/flumph.webp"
+    },
+    "flygar": {
+      "nome": "Flygar",
+      "portrait": "monster24/portraits/flygar.webp",
+      "token": "monster24/tokens/flygar.webp"
+    },
+    "frawg": {
+      "nome": "Frawg",
+      "portrait": "monster24/portraits/frawg.webp",
+      "token": "monster24/tokens/frawg.webp"
+    },
+    "frost-spider": {
+      "nome": "Frost Spider",
+      "portrait": "monster24/portraits/frost-spider.webp",
+      "token": "monster24/tokens/frost-spider.webp"
+    },
+    "fungal-stalker": {
+      "nome": "Fungal Stalker",
+      "portrait": "monster24/portraits/fungal-stalker.webp",
+      "token": "monster24/tokens/fungal-stalker.webp"
+    },
+    "gaal-giant-bred": {
+      "nome": "Gaal, Giant-bred",
+      "portrait": "monster24/portraits/gaal-giant-bred.webp",
+      "token": "monster24/tokens/gaal-giant-bred.webp"
+    },
+    "gaal-man-bred": {
+      "nome": "Gaal, Man-bred",
+      "portrait": "monster24/portraits/gaal-man-bred.webp",
+      "token": "monster24/tokens/gaal-man-bred.webp"
+    },
+    "gaal-ogre-bred": {
+      "nome": "Gaal, Ogre-bred",
+      "portrait": "monster24/portraits/gaal-ogre-bred.webp",
+      "token": "monster24/tokens/gaal-ogre-bred.webp"
+    },
+    "garmagr": {
+      "nome": "Garmagr",
+      "portrait": "monster24/portraits/garmagr.webp",
+      "token": "monster24/tokens/garmagr.webp"
+    },
+    "gauntlings": {
+      "nome": "Gauntlings",
+      "portrait": "monster24/portraits/gauntlings.webp",
+      "token": "monster24/tokens/gauntlings.webp"
+    },
+    "gbahali": {
+      "nome": "Gbahali",
+      "portrait": "monster24/portraits/gbahali.webp",
+      "token": "monster24/tokens/gbahali.webp"
+    },
+    "gelatinous-sphere": {
+      "nome": "Gelatinous Sphere",
+      "portrait": "monster24/portraits/gelatinous-sphere.webp",
+      "token": "monster24/tokens/gelatinous-sphere.webp"
+    },
+    "ghost": {
+      "nome": "Ghost",
+      "portrait": "artwork/portraits/ghost.webp",
+      "token": "artwork/tokens/ghost.webp"
+    },
+    "ghost-eel-swarm": {
+      "nome": "Ghost Eel Swarm",
+      "portrait": "monster24/portraits/ghost-eel-swarm.webp",
+      "token": "monster24/tokens/ghost-eel-swarm.webp"
+    },
+    "ghost-spider": {
+      "nome": "Ghost Spider",
+      "portrait": "monster24/portraits/ghost-spider.webp",
+      "token": "monster24/tokens/ghost-spider.webp"
+    },
+    "ghoul-men": {
+      "nome": "Ghoul-men",
+      "portrait": "monster24/portraits/ghoul-men.webp",
+      "token": "monster24/tokens/ghoul-men.webp"
+    },
+    "ghoulspawn-hydra": {
+      "nome": "Ghoulspawn Hydra",
+      "portrait": "monster24/portraits/ghoulspawn-hydra.webp",
+      "token": "monster24/tokens/ghoulspawn-hydra.webp"
+    },
+    "giant-cockroach": {
+      "nome": "Giant Cockroach",
+      "portrait": "monster24/portraits/giant-cockroach.webp",
+      "token": "monster24/tokens/giant-cockroach.webp"
+    },
+    "giant-earwig": {
+      "nome": "Giant Earwig",
+      "portrait": "monster24/portraits/giant-earwig.webp",
+      "token": "monster24/tokens/giant-earwig.webp"
+    },
+    "giant-eel-bat": {
+      "nome": "Giant Eel-bat",
+      "portrait": "monster24/portraits/giant-eel-bat.webp",
+      "token": "monster24/tokens/giant-eel-bat.webp"
+    },
+    "giant-skull-creeper": {
+      "nome": "Giant Skull Creeper",
+      "portrait": "monster24/portraits/giant-skull-creeper.webp",
+      "token": "monster24/tokens/giant-skull-creeper.webp"
+    },
+    "giant-tick": {
+      "nome": "Giant Tick",
+      "portrait": "monster24/portraits/giant-tick.webp",
+      "token": "monster24/tokens/giant-tick.webp"
+    },
+    "giant-ash": {
+      "nome": "Giant, Ash",
+      "portrait": "monster24/portraits/giant-ash.webp",
+      "token": "monster24/tokens/giant-ash.webp"
+    },
+    "giant-bonegrinder": {
+      "nome": "Giant, Bonegrinder",
+      "portrait": "monster24/portraits/giant-bonegrinder.webp",
+      "token": "monster24/tokens/giant-bonegrinder.webp"
+    },
+    "giant-chaos": {
+      "nome": "Giant, Chaos",
+      "portrait": "monster24/portraits/giant-chaos.webp",
+      "token": "monster24/tokens/giant-chaos.webp"
+    },
+    "giant-fen": {
+      "nome": "Giant, Fen",
+      "portrait": "monster24/portraits/giant-fen.webp",
+      "token": "monster24/tokens/giant-fen.webp"
+    },
+    "giant-primordial": {
+      "nome": "Giant, Primordial",
+      "portrait": "monster24/portraits/giant-primordial.webp",
+      "token": "monster24/tokens/giant-primordial.webp"
+    },
+    "gjenganger": {
+      "nome": "Gjenganger",
+      "portrait": "monster24/portraits/gjenganger.webp",
+      "token": "monster24/tokens/gjenganger.webp"
+    },
+    "glashtyn": {
+      "nome": "Glashtyn",
+      "portrait": "monster24/portraits/glashtyn.webp",
+      "token": "monster24/tokens/glashtyn.webp"
+    },
+    "goblin": {
+      "nome": "Goblin",
+      "portrait": "artwork/portraits/goblin.webp",
+      "token": "artwork/tokens/goblin.webp"
+    },
+    "goblin-chieftain": {
+      "nome": "Goblin Chieftain",
+      "portrait": "monster24/portraits/goblin-chieftain.webp",
+      "token": "monster24/tokens/goblin-chieftain.webp"
+    },
+    "goblin-gnawling": {
+      "nome": "Goblin Gnawling",
+      "portrait": "monster24/portraits/goblin-gnawling.webp",
+      "token": "monster24/tokens/goblin-gnawling.webp"
+    },
+    "goblin-wizard": {
+      "nome": "Goblin Wizard",
+      "portrait": "monster24/portraits/goblin-wizard.webp",
+      "token": "monster24/tokens/goblin-wizard.webp"
+    },
+    "goblin-great": {
+      "nome": "Goblin, Great",
+      "portrait": "monster24/portraits/goblin-great.webp",
+      "token": "monster24/tokens/goblin-great.webp"
+    },
+    "graun": {
+      "nome": "Graun",
+      "portrait": "monster24/portraits/graun.webp",
+      "token": "monster24/tokens/graun.webp"
+    },
+    "grell": {
+      "nome": "Grell",
+      "portrait": "monster24/portraits/grell.webp",
+      "token": "monster24/tokens/grell.webp"
+    },
+    "grootslang": {
+      "nome": "Grootslang",
+      "portrait": "monster24/portraits/grootslang.webp",
+      "token": "monster24/tokens/grootslang.webp"
+    },
+    "gryla": {
+      "nome": "Grýla",
+      "portrait": "monster24/portraits/gryla.webp",
+      "token": "monster24/tokens/gryla.webp"
+    },
+    "gug": {
+      "nome": "Gug",
+      "portrait": "monster24/portraits/gug.webp",
+      "token": "monster24/tokens/gug.webp"
+    },
+    "gut-spider": {
+      "nome": "Gut Spider",
+      "portrait": "monster24/portraits/gut-spider.webp",
+      "token": "monster24/tokens/gut-spider.webp"
+    },
+    "hag-serpent": {
+      "nome": "Hag Serpent",
+      "portrait": "monster24/portraits/hag-serpent.webp",
+      "token": "monster24/tokens/hag-serpent.webp"
+    },
+    "hag-annis": {
+      "nome": "Hag, Annis",
+      "portrait": "monster24/portraits/hag-annis.webp",
+      "token": "monster24/tokens/hag-annis.webp"
+    },
+    "hag-blood": {
+      "nome": "Hag, Blood",
+      "portrait": "monster24/portraits/hag-blood.webp",
+      "token": "monster24/tokens/hag-blood.webp"
+    },
+    "hag-cave": {
+      "nome": "Hag, Cave",
+      "portrait": "monster24/portraits/hag-cave.webp",
+      "token": "monster24/tokens/hag-cave.webp"
+    },
+    "hag-forest": {
+      "nome": "Hag, Forest",
+      "portrait": "monster24/portraits/hag-forest.webp",
+      "token": "monster24/tokens/hag-forest.webp"
+    },
+    "hag-marsh": {
+      "nome": "Hag, Marsh",
+      "portrait": "monster24/portraits/hag-marsh.webp",
+      "token": "monster24/tokens/hag-marsh.webp"
+    },
+    "hag-moon": {
+      "nome": "Hag, Moon",
+      "portrait": "monster24/portraits/hag-moon.webp",
+      "token": "monster24/tokens/hag-moon.webp"
+    },
+    "hag-sand": {
+      "nome": "Hag, Sand",
+      "portrait": "monster24/portraits/hag-sand.webp",
+      "token": "monster24/tokens/hag-sand.webp"
+    },
+    "hag-storm": {
+      "nome": "Hag, Storm",
+      "portrait": "monster24/portraits/hag-storm.webp",
+      "token": "monster24/tokens/hag-storm.webp"
+    },
+    "hag-tomb": {
+      "nome": "Hag, Tomb",
+      "portrait": "monster24/portraits/hag-tomb.webp",
+      "token": "monster24/tokens/hag-tomb.webp"
+    },
+    "hag-venom": {
+      "nome": "Hag, Venom",
+      "portrait": "monster24/portraits/hag-venom.webp",
+      "token": "monster24/tokens/hag-venom.webp"
+    },
+    "hag-void": {
+      "nome": "Hag, Void",
+      "portrait": "monster24/portraits/hag-void.webp",
+      "token": "monster24/tokens/hag-void.webp"
+    },
+    "hag-winter": {
+      "nome": "Hag, Winter",
+      "portrait": "monster24/portraits/hag-winter.webp",
+      "token": "monster24/tokens/hag-winter.webp"
+    },
+    "hand-of-ecnaa'zhass": {
+      "nome": "Hand Of Ecnaa'zhass",
+      "portrait": "monster24/portraits/hand-of-ecnaa'zhass.webp",
+      "token": "monster24/tokens/hand-of-ecnaa'zhass.webp"
+    },
+    "hell-bird": {
+      "nome": "Hell Bird",
+      "portrait": "monster24/portraits/hell-bird.webp",
+      "token": "monster24/tokens/hell-bird.webp"
+    },
+    "hollow-man": {
+      "nome": "Hollow Man",
+      "portrait": "monster24/portraits/hollow-man.webp",
+      "token": "monster24/tokens/hollow-man.webp"
+    },
+    "huecuva": {
+      "nome": "Huecuva",
+      "portrait": "monster24/portraits/huecuva.webp",
+      "token": "monster24/tokens/huecuva.webp"
+    },
+    "hutakaan": {
+      "nome": "Hutakaan",
+      "portrait": "monster24/portraits/hutakaan.webp",
+      "token": "monster24/tokens/hutakaan.webp"
+    },
+    "impundulu": {
+      "nome": "Impundulu",
+      "portrait": "monster24/portraits/impundulu.webp",
+      "token": "monster24/tokens/impundulu.webp"
+    },
+    "intellect-devourer": {
+      "nome": "Intellect Devourer",
+      "portrait": "monster24/portraits/intellect-devourer.webp",
+      "token": "monster24/tokens/intellect-devourer.webp"
+    },
+    "inverted-angel": {
+      "nome": "Inverted Angel",
+      "portrait": "monster24/portraits/inverted-angel.webp",
+      "token": "monster24/tokens/inverted-angel.webp"
+    },
+    "iron-gargoyle": {
+      "nome": "Iron Gargoyle",
+      "portrait": "monster24/portraits/iron-gargoyle.webp",
+      "token": "monster24/tokens/iron-gargoyle.webp"
+    },
+    "jackalwere": {
+      "nome": "Jackalwere",
+      "portrait": "monster24/portraits/jackalwere.webp",
+      "token": "monster24/tokens/jackalwere.webp"
+    },
+    "kraitak": {
+      "nome": "Kraitak",
+      "portrait": "monster24/portraits/kraitak.webp",
+      "token": "monster24/tokens/kraitak.webp"
+    },
+    "lasher-jelly": {
+      "nome": "Lasher Jelly",
+      "portrait": "monster24/portraits/lasher-jelly.webp",
+      "token": "monster24/tokens/lasher-jelly.webp"
+    },
+    "leucrotta": {
+      "nome": "Leucrotta",
+      "portrait": "monster24/portraits/leucrotta.webp",
+      "token": "monster24/tokens/leucrotta.webp"
+    },
+    "lurker-in-darkness": {
+      "nome": "Lurker In Darkness",
+      "portrait": "monster24/portraits/lurker-in-darkness.webp",
+      "token": "monster24/tokens/lurker-in-darkness.webp"
+    },
+    "maalgrit": {
+      "nome": "Maalgrit",
+      "portrait": "monster24/portraits/maalgrit.webp",
+      "token": "monster24/tokens/maalgrit.webp"
+    },
+    "masked-magi": {
+      "nome": "Masked Magi",
+      "portrait": "monster24/portraits/masked-magi.webp",
+      "token": "monster24/tokens/masked-magi.webp"
+    },
+    "meat-cube": {
+      "nome": "Meat Cube",
+      "portrait": "monster24/portraits/meat-cube.webp",
+      "token": "monster24/tokens/meat-cube.webp"
+    },
+    "mireclaw": {
+      "nome": "Mireclaw",
+      "portrait": "monster24/portraits/mireclaw.webp",
+      "token": "monster24/tokens/mireclaw.webp"
+    },
+    "mngwa": {
+      "nome": "Mngwa",
+      "portrait": "monster24/portraits/mngwa.webp",
+      "token": "monster24/tokens/mngwa.webp"
+    },
+    "molten-weird": {
+      "nome": "Molten Weird",
+      "portrait": "monster24/portraits/molten-weird.webp",
+      "token": "monster24/tokens/molten-weird.webp"
+    },
+    "moth-knight": {
+      "nome": "Moth Knight",
+      "portrait": "monster24/portraits/moth-knight.webp",
+      "token": "monster24/tokens/moth-knight.webp"
+    },
+    "myling": {
+      "nome": "Myling",
+      "portrait": "monster24/portraits/myling.webp",
+      "token": "monster24/tokens/myling.webp"
+    },
+    "niflundur": {
+      "nome": "Niflundur",
+      "portrait": "monster24/portraits/niflundur.webp",
+      "token": "monster24/tokens/niflundur.webp"
+    },
+    "nightshrieker": {
+      "nome": "Nightshrieker",
+      "portrait": "monster24/portraits/nightshrieker.webp",
+      "token": "monster24/tokens/nightshrieker.webp"
+    },
+    "nock": {
+      "nome": "Nöck",
+      "portrait": "monster24/portraits/nock.webp",
+      "token": "monster24/tokens/nock.webp"
+    },
+    "nosferatu": {
+      "nome": "Nosferatu",
+      "portrait": "monster24/portraits/nosferatu.webp",
+      "token": "monster24/tokens/nosferatu.webp"
+    },
+    "ooze-marrow": {
+      "nome": "Ooze, Marrow",
+      "portrait": "monster24/portraits/ooze-marrow.webp",
+      "token": "monster24/tokens/ooze-marrow.webp"
+    },
+    "ooze-spellfire": {
+      "nome": "Ooze, Spellfire",
+      "portrait": "monster24/portraits/ooze-spellfire.webp",
+      "token": "monster24/tokens/ooze-spellfire.webp"
+    },
+    "ooze-spellgorger": {
+      "nome": "Ooze, Spellgorger",
+      "portrait": "monster24/portraits/ooze-spellgorger.webp",
+      "token": "monster24/tokens/ooze-spellgorger.webp"
+    },
+    "overseer": {
+      "nome": "Overseer",
+      "portrait": "monster24/portraits/overseer.webp",
+      "token": "monster24/tokens/overseer.webp"
+    },
+    "pard": {
+      "nome": "Pard",
+      "portrait": "monster24/portraits/pard.webp",
+      "token": "monster24/tokens/pard.webp"
+    },
+    "penanggalan": {
+      "nome": "Penanggalan",
+      "portrait": "monster24/portraits/penanggalan.webp",
+      "token": "monster24/tokens/penanggalan.webp"
+    },
+    "peryton": {
+      "nome": "Peryton",
+      "portrait": "monster24/portraits/peryton.webp",
+      "token": "monster24/tokens/peryton.webp"
+    },
+    "piercer": {
+      "nome": "Piercer",
+      "portrait": "monster24/portraits/piercer.webp",
+      "token": "monster24/tokens/piercer.webp"
+    },
+    "pine-blight": {
+      "nome": "Pine Blight",
+      "portrait": "monster24/portraits/pine-blight.webp",
+      "token": "monster24/tokens/pine-blight.webp"
+    },
+    "piranha-bird": {
+      "nome": "Piranha Bird",
+      "portrait": "monster24/portraits/piranha-bird.webp",
+      "token": "monster24/tokens/piranha-bird.webp"
+    },
+    "piranhadon": {
+      "nome": "Piranhadon",
+      "portrait": "monster24/portraits/piranhadon.webp",
+      "token": "monster24/tokens/piranhadon.webp"
+    },
+    "poltergeist": {
+      "nome": "Poltergeist",
+      "portrait": "monster24/portraits/poltergeist.webp",
+      "token": "monster24/tokens/poltergeist.webp"
+    },
+    "pontianak": {
+      "nome": "Pontianak",
+      "portrait": "monster24/portraits/pontianak.webp",
+      "token": "monster24/tokens/pontianak.webp"
+    },
+    "prayer-corpse": {
+      "nome": "Prayer Corpse",
+      "portrait": "monster24/portraits/prayer-corpse.webp",
+      "token": "monster24/tokens/prayer-corpse.webp"
+    },
+    "pseudodragon": {
+      "nome": "Pseudodragon",
+      "portrait": "monster24/portraits/pseudodragon.webp",
+      "token": "monster24/tokens/pseudodragon.webp"
+    },
+    "qilin": {
+      "nome": "Qilin",
+      "portrait": "monster24/portraits/qilin.webp",
+      "token": "monster24/tokens/qilin.webp"
+    },
+    "rat-thing": {
+      "nome": "Rat-thing",
+      "portrait": "monster24/portraits/rat-thing.webp",
+      "token": "monster24/tokens/rat-thing.webp"
+    },
+    "redcap": {
+      "nome": "Redcap",
+      "portrait": "monster24/portraits/redcap.webp",
+      "token": "monster24/tokens/redcap.webp"
+    },
+    "root-thing": {
+      "nome": "Root Thing",
+      "portrait": "monster24/portraits/root-thing.webp",
+      "token": "monster24/tokens/root-thing.webp"
+    },
+    "sand-squid": {
+      "nome": "Sand Squid",
+      "portrait": "monster24/portraits/sand-squid.webp",
+      "token": "monster24/tokens/sand-squid.webp"
+    },
+    "scarlet-death-adder": {
+      "nome": "Scarlet Death Adder",
+      "portrait": "monster24/portraits/scarlet-death-adder.webp",
+      "token": "monster24/tokens/scarlet-death-adder.webp"
+    },
+    "scorpion-man": {
+      "nome": "Scorpion-man",
+      "portrait": "monster24/portraits/scorpion-man.webp",
+      "token": "monster24/tokens/scorpion-man.webp"
+    },
+    "screamer": {
+      "nome": "Screamer",
+      "portrait": "monster24/portraits/screamer.webp",
+      "token": "monster24/tokens/screamer.webp"
+    },
+    "sewer-conger": {
+      "nome": "Sewer Conger",
+      "portrait": "monster24/portraits/sewer-conger.webp",
+      "token": "monster24/tokens/sewer-conger.webp"
+    },
+    "shambleman": {
+      "nome": "Shambleman",
+      "portrait": "monster24/portraits/shambleman.webp",
+      "token": "monster24/tokens/shambleman.webp"
+    },
+    "skeleton-warrior": {
+      "nome": "Skeleton Warrior",
+      "portrait": "monster24/portraits/skeleton-warrior.webp",
+      "token": "monster24/tokens/skeleton-warrior.webp"
+    },
+    "skin-stealer": {
+      "nome": "Skin-stealer",
+      "portrait": "monster24/portraits/skin-stealer.webp",
+      "token": "monster24/tokens/skin-stealer.webp"
+    },
+    "skull-creeper": {
+      "nome": "Skull Creeper",
+      "portrait": "monster24/portraits/skull-creeper.webp",
+      "token": "monster24/tokens/skull-creeper.webp"
+    },
+    "skull-taker-owl": {
+      "nome": "Skull-taker Owl",
+      "portrait": "monster24/portraits/skull-taker-owl.webp",
+      "token": "monster24/tokens/skull-taker-owl.webp"
+    },
+    "slaughterhound": {
+      "nome": "Slaughterhound",
+      "portrait": "monster24/portraits/slaughterhound.webp",
+      "token": "monster24/tokens/slaughterhound.webp"
+    },
+    "slime-lord": {
+      "nome": "Slime Lord",
+      "portrait": "monster24/portraits/slime-lord.webp",
+      "token": "monster24/tokens/slime-lord.webp"
+    },
+    "slime-bubble": {
+      "nome": "Slime, Bubble",
+      "portrait": "monster24/portraits/slime-bubble.webp",
+      "token": "monster24/tokens/slime-bubble.webp"
+    },
+    "slime-cadaver": {
+      "nome": "Slime, Cadaver",
+      "portrait": "monster24/portraits/slime-cadaver.webp",
+      "token": "monster24/tokens/slime-cadaver.webp"
+    },
+    "slime-green": {
+      "nome": "Slime, Green",
+      "portrait": "monster24/portraits/slime-green.webp",
+      "token": "monster24/tokens/slime-green.webp"
+    },
+    "slimemoth": {
+      "nome": "Slimemoth",
+      "portrait": "monster24/portraits/slimemoth.webp",
+      "token": "monster24/tokens/slimemoth.webp"
+    },
+    "sloorgrek": {
+      "nome": "Sloorgrek",
+      "portrait": "monster24/portraits/sloorgrek.webp",
+      "token": "monster24/tokens/sloorgrek.webp"
+    },
+    "slow-walker": {
+      "nome": "Slow Walker",
+      "portrait": "monster24/portraits/slow-walker.webp",
+      "token": "monster24/tokens/slow-walker.webp"
+    },
+    "slug-folk": {
+      "nome": "Slug Folk",
+      "portrait": "monster24/portraits/slug-folk.webp",
+      "token": "monster24/tokens/slug-folk.webp"
+    },
+    "snirik": {
+      "nome": "Snirik",
+      "portrait": "monster24/portraits/snirik.webp",
+      "token": "monster24/tokens/snirik.webp"
+    },
+    "specter": {
+      "nome": "Specter",
+      "portrait": "monster24/portraits/specter.webp",
+      "token": "monster24/tokens/specter.webp"
+    },
+    "spirit-doll": {
+      "nome": "Spirit Doll",
+      "portrait": "monster24/portraits/spirit-doll.webp",
+      "token": "monster24/tokens/spirit-doll.webp"
+    },
+    "stollenwurm": {
+      "nome": "Stollenwurm",
+      "portrait": "monster24/portraits/stollenwurm.webp",
+      "token": "monster24/tokens/stollenwurm.webp"
+    },
+    "strangler-tree": {
+      "nome": "Strangler Tree",
+      "portrait": "monster24/portraits/strangler-tree.webp",
+      "token": "monster24/tokens/strangler-tree.webp"
+    },
+    "stranglevine": {
+      "nome": "Stranglevine",
+      "portrait": "monster24/portraits/stranglevine.webp",
+      "token": "monster24/tokens/stranglevine.webp"
+    },
+    "stygian-lynx": {
+      "nome": "Stygian Lynx",
+      "portrait": "monster24/portraits/stygian-lynx.webp",
+      "token": "monster24/tokens/stygian-lynx.webp"
+    },
+    "su-monster": {
+      "nome": "Su-monster",
+      "portrait": "monster24/portraits/su-monster.webp",
+      "token": "monster24/tokens/su-monster.webp"
+    },
+    "takwin": {
+      "nome": "Takwin",
+      "portrait": "monster24/portraits/takwin.webp",
+      "token": "monster24/tokens/takwin.webp"
+    },
+    "tassargoi": {
+      "nome": "Tassargoi",
+      "portrait": "monster24/portraits/tassargoi.webp",
+      "token": "monster24/tokens/tassargoi.webp"
+    },
+    "the-pinestraw-man": {
+      "nome": "The Pinestraw Man",
+      "portrait": "monster24/portraits/the-pinestraw-man.webp",
+      "token": "monster24/tokens/the-pinestraw-man.webp"
+    },
+    "the-unfleshed": {
+      "nome": "The Unfleshed",
+      "portrait": "monster24/portraits/the-unfleshed.webp",
+      "token": "monster24/tokens/the-unfleshed.webp"
+    },
+    "three-headed-ogre": {
+      "nome": "Three-headed Ogre",
+      "portrait": "monster24/portraits/three-headed-ogre.webp",
+      "token": "monster24/tokens/three-headed-ogre.webp"
+    },
+    "tommyknocker": {
+      "nome": "Tommyknocker",
+      "portrait": "monster24/portraits/tommyknocker.webp",
+      "token": "monster24/tokens/tommyknocker.webp"
+    },
+    "tongue-eater-adult": {
+      "nome": "Tongue-eater Adult",
+      "portrait": "monster24/portraits/tongue-eater-adult.webp",
+      "token": "monster24/tokens/tongue-eater-adult.webp"
+    },
+    "tongue-eater-brood-mother": {
+      "nome": "Tongue-eater Brood Mother",
+      "portrait": "monster24/portraits/tongue-eater-brood-mother.webp",
+      "token": "monster24/tokens/tongue-eater-brood-mother.webp"
+    },
+    "tongue-eater-host-body": {
+      "nome": "Tongue-eater Host Body",
+      "portrait": "monster24/portraits/tongue-eater-host-body.webp",
+      "token": "monster24/tokens/tongue-eater-host-body.webp"
+    },
+    "tooth-fairy": {
+      "nome": "Tooth Fairy",
+      "portrait": "monster24/portraits/tooth-fairy.webp",
+      "token": "monster24/tokens/tooth-fairy.webp"
+    },
+    "troll-gorger": {
+      "nome": "Troll Gorger",
+      "portrait": "monster24/portraits/troll-gorger.webp",
+      "token": "monster24/tokens/troll-gorger.webp"
+    },
+    "troll-hound": {
+      "nome": "Troll Hound",
+      "portrait": "monster24/portraits/troll-hound.webp",
+      "token": "monster24/tokens/troll-hound.webp"
+    },
+    "troll-blood": {
+      "nome": "Troll, Blood",
+      "portrait": "monster24/portraits/troll-blood.webp",
+      "token": "monster24/tokens/troll-blood.webp"
+    },
+    "troll-chaos": {
+      "nome": "Troll, Chaos",
+      "portrait": "monster24/portraits/troll-chaos.webp",
+      "token": "monster24/tokens/troll-chaos.webp"
+    },
+    "troll-desert": {
+      "nome": "Troll, Desert",
+      "portrait": "monster24/portraits/troll-desert.webp",
+      "token": "monster24/tokens/troll-desert.webp"
+    },
+    "troll-giant": {
+      "nome": "Troll, Giant",
+      "portrait": "monster24/portraits/troll-giant.webp",
+      "token": "monster24/tokens/troll-giant.webp"
+    },
+    "troll-ice": {
+      "nome": "Troll, Ice",
+      "portrait": "monster24/portraits/troll-ice.webp",
+      "token": "monster24/tokens/troll-ice.webp"
+    },
+    "troll-magma": {
+      "nome": "Troll, Magma",
+      "portrait": "monster24/portraits/troll-magma.webp",
+      "token": "monster24/tokens/troll-magma.webp"
+    },
+    "troll-moss": {
+      "nome": "Troll, Moss",
+      "portrait": "monster24/portraits/troll-moss.webp",
+      "token": "monster24/tokens/troll-moss.webp"
+    },
+    "troll-multi-headed": {
+      "nome": "Troll, Multi-headed",
+      "portrait": "monster24/portraits/troll-multi-headed.webp",
+      "token": "monster24/tokens/troll-multi-headed.webp"
+    },
+    "troll-night": {
+      "nome": "Troll, Night",
+      "portrait": "monster24/portraits/troll-night.webp",
+      "token": "monster24/tokens/troll-night.webp"
+    },
+    "troll-spectral": {
+      "nome": "Troll, Spectral",
+      "portrait": "monster24/portraits/troll-spectral.webp",
+      "token": "monster24/tokens/troll-spectral.webp"
+    },
+    "troll-stone": {
+      "nome": "Troll, Stone",
+      "portrait": "monster24/portraits/troll-stone.webp",
+      "token": "monster24/tokens/troll-stone.webp"
+    },
+    "troll-water": {
+      "nome": "Troll, Water",
+      "portrait": "monster24/portraits/troll-water.webp",
+      "token": "monster24/tokens/troll-water.webp"
+    },
+    "tsathoggan": {
+      "nome": "Tsathoggan",
+      "portrait": "monster24/portraits/tsathoggan.webp",
+      "token": "monster24/tokens/tsathoggan.webp"
+    },
+    "tsathoggan-frog-priest": {
+      "nome": "Tsathoggan Frog Priest",
+      "portrait": "monster24/portraits/tsathoggan-frog-priest.webp",
+      "token": "monster24/tokens/tsathoggan-frog-priest.webp"
+    },
+    "uddloran": {
+      "nome": "Uddloran",
+      "portrait": "monster24/portraits/uddloran.webp",
+      "token": "monster24/tokens/uddloran.webp"
+    },
+    "umber-jelly": {
+      "nome": "Umber Jelly",
+      "portrait": "monster24/portraits/umber-jelly.webp",
+      "token": "monster24/tokens/umber-jelly.webp"
+    },
+    "unhallowed": {
+      "nome": "Unhallowed",
+      "portrait": "monster24/portraits/unhallowed.webp",
+      "token": "monster24/tokens/unhallowed.webp"
+    },
+    "vampire-bat": {
+      "nome": "Vampire Bat",
+      "portrait": "monster24/portraits/vampire-bat.webp",
+      "token": "monster24/tokens/vampire-bat.webp"
+    },
+    "vampire-grass": {
+      "nome": "Vampire Grass",
+      "portrait": "monster24/portraits/vampire-grass.webp",
+      "token": "monster24/tokens/vampire-grass.webp"
+    },
+    "vegepygmy": {
+      "nome": "Vegepygmy",
+      "portrait": "monster24/portraits/vegepygmy.webp",
+      "token": "monster24/tokens/vegepygmy.webp"
+    },
+    "vourdalak": {
+      "nome": "Vourdalak",
+      "portrait": "monster24/portraits/vourdalak.webp",
+      "token": "monster24/tokens/vourdalak.webp"
+    },
+    "vrykolakas": {
+      "nome": "Vrykolakas",
+      "portrait": "monster24/portraits/vrykolakas.webp",
+      "token": "monster24/tokens/vrykolakas.webp"
+    },
+    "wall-creeper": {
+      "nome": "Wall Creeper",
+      "portrait": "monster24/portraits/wall-creeper.webp",
+      "token": "monster24/tokens/wall-creeper.webp"
+    },
+    "war-corvid": {
+      "nome": "War Corvid",
+      "portrait": "monster24/portraits/war-corvid.webp",
+      "token": "monster24/tokens/war-corvid.webp"
+    },
+    "water-weird": {
+      "nome": "Water Weird",
+      "portrait": "monster24/portraits/water-weird.webp",
+      "token": "monster24/tokens/water-weird.webp"
+    },
+    "wendigo": {
+      "nome": "Wendigo",
+      "portrait": "monster24/portraits/wendigo.webp",
+      "token": "monster24/tokens/wendigo.webp"
+    },
+    "werebat": {
+      "nome": "Werebat",
+      "portrait": "monster24/portraits/werebat.webp",
+      "token": "monster24/tokens/werebat.webp"
+    },
+    "wereboar": {
+      "nome": "Wereboar",
+      "portrait": "monster24/portraits/wereboar.webp",
+      "token": "monster24/tokens/wereboar.webp"
+    },
+    "werecrocodile": {
+      "nome": "Werecrocodile",
+      "portrait": "monster24/portraits/werecrocodile.webp",
+      "token": "monster24/tokens/werecrocodile.webp"
+    },
+    "werefox": {
+      "nome": "Werefox",
+      "portrait": "monster24/portraits/werefox.webp",
+      "token": "monster24/tokens/werefox.webp"
+    },
+    "werejaguar": {
+      "nome": "Werejaguar",
+      "portrait": "monster24/portraits/werejaguar.webp",
+      "token": "monster24/tokens/werejaguar.webp"
+    },
+    "wereserpent": {
+      "nome": "Wereserpent",
+      "portrait": "monster24/portraits/wereserpent.webp",
+      "token": "monster24/tokens/wereserpent.webp"
+    },
+    "wereshark": {
+      "nome": "Wereshark",
+      "portrait": "monster24/portraits/wereshark.webp",
+      "token": "monster24/tokens/wereshark.webp"
+    },
+    "wind-weird": {
+      "nome": "Wind Weird",
+      "portrait": "monster24/portraits/wind-weird.webp",
+      "token": "monster24/tokens/wind-weird.webp"
+    },
+    "wohlk": {
+      "nome": "Wohlk",
+      "portrait": "monster24/portraits/wohlk.webp",
+      "token": "monster24/tokens/wohlk.webp"
+    },
+    "wolf-shark": {
+      "nome": "Wolf Shark",
+      "portrait": "monster24/portraits/wolf-shark.webp",
+      "token": "monster24/tokens/wolf-shark.webp"
+    },
+    "wolf-worm": {
+      "nome": "Wolf-worm",
+      "portrait": "monster24/portraits/wolf-worm.webp",
+      "token": "monster24/tokens/wolf-worm.webp"
+    },
+    "worm-walker": {
+      "nome": "Worm-walker",
+      "portrait": "monster24/portraits/worm-walker.webp",
+      "token": "monster24/tokens/worm-walker.webp"
+    },
+    "xytar": {
+      "nome": "Xytar",
+      "portrait": "monster24/portraits/xytar.webp",
+      "token": "monster24/tokens/xytar.webp"
+    },
+    "yak-folk": {
+      "nome": "Yak-folk",
+      "portrait": "monster24/portraits/yak-folk.webp",
+      "token": "monster24/tokens/yak-folk.webp"
+    },
+    "ygolgatak": {
+      "nome": "Ygolgatak",
+      "portrait": "monster24/portraits/ygolgatak.webp",
+      "token": "monster24/tokens/ygolgatak.webp"
+    },
+    "ygoran": {
+      "nome": "Ygoran",
+      "portrait": "monster24/portraits/ygoran.webp",
+      "token": "monster24/tokens/ygoran.webp"
+    },
+    "ypotryll": {
+      "nome": "Ypotryll",
+      "portrait": "monster24/portraits/ypotryll.webp",
+      "token": "monster24/tokens/ypotryll.webp"
+    },
+    "ythaiza": {
+      "nome": "Ythaiza",
+      "portrait": "monster24/portraits/ythaiza.webp",
+      "token": "monster24/tokens/ythaiza.webp"
+    },
+    "zlann-yi": {
+      "nome": "Zlann-yi",
+      "portrait": "monster24/portraits/zlann-yi.webp",
+      "token": "monster24/tokens/zlann-yi.webp"
+    },
+    "zlann-yi-sorcerer-king": {
+      "nome": "Zlann-yi Sorcerer-king",
+      "portrait": "monster24/portraits/zlann-yi-sorcerer-king.webp",
+      "token": "monster24/tokens/zlann-yi-sorcerer-king.webp"
+    },
+    "aboleth": {
+      "nome": "Aboleth",
+      "portrait": "artwork/portraits/aboleth.webp",
+      "token": "artwork/tokens/aboleth.webp"
+    },
+    "acolyte": {
+      "nome": "Acolyte",
+      "portrait": "artwork/portraits/acolyte.webp",
+      "token": "artwork/tokens/acolyte.webp"
+    },
+    "angel-domini": {
+      "nome": "Angel, Domini",
+      "portrait": "artwork/portraits/angel-domini.webp",
+      "token": "artwork/tokens/angel-domini.webp"
+    },
+    "angel-principi": {
+      "nome": "Angel, Principi",
+      "portrait": "artwork/portraits/angel-principi.webp",
+      "token": "artwork/tokens/angel-principi.webp"
+    },
+    "angel-seraph": {
+      "nome": "Angel, Seraph",
+      "portrait": "artwork/portraits/angel-seraph.webp",
+      "token": "artwork/tokens/angel-seraph.webp"
+    },
+    "animated-armor": {
+      "nome": "Animated Armor",
+      "portrait": "artwork/portraits/animated-armor.webp",
+      "token": "artwork/tokens/animated-armor.webp"
+    },
+    "ankheg": {
+      "nome": "Ankheg",
+      "portrait": "artwork/portraits/ankheg.webp",
+      "token": "artwork/tokens/ankheg.webp"
+    },
+    "ape": {
+      "nome": "Ape",
+      "portrait": "artwork/portraits/ape.webp",
+      "token": "artwork/tokens/ape.webp"
+    },
+    "ape-snow": {
+      "nome": "Ape, Snow",
+      "portrait": "artwork/portraits/ape-snow.webp",
+      "token": "artwork/tokens/ape-snow.webp"
+    },
+    "apprentice": {
+      "nome": "Apprentice",
+      "portrait": "artwork/portraits/apprentice.webp",
+      "token": "artwork/tokens/apprentice.webp"
+    },
+    "archangel": {
+      "nome": "Archangel",
+      "portrait": "artwork/portraits/archangel.webp",
+      "token": "artwork/tokens/archangel.webp"
+    },
+    "archdevil": {
+      "nome": "Archdevil",
+      "portrait": "artwork/portraits/archdevil.webp",
+      "token": "artwork/tokens/archdevil.webp"
+    },
+    "archmage": {
+      "nome": "Archmage",
+      "portrait": "artwork/portraits/archmage.webp",
+      "token": "artwork/tokens/archmage.webp"
+    },
+    "assassin": {
+      "nome": "Assassin",
+      "portrait": "artwork/portraits/assassin.webp",
+      "token": "artwork/tokens/assassin.webp"
+    },
+    "azer": {
+      "nome": "Azer",
+      "portrait": "artwork/portraits/azer.webp",
+      "token": "artwork/tokens/azer.webp"
+    },
+    "badger": {
+      "nome": "Badger",
+      "portrait": "artwork/portraits/badger.webp",
+      "token": "artwork/tokens/badger.webp"
+    },
+    "bandit": {
+      "nome": "Bandit",
+      "portrait": "artwork/portraits/bandit.webp",
+      "token": "artwork/tokens/bandit.webp"
+    },
+    "basilisk": {
+      "nome": "Basilisk",
+      "portrait": "artwork/portraits/basilisk.webp",
+      "token": "artwork/tokens/basilisk.webp"
+    },
+    "basilisk-hatchling": {
+      "nome": "Basilisk Hatchling",
+      "portrait": "artwork/portraits/basilisk-hatchling.webp",
+      "token": "artwork/tokens/basilisk-hatchling.webp"
+    },
+    "bat-giant": {
+      "nome": "Bat, Giant",
+      "portrait": "artwork/portraits/bat-giant.webp",
+      "token": "artwork/tokens/bat-giant.webp"
+    },
+    "bat-swarm": {
+      "nome": "Bat, Swarm",
+      "portrait": "artwork/portraits/bat-swarm.webp",
+      "token": "artwork/tokens/bat-swarm.webp"
+    },
+    "bear-brown": {
+      "nome": "Bear, Brown",
+      "portrait": "artwork/portraits/bear-brown.webp",
+      "token": "artwork/tokens/bear-brown.webp"
+    },
+    "bear-polar": {
+      "nome": "Bear, Polar",
+      "portrait": "artwork/portraits/bear-polar.webp",
+      "token": "artwork/tokens/bear-polar.webp"
+    },
+    "beastman": {
+      "nome": "Beastman",
+      "portrait": "artwork/portraits/beastman.webp",
+      "token": "artwork/tokens/beastman.webp"
+    },
+    "berserker": {
+      "nome": "Berserker",
+      "portrait": "artwork/portraits/berserker.webp",
+      "token": "artwork/tokens/berserker.webp"
+    },
+    "black-pudding": {
+      "nome": "Black Pudding",
+      "portrait": "artwork/portraits/black-pudding.webp",
+      "token": "artwork/tokens/black-pudding.webp"
+    },
+    "boar": {
+      "nome": "Boar",
+      "portrait": "artwork/portraits/boar.webp",
+      "token": "artwork/tokens/boar.webp"
+    },
+    "brachiosaurus": {
+      "nome": "Brachiosaurus",
+      "portrait": "artwork/portraits/brachiosaurus.webp",
+      "token": "artwork/tokens/brachiosaurus.webp"
+    },
+    "brain-eater": {
+      "nome": "Brain Eater",
+      "portrait": "artwork/portraits/brain-eater.webp",
+      "token": "artwork/tokens/brain-eater.webp"
+    },
+    "bulette": {
+      "nome": "Bulette",
+      "portrait": "artwork/portraits/bulette.webp",
+      "token": "artwork/tokens/bulette.webp"
+    },
+    "camel": {
+      "nome": "Camel",
+      "portrait": "artwork/portraits/camel.webp",
+      "token": "artwork/tokens/camel.webp"
+    },
+    "cave-brute": {
+      "nome": "Cave Brute",
+      "portrait": "artwork/portraits/cave-brute.webp",
+      "token": "artwork/tokens/cave-brute.webp"
+    },
+    "cave-creeper": {
+      "nome": "Cave Creeper",
+      "portrait": "artwork/portraits/cave-creeper.webp",
+      "token": "artwork/tokens/cave-creeper.webp"
+    },
+    "centaur": {
+      "nome": "Centaur",
+      "portrait": "artwork/portraits/centaur.webp",
+      "token": "artwork/tokens/centaur.webp"
+    },
+    "centipede-giant": {
+      "nome": "Centipede, Giant",
+      "portrait": "artwork/portraits/centipede-giant.webp",
+      "token": "artwork/tokens/centipede-giant.webp"
+    },
+    "centipede-swarm": {
+      "nome": "Centipede, Swarm",
+      "portrait": "artwork/portraits/centipede-swarm.webp",
+      "token": "artwork/tokens/centipede-swarm.webp"
+    },
+    "chimera": {
+      "nome": "Chimera",
+      "portrait": "artwork/portraits/chimera.webp",
+      "token": "artwork/tokens/chimera.webp"
+    },
+    "chuul": {
+      "nome": "Chuul",
+      "portrait": "artwork/portraits/chuul.webp",
+      "token": "artwork/tokens/chuul.webp"
+    },
+    "cloaker": {
+      "nome": "Cloaker",
+      "portrait": "artwork/portraits/cloaker.webp",
+      "token": "artwork/tokens/cloaker.webp"
+    },
+    "cockatrice": {
+      "nome": "Cockatrice",
+      "portrait": "artwork/portraits/cockatrice.webp",
+      "token": "artwork/tokens/cockatrice.webp"
+    },
+    "couatl": {
+      "nome": "Couatl",
+      "portrait": "artwork/portraits/couatl.webp",
+      "token": "artwork/tokens/couatl.webp"
+    },
+    "crab-giant": {
+      "nome": "Crab, Giant",
+      "portrait": "artwork/portraits/crab-giant.webp",
+      "token": "artwork/tokens/crab-giant.webp"
+    },
+    "crocodile": {
+      "nome": "Crocodile",
+      "portrait": "artwork/portraits/crocodile.webp",
+      "token": "artwork/tokens/crocodile.webp"
+    },
+    "cultist": {
+      "nome": "Cultist",
+      "portrait": "artwork/portraits/cultist.webp",
+      "token": "artwork/tokens/cultist.webp"
+    },
+    "cyclops": {
+      "nome": "Cyclops",
+      "portrait": "artwork/portraits/cyclops.webp",
+      "token": "artwork/tokens/cyclops.webp"
+    },
+    "darkmantle": {
+      "nome": "Darkmantle",
+      "portrait": "artwork/portraits/darkmantle.webp",
+      "token": "artwork/tokens/darkmantle.webp"
+    },
+    "deep-one": {
+      "nome": "Deep One",
+      "portrait": "artwork/portraits/deep-one.webp",
+      "token": "artwork/tokens/deep-one.webp"
+    },
+    "demon-balor": {
+      "nome": "Demon, Balor",
+      "portrait": "artwork/portraits/demon-balor.webp",
+      "token": "artwork/tokens/demon-balor.webp"
+    },
+    "demon-dretch": {
+      "nome": "Demon, Dretch",
+      "portrait": "artwork/portraits/demon-dretch.webp",
+      "token": "artwork/tokens/demon-dretch.webp"
+    },
+    "demon-glabrezu": {
+      "nome": "Demon, Glabrezu",
+      "portrait": "artwork/portraits/demon-glabrezu.webp",
+      "token": "artwork/tokens/demon-glabrezu.webp"
+    },
+    "demon-marilith": {
+      "nome": "Demon, Marilith",
+      "portrait": "artwork/portraits/demon-marilith.webp",
+      "token": "artwork/tokens/demon-marilith.webp"
+    },
+    "demon-vrock": {
+      "nome": "Demon, Vrock",
+      "portrait": "artwork/portraits/demon-vrock.webp",
+      "token": "artwork/tokens/demon-vrock.webp"
+    },
+    "devil-barbed": {
+      "nome": "Devil, Barbed",
+      "portrait": "artwork/portraits/devil-barbed.webp",
+      "token": "artwork/tokens/devil-barbed.webp"
+    },
+    "devil-cubi": {
+      "nome": "Devil, Cubi",
+      "portrait": "artwork/portraits/devil-cubi.webp",
+      "token": "artwork/tokens/devil-cubi.webp"
+    },
+    "devil-erinyes": {
+      "nome": "Devil, Erinyes",
+      "portrait": "artwork/portraits/devil-erinyes.webp",
+      "token": "artwork/tokens/devil-erinyes.webp"
+    },
+    "devil-horned": {
+      "nome": "Devil, Horned",
+      "portrait": "artwork/portraits/devil-horned.webp",
+      "token": "artwork/tokens/devil-horned.webp"
+    },
+    "devil-imp": {
+      "nome": "Devil, Imp",
+      "portrait": "artwork/portraits/devil-imp.webp",
+      "token": "artwork/tokens/devil-imp.webp"
+    },
+    "djinni": {
+      "nome": "Djinni",
+      "portrait": "artwork/portraits/djinni.webp",
+      "token": "artwork/tokens/djinni.webp"
+    },
+    "doppelganger": {
+      "nome": "Doppelganger",
+      "portrait": "artwork/portraits/doppelganger.webp",
+      "token": "artwork/tokens/doppelganger.webp"
+    },
+    "dragon-desert": {
+      "nome": "Dragon, Desert",
+      "portrait": "artwork/portraits/dragon-desert.webp",
+      "token": "artwork/tokens/dragon-desert.webp"
+    },
+    "dragon-fire": {
+      "nome": "Dragon, Fire",
+      "portrait": "artwork/portraits/dragon-fire.webp",
+      "token": "artwork/tokens/dragon-fire.webp"
+    },
+    "dragon-forest": {
+      "nome": "Dragon, Forest",
+      "portrait": "artwork/portraits/dragon-forest.webp",
+      "token": "artwork/tokens/dragon-forest.webp"
+    },
+    "dragon-frost": {
+      "nome": "Dragon, Frost",
+      "portrait": "artwork/portraits/dragon-frost.webp",
+      "token": "artwork/tokens/dragon-frost.webp"
+    },
+    "dragon-sea": {
+      "nome": "Dragon, Sea",
+      "portrait": "artwork/portraits/dragon-sea.webp",
+      "token": "artwork/tokens/dragon-sea.webp"
+    },
+    "dragon-swamp": {
+      "nome": "Dragon, Swamp",
+      "portrait": "artwork/portraits/dragon-swamp.webp",
+      "token": "artwork/tokens/dragon-swamp.webp"
+    },
+    "drow": {
+      "nome": "Drow",
+      "portrait": "artwork/portraits/drow.webp",
+      "token": "artwork/tokens/drow.webp"
+    },
+    "drow-drider": {
+      "nome": "Drow, Drider",
+      "portrait": "artwork/portraits/drow-drider.webp",
+      "token": "artwork/tokens/drow-drider.webp"
+    },
+    "drow-priestess": {
+      "nome": "Drow, Priestess",
+      "portrait": "artwork/portraits/drow-priestess.webp",
+      "token": "artwork/tokens/drow-priestess.webp"
+    },
+    "druid": {
+      "nome": "Druid",
+      "portrait": "artwork/portraits/druid.webp",
+      "token": "artwork/tokens/druid.webp"
+    },
+    "dryad": {
+      "nome": "Dryad",
+      "portrait": "artwork/portraits/dryad.webp",
+      "token": "artwork/tokens/dryad.webp"
+    },
+    "duergar": {
+      "nome": "Duergar",
+      "portrait": "artwork/portraits/duergar.webp",
+      "token": "artwork/tokens/duergar.webp"
+    },
+    "dung-beetle-giant": {
+      "nome": "Dung Beetle, Giant",
+      "portrait": "artwork/portraits/dung-beetle-giant.webp",
+      "token": "artwork/tokens/dung-beetle-giant.webp"
+    },
+    "efreeti": {
+      "nome": "Efreeti",
+      "portrait": "artwork/portraits/efreeti.webp",
+      "token": "artwork/tokens/efreeti.webp"
+    },
+    "elemental-air-greater": {
+      "nome": "Elemental, Air (Greater)",
+      "portrait": "artwork/portraits/elemental-air-greater.webp",
+      "token": "artwork/tokens/elemental-air-greater.webp"
+    },
+    "elemental-air-lesser": {
+      "nome": "Elemental, Air (Lesser)",
+      "portrait": "artwork/portraits/elemental-air-lesser.webp",
+      "token": "artwork/tokens/elemental-air-lesser.webp"
+    },
+    "elemental-earth-greater": {
+      "nome": "Elemental, Earth (Greater)",
+      "portrait": "artwork/portraits/elemental-earth-greater.webp",
+      "token": "artwork/tokens/elemental-earth-greater.webp"
+    },
+    "elemental-earth-lesser": {
+      "nome": "Elemental, Earth (Lesser)",
+      "portrait": "artwork/portraits/elemental-earth-lesser.webp",
+      "token": "artwork/tokens/elemental-earth-lesser.webp"
+    },
+    "elemental-fire-greater": {
+      "nome": "Elemental, Fire (Greater)",
+      "portrait": "artwork/portraits/elemental-fire-greater.webp",
+      "token": "artwork/tokens/elemental-fire-greater.webp"
+    },
+    "elemental-fire-lesser": {
+      "nome": "Elemental, Fire (Lesser)",
+      "portrait": "artwork/portraits/elemental-fire-lesser.webp",
+      "token": "artwork/tokens/elemental-fire-lesser.webp"
+    },
+    "elemental-water-greater": {
+      "nome": "Elemental, Water (Greater)",
+      "portrait": "artwork/portraits/elemental-water-greater.webp",
+      "token": "artwork/tokens/elemental-water-greater.webp"
+    },
+    "elemental-water-lesser": {
+      "nome": "Elemental, Water (Lesser)",
+      "portrait": "artwork/portraits/elemental-water-lesser.webp",
+      "token": "artwork/tokens/elemental-water-lesser.webp"
+    },
+    "elephant": {
+      "nome": "Elephant",
+      "portrait": "artwork/portraits/elephant.webp",
+      "token": "artwork/tokens/elephant.webp"
+    },
+    "elf": {
+      "nome": "Elf",
+      "portrait": "artwork/portraits/elf.webp",
+      "token": "artwork/tokens/elf.webp"
+    },
+    "ettercap": {
+      "nome": "Ettercap",
+      "portrait": "artwork/portraits/ettercap.webp",
+      "token": "artwork/tokens/ettercap.webp"
+    },
+    "fairy": {
+      "nome": "Fairy",
+      "portrait": "artwork/portraits/fairy.webp",
+      "token": "artwork/tokens/fairy.webp"
+    },
+    "frog-giant": {
+      "nome": "Frog, Giant",
+      "portrait": "artwork/portraits/frog-giant.webp",
+      "token": "artwork/tokens/frog-giant.webp"
+    },
+    "gargoyle": {
+      "nome": "Gargoyle",
+      "portrait": "artwork/portraits/gargoyle.webp",
+      "token": "artwork/tokens/gargoyle.webp"
+    },
+    "gelatinous-cube": {
+      "nome": "Gelatinous Cube",
+      "portrait": "artwork/portraits/gelatinous-cube.webp",
+      "token": "artwork/tokens/gelatinous-cube.webp"
+    },
+    "ghast": {
+      "nome": "Ghast",
+      "portrait": "artwork/portraits/ghast.webp",
+      "token": "artwork/tokens/ghast.webp"
+    },
+    "ghoul": {
+      "nome": "Ghoul",
+      "portrait": "artwork/portraits/ghoul.webp",
+      "token": "artwork/tokens/ghoul.webp"
+    },
+    "giant-cloud": {
+      "nome": "Giant, Cloud",
+      "portrait": "artwork/portraits/giant-cloud.webp",
+      "token": "artwork/tokens/giant-cloud.webp"
+    },
+    "giant-fire": {
+      "nome": "Giant, Fire",
+      "portrait": "artwork/portraits/giant-fire.webp",
+      "token": "artwork/tokens/giant-fire.webp"
+    },
+    "giant-frost": {
+      "nome": "Giant, Frost",
+      "portrait": "artwork/portraits/giant-frost.webp",
+      "token": "artwork/tokens/giant-frost.webp"
+    },
+    "giant-goat": {
+      "nome": "Giant, Goat",
+      "portrait": "artwork/portraits/giant-goat.webp",
+      "token": "artwork/tokens/giant-goat.webp"
+    },
+    "giant-hill": {
+      "nome": "Giant, Hill",
+      "portrait": "artwork/portraits/giant-hill.webp",
+      "token": "artwork/tokens/giant-hill.webp"
+    },
+    "giant-stone": {
+      "nome": "Giant, Stone",
+      "portrait": "artwork/portraits/giant-stone.webp",
+      "token": "artwork/tokens/giant-stone.webp"
+    },
+    "giant-storm": {
+      "nome": "Giant, Storm",
+      "portrait": "artwork/portraits/giant-storm.webp",
+      "token": "artwork/tokens/giant-storm.webp"
+    },
+    "gibbering-mouther": {
+      "nome": "Gibbering Mouther",
+      "portrait": "artwork/portraits/gibbering-mouther.webp",
+      "token": "artwork/tokens/gibbering-mouther.webp"
+    },
+    "gladiator": {
+      "nome": "Gladiator",
+      "portrait": "artwork/portraits/gladiator.webp",
+      "token": "artwork/tokens/gladiator.webp"
+    },
+    "gnoll": {
+      "nome": "Gnoll",
+      "portrait": "artwork/portraits/gnoll.webp",
+      "token": "artwork/tokens/gnoll.webp"
+    },
+    "gnome-deep": {
+      "nome": "Gnome, Deep",
+      "portrait": "artwork/portraits/gnome-deep.webp",
+      "token": "artwork/tokens/gnome-deep.webp"
+    },
+    "goblin-boss": {
+      "nome": "Goblin, Boss",
+      "portrait": "artwork/portraits/goblin-boss.webp",
+      "token": "artwork/tokens/goblin-boss.webp"
+    },
+    "goblin-shaman": {
+      "nome": "Goblin, Shaman",
+      "portrait": "artwork/portraits/goblin-shaman.webp",
+      "token": "artwork/tokens/goblin-shaman.webp"
+    },
+    "golem-clay": {
+      "nome": "Golem, Clay",
+      "portrait": "artwork/portraits/golem-clay.webp",
+      "token": "artwork/tokens/golem-clay.webp"
+    },
+    "golem-flesh": {
+      "nome": "Golem, Flesh",
+      "portrait": "artwork/portraits/golem-flesh.webp",
+      "token": "artwork/tokens/golem-flesh.webp"
+    },
+    "golem-iron": {
+      "nome": "Golem, Iron",
+      "portrait": "artwork/portraits/golem-iron.webp",
+      "token": "artwork/tokens/golem-iron.webp"
+    },
+    "golem-stone": {
+      "nome": "Golem, Stone",
+      "portrait": "artwork/portraits/golem-stone.webp",
+      "token": "artwork/tokens/golem-stone.webp"
+    },
+    "gorgon": {
+      "nome": "Gorgon",
+      "portrait": "artwork/portraits/gorgon.webp",
+      "token": "artwork/tokens/gorgon.webp"
+    },
+    "gorilla": {
+      "nome": "Gorilla",
+      "portrait": "artwork/portraits/gorilla.webp",
+      "token": "artwork/tokens/gorilla.webp"
+    },
+    "gray-ooze": {
+      "nome": "Gray Ooze",
+      "portrait": "artwork/portraits/gray-ooze.webp",
+      "token": "artwork/tokens/gray-ooze.webp"
+    },
+    "grick": {
+      "nome": "Grick",
+      "portrait": "artwork/portraits/grick.webp",
+      "token": "artwork/tokens/grick.webp"
+    },
+    "griffon": {
+      "nome": "Griffon",
+      "portrait": "artwork/portraits/griffon.webp",
+      "token": "artwork/tokens/griffon.webp"
+    },
+    "grimlow": {
+      "nome": "Grimlow",
+      "portrait": "artwork/portraits/grimlow.webp",
+      "token": "artwork/tokens/grimlow.webp"
+    },
+    "guard": {
+      "nome": "Guard",
+      "portrait": "artwork/portraits/guard.webp",
+      "token": "artwork/tokens/guard.webp"
+    },
+    "hag-night": {
+      "nome": "Hag, Night",
+      "portrait": "artwork/portraits/hag-night.webp",
+      "token": "artwork/tokens/hag-night.webp"
+    },
+    "hag-sea": {
+      "nome": "Hag, Sea",
+      "portrait": "artwork/portraits/hag-sea.webp",
+      "token": "artwork/tokens/hag-sea.webp"
+    },
+    "hag-weald": {
+      "nome": "Hag, Weald",
+      "portrait": "artwork/portraits/hag-weald.webp",
+      "token": "artwork/tokens/hag-weald.webp"
+    },
+    "harpy": {
+      "nome": "Harpy",
+      "portrait": "artwork/portraits/harpy.webp",
+      "token": "artwork/tokens/harpy.webp"
+    },
+    "hell-hound": {
+      "nome": "Hell Hound",
+      "portrait": "artwork/portraits/hell-hound.webp",
+      "token": "artwork/tokens/hell-hound.webp"
+    },
+    "hippogriff": {
+      "nome": "Hippogriff",
+      "portrait": "artwork/portraits/hippogriff.webp",
+      "token": "artwork/tokens/hippogriff.webp"
+    },
+    "hippopotamus": {
+      "nome": "Hippopotamus",
+      "portrait": "artwork/portraits/hippopotamus.webp",
+      "token": "artwork/tokens/hippopotamus.webp"
+    },
+    "hobgoblin": {
+      "nome": "Hobgoblin",
+      "portrait": "artwork/portraits/hobgoblin.webp",
+      "token": "artwork/tokens/hobgoblin.webp"
+    },
+    "horse": {
+      "nome": "Horse",
+      "portrait": "artwork/portraits/horse.webp",
+      "token": "artwork/tokens/horse.webp"
+    },
+    "hydra": {
+      "nome": "Hydra",
+      "portrait": "artwork/portraits/hydra.webp",
+      "token": "artwork/tokens/hydra.webp"
+    },
+    "invisible-stalker": {
+      "nome": "Invisible Stalker",
+      "portrait": "artwork/portraits/invisible-stalker.webp",
+      "token": "artwork/tokens/invisible-stalker.webp"
+    },
+    "jellyfish": {
+      "nome": "Jellyfish",
+      "portrait": "artwork/portraits/jellyfish.webp",
+      "token": "artwork/tokens/jellyfish.webp"
+    },
+    "knight": {
+      "nome": "Knight",
+      "portrait": "artwork/portraits/knight.webp",
+      "token": "artwork/tokens/knight.webp"
+    },
+    "kobold": {
+      "nome": "Kobold",
+      "portrait": "artwork/portraits/kobold.webp",
+      "token": "artwork/tokens/kobold.webp"
+    },
+    "kobold-sorcerer": {
+      "nome": "Kobold, Sorcerer",
+      "portrait": "artwork/portraits/kobold-sorcerer.webp",
+      "token": "artwork/tokens/kobold-sorcerer.webp"
+    },
+    "kraken": {
+      "nome": "Kraken",
+      "portrait": "artwork/portraits/kraken.webp",
+      "token": "artwork/tokens/kraken.webp"
+    },
+    "leech-giant": {
+      "nome": "Leech, Giant",
+      "portrait": "artwork/portraits/leech-giant.webp",
+      "token": "artwork/tokens/leech-giant.webp"
+    },
+    "leprechaun": {
+      "nome": "Leprechaun",
+      "portrait": "artwork/portraits/leprechaun.webp",
+      "token": "artwork/tokens/leprechaun.webp"
+    },
+    "lich": {
+      "nome": "Lich",
+      "portrait": "artwork/portraits/lich.webp",
+      "token": "artwork/tokens/lich.webp"
+    },
+    "lion": {
+      "nome": "Lion",
+      "portrait": "artwork/portraits/lion.webp",
+      "token": "artwork/tokens/lion.webp"
+    },
+    "lizardfolk": {
+      "nome": "Lizardfolk",
+      "portrait": "artwork/portraits/lizardfolk.webp",
+      "token": "artwork/tokens/lizardfolk.webp"
+    },
+    "mage": {
+      "nome": "Mage",
+      "portrait": "artwork/portraits/mage.webp",
+      "token": "artwork/tokens/mage.webp"
+    },
+    "mammoth": {
+      "nome": "Mammoth",
+      "portrait": "artwork/portraits/mammoth.webp",
+      "token": "artwork/tokens/mammoth.webp"
+    },
+    "manta-ray-giant": {
+      "nome": "Manta Ray, Giant",
+      "portrait": "artwork/portraits/manta-ray-giant.webp",
+      "token": "artwork/tokens/manta-ray-giant.webp"
+    },
+    "manticore": {
+      "nome": "Manticore",
+      "portrait": "artwork/portraits/manticore.webp",
+      "token": "artwork/tokens/manticore.webp"
+    },
+    "mastiff": {
+      "nome": "Mastiff",
+      "portrait": "artwork/portraits/mastiff.webp",
+      "token": "artwork/tokens/mastiff.webp"
+    },
+    "medusa": {
+      "nome": "Medusa",
+      "portrait": "artwork/portraits/medusa.webp",
+      "token": "artwork/tokens/medusa.webp"
+    },
+    "merfolk": {
+      "nome": "Merfolk",
+      "portrait": "artwork/portraits/merfolk.webp",
+      "token": "artwork/tokens/merfolk.webp"
+    },
+    "mimic": {
+      "nome": "Mimic",
+      "portrait": "artwork/portraits/mimic.webp",
+      "token": "artwork/tokens/mimic.webp"
+    },
+    "minotaur": {
+      "nome": "Minotaur",
+      "portrait": "artwork/portraits/minotaur.webp",
+      "token": "artwork/tokens/minotaur.webp"
+    },
+    "moose": {
+      "nome": "Moose",
+      "portrait": "artwork/portraits/moose.webp",
+      "token": "artwork/tokens/moose.webp"
+    },
+    "mordanticus-the-flayed": {
+      "nome": "Mordanticus The Flayed",
+      "portrait": "artwork/portraits/mordanticus-the-flayed.webp",
+      "token": "artwork/tokens/mordanticus-the-flayed.webp"
+    },
+    "mummy": {
+      "nome": "Mummy",
+      "portrait": "artwork/portraits/mummy.webp",
+      "token": "artwork/tokens/mummy.webp"
+    },
+    "mushroomfolk": {
+      "nome": "Mushroomfolk",
+      "portrait": "artwork/portraits/mushroomfolk.webp",
+      "token": "artwork/tokens/mushroomfolk.webp"
+    },
+    "naga": {
+      "nome": "Naga",
+      "portrait": "artwork/portraits/naga.webp",
+      "token": "artwork/tokens/naga.webp"
+    },
+    "naga-bone": {
+      "nome": "Naga, Bone",
+      "portrait": "artwork/portraits/naga-bone.webp",
+      "token": "artwork/tokens/naga-bone.webp"
+    },
+    "nightmare": {
+      "nome": "Nightmare",
+      "portrait": "artwork/portraits/nightmare.webp",
+      "token": "artwork/tokens/nightmare.webp"
+    },
+    "obe-ixx-of-azarumme": {
+      "nome": "Obe-ixx Of Azarumme",
+      "portrait": "artwork/portraits/obe-ixx-of-azarumme.webp",
+      "token": "artwork/tokens/obe-ixx-of-azarumme.webp"
+    },
+    "ochre-jelly": {
+      "nome": "Ochre Jelly",
+      "portrait": "artwork/portraits/ochre-jelly.webp",
+      "token": "artwork/tokens/ochre-jelly.webp"
+    },
+    "octopus-giant": {
+      "nome": "Octopus, Giant",
+      "portrait": "artwork/portraits/octopus-giant.webp",
+      "token": "artwork/tokens/octopus-giant.webp"
+    },
+    "ogre": {
+      "nome": "Ogre",
+      "portrait": "artwork/portraits/ogre.webp",
+      "token": "artwork/tokens/ogre.webp"
+    },
+    "oni": {
+      "nome": "Oni",
+      "portrait": "artwork/portraits/oni.webp",
+      "token": "artwork/tokens/oni.webp"
+    },
+    "orc": {
+      "nome": "Orc",
+      "portrait": "artwork/portraits/orc.webp",
+      "token": "artwork/tokens/orc.webp"
+    },
+    "orc-chieftain": {
+      "nome": "Orc, Chieftain",
+      "portrait": "artwork/portraits/orc-chieftain.webp",
+      "token": "artwork/tokens/orc-chieftain.webp"
+    },
+    "otyugh": {
+      "nome": "Otyugh",
+      "portrait": "artwork/portraits/otyugh.webp",
+      "token": "artwork/tokens/otyugh.webp"
+    },
+    "owlbear": {
+      "nome": "Owlbear",
+      "portrait": "artwork/portraits/owlbear.webp",
+      "token": "artwork/tokens/owlbear.webp"
+    },
+    "panther": {
+      "nome": "Panther",
+      "portrait": "artwork/portraits/panther.webp",
+      "token": "artwork/tokens/panther.webp"
+    },
+    "peasant": {
+      "nome": "Peasant",
+      "portrait": "artwork/portraits/peasant.webp",
+      "token": "artwork/tokens/peasant.webp"
+    },
+    "pegasus": {
+      "nome": "Pegasus",
+      "portrait": "artwork/portraits/pegasus.webp",
+      "token": "artwork/tokens/pegasus.webp"
+    },
+    "phoenix": {
+      "nome": "Phoenix",
+      "portrait": "artwork/portraits/phoenix.webp",
+      "token": "artwork/tokens/phoenix.webp"
+    },
+    "piranha-swarm": {
+      "nome": "Piranha, Swarm",
+      "portrait": "artwork/portraits/piranha-swarm.webp",
+      "token": "artwork/tokens/piranha-swarm.webp"
+    },
+    "pirate": {
+      "nome": "Pirate",
+      "portrait": "artwork/portraits/pirate.webp",
+      "token": "artwork/tokens/pirate.webp"
+    },
+    "plesiosaurus": {
+      "nome": "Plesiosaurus",
+      "portrait": "artwork/portraits/plesiosaurus.webp",
+      "token": "artwork/tokens/plesiosaurus.webp"
+    },
+    "priest": {
+      "nome": "Priest",
+      "portrait": "artwork/portraits/priest.webp",
+      "token": "artwork/tokens/priest.webp"
+    },
+    "primordial-slime": {
+      "nome": "Primordial Slime",
+      "portrait": "artwork/portraits/primordial-slime.webp",
+      "token": "artwork/tokens/primordial-slime.webp"
+    },
+    "pterodactyl": {
+      "nome": "Pterodactyl",
+      "portrait": "artwork/portraits/pterodactyl.webp",
+      "token": "artwork/tokens/pterodactyl.webp"
+    },
+    "purple-worm": {
+      "nome": "Purple Worm",
+      "portrait": "artwork/portraits/purple-worm.webp",
+      "token": "artwork/tokens/purple-worm.webp"
+    },
+    "rakshasa": {
+      "nome": "Rakshasa",
+      "portrait": "artwork/portraits/rakshasa.webp",
+      "token": "artwork/tokens/rakshasa.webp"
+    },
+    "rat": {
+      "nome": "Rat",
+      "portrait": "artwork/portraits/rat.webp",
+      "token": "artwork/tokens/rat.webp"
+    },
+    "rat-dire": {
+      "nome": "Rat, Dire",
+      "portrait": "artwork/portraits/rat-dire.webp",
+      "token": "artwork/tokens/rat-dire.webp"
+    },
+    "rat-giant": {
+      "nome": "Rat, Giant",
+      "portrait": "artwork/portraits/rat-giant.webp",
+      "token": "artwork/tokens/rat-giant.webp"
+    },
+    "rat-swarm": {
+      "nome": "Rat, Swarm",
+      "portrait": "artwork/portraits/rat-swarm.webp",
+      "token": "artwork/tokens/rat-swarm.webp"
+    },
+    "rathgamnon": {
+      "nome": "Rathgamnon",
+      "portrait": "artwork/portraits/rathgamnon.webp",
+      "token": "artwork/tokens/rathgamnon.webp"
+    },
+    "reaver": {
+      "nome": "Reaver",
+      "portrait": "artwork/portraits/reaver.webp",
+      "token": "artwork/tokens/reaver.webp"
+    },
+    "remorhaz": {
+      "nome": "Remorhaz",
+      "portrait": "artwork/portraits/remorhaz.webp",
+      "token": "artwork/tokens/remorhaz.webp"
+    },
+    "rhinoceros": {
+      "nome": "Rhinoceros",
+      "portrait": "artwork/portraits/rhinoceros.webp",
+      "token": "artwork/tokens/rhinoceros.webp"
+    },
+    "rime-walker": {
+      "nome": "Rime Walker",
+      "portrait": "artwork/portraits/rime-walker.webp",
+      "token": "artwork/tokens/rime-walker.webp"
+    },
+    "roc": {
+      "nome": "Roc",
+      "portrait": "artwork/portraits/roc.webp",
+      "token": "artwork/tokens/roc.webp"
+    },
+    "roper": {
+      "nome": "Roper",
+      "portrait": "artwork/portraits/roper.webp",
+      "token": "artwork/tokens/roper.webp"
+    },
+    "rot-flower": {
+      "nome": "Rot Flower",
+      "portrait": "artwork/portraits/rot-flower.webp",
+      "token": "artwork/tokens/rot-flower.webp"
+    },
+    "rust-monster": {
+      "nome": "Rust Monster",
+      "portrait": "artwork/portraits/rust-monster.webp",
+      "token": "artwork/tokens/rust-monster.webp"
+    },
+    "sahuagin": {
+      "nome": "Sahuagin",
+      "portrait": "artwork/portraits/sahuagin.webp",
+      "token": "artwork/tokens/sahuagin.webp"
+    },
+    "salamander": {
+      "nome": "Salamander",
+      "portrait": "artwork/portraits/salamander.webp",
+      "token": "artwork/tokens/salamander.webp"
+    },
+    "scarab-swarm": {
+      "nome": "Scarab, Swarm",
+      "portrait": "artwork/portraits/scarab-swarm.webp",
+      "token": "artwork/tokens/scarab-swarm.webp"
+    },
+    "scarecrow": {
+      "nome": "Scarecrow",
+      "portrait": "artwork/portraits/scarecrow.webp",
+      "token": "artwork/tokens/scarecrow.webp"
+    },
+    "scorpion": {
+      "nome": "Scorpion",
+      "portrait": "artwork/portraits/scorpion.webp",
+      "token": "artwork/tokens/scorpion.webp"
+    },
+    "scorpion-giant": {
+      "nome": "Scorpion, Giant",
+      "portrait": "artwork/portraits/scorpion-giant.webp",
+      "token": "artwork/tokens/scorpion-giant.webp"
+    },
+    "shadow": {
+      "nome": "Shadow",
+      "portrait": "artwork/portraits/shadow.webp",
+      "token": "artwork/tokens/shadow.webp"
+    },
+    "shambling-mound": {
+      "nome": "Shambling Mound",
+      "portrait": "artwork/portraits/shambling-mound.webp",
+      "token": "artwork/tokens/shambling-mound.webp"
+    },
+    "shark": {
+      "nome": "Shark",
+      "portrait": "artwork/portraits/shark.webp",
+      "token": "artwork/tokens/shark.webp"
+    },
+    "shark-megalodon": {
+      "nome": "Shark, Megalodon",
+      "portrait": "artwork/portraits/shark-megalodon.webp",
+      "token": "artwork/tokens/shark-megalodon.webp"
+    },
+    "siren": {
+      "nome": "Siren",
+      "portrait": "artwork/portraits/siren.webp",
+      "token": "artwork/tokens/siren.webp"
+    },
+    "skeleton": {
+      "nome": "Skeleton",
+      "portrait": "artwork/portraits/skeleton.webp",
+      "token": "artwork/tokens/skeleton.webp"
+    },
+    "smilodon": {
+      "nome": "Smilodon",
+      "portrait": "artwork/portraits/smilodon.webp",
+      "token": "artwork/tokens/smilodon.webp"
+    },
+    "snake-cobra": {
+      "nome": "Snake, Cobra",
+      "portrait": "artwork/portraits/snake-cobra.webp",
+      "token": "artwork/tokens/snake-cobra.webp"
+    },
+    "snake-giant": {
+      "nome": "Snake, Giant",
+      "portrait": "artwork/portraits/snake-giant.webp",
+      "token": "artwork/tokens/snake-giant.webp"
+    },
+    "snake-swarm": {
+      "nome": "Snake, Swarm",
+      "portrait": "artwork/portraits/snake-swarm.webp",
+      "token": "artwork/tokens/snake-swarm.webp"
+    },
+    "soldier": {
+      "nome": "Soldier",
+      "portrait": "artwork/portraits/soldier.webp",
+      "token": "artwork/tokens/soldier.webp"
+    },
+    "sphinx": {
+      "nome": "Sphinx",
+      "portrait": "artwork/portraits/sphinx.webp",
+      "token": "artwork/tokens/sphinx.webp"
+    },
+    "spider": {
+      "nome": "Spider",
+      "portrait": "artwork/portraits/spider.webp",
+      "token": "artwork/tokens/spider.webp"
+    },
+    "spider-giant": {
+      "nome": "Spider, Giant",
+      "portrait": "artwork/portraits/spider-giant.webp",
+      "token": "artwork/tokens/spider-giant.webp"
+    },
+    "spider-swarm": {
+      "nome": "Spider, Swarm",
+      "portrait": "artwork/portraits/spider-swarm.webp",
+      "token": "artwork/tokens/spider-swarm.webp"
+    },
+    "stingbat": {
+      "nome": "Stingbat",
+      "portrait": "artwork/portraits/stingbat.webp",
+      "token": "artwork/tokens/stingbat.webp"
+    },
+    "strangler": {
+      "nome": "Strangler",
+      "portrait": "artwork/portraits/strangler.webp",
+      "token": "artwork/tokens/strangler.webp"
+    },
+    "the-tarrasque": {
+      "nome": "The Tarrasque",
+      "portrait": "artwork/portraits/the-tarrasque.webp",
+      "token": "artwork/tokens/the-tarrasque.webp"
+    },
+    "the-ten-eyed-oracle": {
+      "nome": "The Ten-eyed Oracle",
+      "portrait": "artwork/portraits/the-ten-eyed-oracle.webp",
+      "token": "artwork/tokens/the-ten-eyed-oracle.webp"
+    },
+    "the-wandering-merchant": {
+      "nome": "The Wandering Merchant",
+      "portrait": "artwork/portraits/the-wandering-merchant.webp",
+      "token": "artwork/tokens/the-wandering-merchant.webp"
+    },
+    "thief": {
+      "nome": "Thief",
+      "portrait": "artwork/portraits/thief.webp",
+      "token": "artwork/tokens/thief.webp"
+    },
+    "thug": {
+      "nome": "Thug",
+      "portrait": "artwork/portraits/thug.webp",
+      "token": "artwork/tokens/thug.webp"
+    },
+    "treant": {
+      "nome": "Treant",
+      "portrait": "artwork/portraits/treant.webp",
+      "token": "artwork/tokens/treant.webp"
+    },
+    "triceratops": {
+      "nome": "Triceratops",
+      "portrait": "artwork/portraits/triceratops.webp",
+      "token": "artwork/tokens/triceratops.webp"
+    },
+    "troll": {
+      "nome": "Troll",
+      "portrait": "artwork/portraits/troll.webp",
+      "token": "artwork/tokens/troll.webp"
+    },
+    "troll-frost": {
+      "nome": "Troll, Frost",
+      "portrait": "artwork/portraits/troll-frost.webp",
+      "token": "artwork/tokens/troll-frost.webp"
+    },
+    "tyrannosaurus": {
+      "nome": "Tyrannosaurus",
+      "portrait": "artwork/portraits/tyrannosaurus.webp",
+      "token": "artwork/tokens/tyrannosaurus.webp"
+    },
+    "unicorn": {
+      "nome": "Unicorn",
+      "portrait": "artwork/portraits/unicorn.webp",
+      "token": "artwork/tokens/unicorn.webp"
+    },
+    "vampire": {
+      "nome": "Vampire",
+      "portrait": "artwork/portraits/vampire.webp",
+      "token": "artwork/tokens/vampire.webp"
+    },
+    "vampire-spawn": {
+      "nome": "Vampire Spawn",
+      "portrait": "artwork/portraits/vampire-spawn.webp",
+      "token": "artwork/tokens/vampire-spawn.webp"
+    },
+    "velociraptor": {
+      "nome": "Velociraptor",
+      "portrait": "artwork/portraits/velociraptor.webp",
+      "token": "artwork/tokens/velociraptor.webp"
+    },
+    "violet-fungus": {
+      "nome": "Violet Fungus",
+      "portrait": "artwork/portraits/violet-fungus.webp",
+      "token": "artwork/tokens/violet-fungus.webp"
+    },
+    "viperian": {
+      "nome": "Viperian",
+      "portrait": "artwork/portraits/viperian.webp",
+      "token": "artwork/tokens/viperian.webp"
+    },
+    "viperian-ophid": {
+      "nome": "Viperian, Ophid",
+      "portrait": "artwork/portraits/viperian-ophid.webp",
+      "token": "artwork/tokens/viperian-ophid.webp"
+    },
+    "viperian-wizard": {
+      "nome": "Viperian, Wizard",
+      "portrait": "artwork/portraits/viperian-wizard.webp",
+      "token": "artwork/tokens/viperian-wizard.webp"
+    },
+    "void-spawn": {
+      "nome": "Void Spawn",
+      "portrait": "artwork/portraits/void-spawn.webp",
+      "token": "artwork/tokens/void-spawn.webp"
+    },
+    "void-spider": {
+      "nome": "Void Spider",
+      "portrait": "artwork/portraits/void-spider.webp",
+      "token": "artwork/tokens/void-spider.webp"
+    },
+    "vulture": {
+      "nome": "Vulture",
+      "portrait": "artwork/portraits/vulture.webp",
+      "token": "artwork/tokens/vulture.webp"
+    },
+    "wasp-giant": {
+      "nome": "Wasp, Giant",
+      "portrait": "artwork/portraits/wasp-giant.webp",
+      "token": "artwork/tokens/wasp-giant.webp"
+    },
+    "wererat": {
+      "nome": "Wererat",
+      "portrait": "artwork/portraits/wererat.webp",
+      "token": "artwork/tokens/wererat.webp"
+    },
+    "werewolf": {
+      "nome": "Werewolf",
+      "portrait": "artwork/portraits/werewolf.webp",
+      "token": "artwork/tokens/werewolf.webp"
+    },
+    "wight": {
+      "nome": "Wight",
+      "portrait": "artwork/portraits/wight.webp",
+      "token": "artwork/tokens/wight.webp"
+    },
+    "will-o'-wisp": {
+      "nome": "Will-o'-Wisp",
+      "portrait": "artwork/portraits/will-o'-wisp.webp",
+      "token": "artwork/tokens/will-o'-wisp.webp"
+    },
+    "wolf": {
+      "nome": "Wolf",
+      "portrait": "artwork/portraits/wolf.webp",
+      "token": "artwork/tokens/wolf.webp"
+    },
+    "wolf-dire": {
+      "nome": "Wolf, Dire",
+      "portrait": "artwork/portraits/wolf-dire.webp",
+      "token": "artwork/tokens/wolf-dire.webp"
+    },
+    "wolf-winter": {
+      "nome": "Wolf, Winter",
+      "portrait": "artwork/portraits/wolf-winter.webp",
+      "token": "artwork/tokens/wolf-winter.webp"
+    },
+    "worg": {
+      "nome": "Worg",
+      "portrait": "artwork/portraits/worg.webp",
+      "token": "artwork/tokens/worg.webp"
+    },
+    "wraith": {
+      "nome": "Wraith",
+      "portrait": "artwork/portraits/wraith.webp",
+      "token": "artwork/tokens/wraith.webp"
+    },
+    "wyvern": {
+      "nome": "Wyvern",
+      "portrait": "artwork/portraits/wyvern.webp",
+      "token": "artwork/tokens/wyvern.webp"
+    },
+    "zombie": {
+      "nome": "Zombie",
+      "portrait": "artwork/portraits/zombie.webp",
+      "token": "artwork/tokens/zombie.webp"
+    }
+  }
+}

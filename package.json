@@ -32,6 +32,7 @@
     "extract:regras-homebrew-shadowdark": "node scripts/extract-regras-homebrew-shadowdark.js",
     "extract:magias-shadowdark": "node scripts/extract-magias-from-vault.js",
     "migrate:from-fantasia": "node scripts/migrate-from-fantasia.js",
+    "rebuild:ameacas-tokens": "node scripts/rebuild-ameacas-tokens.js",
     "validate:data": "node scripts/validate-migrated-data.js --strict",
     "build:android:twa:init": "node scripts/init-twa.js",
     "build:android:twa": "cd android-twa && npx @bubblewrap/cli build",

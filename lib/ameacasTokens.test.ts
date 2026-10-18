@@ -7,7 +7,16 @@ import {
   type AmeacasTokensData,
 } from "./ameacasTokens";
 
-function loadSidecarTokens(): Record<string, { url: string; rotulo?: string; credito?: string }> {
+function loadSidecarTokens(): Record<
+  string,
+  {
+    url: string;
+    rotulo?: string;
+    credito?: string;
+    creditoUrl?: string;
+    fonte?: string;
+  }
+> {
   const raw = JSON.parse(
     readFileSync(
       join(__dirname, "../public/data/ameacas-tokens.json"),
@@ -30,6 +39,9 @@ function fileOf(url: string): string {
   return decodeURIComponent(url.split("/").pop() ?? "").toLowerCase();
 }
 
+const COMMUNITY_HOST = "cdn.jsdelivr.net/gh/PrototypeESBU/foundryvtt-shadowdark-community-tokens";
+const YST_HOST = "youseethis.blog";
+
 describe("ameacasTokens", () => {
   afterEach(() => {
     clearAmeacasTokensCache();
@@ -41,7 +53,7 @@ describe("ameacasTokens", () => {
       tokens: {
         goblin: {
           url: "https://example.com/goblin.png",
-          credito: "You see this.",
+          credito: "Shadowdark Community Tokens (Delgore)",
           rotulo: "Goblin",
         },
       },
@@ -80,32 +92,39 @@ describe("ameacasTokens", () => {
       expect(tokens[id]?.url).toMatch(/gith_\d_fbb\.png/);
       expect(tokens[id]?.rotulo).toBe("Githyanki");
       expect(tokens[id]?.credito).toBe("You see this.");
+      expect(tokens[id]?.fonte).toBe("yst");
     }
     expect(tokens.putaria).toBeUndefined();
   });
 
-  it("censo: bugs corrigidos (bat, beholder, rat, lobo, rust, orc, aranha)", () => {
+  it("Community Tokens primário em ids core (goblin, abolete, morcegos)", () => {
     const tokens = loadSidecarTokens();
-    expect(fileOf(tokens.morcegos.url)).toMatch(/^bat_/);
-    expect(tokens.morcegos.rotulo).toBe("Bat");
-    expect(fileOf(tokens["o-oraculo-de-dez-olhos"].url)).toMatch(/beholder/);
-    expect(fileOf(tokens.rato.url)).toMatch(/^rat_/);
-    expect(fileOf(tokens.lobo.url)).toMatch(/wolf_warg/);
+    for (const id of ["goblin", "abolete", "morcegos"] as const) {
+      expect(tokens[id]?.url, id).toContain(COMMUNITY_HOST);
+      expect(tokens[id]?.fonte).toBe("community-tokens");
+      expect(tokens[id]?.credito).toMatch(/Community Tokens/i);
+      expect(tokens[id]?.creditoUrl).toContain("shadowdark-community-tokens");
+    }
+    expect(fileOf(tokens.morcegos.url)).toMatch(/bat-swarm/);
+    expect(fileOf(tokens.abolete.url)).toMatch(/aboleth/);
+  });
+
+  it("censo: bugs corrigidos (beholder, rat, lobo, rust, orc, aranha)", () => {
+    const tokens = loadSidecarTokens();
+    expect(fileOf(tokens["o-oraculo-de-dez-olhos"].url)).toMatch(
+      /the-ten-eyed-oracle|beholder/,
+    );
+    expect(fileOf(tokens.rato.url)).toMatch(/^rat/);
+    expect(fileOf(tokens.lobo.url)).toMatch(/wolf/);
     expect(fileOf(tokens.lobisomem.url)).toMatch(/werewolf/);
-    expect(fileOf(tokens["monstro-da-ferrugem"].url)).toMatch(/rust_monster/);
-    expect(fileOf(tokens.orc.url)).toMatch(/^orc_/);
-    expect(fileOf(tokens["aranha-gigante"].url)).toMatch(/spider_giant/);
+    expect(fileOf(tokens["monstro-da-ferrugem"].url)).toMatch(/rust-monster/);
+    expect(fileOf(tokens.orc.url)).toMatch(/^orc/);
+    expect(fileOf(tokens["aranha-gigante"].url)).toMatch(/spider-giant/);
   });
 
   it("censo: remoções e LEAVE_BLANK obrigatórios", () => {
     const tokens = loadSidecarTokens();
-    for (const id of [
-      "hipopotamo",
-      "arraia-gigante",
-      "mastim",
-      "oraculo",
-      "putaria",
-    ] as const) {
+    for (const id of ["oraculo", "putaria"] as const) {
       expect(tokens[id], id).toBeUndefined();
     }
   });
@@ -117,13 +136,25 @@ describe("ameacasTokens", () => {
     expect(fileOf(tokens.rato.url)).not.toMatch(/caratacus/);
   });
 
-  it("censo: URLs do sidecar estão na lista de ficheiros YST usados", () => {
+  it("censo: tokens YST usam ficheiros da lista; Community usa jsDelivr", () => {
     const tokens = loadSidecarTokens();
     const used = new Set(loadUsedFilenames());
+    let community = 0;
+    let yst = 0;
     for (const [id, tok] of Object.entries(tokens)) {
-      const f = fileOf(tok.url);
-      expect(used.has(f), `${id} -> ${f}`).toBe(true);
-      expect(tok.credito).toBe("You see this.");
+      if (tok.url.includes(YST_HOST)) {
+        yst += 1;
+        const f = fileOf(tok.url);
+        expect(used.has(f), `${id} -> ${f}`).toBe(true);
+        expect(tok.credito).toBe("You see this.");
+        expect(tok.fonte ?? "yst").toBe("yst");
+      } else {
+        community += 1;
+        expect(tok.url, id).toContain(COMMUNITY_HOST);
+        expect(tok.fonte).toBe("community-tokens");
+      }
     }
+    expect(community).toBeGreaterThan(200);
+    expect(yst).toBeGreaterThan(0);
   });
 });

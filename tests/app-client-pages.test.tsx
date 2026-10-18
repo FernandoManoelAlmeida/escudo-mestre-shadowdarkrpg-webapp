@@ -334,7 +334,9 @@ describe("páginas client", () => {
       await waitFor(
         () => {
           expect(
-            screen.getByRole("heading", { name: ameacaMinimal.nome }),
+            screen.getByRole("heading", {
+              name: ameacaMinimal.nome.toLocaleUpperCase("pt-BR"),
+            }),
           ).toBeInTheDocument();
         },
         { timeout: asyncPageTimeout },

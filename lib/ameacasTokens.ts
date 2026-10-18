@@ -3,7 +3,11 @@ import { mapTokenNomenclature } from "@/lib/githNomenclature";
 export type AmeacaToken = {
   url: string;
   credito?: string;
+  /** Link do crédito na figcaption (Community Tokens, You See This, …). */
+  creditoUrl?: string;
   rotulo?: string;
+  /** Origem da arte no sidecar (`community-tokens` | `yst`). */
+  fonte?: string;
 };
 
 export type AmeacasTokensData = {
