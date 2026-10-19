@@ -4938,24 +4938,24 @@
       "epitet": "CAVALEIRA ARTISTA",
       "flavor": "Cavaleira-artista matriprole de pele acinzentada e olhos escuros; veste cota de malha matriprole e empunha uma lâmina astral prateada. Marcada pela Rainha-Lich Matriarca, mistura artes marciais, psionismo e magia sombria com charme de menestrel — juramentos em matri (Ch'mar, zal'a Matriarca).",
       "tipo": "Humanóide (Matriprole)",
-      "ca": 16,
+      "ca": 15,
       "pv": 24,
-      "atq": "2 espada astral matri +5 (1d12) ou 1 rajada mística (Perto) +5 (1d6)",
+      "atq": "2 espada grande de prata matriprole +4 (1d12) ou 1 rajada mística (Perto) +2 (1d6)",
       "mv": "Perto",
       "atributos": {
-        "F": 0,
-        "D": 3,
-        "C": 3,
-        "I": 1,
-        "S": -1,
-        "Car": 5
+        "F": -1,
+        "D": 2,
+        "C": 2,
+        "I": 0,
+        "S": -2,
+        "Car": 2
       },
       "al": "C",
       "nv": 5,
       "tracos": [
         {
           "nome": "Rajada Mística (Magia de CAR)",
-          "descricao": "**Ação**; **3/dia**; **Perto**. +5. 1d6 de dano a **1 alvo**. Em acerto, **opcionalmente** FOR CD 12 ou empurra o alvo para **Longe** **ou** aplica **Amedrontar**: alvo testa **CAR CD 15** ou Desvantagem em ataques por **1d4 rodadas** enquanto Put'Aria estiver visível e não pode se aproximar voluntariamente. *Efeito não cumulativo.*"
+          "descricao": "**Ação**; **3/dia**; **Perto**. +2. 1d6 de dano a **1 alvo**. Em acerto, **opcionalmente** FOR CD 12 ou empurra o alvo para **Longe** **ou** aplica **Amedrontar**: alvo testa **CAR CD 15** ou Desvantagem em ataques por **1d4 rodadas** enquanto Put'Aria estiver visível e não pode se aproximar voluntariamente. *Efeito não cumulativo.*"
         },
         {
           "nome": "Conhecimento Astral",
@@ -4967,23 +4967,19 @@
         },
         {
           "nome": "Fascinar",
-          "descricao": "CD 12 CAR ou alvos em **perto** com NV igual ou menor que 3 fica paralizado. Falha impede novo uso até descanso."
+          "descricao": "CD 12 CAR ou alvos em **perto** com NV igual ou menor que 4 fica paralizado. Falha impede novo uso até descanso."
         },
         {
           "nome": "Inspirar",
-          "descricao": "1/dia. Aliados em **perto** recebem 1 ficha de sorte."
-        },
-        {
-          "nome": "Fome Reveladora",
-          "descricao": "1/dia. Por **1 hora**, em alcance **Perto**, enxerga no escuro e vê criaturas e objetos invisíveis."
+          "descricao": "2/dia. Aliados em **perto** recebem 1 ficha de sorte."
         },
         {
           "nome": "Artes do Caos",
           "descricao": "Vantagem testes de CAR em inteções agressivas."
         },
         {
-          "nome": "Passo Nebuloso (Magia de CAR, grau 2)",
-          "descricao": "CD 12. 1/dia (máx. 1/turno). Teletransporte até **Perto**x2 (linha de visão). Não gasta o movimento do turno."
+          "nome": "Passo astral",
+          "descricao": "**1/dia**, **ação**: teletransporte até **Longe** (linha de visão)."
         }
       ],
       "origem": "homebrew",
