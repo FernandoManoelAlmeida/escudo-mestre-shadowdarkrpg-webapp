@@ -18,7 +18,9 @@ const Wrap = styled.a`
   box-sizing: border-box;
   border-radius: ${({ theme }) => theme.borderRadius};
   border: 1px solid ${({ theme }) => theme.colors.borderHighlight};
-  background-color: #03070f;
+  /* Mesmo fundo dos restantes cartões da home (grafite do tema) — antes era
+     um preto azulado fixo (#03070f) que destoava da paleta do app. */
+  background-color: ${({ theme }) => theme.colors.surface};
   overflow: hidden;
   transition:
     opacity 0.15s ease,
@@ -38,7 +40,7 @@ const Img = styled.img`
   max-height: 100%;
   object-fit: contain;
   object-position: center;
-  filter: invert(1);
+  /* O asset já traz o logótipo claro com fundo transparente (sem invert). */
 `;
 
 export function AstraldarkPdfBanner() {
