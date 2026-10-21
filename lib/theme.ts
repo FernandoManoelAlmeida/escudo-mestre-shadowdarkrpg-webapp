@@ -1,19 +1,20 @@
 /**
- * Escudo Shadowdark — base OSR P&B; acentos funcionais (ação, origem, rolagem).
+ * Escudo Shadowdark — base OSR em grafite neutro (fundo #2E3138, cartões
+ * mais claros que o fundo); acentos funcionais (ação, origem, rolagem).
  */
 export const theme = {
   colors: {
-    background: "#0a0a0a",
-    surface: "#141414",
-    surfaceHover: "#1c1c1c",
+    background: "#2E3138",
+    surface: "#3A3F47",
+    surfaceHover: "#454B54",
     text: "#f0f0f0",
-    textMuted: "#9a9a9a",
+    textMuted: "#A8B2BC",
     primary: "#d54d4d",
     primaryHover: "#e86565",
     primaryGlow: "rgba(213, 77, 77, 0.25)",
     rollButton: "#8b2635",
     rollButtonHover: "#a32f41",
-    border: "#2a2a2a",
+    border: "#565E68",
     borderHighlight: "rgba(213, 77, 77, 0.45)",
     success: "#22c55e",
     danger: "#ef4444",

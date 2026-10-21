@@ -24,7 +24,7 @@ export default function ClientLayout({
             left: "-9999px",
             zIndex: 9999,
             padding: "0.5rem",
-            background: "#141414",
+            background: "#3A3F47",
             color: theme.colors.primary,
           }}
         >

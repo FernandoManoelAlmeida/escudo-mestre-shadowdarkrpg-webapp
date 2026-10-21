@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 const fallback = {
   typography: { fontFamily: '"Inter", system-ui, sans-serif' },
   colors: {
-    background: "#181f26",
+    background: "#2E3138",
     text: "#e8ecf0",
     primary: "#d54d4d",
     primaryHover: "#e86565",
