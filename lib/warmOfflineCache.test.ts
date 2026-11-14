@@ -1,4 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { OFFLINE_WARM_REVISIONS_KEY } from "./offlineWarmState";
 import { warmOfflineCache } from "./warmOfflineCache";
 
 describe("warmOfflineCache", () => {
@@ -8,15 +9,21 @@ describe("warmOfflineCache", () => {
   beforeEach(() => {
     fetchMock.mockReset();
     postMessage.mockReset();
+    localStorage.clear();
     vi.stubGlobal("fetch", fetchMock);
+    const sw = { postMessage };
     Object.defineProperty(navigator, "serviceWorker", {
       configurable: true,
-      value: { controller: { postMessage } },
+      value: {
+        controller: sw,
+        ready: Promise.resolve({ active: sw }),
+      },
     });
   });
 
   afterEach(() => {
     vi.unstubAllGlobals();
+    localStorage.clear();
   });
 
   it("falha se o manifesto não existir", async () => {
@@ -26,11 +33,20 @@ describe("warmOfflineCache", () => {
     expect(result.error).toMatch(/indisponível/);
   });
 
-  it("descarrega paths e notifica o service worker", async () => {
+  it("descarrega só paths com revision diferente e grava estado", async () => {
+    localStorage.setItem(
+      OFFLINE_WARM_REVISIONS_KEY,
+      JSON.stringify({ "/data/a.json": "old" }),
+    );
     fetchMock
       .mockResolvedValueOnce({
         ok: true,
-        json: async () => ({ paths: ["/data/a.json", "/regras/"] }),
+        json: async () => ({
+          files: [
+            { path: "/data/a.json", revision: "new" },
+            { path: "/regras/", revision: "r1" },
+          ],
+        }),
       })
       .mockResolvedValue({ ok: true });
 
@@ -45,5 +61,28 @@ describe("warmOfflineCache", () => {
       expect.objectContaining({ type: "CACHE_URLS" }),
     );
     expect(progress.at(-1)).toEqual({ done: 2, total: 2 });
+    const stored = JSON.parse(
+      localStorage.getItem(OFFLINE_WARM_REVISIONS_KEY)!,
+    ) as Record<string, string>;
+    expect(stored["/data/a.json"]).toBe("new");
+    expect(stored["/regras/"]).toBe("r1");
+  });
+
+  it("skipped quando já está actualizado", async () => {
+    localStorage.setItem(
+      OFFLINE_WARM_REVISIONS_KEY,
+      JSON.stringify({ "/data/a.json": "r1" }),
+    );
+    fetchMock.mockResolvedValueOnce({
+      ok: true,
+      json: async () => ({
+        files: [{ path: "/data/a.json", revision: "r1" }],
+      }),
+    });
+    const result = await warmOfflineCache();
+    expect(result.ok).toBe(true);
+    expect(result.skipped).toBe(true);
+    expect(result.warmed).toBe(0);
+    expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 });

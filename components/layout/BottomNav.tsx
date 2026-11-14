@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import type { RasterIconName } from "@/lib/rasterIcons";
@@ -12,7 +12,14 @@ import {
   isHomePath,
   offlineTapCountdownMessage,
 } from "@/lib/homeOfflineGesture";
-import { warmOfflineCache } from "@/lib/warmOfflineCache";
+import {
+  getOfflineWarmPlan,
+  readStoredRevisions,
+} from "@/lib/offlineWarmState";
+import {
+  fetchOfflineManifest,
+  warmOfflineCache,
+} from "@/lib/warmOfflineCache";
 import {
   Nav,
   NavLink,
@@ -40,6 +47,23 @@ export default function BottomNav() {
   const homeTapCount = useRef(0);
   const homeTapTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const warming = useRef(false);
+  /** null = ainda a verificar; false = pacote actualizado (gesto off). */
+  const needsWarmRef = useRef<boolean | null>(null);
+
+  const refreshNeedsWarm = useCallback(async () => {
+    const manifest = await fetchOfflineManifest();
+    if (manifest) {
+      needsWarmRef.current = !getOfflineWarmPlan(manifest).upToDate;
+      return;
+    }
+    needsWarmRef.current = Object.keys(readStoredRevisions()).length === 0;
+  }, []);
+
+  useEffect(() => {
+    void refreshNeedsWarm();
+    const id = window.setInterval(() => void refreshNeedsWarm(), 60_000);
+    return () => window.clearInterval(id);
+  }, [refreshNeedsWarm]);
 
   const resetHomeTaps = useCallback(() => {
     homeTapCount.current = 0;
@@ -63,6 +87,10 @@ export default function BottomNav() {
       return;
     }
     if (warming.current) return;
+    if (needsWarmRef.current === false) {
+      resetHomeTaps();
+      return;
+    }
 
     homeTapCount.current += 1;
     const count = homeTapCount.current;
@@ -96,11 +124,14 @@ export default function BottomNav() {
     })
       .then((result) => {
         if (result.ok) {
-          notify("Pronto para uso offline.", {
-            replace: true,
-            sticky: false,
-            skipEnter: true,
-          });
+          needsWarmRef.current = false;
+          void refreshNeedsWarm();
+          notify(
+            result.skipped
+              ? "Pacote offline já está actualizado."
+              : "Pronto para uso offline.",
+            { replace: true, sticky: false, skipEnter: true },
+          );
         } else {
           notify(result.error ?? "Falha ao preparar o modo offline.", {
             replace: true,
@@ -112,7 +143,13 @@ export default function BottomNav() {
       .finally(() => {
         warming.current = false;
       });
-  }, [pathname, notify, resetHomeTaps, scheduleHomeTapReset]);
+  }, [
+    pathname,
+    notify,
+    resetHomeTaps,
+    scheduleHomeTapReset,
+    refreshNeedsWarm,
+  ]);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,

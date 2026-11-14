@@ -65,9 +65,17 @@ describe("scripts/write-version", () => {
       path.join(dir, "out", "offline-manifest.json"),
       "utf8",
     );
-    const manifest = JSON.parse(manifestRaw) as { paths: string[] };
+    const manifest = JSON.parse(manifestRaw) as {
+      paths: string[];
+      files: { path: string; revision: string }[];
+    };
     expect(manifest.paths).toContain("/data/ameacas.json");
     expect(manifest.paths).not.toContain("/version.json");
+    expect(manifest.files.some((f) => f.path === "/data/ameacas.json")).toBe(
+      true,
+    );
+    const ameacas = manifest.files.find((f) => f.path === "/data/ameacas.json");
+    expect(ameacas?.revision).toMatch(/^[a-f0-9]{16}$/);
   });
 
   it("copia public/<basePath>/sw.js para out/sw.js quando aplicável", () => {

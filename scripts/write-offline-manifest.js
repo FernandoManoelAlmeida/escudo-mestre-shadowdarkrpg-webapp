@@ -1,24 +1,35 @@
 #!/usr/bin/env node
 /**
- * Gera public/offline-manifest.json (e out/ se existir) com paths relativos
- * para aquecer o cache offline no cliente. Exclui version.json e sourcemaps.
+ * Gera public/offline-manifest.json (e out/ se existir) com ficheiros e
+ * revision (hash do conteúdo) para warm offline incremental. Exclui
+ * version.json e sourcemaps.
  *
  * Uso: node scripts/write-offline-manifest.js
  * Chamado por write-version.js após o build.
  */
+const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 
-const SKIP_NAMES = new Set([
-  "version.json",
-  ".DS_Store",
-  "Thumbs.db",
-]);
+const SKIP_NAMES = new Set(["version.json", ".DS_Store", "Thumbs.db"]);
+
+/**
+ * @param {string} filePath
+ * @returns {string}
+ */
+function fileRevision(filePath) {
+  const buf = fs.readFileSync(filePath);
+  return crypto.createHash("sha256").update(buf).digest("hex").slice(0, 16);
+}
+
+/**
+ * @typedef {{ path: string, revision: string }} OfflineFileEntry
+ */
 
 /**
  * @param {string} dir
  * @param {string} urlBase path URL sem trailing slash ("" = raiz)
- * @param {string[]} acc
+ * @param {Map<string, string>} acc path → revision
  */
 function walkFiles(dir, urlBase, acc) {
   if (!fs.existsSync(dir)) return;
@@ -37,10 +48,12 @@ function walkFiles(dir, urlBase, acc) {
       walkFiles(full, urlPath, acc);
       continue;
     }
-    acc.push(urlPath.startsWith("/") ? urlPath : `/${urlPath}`);
+    const url = urlPath.startsWith("/") ? urlPath : `/${urlPath}`;
+    const revision = fileRevision(full);
+    acc.set(url, revision);
     if (name === "index.html") {
       const dirUrl = urlBase === "" ? "/" : `${urlBase}/`;
-      if (!acc.includes(dirUrl)) acc.push(dirUrl);
+      if (!acc.has(dirUrl)) acc.set(dirUrl, revision);
     }
   }
 }
@@ -55,25 +68,28 @@ function writeOfflineManifest(
 ) {
   const outDir = path.join(projectRoot, "out");
   const publicDir = path.join(projectRoot, "public");
-  const paths = [];
+  /** @type {Map<string, string>} */
+  const map = new Map();
 
   if (fs.existsSync(outDir)) {
-    walkFiles(outDir, "", paths);
+    walkFiles(outDir, "", map);
   } else if (fs.existsSync(publicDir)) {
-    walkFiles(publicDir, "", paths);
+    walkFiles(publicDir, "", map);
   }
 
-  const unique = [...new Set(paths)].filter((p) => {
-    const base = path.posix.basename(p);
-    if (base === "version.json") return false;
-    if (base.endsWith(".map")) return false;
-    return true;
-  });
-  unique.sort();
+  map.delete("/version.json");
+  map.delete("/offline-manifest.json");
+
+  const files = [...map.entries()]
+    .filter(([p]) => !p.endsWith(".map") && path.posix.basename(p) !== "version.json")
+    .map(([p, revision]) => ({ path: p, revision }))
+    .sort((a, b) => a.path.localeCompare(b.path));
 
   const payload = {
     generatedAt: (opts.now ?? (() => new Date().toISOString()))(),
-    paths: unique,
+    files,
+    /** @deprecated prefer files; mantido para leituras antigas */
+    paths: files.map((f) => f.path),
   };
   const body = JSON.stringify(payload, null, 2) + "\n";
 
@@ -94,8 +110,8 @@ function writeOfflineManifest(
 if (require.main === module) {
   const payload = writeOfflineManifest();
   console.log(
-    `write-offline-manifest: ${payload.paths.length} path(s) → public/offline-manifest.json`,
+    `write-offline-manifest: ${payload.files.length} file(s) → public/offline-manifest.json`,
   );
 }
 
-module.exports = { writeOfflineManifest, walkFiles };
+module.exports = { writeOfflineManifest, walkFiles, fileRevision };

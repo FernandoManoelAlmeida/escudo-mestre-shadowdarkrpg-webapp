@@ -1,4 +1,11 @@
 import { assetUrl } from "@/lib/basePath";
+import {
+  getOfflineWarmPlan,
+  mergeStoredRevisions,
+  normalizeManifestFiles,
+  type OfflineFileEntry,
+  type OfflineManifest,
+} from "@/lib/offlineWarmState";
 
 export type WarmOfflineProgress = {
   done: number;
@@ -10,11 +17,8 @@ export type WarmOfflineResult = {
   error?: string;
   warmed: number;
   total: number;
-};
-
-type OfflineManifest = {
-  generatedAt?: string;
-  paths: string[];
+  /** true se já estava actualizado (nada a descarregar). */
+  skipped?: boolean;
 };
 
 function toAbsoluteUrl(path: string): string {
@@ -22,21 +26,51 @@ function toAbsoluteUrl(path: string): string {
   return new URL(rel, window.location.origin).href;
 }
 
-function requestServiceWorkerCache(urls: string[]): void {
+async function ensureServiceWorker(): Promise<ServiceWorker | null> {
   if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) {
-    return;
+    return null;
   }
-  const controller = navigator.serviceWorker.controller;
-  if (!controller) return;
+  try {
+    const reg = await navigator.serviceWorker.ready;
+    if (navigator.serviceWorker.controller) {
+      return navigator.serviceWorker.controller;
+    }
+    return reg.active ?? null;
+  } catch {
+    return null;
+  }
+}
+
+function requestServiceWorkerCache(
+  controller: ServiceWorker | null,
+  urls: string[],
+): void {
+  if (!controller || urls.length === 0) return;
   controller.postMessage({
     type: "CACHE_URLS",
     payload: { urlsToCache: urls },
   });
 }
 
+export async function fetchOfflineManifest(
+  signal?: AbortSignal,
+): Promise<OfflineManifest | null> {
+  try {
+    const res = await fetch(assetUrl("/offline-manifest.json"), {
+      credentials: "same-origin",
+      cache: "no-store",
+      signal,
+    });
+    if (!res.ok) return null;
+    return (await res.json()) as OfflineManifest;
+  } catch {
+    return null;
+  }
+}
+
 /**
- * Descarrega o pacote listado em `/offline-manifest.json` para o cache
- * (Workbox runtime + mensagem CACHE_URLS). Não inclui version.json.
+ * Descarrega só os ficheiros com revision diferente do storage
+ * (Workbox runtime + CACHE_URLS). Não inclui version.json.
  */
 export async function warmOfflineCache(opts?: {
   onProgress?: (p: WarmOfflineProgress) => void;
@@ -46,29 +80,18 @@ export async function warmOfflineCache(opts?: {
     return { ok: false, error: "Ambiente sem window.", warmed: 0, total: 0 };
   }
 
-  let manifest: OfflineManifest;
-  try {
-    const res = await fetch(assetUrl("/offline-manifest.json"), {
-      credentials: "same-origin",
-      cache: "no-store",
-      signal: opts?.signal,
-    });
-    if (!res.ok) {
-      return {
-        ok: false,
-        error: `Manifesto offline indisponível (${res.status}).`,
-        warmed: 0,
-        total: 0,
-      };
-    }
-    manifest = (await res.json()) as OfflineManifest;
-  } catch (e) {
-    const msg = e instanceof Error ? e.message : "Falha ao ler o manifesto.";
-    return { ok: false, error: msg, warmed: 0, total: 0 };
+  const manifest = await fetchOfflineManifest(opts?.signal);
+  if (!manifest) {
+    return {
+      ok: false,
+      error: "Manifesto offline indisponível.",
+      warmed: 0,
+      total: 0,
+    };
   }
 
-  const paths = Array.isArray(manifest.paths) ? manifest.paths : [];
-  if (paths.length === 0) {
+  const all = normalizeManifestFiles(manifest);
+  if (all.length === 0) {
     return {
       ok: false,
       error: "Manifesto offline vazio. Faça um build de produção.",
@@ -77,15 +100,38 @@ export async function warmOfflineCache(opts?: {
     };
   }
 
-  const urls = paths.map(toAbsoluteUrl);
-  requestServiceWorkerCache(urls);
+  const plan = getOfflineWarmPlan(manifest);
+  if (plan.upToDate) {
+    return { ok: true, warmed: 0, total: 0, skipped: true };
+  }
+
+  const controller = await ensureServiceWorker();
+  if (
+    process.env.NODE_ENV === "production" &&
+    !controller &&
+    !navigator.serviceWorker?.controller
+  ) {
+    return {
+      ok: false,
+      error:
+        "Service worker indisponível. Abra a app em produção com rede e tente de novo.",
+      warmed: 0,
+      total: plan.toFetch.length,
+    };
+  }
+
+  const toFetch = plan.toFetch;
+  const urls = toFetch.map((f) => toAbsoluteUrl(f.path));
+  requestServiceWorkerCache(controller, urls);
 
   let warmed = 0;
   const total = urls.length;
+  const succeeded: OfflineFileEntry[] = [];
   opts?.onProgress?.({ done: 0, total });
 
-  for (const url of urls) {
+  for (let i = 0; i < toFetch.length; i++) {
     if (opts?.signal?.aborted) {
+      if (succeeded.length > 0) mergeStoredRevisions(succeeded);
       return {
         ok: false,
         error: "Preparação offline cancelada.",
@@ -93,13 +139,25 @@ export async function warmOfflineCache(opts?: {
         total,
       };
     }
+    const entry = toFetch[i]!;
+    const url = urls[i]!;
     try {
-      await fetch(url, { credentials: "same-origin", signal: opts?.signal });
-      warmed += 1;
+      const res = await fetch(url, {
+        credentials: "same-origin",
+        signal: opts?.signal,
+      });
+      if (res.ok) {
+        warmed += 1;
+        succeeded.push(entry);
+      }
     } catch {
       /* continua — partial warm ainda ajuda */
     }
     opts?.onProgress?.({ done: warmed, total });
+  }
+
+  if (succeeded.length > 0) {
+    mergeStoredRevisions(succeeded);
   }
 
   if (warmed === 0) {
