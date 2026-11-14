@@ -77,23 +77,35 @@ export default function BottomNav() {
 
     resetHomeTaps();
     warming.current = true;
-    notify("A preparar modo offline…", { replace: true });
+    notify("Preparando modo offline…", {
+      replace: true,
+      sticky: true,
+      skipEnter: true,
+    });
 
     void warmOfflineCache({
       onProgress: ({ done, total }) => {
         if (total > 0 && (done === total || done % 10 === 0)) {
-          notify(`A preparar modo offline… ${done}/${total}`, {
+          notify(`Preparando modo offline… ${done}/${total}`, {
             replace: true,
+            sticky: true,
+            skipEnter: true,
           });
         }
       },
     })
       .then((result) => {
         if (result.ok) {
-          notify("Pronto para uso offline.", { replace: true });
+          notify("Pronto para uso offline.", {
+            replace: true,
+            sticky: false,
+            skipEnter: true,
+          });
         } else {
           notify(result.error ?? "Falha ao preparar o modo offline.", {
             replace: true,
+            sticky: false,
+            skipEnter: true,
           });
         }
       })

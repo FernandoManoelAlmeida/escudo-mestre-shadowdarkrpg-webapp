@@ -62,9 +62,7 @@ describe("RollToastContext", () => {
     const { result } = renderHook(() => useRollToast(), { wrapper });
 
     act(() => {
-      result.current.notify(
-        "Faltam 4 toques no Início para preparar o modo offline.",
-      );
+      result.current.notify("Faltam 4 toques no Início para preparar o modo offline.");
     });
     expect(result.current.infos).toHaveLength(1);
     expect(result.current.infos[0]!.message).toMatch(/Faltam 4/);
@@ -75,7 +73,7 @@ describe("RollToastContext", () => {
     expect(result.current.infos).toHaveLength(0);
   });
 
-  it("notify com replace mantém só um toast de info", async () => {
+  it("notify com replace mantém só um toast de info e o mesmo id", async () => {
     const { RollToastProvider, useRollToast } = await import("./RollToastContext");
     const wrapper = ({ children }: { children: React.ReactNode }) => (
       <RollToastProvider>{children}</RollToastProvider>
@@ -84,9 +82,43 @@ describe("RollToastContext", () => {
 
     act(() => {
       result.current.notify("a");
+    });
+    const id = result.current.infos[0]!.id;
+    act(() => {
       result.current.notify("b", { replace: true });
     });
     expect(result.current.infos).toHaveLength(1);
     expect(result.current.infos[0]!.message).toBe("b");
+    expect(result.current.infos[0]!.id).toBe(id);
+  });
+
+  it("notify com sticky marca o info como sticky", async () => {
+    const { RollToastProvider, useRollToast } = await import("./RollToastContext");
+    const wrapper = ({ children }: { children: React.ReactNode }) => (
+      <RollToastProvider>{children}</RollToastProvider>
+    );
+    const { result } = renderHook(() => useRollToast(), { wrapper });
+
+    act(() => {
+      result.current.notify("Preparando modo offline…", {
+        replace: true,
+        sticky: true,
+        skipEnter: true,
+      });
+    });
+    expect(result.current.infos).toHaveLength(1);
+    expect(result.current.infos[0]!.sticky).toBe(true);
+    expect(result.current.infos[0]!.skipEnter).toBe(true);
+
+    act(() => {
+      result.current.notify("Pronto para uso offline.", {
+        replace: true,
+        sticky: false,
+        skipEnter: true,
+      });
+    });
+    expect(result.current.infos[0]!.sticky).toBe(false);
+    expect(result.current.infos[0]!.skipEnter).toBe(true);
+    expect(result.current.infos[0]!.message).toMatch(/Pronto/);
   });
 });

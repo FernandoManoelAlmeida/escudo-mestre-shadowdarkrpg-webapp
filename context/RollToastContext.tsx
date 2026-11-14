@@ -24,6 +24,14 @@ export type RollEntry = {
 export type InfoEntry = {
   id: number;
   message: string;
+  sticky?: boolean;
+  skipEnter?: boolean;
+};
+
+export type NotifyOptions = {
+  replace?: boolean;
+  sticky?: boolean;
+  skipEnter?: boolean;
 };
 
 type RollToastContextValue = {
@@ -33,7 +41,7 @@ type RollToastContextValue = {
     result: RollResult,
     opts?: { suffix?: string; label?: string },
   ) => void;
-  notify: (message: string, opts?: { replace?: boolean }) => void;
+  notify: (message: string, opts?: NotifyOptions) => void;
   removeRoll: (id: number) => void;
   removeInfo: (id: number) => void;
   clearRolls: () => void;
@@ -60,19 +68,40 @@ export function RollToastProvider({ children }: { children: React.ReactNode }) {
     [],
   );
 
-  const notify = useCallback(
-    (message: string, opts?: { replace?: boolean }) => {
-      const text = message.trim();
-      if (!text) return;
-      const entry: InfoEntry = { id: nextId++, message: text };
-      if (opts?.replace) {
-        setInfos([entry]);
-        return;
-      }
-      setInfos((prev) => [entry, ...prev].slice(0, INFO_TOAST_MAX));
-    },
-    [],
-  );
+  const notify = useCallback((message: string, opts?: NotifyOptions) => {
+    const text = message.trim();
+    if (!text) return;
+    if (opts?.replace) {
+      setInfos((prev) => {
+        if (prev[0]) {
+          return [
+            {
+              ...prev[0],
+              message: text,
+              sticky: opts.sticky ?? prev[0].sticky,
+              skipEnter: opts.skipEnter ?? prev[0].skipEnter,
+            },
+          ];
+        }
+        return [
+          {
+            id: nextId++,
+            message: text,
+            sticky: opts.sticky,
+            skipEnter: opts.skipEnter,
+          },
+        ];
+      });
+      return;
+    }
+    const entry: InfoEntry = {
+      id: nextId++,
+      message: text,
+      sticky: opts?.sticky,
+      skipEnter: opts?.skipEnter,
+    };
+    setInfos((prev) => [entry, ...prev].slice(0, INFO_TOAST_MAX));
+  }, []);
 
   const removeRoll = useCallback((id: number) => {
     setRolls((prev) => prev.filter((e) => e.id !== id));

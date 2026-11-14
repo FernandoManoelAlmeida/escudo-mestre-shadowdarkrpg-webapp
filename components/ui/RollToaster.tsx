@@ -115,7 +115,7 @@ const List = styled.div`
   }
 `;
 
-const ToastCard = styled.article<{ $isNewest: boolean }>`
+const ToastCard = styled.article<{ $isNewest: boolean; $skipEnter?: boolean }>`
   position: relative;
   flex-shrink: 0;
   display: flex;
@@ -129,7 +129,8 @@ const ToastCard = styled.article<{ $isNewest: boolean }>`
   box-shadow:
     0 8px 28px rgba(0, 0, 0, 0.45),
     0 0 0 1px ${({ theme }) => theme.colors.primaryGlow};
-  animation: ${toastEnter} 0.38s ease forwards;
+  animation: ${({ $skipEnter }) =>
+    $skipEnter ? "none" : css`${toastEnter} 0.38s ease forwards`};
   touch-action: pan-y;
   cursor: pointer;
   transition:
@@ -327,15 +328,22 @@ function ToastItem({
 function InfoToastItem({
   entryId,
   message,
+  sticky,
+  skipEnter,
   isNewest,
   onRemove,
 }: {
   entryId: number;
   message: string;
+  sticky?: boolean;
+  skipEnter?: boolean;
   isNewest: boolean;
   onRemove: (id: number) => void;
 }) {
-  const dismiss = useCallback(() => onRemove(entryId), [entryId, onRemove]);
+  const dismiss = useCallback(() => {
+    if (sticky) return;
+    onRemove(entryId);
+  }, [entryId, onRemove, sticky]);
   const onKeyDown = useCallback(
     (e: React.KeyboardEvent) => {
       if (e.key === "Enter" || e.key === " ") {
@@ -349,11 +357,17 @@ function InfoToastItem({
   return (
     <ToastCard
       $isNewest={isNewest}
+      $skipEnter={!!skipEnter || !!sticky}
       role="button"
       tabIndex={0}
-      aria-label={`${message}. Clique para fechar.`}
+      aria-label={
+        sticky
+          ? `${message}. Em progresso.`
+          : `${message}. Clique para fechar.`
+      }
       onClick={dismiss}
       onKeyDown={onKeyDown}
+      style={sticky ? { cursor: "default" } : undefined}
     >
       <ToastBody>
         <InfoMessage>{message}</InfoMessage>
@@ -371,6 +385,7 @@ export default function RollToaster() {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key !== "Escape") return;
       if (infos.length > 0) {
+        if (infos[0]!.sticky) return;
         removeInfo(infos[0]!.id);
         return;
       }
@@ -409,6 +424,8 @@ export default function RollToaster() {
             key={`info-${entry.id}`}
             entryId={entry.id}
             message={entry.message}
+            sticky={entry.sticky}
+            skipEnter={entry.skipEnter}
             isNewest={index === 0 && rolls.length === 0}
             onRemove={removeInfo}
           />
