@@ -3,8 +3,11 @@ export function escapePathForRegExp(path: string): string {
   return path.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+/** Cache runtime partilhado pelo warm e pela rota CacheFirst de documentos. */
+export const PAGES_SHELL_CACHE = "pages-shell-offline";
+
 const JS_EXPIRATION = { maxEntries: 256, maxAgeSeconds: 86400 };
-const NAV_EXPIRATION = { maxEntries: 64, maxAgeSeconds: 86400 };
+const SHELL_EXPIRATION = { maxEntries: 64, maxAgeSeconds: 30 * 24 * 60 * 60 };
 
 /**
  * Rotas Workbox com prefixo de subpath — os defaults do next-pwa usam `/_next/` na raiz
@@ -37,7 +40,6 @@ export function subpathRuntimeCachingEntries(basePath: string) {
       handler: "NetworkFirst" as const,
       options: {
         cacheName: "start-url-subpath",
-        networkTimeoutSeconds: 3,
         plugins: [
           {
             cacheWillUpdate: async ({
@@ -62,8 +64,24 @@ export function subpathRuntimeCachingEntries(basePath: string) {
 }
 
 /**
- * Entradas prependidas aos defaults do next-pwa: mais entradas JS e
- * navegação com timeout curto para hard reload offline.
+ * HTML de export estático (termina em `/` ou `.html`), excluindo `/_next/`.
+ */
+export function pagesShellUrlPattern(basePath: string): RegExp {
+  const root = basePath
+    ? basePath.endsWith("/")
+      ? basePath.slice(0, -1)
+      : basePath
+    : "";
+  if (root) {
+    const esc = escapePathForRegExp(root);
+    return new RegExp(`^${esc}/(?!_next/)(?:.*\\/|.*\\.html)$`, "i");
+  }
+  return /^(?!\/_next\/)(?:\/.*\/|\/.*\.html|\/)$/i;
+}
+
+/**
+ * Entradas prependidas aos defaults: JS com mais entradas + shell HTML CacheFirst
+ * para hard reload offline de sub-rotas.
  */
 export function offlineFriendlyRuntimeCaching(basePath: string) {
   const root = basePath
@@ -77,27 +95,6 @@ export function offlineFriendlyRuntimeCaching(basePath: string) {
     ? new RegExp(`^${esc}/_next/static.+\\.js$`, "i")
     : /\/_next\/static.+\.js$/i;
 
-  const navigatePattern = root
-    ? ({
-        request,
-        sameOrigin,
-        url,
-      }: {
-        request: Request;
-        sameOrigin: boolean;
-        url: URL;
-      }) =>
-        sameOrigin &&
-        request.mode === "navigate" &&
-        url.pathname.startsWith(`${root}/`)
-    : ({
-        request,
-        sameOrigin,
-      }: {
-        request: Request;
-        sameOrigin: boolean;
-      }) => sameOrigin && request.mode === "navigate";
-
   return [
     {
       urlPattern: jsPattern,
@@ -108,12 +105,11 @@ export function offlineFriendlyRuntimeCaching(basePath: string) {
       },
     },
     {
-      urlPattern: navigatePattern,
-      handler: "NetworkFirst" as const,
+      urlPattern: pagesShellUrlPattern(basePath),
+      handler: "CacheFirst" as const,
       options: {
-        cacheName: "pages-navigate-offline",
-        networkTimeoutSeconds: 3,
-        expiration: NAV_EXPIRATION,
+        cacheName: PAGES_SHELL_CACHE,
+        expiration: SHELL_EXPIRATION,
       },
     },
   ];

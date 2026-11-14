@@ -1,4 +1,5 @@
 import { assetUrl } from "@/lib/basePath";
+import { PAGES_SHELL_CACHE } from "@/lib/pwaWorkboxPatterns";
 import {
   getOfflineWarmPlan,
   mergeStoredRevisions,
@@ -26,6 +27,10 @@ function toAbsoluteUrl(path: string): string {
   return new URL(rel, window.location.origin).href;
 }
 
+function isShellPath(path: string): boolean {
+  return path === "/" || path.endsWith("/") || /\.html$/i.test(path);
+}
+
 async function ensureServiceWorker(): Promise<ServiceWorker | null> {
   if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) {
     return null;
@@ -50,6 +55,20 @@ function requestServiceWorkerCache(
     type: "CACHE_URLS",
     payload: { urlsToCache: urls },
   });
+}
+
+/** Grava HTML de rotas no cache runtime usado pelo CacheFirst de documentos. */
+async function putShellInRuntimeCache(
+  url: string,
+  response: Response,
+): Promise<void> {
+  if (typeof caches === "undefined") return;
+  try {
+    const cache = await caches.open(PAGES_SHELL_CACHE);
+    await cache.put(url, response.clone());
+  } catch {
+    /* ignore — CACHE_URLS / fetch ainda ajudam */
+  }
 }
 
 export async function fetchOfflineManifest(
@@ -147,6 +166,9 @@ export async function warmOfflineCache(opts?: {
         signal: opts?.signal,
       });
       if (res.ok) {
+        if (isShellPath(entry.path)) {
+          await putShellInRuntimeCache(url, res);
+        }
         warmed += 1;
         succeeded.push(entry);
       }

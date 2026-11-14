@@ -5,12 +5,17 @@ import { warmOfflineCache } from "./warmOfflineCache";
 describe("warmOfflineCache", () => {
   const fetchMock = vi.fn();
   const postMessage = vi.fn();
+  const cachePut = vi.fn();
 
   beforeEach(() => {
     fetchMock.mockReset();
     postMessage.mockReset();
+    cachePut.mockReset();
     localStorage.clear();
     vi.stubGlobal("fetch", fetchMock);
+    vi.stubGlobal("caches", {
+      open: vi.fn(async () => ({ put: cachePut })),
+    });
     const sw = { postMessage };
     Object.defineProperty(navigator, "serviceWorker", {
       configurable: true,
@@ -48,7 +53,10 @@ describe("warmOfflineCache", () => {
           ],
         }),
       })
-      .mockResolvedValue({ ok: true });
+      .mockImplementation(async () => ({
+        ok: true,
+        clone: () => ({ ok: true }),
+      }));
 
     const progress: { done: number; total: number }[] = [];
     const result = await warmOfflineCache({
@@ -60,6 +68,7 @@ describe("warmOfflineCache", () => {
     expect(postMessage).toHaveBeenCalledWith(
       expect.objectContaining({ type: "CACHE_URLS" }),
     );
+    expect(cachePut).toHaveBeenCalled();
     expect(progress.at(-1)).toEqual({ done: 2, total: 2 });
     const stored = JSON.parse(
       localStorage.getItem(OFFLINE_WARM_REVISIONS_KEY)!,
