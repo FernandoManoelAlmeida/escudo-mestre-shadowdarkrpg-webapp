@@ -70,27 +70,31 @@ export default function BottomNav() {
 
     const countdown = offlineTapCountdownMessage(count);
     if (countdown) {
-      notify(countdown);
+      notify(countdown, { replace: true });
     }
 
     if (count < HOME_OFFLINE_TAPS_REQUIRED) return;
 
     resetHomeTaps();
     warming.current = true;
-    notify("A preparar modo offline…");
+    notify("A preparar modo offline…", { replace: true });
 
     void warmOfflineCache({
       onProgress: ({ done, total }) => {
         if (total > 0 && (done === total || done % 10 === 0)) {
-          notify(`A preparar modo offline… ${done}/${total}`);
+          notify(`A preparar modo offline… ${done}/${total}`, {
+            replace: true,
+          });
         }
       },
     })
       .then((result) => {
         if (result.ok) {
-          notify("Pronto para uso offline.");
+          notify("Pronto para uso offline.", { replace: true });
         } else {
-          notify(result.error ?? "Falha ao preparar o modo offline.");
+          notify(result.error ?? "Falha ao preparar o modo offline.", {
+            replace: true,
+          });
         }
       })
       .finally(() => {

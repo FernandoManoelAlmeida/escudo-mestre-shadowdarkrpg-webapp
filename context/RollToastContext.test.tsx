@@ -74,4 +74,19 @@ describe("RollToastContext", () => {
     });
     expect(result.current.infos).toHaveLength(0);
   });
+
+  it("notify com replace mantém só um toast de info", async () => {
+    const { RollToastProvider, useRollToast } = await import("./RollToastContext");
+    const wrapper = ({ children }: { children: React.ReactNode }) => (
+      <RollToastProvider>{children}</RollToastProvider>
+    );
+    const { result } = renderHook(() => useRollToast(), { wrapper });
+
+    act(() => {
+      result.current.notify("a");
+      result.current.notify("b", { replace: true });
+    });
+    expect(result.current.infos).toHaveLength(1);
+    expect(result.current.infos[0]!.message).toBe("b");
+  });
 });

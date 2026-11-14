@@ -33,7 +33,7 @@ type RollToastContextValue = {
     result: RollResult,
     opts?: { suffix?: string; label?: string },
   ) => void;
-  notify: (message: string) => void;
+  notify: (message: string, opts?: { replace?: boolean }) => void;
   removeRoll: (id: number) => void;
   removeInfo: (id: number) => void;
   clearRolls: () => void;
@@ -60,12 +60,19 @@ export function RollToastProvider({ children }: { children: React.ReactNode }) {
     [],
   );
 
-  const notify = useCallback((message: string) => {
-    const text = message.trim();
-    if (!text) return;
-    const entry: InfoEntry = { id: nextId++, message: text };
-    setInfos((prev) => [entry, ...prev].slice(0, INFO_TOAST_MAX));
-  }, []);
+  const notify = useCallback(
+    (message: string, opts?: { replace?: boolean }) => {
+      const text = message.trim();
+      if (!text) return;
+      const entry: InfoEntry = { id: nextId++, message: text };
+      if (opts?.replace) {
+        setInfos([entry]);
+        return;
+      }
+      setInfos((prev) => [entry, ...prev].slice(0, INFO_TOAST_MAX));
+    },
+    [],
+  );
 
   const removeRoll = useCallback((id: number) => {
     setRolls((prev) => prev.filter((e) => e.id !== id));
