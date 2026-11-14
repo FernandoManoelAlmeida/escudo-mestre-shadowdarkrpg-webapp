@@ -53,4 +53,25 @@ describe("RollToastContext", () => {
     });
     expect(result.current.rolls).toHaveLength(0);
   });
+
+  it("notify adiciona aviso de texto e clearRolls limpa infos", async () => {
+    const { RollToastProvider, useRollToast } = await import("./RollToastContext");
+    const wrapper = ({ children }: { children: React.ReactNode }) => (
+      <RollToastProvider>{children}</RollToastProvider>
+    );
+    const { result } = renderHook(() => useRollToast(), { wrapper });
+
+    act(() => {
+      result.current.notify(
+        "Faltam 4 toques no Início para preparar o modo offline.",
+      );
+    });
+    expect(result.current.infos).toHaveLength(1);
+    expect(result.current.infos[0]!.message).toMatch(/Faltam 4/);
+
+    act(() => {
+      result.current.clearRolls();
+    });
+    expect(result.current.infos).toHaveLength(0);
+  });
 });

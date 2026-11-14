@@ -36,6 +36,7 @@ O nome curto e ícones vêm do manifest configurado no projecto.
 
 - Ficheiros em **`/data/*.json`** são cacheados com estratégia orientada a leitura repetida (detalhes técnicos em [PWA e basePath](../desenvolvimento/pwa-e-basepath.md)).
 - **Rolagens** são sempre **locais** ao navegador (não dependem de servidor).
+- **Pacote offline completo:** na tela Início, toque **7 vezes** no botão Início (a partir do 3.º toque o aviso indica quantos faltam). Com rede, a app descarrega rotas, scripts e dados para uso offline. O aviso de **nova versão** (Recarregar) continua a funcionar quando houver actualização na origem.
 
 ## Nova versão disponível
 

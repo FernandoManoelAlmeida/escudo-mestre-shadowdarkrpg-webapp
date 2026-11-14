@@ -3,11 +3,16 @@ import { screen, fireEvent, render } from "@testing-library/react";
 import BottomNav from "@/components/layout/BottomNav";
 import { ThemeProvider } from "styled-components";
 import { theme } from "@/lib/theme";
+import { RollToastProvider } from "@/context/RollToastContext";
 import { mockUsePathname } from "./setup/next-mocks";
 import React from "react";
 
 const renderWithTheme = (ui: React.ReactNode) => {
-  return render(<ThemeProvider theme={theme}>{ui}</ThemeProvider>);
+  return render(
+    <ThemeProvider theme={theme}>
+      <RollToastProvider>{ui}</RollToastProvider>
+    </ThemeProvider>,
+  );
 };
 
 describe("BottomNav interaction", () => {
@@ -138,7 +143,9 @@ describe("BottomNav interaction", () => {
     vi.stubGlobal("window", { ...window, scrollY: 100, scrollTo: vi.fn() });
     rerender(
       <ThemeProvider theme={theme}>
-        <BottomNav />
+        <RollToastProvider>
+          <BottomNav />
+        </RollToastProvider>
       </ThemeProvider>,
     );
 
@@ -152,5 +159,22 @@ describe("BottomNav interaction", () => {
       top: 0,
       behavior: "smooth",
     });
+  });
+
+  it("no Início (já na Home) preventDefault em cada toque e não conta a partir de outra rota", () => {
+    mockUsePathname.mockReturnValue("/");
+    vi.stubGlobal("window", { ...window, scrollY: 0, scrollTo: vi.fn() });
+    renderWithTheme(<BottomNav />);
+
+    const inicioLink = screen.getByRole("link", { name: /início/i });
+    for (let i = 0; i < 3; i++) {
+      const clickEvent = new MouseEvent("click", {
+        bubbles: true,
+        cancelable: true,
+      });
+      const preventDefaultSpy = vi.spyOn(clickEvent, "preventDefault");
+      fireEvent(inicioLink, clickEvent);
+      expect(preventDefaultSpy).toHaveBeenCalled();
+    }
   });
 });

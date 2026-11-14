@@ -55,6 +55,9 @@ function writeVersion(projectRoot = path.resolve(__dirname, ".."), opts = {}) {
 
   syncPwaArtifactsToOut(projectRoot);
 
+  const { writeOfflineManifest } = require("./write-offline-manifest.js");
+  writeOfflineManifest(projectRoot, { now: opts.now });
+
   if (!opts.skipPagesSwCheck) {
     assertPagesServiceWorker(projectRoot);
   }

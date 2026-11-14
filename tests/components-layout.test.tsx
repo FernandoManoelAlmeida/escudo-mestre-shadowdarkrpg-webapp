@@ -73,7 +73,7 @@ describe("layout components", () => {
 
   it("BottomNav lista rotas", () => {
     mockUsePathname.mockReturnValue("/ameacas");
-    renderWithTheme(<BottomNav />);
+    renderWithTheme(<BottomNav />, { withToast: true });
     expect(
       screen.getByRole("navigation", { name: /menu principal/i }),
     ).toBeInTheDocument();

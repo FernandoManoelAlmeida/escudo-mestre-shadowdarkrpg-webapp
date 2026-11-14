@@ -25,7 +25,17 @@ describe("COPYRIGHT_FREE navegação", () => {
     vi.stubEnv("NEXT_PUBLIC_COPYRIGHT_FREE", "1");
     vi.resetModules();
     const BottomNav = (await import("@/components/layout/BottomNav")).default;
-    renderWithTheme(<BottomNav />);
+    const { RollToastProvider } = await import("@/context/RollToastContext");
+    const { ThemeProvider } = await import("styled-components");
+    const { theme } = await import("@/lib/theme");
+    const { render } = await import("@testing-library/react");
+    render(
+      <ThemeProvider theme={theme}>
+        <RollToastProvider>
+          <BottomNav />
+        </RollToastProvider>
+      </ThemeProvider>,
+    );
     expect(
       screen.queryByRole("link", { name: /geradores/i }),
     ).not.toBeInTheDocument();
@@ -37,7 +47,17 @@ describe("COPYRIGHT_FREE navegação", () => {
     vi.stubEnv("NEXT_PUBLIC_COPYRIGHT_FREE", "");
     vi.resetModules();
     const BottomNav = (await import("@/components/layout/BottomNav")).default;
-    renderWithTheme(<BottomNav />);
+    const { RollToastProvider } = await import("@/context/RollToastContext");
+    const { ThemeProvider } = await import("styled-components");
+    const { theme } = await import("@/lib/theme");
+    const { render } = await import("@testing-library/react");
+    render(
+      <ThemeProvider theme={theme}>
+        <RollToastProvider>
+          <BottomNav />
+        </RollToastProvider>
+      </ThemeProvider>,
+    );
     expect(
       screen.getByRole("link", { name: /geradores/i }),
     ).toBeInTheDocument();

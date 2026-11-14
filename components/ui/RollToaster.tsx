@@ -177,6 +177,14 @@ const ToastLabel = styled.div`
   font-weight: 500;
 `;
 
+const InfoMessage = styled.p`
+  margin: 0;
+  font-size: ${({ theme }) => theme.typography.fontSize.sm};
+  color: ${({ theme }) => theme.colors.text};
+  line-height: 1.35;
+  font-weight: 500;
+`;
+
 const TotalRow = styled.div<{ $pulse?: boolean }>`
   font-size: ${({ theme, $pulse }) =>
     $pulse ? theme.typography.fontSize["2xl"] : theme.typography.fontSize.lg};
@@ -316,19 +324,62 @@ function ToastItem({
   );
 }
 
+function InfoToastItem({
+  entryId,
+  message,
+  isNewest,
+  onRemove,
+}: {
+  entryId: number;
+  message: string;
+  isNewest: boolean;
+  onRemove: (id: number) => void;
+}) {
+  const dismiss = useCallback(() => onRemove(entryId), [entryId, onRemove]);
+  const onKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        dismiss();
+      }
+    },
+    [dismiss],
+  );
+
+  return (
+    <ToastCard
+      $isNewest={isNewest}
+      role="button"
+      tabIndex={0}
+      aria-label={`${message}. Clique para fechar.`}
+      onClick={dismiss}
+      onKeyDown={onKeyDown}
+    >
+      <ToastBody>
+        <InfoMessage>{message}</InfoMessage>
+      </ToastBody>
+    </ToastCard>
+  );
+}
+
 export default function RollToaster() {
-  const { rolls, removeRoll, clearRolls } = useRollToast();
+  const { rolls, infos, removeRoll, removeInfo, clearRolls } = useRollToast();
   const listRef = useRef<HTMLDivElement>(null);
+  const itemCount = rolls.length + infos.length;
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key !== "Escape") return;
+      if (infos.length > 0) {
+        removeInfo(infos[0]!.id);
+        return;
+      }
       if (rolls.length === 0) return;
       removeRoll(rolls[0]!.id);
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [rolls, removeRoll]);
+  }, [rolls, infos, removeRoll, removeInfo]);
 
   useEffect(() => {
     const el = listRef.current;
@@ -339,13 +390,13 @@ export default function RollToaster() {
     } else {
       el.scrollTop = 0;
     }
-  }, [rolls.length]);
+  }, [itemCount]);
 
-  if (rolls.length === 0) return null;
+  if (itemCount === 0) return null;
 
   return (
-    <Container role="region" aria-label="Rolagens recentes">
-      {rolls.length > 1 && (
+    <Container role="region" aria-label="Avisos e rolagens recentes">
+      {itemCount > 1 && (
         <Toolbar>
           <ClearAllBtn type="button" onClick={clearRolls}>
             Limpar tudo
@@ -353,6 +404,15 @@ export default function RollToaster() {
         </Toolbar>
       )}
       <List ref={listRef} aria-live="polite" aria-relevant="additions removals">
+        {infos.map((entry, index) => (
+          <InfoToastItem
+            key={`info-${entry.id}`}
+            entryId={entry.id}
+            message={entry.message}
+            isNewest={index === 0 && rolls.length === 0}
+            onRemove={removeInfo}
+          />
+        ))}
         {rolls.map((entry, index) => (
           <ToastItem
             key={entry.id}
@@ -360,7 +420,7 @@ export default function RollToaster() {
             label={entry.label}
             result={entry.result}
             suffix={entry.suffix}
-            isNewest={index === 0}
+            isNewest={index === 0 && infos.length === 0}
             onRemove={removeRoll}
           />
         ))}
